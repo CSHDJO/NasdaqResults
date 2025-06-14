@@ -1,0 +1,2805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nasdaq Trade System - de Jonge Investments</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+            crossorigin="anonymous"></script>
+    <meta name="theme-color" content="#712cf9">
+</head>
+
+<body>
+<header class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow" data-bs-theme="dark"><a
+        class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="#">Nasdaq Trade system</a>
+</header>
+
+
+<div class="container-fluid">
+    <div class="row">
+        
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <a href="GameResult.html">Back</a>
+            <h1>de Jonge Investments</h1>
+            <img src="de Jonge Investments.png" class="img-fluid">
+            <div class="table-responsive small">
+                <table class="table table-striped table-sm">
+                    <thead>
+                    <tr>
+                        <th scope="col">ExecutedOn</th>
+                        <th scope="col">Company</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">AtPrice</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr scope="row">
+                        <td>03-01-2022</td>
+                        <td><a href="stocks/ESLT.html">Elbit Systems Ltd. - Ordinary Shares</a></td>
+                        <td>5</td>
+                        <td>$169.54</td>
+                        <td>$847.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-01-2022</td>
+                        <td><a href="stocks/ESLT.html">Elbit Systems Ltd. - Ordinary Shares</a></td>
+                        <td>-5</td>
+                        <td>$173.13</td>
+                        <td>-$865.63</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-01-2022</td>
+                        <td><a href="stocks/FRD.html">Friedman Industries Inc. - Common Stock</a></td>
+                        <td>108</td>
+                        <td>$9.37</td>
+                        <td>$1,011.77</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-01-2022</td>
+                        <td><a href="stocks/FRD.html">Friedman Industries Inc. - Common Stock</a></td>
+                        <td>-108</td>
+                        <td>$10.14</td>
+                        <td>-$1,095.64</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-01-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1</td>
+                        <td>$617.25</td>
+                        <td>$617.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-01-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$636.90</td>
+                        <td>-$636.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-01-2022</td>
+                        <td><a href="stocks/NXST.html">Nexstar Media Group, Inc. - Common Stock</a></td>
+                        <td>8</td>
+                        <td>$134.13</td>
+                        <td>$1,073.07</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-01-2022</td>
+                        <td><a href="stocks/NXST.html">Nexstar Media Group, Inc. - Common Stock</a></td>
+                        <td>-8</td>
+                        <td>$138.16</td>
+                        <td>-$1,105.31</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-01-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1</td>
+                        <td>$587.55</td>
+                        <td>$587.55</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-01-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$613.05</td>
+                        <td>-$613.05</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-01-2022</td>
+                        <td><a href="stocks/MORN.html">Morningstar, Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$300.18</td>
+                        <td>$900.53</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-01-2022</td>
+                        <td><a href="stocks/MORN.html">Morningstar, Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$309.71</td>
+                        <td>-$929.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-01-2022</td>
+                        <td><a href="stocks/NXST.html">Nexstar Media Group, Inc. - Common Stock</a></td>
+                        <td>8</td>
+                        <td>$146.05</td>
+                        <td>$1,168.42</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-01-2022</td>
+                        <td><a href="stocks/NXST.html">Nexstar Media Group, Inc. - Common Stock</a></td>
+                        <td>-8</td>
+                        <td>$151.15</td>
+                        <td>-$1,209.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-01-2022</td>
+                        <td><a href="stocks/AMAT.html">Applied Materials, Inc. - Common Stock</a></td>
+                        <td>8</td>
+                        <td>$152.33</td>
+                        <td>$1,218.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-01-2022</td>
+                        <td><a href="stocks/AMAT.html">Applied Materials, Inc. - Common Stock</a></td>
+                        <td>-8</td>
+                        <td>$161.84</td>
+                        <td>-$1,294.73</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-01-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$527.10</td>
+                        <td>$1,054.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-01-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$544.50</td>
+                        <td>-$1,089.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-01-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$544.50</td>
+                        <td>$1,089.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-01-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$577.50</td>
+                        <td>-$1,155.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-01-2022</td>
+                        <td><a href="stocks/NXST.html">Nexstar Media Group, Inc. - Common Stock</a></td>
+                        <td>10</td>
+                        <td>$138.58</td>
+                        <td>$1,385.81</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-01-2022</td>
+                        <td><a href="stocks/NXST.html">Nexstar Media Group, Inc. - Common Stock</a></td>
+                        <td>-10</td>
+                        <td>$140.91</td>
+                        <td>-$1,409.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-01-2022</td>
+                        <td><a href="stocks/TRML.html">Tourmaline Bio, Inc.  - Common Stock</a></td>
+                        <td>34</td>
+                        <td>$42.15</td>
+                        <td>$1,433.23</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-01-2022</td>
+                        <td><a href="stocks/TRML.html">Tourmaline Bio, Inc.  - Common Stock</a></td>
+                        <td>-34</td>
+                        <td>$43.62</td>
+                        <td>-$1,483.07</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-01-2022</td>
+                        <td><a href="stocks/DDOG.html">Datadog, Inc. - Class A Common Stock</a></td>
+                        <td>11</td>
+                        <td>$125.14</td>
+                        <td>$1,376.54</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-01-2022</td>
+                        <td><a href="stocks/DDOG.html">Datadog, Inc. - Class A Common Stock</a></td>
+                        <td>-11</td>
+                        <td>$128.04</td>
+                        <td>-$1,408.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-01-2022</td>
+                        <td><a href="stocks/PZZA.html">Papa John's International, Inc. - Common Stock</a></td>
+                        <td>14</td>
+                        <td>$105.52</td>
+                        <td>$1,477.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-01-2022</td>
+                        <td><a href="stocks/PZZA.html">Papa John's International, Inc. - Common Stock</a></td>
+                        <td>-14</td>
+                        <td>$107.01</td>
+                        <td>-$1,498.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-01-2022</td>
+                        <td><a href="stocks/MASI.html">Masimo Corporation - Common Stock</a></td>
+                        <td>7</td>
+                        <td>$199.49</td>
+                        <td>$1,396.43</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-01-2022</td>
+                        <td><a href="stocks/MASI.html">Masimo Corporation - Common Stock</a></td>
+                        <td>-7</td>
+                        <td>$211.54</td>
+                        <td>-$1,480.78</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-01-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$557.85</td>
+                        <td>$1,115.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-02-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$569.10</td>
+                        <td>-$1,138.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-02-2022</td>
+                        <td><a href="stocks/MORN.html">Morningstar, Inc. - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$282.67</td>
+                        <td>$1,413.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-02-2022</td>
+                        <td><a href="stocks/MORN.html">Morningstar, Inc. - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$289.24</td>
+                        <td>-$1,446.19</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-02-2022</td>
+                        <td><a href="stocks/HBCP.html">Home Bancorp, Inc. - Common Stock</a></td>
+                        <td>46</td>
+                        <td>$36.03</td>
+                        <td>$1,657.27</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-02-2022</td>
+                        <td><a href="stocks/HBCP.html">Home Bancorp, Inc. - Common Stock</a></td>
+                        <td>-46</td>
+                        <td>$36.89</td>
+                        <td>-$1,696.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-02-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$531.60</td>
+                        <td>$1,594.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-02-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$547.35</td>
+                        <td>-$1,642.05</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-02-2022</td>
+                        <td><a href="stocks/MIDD.html">The Middleby Corporation - Common Stock</a></td>
+                        <td>9</td>
+                        <td>$188.31</td>
+                        <td>$1,694.79</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-02-2022</td>
+                        <td><a href="stocks/MIDD.html">The Middleby Corporation - Common Stock</a></td>
+                        <td>-9</td>
+                        <td>$196.32</td>
+                        <td>-$1,766.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-02-2022</td>
+                        <td><a href="stocks/NICE.html">NICE Ltd - American Depositary Shares each representing one Ordinary Share</a></td>
+                        <td>7</td>
+                        <td>$256.00</td>
+                        <td>$1,792.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-02-2022</td>
+                        <td><a href="stocks/NICE.html">NICE Ltd - American Depositary Shares each representing one Ordinary Share</a></td>
+                        <td>-7</td>
+                        <td>$270.53</td>
+                        <td>-$1,893.71</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-02-2022</td>
+                        <td><a href="stocks/DDOG.html">Datadog, Inc. - Class A Common Stock</a></td>
+                        <td>12</td>
+                        <td>$155.50</td>
+                        <td>$1,866.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-02-2022</td>
+                        <td><a href="stocks/DDOG.html">Datadog, Inc. - Class A Common Stock</a></td>
+                        <td>-12</td>
+                        <td>$174.60</td>
+                        <td>-$2,095.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-02-2022</td>
+                        <td><a href="stocks/SENEA.html">Seneca Foods Corp. - Class A Common Stock</a></td>
+                        <td>47</td>
+                        <td>$45.85</td>
+                        <td>$2,154.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-02-2022</td>
+                        <td><a href="stocks/SENEA.html">Seneca Foods Corp. - Class A Common Stock</a></td>
+                        <td>-47</td>
+                        <td>$47.98</td>
+                        <td>-$2,255.06</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-02-2022</td>
+                        <td><a href="stocks/SLAB.html">Silicon Laboratories, Inc. - Common Stock</a></td>
+                        <td>14</td>
+                        <td>$152.37</td>
+                        <td>$2,133.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-02-2022</td>
+                        <td><a href="stocks/SLAB.html">Silicon Laboratories, Inc. - Common Stock</a></td>
+                        <td>-14</td>
+                        <td>$160.97</td>
+                        <td>-$2,253.58</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-02-2022</td>
+                        <td><a href="stocks/DDOG.html">Datadog, Inc. - Class A Common Stock</a></td>
+                        <td>14</td>
+                        <td>$168.99</td>
+                        <td>$2,365.86</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-02-2022</td>
+                        <td><a href="stocks/DDOG.html">Datadog, Inc. - Class A Common Stock</a></td>
+                        <td>-14</td>
+                        <td>$173.92</td>
+                        <td>-$2,434.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-02-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$513.30</td>
+                        <td>$2,053.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-02-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$584.10</td>
+                        <td>-$2,336.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-02-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$584.10</td>
+                        <td>$2,336.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-02-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$618.15</td>
+                        <td>-$2,472.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-02-2022</td>
+                        <td><a href="stocks/ESLT.html">Elbit Systems Ltd. - Ordinary Shares</a></td>
+                        <td>17</td>
+                        <td>$167.19</td>
+                        <td>$2,842.29</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-02-2022</td>
+                        <td><a href="stocks/ESLT.html">Elbit Systems Ltd. - Ordinary Shares</a></td>
+                        <td>-17</td>
+                        <td>$167.91</td>
+                        <td>-$2,854.49</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-02-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$591.00</td>
+                        <td>$2,364.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-02-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$650.85</td>
+                        <td>-$2,603.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-02-2022</td>
+                        <td><a href="stocks/ETSY.html">Etsy, Inc. - Common Stock</a></td>
+                        <td>24</td>
+                        <td>$128.16</td>
+                        <td>$3,075.84</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-02-2022</td>
+                        <td><a href="stocks/ETSY.html">Etsy, Inc. - Common Stock</a></td>
+                        <td>-24</td>
+                        <td>$148.94</td>
+                        <td>-$3,574.56</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-02-2022</td>
+                        <td><a href="stocks/NICE.html">NICE Ltd - American Depositary Shares each representing one Ordinary Share</a></td>
+                        <td>16</td>
+                        <td>$226.25</td>
+                        <td>$3,620.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-03-2022</td>
+                        <td><a href="stocks/NICE.html">NICE Ltd - American Depositary Shares each representing one Ordinary Share</a></td>
+                        <td>-16</td>
+                        <td>$231.75</td>
+                        <td>-$3,708.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-03-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$654.15</td>
+                        <td>$3,270.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-03-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$684.00</td>
+                        <td>-$3,420.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-03-2022</td>
+                        <td><a href="stocks/CCSI.html">Consensus Cloud Solutions, Inc. - Common Stock</a></td>
+                        <td>67</td>
+                        <td>$57.50</td>
+                        <td>$3,852.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-03-2022</td>
+                        <td><a href="stocks/CCSI.html">Consensus Cloud Solutions, Inc. - Common Stock</a></td>
+                        <td>-67</td>
+                        <td>$59.73</td>
+                        <td>-$4,001.91</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-03-2022</td>
+                        <td><a href="stocks/VRSK.html">Verisk Analytics, Inc. - Common Stock</a></td>
+                        <td>22</td>
+                        <td>$178.94</td>
+                        <td>$3,936.66</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-03-2022</td>
+                        <td><a href="stocks/VRSK.html">Verisk Analytics, Inc. - Common Stock</a></td>
+                        <td>-22</td>
+                        <td>$183.86</td>
+                        <td>-$4,044.83</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-03-2022</td>
+                        <td><a href="stocks/DASH.html">DoorDash, Inc. - Common Stock</a></td>
+                        <td>51</td>
+                        <td>$79.86</td>
+                        <td>$4,072.86</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-03-2022</td>
+                        <td><a href="stocks/DASH.html">DoorDash, Inc. - Common Stock</a></td>
+                        <td>-51</td>
+                        <td>$85.01</td>
+                        <td>-$4,335.51</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-03-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>7</td>
+                        <td>$618.45</td>
+                        <td>$4,329.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-03-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-7</td>
+                        <td>$639.15</td>
+                        <td>-$4,474.05</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-03-2022</td>
+                        <td><a href="stocks/ESLT.html">Elbit Systems Ltd. - Ordinary Shares</a></td>
+                        <td>23</td>
+                        <td>$192.82</td>
+                        <td>$4,434.83</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-03-2022</td>
+                        <td><a href="stocks/ESLT.html">Elbit Systems Ltd. - Ordinary Shares</a></td>
+                        <td>-23</td>
+                        <td>$200.10</td>
+                        <td>-$4,602.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-03-2022</td>
+                        <td><a href="stocks/LZ.html">LegalZoom.com, Inc. - Common Stock</a></td>
+                        <td>397</td>
+                        <td>$11.85</td>
+                        <td>$4,704.45</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-03-2022</td>
+                        <td><a href="stocks/LZ.html">LegalZoom.com, Inc. - Common Stock</a></td>
+                        <td>-397</td>
+                        <td>$12.33</td>
+                        <td>-$4,895.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-03-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>8</td>
+                        <td>$578.25</td>
+                        <td>$4,626.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-03-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-8</td>
+                        <td>$597.60</td>
+                        <td>-$4,780.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-03-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>8</td>
+                        <td>$597.60</td>
+                        <td>$4,780.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-03-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-8</td>
+                        <td>$615.45</td>
+                        <td>-$4,923.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-03-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>8</td>
+                        <td>$615.45</td>
+                        <td>$4,923.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-03-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-8</td>
+                        <td>$658.05</td>
+                        <td>-$5,264.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-03-2022</td>
+                        <td><a href="stocks/DASH.html">DoorDash, Inc. - Common Stock</a></td>
+                        <td>57</td>
+                        <td>$96.09</td>
+                        <td>$5,477.13</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-03-2022</td>
+                        <td><a href="stocks/DASH.html">DoorDash, Inc. - Common Stock</a></td>
+                        <td>-57</td>
+                        <td>$107.29</td>
+                        <td>-$6,115.53</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-03-2022</td>
+                        <td><a href="stocks/DDOG.html">Datadog, Inc. - Class A Common Stock</a></td>
+                        <td>44</td>
+                        <td>$140.14</td>
+                        <td>$6,166.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-03-2022</td>
+                        <td><a href="stocks/DDOG.html">Datadog, Inc. - Class A Common Stock</a></td>
+                        <td>-44</td>
+                        <td>$148.65</td>
+                        <td>-$6,540.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-03-2022</td>
+                        <td><a href="stocks/DASH.html">DoorDash, Inc. - Common Stock</a></td>
+                        <td>58</td>
+                        <td>$111.25</td>
+                        <td>$6,452.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-03-2022</td>
+                        <td><a href="stocks/DASH.html">DoorDash, Inc. - Common Stock</a></td>
+                        <td>-58</td>
+                        <td>$114.34</td>
+                        <td>-$6,631.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-03-2022</td>
+                        <td><a href="stocks/AMAT.html">Applied Materials, Inc. - Common Stock</a></td>
+                        <td>52</td>
+                        <td>$127.59</td>
+                        <td>$6,634.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-03-2022</td>
+                        <td><a href="stocks/AMAT.html">Applied Materials, Inc. - Common Stock</a></td>
+                        <td>-52</td>
+                        <td>$134.55</td>
+                        <td>-$6,996.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-03-2022</td>
+                        <td><a href="stocks/ESLT.html">Elbit Systems Ltd. - Ordinary Shares</a></td>
+                        <td>31</td>
+                        <td>$223.64</td>
+                        <td>$6,932.81</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-03-2022</td>
+                        <td><a href="stocks/ESLT.html">Elbit Systems Ltd. - Ordinary Shares</a></td>
+                        <td>-31</td>
+                        <td>$226.53</td>
+                        <td>-$7,022.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-03-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>11</td>
+                        <td>$620.55</td>
+                        <td>$6,826.05</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-03-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-11</td>
+                        <td>$660.30</td>
+                        <td>-$7,263.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-03-2022</td>
+                        <td><a href="stocks/ESLT.html">Elbit Systems Ltd. - Ordinary Shares</a></td>
+                        <td>36</td>
+                        <td>$210.89</td>
+                        <td>$7,592.19</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-03-2022</td>
+                        <td><a href="stocks/ESLT.html">Elbit Systems Ltd. - Ordinary Shares</a></td>
+                        <td>-36</td>
+                        <td>$218.63</td>
+                        <td>-$7,870.62</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-03-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>11</td>
+                        <td>$662.70</td>
+                        <td>$7,289.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-03-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-11</td>
+                        <td>$681.00</td>
+                        <td>-$7,491.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-03-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>11</td>
+                        <td>$681.00</td>
+                        <td>$7,491.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-04-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-11</td>
+                        <td>$704.70</td>
+                        <td>-$7,751.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-04-2022</td>
+                        <td><a href="stocks/MORN.html">Morningstar, Inc. - Common Stock</a></td>
+                        <td>31</td>
+                        <td>$269.08</td>
+                        <td>$8,341.45</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-04-2022</td>
+                        <td><a href="stocks/MORN.html">Morningstar, Inc. - Common Stock</a></td>
+                        <td>-31</td>
+                        <td>$276.12</td>
+                        <td>-$8,559.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-04-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>12</td>
+                        <td>$711.45</td>
+                        <td>$8,537.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-04-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-12</td>
+                        <td>$722.40</td>
+                        <td>-$8,668.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-04-2022</td>
+                        <td><a href="stocks/MORN.html">Morningstar, Inc. - Common Stock</a></td>
+                        <td>31</td>
+                        <td>$275.50</td>
+                        <td>$8,540.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-04-2022</td>
+                        <td><a href="stocks/MORN.html">Morningstar, Inc. - Common Stock</a></td>
+                        <td>-31</td>
+                        <td>$285.74</td>
+                        <td>-$8,857.79</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-04-2022</td>
+                        <td><a href="stocks/NICE.html">NICE Ltd - American Depositary Shares each representing one Ordinary Share</a></td>
+                        <td>41</td>
+                        <td>$220.15</td>
+                        <td>$9,026.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-04-2022</td>
+                        <td><a href="stocks/NICE.html">NICE Ltd - American Depositary Shares each representing one Ordinary Share</a></td>
+                        <td>-41</td>
+                        <td>$221.79</td>
+                        <td>-$9,093.39</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-04-2022</td>
+                        <td><a href="stocks/FIZZ.html">National Beverage Corp. - Common Stock</a></td>
+                        <td>209</td>
+                        <td>$43.49</td>
+                        <td>$9,089.31</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-04-2022</td>
+                        <td><a href="stocks/FIZZ.html">National Beverage Corp. - Common Stock</a></td>
+                        <td>-209</td>
+                        <td>$44.66</td>
+                        <td>-$9,333.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-04-2022</td>
+                        <td><a href="stocks/MORN.html">Morningstar, Inc. - Common Stock</a></td>
+                        <td>36</td>
+                        <td>$257.81</td>
+                        <td>$9,281.21</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-04-2022</td>
+                        <td><a href="stocks/MORN.html">Morningstar, Inc. - Common Stock</a></td>
+                        <td>-36</td>
+                        <td>$273.46</td>
+                        <td>-$9,844.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-04-2022</td>
+                        <td><a href="stocks/ESLT.html">Elbit Systems Ltd. - Ordinary Shares</a></td>
+                        <td>46</td>
+                        <td>$211.13</td>
+                        <td>$9,712.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-04-2022</td>
+                        <td><a href="stocks/ESLT.html">Elbit Systems Ltd. - Ordinary Shares</a></td>
+                        <td>-46</td>
+                        <td>$215.40</td>
+                        <td>-$9,908.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-04-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>15</td>
+                        <td>$653.55</td>
+                        <td>$9,803.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-04-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-15</td>
+                        <td>$667.65</td>
+                        <td>-$10,014.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-04-2022</td>
+                        <td><a href="stocks/MORN.html">Morningstar, Inc. - Common Stock</a></td>
+                        <td>37</td>
+                        <td>$274.90</td>
+                        <td>$10,171.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-04-2022</td>
+                        <td><a href="stocks/MORN.html">Morningstar, Inc. - Common Stock</a></td>
+                        <td>-37</td>
+                        <td>$277.47</td>
+                        <td>-$10,266.43</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-04-2022</td>
+                        <td><a href="stocks/CHMG.html">Chemung Financial Corp  - Common Stock</a></td>
+                        <td>242</td>
+                        <td>$42.91</td>
+                        <td>$10,384.73</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-04-2022</td>
+                        <td><a href="stocks/CHMG.html">Chemung Financial Corp  - Common Stock</a></td>
+                        <td>-242</td>
+                        <td>$43.49</td>
+                        <td>-$10,524.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-04-2022</td>
+                        <td><a href="stocks/VSEC.html">VSE Corporation - Common Stock</a></td>
+                        <td>263</td>
+                        <td>$40.03</td>
+                        <td>$10,526.79</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-04-2022</td>
+                        <td><a href="stocks/VSEC.html">VSE Corporation - Common Stock</a></td>
+                        <td>-263</td>
+                        <td>$40.22</td>
+                        <td>-$10,578.23</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-04-2022</td>
+                        <td><a href="stocks/NATH.html">Nathan's Famous, Inc. - Common Stock</a></td>
+                        <td>241</td>
+                        <td>$43.87</td>
+                        <td>$10,573.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-04-2022</td>
+                        <td><a href="stocks/NATH.html">Nathan's Famous, Inc. - Common Stock</a></td>
+                        <td>-241</td>
+                        <td>$44.15</td>
+                        <td>-$10,639.98</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-04-2022</td>
+                        <td><a href="stocks/SLAB.html">Silicon Laboratories, Inc. - Common Stock</a></td>
+                        <td>83</td>
+                        <td>$127.28</td>
+                        <td>$10,564.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-04-2022</td>
+                        <td><a href="stocks/SLAB.html">Silicon Laboratories, Inc. - Common Stock</a></td>
+                        <td>-83</td>
+                        <td>$132.60</td>
+                        <td>-$11,005.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-04-2022</td>
+                        <td><a href="stocks/DDOG.html">Datadog, Inc. - Class A Common Stock</a></td>
+                        <td>92</td>
+                        <td>$120.44</td>
+                        <td>$11,080.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-04-2022</td>
+                        <td><a href="stocks/DDOG.html">Datadog, Inc. - Class A Common Stock</a></td>
+                        <td>-92</td>
+                        <td>$128.47</td>
+                        <td>-$11,819.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-04-2022</td>
+                        <td><a href="stocks/TRML.html">Tourmaline Bio, Inc.  - Common Stock</a></td>
+                        <td>392</td>
+                        <td>$30.16</td>
+                        <td>$11,822.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-04-2022</td>
+                        <td><a href="stocks/TRML.html">Tourmaline Bio, Inc.  - Common Stock</a></td>
+                        <td>-392</td>
+                        <td>$31.36</td>
+                        <td>-$12,293.08</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-05-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>22</td>
+                        <td>$550.65</td>
+                        <td>$12,114.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-05-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-22</td>
+                        <td>$562.35</td>
+                        <td>-$12,371.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-05-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>22</td>
+                        <td>$562.35</td>
+                        <td>$12,371.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-05-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-22</td>
+                        <td>$599.10</td>
+                        <td>-$13,180.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-05-2022</td>
+                        <td><a href="stocks/FIZZ.html">National Beverage Corp. - Common Stock</a></td>
+                        <td>317</td>
+                        <td>$42.10</td>
+                        <td>$13,345.37</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-05-2022</td>
+                        <td><a href="stocks/FIZZ.html">National Beverage Corp. - Common Stock</a></td>
+                        <td>-317</td>
+                        <td>$42.55</td>
+                        <td>-$13,487.37</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-05-2022</td>
+                        <td><a href="stocks/MASI.html">Masimo Corporation - Common Stock</a></td>
+                        <td>108</td>
+                        <td>$124.80</td>
+                        <td>$13,478.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-05-2022</td>
+                        <td><a href="stocks/MASI.html">Masimo Corporation - Common Stock</a></td>
+                        <td>-108</td>
+                        <td>$129.23</td>
+                        <td>-$13,956.84</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-05-2022</td>
+                        <td><a href="stocks/ANGI.html">Angi Inc. - Class A Common Stock</a></td>
+                        <td>389</td>
+                        <td>$35.90</td>
+                        <td>$13,965.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-05-2022</td>
+                        <td><a href="stocks/ANGI.html">Angi Inc. - Class A Common Stock</a></td>
+                        <td>-389</td>
+                        <td>$43.90</td>
+                        <td>-$17,077.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-05-2022</td>
+                        <td><a href="stocks/NXST.html">Nexstar Media Group, Inc. - Common Stock</a></td>
+                        <td>119</td>
+                        <td>$143.16</td>
+                        <td>$17,036.42</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-05-2022</td>
+                        <td><a href="stocks/NXST.html">Nexstar Media Group, Inc. - Common Stock</a></td>
+                        <td>-119</td>
+                        <td>$144.66</td>
+                        <td>-$17,214.07</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-05-2022</td>
+                        <td><a href="stocks/ETSY.html">Etsy, Inc. - Common Stock</a></td>
+                        <td>222</td>
+                        <td>$77.81</td>
+                        <td>$17,273.82</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-05-2022</td>
+                        <td><a href="stocks/ETSY.html">Etsy, Inc. - Common Stock</a></td>
+                        <td>-222</td>
+                        <td>$87.86</td>
+                        <td>-$19,504.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-05-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>64</td>
+                        <td>$303.30</td>
+                        <td>$19,411.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-05-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-64</td>
+                        <td>$372.90</td>
+                        <td>-$23,865.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-05-2022</td>
+                        <td><a href="stocks/TRML.html">Tourmaline Bio, Inc.  - Common Stock</a></td>
+                        <td>825</td>
+                        <td>$29.05</td>
+                        <td>$23,966.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-05-2022</td>
+                        <td><a href="stocks/TRML.html">Tourmaline Bio, Inc.  - Common Stock</a></td>
+                        <td>-825</td>
+                        <td>$39.49</td>
+                        <td>-$32,578.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-05-2022</td>
+                        <td><a href="stocks/CMTL.html">Comtech Telecommunications Corp. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$12.06</td>
+                        <td>$12,056.09</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-05-2022</td>
+                        <td><a href="stocks/CMTL.html">Comtech Telecommunications Corp. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$12.68</td>
+                        <td>-$12,678.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-05-2022</td>
+                        <td><a href="stocks/DDOG.html">Datadog, Inc. - Class A Common Stock</a></td>
+                        <td>377</td>
+                        <td>$88.07</td>
+                        <td>$33,202.39</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-05-2022</td>
+                        <td><a href="stocks/DDOG.html">Datadog, Inc. - Class A Common Stock</a></td>
+                        <td>-377</td>
+                        <td>$96.53</td>
+                        <td>-$36,389.93</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-05-2022</td>
+                        <td><a href="stocks/MORN.html">Morningstar, Inc. - Common Stock</a></td>
+                        <td>156</td>
+                        <td>$232.71</td>
+                        <td>$36,303.46</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-05-2022</td>
+                        <td><a href="stocks/MORN.html">Morningstar, Inc. - Common Stock</a></td>
+                        <td>-156</td>
+                        <td>$239.48</td>
+                        <td>-$37,358.41</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-05-2022</td>
+                        <td><a href="stocks/CTRN.html">Citi Trends, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$25.73</td>
+                        <td>$25,730.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-05-2022</td>
+                        <td><a href="stocks/CTRN.html">Citi Trends, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$28.18</td>
+                        <td>-$28,180.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-05-2022</td>
+                        <td><a href="stocks/DASH.html">DoorDash, Inc. - Common Stock</a></td>
+                        <td>636</td>
+                        <td>$62.66</td>
+                        <td>$39,851.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-05-2022</td>
+                        <td><a href="stocks/DASH.html">DoorDash, Inc. - Common Stock</a></td>
+                        <td>-636</td>
+                        <td>$68.48</td>
+                        <td>-$43,553.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-05-2022</td>
+                        <td><a href="stocks/MORN.html">Morningstar, Inc. - Common Stock</a></td>
+                        <td>179</td>
+                        <td>$242.88</td>
+                        <td>$43,476.03</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-05-2022</td>
+                        <td><a href="stocks/MORN.html">Morningstar, Inc. - Common Stock</a></td>
+                        <td>-179</td>
+                        <td>$249.72</td>
+                        <td>-$44,700.57</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-05-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>137</td>
+                        <td>$327.15</td>
+                        <td>$44,819.55</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-05-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-137</td>
+                        <td>$340.65</td>
+                        <td>-$46,669.05</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-05-2022</td>
+                        <td><a href="stocks/DDOG.html">Datadog, Inc. - Class A Common Stock</a></td>
+                        <td>489</td>
+                        <td>$95.39</td>
+                        <td>$46,645.71</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-06-2022</td>
+                        <td><a href="stocks/DDOG.html">Datadog, Inc. - Class A Common Stock</a></td>
+                        <td>-489</td>
+                        <td>$97.50</td>
+                        <td>-$47,677.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-06-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>151</td>
+                        <td>$313.95</td>
+                        <td>$47,406.45</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-06-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-151</td>
+                        <td>$343.80</td>
+                        <td>-$51,913.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-06-2022</td>
+                        <td><a href="stocks/DSGN.html">Design Therapeutics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$13.76</td>
+                        <td>$13,760.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-06-2022</td>
+                        <td><a href="stocks/DSGN.html">Design Therapeutics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$15.01</td>
+                        <td>-$15,010.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-06-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>161</td>
+                        <td>$330.15</td>
+                        <td>$53,154.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-06-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-161</td>
+                        <td>$340.20</td>
+                        <td>-$54,772.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-06-2022</td>
+                        <td><a href="stocks/DASH.html">DoorDash, Inc. - Common Stock</a></td>
+                        <td>787</td>
+                        <td>$69.93</td>
+                        <td>$55,034.91</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-06-2022</td>
+                        <td><a href="stocks/DASH.html">DoorDash, Inc. - Common Stock</a></td>
+                        <td>-787</td>
+                        <td>$73.79</td>
+                        <td>-$58,072.73</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-06-2022</td>
+                        <td><a href="stocks/TRML.html">Tourmaline Bio, Inc.  - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$35.31</td>
+                        <td>$35,313.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-06-2022</td>
+                        <td><a href="stocks/TRML.html">Tourmaline Bio, Inc.  - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$37.53</td>
+                        <td>-$37,534.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-06-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>195</td>
+                        <td>$309.30</td>
+                        <td>$60,313.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-06-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-195</td>
+                        <td>$315.00</td>
+                        <td>-$61,425.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-06-2022</td>
+                        <td><a href="stocks/MORN.html">Morningstar, Inc. - Common Stock</a></td>
+                        <td>279</td>
+                        <td>$219.83</td>
+                        <td>$61,331.82</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-06-2022</td>
+                        <td><a href="stocks/MORN.html">Morningstar, Inc. - Common Stock</a></td>
+                        <td>-279</td>
+                        <td>$225.26</td>
+                        <td>-$62,848.89</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-06-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>311</td>
+                        <td>$201.90</td>
+                        <td>$62,790.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-06-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-311</td>
+                        <td>$218.70</td>
+                        <td>-$68,015.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-06-2022</td>
+                        <td><a href="stocks/DUOL.html">Duolingo, Inc. - Class A Common Stock</a></td>
+                        <td>739</td>
+                        <td>$92.23</td>
+                        <td>$68,157.97</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-06-2022</td>
+                        <td><a href="stocks/DUOL.html">Duolingo, Inc. - Class A Common Stock</a></td>
+                        <td>-739</td>
+                        <td>$92.61</td>
+                        <td>-$68,438.79</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-06-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>331</td>
+                        <td>$206.55</td>
+                        <td>$68,368.05</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-06-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-331</td>
+                        <td>$219.15</td>
+                        <td>-$72,538.65</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-06-2022</td>
+                        <td><a href="stocks/MORN.html">Morningstar, Inc. - Common Stock</a></td>
+                        <td>320</td>
+                        <td>$226.45</td>
+                        <td>$72,464.79</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-06-2022</td>
+                        <td><a href="stocks/MORN.html">Morningstar, Inc. - Common Stock</a></td>
+                        <td>-320</td>
+                        <td>$229.52</td>
+                        <td>-$73,447.86</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-06-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>340</td>
+                        <td>$216.15</td>
+                        <td>$73,491.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-06-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-340</td>
+                        <td>$231.90</td>
+                        <td>-$78,846.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-06-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>340</td>
+                        <td>$231.90</td>
+                        <td>$78,846.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-06-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-340</td>
+                        <td>$244.50</td>
+                        <td>-$83,130.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-06-2022</td>
+                        <td><a href="stocks/ESLT.html">Elbit Systems Ltd. - Ordinary Shares</a></td>
+                        <td>411</td>
+                        <td>$202.56</td>
+                        <td>$83,251.63</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-06-2022</td>
+                        <td><a href="stocks/ESLT.html">Elbit Systems Ltd. - Ordinary Shares</a></td>
+                        <td>-411</td>
+                        <td>$204.88</td>
+                        <td>-$84,204.22</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-06-2022</td>
+                        <td><a href="stocks/ESLT.html">Elbit Systems Ltd. - Ordinary Shares</a></td>
+                        <td>411</td>
+                        <td>$204.88</td>
+                        <td>$84,204.22</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-06-2022</td>
+                        <td><a href="stocks/ESLT.html">Elbit Systems Ltd. - Ordinary Shares</a></td>
+                        <td>-411</td>
+                        <td>$212.88</td>
+                        <td>-$87,494.26</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-06-2022</td>
+                        <td><a href="stocks/ESLT.html">Elbit Systems Ltd. - Ordinary Shares</a></td>
+                        <td>411</td>
+                        <td>$212.88</td>
+                        <td>$87,494.26</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-06-2022</td>
+                        <td><a href="stocks/ESLT.html">Elbit Systems Ltd. - Ordinary Shares</a></td>
+                        <td>-411</td>
+                        <td>$223.34</td>
+                        <td>-$91,792.94</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-06-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>411</td>
+                        <td>$222.90</td>
+                        <td>$91,611.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-07-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-411</td>
+                        <td>$234.75</td>
+                        <td>-$96,482.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-07-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>405</td>
+                        <td>$238.50</td>
+                        <td>$96,592.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-07-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-405</td>
+                        <td>$243.60</td>
+                        <td>-$98,658.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-07-2022</td>
+                        <td><a href="stocks/DUOL.html">Duolingo, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$96.95</td>
+                        <td>$96,950.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-07-2022</td>
+                        <td><a href="stocks/DUOL.html">Duolingo, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$106.29</td>
+                        <td>-$106,290.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-07-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>431</td>
+                        <td>$250.50</td>
+                        <td>$107,965.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-07-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-431</td>
+                        <td>$259.35</td>
+                        <td>-$111,779.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-07-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>439</td>
+                        <td>$254.40</td>
+                        <td>$111,681.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-07-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-439</td>
+                        <td>$261.60</td>
+                        <td>-$114,842.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-07-2022</td>
+                        <td><a href="stocks/ESLT.html">Elbit Systems Ltd. - Ordinary Shares</a></td>
+                        <td>537</td>
+                        <td>$213.94</td>
+                        <td>$114,887.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-07-2022</td>
+                        <td><a href="stocks/ESLT.html">Elbit Systems Ltd. - Ordinary Shares</a></td>
+                        <td>-537</td>
+                        <td>$220.65</td>
+                        <td>-$118,490.49</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-07-2022</td>
+                        <td><a href="stocks/MORN.html">Morningstar, Inc. - Common Stock</a></td>
+                        <td>530</td>
+                        <td>$223.59</td>
+                        <td>$118,500.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-07-2022</td>
+                        <td><a href="stocks/MORN.html">Morningstar, Inc. - Common Stock</a></td>
+                        <td>-530</td>
+                        <td>$228.26</td>
+                        <td>-$120,975.43</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-07-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>499</td>
+                        <td>$242.55</td>
+                        <td>$121,032.45</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-07-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-499</td>
+                        <td>$249.75</td>
+                        <td>-$124,625.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-07-2022</td>
+                        <td><a href="stocks/SLAB.html">Silicon Laboratories, Inc. - Common Stock</a></td>
+                        <td>970</td>
+                        <td>$128.51</td>
+                        <td>$124,654.69</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-07-2022</td>
+                        <td><a href="stocks/SLAB.html">Silicon Laboratories, Inc. - Common Stock</a></td>
+                        <td>-970</td>
+                        <td>$136.92</td>
+                        <td>-$132,812.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-07-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>542</td>
+                        <td>$244.95</td>
+                        <td>$132,762.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-07-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-542</td>
+                        <td>$256.65</td>
+                        <td>-$139,104.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-07-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>542</td>
+                        <td>$256.65</td>
+                        <td>$139,104.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-07-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-542</td>
+                        <td>$271.65</td>
+                        <td>-$147,234.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-07-2022</td>
+                        <td><a href="stocks/NOVT.html">Novanta Inc. - Common Shares</a></td>
+                        <td>1000</td>
+                        <td>$136.91</td>
+                        <td>$136,910.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-07-2022</td>
+                        <td><a href="stocks/NOVT.html">Novanta Inc. - Common Shares</a></td>
+                        <td>-1000</td>
+                        <td>$150.08</td>
+                        <td>-$150,080.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-07-2022</td>
+                        <td><a href="stocks/TRML.html">Tourmaline Bio, Inc.  - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$17.41</td>
+                        <td>$17,412.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-07-2022</td>
+                        <td><a href="stocks/TRML.html">Tourmaline Bio, Inc.  - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$20.03</td>
+                        <td>-$20,033.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-07-2022</td>
+                        <td><a href="stocks/SLAB.html">Silicon Laboratories, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$138.54</td>
+                        <td>$138,539.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-07-2022</td>
+                        <td><a href="stocks/SLAB.html">Silicon Laboratories, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$149.25</td>
+                        <td>-$149,250.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-07-2022</td>
+                        <td><a href="stocks/ETSY.html">Etsy, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$95.50</td>
+                        <td>$95,500.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-07-2022</td>
+                        <td><a href="stocks/ETSY.html">Etsy, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$104.92</td>
+                        <td>-$104,920.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-07-2022</td>
+                        <td><a href="stocks/DDOG.html">Datadog, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$95.72</td>
+                        <td>$95,720.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-07-2022</td>
+                        <td><a href="stocks/DDOG.html">Datadog, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$102.01</td>
+                        <td>-$102,010.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-08-2022</td>
+                        <td><a href="stocks/DUOL.html">Duolingo, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$94.41</td>
+                        <td>$94,410.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-08-2022</td>
+                        <td><a href="stocks/DUOL.html">Duolingo, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$99.22</td>
+                        <td>-$99,220.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-08-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>688</td>
+                        <td>$282.30</td>
+                        <td>$194,222.39</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-08-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-688</td>
+                        <td>$291.15</td>
+                        <td>-$200,311.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-08-2022</td>
+                        <td><a href="stocks/NXST.html">Nexstar Media Group, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$171.19</td>
+                        <td>$171,192.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-08-2022</td>
+                        <td><a href="stocks/NXST.html">Nexstar Media Group, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$175.50</td>
+                        <td>-$175,498.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-08-2022</td>
+                        <td><a href="stocks/DUOL.html">Duolingo, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$98.68</td>
+                        <td>$98,680.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-08-2022</td>
+                        <td><a href="stocks/DUOL.html">Duolingo, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$103.07</td>
+                        <td>-$103,070.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-08-2022</td>
+                        <td><a href="stocks/DUOL.html">Duolingo, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$95.76</td>
+                        <td>$95,760.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-08-2022</td>
+                        <td><a href="stocks/DUOL.html">Duolingo, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$98.42</td>
+                        <td>-$98,420.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-08-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>734</td>
+                        <td>$288.45</td>
+                        <td>$211,722.31</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-08-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-734</td>
+                        <td>$310.80</td>
+                        <td>-$228,127.19</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-08-2022</td>
+                        <td><a href="stocks/NXST.html">Nexstar Media Group, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$178.81</td>
+                        <td>$178,808.41</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-08-2022</td>
+                        <td><a href="stocks/NXST.html">Nexstar Media Group, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$182.41</td>
+                        <td>-$182,411.67</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-08-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>751</td>
+                        <td>$308.70</td>
+                        <td>$231,833.71</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-08-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-751</td>
+                        <td>$318.60</td>
+                        <td>-$239,268.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-08-2022</td>
+                        <td><a href="stocks/MASI.html">Masimo Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$159.77</td>
+                        <td>$159,770.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-08-2022</td>
+                        <td><a href="stocks/MASI.html">Masimo Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$169.38</td>
+                        <td>-$169,380.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-08-2022</td>
+                        <td><a href="stocks/NICE.html">NICE Ltd - American Depositary Shares each representing one Ordinary Share</a></td>
+                        <td>1000</td>
+                        <td>$226.04</td>
+                        <td>$226,039.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-08-2022</td>
+                        <td><a href="stocks/NICE.html">NICE Ltd - American Depositary Shares each representing one Ordinary Share</a></td>
+                        <td>-1000</td>
+                        <td>$228.54</td>
+                        <td>-$228,539.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-08-2022</td>
+                        <td><a href="stocks/SLAB.html">Silicon Laboratories, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$140.43</td>
+                        <td>$140,429.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-08-2022</td>
+                        <td><a href="stocks/SLAB.html">Silicon Laboratories, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$144.27</td>
+                        <td>-$144,270.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-08-2022</td>
+                        <td><a href="stocks/NATH.html">Nathan's Famous, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$59.22</td>
+                        <td>$59,216.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-08-2022</td>
+                        <td><a href="stocks/NATH.html">Nathan's Famous, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$61.58</td>
+                        <td>-$61,575.26</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-08-2022</td>
+                        <td><a href="stocks/VERV.html">Verve Therapeutics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$32.73</td>
+                        <td>$32,730.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-08-2022</td>
+                        <td><a href="stocks/VERV.html">Verve Therapeutics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$36.77</td>
+                        <td>-$36,770.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-08-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>910</td>
+                        <td>$287.25</td>
+                        <td>$261,397.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-08-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-910</td>
+                        <td>$294.30</td>
+                        <td>-$267,812.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-08-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>910</td>
+                        <td>$294.30</td>
+                        <td>$267,812.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-08-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-910</td>
+                        <td>$306.00</td>
+                        <td>-$278,460.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-08-2022</td>
+                        <td><a href="stocks/SENEA.html">Seneca Foods Corp. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$54.76</td>
+                        <td>$54,760.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-08-2022</td>
+                        <td><a href="stocks/SENEA.html">Seneca Foods Corp. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$55.04</td>
+                        <td>-$55,040.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-08-2022</td>
+                        <td><a href="stocks/PZZA.html">Papa John's International, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$75.39</td>
+                        <td>$75,393.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-08-2022</td>
+                        <td><a href="stocks/PZZA.html">Papa John's International, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$77.32</td>
+                        <td>-$77,319.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-08-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$271.05</td>
+                        <td>$271,049.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-08-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$274.35</td>
+                        <td>-$274,350.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-08-2022</td>
+                        <td><a href="stocks/MORN.html">Morningstar, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$224.11</td>
+                        <td>$224,107.41</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-09-2022</td>
+                        <td><a href="stocks/MORN.html">Morningstar, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$226.35</td>
+                        <td>-$226,348.54</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-09-2022</td>
+                        <td><a href="stocks/SENEA.html">Seneca Foods Corp. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$51.83</td>
+                        <td>$51,830.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-09-2022</td>
+                        <td><a href="stocks/SENEA.html">Seneca Foods Corp. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$52.89</td>
+                        <td>-$52,890.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-09-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$248.25</td>
+                        <td>$248,250.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-09-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$261.60</td>
+                        <td>-$261,600.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-09-2022</td>
+                        <td><a href="stocks/SLAB.html">Silicon Laboratories, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$118.78</td>
+                        <td>$118,780.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-09-2022</td>
+                        <td><a href="stocks/SLAB.html">Silicon Laboratories, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$126.11</td>
+                        <td>-$126,110.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-09-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$268.35</td>
+                        <td>$268,350.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-09-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$281.10</td>
+                        <td>-$281,100.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-09-2022</td>
+                        <td><a href="stocks/NRC.html">National Research Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$34.69</td>
+                        <td>$34,690.33</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-09-2022</td>
+                        <td><a href="stocks/NRC.html">National Research Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$35.39</td>
+                        <td>-$35,388.79</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-09-2022</td>
+                        <td><a href="stocks/MASI.html">Masimo Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$146.37</td>
+                        <td>$146,370.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-09-2022</td>
+                        <td><a href="stocks/MASI.html">Masimo Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$150.67</td>
+                        <td>-$150,670.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-09-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$271.20</td>
+                        <td>$271,200.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-09-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$277.50</td>
+                        <td>-$277,500.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-09-2022</td>
+                        <td><a href="stocks/PEP.html">PepsiCo, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$153.92</td>
+                        <td>$153,917.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-09-2022</td>
+                        <td><a href="stocks/PEP.html">PepsiCo, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$154.93</td>
+                        <td>-$154,929.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-09-2022</td>
+                        <td><a href="stocks/MORN.html">Morningstar, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$219.90</td>
+                        <td>$219,900.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-09-2022</td>
+                        <td><a href="stocks/MORN.html">Morningstar, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$221.39</td>
+                        <td>-$221,394.42</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-09-2022</td>
+                        <td><a href="stocks/ESLT.html">Elbit Systems Ltd. - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$191.50</td>
+                        <td>$191,495.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-09-2022</td>
+                        <td><a href="stocks/ESLT.html">Elbit Systems Ltd. - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$196.43</td>
+                        <td>-$196,433.27</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-09-2022</td>
+                        <td><a href="stocks/ESLT.html">Elbit Systems Ltd. - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$196.43</td>
+                        <td>$196,433.27</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-09-2022</td>
+                        <td><a href="stocks/ESLT.html">Elbit Systems Ltd. - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$200.10</td>
+                        <td>-$200,104.64</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-09-2022</td>
+                        <td><a href="stocks/PZZA.html">Papa John's International, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$67.98</td>
+                        <td>$67,982.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-09-2022</td>
+                        <td><a href="stocks/PZZA.html">Papa John's International, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$68.93</td>
+                        <td>-$68,926.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-09-2022</td>
+                        <td><a href="stocks/DUOL.html">Duolingo, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$90.36</td>
+                        <td>$90,360.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-09-2022</td>
+                        <td><a href="stocks/DUOL.html">Duolingo, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$94.12</td>
+                        <td>-$94,120.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-09-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$220.05</td>
+                        <td>$220,050.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-09-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$242.85</td>
+                        <td>-$242,850.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-09-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$242.85</td>
+                        <td>$242,850.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-09-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$247.05</td>
+                        <td>-$247,050.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-09-2022</td>
+                        <td><a href="stocks/IGMS.html">IGM Biosciences, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$19.43</td>
+                        <td>$19,430.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-09-2022</td>
+                        <td><a href="stocks/IGMS.html">IGM Biosciences, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$22.74</td>
+                        <td>-$22,740.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-10-2022</td>
+                        <td><a href="stocks/MORN.html">Morningstar, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$210.30</td>
+                        <td>$210,296.66</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-10-2022</td>
+                        <td><a href="stocks/MORN.html">Morningstar, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$218.02</td>
+                        <td>-$218,022.81</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-10-2022</td>
+                        <td><a href="stocks/MORN.html">Morningstar, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$218.02</td>
+                        <td>$218,022.81</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-10-2022</td>
+                        <td><a href="stocks/MORN.html">Morningstar, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$220.77</td>
+                        <td>-$220,765.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-10-2022</td>
+                        <td><a href="stocks/ESLT.html">Elbit Systems Ltd. - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$189.53</td>
+                        <td>$189,530.67</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-10-2022</td>
+                        <td><a href="stocks/ESLT.html">Elbit Systems Ltd. - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$193.90</td>
+                        <td>-$193,904.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-10-2022</td>
+                        <td><a href="stocks/SENEA.html">Seneca Foods Corp. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$53.73</td>
+                        <td>$53,730.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-10-2022</td>
+                        <td><a href="stocks/SENEA.html">Seneca Foods Corp. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$54.45</td>
+                        <td>-$54,450.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-10-2022</td>
+                        <td><a href="stocks/PEP.html">PepsiCo, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$150.87</td>
+                        <td>$150,865.22</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-10-2022</td>
+                        <td><a href="stocks/PEP.html">PepsiCo, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$157.17</td>
+                        <td>-$157,174.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-10-2022</td>
+                        <td><a href="stocks/SLAB.html">Silicon Laboratories, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$118.22</td>
+                        <td>$118,220.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-10-2022</td>
+                        <td><a href="stocks/SLAB.html">Silicon Laboratories, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$124.33</td>
+                        <td>-$124,330.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-10-2022</td>
+                        <td><a href="stocks/FRD.html">Friedman Industries Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$7.42</td>
+                        <td>$7,417.33</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-10-2022</td>
+                        <td><a href="stocks/FRD.html">Friedman Industries Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$7.68</td>
+                        <td>-$7,681.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-10-2022</td>
+                        <td><a href="stocks/NXST.html">Nexstar Media Group, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$160.22</td>
+                        <td>$160,223.19</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-10-2022</td>
+                        <td><a href="stocks/NXST.html">Nexstar Media Group, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$167.01</td>
+                        <td>-$167,014.27</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-10-2022</td>
+                        <td><a href="stocks/AMAT.html">Applied Materials, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$73.40</td>
+                        <td>$73,403.65</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-10-2022</td>
+                        <td><a href="stocks/AMAT.html">Applied Materials, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$75.38</td>
+                        <td>-$75,384.37</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-10-2022</td>
+                        <td><a href="stocks/DDOG.html">Datadog, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$79.00</td>
+                        <td>$79,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-10-2022</td>
+                        <td><a href="stocks/DDOG.html">Datadog, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$82.34</td>
+                        <td>-$82,340.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-10-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$211.65</td>
+                        <td>$211,649.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-10-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$218.85</td>
+                        <td>-$218,850.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-10-2022</td>
+                        <td><a href="stocks/NOVT.html">Novanta Inc. - Common Shares</a></td>
+                        <td>1000</td>
+                        <td>$127.87</td>
+                        <td>$127,870.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-10-2022</td>
+                        <td><a href="stocks/NOVT.html">Novanta Inc. - Common Shares</a></td>
+                        <td>-1000</td>
+                        <td>$136.10</td>
+                        <td>-$136,100.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-10-2022</td>
+                        <td><a href="stocks/ESLT.html">Elbit Systems Ltd. - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$198.09</td>
+                        <td>$198,092.86</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-10-2022</td>
+                        <td><a href="stocks/ESLT.html">Elbit Systems Ltd. - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$200.90</td>
+                        <td>-$200,904.63</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-10-2022</td>
+                        <td><a href="stocks/MORN.html">Morningstar, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$216.89</td>
+                        <td>$216,894.56</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-10-2022</td>
+                        <td><a href="stocks/MORN.html">Morningstar, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$222.77</td>
+                        <td>-$222,772.81</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-10-2022</td>
+                        <td><a href="stocks/MORN.html">Morningstar, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$222.77</td>
+                        <td>$222,772.81</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-10-2022</td>
+                        <td><a href="stocks/MORN.html">Morningstar, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$230.67</td>
+                        <td>-$230,669.56</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-10-2022</td>
+                        <td><a href="stocks/NXST.html">Nexstar Media Group, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$154.70</td>
+                        <td>$154,696.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-11-2022</td>
+                        <td><a href="stocks/NXST.html">Nexstar Media Group, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$159.27</td>
+                        <td>-$159,265.91</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-11-2022</td>
+                        <td><a href="stocks/NATH.html">Nathan's Famous, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$62.92</td>
+                        <td>$62,923.21</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-11-2022</td>
+                        <td><a href="stocks/NATH.html">Nathan's Famous, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$64.59</td>
+                        <td>-$64,589.42</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-11-2022</td>
+                        <td><a href="stocks/ETSY.html">Etsy, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$87.54</td>
+                        <td>$87,540.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-11-2022</td>
+                        <td><a href="stocks/ETSY.html">Etsy, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$100.03</td>
+                        <td>-$100,030.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-11-2022</td>
+                        <td><a href="stocks/SLAB.html">Silicon Laboratories, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$112.65</td>
+                        <td>$112,650.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-11-2022</td>
+                        <td><a href="stocks/SLAB.html">Silicon Laboratories, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$120.38</td>
+                        <td>-$120,380.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-11-2022</td>
+                        <td><a href="stocks/NXST.html">Nexstar Media Group, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$139.98</td>
+                        <td>$139,976.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-11-2022</td>
+                        <td><a href="stocks/NXST.html">Nexstar Media Group, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$151.22</td>
+                        <td>-$151,219.53</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-11-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$172.05</td>
+                        <td>$172,050.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-11-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$223.50</td>
+                        <td>-$223,500.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-11-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$223.50</td>
+                        <td>$223,500.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-11-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$262.65</td>
+                        <td>-$262,649.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-11-2022</td>
+                        <td><a href="stocks/MASI.html">Masimo Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$121.58</td>
+                        <td>$121,580.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-11-2022</td>
+                        <td><a href="stocks/MASI.html">Masimo Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$122.13</td>
+                        <td>-$122,130.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-11-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$272.25</td>
+                        <td>$272,250.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-11-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$292.95</td>
+                        <td>-$292,950.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-11-2022</td>
+                        <td><a href="stocks/MASI.html">Masimo Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$126.58</td>
+                        <td>$126,580.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-11-2022</td>
+                        <td><a href="stocks/MASI.html">Masimo Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$132.45</td>
+                        <td>-$132,450.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-11-2022</td>
+                        <td><a href="stocks/MASI.html">Masimo Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$132.45</td>
+                        <td>$132,450.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-11-2022</td>
+                        <td><a href="stocks/MASI.html">Masimo Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$137.02</td>
+                        <td>-$137,020.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-11-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$278.25</td>
+                        <td>$278,250.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-11-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$285.75</td>
+                        <td>-$285,750.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-11-2022</td>
+                        <td><a href="stocks/ETSY.html">Etsy, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$114.94</td>
+                        <td>$114,940.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-11-2022</td>
+                        <td><a href="stocks/ETSY.html">Etsy, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$119.29</td>
+                        <td>-$119,290.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-11-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$269.10</td>
+                        <td>$269,100.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-11-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$299.10</td>
+                        <td>-$299,100.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-11-2022</td>
+                        <td><a href="stocks/NXST.html">Nexstar Media Group, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$158.60</td>
+                        <td>$158,601.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-11-2022</td>
+                        <td><a href="stocks/NXST.html">Nexstar Media Group, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$170.39</td>
+                        <td>-$170,390.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-11-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$293.25</td>
+                        <td>$293,250.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-11-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$316.20</td>
+                        <td>-$316,200.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-11-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$316.20</td>
+                        <td>$316,200.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-12-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$331.95</td>
+                        <td>-$331,950.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-12-2022</td>
+                        <td><a href="stocks/NOVT.html">Novanta Inc. - Common Shares</a></td>
+                        <td>1000</td>
+                        <td>$157.05</td>
+                        <td>$157,050.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-12-2022</td>
+                        <td><a href="stocks/NOVT.html">Novanta Inc. - Common Shares</a></td>
+                        <td>-1000</td>
+                        <td>$159.29</td>
+                        <td>-$159,289.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-12-2022</td>
+                        <td><a href="stocks/VLGEA.html">Village Super Market, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$20.40</td>
+                        <td>$20,400.26</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-12-2022</td>
+                        <td><a href="stocks/VLGEA.html">Village Super Market, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$21.56</td>
+                        <td>-$21,564.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-12-2022</td>
+                        <td><a href="stocks/MORN.html">Morningstar, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$231.50</td>
+                        <td>$231,496.64</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-12-2022</td>
+                        <td><a href="stocks/MORN.html">Morningstar, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$234.72</td>
+                        <td>-$234,716.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-12-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$322.05</td>
+                        <td>$322,049.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-12-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$339.45</td>
+                        <td>-$339,450.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-12-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$339.45</td>
+                        <td>$339,450.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-12-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$354.45</td>
+                        <td>-$354,450.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-12-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$359.40</td>
+                        <td>$359,399.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-12-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$374.25</td>
+                        <td>-$374,250.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-12-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$374.25</td>
+                        <td>$374,250.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-12-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$379.20</td>
+                        <td>-$379,200.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-12-2022</td>
+                        <td><a href="stocks/TXG.html">10x Genomics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$34.96</td>
+                        <td>$34,960.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-12-2022</td>
+                        <td><a href="stocks/TXG.html">10x Genomics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$35.78</td>
+                        <td>-$35,780.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-12-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$360.90</td>
+                        <td>$360,899.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-12-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$378.75</td>
+                        <td>-$378,750.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-12-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$370.35</td>
+                        <td>$370,350.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-12-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$386.55</td>
+                        <td>-$386,549.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-12-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$386.55</td>
+                        <td>$386,549.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-12-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$396.15</td>
+                        <td>-$396,149.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-12-2022</td>
+                        <td><a href="stocks/MASI.html">Masimo Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$146.83</td>
+                        <td>$146,830.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-12-2022</td>
+                        <td><a href="stocks/MASI.html">Masimo Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$149.77</td>
+                        <td>-$149,770.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-12-2022</td>
+                        <td><a href="stocks/NXST.html">Nexstar Media Group, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$157.73</td>
+                        <td>$157,729.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-12-2022</td>
+                        <td><a href="stocks/NXST.html">Nexstar Media Group, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$159.81</td>
+                        <td>-$159,809.62</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-12-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$363.15</td>
+                        <td>$363,149.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-12-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$367.95</td>
+                        <td>-$367,950.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-12-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$367.95</td>
+                        <td>$367,950.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-12-2022</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$389.55</td>
+                        <td>-$389,549.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-12-2022</td>
+                        <td><a href="stocks/ANGI.html">Angi Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$22.10</td>
+                        <td>$22,100.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-12-2022</td>
+                        <td><a href="stocks/ANGI.html">Angi Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$23.50</td>
+                        <td>-$23,500.00</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</div>
+</body>
+</html>
