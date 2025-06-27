@@ -1,0 +1,2763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nasdaq Trade System - de Jonge Investments</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+            crossorigin="anonymous"></script>
+    <meta name="theme-color" content="#712cf9">
+</head>
+
+<body>
+<header class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow" data-bs-theme="dark"><a
+        class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="#">Nasdaq Trade system</a>
+</header>
+
+
+<div class="container-fluid">
+    <div class="row">
+        
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <a href="GameResult.html">Back</a>
+            <h1>de Jonge Investments</h1>
+            <img src="de Jonge Investments.png" class="img-fluid">
+            <div class="table-responsive small">
+                <table class="table table-striped table-sm">
+                    <thead>
+                    <tr>
+                        <th scope="col">ExecutedOn</th>
+                        <th scope="col">Company</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">AtPrice</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr scope="row">
+                        <td>03-01-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>1</td>
+                        <td>$849.67</td>
+                        <td>$849.67</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-01-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$874.34</td>
+                        <td>-$874.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-01-2022</td>
+                        <td><a href="stocks/BZ.html">KANZHUN LIMITED - American Depository Shares</a></td>
+                        <td>30</td>
+                        <td>$34.00</td>
+                        <td>$1,019.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-01-2022</td>
+                        <td><a href="stocks/BZ.html">KANZHUN LIMITED - American Depository Shares</a></td>
+                        <td>-30</td>
+                        <td>$35.39</td>
+                        <td>-$1,061.73</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-01-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>1</td>
+                        <td>$829.16</td>
+                        <td>$829.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-01-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$860.06</td>
+                        <td>-$860.06</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-01-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>1</td>
+                        <td>$860.06</td>
+                        <td>$860.06</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-01-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$895.45</td>
+                        <td>-$895.45</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-01-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>1</td>
+                        <td>$1,053.31</td>
+                        <td>$1,053.31</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-01-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$1,166.07</td>
+                        <td>-$1,166.07</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-01-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>1</td>
+                        <td>$1,166.07</td>
+                        <td>$1,166.07</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-01-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$1,210.91</td>
+                        <td>-$1,210.91</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-01-2022</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$355.75</td>
+                        <td>$1,067.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-01-2022</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$401.75</td>
+                        <td>-$1,205.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-01-2022</td>
+                        <td><a href="stocks/VALN.html">Valneva SE - American Depositary Shares</a></td>
+                        <td>43</td>
+                        <td>$32.77</td>
+                        <td>$1,409.11</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-01-2022</td>
+                        <td><a href="stocks/VALN.html">Valneva SE - American Depositary Shares</a></td>
+                        <td>-43</td>
+                        <td>$47.52</td>
+                        <td>-$2,043.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-01-2022</td>
+                        <td><a href="stocks/MODV.html">ModivCare Inc. - Common Stock</a></td>
+                        <td>18</td>
+                        <td>$111.33</td>
+                        <td>$2,003.94</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-01-2022</td>
+                        <td><a href="stocks/MODV.html">ModivCare Inc. - Common Stock</a></td>
+                        <td>-18</td>
+                        <td>$115.12</td>
+                        <td>-$2,072.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-01-2022</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$366.50</td>
+                        <td>$1,832.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-01-2022</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$377.50</td>
+                        <td>-$1,887.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-01-2022</td>
+                        <td><a href="stocks/NFLX.html">Netflix, Inc. - Common Stock</a></td>
+                        <td>6</td>
+                        <td>$359.70</td>
+                        <td>$2,158.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-01-2022</td>
+                        <td><a href="stocks/NFLX.html">Netflix, Inc. - Common Stock</a></td>
+                        <td>-6</td>
+                        <td>$386.70</td>
+                        <td>-$2,320.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-01-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$992.50</td>
+                        <td>$1,985.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-01-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$1,048.63</td>
+                        <td>-$2,097.26</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-01-2022</td>
+                        <td><a href="stocks/NFLX.html">Netflix, Inc. - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$427.14</td>
+                        <td>$2,135.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-02-2022</td>
+                        <td><a href="stocks/NFLX.html">Netflix, Inc. - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$457.13</td>
+                        <td>-$2,285.65</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-02-2022</td>
+                        <td><a href="stocks/GOOGL.html">Alphabet Inc. - Class A Common Stock</a></td>
+                        <td>19</td>
+                        <td>$136.99</td>
+                        <td>$2,602.79</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-02-2022</td>
+                        <td><a href="stocks/GOOGL.html">Alphabet Inc. - Class A Common Stock</a></td>
+                        <td>-19</td>
+                        <td>$147.30</td>
+                        <td>-$2,798.62</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-02-2022</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>4</td>
+                        <td>$600.24</td>
+                        <td>$2,400.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-02-2022</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$610.45</td>
+                        <td>-$2,441.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-02-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$999.74</td>
+                        <td>$1,999.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-02-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$1,035.33</td>
+                        <td>-$2,070.66</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-02-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>1</td>
+                        <td>$2,456.20</td>
+                        <td>$2,456.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-02-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$2,513.90</td>
+                        <td>-$2,513.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-02-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>1</td>
+                        <td>$2,513.90</td>
+                        <td>$2,513.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-02-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$2,598.57</td>
+                        <td>-$2,598.57</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-02-2022</td>
+                        <td><a href="stocks/CYBR.html">CyberArk Software Ltd. - Ordinary Shares</a></td>
+                        <td>21</td>
+                        <td>$143.43</td>
+                        <td>$3,012.03</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-02-2022</td>
+                        <td><a href="stocks/CYBR.html">CyberArk Software Ltd. - Ordinary Shares</a></td>
+                        <td>-21</td>
+                        <td>$155.58</td>
+                        <td>-$3,267.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-02-2022</td>
+                        <td><a href="stocks/MKTX.html">MarketAxess Holdings, Inc. - Common Stock</a></td>
+                        <td>9</td>
+                        <td>$355.83</td>
+                        <td>$3,202.46</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-02-2022</td>
+                        <td><a href="stocks/MKTX.html">MarketAxess Holdings, Inc. - Common Stock</a></td>
+                        <td>-9</td>
+                        <td>$363.69</td>
+                        <td>-$3,273.21</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-02-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>1</td>
+                        <td>$2,518.13</td>
+                        <td>$2,518.13</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-02-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$2,606.66</td>
+                        <td>-$2,606.66</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-02-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>1</td>
+                        <td>$2,606.66</td>
+                        <td>$2,606.66</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-02-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$2,674.02</td>
+                        <td>-$2,674.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-02-2022</td>
+                        <td><a href="stocks/ZIMV.html">ZimVie Inc. - Common Stock</a></td>
+                        <td>126</td>
+                        <td>$28.00</td>
+                        <td>$3,528.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-02-2022</td>
+                        <td><a href="stocks/ZIMV.html">ZimVie Inc. - Common Stock</a></td>
+                        <td>-126</td>
+                        <td>$45.75</td>
+                        <td>-$5,764.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-02-2022</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>11</td>
+                        <td>$523.16</td>
+                        <td>$5,754.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-02-2022</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-11</td>
+                        <td>$537.95</td>
+                        <td>-$5,917.45</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-02-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>6</td>
+                        <td>$887.86</td>
+                        <td>$5,327.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-02-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-6</td>
+                        <td>$920.57</td>
+                        <td>-$5,523.42</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-02-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>6</td>
+                        <td>$920.57</td>
+                        <td>$5,523.42</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-02-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-6</td>
+                        <td>$1,033.59</td>
+                        <td>-$6,201.54</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-02-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>6</td>
+                        <td>$1,033.59</td>
+                        <td>$6,201.54</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-02-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-6</td>
+                        <td>$1,111.39</td>
+                        <td>-$6,668.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-02-2022</td>
+                        <td><a href="stocks/SBAC.html">SBA Communications Corporation - Class A Common Stock</a></td>
+                        <td>25</td>
+                        <td>$288.02</td>
+                        <td>$7,200.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-03-2022</td>
+                        <td><a href="stocks/SBAC.html">SBA Communications Corporation - Class A Common Stock</a></td>
+                        <td>-25</td>
+                        <td>$300.65</td>
+                        <td>-$7,516.27</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-03-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$2,049.59</td>
+                        <td>$6,148.77</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-03-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$2,140.12</td>
+                        <td>-$6,420.37</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-03-2022</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>59</td>
+                        <td>$133.24</td>
+                        <td>$7,860.91</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-03-2022</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>-59</td>
+                        <td>$140.68</td>
+                        <td>-$8,300.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-03-2022</td>
+                        <td><a href="stocks/MKTX.html">MarketAxess Holdings, Inc. - Common Stock</a></td>
+                        <td>23</td>
+                        <td>$347.03</td>
+                        <td>$7,981.58</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-03-2022</td>
+                        <td><a href="stocks/MKTX.html">MarketAxess Holdings, Inc. - Common Stock</a></td>
+                        <td>-23</td>
+                        <td>$354.39</td>
+                        <td>-$8,150.87</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-03-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$1,797.51</td>
+                        <td>$7,190.03</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-03-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$1,878.99</td>
+                        <td>-$7,515.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-03-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$1,878.99</td>
+                        <td>$7,515.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-03-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$2,013.46</td>
+                        <td>-$8,053.83</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-03-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>13</td>
+                        <td>$683.89</td>
+                        <td>$8,890.51</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-03-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-13</td>
+                        <td>$699.52</td>
+                        <td>-$9,093.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-03-2022</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>49</td>
+                        <td>$191.26</td>
+                        <td>$9,371.57</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-03-2022</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>-49</td>
+                        <td>$197.62</td>
+                        <td>-$9,683.49</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-03-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$1,978.32</td>
+                        <td>$7,913.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-03-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$2,057.68</td>
+                        <td>-$8,230.73</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-03-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>10</td>
+                        <td>$952.34</td>
+                        <td>$9,523.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-03-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-10</td>
+                        <td>$1,075.97</td>
+                        <td>-$10,759.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-03-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>10</td>
+                        <td>$1,075.97</td>
+                        <td>$10,759.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-03-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-10</td>
+                        <td>$1,149.09</td>
+                        <td>-$11,490.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-03-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>10</td>
+                        <td>$1,149.09</td>
+                        <td>$11,490.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-03-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-10</td>
+                        <td>$1,185.53</td>
+                        <td>-$11,855.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-03-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>10</td>
+                        <td>$1,153.84</td>
+                        <td>$11,538.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-03-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-10</td>
+                        <td>$1,215.07</td>
+                        <td>-$12,150.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-03-2022</td>
+                        <td><a href="stocks/CYBR.html">CyberArk Software Ltd. - Ordinary Shares</a></td>
+                        <td>78</td>
+                        <td>$167.85</td>
+                        <td>$13,092.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-03-2022</td>
+                        <td><a href="stocks/CYBR.html">CyberArk Software Ltd. - Ordinary Shares</a></td>
+                        <td>-78</td>
+                        <td>$170.00</td>
+                        <td>-$13,260.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-03-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>6</td>
+                        <td>$2,136.39</td>
+                        <td>$12,818.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-03-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-6</td>
+                        <td>$2,237.53</td>
+                        <td>-$13,425.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-03-2022</td>
+                        <td><a href="stocks/WGS.html">GeneDx Holdings Corp. - Class A Common Stock</a></td>
+                        <td>152</td>
+                        <td>$91.08</td>
+                        <td>$13,844.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-03-2022</td>
+                        <td><a href="stocks/WGS.html">GeneDx Holdings Corp. - Class A Common Stock</a></td>
+                        <td>-152</td>
+                        <td>$98.34</td>
+                        <td>-$14,947.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-03-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>6</td>
+                        <td>$2,252.20</td>
+                        <td>$13,513.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-03-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-6</td>
+                        <td>$2,346.27</td>
+                        <td>-$14,077.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-03-2022</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>50</td>
+                        <td>$307.27</td>
+                        <td>$15,363.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-03-2022</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-50</td>
+                        <td>$313.48</td>
+                        <td>-$15,674.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-03-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>6</td>
+                        <td>$2,302.81</td>
+                        <td>$13,816.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-03-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-6</td>
+                        <td>$2,323.05</td>
+                        <td>-$13,938.31</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-03-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>13</td>
+                        <td>$1,189.48</td>
+                        <td>$15,463.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-04-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-13</td>
+                        <td>$1,224.13</td>
+                        <td>-$15,913.69</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-04-2022</td>
+                        <td><a href="stocks/SBAC.html">SBA Communications Corporation - Class A Common Stock</a></td>
+                        <td>48</td>
+                        <td>$337.83</td>
+                        <td>$16,216.07</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-04-2022</td>
+                        <td><a href="stocks/SBAC.html">SBA Communications Corporation - Class A Common Stock</a></td>
+                        <td>-48</td>
+                        <td>$343.06</td>
+                        <td>-$16,466.79</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-04-2022</td>
+                        <td><a href="stocks/SBAC.html">SBA Communications Corporation - Class A Common Stock</a></td>
+                        <td>48</td>
+                        <td>$343.06</td>
+                        <td>$16,466.79</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-04-2022</td>
+                        <td><a href="stocks/SBAC.html">SBA Communications Corporation - Class A Common Stock</a></td>
+                        <td>-48</td>
+                        <td>$352.12</td>
+                        <td>-$16,901.56</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-04-2022</td>
+                        <td><a href="stocks/ILMN.html">Illumina, Inc. - Common Stock</a></td>
+                        <td>49</td>
+                        <td>$348.75</td>
+                        <td>$17,088.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-04-2022</td>
+                        <td><a href="stocks/ILMN.html">Illumina, Inc. - Common Stock</a></td>
+                        <td>-49</td>
+                        <td>$357.98</td>
+                        <td>-$17,540.86</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-04-2022</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>32</td>
+                        <td>$537.24</td>
+                        <td>$17,191.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-04-2022</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-32</td>
+                        <td>$561.48</td>
+                        <td>-$17,967.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-04-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>8</td>
+                        <td>$2,145.75</td>
+                        <td>$17,166.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-04-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-8</td>
+                        <td>$2,157.79</td>
+                        <td>-$17,262.31</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-04-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>8</td>
+                        <td>$2,157.79</td>
+                        <td>$17,262.31</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-04-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-8</td>
+                        <td>$2,235.67</td>
+                        <td>-$17,885.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-04-2022</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>33</td>
+                        <td>$575.10</td>
+                        <td>$18,978.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-04-2022</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-33</td>
+                        <td>$585.93</td>
+                        <td>-$19,335.69</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-04-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>18</td>
+                        <td>$1,070.04</td>
+                        <td>$19,260.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-04-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-18</td>
+                        <td>$1,130.35</td>
+                        <td>-$20,346.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-04-2022</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>75</td>
+                        <td>$271.11</td>
+                        <td>$20,333.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-04-2022</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>-75</td>
+                        <td>$303.48</td>
+                        <td>-$22,761.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-04-2022</td>
+                        <td><a href="stocks/LSTR.html">Landstar System, Inc. - Common Stock</a></td>
+                        <td>162</td>
+                        <td>$141.12</td>
+                        <td>$22,860.82</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-04-2022</td>
+                        <td><a href="stocks/LSTR.html">Landstar System, Inc. - Common Stock</a></td>
+                        <td>-162</td>
+                        <td>$146.43</td>
+                        <td>-$23,721.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-04-2022</td>
+                        <td><a href="stocks/PCVX.html">Vaxcyte, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$23.20</td>
+                        <td>$23,200.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-04-2022</td>
+                        <td><a href="stocks/PCVX.html">Vaxcyte, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$25.00</td>
+                        <td>-$25,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-04-2022</td>
+                        <td><a href="stocks/PI.html">Impinj, Inc. - Common Stock</a></td>
+                        <td>518</td>
+                        <td>$49.37</td>
+                        <td>$25,573.66</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-04-2022</td>
+                        <td><a href="stocks/PI.html">Impinj, Inc. - Common Stock</a></td>
+                        <td>-518</td>
+                        <td>$50.51</td>
+                        <td>-$26,164.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-04-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>12</td>
+                        <td>$2,136.60</td>
+                        <td>$25,639.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-04-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-12</td>
+                        <td>$2,234.52</td>
+                        <td>-$26,814.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-04-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>12</td>
+                        <td>$2,234.52</td>
+                        <td>$26,814.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-04-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-12</td>
+                        <td>$2,292.73</td>
+                        <td>-$27,512.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-04-2022</td>
+                        <td><a href="stocks/VRTX.html">Vertex Pharmaceuticals Incorporated - Common Stock</a></td>
+                        <td>104</td>
+                        <td>$268.64</td>
+                        <td>$27,938.56</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-04-2022</td>
+                        <td><a href="stocks/VRTX.html">Vertex Pharmaceuticals Incorporated - Common Stock</a></td>
+                        <td>-104</td>
+                        <td>$273.22</td>
+                        <td>-$28,414.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-05-2022</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>55</td>
+                        <td>$517.56</td>
+                        <td>$28,465.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-05-2022</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-55</td>
+                        <td>$621.88</td>
+                        <td>-$34,203.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-05-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>52</td>
+                        <td>$649.78</td>
+                        <td>$33,788.49</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-05-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-52</td>
+                        <td>$677.63</td>
+                        <td>-$35,236.53</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-05-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>17</td>
+                        <td>$2,080.58</td>
+                        <td>$35,369.91</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-05-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-17</td>
+                        <td>$2,148.42</td>
+                        <td>-$36,523.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-05-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>17</td>
+                        <td>$2,148.42</td>
+                        <td>$36,523.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-05-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-17</td>
+                        <td>$2,170.50</td>
+                        <td>-$36,898.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-05-2022</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>138</td>
+                        <td>$269.58</td>
+                        <td>$37,202.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-05-2022</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-138</td>
+                        <td>$299.41</td>
+                        <td>-$41,318.58</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-05-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>20</td>
+                        <td>$2,022.86</td>
+                        <td>$40,457.27</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-05-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-20</td>
+                        <td>$2,049.74</td>
+                        <td>-$40,994.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-05-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>61</td>
+                        <td>$679.68</td>
+                        <td>$41,460.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-05-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-61</td>
+                        <td>$722.93</td>
+                        <td>-$44,098.73</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-05-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>61</td>
+                        <td>$722.93</td>
+                        <td>$44,098.73</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-05-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-61</td>
+                        <td>$794.96</td>
+                        <td>-$48,492.56</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-05-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>24</td>
+                        <td>$2,023.88</td>
+                        <td>$48,573.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-05-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-24</td>
+                        <td>$2,123.38</td>
+                        <td>-$50,961.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-05-2022</td>
+                        <td><a href="stocks/AGYS.html">Agilysys, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$35.94</td>
+                        <td>$35,940.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-05-2022</td>
+                        <td><a href="stocks/AGYS.html">Agilysys, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$39.60</td>
+                        <td>-$39,600.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-05-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>27</td>
+                        <td>$2,028.21</td>
+                        <td>$54,761.54</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-05-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-27</td>
+                        <td>$2,080.65</td>
+                        <td>-$56,177.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-05-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>27</td>
+                        <td>$2,080.65</td>
+                        <td>$56,177.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-05-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-27</td>
+                        <td>$2,093.02</td>
+                        <td>-$56,511.45</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-05-2022</td>
+                        <td><a href="stocks/CRMT.html">America's Car-Mart, Inc. - Common Stock</a></td>
+                        <td>742</td>
+                        <td>$76.46</td>
+                        <td>$56,733.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-05-2022</td>
+                        <td><a href="stocks/CRMT.html">America's Car-Mart, Inc. - Common Stock</a></td>
+                        <td>-742</td>
+                        <td>$99.98</td>
+                        <td>-$74,185.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-05-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>36</td>
+                        <td>$2,027.89</td>
+                        <td>$73,004.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-05-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-36</td>
+                        <td>$2,124.00</td>
+                        <td>-$76,463.93</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-05-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>36</td>
+                        <td>$2,124.00</td>
+                        <td>$76,463.93</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-05-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-36</td>
+                        <td>$2,197.48</td>
+                        <td>-$79,109.45</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-05-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>36</td>
+                        <td>$2,197.48</td>
+                        <td>$79,109.45</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-05-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-36</td>
+                        <td>$2,241.47</td>
+                        <td>-$80,693.06</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-05-2022</td>
+                        <td><a href="stocks/SPSC.html">SPS Commerce, Inc. - Common Stock</a></td>
+                        <td>765</td>
+                        <td>$107.04</td>
+                        <td>$81,885.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-06-2022</td>
+                        <td><a href="stocks/SPSC.html">SPS Commerce, Inc. - Common Stock</a></td>
+                        <td>-765</td>
+                        <td>$110.37</td>
+                        <td>-$84,433.05</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-06-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>38</td>
+                        <td>$2,214.36</td>
+                        <td>$84,145.69</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-06-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-38</td>
+                        <td>$2,346.70</td>
+                        <td>-$89,174.73</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-06-2022</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>740</td>
+                        <td>$120.75</td>
+                        <td>$89,355.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-06-2022</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-740</td>
+                        <td>$128.50</td>
+                        <td>-$95,090.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-06-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>118</td>
+                        <td>$803.99</td>
+                        <td>$94,870.82</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-06-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-118</td>
+                        <td>$824.68</td>
+                        <td>-$97,312.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-06-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>42</td>
+                        <td>$2,301.57</td>
+                        <td>$96,665.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-06-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-42</td>
+                        <td>$2,320.43</td>
+                        <td>-$97,458.08</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-06-2022</td>
+                        <td><a href="stocks/NXPI.html">NXP Semiconductors N.V. - Common Stock</a></td>
+                        <td>589</td>
+                        <td>$167.11</td>
+                        <td>$98,430.46</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-06-2022</td>
+                        <td><a href="stocks/NXPI.html">NXP Semiconductors N.V. - Common Stock</a></td>
+                        <td>-589</td>
+                        <td>$173.86</td>
+                        <td>-$102,405.05</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-06-2022</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>310</td>
+                        <td>$330.30</td>
+                        <td>$102,393.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-06-2022</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-310</td>
+                        <td>$338.22</td>
+                        <td>-$104,848.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-06-2022</td>
+                        <td><a href="stocks/CHRW.html">C.H. Robinson Worldwide, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$93.44</td>
+                        <td>$93,442.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-06-2022</td>
+                        <td><a href="stocks/CHRW.html">C.H. Robinson Worldwide, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$99.06</td>
+                        <td>-$99,058.62</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-06-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>179</td>
+                        <td>$616.40</td>
+                        <td>$110,335.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-06-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-179</td>
+                        <td>$672.69</td>
+                        <td>-$120,411.51</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-06-2022</td>
+                        <td><a href="stocks/RIGL.html">Rigel Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$8.10</td>
+                        <td>$8,100.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-06-2022</td>
+                        <td><a href="stocks/RIGL.html">Rigel Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$9.80</td>
+                        <td>-$9,800.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-06-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>66</td>
+                        <td>$1,826.27</td>
+                        <td>$120,534.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-06-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-66</td>
+                        <td>$1,886.25</td>
+                        <td>-$124,492.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-06-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>192</td>
+                        <td>$656.70</td>
+                        <td>$126,086.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-06-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-192</td>
+                        <td>$677.40</td>
+                        <td>-$130,060.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-06-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>192</td>
+                        <td>$677.40</td>
+                        <td>$130,060.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-06-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-192</td>
+                        <td>$698.64</td>
+                        <td>-$134,138.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-06-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>73</td>
+                        <td>$1,815.21</td>
+                        <td>$132,510.63</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-06-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-73</td>
+                        <td>$1,910.17</td>
+                        <td>-$139,442.11</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-06-2022</td>
+                        <td><a href="stocks/HTHT.html">H World Group Limited - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$32.98</td>
+                        <td>$32,984.22</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-06-2022</td>
+                        <td><a href="stocks/HTHT.html">H World Group Limited - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$35.37</td>
+                        <td>-$35,372.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-06-2022</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>876</td>
+                        <td>$163.75</td>
+                        <td>$143,445.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-06-2022</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-876</td>
+                        <td>$189.50</td>
+                        <td>-$166,002.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-06-2022</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$63.00</td>
+                        <td>$63,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-06-2022</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$68.60</td>
+                        <td>-$68,600.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-06-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>269</td>
+                        <td>$636.87</td>
+                        <td>$171,318.03</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-07-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-269</td>
+                        <td>$659.95</td>
+                        <td>-$177,526.55</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-07-2022</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>472</td>
+                        <td>$376.49</td>
+                        <td>$177,703.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-07-2022</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-472</td>
+                        <td>$382.83</td>
+                        <td>-$180,695.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-07-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>104</td>
+                        <td>$1,731.92</td>
+                        <td>$180,120.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-07-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-104</td>
+                        <td>$1,766.61</td>
+                        <td>-$183,726.97</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-07-2022</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$70.80</td>
+                        <td>$70,800.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-07-2022</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$81.00</td>
+                        <td>-$81,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-07-2022</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$185.00</td>
+                        <td>$185,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-07-2022</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$216.50</td>
+                        <td>-$216,500.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-07-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>535</td>
+                        <td>$422.29</td>
+                        <td>$225,925.29</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-07-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-535</td>
+                        <td>$434.46</td>
+                        <td>-$232,435.41</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-07-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>535</td>
+                        <td>$434.46</td>
+                        <td>$232,435.41</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-07-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-535</td>
+                        <td>$444.07</td>
+                        <td>-$237,577.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-07-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>362</td>
+                        <td>$655.69</td>
+                        <td>$237,359.78</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-07-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-362</td>
+                        <td>$689.99</td>
+                        <td>-$249,776.38</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-07-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>145</td>
+                        <td>$1,719.99</td>
+                        <td>$249,397.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-07-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-145</td>
+                        <td>$1,814.96</td>
+                        <td>-$263,168.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-07-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>364</td>
+                        <td>$724.75</td>
+                        <td>$263,809.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-07-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-364</td>
+                        <td>$779.68</td>
+                        <td>-$283,803.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-07-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>568</td>
+                        <td>$499.98</td>
+                        <td>$283,986.31</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-07-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-568</td>
+                        <td>$527.04</td>
+                        <td>-$299,360.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-07-2022</td>
+                        <td><a href="stocks/VICR.html">Vicor Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$55.82</td>
+                        <td>$55,820.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-07-2022</td>
+                        <td><a href="stocks/VICR.html">Vicor Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$65.02</td>
+                        <td>-$65,020.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-07-2022</td>
+                        <td><a href="stocks/DHIL.html">Diamond Hill Investment Group, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$163.80</td>
+                        <td>$163,797.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-07-2022</td>
+                        <td><a href="stocks/DHIL.html">Diamond Hill Investment Group, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$169.82</td>
+                        <td>-$169,820.33</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-07-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>177</td>
+                        <td>$1,776.38</td>
+                        <td>$314,419.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-07-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-177</td>
+                        <td>$1,857.27</td>
+                        <td>-$328,737.55</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-07-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>177</td>
+                        <td>$1,857.27</td>
+                        <td>$328,737.55</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-07-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-177</td>
+                        <td>$1,892.24</td>
+                        <td>-$334,926.82</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-07-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>177</td>
+                        <td>$1,892.24</td>
+                        <td>$334,926.82</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-07-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-177</td>
+                        <td>$1,914.76</td>
+                        <td>-$338,911.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-08-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>179</td>
+                        <td>$1,886.05</td>
+                        <td>$337,602.87</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-08-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-179</td>
+                        <td>$1,935.14</td>
+                        <td>-$346,390.57</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-08-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>415</td>
+                        <td>$837.59</td>
+                        <td>$347,599.86</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-08-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-415</td>
+                        <td>$890.87</td>
+                        <td>-$369,711.05</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-08-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>415</td>
+                        <td>$890.87</td>
+                        <td>$369,711.05</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-08-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-415</td>
+                        <td>$1,034.83</td>
+                        <td>-$429,454.43</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-08-2022</td>
+                        <td><a href="stocks/TEAM.html">Atlassian Corporation  - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$230.41</td>
+                        <td>$230,410.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-08-2022</td>
+                        <td><a href="stocks/TEAM.html">Atlassian Corporation  - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$268.59</td>
+                        <td>-$268,590.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-08-2022</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$90.75</td>
+                        <td>$90,750.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-08-2022</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$117.25</td>
+                        <td>-$117,250.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-08-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>496</td>
+                        <td>$995.50</td>
+                        <td>$493,768.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-08-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-496</td>
+                        <td>$1,064.23</td>
+                        <td>-$527,858.07</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-08-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>264</td>
+                        <td>$2,001.80</td>
+                        <td>$528,476.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-08-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-264</td>
+                        <td>$2,041.44</td>
+                        <td>-$538,940.31</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-08-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>264</td>
+                        <td>$2,041.44</td>
+                        <td>$538,940.31</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-08-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-264</td>
+                        <td>$2,098.04</td>
+                        <td>-$553,883.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-08-2022</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>964</td>
+                        <td>$574.35</td>
+                        <td>$553,673.38</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-08-2022</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-964</td>
+                        <td>$605.38</td>
+                        <td>-$583,586.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-08-2022</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$372.95</td>
+                        <td>$372,950.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-08-2022</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$382.61</td>
+                        <td>-$382,609.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-08-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>281</td>
+                        <td>$2,106.62</td>
+                        <td>$591,959.64</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-08-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-281</td>
+                        <td>$2,121.53</td>
+                        <td>-$596,151.31</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-08-2022</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$377.49</td>
+                        <td>$377,489.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-08-2022</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$383.25</td>
+                        <td>-$383,250.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-08-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>309</td>
+                        <td>$1,951.34</td>
+                        <td>$602,962.73</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-08-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-309</td>
+                        <td>$1,971.28</td>
+                        <td>-$609,124.81</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-08-2022</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$441.31</td>
+                        <td>$441,309.39</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-08-2022</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$457.22</td>
+                        <td>-$457,221.83</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-08-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>696</td>
+                        <td>$898.00</td>
+                        <td>$625,008.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-08-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-696</td>
+                        <td>$919.18</td>
+                        <td>-$639,749.27</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-08-2022</td>
+                        <td><a href="stocks/LANC.html">Lancaster Colony Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$158.70</td>
+                        <td>$158,696.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-08-2022</td>
+                        <td><a href="stocks/LANC.html">Lancaster Colony Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$164.10</td>
+                        <td>-$164,095.06</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-08-2022</td>
+                        <td><a href="stocks/AMWD.html">American Woodmark Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$47.44</td>
+                        <td>$47,440.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-08-2022</td>
+                        <td><a href="stocks/AMWD.html">American Woodmark Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$52.44</td>
+                        <td>-$52,440.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-08-2022</td>
+                        <td><a href="stocks/UTHR.html">United Therapeutics Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$218.97</td>
+                        <td>$218,970.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-08-2022</td>
+                        <td><a href="stocks/UTHR.html">United Therapeutics Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$226.62</td>
+                        <td>-$226,620.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-08-2022</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$100.25</td>
+                        <td>$100,250.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-09-2022</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$108.75</td>
+                        <td>-$108,750.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-09-2022</td>
+                        <td><a href="stocks/OKTA.html">Okta, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$60.60</td>
+                        <td>$60,600.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-09-2022</td>
+                        <td><a href="stocks/OKTA.html">Okta, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$64.63</td>
+                        <td>-$64,630.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-09-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>373</td>
+                        <td>$1,795.22</td>
+                        <td>$669,618.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-09-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-373</td>
+                        <td>$1,852.20</td>
+                        <td>-$690,870.45</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-09-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>779</td>
+                        <td>$887.69</td>
+                        <td>$691,510.51</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-09-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-779</td>
+                        <td>$922.54</td>
+                        <td>-$718,658.64</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-09-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>381</td>
+                        <td>$1,885.41</td>
+                        <td>$718,339.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-09-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-381</td>
+                        <td>$1,959.61</td>
+                        <td>-$746,609.64</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-09-2022</td>
+                        <td><a href="stocks/AMLX.html">Amylyx Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$28.12</td>
+                        <td>$28,120.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-09-2022</td>
+                        <td><a href="stocks/AMLX.html">Amylyx Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$29.59</td>
+                        <td>-$29,590.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-09-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>394</td>
+                        <td>$1,900.03</td>
+                        <td>$748,610.63</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-09-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-394</td>
+                        <td>$1,946.10</td>
+                        <td>-$766,764.59</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-09-2022</td>
+                        <td><a href="stocks/NFLX.html">Netflix, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$224.12</td>
+                        <td>$224,120.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-09-2022</td>
+                        <td><a href="stocks/NFLX.html">Netflix, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$235.38</td>
+                        <td>-$235,380.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-09-2022</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>1000</td>
+                        <td>$104.80</td>
+                        <td>$104,800.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-09-2022</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>-1000</td>
+                        <td>$110.40</td>
+                        <td>-$110,400.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-09-2022</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$365.00</td>
+                        <td>$365,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-09-2022</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$370.46</td>
+                        <td>-$370,459.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-09-2022</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$472.57</td>
+                        <td>$472,570.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-09-2022</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$476.35</td>
+                        <td>-$476,350.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-09-2022</td>
+                        <td><a href="stocks/VRTX.html">Vertex Pharmaceuticals Incorporated - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$280.40</td>
+                        <td>$280,399.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-09-2022</td>
+                        <td><a href="stocks/VRTX.html">Vertex Pharmaceuticals Incorporated - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$286.34</td>
+                        <td>-$286,340.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-09-2022</td>
+                        <td><a href="stocks/ALGN.html">Align Technology, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$217.95</td>
+                        <td>$217,950.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-09-2022</td>
+                        <td><a href="stocks/ALGN.html">Align Technology, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$222.43</td>
+                        <td>-$222,429.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-09-2022</td>
+                        <td><a href="stocks/VRTX.html">Vertex Pharmaceuticals Incorporated - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$276.78</td>
+                        <td>$276,780.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-09-2022</td>
+                        <td><a href="stocks/VRTX.html">Vertex Pharmaceuticals Incorporated - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$284.74</td>
+                        <td>-$284,739.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-09-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$804.69</td>
+                        <td>$804,690.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-09-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$865.24</td>
+                        <td>-$865,239.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-09-2022</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>1000</td>
+                        <td>$102.20</td>
+                        <td>$102,200.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-09-2022</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>-1000</td>
+                        <td>$104.00</td>
+                        <td>-$104,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-09-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$782.97</td>
+                        <td>$782,965.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-09-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$789.57</td>
+                        <td>-$789,569.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-10-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>530</td>
+                        <td>$1,660.77</td>
+                        <td>$880,209.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-10-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-530</td>
+                        <td>$1,740.02</td>
+                        <td>-$922,208.54</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-10-2022</td>
+                        <td><a href="stocks/ILMN.html">Illumina, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$199.47</td>
+                        <td>$199,474.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-10-2022</td>
+                        <td><a href="stocks/ILMN.html">Illumina, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$212.57</td>
+                        <td>-$212,568.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-10-2022</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$130.60</td>
+                        <td>$130,600.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-10-2022</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$141.20</td>
+                        <td>-$141,200.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-10-2022</td>
+                        <td><a href="stocks/ESGR.html">Enstar Group Limited - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$181.70</td>
+                        <td>$181,700.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-10-2022</td>
+                        <td><a href="stocks/ESGR.html">Enstar Group Limited - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$183.34</td>
+                        <td>-$183,340.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-10-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>586</td>
+                        <td>$1,616.93</td>
+                        <td>$947,522.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-10-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-586</td>
+                        <td>$1,657.50</td>
+                        <td>-$971,294.07</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-10-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$816.67</td>
+                        <td>$816,669.86</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-10-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$845.04</td>
+                        <td>-$845,037.41</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-10-2022</td>
+                        <td><a href="stocks/UTHR.html">United Therapeutics Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$213.76</td>
+                        <td>$213,759.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-10-2022</td>
+                        <td><a href="stocks/UTHR.html">United Therapeutics Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$216.44</td>
+                        <td>-$216,440.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-10-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>580</td>
+                        <td>$1,728.59</td>
+                        <td>$1,002,582.82</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-10-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-580</td>
+                        <td>$1,754.77</td>
+                        <td>-$1,017,769.37</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-10-2022</td>
+                        <td><a href="stocks/NFLX.html">Netflix, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$240.86</td>
+                        <td>$240,860.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-10-2022</td>
+                        <td><a href="stocks/NFLX.html">Netflix, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$272.38</td>
+                        <td>-$272,380.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-10-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>1000</td>
+                        <td>$413.10</td>
+                        <td>$413,104.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-10-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-1000</td>
+                        <td>$426.01</td>
+                        <td>-$426,013.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-10-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>605</td>
+                        <td>$1,754.44</td>
+                        <td>$1,061,435.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-10-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-605</td>
+                        <td>$1,803.08</td>
+                        <td>-$1,090,861.45</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-10-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>610</td>
+                        <td>$1,789.00</td>
+                        <td>$1,091,290.45</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-10-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-610</td>
+                        <td>$1,854.34</td>
+                        <td>-$1,131,145.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-10-2022</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$115.40</td>
+                        <td>$115,400.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-10-2022</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$131.80</td>
+                        <td>-$131,800.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-10-2022</td>
+                        <td><a href="stocks/PI.html">Impinj, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$89.23</td>
+                        <td>$89,230.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-10-2022</td>
+                        <td><a href="stocks/PI.html">Impinj, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$115.30</td>
+                        <td>-$115,300.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-10-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$836.82</td>
+                        <td>$836,820.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-10-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$881.75</td>
+                        <td>-$881,750.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-10-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>659</td>
+                        <td>$1,849.26</td>
+                        <td>$1,218,663.55</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-11-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-659</td>
+                        <td>$1,869.09</td>
+                        <td>-$1,231,727.07</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-11-2022</td>
+                        <td><a href="stocks/UTHR.html">United Therapeutics Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$228.39</td>
+                        <td>$228,390.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-11-2022</td>
+                        <td><a href="stocks/UTHR.html">United Therapeutics Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$253.65</td>
+                        <td>-$253,649.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-11-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>714</td>
+                        <td>$1,758.95</td>
+                        <td>$1,255,889.74</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-11-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-714</td>
+                        <td>$1,805.98</td>
+                        <td>-$1,289,473.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-11-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$870.88</td>
+                        <td>$870,880.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-11-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$938.57</td>
+                        <td>-$938,570.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-11-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>749</td>
+                        <td>$1,813.99</td>
+                        <td>$1,358,676.58</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-11-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-749</td>
+                        <td>$1,839.08</td>
+                        <td>-$1,377,473.17</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-11-2022</td>
+                        <td><a href="stocks/AXON.html">Axon Enterprise, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$150.00</td>
+                        <td>$150,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-11-2022</td>
+                        <td><a href="stocks/AXON.html">Axon Enterprise, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$171.84</td>
+                        <td>-$171,840.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-11-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>758</td>
+                        <td>$1,845.64</td>
+                        <td>$1,398,996.06</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-11-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-758</td>
+                        <td>$1,925.46</td>
+                        <td>-$1,459,497.73</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-11-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>758</td>
+                        <td>$1,925.46</td>
+                        <td>$1,459,497.73</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-11-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-758</td>
+                        <td>$1,957.84</td>
+                        <td>-$1,484,046.21</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-11-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$959.58</td>
+                        <td>$959,580.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-11-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$1,020.68</td>
+                        <td>-$1,020,679.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-11-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>780</td>
+                        <td>$1,980.25</td>
+                        <td>$1,544,594.81</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-11-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-780</td>
+                        <td>$1,992.00</td>
+                        <td>-$1,553,760.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-11-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>1000</td>
+                        <td>$563.55</td>
+                        <td>$563,545.41</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-11-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-1000</td>
+                        <td>$575.59</td>
+                        <td>-$575,594.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-11-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$927.13</td>
+                        <td>$927,130.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-11-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$962.08</td>
+                        <td>-$962,080.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-11-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>843</td>
+                        <td>$1,898.73</td>
+                        <td>$1,600,630.09</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-11-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-843</td>
+                        <td>$1,925.91</td>
+                        <td>-$1,623,545.14</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-11-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>843</td>
+                        <td>$1,925.91</td>
+                        <td>$1,623,545.14</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-11-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-843</td>
+                        <td>$1,948.15</td>
+                        <td>-$1,642,290.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-11-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>836</td>
+                        <td>$1,963.43</td>
+                        <td>$1,641,430.38</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-11-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-836</td>
+                        <td>$1,995.34</td>
+                        <td>-$1,668,108.19</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-11-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>836</td>
+                        <td>$1,995.34</td>
+                        <td>$1,668,108.19</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-11-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-836</td>
+                        <td>$2,056.96</td>
+                        <td>-$1,719,619.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-11-2022</td>
+                        <td><a href="stocks/OKTA.html">Okta, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$53.32</td>
+                        <td>$53,320.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-12-2022</td>
+                        <td><a href="stocks/OKTA.html">Okta, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$67.43</td>
+                        <td>-$67,430.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-12-2022</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>1000</td>
+                        <td>$100.20</td>
+                        <td>$100,200.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-12-2022</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>-1000</td>
+                        <td>$128.00</td>
+                        <td>-$128,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-12-2022</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>1000</td>
+                        <td>$133.00</td>
+                        <td>$133,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-12-2022</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>-1000</td>
+                        <td>$140.00</td>
+                        <td>-$140,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-12-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>1000</td>
+                        <td>$579.52</td>
+                        <td>$579,522.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-12-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-1000</td>
+                        <td>$587.63</td>
+                        <td>-$587,633.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-12-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>919</td>
+                        <td>$1,934.41</td>
+                        <td>$1,777,723.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-12-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-919</td>
+                        <td>$1,989.01</td>
+                        <td>-$1,827,903.79</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-12-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$884.24</td>
+                        <td>$884,239.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-12-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$896.48</td>
+                        <td>-$896,479.98</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-12-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>1000</td>
+                        <td>$596.08</td>
+                        <td>$596,076.17</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-12-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-1000</td>
+                        <td>$613.94</td>
+                        <td>-$613,939.09</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-12-2022</td>
+                        <td><a href="stocks/TEAM.html">Atlassian Corporation  - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$143.91</td>
+                        <td>$143,910.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-12-2022</td>
+                        <td><a href="stocks/TEAM.html">Atlassian Corporation  - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$149.85</td>
+                        <td>-$149,850.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-12-2022</td>
+                        <td><a href="stocks/AGYS.html">Agilysys, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$61.80</td>
+                        <td>$61,800.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-12-2022</td>
+                        <td><a href="stocks/AGYS.html">Agilysys, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$70.40</td>
+                        <td>-$70,400.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-12-2022</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$328.71</td>
+                        <td>$328,709.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-12-2022</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$338.54</td>
+                        <td>-$338,540.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-12-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>985</td>
+                        <td>$1,910.55</td>
+                        <td>$1,881,893.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-12-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-985</td>
+                        <td>$1,937.33</td>
+                        <td>-$1,908,268.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-12-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$875.91</td>
+                        <td>$875,909.97</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-12-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$900.10</td>
+                        <td>-$900,099.98</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-12-2022</td>
+                        <td><a href="stocks/MKTX.html">MarketAxess Holdings, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$269.65</td>
+                        <td>$269,646.33</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-12-2022</td>
+                        <td><a href="stocks/MKTX.html">MarketAxess Holdings, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$273.31</td>
+                        <td>-$273,313.08</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-12-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$1,912.08</td>
+                        <td>$1,912,084.84</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-12-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$1,950.20</td>
+                        <td>-$1,950,198.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-12-2022</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$71.25</td>
+                        <td>$71,250.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-12-2022</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$74.75</td>
+                        <td>-$74,750.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-12-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$1,937.66</td>
+                        <td>$1,937,655.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-12-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$1,981.84</td>
+                        <td>-$1,981,842.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-12-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$1,981.84</td>
+                        <td>$1,981,842.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-12-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$1,993.48</td>
+                        <td>-$1,993,484.99</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</div>
+</body>
+</html>
