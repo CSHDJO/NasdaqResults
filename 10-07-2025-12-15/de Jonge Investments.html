@@ -1,0 +1,2805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nasdaq Trade System - de Jonge Investments</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+            crossorigin="anonymous"></script>
+    <meta name="theme-color" content="#712cf9">
+</head>
+
+<body>
+<header class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow" data-bs-theme="dark"><a
+        class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="#">Nasdaq Trade system</a>
+</header>
+
+
+<div class="container-fluid">
+    <div class="row">
+        
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <a href="GameResult.html">Back</a>
+            <h1>de Jonge Investments</h1>
+            <img src="de Jonge Investments.png" class="img-fluid">
+            <div class="table-responsive small">
+                <table class="table table-striped table-sm">
+                    <thead>
+                    <tr>
+                        <th scope="col">ExecutedOn</th>
+                        <th scope="col">Company</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">AtPrice</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr scope="row">
+                        <td>03-01-2022</td>
+                        <td><a href="stocks/LPLA.html">LPL Financial Holdings Inc. - Common Stock</a></td>
+                        <td>6</td>
+                        <td>$160.07</td>
+                        <td>$960.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-01-2022</td>
+                        <td><a href="stocks/LPLA.html">LPL Financial Holdings Inc. - Common Stock</a></td>
+                        <td>-6</td>
+                        <td>$166.24</td>
+                        <td>-$997.43</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-01-2022</td>
+                        <td><a href="stocks/EWTX.html">Edgewise Therapeutics, Inc. - Common Stock</a></td>
+                        <td>66</td>
+                        <td>$15.49</td>
+                        <td>$1,022.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-01-2022</td>
+                        <td><a href="stocks/EWTX.html">Edgewise Therapeutics, Inc. - Common Stock</a></td>
+                        <td>-66</td>
+                        <td>$18.97</td>
+                        <td>-$1,252.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-01-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>1</td>
+                        <td>$719.42</td>
+                        <td>$719.42</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-01-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-1</td>
+                        <td>$736.25</td>
+                        <td>-$736.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-01-2022</td>
+                        <td><a href="stocks/WDFC.html">WD-40 Company - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$221.24</td>
+                        <td>$1,106.19</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-01-2022</td>
+                        <td><a href="stocks/WDFC.html">WD-40 Company - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$227.84</td>
+                        <td>-$1,139.19</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-01-2022</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>9</td>
+                        <td>$145.00</td>
+                        <td>$1,305.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-01-2022</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>-9</td>
+                        <td>$164.20</td>
+                        <td>-$1,477.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-01-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>2</td>
+                        <td>$703.49</td>
+                        <td>$1,406.97</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-01-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-2</td>
+                        <td>$716.04</td>
+                        <td>-$1,432.08</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-01-2022</td>
+                        <td><a href="stocks/BIIB.html">Biogen Inc. - Common Stock</a></td>
+                        <td>6</td>
+                        <td>$225.34</td>
+                        <td>$1,352.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-01-2022</td>
+                        <td><a href="stocks/BIIB.html">Biogen Inc. - Common Stock</a></td>
+                        <td>-6</td>
+                        <td>$236.67</td>
+                        <td>-$1,420.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-01-2022</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$355.75</td>
+                        <td>$1,423.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-01-2022</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$401.75</td>
+                        <td>-$1,607.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-01-2022</td>
+                        <td><a href="stocks/TTWO.html">Take-Two Interactive Software, Inc. - Common Stock</a></td>
+                        <td>11</td>
+                        <td>$154.04</td>
+                        <td>$1,694.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-01-2022</td>
+                        <td><a href="stocks/TTWO.html">Take-Two Interactive Software, Inc. - Common Stock</a></td>
+                        <td>-11</td>
+                        <td>$163.36</td>
+                        <td>-$1,796.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-01-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>2</td>
+                        <td>$674.22</td>
+                        <td>$1,348.43</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-01-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-2</td>
+                        <td>$681.59</td>
+                        <td>-$1,363.17</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-01-2022</td>
+                        <td><a href="stocks/KPTI.html">Karyopharm Therapeutics Inc. - Common Stock</a></td>
+                        <td>16</td>
+                        <td>$115.95</td>
+                        <td>$1,855.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-01-2022</td>
+                        <td><a href="stocks/KPTI.html">Karyopharm Therapeutics Inc. - Common Stock</a></td>
+                        <td>-16</td>
+                        <td>$124.20</td>
+                        <td>-$1,987.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-01-2022</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$366.50</td>
+                        <td>$1,832.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-01-2022</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$377.50</td>
+                        <td>-$1,887.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-01-2022</td>
+                        <td><a href="stocks/EBON.html">Ebang International Holdings Inc. - Class A Ordinary Shares</a></td>
+                        <td>85</td>
+                        <td>$24.15</td>
+                        <td>$2,052.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-01-2022</td>
+                        <td><a href="stocks/EBON.html">Ebang International Holdings Inc. - Class A Ordinary Shares</a></td>
+                        <td>-85</td>
+                        <td>$32.70</td>
+                        <td>-$2,779.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-01-2022</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>5</td>
+                        <td>$555.00</td>
+                        <td>$2,775.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-01-2022</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$561.03</td>
+                        <td>-$2,805.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-01-2022</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>5</td>
+                        <td>$561.03</td>
+                        <td>$2,805.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-01-2022</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$590.47</td>
+                        <td>-$2,952.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-01-2022</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>8</td>
+                        <td>$363.74</td>
+                        <td>$2,909.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-02-2022</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>-8</td>
+                        <td>$372.32</td>
+                        <td>-$2,978.56</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-02-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$513.51</td>
+                        <td>$2,567.55</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-02-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$534.23</td>
+                        <td>-$2,671.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-02-2022</td>
+                        <td><a href="stocks/TMUS.html">T-Mobile US, Inc. - Common Stock</a></td>
+                        <td>29</td>
+                        <td>$106.77</td>
+                        <td>$3,096.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-02-2022</td>
+                        <td><a href="stocks/TMUS.html">T-Mobile US, Inc. - Common Stock</a></td>
+                        <td>-29</td>
+                        <td>$117.68</td>
+                        <td>-$3,412.65</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-02-2022</td>
+                        <td><a href="stocks/TEAM.html">Atlassian Corporation  - Class A Common Stock</a></td>
+                        <td>11</td>
+                        <td>$304.41</td>
+                        <td>$3,348.51</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-02-2022</td>
+                        <td><a href="stocks/TEAM.html">Atlassian Corporation  - Class A Common Stock</a></td>
+                        <td>-11</td>
+                        <td>$320.91</td>
+                        <td>-$3,530.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-02-2022</td>
+                        <td><a href="stocks/WRLD.html">World Acceptance Corporation - Common Stock</a></td>
+                        <td>18</td>
+                        <td>$197.10</td>
+                        <td>$3,547.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-02-2022</td>
+                        <td><a href="stocks/WRLD.html">World Acceptance Corporation - Common Stock</a></td>
+                        <td>-18</td>
+                        <td>$208.68</td>
+                        <td>-$3,756.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-02-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>6</td>
+                        <td>$630.46</td>
+                        <td>$3,782.77</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-02-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-6</td>
+                        <td>$656.41</td>
+                        <td>-$3,938.49</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-02-2022</td>
+                        <td><a href="stocks/DDOG.html">Datadog, Inc. - Class A Common Stock</a></td>
+                        <td>25</td>
+                        <td>$155.50</td>
+                        <td>$3,887.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-02-2022</td>
+                        <td><a href="stocks/DDOG.html">Datadog, Inc. - Class A Common Stock</a></td>
+                        <td>-25</td>
+                        <td>$174.60</td>
+                        <td>-$4,365.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-02-2022</td>
+                        <td><a href="stocks/KPTI.html">Karyopharm Therapeutics Inc. - Common Stock</a></td>
+                        <td>32</td>
+                        <td>$136.65</td>
+                        <td>$4,372.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-02-2022</td>
+                        <td><a href="stocks/KPTI.html">Karyopharm Therapeutics Inc. - Common Stock</a></td>
+                        <td>-32</td>
+                        <td>$153.30</td>
+                        <td>-$4,905.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-02-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>8</td>
+                        <td>$605.80</td>
+                        <td>$4,846.41</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-02-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-8</td>
+                        <td>$633.30</td>
+                        <td>-$5,066.39</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-02-2022</td>
+                        <td><a href="stocks/CVCO.html">Cavco Industries, Inc. - Common Stock</a></td>
+                        <td>18</td>
+                        <td>$286.41</td>
+                        <td>$5,155.38</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-02-2022</td>
+                        <td><a href="stocks/CVCO.html">Cavco Industries, Inc. - Common Stock</a></td>
+                        <td>-18</td>
+                        <td>$293.83</td>
+                        <td>-$5,288.94</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-02-2022</td>
+                        <td><a href="stocks/VC.html">Visteon Corporation - Common Stock</a></td>
+                        <td>50</td>
+                        <td>$105.39</td>
+                        <td>$5,269.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-02-2022</td>
+                        <td><a href="stocks/VC.html">Visteon Corporation - Common Stock</a></td>
+                        <td>-50</td>
+                        <td>$118.79</td>
+                        <td>-$5,939.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-02-2022</td>
+                        <td><a href="stocks/KPTI.html">Karyopharm Therapeutics Inc. - Common Stock</a></td>
+                        <td>33</td>
+                        <td>$180.00</td>
+                        <td>$5,940.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-02-2022</td>
+                        <td><a href="stocks/KPTI.html">Karyopharm Therapeutics Inc. - Common Stock</a></td>
+                        <td>-33</td>
+                        <td>$215.70</td>
+                        <td>-$7,118.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-02-2022</td>
+                        <td><a href="stocks/KPTI.html">Karyopharm Therapeutics Inc. - Common Stock</a></td>
+                        <td>46</td>
+                        <td>$154.35</td>
+                        <td>$7,100.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-02-2022</td>
+                        <td><a href="stocks/KPTI.html">Karyopharm Therapeutics Inc. - Common Stock</a></td>
+                        <td>-46</td>
+                        <td>$157.50</td>
+                        <td>-$7,245.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-02-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>15</td>
+                        <td>$474.68</td>
+                        <td>$7,120.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-02-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>-15</td>
+                        <td>$509.77</td>
+                        <td>-$7,646.55</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-02-2022</td>
+                        <td><a href="stocks/TREE.html">LendingTree, Inc. - Common Stock</a></td>
+                        <td>78</td>
+                        <td>$100.36</td>
+                        <td>$7,828.08</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-02-2022</td>
+                        <td><a href="stocks/TREE.html">LendingTree, Inc. - Common Stock</a></td>
+                        <td>-78</td>
+                        <td>$116.07</td>
+                        <td>-$9,053.46</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-02-2022</td>
+                        <td><a href="stocks/WDAY.html">Workday, Inc. - Class A Common Stock</a></td>
+                        <td>39</td>
+                        <td>$229.05</td>
+                        <td>$8,932.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-03-2022</td>
+                        <td><a href="stocks/WDAY.html">Workday, Inc. - Class A Common Stock</a></td>
+                        <td>-39</td>
+                        <td>$240.33</td>
+                        <td>-$9,372.87</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-03-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>15</td>
+                        <td>$611.88</td>
+                        <td>$9,178.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-03-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-15</td>
+                        <td>$632.29</td>
+                        <td>-$9,484.42</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-03-2022</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>74</td>
+                        <td>$133.24</td>
+                        <td>$9,859.45</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-03-2022</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>-74</td>
+                        <td>$140.68</td>
+                        <td>-$10,410.42</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-03-2022</td>
+                        <td><a href="stocks/CHRD.html">Chord Energy Corporation - Common Stock</a></td>
+                        <td>113</td>
+                        <td>$91.48</td>
+                        <td>$10,337.09</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-03-2022</td>
+                        <td><a href="stocks/CHRD.html">Chord Energy Corporation - Common Stock</a></td>
+                        <td>-113</td>
+                        <td>$98.96</td>
+                        <td>-$11,182.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-03-2022</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>52</td>
+                        <td>$214.75</td>
+                        <td>$11,167.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-03-2022</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-52</td>
+                        <td>$225.00</td>
+                        <td>-$11,700.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-03-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>21</td>
+                        <td>$552.86</td>
+                        <td>$11,610.14</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-03-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-21</td>
+                        <td>$599.46</td>
+                        <td>-$12,588.73</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-03-2022</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>34</td>
+                        <td>$373.31</td>
+                        <td>$12,692.54</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-03-2022</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>-34</td>
+                        <td>$379.37</td>
+                        <td>-$12,898.58</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-03-2022</td>
+                        <td><a href="stocks/UTHR.html">United Therapeutics Corporation - Common Stock</a></td>
+                        <td>77</td>
+                        <td>$167.78</td>
+                        <td>$12,919.06</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-03-2022</td>
+                        <td><a href="stocks/UTHR.html">United Therapeutics Corporation - Common Stock</a></td>
+                        <td>-77</td>
+                        <td>$173.00</td>
+                        <td>-$13,321.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-03-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>24</td>
+                        <td>$557.22</td>
+                        <td>$13,373.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-03-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-24</td>
+                        <td>$575.69</td>
+                        <td>-$13,816.58</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-03-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>24</td>
+                        <td>$575.69</td>
+                        <td>$13,816.58</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-03-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-24</td>
+                        <td>$627.72</td>
+                        <td>-$15,065.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-03-2022</td>
+                        <td><a href="stocks/AVAV.html">AeroVironment, Inc. - Common Stock</a></td>
+                        <td>184</td>
+                        <td>$81.47</td>
+                        <td>$14,990.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-03-2022</td>
+                        <td><a href="stocks/AVAV.html">AeroVironment, Inc. - Common Stock</a></td>
+                        <td>-184</td>
+                        <td>$93.46</td>
+                        <td>-$17,196.64</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-03-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>27</td>
+                        <td>$631.07</td>
+                        <td>$17,038.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-03-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-27</td>
+                        <td>$655.92</td>
+                        <td>-$17,709.91</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-03-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>28</td>
+                        <td>$626.75</td>
+                        <td>$17,549.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-03-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-28</td>
+                        <td>$698.28</td>
+                        <td>-$19,551.84</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-03-2022</td>
+                        <td><a href="stocks/UXIN.html">Uxin Limited - American Depositary Shares</a></td>
+                        <td>136</td>
+                        <td>$146.00</td>
+                        <td>$19,856.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-03-2022</td>
+                        <td><a href="stocks/UXIN.html">Uxin Limited - American Depositary Shares</a></td>
+                        <td>-136</td>
+                        <td>$158.00</td>
+                        <td>-$21,488.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-03-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>33</td>
+                        <td>$641.93</td>
+                        <td>$21,183.79</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-03-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-33</td>
+                        <td>$666.23</td>
+                        <td>-$21,985.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-03-2022</td>
+                        <td><a href="stocks/ROP.html">Roper Technologies, Inc. - Common Stock</a></td>
+                        <td>49</td>
+                        <td>$452.76</td>
+                        <td>$22,185.37</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-03-2022</td>
+                        <td><a href="stocks/ROP.html">Roper Technologies, Inc. - Common Stock</a></td>
+                        <td>-49</td>
+                        <td>$457.09</td>
+                        <td>-$22,397.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-03-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>33</td>
+                        <td>$670.37</td>
+                        <td>$22,122.06</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-03-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-33</td>
+                        <td>$684.17</td>
+                        <td>-$22,577.67</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-03-2022</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>42</td>
+                        <td>$545.76</td>
+                        <td>$22,922.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-03-2022</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>-42</td>
+                        <td>$551.98</td>
+                        <td>-$23,183.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-03-2022</td>
+                        <td><a href="stocks/VRTX.html">Vertex Pharmaceuticals Incorporated - Common Stock</a></td>
+                        <td>90</td>
+                        <td>$256.52</td>
+                        <td>$23,086.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-03-2022</td>
+                        <td><a href="stocks/VRTX.html">Vertex Pharmaceuticals Incorporated - Common Stock</a></td>
+                        <td>-90</td>
+                        <td>$260.97</td>
+                        <td>-$23,487.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-03-2022</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>43</td>
+                        <td>$545.52</td>
+                        <td>$23,457.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-04-2022</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-43</td>
+                        <td>$561.68</td>
+                        <td>-$24,152.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-04-2022</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>151</td>
+                        <td>$161.10</td>
+                        <td>$24,326.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-04-2022</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-151</td>
+                        <td>$163.95</td>
+                        <td>-$24,756.45</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-04-2022</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>45</td>
+                        <td>$550.88</td>
+                        <td>$24,789.51</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-04-2022</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>-45</td>
+                        <td>$559.95</td>
+                        <td>-$25,197.56</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-04-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>57</td>
+                        <td>$440.45</td>
+                        <td>$25,105.65</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-04-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-57</td>
+                        <td>$465.75</td>
+                        <td>-$26,547.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-04-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>57</td>
+                        <td>$465.75</td>
+                        <td>$26,547.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-04-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-57</td>
+                        <td>$494.50</td>
+                        <td>-$28,186.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-04-2022</td>
+                        <td><a href="stocks/MODV.html">ModivCare Inc. - Common Stock</a></td>
+                        <td>258</td>
+                        <td>$109.70</td>
+                        <td>$28,302.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-04-2022</td>
+                        <td><a href="stocks/MODV.html">ModivCare Inc. - Common Stock</a></td>
+                        <td>-258</td>
+                        <td>$114.24</td>
+                        <td>-$29,473.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-04-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>51</td>
+                        <td>$573.09</td>
+                        <td>$29,227.37</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-04-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-51</td>
+                        <td>$591.19</td>
+                        <td>-$30,150.45</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-04-2022</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>241</td>
+                        <td>$126.00</td>
+                        <td>$30,366.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-04-2022</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>-241</td>
+                        <td>$132.00</td>
+                        <td>-$31,812.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-04-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>54</td>
+                        <td>$586.50</td>
+                        <td>$31,671.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-04-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-54</td>
+                        <td>$630.89</td>
+                        <td>-$34,068.06</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-04-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>57</td>
+                        <td>$595.42</td>
+                        <td>$33,938.98</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-04-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-57</td>
+                        <td>$611.59</td>
+                        <td>-$34,860.66</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-04-2022</td>
+                        <td><a href="stocks/ALGT.html">Allegiant Travel Company - Common Stock</a></td>
+                        <td>220</td>
+                        <td>$159.66</td>
+                        <td>$35,125.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-04-2022</td>
+                        <td><a href="stocks/ALGT.html">Allegiant Travel Company - Common Stock</a></td>
+                        <td>-220</td>
+                        <td>$168.13</td>
+                        <td>-$36,988.47</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-04-2022</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>300</td>
+                        <td>$123.30</td>
+                        <td>$36,990.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-04-2022</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-300</td>
+                        <td>$130.50</td>
+                        <td>-$39,150.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-04-2022</td>
+                        <td><a href="stocks/ROP.html">Roper Technologies, Inc. - Common Stock</a></td>
+                        <td>87</td>
+                        <td>$447.28</td>
+                        <td>$38,913.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-04-2022</td>
+                        <td><a href="stocks/ROP.html">Roper Technologies, Inc. - Common Stock</a></td>
+                        <td>-87</td>
+                        <td>$463.73</td>
+                        <td>-$40,344.22</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-04-2022</td>
+                        <td><a href="stocks/RGEN.html">Repligen Corporation - Common Stock</a></td>
+                        <td>285</td>
+                        <td>$142.56</td>
+                        <td>$40,629.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-04-2022</td>
+                        <td><a href="stocks/RGEN.html">Repligen Corporation - Common Stock</a></td>
+                        <td>-285</td>
+                        <td>$157.51</td>
+                        <td>-$44,890.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-04-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>83</td>
+                        <td>$537.27</td>
+                        <td>$44,593.62</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-04-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-83</td>
+                        <td>$569.75</td>
+                        <td>-$47,289.05</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-04-2022</td>
+                        <td><a href="stocks/PDD.html">PDD Holdings Inc. - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$37.95</td>
+                        <td>$37,950.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-04-2022</td>
+                        <td><a href="stocks/PDD.html">PDD Holdings Inc. - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$43.09</td>
+                        <td>-$43,090.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-05-2022</td>
+                        <td><a href="stocks/WRLD.html">World Acceptance Corporation - Common Stock</a></td>
+                        <td>270</td>
+                        <td>$194.78</td>
+                        <td>$52,590.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-05-2022</td>
+                        <td><a href="stocks/WRLD.html">World Acceptance Corporation - Common Stock</a></td>
+                        <td>-270</td>
+                        <td>$204.32</td>
+                        <td>-$55,166.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-05-2022</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>129</td>
+                        <td>$425.62</td>
+                        <td>$54,904.98</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-05-2022</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-129</td>
+                        <td>$448.34</td>
+                        <td>-$57,835.86</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-05-2022</td>
+                        <td><a href="stocks/SIMO.html">Silicon Motion Technology Corporation - American Depositary Shares, each representing four ordinary shares</a></td>
+                        <td>769</td>
+                        <td>$75.67</td>
+                        <td>$58,187.74</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-05-2022</td>
+                        <td><a href="stocks/SIMO.html">Silicon Motion Technology Corporation - American Depositary Shares, each representing four ordinary shares</a></td>
+                        <td>-769</td>
+                        <td>$88.68</td>
+                        <td>-$68,191.45</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-05-2022</td>
+                        <td><a href="stocks/MRVI.html">Maravai LifeSciences Holdings, Inc. - Class A common stock</a></td>
+                        <td>1000</td>
+                        <td>$28.55</td>
+                        <td>$28,550.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-05-2022</td>
+                        <td><a href="stocks/MRVI.html">Maravai LifeSciences Holdings, Inc. - Class A common stock</a></td>
+                        <td>-1000</td>
+                        <td>$32.37</td>
+                        <td>-$32,370.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-05-2022</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>650</td>
+                        <td>$110.85</td>
+                        <td>$72,052.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-05-2022</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-650</td>
+                        <td>$138.15</td>
+                        <td>-$89,797.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-05-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>207</td>
+                        <td>$433.32</td>
+                        <td>$89,697.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-05-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-207</td>
+                        <td>$446.20</td>
+                        <td>-$92,363.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-05-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>207</td>
+                        <td>$446.20</td>
+                        <td>$92,363.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-05-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-207</td>
+                        <td>$506.00</td>
+                        <td>-$104,742.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-05-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>207</td>
+                        <td>$506.00</td>
+                        <td>$104,742.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-05-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-207</td>
+                        <td>$538.20</td>
+                        <td>-$111,407.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-05-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>214</td>
+                        <td>$519.93</td>
+                        <td>$111,264.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-05-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-214</td>
+                        <td>$545.86</td>
+                        <td>-$116,814.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-05-2022</td>
+                        <td><a href="stocks/AGYS.html">Agilysys, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$35.94</td>
+                        <td>$35,940.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-05-2022</td>
+                        <td><a href="stocks/AGYS.html">Agilysys, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$39.60</td>
+                        <td>-$39,600.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-05-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>243</td>
+                        <td>$496.34</td>
+                        <td>$120,610.62</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-05-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-243</td>
+                        <td>$529.23</td>
+                        <td>-$128,602.89</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-05-2022</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>1000</td>
+                        <td>$114.00</td>
+                        <td>$114,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-05-2022</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>-1000</td>
+                        <td>$124.20</td>
+                        <td>-$124,200.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-05-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>258</td>
+                        <td>$538.20</td>
+                        <td>$138,855.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-05-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-258</td>
+                        <td>$571.55</td>
+                        <td>-$147,459.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-05-2022</td>
+                        <td><a href="stocks/CVCO.html">Cavco Industries, Inc. - Common Stock</a></td>
+                        <td>750</td>
+                        <td>$196.63</td>
+                        <td>$147,472.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-05-2022</td>
+                        <td><a href="stocks/CVCO.html">Cavco Industries, Inc. - Common Stock</a></td>
+                        <td>-750</td>
+                        <td>$209.87</td>
+                        <td>-$157,402.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-05-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>277</td>
+                        <td>$567.64</td>
+                        <td>$157,236.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-05-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-277</td>
+                        <td>$595.01</td>
+                        <td>-$164,817.77</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-05-2022</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>436</td>
+                        <td>$377.96</td>
+                        <td>$164,790.56</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-05-2022</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>-436</td>
+                        <td>$425.08</td>
+                        <td>-$185,334.87</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-05-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>326</td>
+                        <td>$568.10</td>
+                        <td>$185,200.59</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-06-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-326</td>
+                        <td>$584.43</td>
+                        <td>-$190,524.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-06-2022</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>435</td>
+                        <td>$438.29</td>
+                        <td>$190,654.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-06-2022</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>-435</td>
+                        <td>$467.65</td>
+                        <td>-$203,429.42</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-06-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>338</td>
+                        <td>$601.68</td>
+                        <td>$203,367.84</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-06-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-338</td>
+                        <td>$627.90</td>
+                        <td>-$212,230.21</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-06-2022</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$129.75</td>
+                        <td>$129,750.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-06-2022</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$141.75</td>
+                        <td>-$141,750.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-06-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>400</td>
+                        <td>$560.51</td>
+                        <td>$224,204.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-06-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-400</td>
+                        <td>$594.55</td>
+                        <td>-$237,820.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-06-2022</td>
+                        <td><a href="stocks/NXPI.html">NXP Semiconductors N.V. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$167.11</td>
+                        <td>$167,114.53</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-06-2022</td>
+                        <td><a href="stocks/NXPI.html">NXP Semiconductors N.V. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$173.86</td>
+                        <td>-$173,862.56</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-06-2022</td>
+                        <td><a href="stocks/AMED.html">Amedisys Inc - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$115.06</td>
+                        <td>$115,060.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-06-2022</td>
+                        <td><a href="stocks/AMED.html">Amedisys Inc - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$120.10</td>
+                        <td>-$120,100.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-06-2022</td>
+                        <td><a href="stocks/LPLA.html">LPL Financial Holdings Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$177.82</td>
+                        <td>$177,820.43</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-06-2022</td>
+                        <td><a href="stocks/LPLA.html">LPL Financial Holdings Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$185.90</td>
+                        <td>-$185,896.03</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-06-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>608</td>
+                        <td>$423.89</td>
+                        <td>$257,725.13</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-06-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-608</td>
+                        <td>$442.52</td>
+                        <td>-$269,052.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-06-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>608</td>
+                        <td>$442.52</td>
+                        <td>$269,052.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-06-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-608</td>
+                        <td>$500.94</td>
+                        <td>-$304,571.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-06-2022</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>734</td>
+                        <td>$415.35</td>
+                        <td>$304,866.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-06-2022</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-734</td>
+                        <td>$441.96</td>
+                        <td>-$324,398.63</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-06-2022</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>741</td>
+                        <td>$437.47</td>
+                        <td>$324,165.27</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-06-2022</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-741</td>
+                        <td>$448.24</td>
+                        <td>-$332,145.83</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-06-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>997</td>
+                        <td>$333.11</td>
+                        <td>$332,110.66</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-06-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>-997</td>
+                        <td>$355.62</td>
+                        <td>-$354,553.14</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-06-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>751</td>
+                        <td>$471.87</td>
+                        <td>$354,372.83</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-06-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-751</td>
+                        <td>$500.79</td>
+                        <td>-$376,095.06</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-06-2022</td>
+                        <td><a href="stocks/CHRD.html">Chord Energy Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$95.98</td>
+                        <td>$95,981.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-06-2022</td>
+                        <td><a href="stocks/CHRD.html">Chord Energy Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$100.42</td>
+                        <td>-$100,420.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-06-2022</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$163.75</td>
+                        <td>$163,750.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-06-2022</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$189.50</td>
+                        <td>-$189,500.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-06-2022</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>902</td>
+                        <td>$450.61</td>
+                        <td>$406,451.23</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-06-2022</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>-902</td>
+                        <td>$459.66</td>
+                        <td>-$414,617.62</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-06-2022</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$194.75</td>
+                        <td>$194,750.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-07-2022</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$207.50</td>
+                        <td>-$207,500.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-07-2022</td>
+                        <td><a href="stocks/UXIN.html">Uxin Limited - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$55.90</td>
+                        <td>$55,900.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-07-2022</td>
+                        <td><a href="stocks/UXIN.html">Uxin Limited - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$66.00</td>
+                        <td>-$66,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-07-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$281.06</td>
+                        <td>$281,060.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-07-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$314.41</td>
+                        <td>-$314,410.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-07-2022</td>
+                        <td><a href="stocks/UXIN.html">Uxin Limited - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$80.00</td>
+                        <td>$80,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-07-2022</td>
+                        <td><a href="stocks/UXIN.html">Uxin Limited - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$97.50</td>
+                        <td>-$97,500.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-07-2022</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$185.00</td>
+                        <td>$185,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-07-2022</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$216.50</td>
+                        <td>-$216,500.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-07-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$292.79</td>
+                        <td>$292,790.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-07-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$306.13</td>
+                        <td>-$306,130.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-07-2022</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$472.08</td>
+                        <td>$472,075.23</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-07-2022</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$490.99</td>
+                        <td>-$490,988.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-07-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$314.41</td>
+                        <td>$314,410.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-07-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$346.84</td>
+                        <td>-$346,840.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-07-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>1000</td>
+                        <td>$460.19</td>
+                        <td>$460,185.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-07-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-1000</td>
+                        <td>$484.37</td>
+                        <td>-$484,366.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-07-2022</td>
+                        <td><a href="stocks/TEAM.html">Atlassian Corporation  - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$191.59</td>
+                        <td>$191,590.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-07-2022</td>
+                        <td><a href="stocks/TEAM.html">Atlassian Corporation  - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$213.04</td>
+                        <td>-$213,039.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-07-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>1000</td>
+                        <td>$499.98</td>
+                        <td>$499,975.89</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-07-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-1000</td>
+                        <td>$527.04</td>
+                        <td>-$527,043.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-07-2022</td>
+                        <td><a href="stocks/BANF.html">BancFirst Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$86.46</td>
+                        <td>$86,457.94</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-07-2022</td>
+                        <td><a href="stocks/BANF.html">BancFirst Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$95.11</td>
+                        <td>-$95,114.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-07-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$357.65</td>
+                        <td>$357,649.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-07-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$368.46</td>
+                        <td>-$368,459.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-07-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$368.46</td>
+                        <td>$368,459.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-07-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$390.77</td>
+                        <td>-$390,769.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-07-2022</td>
+                        <td><a href="stocks/WING.html">Wingstop Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$98.52</td>
+                        <td>$98,515.83</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-07-2022</td>
+                        <td><a href="stocks/WING.html">Wingstop Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$118.40</td>
+                        <td>-$118,400.84</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-07-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>1000</td>
+                        <td>$544.97</td>
+                        <td>$544,966.19</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-07-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-1000</td>
+                        <td>$558.31</td>
+                        <td>-$558,310.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-08-2022</td>
+                        <td><a href="stocks/RGEN.html">Repligen Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$212.56</td>
+                        <td>$212,560.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-08-2022</td>
+                        <td><a href="stocks/RGEN.html">Repligen Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$237.38</td>
+                        <td>-$237,380.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-08-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>1000</td>
+                        <td>$549.72</td>
+                        <td>$549,718.87</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-08-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-1000</td>
+                        <td>$567.47</td>
+                        <td>-$567,466.19</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-08-2022</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$452.18</td>
+                        <td>$452,179.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-08-2022</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$459.45</td>
+                        <td>-$459,450.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-08-2022</td>
+                        <td><a href="stocks/TEAM.html">Atlassian Corporation  - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$230.41</td>
+                        <td>$230,410.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-08-2022</td>
+                        <td><a href="stocks/TEAM.html">Atlassian Corporation  - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$268.59</td>
+                        <td>-$268,590.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-08-2022</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$90.75</td>
+                        <td>$90,750.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-08-2022</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$117.25</td>
+                        <td>-$117,250.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-08-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>1000</td>
+                        <td>$527.18</td>
+                        <td>$527,179.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-08-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-1000</td>
+                        <td>$551.48</td>
+                        <td>-$551,477.66</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-08-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$361.10</td>
+                        <td>$361,100.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-08-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$453.56</td>
+                        <td>-$453,560.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-08-2022</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$116.25</td>
+                        <td>$116,250.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-08-2022</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$146.00</td>
+                        <td>-$146,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-08-2022</td>
+                        <td><a href="stocks/TTWO.html">Take-Two Interactive Software, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$127.39</td>
+                        <td>$127,390.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-08-2022</td>
+                        <td><a href="stocks/TTWO.html">Take-Two Interactive Software, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$136.59</td>
+                        <td>-$136,590.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-08-2022</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$531.30</td>
+                        <td>$531,302.43</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-08-2022</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$534.47</td>
+                        <td>-$534,472.84</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-08-2022</td>
+                        <td><a href="stocks/ASPS.html">Altisource Portfolio Solutions S.A. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$91.92</td>
+                        <td>$91,920.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-08-2022</td>
+                        <td><a href="stocks/ASPS.html">Altisource Portfolio Solutions S.A. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$98.64</td>
+                        <td>-$98,640.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-08-2022</td>
+                        <td><a href="stocks/SYRE.html">Spyre Therapeutics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$12.63</td>
+                        <td>$12,625.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-08-2022</td>
+                        <td><a href="stocks/SYRE.html">Spyre Therapeutics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$22.75</td>
+                        <td>-$22,750.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-08-2022</td>
+                        <td><a href="stocks/PANW.html">Palo Alto Networks, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$84.68</td>
+                        <td>$84,675.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-08-2022</td>
+                        <td><a href="stocks/PANW.html">Palo Alto Networks, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$94.92</td>
+                        <td>-$94,918.33</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-08-2022</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>1000</td>
+                        <td>$89.40</td>
+                        <td>$89,400.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-08-2022</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>-1000</td>
+                        <td>$103.00</td>
+                        <td>-$103,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-08-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$345.69</td>
+                        <td>$345,690.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-08-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$372.83</td>
+                        <td>-$372,829.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-08-2022</td>
+                        <td><a href="stocks/WDAY.html">Workday, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$162.36</td>
+                        <td>$162,360.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-08-2022</td>
+                        <td><a href="stocks/WDAY.html">Workday, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$166.46</td>
+                        <td>-$166,460.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-08-2022</td>
+                        <td><a href="stocks/WDAY.html">Workday, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$160.89</td>
+                        <td>$160,890.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-08-2022</td>
+                        <td><a href="stocks/WDAY.html">Workday, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$164.27</td>
+                        <td>-$164,270.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-08-2022</td>
+                        <td><a href="stocks/UTHR.html">United Therapeutics Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$218.97</td>
+                        <td>$218,970.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-08-2022</td>
+                        <td><a href="stocks/UTHR.html">United Therapeutics Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$226.62</td>
+                        <td>-$226,620.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-08-2022</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$100.25</td>
+                        <td>$100,250.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-09-2022</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$108.75</td>
+                        <td>-$108,750.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-09-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$340.17</td>
+                        <td>$340,170.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-09-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$367.77</td>
+                        <td>-$367,769.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-09-2022</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$427.82</td>
+                        <td>$427,820.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-09-2022</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$444.01</td>
+                        <td>-$444,010.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-09-2022</td>
+                        <td><a href="stocks/AVAV.html">AeroVironment, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$88.67</td>
+                        <td>$88,670.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-09-2022</td>
+                        <td><a href="stocks/AVAV.html">AeroVironment, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$101.87</td>
+                        <td>-$101,870.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-09-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$354.66</td>
+                        <td>$354,660.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-09-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$381.80</td>
+                        <td>-$381,799.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-09-2022</td>
+                        <td><a href="stocks/AKRO.html">Akero Therapeutics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$12.27</td>
+                        <td>$12,270.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-09-2022</td>
+                        <td><a href="stocks/AKRO.html">Akero Therapeutics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$29.05</td>
+                        <td>-$29,050.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-09-2022</td>
+                        <td><a href="stocks/ESGR.html">Enstar Group Limited - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$195.66</td>
+                        <td>$195,660.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-09-2022</td>
+                        <td><a href="stocks/ESGR.html">Enstar Group Limited - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$203.61</td>
+                        <td>-$203,610.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-09-2022</td>
+                        <td><a href="stocks/KPTI.html">Karyopharm Therapeutics Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$71.25</td>
+                        <td>$71,250.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-09-2022</td>
+                        <td><a href="stocks/KPTI.html">Karyopharm Therapeutics Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$77.55</td>
+                        <td>-$77,550.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-09-2022</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>1000</td>
+                        <td>$104.80</td>
+                        <td>$104,800.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-09-2022</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>-1000</td>
+                        <td>$110.40</td>
+                        <td>-$110,400.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-09-2022</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$39.45</td>
+                        <td>$39,450.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-09-2022</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$42.60</td>
+                        <td>-$42,600.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-09-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$335.34</td>
+                        <td>$335,340.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-09-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$342.24</td>
+                        <td>-$342,239.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-09-2022</td>
+                        <td><a href="stocks/ASPS.html">Altisource Portfolio Solutions S.A. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$82.56</td>
+                        <td>$82,560.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-09-2022</td>
+                        <td><a href="stocks/ASPS.html">Altisource Portfolio Solutions S.A. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$89.52</td>
+                        <td>-$89,520.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-09-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$326.08</td>
+                        <td>$326,079.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-09-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$334.20</td>
+                        <td>-$334,200.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-09-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$319.47</td>
+                        <td>$319,470.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-09-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$337.18</td>
+                        <td>-$337,179.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-09-2022</td>
+                        <td><a href="stocks/BIIB.html">Biogen Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$197.79</td>
+                        <td>$197,789.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-09-2022</td>
+                        <td><a href="stocks/BIIB.html">Biogen Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$276.61</td>
+                        <td>-$276,609.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-09-2022</td>
+                        <td><a href="stocks/UXIN.html">Uxin Limited - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$55.70</td>
+                        <td>$55,700.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-09-2022</td>
+                        <td><a href="stocks/UXIN.html">Uxin Limited - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$60.30</td>
+                        <td>-$60,300.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-09-2022</td>
+                        <td><a href="stocks/ASPS.html">Altisource Portfolio Solutions S.A. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$95.12</td>
+                        <td>$95,120.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-09-2022</td>
+                        <td><a href="stocks/ASPS.html">Altisource Portfolio Solutions S.A. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$104.88</td>
+                        <td>-$104,880.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-10-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$244.95</td>
+                        <td>$244,950.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-10-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$314.87</td>
+                        <td>-$314,870.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-10-2022</td>
+                        <td><a href="stocks/WING.html">Wingstop Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$127.43</td>
+                        <td>$127,431.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-10-2022</td>
+                        <td><a href="stocks/WING.html">Wingstop Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$136.23</td>
+                        <td>-$136,229.55</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-10-2022</td>
+                        <td><a href="stocks/LPLA.html">LPL Financial Holdings Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$238.28</td>
+                        <td>$238,281.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-10-2022</td>
+                        <td><a href="stocks/LPLA.html">LPL Financial Holdings Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$243.25</td>
+                        <td>-$243,246.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-10-2022</td>
+                        <td><a href="stocks/DXCM.html">DexCom, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$95.21</td>
+                        <td>$95,210.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-10-2022</td>
+                        <td><a href="stocks/DXCM.html">DexCom, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$102.14</td>
+                        <td>-$102,140.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-10-2022</td>
+                        <td><a href="stocks/INDV.html">Indivior PLC - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$3.13</td>
+                        <td>$3,130.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-10-2022</td>
+                        <td><a href="stocks/INDV.html">Indivior PLC - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$15.65</td>
+                        <td>-$15,650.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-10-2022</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$306.31</td>
+                        <td>$306,310.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-10-2022</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$325.94</td>
+                        <td>-$325,940.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-10-2022</td>
+                        <td><a href="stocks/NTNX.html">Nutanix, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$21.15</td>
+                        <td>$21,150.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-10-2022</td>
+                        <td><a href="stocks/NTNX.html">Nutanix, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$26.35</td>
+                        <td>-$26,350.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-10-2022</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$445.94</td>
+                        <td>$445,941.56</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-10-2022</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$454.68</td>
+                        <td>-$454,684.14</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-10-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>1000</td>
+                        <td>$388.72</td>
+                        <td>$388,718.41</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-10-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-1000</td>
+                        <td>$413.10</td>
+                        <td>-$413,104.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-10-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>1000</td>
+                        <td>$413.10</td>
+                        <td>$413,104.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-10-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-1000</td>
+                        <td>$426.01</td>
+                        <td>-$426,013.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-10-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>1000</td>
+                        <td>$426.01</td>
+                        <td>$426,013.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-10-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-1000</td>
+                        <td>$450.33</td>
+                        <td>-$450,330.41</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-10-2022</td>
+                        <td><a href="stocks/ICLR.html">ICON plc - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$178.91</td>
+                        <td>$178,910.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-10-2022</td>
+                        <td><a href="stocks/ICLR.html">ICON plc - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$196.73</td>
+                        <td>-$196,730.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-10-2022</td>
+                        <td><a href="stocks/WING.html">Wingstop Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$133.46</td>
+                        <td>$133,458.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-10-2022</td>
+                        <td><a href="stocks/WING.html">Wingstop Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$153.85</td>
+                        <td>-$153,845.84</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-10-2022</td>
+                        <td><a href="stocks/ROP.html">Roper Technologies, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$383.04</td>
+                        <td>$383,040.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-10-2022</td>
+                        <td><a href="stocks/ROP.html">Roper Technologies, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$394.59</td>
+                        <td>-$394,591.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-10-2022</td>
+                        <td><a href="stocks/VRTX.html">Vertex Pharmaceuticals Incorporated - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$287.89</td>
+                        <td>$287,890.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-10-2022</td>
+                        <td><a href="stocks/VRTX.html">Vertex Pharmaceuticals Incorporated - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$313.89</td>
+                        <td>-$313,890.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-10-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$359.68</td>
+                        <td>$359,679.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-11-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$394.93</td>
+                        <td>-$394,929.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-11-2022</td>
+                        <td><a href="stocks/UTHR.html">United Therapeutics Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$228.39</td>
+                        <td>$228,390.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-11-2022</td>
+                        <td><a href="stocks/UTHR.html">United Therapeutics Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$253.65</td>
+                        <td>-$253,649.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-11-2022</td>
+                        <td><a href="stocks/CRAI.html">CRA International,Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$98.99</td>
+                        <td>$98,992.91</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-11-2022</td>
+                        <td><a href="stocks/CRAI.html">CRA International,Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$111.52</td>
+                        <td>-$111,518.17</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-11-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>1000</td>
+                        <td>$429.89</td>
+                        <td>$429,885.38</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-11-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-1000</td>
+                        <td>$458.07</td>
+                        <td>-$458,067.57</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-11-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>1000</td>
+                        <td>$472.36</td>
+                        <td>$472,363.86</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-11-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-1000</td>
+                        <td>$492.10</td>
+                        <td>-$492,103.03</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-11-2022</td>
+                        <td><a href="stocks/AXON.html">Axon Enterprise, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$150.00</td>
+                        <td>$150,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-11-2022</td>
+                        <td><a href="stocks/AXON.html">Axon Enterprise, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$171.84</td>
+                        <td>-$171,840.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-11-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>1000</td>
+                        <td>$478.30</td>
+                        <td>$478,295.38</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-11-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-1000</td>
+                        <td>$548.00</td>
+                        <td>-$547,998.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-11-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$416.06</td>
+                        <td>$416,060.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-11-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$428.03</td>
+                        <td>-$428,030.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-11-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>1000</td>
+                        <td>$564.64</td>
+                        <td>$564,639.89</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-11-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-1000</td>
+                        <td>$583.84</td>
+                        <td>-$583,841.67</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-11-2022</td>
+                        <td><a href="stocks/ASND.html">Ascendis Pharma A/S - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$110.15</td>
+                        <td>$110,150.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-11-2022</td>
+                        <td><a href="stocks/ASND.html">Ascendis Pharma A/S - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$114.85</td>
+                        <td>-$114,850.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-11-2022</td>
+                        <td><a href="stocks/ASPS.html">Altisource Portfolio Solutions S.A. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$122.24</td>
+                        <td>$122,240.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-11-2022</td>
+                        <td><a href="stocks/ASPS.html">Altisource Portfolio Solutions S.A. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$139.12</td>
+                        <td>-$139,120.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-11-2022</td>
+                        <td><a href="stocks/APLS.html">Apellis Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$43.24</td>
+                        <td>$43,240.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-11-2022</td>
+                        <td><a href="stocks/APLS.html">Apellis Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$50.45</td>
+                        <td>-$50,450.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-11-2022</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$369.00</td>
+                        <td>$369,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-11-2022</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$385.55</td>
+                        <td>-$385,549.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-11-2022</td>
+                        <td><a href="stocks/TEAM.html">Atlassian Corporation  - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$116.34</td>
+                        <td>$116,340.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-11-2022</td>
+                        <td><a href="stocks/TEAM.html">Atlassian Corporation  - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$124.50</td>
+                        <td>-$124,500.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-11-2022</td>
+                        <td><a href="stocks/NXST.html">Nexstar Media Group, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$158.60</td>
+                        <td>$158,601.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-11-2022</td>
+                        <td><a href="stocks/NXST.html">Nexstar Media Group, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$170.39</td>
+                        <td>-$170,390.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-11-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>1000</td>
+                        <td>$565.62</td>
+                        <td>$565,617.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-11-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-1000</td>
+                        <td>$594.25</td>
+                        <td>-$594,248.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-11-2022</td>
+                        <td><a href="stocks/SNPS.html">Synopsys, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$339.54</td>
+                        <td>$339,540.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-12-2022</td>
+                        <td><a href="stocks/SNPS.html">Synopsys, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$357.84</td>
+                        <td>-$357,840.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-12-2022</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>1000</td>
+                        <td>$100.20</td>
+                        <td>$100,200.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-12-2022</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>-1000</td>
+                        <td>$128.00</td>
+                        <td>-$128,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-12-2022</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>1000</td>
+                        <td>$133.00</td>
+                        <td>$133,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-12-2022</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>-1000</td>
+                        <td>$140.00</td>
+                        <td>-$140,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-12-2022</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$465.58</td>
+                        <td>$465,579.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-12-2022</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$480.05</td>
+                        <td>-$480,049.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-12-2022</td>
+                        <td><a href="stocks/TEAM.html">Atlassian Corporation  - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$125.46</td>
+                        <td>$125,460.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-12-2022</td>
+                        <td><a href="stocks/TEAM.html">Atlassian Corporation  - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$135.71</td>
+                        <td>-$135,710.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-12-2022</td>
+                        <td><a href="stocks/ACLX.html">Arcellx, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$21.68</td>
+                        <td>$21,680.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-12-2022</td>
+                        <td><a href="stocks/ACLX.html">Arcellx, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$28.02</td>
+                        <td>-$28,020.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-12-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>1000</td>
+                        <td>$596.08</td>
+                        <td>$596,076.17</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-12-2022</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-1000</td>
+                        <td>$613.94</td>
+                        <td>-$613,939.09</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-12-2022</td>
+                        <td><a href="stocks/TEAM.html">Atlassian Corporation  - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$143.91</td>
+                        <td>$143,910.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-12-2022</td>
+                        <td><a href="stocks/TEAM.html">Atlassian Corporation  - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$149.85</td>
+                        <td>-$149,850.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-12-2022</td>
+                        <td><a href="stocks/AGYS.html">Agilysys, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$61.80</td>
+                        <td>$61,800.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-12-2022</td>
+                        <td><a href="stocks/AGYS.html">Agilysys, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$70.40</td>
+                        <td>-$70,400.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-12-2022</td>
+                        <td><a href="stocks/AGYS.html">Agilysys, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$70.40</td>
+                        <td>$70,400.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-12-2022</td>
+                        <td><a href="stocks/AGYS.html">Agilysys, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$76.50</td>
+                        <td>-$76,500.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-12-2022</td>
+                        <td><a href="stocks/MDGL.html">Madrigal Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$234.83</td>
+                        <td>$234,830.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-12-2022</td>
+                        <td><a href="stocks/MDGL.html">Madrigal Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$250.00</td>
+                        <td>-$250,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-12-2022</td>
+                        <td><a href="stocks/MDGL.html">Madrigal Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$250.00</td>
+                        <td>$250,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-12-2022</td>
+                        <td><a href="stocks/MDGL.html">Madrigal Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$289.43</td>
+                        <td>-$289,429.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-12-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$180.32</td>
+                        <td>$180,320.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-12-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$196.19</td>
+                        <td>-$196,190.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-12-2022</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$323.88</td>
+                        <td>$323,880.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-12-2022</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$333.92</td>
+                        <td>-$333,920.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-12-2022</td>
+                        <td><a href="stocks/MDGL.html">Madrigal Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$260.82</td>
+                        <td>$260,820.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-12-2022</td>
+                        <td><a href="stocks/MDGL.html">Madrigal Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$270.85</td>
+                        <td>-$270,850.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-12-2022</td>
+                        <td><a href="stocks/MDGL.html">Madrigal Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$270.85</td>
+                        <td>$270,850.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-12-2022</td>
+                        <td><a href="stocks/MDGL.html">Madrigal Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$296.54</td>
+                        <td>-$296,540.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-12-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$174.80</td>
+                        <td>$174,800.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-12-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$181.24</td>
+                        <td>-$181,240.01</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</div>
+</body>
+</html>
