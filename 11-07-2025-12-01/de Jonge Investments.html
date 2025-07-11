@@ -1,0 +1,2602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nasdaq Trade System - de Jonge Investments</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+            crossorigin="anonymous"></script>
+    <meta name="theme-color" content="#712cf9">
+</head>
+
+<body>
+<header class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow" data-bs-theme="dark"><a
+        class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="#">Nasdaq Trade system</a>
+</header>
+
+
+<div class="container-fluid">
+    <div class="row">
+        
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <a href="GameResult.html">Back</a>
+            <h1>de Jonge Investments</h1>
+            <img src="de Jonge Investments.png" class="img-fluid">
+            <div class="table-responsive small">
+                <table class="table table-striped table-sm">
+                    <thead>
+                    <tr>
+                        <th scope="col">ExecutedOn</th>
+                        <th scope="col">Company</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">AtPrice</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr scope="row">
+                        <td>04-01-2021</td>
+                        <td><a href="stocks/ROKU.html">Roku, Inc. - Class A Common Stock</a></td>
+                        <td>3</td>
+                        <td>$317.90</td>
+                        <td>$953.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-01-2021</td>
+                        <td><a href="stocks/ROKU.html">Roku, Inc. - Class A Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$335.18</td>
+                        <td>-$1,005.54</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-01-2021</td>
+                        <td><a href="stocks/PTON.html">Peloton Interactive, Inc. - Common Stock</a></td>
+                        <td>6</td>
+                        <td>$156.04</td>
+                        <td>$936.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-01-2021</td>
+                        <td><a href="stocks/PTON.html">Peloton Interactive, Inc. - Common Stock</a></td>
+                        <td>-6</td>
+                        <td>$167.42</td>
+                        <td>-$1,004.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-01-2021</td>
+                        <td><a href="stocks/CRNC.html">Cerence Inc. - Common Stock</a></td>
+                        <td>9</td>
+                        <td>$113.98</td>
+                        <td>$1,025.82</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-01-2021</td>
+                        <td><a href="stocks/CRNC.html">Cerence Inc. - Common Stock</a></td>
+                        <td>-9</td>
+                        <td>$120.25</td>
+                        <td>-$1,082.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-01-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1</td>
+                        <td>$781.65</td>
+                        <td>$781.65</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-01-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$814.80</td>
+                        <td>-$814.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-01-2021</td>
+                        <td><a href="stocks/ABNB.html">Airbnb, Inc. - Class A Common Stock</a></td>
+                        <td>6</td>
+                        <td>$177.53</td>
+                        <td>$1,065.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-01-2021</td>
+                        <td><a href="stocks/ABNB.html">Airbnb, Inc. - Class A Common Stock</a></td>
+                        <td>-6</td>
+                        <td>$192.74</td>
+                        <td>-$1,156.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-01-2021</td>
+                        <td><a href="stocks/AVIR.html">Atea Pharmaceuticals, Inc. - common stock</a></td>
+                        <td>21</td>
+                        <td>$59.14</td>
+                        <td>$1,241.94</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-01-2021</td>
+                        <td><a href="stocks/AVIR.html">Atea Pharmaceuticals, Inc. - common stock</a></td>
+                        <td>-21</td>
+                        <td>$73.00</td>
+                        <td>-$1,533.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-02-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$788.70</td>
+                        <td>$1,577.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-02-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$808.35</td>
+                        <td>-$1,616.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-02-2021</td>
+                        <td><a href="stocks/ZBRA.html">Zebra Technologies Corporation - Class A Common Stock</a></td>
+                        <td>3</td>
+                        <td>$427.47</td>
+                        <td>$1,282.41</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-02-2021</td>
+                        <td><a href="stocks/ZBRA.html">Zebra Technologies Corporation - Class A Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$470.08</td>
+                        <td>-$1,410.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-02-2021</td>
+                        <td><a href="stocks/EBON.html">Ebang International Holdings Inc. - Class A Ordinary Shares</a></td>
+                        <td>10</td>
+                        <td>$162.60</td>
+                        <td>$1,626.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-02-2021</td>
+                        <td><a href="stocks/EBON.html">Ebang International Holdings Inc. - Class A Ordinary Shares</a></td>
+                        <td>-10</td>
+                        <td>$200.70</td>
+                        <td>-$2,007.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-02-2021</td>
+                        <td><a href="stocks/EBON.html">Ebang International Holdings Inc. - Class A Ordinary Shares</a></td>
+                        <td>9</td>
+                        <td>$236.40</td>
+                        <td>$2,127.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-02-2021</td>
+                        <td><a href="stocks/EBON.html">Ebang International Holdings Inc. - Class A Ordinary Shares</a></td>
+                        <td>-9</td>
+                        <td>$314.40</td>
+                        <td>-$2,829.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-02-2021</td>
+                        <td><a href="stocks/EBON.html">Ebang International Holdings Inc. - Class A Ordinary Shares</a></td>
+                        <td>9</td>
+                        <td>$314.40</td>
+                        <td>$2,829.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-02-2021</td>
+                        <td><a href="stocks/EBON.html">Ebang International Holdings Inc. - Class A Ordinary Shares</a></td>
+                        <td>-9</td>
+                        <td>$338.70</td>
+                        <td>-$3,048.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-02-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$770.10</td>
+                        <td>$2,310.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-02-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$794.40</td>
+                        <td>-$2,383.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-02-2021</td>
+                        <td><a href="stocks/SLDB.html">Solid Biosciences Inc. - Common Stock</a></td>
+                        <td>30</td>
+                        <td>$103.05</td>
+                        <td>$3,091.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-02-2021</td>
+                        <td><a href="stocks/SLDB.html">Solid Biosciences Inc. - Common Stock</a></td>
+                        <td>-30</td>
+                        <td>$146.10</td>
+                        <td>-$4,383.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-02-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>1</td>
+                        <td>$3,503.00</td>
+                        <td>$3,503.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-02-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-1</td>
+                        <td>$3,573.00</td>
+                        <td>-$3,573.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-02-2021</td>
+                        <td><a href="stocks/ALXO.html">ALX Oncology Holdings Inc. - Common Stock</a></td>
+                        <td>58</td>
+                        <td>$76.75</td>
+                        <td>$4,451.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-02-2021</td>
+                        <td><a href="stocks/ALXO.html">ALX Oncology Holdings Inc. - Common Stock</a></td>
+                        <td>-58</td>
+                        <td>$82.67</td>
+                        <td>-$4,794.86</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-02-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>1</td>
+                        <td>$2,964.00</td>
+                        <td>$2,964.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-02-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-1</td>
+                        <td>$3,367.00</td>
+                        <td>-$3,367.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-03-2021</td>
+                        <td><a href="stocks/SLDB.html">Solid Biosciences Inc. - Common Stock</a></td>
+                        <td>41</td>
+                        <td>$127.80</td>
+                        <td>$5,239.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-03-2021</td>
+                        <td><a href="stocks/SLDB.html">Solid Biosciences Inc. - Common Stock</a></td>
+                        <td>-41</td>
+                        <td>$160.80</td>
+                        <td>-$6,592.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-03-2021</td>
+                        <td><a href="stocks/SAIA.html">Saia, Inc. - Common Stock</a></td>
+                        <td>30</td>
+                        <td>$214.44</td>
+                        <td>$6,433.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-03-2021</td>
+                        <td><a href="stocks/SAIA.html">Saia, Inc. - Common Stock</a></td>
+                        <td>-30</td>
+                        <td>$223.35</td>
+                        <td>-$6,700.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-03-2021</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>19</td>
+                        <td>$353.20</td>
+                        <td>$6,710.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-03-2021</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>-19</td>
+                        <td>$362.20</td>
+                        <td>-$6,881.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-03-2021</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>19</td>
+                        <td>$362.20</td>
+                        <td>$6,881.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-03-2021</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>-19</td>
+                        <td>$381.20</td>
+                        <td>-$7,242.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-03-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>2</td>
+                        <td>$2,898.00</td>
+                        <td>$5,796.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-03-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-2</td>
+                        <td>$3,352.00</td>
+                        <td>-$6,704.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-03-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>11</td>
+                        <td>$726.60</td>
+                        <td>$7,992.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-03-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-11</td>
+                        <td>$792.15</td>
+                        <td>-$8,713.65</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-03-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>2</td>
+                        <td>$3,340.00</td>
+                        <td>$6,680.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-03-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-2</td>
+                        <td>$3,775.00</td>
+                        <td>-$7,550.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-03-2021</td>
+                        <td><a href="stocks/EBON.html">Ebang International Holdings Inc. - Class A Ordinary Shares</a></td>
+                        <td>42</td>
+                        <td>$230.70</td>
+                        <td>$9,689.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-03-2021</td>
+                        <td><a href="stocks/EBON.html">Ebang International Holdings Inc. - Class A Ordinary Shares</a></td>
+                        <td>-42</td>
+                        <td>$312.00</td>
+                        <td>-$13,104.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-03-2021</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>21</td>
+                        <td>$625.00</td>
+                        <td>$13,125.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-03-2021</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-21</td>
+                        <td>$639.65</td>
+                        <td>-$13,432.65</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-03-2021</td>
+                        <td><a href="stocks/EBON.html">Ebang International Holdings Inc. - Class A Ordinary Shares</a></td>
+                        <td>43</td>
+                        <td>$313.50</td>
+                        <td>$13,480.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-03-2021</td>
+                        <td><a href="stocks/EBON.html">Ebang International Holdings Inc. - Class A Ordinary Shares</a></td>
+                        <td>-43</td>
+                        <td>$353.40</td>
+                        <td>-$15,196.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-03-2021</td>
+                        <td><a href="stocks/PARAA.html">Paramount Global - Class A Common Stock</a></td>
+                        <td>181</td>
+                        <td>$84.66</td>
+                        <td>$15,323.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-03-2021</td>
+                        <td><a href="stocks/PARAA.html">Paramount Global - Class A Common Stock</a></td>
+                        <td>-181</td>
+                        <td>$88.91</td>
+                        <td>-$16,092.77</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-03-2021</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>40</td>
+                        <td>$400.40</td>
+                        <td>$16,016.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-03-2021</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>-40</td>
+                        <td>$429.00</td>
+                        <td>-$17,160.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-03-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>22</td>
+                        <td>$767.85</td>
+                        <td>$16,892.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-03-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-22</td>
+                        <td>$780.75</td>
+                        <td>-$17,176.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-03-2021</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>27</td>
+                        <td>$645.45</td>
+                        <td>$17,427.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-03-2021</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-27</td>
+                        <td>$651.56</td>
+                        <td>-$17,592.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-03-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>6</td>
+                        <td>$2,879.00</td>
+                        <td>$17,274.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-03-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-6</td>
+                        <td>$2,917.00</td>
+                        <td>-$17,502.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-03-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>6</td>
+                        <td>$2,917.00</td>
+                        <td>$17,502.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-03-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-6</td>
+                        <td>$3,056.00</td>
+                        <td>-$18,336.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-03-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>6</td>
+                        <td>$2,850.00</td>
+                        <td>$17,100.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-03-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-6</td>
+                        <td>$2,987.00</td>
+                        <td>-$17,922.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-03-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>6</td>
+                        <td>$2,987.00</td>
+                        <td>$17,922.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-03-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-6</td>
+                        <td>$3,156.00</td>
+                        <td>-$18,936.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-03-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>6</td>
+                        <td>$3,156.00</td>
+                        <td>$18,936.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-04-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-6</td>
+                        <td>$3,196.00</td>
+                        <td>-$19,176.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-04-2021</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>13</td>
+                        <td>$1,503.45</td>
+                        <td>$19,544.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-04-2021</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-13</td>
+                        <td>$1,547.79</td>
+                        <td>-$20,121.27</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-04-2021</td>
+                        <td><a href="stocks/SLDB.html">Solid Biosciences Inc. - Common Stock</a></td>
+                        <td>272</td>
+                        <td>$78.45</td>
+                        <td>$21,338.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-04-2021</td>
+                        <td><a href="stocks/SLDB.html">Solid Biosciences Inc. - Common Stock</a></td>
+                        <td>-272</td>
+                        <td>$82.65</td>
+                        <td>-$22,480.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-04-2021</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>14</td>
+                        <td>$1,542.00</td>
+                        <td>$21,588.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-04-2021</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-14</td>
+                        <td>$1,588.00</td>
+                        <td>-$22,232.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-04-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>27</td>
+                        <td>$834.00</td>
+                        <td>$22,518.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-04-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-27</td>
+                        <td>$874.95</td>
+                        <td>-$23,623.65</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-04-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>11</td>
+                        <td>$2,165.00</td>
+                        <td>$23,815.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-04-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-11</td>
+                        <td>$2,264.00</td>
+                        <td>-$24,904.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-04-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>11</td>
+                        <td>$2,264.00</td>
+                        <td>$24,904.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-04-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-11</td>
+                        <td>$2,288.00</td>
+                        <td>-$25,168.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-04-2021</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>16</td>
+                        <td>$1,546.56</td>
+                        <td>$24,744.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-04-2021</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-16</td>
+                        <td>$1,599.48</td>
+                        <td>-$25,591.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-04-2021</td>
+                        <td><a href="stocks/COIN.html">Coinbase Global, Inc. - Class A Common Stock</a></td>
+                        <td>82</td>
+                        <td>$322.75</td>
+                        <td>$26,465.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-04-2021</td>
+                        <td><a href="stocks/COIN.html">Coinbase Global, Inc. - Class A Common Stock</a></td>
+                        <td>-82</td>
+                        <td>$342.00</td>
+                        <td>-$28,044.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-04-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>34</td>
+                        <td>$807.75</td>
+                        <td>$27,463.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-04-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-34</td>
+                        <td>$832.50</td>
+                        <td>-$28,305.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-04-2021</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>18</td>
+                        <td>$1,533.41</td>
+                        <td>$27,601.38</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-04-2021</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-18</td>
+                        <td>$1,576.99</td>
+                        <td>-$28,385.82</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-04-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>16</td>
+                        <td>$1,820.00</td>
+                        <td>$29,120.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-04-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-16</td>
+                        <td>$1,956.00</td>
+                        <td>-$31,296.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-04-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>16</td>
+                        <td>$1,956.00</td>
+                        <td>$31,296.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-04-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-16</td>
+                        <td>$2,010.00</td>
+                        <td>-$32,160.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-04-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>38</td>
+                        <td>$858.45</td>
+                        <td>$32,621.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-04-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-38</td>
+                        <td>$865.95</td>
+                        <td>-$32,906.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-04-2021</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>20</td>
+                        <td>$1,604.94</td>
+                        <td>$32,098.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-04-2021</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-20</td>
+                        <td>$1,622.00</td>
+                        <td>-$32,440.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-04-2021</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>51</td>
+                        <td>$652.72</td>
+                        <td>$33,288.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-04-2021</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-51</td>
+                        <td>$669.97</td>
+                        <td>-$34,168.47</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-04-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>39</td>
+                        <td>$872.55</td>
+                        <td>$34,029.45</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-04-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-39</td>
+                        <td>$898.80</td>
+                        <td>-$35,053.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-05-2021</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>86</td>
+                        <td>$407.00</td>
+                        <td>$35,002.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-05-2021</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>-86</td>
+                        <td>$429.60</td>
+                        <td>-$36,945.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-05-2021</td>
+                        <td><a href="stocks/ZBRA.html">Zebra Technologies Corporation - Class A Common Stock</a></td>
+                        <td>79</td>
+                        <td>$470.62</td>
+                        <td>$37,178.98</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-05-2021</td>
+                        <td><a href="stocks/ZBRA.html">Zebra Technologies Corporation - Class A Common Stock</a></td>
+                        <td>-79</td>
+                        <td>$482.42</td>
+                        <td>-$38,111.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-05-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>24</td>
+                        <td>$1,543.00</td>
+                        <td>$37,032.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-05-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-24</td>
+                        <td>$1,603.00</td>
+                        <td>-$38,472.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-05-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>24</td>
+                        <td>$1,603.00</td>
+                        <td>$38,472.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-05-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-24</td>
+                        <td>$1,649.00</td>
+                        <td>-$39,576.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-05-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>26</td>
+                        <td>$1,556.00</td>
+                        <td>$40,456.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-05-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-26</td>
+                        <td>$1,645.00</td>
+                        <td>-$42,770.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-05-2021</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>86</td>
+                        <td>$499.81</td>
+                        <td>$42,983.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-05-2021</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-86</td>
+                        <td>$505.74</td>
+                        <td>-$43,493.81</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-05-2021</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>86</td>
+                        <td>$505.74</td>
+                        <td>$43,493.81</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-05-2021</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-86</td>
+                        <td>$515.74</td>
+                        <td>-$44,354.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-05-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>29</td>
+                        <td>$1,490.00</td>
+                        <td>$43,210.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-05-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-29</td>
+                        <td>$1,559.00</td>
+                        <td>-$45,211.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-05-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>29</td>
+                        <td>$1,550.00</td>
+                        <td>$44,950.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-05-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-29</td>
+                        <td>$1,644.00</td>
+                        <td>-$47,676.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-05-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>29</td>
+                        <td>$1,644.00</td>
+                        <td>$47,676.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-05-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-29</td>
+                        <td>$1,674.00</td>
+                        <td>-$48,546.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-05-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>29</td>
+                        <td>$1,674.00</td>
+                        <td>$48,546.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-05-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-29</td>
+                        <td>$1,817.00</td>
+                        <td>-$52,693.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-05-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>79</td>
+                        <td>$685.05</td>
+                        <td>$54,118.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-05-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-79</td>
+                        <td>$689.55</td>
+                        <td>-$54,474.45</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-05-2021</td>
+                        <td><a href="stocks/COIN.html">Coinbase Global, Inc. - Class A Common Stock</a></td>
+                        <td>241</td>
+                        <td>$225.30</td>
+                        <td>$54,297.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-05-2021</td>
+                        <td><a href="stocks/COIN.html">Coinbase Global, Inc. - Class A Common Stock</a></td>
+                        <td>-241</td>
+                        <td>$242.41</td>
+                        <td>-$58,420.81</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-05-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>37</td>
+                        <td>$1,543.00</td>
+                        <td>$57,091.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-05-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-37</td>
+                        <td>$1,612.00</td>
+                        <td>-$59,644.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-05-2021</td>
+                        <td><a href="stocks/NVCR.html">NovoCure Limited - Ordinary Shares</a></td>
+                        <td>323</td>
+                        <td>$189.28</td>
+                        <td>$61,137.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-05-2021</td>
+                        <td><a href="stocks/NVCR.html">NovoCure Limited - Ordinary Shares</a></td>
+                        <td>-323</td>
+                        <td>$201.35</td>
+                        <td>-$65,036.05</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-05-2021</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>198</td>
+                        <td>$328.36</td>
+                        <td>$65,015.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-05-2021</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>-198</td>
+                        <td>$345.36</td>
+                        <td>-$68,381.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-06-2021</td>
+                        <td><a href="stocks/PETS.html">PetMed Express, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$25.43</td>
+                        <td>$25,428.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-06-2021</td>
+                        <td><a href="stocks/PETS.html">PetMed Express, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$40.28</td>
+                        <td>-$40,276.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-06-2021</td>
+                        <td><a href="stocks/IGMS.html">IGM Biosciences, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$80.87</td>
+                        <td>$80,870.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-06-2021</td>
+                        <td><a href="stocks/IGMS.html">IGM Biosciences, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$87.94</td>
+                        <td>-$87,940.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-06-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>58</td>
+                        <td>$1,547.00</td>
+                        <td>$89,726.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-06-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-58</td>
+                        <td>$1,659.00</td>
+                        <td>-$96,222.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-06-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>59</td>
+                        <td>$1,629.00</td>
+                        <td>$96,111.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-06-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-59</td>
+                        <td>$1,798.00</td>
+                        <td>-$106,082.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-06-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>158</td>
+                        <td>$673.80</td>
+                        <td>$106,460.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-06-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-158</td>
+                        <td>$698.25</td>
+                        <td>-$110,323.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-06-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>61</td>
+                        <td>$1,795.00</td>
+                        <td>$109,495.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-06-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-61</td>
+                        <td>$1,905.00</td>
+                        <td>-$116,205.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-06-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>61</td>
+                        <td>$1,905.00</td>
+                        <td>$116,205.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-06-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-61</td>
+                        <td>$1,942.00</td>
+                        <td>-$118,462.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-06-2021</td>
+                        <td><a href="stocks/GSHD.html">Goosehead Insurance, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$93.70</td>
+                        <td>$93,696.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-06-2021</td>
+                        <td><a href="stocks/GSHD.html">Goosehead Insurance, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$105.14</td>
+                        <td>-$105,143.46</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-06-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>78</td>
+                        <td>$1,679.00</td>
+                        <td>$130,962.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-06-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-78</td>
+                        <td>$1,742.00</td>
+                        <td>-$135,876.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-06-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>78</td>
+                        <td>$1,742.00</td>
+                        <td>$135,876.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-06-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-78</td>
+                        <td>$1,855.00</td>
+                        <td>-$144,690.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-06-2021</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>346</td>
+                        <td>$418.00</td>
+                        <td>$144,628.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-06-2021</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>-346</td>
+                        <td>$436.60</td>
+                        <td>-$151,063.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-06-2021</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>102</td>
+                        <td>$1,476.34</td>
+                        <td>$150,586.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-06-2021</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-102</td>
+                        <td>$1,505.00</td>
+                        <td>-$153,510.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-06-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>85</td>
+                        <td>$1,796.00</td>
+                        <td>$152,660.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-06-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-85</td>
+                        <td>$1,880.00</td>
+                        <td>-$159,800.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-06-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>85</td>
+                        <td>$1,880.00</td>
+                        <td>$159,800.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-06-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-85</td>
+                        <td>$2,026.00</td>
+                        <td>-$172,210.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-06-2021</td>
+                        <td><a href="stocks/SYRE.html">Spyre Therapeutics, Inc. - Common Stock</a></td>
+                        <td>985</td>
+                        <td>$176.25</td>
+                        <td>$173,606.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-06-2021</td>
+                        <td><a href="stocks/SYRE.html">Spyre Therapeutics, Inc. - Common Stock</a></td>
+                        <td>-985</td>
+                        <td>$195.75</td>
+                        <td>-$192,813.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-06-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>254</td>
+                        <td>$758.85</td>
+                        <td>$192,747.89</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-06-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-254</td>
+                        <td>$780.45</td>
+                        <td>-$198,234.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-06-2021</td>
+                        <td><a href="stocks/ROKU.html">Roku, Inc. - Class A Common Stock</a></td>
+                        <td>450</td>
+                        <td>$440.48</td>
+                        <td>$198,216.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-06-2021</td>
+                        <td><a href="stocks/ROKU.html">Roku, Inc. - Class A Common Stock</a></td>
+                        <td>-450</td>
+                        <td>$459.25</td>
+                        <td>-$206,662.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-06-2021</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>371</td>
+                        <td>$557.00</td>
+                        <td>$206,647.09</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-07-2021</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-371</td>
+                        <td>$573.04</td>
+                        <td>-$212,596.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-07-2021</td>
+                        <td><a href="stocks/CRNC.html">Cerence Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$108.57</td>
+                        <td>$108,570.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-07-2021</td>
+                        <td><a href="stocks/CRNC.html">Cerence Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$123.74</td>
+                        <td>-$123,740.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-07-2021</td>
+                        <td><a href="stocks/COIN.html">Coinbase Global, Inc. - Class A Common Stock</a></td>
+                        <td>968</td>
+                        <td>$235.41</td>
+                        <td>$227,876.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-07-2021</td>
+                        <td><a href="stocks/COIN.html">Coinbase Global, Inc. - Class A Common Stock</a></td>
+                        <td>-968</td>
+                        <td>$251.97</td>
+                        <td>-$243,906.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-07-2021</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>610</td>
+                        <td>$399.80</td>
+                        <td>$243,877.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-07-2021</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>-610</td>
+                        <td>$410.80</td>
+                        <td>-$250,587.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-07-2021</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>164</td>
+                        <td>$1,526.93</td>
+                        <td>$250,416.53</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-07-2021</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-164</td>
+                        <td>$1,554.97</td>
+                        <td>-$255,015.08</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-07-2021</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>167</td>
+                        <td>$1,526.00</td>
+                        <td>$254,842.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-07-2021</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-167</td>
+                        <td>$1,548.21</td>
+                        <td>-$258,551.06</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-07-2021</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>450</td>
+                        <td>$575.42</td>
+                        <td>$258,938.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-07-2021</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-450</td>
+                        <td>$579.46</td>
+                        <td>-$260,756.19</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-07-2021</td>
+                        <td><a href="stocks/PECO.html">Phillips Edison &amp; Company, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$6.40</td>
+                        <td>$6,401.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-07-2021</td>
+                        <td><a href="stocks/PECO.html">Phillips Edison &amp; Company, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$24.44</td>
+                        <td>-$24,439.53</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-07-2021</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>687</td>
+                        <td>$405.40</td>
+                        <td>$278,509.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-07-2021</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>-687</td>
+                        <td>$416.00</td>
+                        <td>-$285,792.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-07-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>185</td>
+                        <td>$1,539.00</td>
+                        <td>$284,715.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-07-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-185</td>
+                        <td>$1,589.00</td>
+                        <td>-$293,965.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-07-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>185</td>
+                        <td>$1,589.00</td>
+                        <td>$293,965.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-07-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-185</td>
+                        <td>$1,647.00</td>
+                        <td>-$304,695.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-07-2021</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>197</td>
+                        <td>$1,550.17</td>
+                        <td>$305,383.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-07-2021</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-197</td>
+                        <td>$1,591.22</td>
+                        <td>-$313,470.33</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-07-2021</td>
+                        <td><a href="stocks/ROKU.html">Roku, Inc. - Class A Common Stock</a></td>
+                        <td>747</td>
+                        <td>$420.65</td>
+                        <td>$314,225.55</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-07-2021</td>
+                        <td><a href="stocks/ROKU.html">Roku, Inc. - Class A Common Stock</a></td>
+                        <td>-747</td>
+                        <td>$473.65</td>
+                        <td>-$353,816.55</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-07-2021</td>
+                        <td><a href="stocks/MLAB.html">Mesa Laboratories, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$279.29</td>
+                        <td>$279,293.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-07-2021</td>
+                        <td><a href="stocks/MLAB.html">Mesa Laboratories, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$283.78</td>
+                        <td>-$283,784.27</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-07-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>237</td>
+                        <td>$1,508.00</td>
+                        <td>$357,396.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-07-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-237</td>
+                        <td>$1,608.00</td>
+                        <td>-$381,096.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-07-2021</td>
+                        <td><a href="stocks/SAIA.html">Saia, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$204.70</td>
+                        <td>$204,700.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-07-2021</td>
+                        <td><a href="stocks/SAIA.html">Saia, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$221.68</td>
+                        <td>-$221,679.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-07-2021</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>558</td>
+                        <td>$713.80</td>
+                        <td>$398,300.39</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-07-2021</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-558</td>
+                        <td>$744.05</td>
+                        <td>-$415,179.89</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-08-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>263</td>
+                        <td>$1,580.00</td>
+                        <td>$415,540.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-08-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-263</td>
+                        <td>$1,631.00</td>
+                        <td>-$428,953.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-08-2021</td>
+                        <td><a href="stocks/HOOD.html">Robinhood Markets, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$46.80</td>
+                        <td>$46,800.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-08-2021</td>
+                        <td><a href="stocks/HOOD.html">Robinhood Markets, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$70.39</td>
+                        <td>-$70,390.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-08-2021</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>288</td>
+                        <td>$1,570.00</td>
+                        <td>$452,160.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-08-2021</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-288</td>
+                        <td>$1,786.11</td>
+                        <td>-$514,399.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-08-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>341</td>
+                        <td>$1,507.00</td>
+                        <td>$513,887.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-08-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-341</td>
+                        <td>$1,549.00</td>
+                        <td>-$528,209.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-08-2021</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>301</td>
+                        <td>$1,755.74</td>
+                        <td>$528,477.74</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-08-2021</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-301</td>
+                        <td>$1,878.53</td>
+                        <td>-$565,437.54</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-08-2021</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>738</td>
+                        <td>$766.50</td>
+                        <td>$565,677.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-08-2021</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-738</td>
+                        <td>$776.65</td>
+                        <td>-$573,167.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-08-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$554.40</td>
+                        <td>$554,400.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-08-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$569.70</td>
+                        <td>-$569,700.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-08-2021</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>971</td>
+                        <td>$606.32</td>
+                        <td>$588,740.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-08-2021</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-971</td>
+                        <td>$623.07</td>
+                        <td>-$604,998.67</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-08-2021</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>965</td>
+                        <td>$626.87</td>
+                        <td>$604,926.78</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-08-2021</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-965</td>
+                        <td>$645.66</td>
+                        <td>-$623,057.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-08-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$578.55</td>
+                        <td>$578,549.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-08-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$602.40</td>
+                        <td>-$602,400.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-08-2021</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$633.82</td>
+                        <td>$633,817.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-08-2021</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$653.82</td>
+                        <td>-$653,822.63</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-08-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>468</td>
+                        <td>$1,424.00</td>
+                        <td>$666,432.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-08-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-468</td>
+                        <td>$1,540.00</td>
+                        <td>-$720,720.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-08-2021</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>398</td>
+                        <td>$1,810.00</td>
+                        <td>$720,380.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-08-2021</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-398</td>
+                        <td>$1,855.29</td>
+                        <td>-$738,405.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-08-2021</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>398</td>
+                        <td>$1,855.29</td>
+                        <td>$738,405.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-08-2021</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-398</td>
+                        <td>$1,871.94</td>
+                        <td>-$745,032.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-08-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>472</td>
+                        <td>$1,581.00</td>
+                        <td>$746,232.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-08-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-472</td>
+                        <td>$1,640.00</td>
+                        <td>-$774,080.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-08-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>472</td>
+                        <td>$1,640.00</td>
+                        <td>$774,080.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-08-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-472</td>
+                        <td>$1,676.00</td>
+                        <td>-$791,072.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-08-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$701.10</td>
+                        <td>$701,099.98</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-08-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$739.35</td>
+                        <td>-$739,349.98</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-08-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>486</td>
+                        <td>$1,706.00</td>
+                        <td>$829,116.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-09-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-486</td>
+                        <td>$1,758.00</td>
+                        <td>-$854,388.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-09-2021</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>450</td>
+                        <td>$1,896.51</td>
+                        <td>$853,429.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-09-2021</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-450</td>
+                        <td>$1,931.33</td>
+                        <td>-$869,098.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-09-2021</td>
+                        <td><a href="stocks/DOCU.html">DocuSign, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$294.57</td>
+                        <td>$294,570.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-09-2021</td>
+                        <td><a href="stocks/DOCU.html">DocuSign, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$310.05</td>
+                        <td>-$310,049.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-09-2021</td>
+                        <td><a href="stocks/ICUI.html">ICU Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$205.98</td>
+                        <td>$205,980.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-09-2021</td>
+                        <td><a href="stocks/ICUI.html">ICU Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$260.00</td>
+                        <td>-$260,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-09-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>551</td>
+                        <td>$1,704.00</td>
+                        <td>$938,904.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-09-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-551</td>
+                        <td>$1,804.00</td>
+                        <td>-$994,004.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-09-2021</td>
+                        <td><a href="stocks/AFRM.html">Affirm Holdings, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$92.06</td>
+                        <td>$92,060.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-09-2021</td>
+                        <td><a href="stocks/AFRM.html">Affirm Holdings, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$123.70</td>
+                        <td>-$123,700.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-09-2021</td>
+                        <td><a href="stocks/MLAB.html">Mesa Laboratories, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$275.28</td>
+                        <td>$275,280.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-09-2021</td>
+                        <td><a href="stocks/MLAB.html">Mesa Laboratories, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$297.81</td>
+                        <td>-$297,814.06</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-09-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>587</td>
+                        <td>$1,786.00</td>
+                        <td>$1,048,382.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-09-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-587</td>
+                        <td>$1,860.00</td>
+                        <td>-$1,091,820.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-09-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$774.75</td>
+                        <td>$774,750.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-09-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$806.40</td>
+                        <td>-$806,400.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-09-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>608</td>
+                        <td>$1,849.00</td>
+                        <td>$1,124,192.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-09-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-608</td>
+                        <td>$1,911.00</td>
+                        <td>-$1,161,888.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-09-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>660</td>
+                        <td>$1,759.00</td>
+                        <td>$1,160,940.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-09-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-660</td>
+                        <td>$1,802.00</td>
+                        <td>-$1,189,320.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-09-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>660</td>
+                        <td>$1,802.00</td>
+                        <td>$1,189,320.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-09-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-660</td>
+                        <td>$1,899.00</td>
+                        <td>-$1,253,340.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-09-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>660</td>
+                        <td>$1,899.00</td>
+                        <td>$1,253,340.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-09-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-660</td>
+                        <td>$1,947.00</td>
+                        <td>-$1,285,020.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-09-2021</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$251.21</td>
+                        <td>$251,213.33</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-09-2021</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$258.13</td>
+                        <td>-$258,130.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-09-2021</td>
+                        <td><a href="stocks/BCPC.html">Balchem Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$144.17</td>
+                        <td>$144,174.47</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-09-2021</td>
+                        <td><a href="stocks/BCPC.html">Balchem Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$147.57</td>
+                        <td>-$147,574.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-09-2021</td>
+                        <td><a href="stocks/DLTR.html">Dollar Tree, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$86.28</td>
+                        <td>$86,280.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-09-2021</td>
+                        <td><a href="stocks/DLTR.html">Dollar Tree, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$100.51</td>
+                        <td>-$100,510.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-09-2021</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>788</td>
+                        <td>$1,662.99</td>
+                        <td>$1,310,436.11</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-09-2021</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-788</td>
+                        <td>$1,679.40</td>
+                        <td>-$1,323,367.22</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-09-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>750</td>
+                        <td>$1,763.00</td>
+                        <td>$1,322,250.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-10-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-750</td>
+                        <td>$1,792.00</td>
+                        <td>-$1,344,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-10-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$712.35</td>
+                        <td>$712,349.98</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-10-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$723.75</td>
+                        <td>-$723,750.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-10-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>849</td>
+                        <td>$1,597.00</td>
+                        <td>$1,355,853.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-10-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-849</td>
+                        <td>$1,651.00</td>
+                        <td>-$1,401,699.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-10-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>849</td>
+                        <td>$1,651.00</td>
+                        <td>$1,401,699.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-10-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-849</td>
+                        <td>$1,716.00</td>
+                        <td>-$1,456,884.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-10-2021</td>
+                        <td><a href="stocks/ASPS.html">Altisource Portfolio Solutions S.A. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$94.00</td>
+                        <td>$94,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-10-2021</td>
+                        <td><a href="stocks/ASPS.html">Altisource Portfolio Solutions S.A. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$113.92</td>
+                        <td>-$113,920.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-10-2021</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$1,461.25</td>
+                        <td>$1,461,250.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-10-2021</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$1,518.43</td>
+                        <td>-$1,518,430.05</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-10-2021</td>
+                        <td><a href="stocks/ZBRA.html">Zebra Technologies Corporation - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$496.86</td>
+                        <td>$496,859.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-10-2021</td>
+                        <td><a href="stocks/ZBRA.html">Zebra Technologies Corporation - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$511.35</td>
+                        <td>-$511,350.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-10-2021</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$1,524.25</td>
+                        <td>$1,524,250.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-10-2021</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$1,563.09</td>
+                        <td>-$1,563,089.97</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-10-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>902</td>
+                        <td>$1,759.00</td>
+                        <td>$1,586,618.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-10-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-902</td>
+                        <td>$1,823.00</td>
+                        <td>-$1,644,346.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-10-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>902</td>
+                        <td>$1,823.00</td>
+                        <td>$1,644,346.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-10-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-902</td>
+                        <td>$1,890.00</td>
+                        <td>-$1,704,780.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-10-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>902</td>
+                        <td>$1,890.00</td>
+                        <td>$1,704,780.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-10-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-902</td>
+                        <td>$1,918.00</td>
+                        <td>-$1,730,036.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-10-2021</td>
+                        <td><a href="stocks/MORN.html">Morningstar, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$283.95</td>
+                        <td>$283,950.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-10-2021</td>
+                        <td><a href="stocks/MORN.html">Morningstar, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$291.78</td>
+                        <td>-$291,783.39</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-10-2021</td>
+                        <td><a href="stocks/MEDP.html">Medpace Holdings, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$188.38</td>
+                        <td>$188,380.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-10-2021</td>
+                        <td><a href="stocks/MEDP.html">Medpace Holdings, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$213.02</td>
+                        <td>-$213,020.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-10-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>945</td>
+                        <td>$1,866.00</td>
+                        <td>$1,763,370.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-10-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-945</td>
+                        <td>$1,936.00</td>
+                        <td>-$1,829,520.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-10-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>945</td>
+                        <td>$1,936.00</td>
+                        <td>$1,829,520.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-10-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-945</td>
+                        <td>$2,224.00</td>
+                        <td>-$2,101,680.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-10-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>945</td>
+                        <td>$2,224.00</td>
+                        <td>$2,101,680.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-10-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-945</td>
+                        <td>$2,253.00</td>
+                        <td>-$2,129,085.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-11-2021</td>
+                        <td><a href="stocks/ZBRA.html">Zebra Technologies Corporation - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$542.59</td>
+                        <td>$542,590.03</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-11-2021</td>
+                        <td><a href="stocks/ZBRA.html">Zebra Technologies Corporation - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$585.55</td>
+                        <td>-$585,549.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-11-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>988</td>
+                        <td>$2,199.00</td>
+                        <td>$2,172,612.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-11-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-988</td>
+                        <td>$2,533.00</td>
+                        <td>-$2,502,604.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-11-2021</td>
+                        <td><a href="stocks/ETSY.html">Etsy, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$239.62</td>
+                        <td>$239,620.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-11-2021</td>
+                        <td><a href="stocks/ETSY.html">Etsy, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$271.27</td>
+                        <td>-$271,269.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-11-2021</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$1,556.49</td>
+                        <td>$1,556,489.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-11-2021</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$1,629.76</td>
+                        <td>-$1,629,760.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-11-2021</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$1,650.00</td>
+                        <td>$1,650,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-11-2021</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$1,709.98</td>
+                        <td>-$1,709,979.98</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-11-2021</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$137.40</td>
+                        <td>$137,399.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-11-2021</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$165.40</td>
+                        <td>-$165,399.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-11-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$2,181.00</td>
+                        <td>$2,181,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-11-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$2,298.00</td>
+                        <td>-$2,298,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-11-2021</td>
+                        <td><a href="stocks/RIVN.html">Rivian Automotive, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$149.36</td>
+                        <td>$149,360.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-11-2021</td>
+                        <td><a href="stocks/RIVN.html">Rivian Automotive, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$172.01</td>
+                        <td>-$172,009.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-11-2021</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$351.58</td>
+                        <td>$351,576.66</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-11-2021</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$363.00</td>
+                        <td>-$363,003.33</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-11-2021</td>
+                        <td><a href="stocks/ZS.html">Zscaler, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$356.00</td>
+                        <td>$356,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-11-2021</td>
+                        <td><a href="stocks/ZS.html">Zscaler, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$365.65</td>
+                        <td>-$365,649.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-11-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$1,761.00</td>
+                        <td>$1,761,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-11-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$1,991.00</td>
+                        <td>-$1,991,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-11-2021</td>
+                        <td><a href="stocks/DLTR.html">Dollar Tree, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$132.56</td>
+                        <td>$132,560.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-11-2021</td>
+                        <td><a href="stocks/DLTR.html">Dollar Tree, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$144.71</td>
+                        <td>-$144,710.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-11-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$1,973.00</td>
+                        <td>$1,973,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-11-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$2,004.00</td>
+                        <td>-$2,004,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-11-2021</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$176.40</td>
+                        <td>$176,399.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-11-2021</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$215.20</td>
+                        <td>-$215,200.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-11-2021</td>
+                        <td><a href="stocks/MGPI.html">MGP Ingredients, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$76.15</td>
+                        <td>$76,147.07</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-12-2021</td>
+                        <td><a href="stocks/MGPI.html">MGP Ingredients, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$82.04</td>
+                        <td>-$82,035.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-12-2021</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$634.20</td>
+                        <td>$634,200.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-12-2021</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$670.40</td>
+                        <td>-$670,400.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-12-2021</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$670.40</td>
+                        <td>$670,400.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-12-2021</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$679.30</td>
+                        <td>-$679,299.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-12-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$1,760.00</td>
+                        <td>$1,760,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-12-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$1,843.00</td>
+                        <td>-$1,843,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-12-2021</td>
+                        <td><a href="stocks/ROKU.html">Roku, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$216.60</td>
+                        <td>$216,600.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-12-2021</td>
+                        <td><a href="stocks/ROKU.html">Roku, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$256.08</td>
+                        <td>-$256,079.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-12-2021</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$652.24</td>
+                        <td>$652,237.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-12-2021</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$663.88</td>
+                        <td>-$663,884.83</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-12-2021</td>
+                        <td><a href="stocks/ZBRA.html">Zebra Technologies Corporation - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$597.74</td>
+                        <td>$597,739.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-12-2021</td>
+                        <td><a href="stocks/ZBRA.html">Zebra Technologies Corporation - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$614.55</td>
+                        <td>-$614,549.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-12-2021</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$605.55</td>
+                        <td>$605,549.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-12-2021</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$621.89</td>
+                        <td>-$621,890.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-12-2021</td>
+                        <td><a href="stocks/ZS.html">Zscaler, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$284.34</td>
+                        <td>$284,340.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-12-2021</td>
+                        <td><a href="stocks/ZS.html">Zscaler, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$307.24</td>
+                        <td>-$307,239.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-12-2021</td>
+                        <td><a href="stocks/ROKU.html">Roku, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$203.94</td>
+                        <td>$203,940.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-12-2021</td>
+                        <td><a href="stocks/ROKU.html">Roku, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$219.01</td>
+                        <td>-$219,009.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-12-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$1,526.00</td>
+                        <td>$1,526,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-12-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$1,561.00</td>
+                        <td>-$1,561,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-12-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$1,442.00</td>
+                        <td>$1,442,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-12-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$1,507.00</td>
+                        <td>-$1,507,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-12-2021</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$312.84</td>
+                        <td>$312,843.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-12-2021</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$336.29</td>
+                        <td>-$336,290.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-12-2021</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$1,227.94</td>
+                        <td>$1,227,939.94</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-12-2021</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$1,262.73</td>
+                        <td>-$1,262,729.98</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-12-2021</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$1,299.11</td>
+                        <td>$1,299,109.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-12-2021</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$1,316.28</td>
+                        <td>-$1,316,280.03</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-12-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$674.55</td>
+                        <td>$674,549.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-12-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$686.25</td>
+                        <td>-$686,250.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-12-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$1,388.00</td>
+                        <td>$1,388,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-12-2021</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$1,421.00</td>
+                        <td>-$1,421,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-12-2021</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$404.79</td>
+                        <td>$404,790.01</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</div>
+</body>
+</html>
