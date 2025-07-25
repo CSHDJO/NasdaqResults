@@ -1,0 +1,2147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nasdaq Trade System - BinomialSolutions</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+            crossorigin="anonymous"></script>
+    <meta name="theme-color" content="#712cf9">
+</head>
+
+<body>
+<header class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow" data-bs-theme="dark"><a
+        class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="#">Nasdaq Trade system</a>
+</header>
+
+
+<div class="container-fluid">
+    <div class="row">
+        
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <a href="GameResult.html">Back</a>
+            <h1>BinomialSolutions</h1>
+            <img src="BinomialSolutions.png" class="img-fluid">
+            <div class="table-responsive small">
+                <table class="table table-striped table-sm">
+                    <thead>
+                    <tr>
+                        <th scope="col">ExecutedOn</th>
+                        <th scope="col">Company</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">AtPrice</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr scope="row">
+                        <td>03-01-2023</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$180.09</td>
+                        <td>$900.45</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-01-2023</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$197.57</td>
+                        <td>-$987.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-01-2023</td>
+                        <td><a href="stocks/MKTX.html">MarketAxess Holdings, Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$278.17</td>
+                        <td>$834.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-01-2023</td>
+                        <td><a href="stocks/MKTX.html">MarketAxess Holdings, Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$289.29</td>
+                        <td>-$867.87</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-01-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$364.04</td>
+                        <td>$1,092.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-01-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$387.55</td>
+                        <td>-$1,162.65</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-01-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>1</td>
+                        <td>$678.61</td>
+                        <td>$678.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-01-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$697.02</td>
+                        <td>-$697.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-01-2023</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$285.48</td>
+                        <td>$1,141.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-01-2023</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$302.15</td>
+                        <td>-$1,208.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-01-2023</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$240.58</td>
+                        <td>$1,202.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-01-2023</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$253.00</td>
+                        <td>-$1,265.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-01-2023</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$253.00</td>
+                        <td>$1,265.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-01-2023</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$268.64</td>
+                        <td>-$1,343.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-01-2023</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>23</td>
+                        <td>$59.10</td>
+                        <td>$1,359.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-01-2023</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-23</td>
+                        <td>$63.75</td>
+                        <td>-$1,466.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-01-2023</td>
+                        <td><a href="stocks/KPTI.html">Karyopharm Therapeutics Inc. - Common Stock</a></td>
+                        <td>33</td>
+                        <td>$46.05</td>
+                        <td>$1,519.65</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-01-2023</td>
+                        <td><a href="stocks/KPTI.html">Karyopharm Therapeutics Inc. - Common Stock</a></td>
+                        <td>-33</td>
+                        <td>$50.10</td>
+                        <td>-$1,653.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-01-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>4</td>
+                        <td>$384.20</td>
+                        <td>$1,536.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-01-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$396.11</td>
+                        <td>-$1,584.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-01-2023</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>16</td>
+                        <td>$105.80</td>
+                        <td>$1,692.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-01-2023</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>-16</td>
+                        <td>$110.00</td>
+                        <td>-$1,760.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-01-2023</td>
+                        <td><a href="stocks/MKTX.html">MarketAxess Holdings, Inc. - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$319.64</td>
+                        <td>$1,598.21</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-01-2023</td>
+                        <td><a href="stocks/MKTX.html">MarketAxess Holdings, Inc. - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$352.39</td>
+                        <td>-$1,761.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-01-2023</td>
+                        <td><a href="stocks/SNPS.html">Synopsys, Inc. - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$349.27</td>
+                        <td>$1,746.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-01-2023</td>
+                        <td><a href="stocks/SNPS.html">Synopsys, Inc. - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$356.67</td>
+                        <td>-$1,783.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-01-2023</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>16</td>
+                        <td>$122.33</td>
+                        <td>$1,957.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-01-2023</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>-16</td>
+                        <td>$129.74</td>
+                        <td>-$2,075.84</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-01-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$734.43</td>
+                        <td>$1,468.86</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-01-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$756.38</td>
+                        <td>-$1,512.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-01-2023</td>
+                        <td><a href="stocks/SLAB.html">Silicon Laboratories, Inc. - Common Stock</a></td>
+                        <td>13</td>
+                        <td>$156.91</td>
+                        <td>$2,039.83</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-02-2023</td>
+                        <td><a href="stocks/SLAB.html">Silicon Laboratories, Inc. - Common Stock</a></td>
+                        <td>-13</td>
+                        <td>$179.00</td>
+                        <td>-$2,327.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-02-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>6</td>
+                        <td>$398.68</td>
+                        <td>$2,392.08</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-02-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-6</td>
+                        <td>$412.25</td>
+                        <td>-$2,473.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-02-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$749.13</td>
+                        <td>$2,247.39</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-02-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$780.97</td>
+                        <td>-$2,342.91</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-02-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>6</td>
+                        <td>$395.35</td>
+                        <td>$2,372.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-02-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>-6</td>
+                        <td>$406.31</td>
+                        <td>-$2,437.83</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-02-2023</td>
+                        <td><a href="stocks/CME.html">CME Group Inc. - Class A Common Stock</a></td>
+                        <td>16</td>
+                        <td>$161.22</td>
+                        <td>$2,579.46</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-02-2023</td>
+                        <td><a href="stocks/CME.html">CME Group Inc. - Class A Common Stock</a></td>
+                        <td>-16</td>
+                        <td>$169.95</td>
+                        <td>-$2,719.17</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-02-2023</td>
+                        <td><a href="stocks/APP.html">Applovin Corporation - Class A Common Stock</a></td>
+                        <td>221</td>
+                        <td>$12.68</td>
+                        <td>$2,802.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-02-2023</td>
+                        <td><a href="stocks/APP.html">Applovin Corporation - Class A Common Stock</a></td>
+                        <td>-221</td>
+                        <td>$16.11</td>
+                        <td>-$3,560.31</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-02-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$742.72</td>
+                        <td>$2,970.87</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-02-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$755.52</td>
+                        <td>-$3,022.09</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-02-2023</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>24</td>
+                        <td>$145.48</td>
+                        <td>$3,491.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-02-2023</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>-24</td>
+                        <td>$163.98</td>
+                        <td>-$3,935.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-02-2023</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>12</td>
+                        <td>$315.43</td>
+                        <td>$3,785.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-02-2023</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>-12</td>
+                        <td>$343.98</td>
+                        <td>-$4,127.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-02-2023</td>
+                        <td><a href="stocks/NTRA.html">Natera, Inc. - Common Stock</a></td>
+                        <td>103</td>
+                        <td>$42.34</td>
+                        <td>$4,361.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-02-2023</td>
+                        <td><a href="stocks/NTRA.html">Natera, Inc. - Common Stock</a></td>
+                        <td>-103</td>
+                        <td>$49.51</td>
+                        <td>-$5,099.53</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-02-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>6</td>
+                        <td>$734.30</td>
+                        <td>$4,405.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-02-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-6</td>
+                        <td>$746.68</td>
+                        <td>-$4,480.06</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-02-2023</td>
+                        <td><a href="stocks/WIX.html">Wix.com Ltd. - Ordinary Shares</a></td>
+                        <td>64</td>
+                        <td>$80.87</td>
+                        <td>$5,175.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-02-2023</td>
+                        <td><a href="stocks/WIX.html">Wix.com Ltd. - Ordinary Shares</a></td>
+                        <td>-64</td>
+                        <td>$90.90</td>
+                        <td>-$5,817.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-02-2023</td>
+                        <td><a href="stocks/MYRG.html">MYR Group, Inc. - Common Stock</a></td>
+                        <td>59</td>
+                        <td>$97.98</td>
+                        <td>$5,780.82</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-02-2023</td>
+                        <td><a href="stocks/MYRG.html">MYR Group, Inc. - Common Stock</a></td>
+                        <td>-59</td>
+                        <td>$112.18</td>
+                        <td>-$6,618.62</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-02-2023</td>
+                        <td><a href="stocks/OLED.html">Universal Display Corporation - Common Stock</a></td>
+                        <td>52</td>
+                        <td>$126.88</td>
+                        <td>$6,597.82</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-02-2023</td>
+                        <td><a href="stocks/OLED.html">Universal Display Corporation - Common Stock</a></td>
+                        <td>-52</td>
+                        <td>$134.60</td>
+                        <td>-$6,999.11</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-02-2023</td>
+                        <td><a href="stocks/PGNY.html">Progyny, Inc. - Common Stock</a></td>
+                        <td>228</td>
+                        <td>$31.09</td>
+                        <td>$7,088.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-02-2023</td>
+                        <td><a href="stocks/PGNY.html">Progyny, Inc. - Common Stock</a></td>
+                        <td>-228</td>
+                        <td>$37.56</td>
+                        <td>-$8,563.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-02-2023</td>
+                        <td><a href="stocks/FSLR.html">First Solar, Inc. - Common Stock</a></td>
+                        <td>50</td>
+                        <td>$169.14</td>
+                        <td>$8,457.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-03-2023</td>
+                        <td><a href="stocks/FSLR.html">First Solar, Inc. - Common Stock</a></td>
+                        <td>-50</td>
+                        <td>$195.68</td>
+                        <td>-$9,784.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-03-2023</td>
+                        <td><a href="stocks/PLPC.html">Preformed Line Products Company - Common Stock</a></td>
+                        <td>113</td>
+                        <td>$87.42</td>
+                        <td>$9,878.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-03-2023</td>
+                        <td><a href="stocks/PLPC.html">Preformed Line Products Company - Common Stock</a></td>
+                        <td>-113</td>
+                        <td>$106.55</td>
+                        <td>-$12,039.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-03-2023</td>
+                        <td><a href="stocks/MKTX.html">MarketAxess Holdings, Inc. - Common Stock</a></td>
+                        <td>34</td>
+                        <td>$344.85</td>
+                        <td>$11,724.97</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-03-2023</td>
+                        <td><a href="stocks/MKTX.html">MarketAxess Holdings, Inc. - Common Stock</a></td>
+                        <td>-34</td>
+                        <td>$359.18</td>
+                        <td>-$12,212.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-03-2023</td>
+                        <td><a href="stocks/PLPC.html">Preformed Line Products Company - Common Stock</a></td>
+                        <td>107</td>
+                        <td>$116.54</td>
+                        <td>$12,470.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-03-2023</td>
+                        <td><a href="stocks/PLPC.html">Preformed Line Products Company - Common Stock</a></td>
+                        <td>-107</td>
+                        <td>$120.06</td>
+                        <td>-$12,845.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-03-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>35</td>
+                        <td>$367.10</td>
+                        <td>$12,848.64</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-03-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>-35</td>
+                        <td>$378.85</td>
+                        <td>-$13,259.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-03-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>39</td>
+                        <td>$334.23</td>
+                        <td>$13,034.97</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-03-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-39</td>
+                        <td>$341.44</td>
+                        <td>-$13,316.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-03-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>18</td>
+                        <td>$741.70</td>
+                        <td>$13,350.59</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-03-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-18</td>
+                        <td>$744.94</td>
+                        <td>-$13,408.93</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-03-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>18</td>
+                        <td>$750.26</td>
+                        <td>$13,504.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-03-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-18</td>
+                        <td>$764.69</td>
+                        <td>-$13,764.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-03-2023</td>
+                        <td><a href="stocks/MKTX.html">MarketAxess Holdings, Inc. - Common Stock</a></td>
+                        <td>38</td>
+                        <td>$361.12</td>
+                        <td>$13,722.69</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-03-2023</td>
+                        <td><a href="stocks/MKTX.html">MarketAxess Holdings, Inc. - Common Stock</a></td>
+                        <td>-38</td>
+                        <td>$369.24</td>
+                        <td>-$14,031.11</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-03-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>39</td>
+                        <td>$362.13</td>
+                        <td>$14,122.93</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-03-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>-39</td>
+                        <td>$381.28</td>
+                        <td>-$14,870.05</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-03-2023</td>
+                        <td><a href="stocks/RGLD.html">Royal Gold, Inc. - Common Stock</a></td>
+                        <td>128</td>
+                        <td>$116.71</td>
+                        <td>$14,938.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-03-2023</td>
+                        <td><a href="stocks/RGLD.html">Royal Gold, Inc. - Common Stock</a></td>
+                        <td>-128</td>
+                        <td>$121.94</td>
+                        <td>-$15,608.89</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-03-2023</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>57</td>
+                        <td>$272.31</td>
+                        <td>$15,521.67</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-03-2023</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>-57</td>
+                        <td>$296.51</td>
+                        <td>-$16,901.07</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-03-2023</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>107</td>
+                        <td>$158.40</td>
+                        <td>$16,948.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-03-2023</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>-107</td>
+                        <td>$161.40</td>
+                        <td>-$17,269.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-03-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>23</td>
+                        <td>$749.23</td>
+                        <td>$17,232.26</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-03-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-23</td>
+                        <td>$799.95</td>
+                        <td>-$18,398.82</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-03-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>23</td>
+                        <td>$799.95</td>
+                        <td>$18,398.82</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-03-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-23</td>
+                        <td>$817.74</td>
+                        <td>-$18,808.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-03-2023</td>
+                        <td><a href="stocks/BMEA.html">Biomea Fusion, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$15.43</td>
+                        <td>$15,430.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-03-2023</td>
+                        <td><a href="stocks/BMEA.html">Biomea Fusion, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$30.71</td>
+                        <td>-$30,710.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-03-2023</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>123</td>
+                        <td>$277.80</td>
+                        <td>$34,169.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-03-2023</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>-123</td>
+                        <td>$291.94</td>
+                        <td>-$35,908.62</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-03-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>95</td>
+                        <td>$376.64</td>
+                        <td>$35,780.65</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-03-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>-95</td>
+                        <td>$387.28</td>
+                        <td>-$36,791.41</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-03-2023</td>
+                        <td><a href="stocks/TEAM.html">Atlassian Corporation  - Class A Common Stock</a></td>
+                        <td>230</td>
+                        <td>$160.59</td>
+                        <td>$36,935.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-03-2023</td>
+                        <td><a href="stocks/TEAM.html">Atlassian Corporation  - Class A Common Stock</a></td>
+                        <td>-230</td>
+                        <td>$171.17</td>
+                        <td>-$39,369.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-04-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>109</td>
+                        <td>$360.14</td>
+                        <td>$39,255.26</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-04-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-109</td>
+                        <td>$367.47</td>
+                        <td>-$40,054.23</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-04-2023</td>
+                        <td><a href="stocks/BIIB.html">Biogen Inc. - Common Stock</a></td>
+                        <td>146</td>
+                        <td>$275.25</td>
+                        <td>$40,186.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-04-2023</td>
+                        <td><a href="stocks/BIIB.html">Biogen Inc. - Common Stock</a></td>
+                        <td>-146</td>
+                        <td>$283.99</td>
+                        <td>-$41,462.54</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-04-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>111</td>
+                        <td>$373.18</td>
+                        <td>$41,422.98</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-04-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-111</td>
+                        <td>$387.36</td>
+                        <td>-$42,996.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-04-2023</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>392</td>
+                        <td>$109.71</td>
+                        <td>$43,006.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-04-2023</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-392</td>
+                        <td>$117.76</td>
+                        <td>-$46,161.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-04-2023</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>392</td>
+                        <td>$117.76</td>
+                        <td>$46,161.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-04-2023</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-392</td>
+                        <td>$131.56</td>
+                        <td>-$51,571.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-04-2023</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>181</td>
+                        <td>$284.96</td>
+                        <td>$51,577.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-04-2023</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>-181</td>
+                        <td>$306.89</td>
+                        <td>-$55,547.09</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-04-2023</td>
+                        <td><a href="stocks/ETSY.html">Etsy, Inc. - Common Stock</a></td>
+                        <td>551</td>
+                        <td>$100.72</td>
+                        <td>$55,496.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-04-2023</td>
+                        <td><a href="stocks/ETSY.html">Etsy, Inc. - Common Stock</a></td>
+                        <td>-551</td>
+                        <td>$102.53</td>
+                        <td>-$56,494.03</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-04-2023</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>333</td>
+                        <td>$169.40</td>
+                        <td>$56,410.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-04-2023</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>-333</td>
+                        <td>$177.80</td>
+                        <td>-$59,207.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-04-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>158</td>
+                        <td>$375.76</td>
+                        <td>$59,370.08</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-04-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-158</td>
+                        <td>$382.12</td>
+                        <td>-$60,374.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-04-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>170</td>
+                        <td>$353.28</td>
+                        <td>$60,056.98</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-04-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>-170</td>
+                        <td>$367.41</td>
+                        <td>-$62,459.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-04-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>165</td>
+                        <td>$380.01</td>
+                        <td>$62,701.65</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-04-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-165</td>
+                        <td>$389.37</td>
+                        <td>-$64,246.05</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-04-2023</td>
+                        <td><a href="stocks/MEDP.html">Medpace Holdings, Inc. - Common Stock</a></td>
+                        <td>343</td>
+                        <td>$187.26</td>
+                        <td>$64,230.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-04-2023</td>
+                        <td><a href="stocks/MEDP.html">Medpace Holdings, Inc. - Common Stock</a></td>
+                        <td>-343</td>
+                        <td>$208.27</td>
+                        <td>-$71,436.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-04-2023</td>
+                        <td><a href="stocks/MSFT.html">Microsoft Corporation - Common Stock</a></td>
+                        <td>264</td>
+                        <td>$270.61</td>
+                        <td>$71,441.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-04-2023</td>
+                        <td><a href="stocks/MSFT.html">Microsoft Corporation - Common Stock</a></td>
+                        <td>-264</td>
+                        <td>$290.21</td>
+                        <td>-$76,616.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-04-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>219</td>
+                        <td>$349.46</td>
+                        <td>$76,532.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-04-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>-219</td>
+                        <td>$376.14</td>
+                        <td>-$82,374.59</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-04-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>240</td>
+                        <td>$342.75</td>
+                        <td>$82,260.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-04-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-240</td>
+                        <td>$368.70</td>
+                        <td>-$88,488.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-05-2023</td>
+                        <td><a href="stocks/WWD.html">Woodward, Inc. - Common Stock</a></td>
+                        <td>913</td>
+                        <td>$97.23</td>
+                        <td>$88,772.06</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-05-2023</td>
+                        <td><a href="stocks/WWD.html">Woodward, Inc. - Common Stock</a></td>
+                        <td>-913</td>
+                        <td>$112.18</td>
+                        <td>-$102,424.47</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-05-2023</td>
+                        <td><a href="stocks/LFUS.html">Littelfuse, Inc. - Common Stock</a></td>
+                        <td>431</td>
+                        <td>$237.62</td>
+                        <td>$102,415.62</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-05-2023</td>
+                        <td><a href="stocks/LFUS.html">Littelfuse, Inc. - Common Stock</a></td>
+                        <td>-431</td>
+                        <td>$257.18</td>
+                        <td>-$110,845.79</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-05-2023</td>
+                        <td><a href="stocks/PLPC.html">Preformed Line Products Company - Common Stock</a></td>
+                        <td>897</td>
+                        <td>$123.54</td>
+                        <td>$110,819.27</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-05-2023</td>
+                        <td><a href="stocks/PLPC.html">Preformed Line Products Company - Common Stock</a></td>
+                        <td>-897</td>
+                        <td>$148.22</td>
+                        <td>-$132,954.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-05-2023</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>472</td>
+                        <td>$281.22</td>
+                        <td>$132,735.84</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-05-2023</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>-472</td>
+                        <td>$293.39</td>
+                        <td>-$138,480.09</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-05-2023</td>
+                        <td><a href="stocks/INTA.html">Intapp, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$37.94</td>
+                        <td>$37,940.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-05-2023</td>
+                        <td><a href="stocks/INTA.html">Intapp, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$43.80</td>
+                        <td>-$43,800.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-05-2023</td>
+                        <td><a href="stocks/ILMN.html">Illumina, Inc. - Common Stock</a></td>
+                        <td>765</td>
+                        <td>$188.97</td>
+                        <td>$144,561.19</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-05-2023</td>
+                        <td><a href="stocks/ILMN.html">Illumina, Inc. - Common Stock</a></td>
+                        <td>-765</td>
+                        <td>$203.78</td>
+                        <td>-$155,894.79</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-05-2023</td>
+                        <td><a href="stocks/AXON.html">Axon Enterprise, Inc. - Common Stock</a></td>
+                        <td>809</td>
+                        <td>$192.73</td>
+                        <td>$155,918.57</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-05-2023</td>
+                        <td><a href="stocks/AXON.html">Axon Enterprise, Inc. - Common Stock</a></td>
+                        <td>-809</td>
+                        <td>$204.60</td>
+                        <td>-$165,521.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-05-2023</td>
+                        <td><a href="stocks/FSLR.html">First Solar, Inc. - Common Stock</a></td>
+                        <td>903</td>
+                        <td>$183.19</td>
+                        <td>$165,420.57</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-05-2023</td>
+                        <td><a href="stocks/FSLR.html">First Solar, Inc. - Common Stock</a></td>
+                        <td>-903</td>
+                        <td>$231.69</td>
+                        <td>-$209,216.07</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-05-2023</td>
+                        <td><a href="stocks/OLED.html">Universal Display Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$136.97</td>
+                        <td>$136,973.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-05-2023</td>
+                        <td><a href="stocks/OLED.html">Universal Display Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$145.93</td>
+                        <td>-$145,927.23</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-05-2023</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>739</td>
+                        <td>$295.12</td>
+                        <td>$218,093.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-05-2023</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>-739</td>
+                        <td>$303.07</td>
+                        <td>-$223,968.74</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-05-2023</td>
+                        <td><a href="stocks/SNPS.html">Synopsys, Inc. - Common Stock</a></td>
+                        <td>594</td>
+                        <td>$377.08</td>
+                        <td>$223,985.51</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-05-2023</td>
+                        <td><a href="stocks/SNPS.html">Synopsys, Inc. - Common Stock</a></td>
+                        <td>-594</td>
+                        <td>$409.71</td>
+                        <td>-$243,367.73</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-05-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>326</td>
+                        <td>$745.42</td>
+                        <td>$243,006.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-05-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-326</td>
+                        <td>$756.96</td>
+                        <td>-$246,768.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-05-2023</td>
+                        <td><a href="stocks/BNTX.html">BioNTech SE - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$107.50</td>
+                        <td>$107,500.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-05-2023</td>
+                        <td><a href="stocks/BNTX.html">BioNTech SE - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$116.30</td>
+                        <td>-$116,300.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-05-2023</td>
+                        <td><a href="stocks/ILMN.html">Illumina, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$198.80</td>
+                        <td>$198,803.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-05-2023</td>
+                        <td><a href="stocks/ILMN.html">Illumina, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$206.86</td>
+                        <td>-$206,857.97</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-05-2023</td>
+                        <td><a href="stocks/SNPS.html">Synopsys, Inc. - Common Stock</a></td>
+                        <td>668</td>
+                        <td>$395.39</td>
+                        <td>$264,120.53</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-05-2023</td>
+                        <td><a href="stocks/SNPS.html">Synopsys, Inc. - Common Stock</a></td>
+                        <td>-668</td>
+                        <td>$434.20</td>
+                        <td>-$290,045.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-05-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>680</td>
+                        <td>$426.09</td>
+                        <td>$289,738.71</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-05-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>-680</td>
+                        <td>$452.52</td>
+                        <td>-$307,713.51</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-05-2023</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$167.20</td>
+                        <td>$167,200.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-05-2023</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$180.20</td>
+                        <td>-$180,200.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-05-2023</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$284.83</td>
+                        <td>$284,829.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-06-2023</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$294.75</td>
+                        <td>-$294,750.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-06-2023</td>
+                        <td><a href="stocks/FIVE.html">Five Below, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$169.35</td>
+                        <td>$169,350.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-06-2023</td>
+                        <td><a href="stocks/FIVE.html">Five Below, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$182.55</td>
+                        <td>-$182,550.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-06-2023</td>
+                        <td><a href="stocks/LGIH.html">LGI Homes, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$119.26</td>
+                        <td>$119,260.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-06-2023</td>
+                        <td><a href="stocks/LGIH.html">LGI Homes, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$128.01</td>
+                        <td>-$128,009.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-06-2023</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$95.20</td>
+                        <td>$95,200.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-06-2023</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$107.20</td>
+                        <td>-$107,200.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-06-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>495</td>
+                        <td>$736.59</td>
+                        <td>$364,613.97</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-06-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-495</td>
+                        <td>$748.05</td>
+                        <td>-$370,285.83</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-06-2023</td>
+                        <td><a href="stocks/AMD.html">Advanced Micro Devices, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$121.05</td>
+                        <td>$121,050.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-06-2023</td>
+                        <td><a href="stocks/AMD.html">Advanced Micro Devices, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$124.92</td>
+                        <td>-$124,920.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-06-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>498</td>
+                        <td>$751.93</td>
+                        <td>$374,461.87</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-06-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-498</td>
+                        <td>$765.23</td>
+                        <td>-$381,086.87</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-06-2023</td>
+                        <td><a href="stocks/IPGP.html">IPG Photonics Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$117.06</td>
+                        <td>$117,060.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-06-2023</td>
+                        <td><a href="stocks/IPGP.html">IPG Photonics Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$132.83</td>
+                        <td>-$132,830.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-06-2023</td>
+                        <td><a href="stocks/DPZ.html">Domino's Pizza Inc - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$298.67</td>
+                        <td>$298,674.29</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-06-2023</td>
+                        <td><a href="stocks/DPZ.html">Domino's Pizza Inc - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$317.96</td>
+                        <td>-$317,959.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-06-2023</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$91.54</td>
+                        <td>$91,540.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-06-2023</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$99.36</td>
+                        <td>-$99,360.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-06-2023</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$107.40</td>
+                        <td>$107,400.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-06-2023</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$114.40</td>
+                        <td>-$114,400.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-06-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>962</td>
+                        <td>$447.85</td>
+                        <td>$430,831.09</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-06-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>-962</td>
+                        <td>$458.59</td>
+                        <td>-$441,166.98</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-06-2023</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$87.63</td>
+                        <td>$87,630.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-06-2023</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$105.80</td>
+                        <td>-$105,800.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-06-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$449.93</td>
+                        <td>$449,929.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-06-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$467.96</td>
+                        <td>-$467,963.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-06-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>668</td>
+                        <td>$714.12</td>
+                        <td>$477,029.51</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-06-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-668</td>
+                        <td>$698.10</td>
+                        <td>-$466,330.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-07-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>652</td>
+                        <td>$715.85</td>
+                        <td>$466,734.98</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-07-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-652</td>
+                        <td>$702.89</td>
+                        <td>-$458,282.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-07-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>652</td>
+                        <td>$702.89</td>
+                        <td>$458,282.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-07-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-652</td>
+                        <td>$690.54</td>
+                        <td>-$450,232.86</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-07-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>981</td>
+                        <td>$458.87</td>
+                        <td>$450,149.73</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-07-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>-981</td>
+                        <td>$450.84</td>
+                        <td>-$442,276.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-07-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>931</td>
+                        <td>$474.96</td>
+                        <td>$442,187.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-07-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>-931</td>
+                        <td>$461.74</td>
+                        <td>-$429,882.91</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-07-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>931</td>
+                        <td>$461.74</td>
+                        <td>$429,882.91</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-07-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>-931</td>
+                        <td>$441.64</td>
+                        <td>-$411,165.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-08-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>844</td>
+                        <td>$486.96</td>
+                        <td>$410,994.31</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-08-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>-844</td>
+                        <td>$469.98</td>
+                        <td>-$396,659.29</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-08-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>945</td>
+                        <td>$420.08</td>
+                        <td>$396,975.59</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-08-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-945</td>
+                        <td>$413.38</td>
+                        <td>-$390,644.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-08-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>803</td>
+                        <td>$486.35</td>
+                        <td>$390,536.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-08-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>-803</td>
+                        <td>$468.72</td>
+                        <td>-$376,379.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-08-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>740</td>
+                        <td>$508.61</td>
+                        <td>$376,371.39</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-08-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-740</td>
+                        <td>$504.57</td>
+                        <td>-$373,381.81</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-08-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>852</td>
+                        <td>$438.12</td>
+                        <td>$373,278.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-09-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-852</td>
+                        <td>$422.32</td>
+                        <td>-$359,816.65</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-09-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>712</td>
+                        <td>$505.19</td>
+                        <td>$359,694.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-09-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>-712</td>
+                        <td>$489.16</td>
+                        <td>-$348,282.55</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-09-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>673</td>
+                        <td>$517.58</td>
+                        <td>$348,331.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-09-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-673</td>
+                        <td>$509.70</td>
+                        <td>-$343,028.11</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-09-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>706</td>
+                        <td>$486.19</td>
+                        <td>$343,249.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-09-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>-706</td>
+                        <td>$477.96</td>
+                        <td>-$337,442.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-09-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>709</td>
+                        <td>$475.80</td>
+                        <td>$337,342.17</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-09-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>-709</td>
+                        <td>$472.16</td>
+                        <td>-$334,761.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-09-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>709</td>
+                        <td>$472.16</td>
+                        <td>$334,761.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-09-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>-709</td>
+                        <td>$446.89</td>
+                        <td>-$316,847.73</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-09-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>605</td>
+                        <td>$524.13</td>
+                        <td>$317,098.65</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-09-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-605</td>
+                        <td>$514.01</td>
+                        <td>-$310,976.06</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-09-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>611</td>
+                        <td>$508.78</td>
+                        <td>$310,864.58</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-09-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-611</td>
+                        <td>$483.54</td>
+                        <td>-$295,442.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-09-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>611</td>
+                        <td>$483.54</td>
+                        <td>$295,442.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-09-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-611</td>
+                        <td>$477.79</td>
+                        <td>-$291,929.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-09-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>350</td>
+                        <td>$832.27</td>
+                        <td>$291,294.27</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-09-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-350</td>
+                        <td>$820.69</td>
+                        <td>-$287,241.97</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-10-2023</td>
+                        <td><a href="stocks/DPZ.html">Domino's Pizza Inc - Common Stock</a></td>
+                        <td>772</td>
+                        <td>$372.91</td>
+                        <td>$287,885.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-10-2023</td>
+                        <td><a href="stocks/DPZ.html">Domino's Pizza Inc - Common Stock</a></td>
+                        <td>-772</td>
+                        <td>$356.88</td>
+                        <td>-$275,508.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-10-2023</td>
+                        <td><a href="stocks/DPZ.html">Domino's Pizza Inc - Common Stock</a></td>
+                        <td>758</td>
+                        <td>$363.56</td>
+                        <td>$275,578.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-10-2023</td>
+                        <td><a href="stocks/DPZ.html">Domino's Pizza Inc - Common Stock</a></td>
+                        <td>-758</td>
+                        <td>$355.95</td>
+                        <td>-$269,806.45</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-10-2023</td>
+                        <td><a href="stocks/DPZ.html">Domino's Pizza Inc - Common Stock</a></td>
+                        <td>758</td>
+                        <td>$355.95</td>
+                        <td>$269,806.45</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-10-2023</td>
+                        <td><a href="stocks/DPZ.html">Domino's Pizza Inc - Common Stock</a></td>
+                        <td>-758</td>
+                        <td>$334.71</td>
+                        <td>-$253,710.06</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-10-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>514</td>
+                        <td>$493.03</td>
+                        <td>$253,416.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-10-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>-514</td>
+                        <td>$478.96</td>
+                        <td>-$246,184.49</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-10-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>293</td>
+                        <td>$841.33</td>
+                        <td>$246,510.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-10-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-293</td>
+                        <td>$834.54</td>
+                        <td>-$244,521.11</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-10-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>293</td>
+                        <td>$834.54</td>
+                        <td>$244,521.11</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-10-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-293</td>
+                        <td>$823.75</td>
+                        <td>-$241,359.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-10-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>293</td>
+                        <td>$823.75</td>
+                        <td>$241,359.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-10-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-293</td>
+                        <td>$806.41</td>
+                        <td>-$236,278.37</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-10-2023</td>
+                        <td><a href="stocks/MSFT.html">Microsoft Corporation - Common Stock</a></td>
+                        <td>702</td>
+                        <td>$336.16</td>
+                        <td>$235,987.17</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-10-2023</td>
+                        <td><a href="stocks/MSFT.html">Microsoft Corporation - Common Stock</a></td>
+                        <td>-702</td>
+                        <td>$323.55</td>
+                        <td>-$227,134.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-10-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>552</td>
+                        <td>$411.71</td>
+                        <td>$227,263.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-10-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-552</td>
+                        <td>$372.00</td>
+                        <td>-$205,344.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-11-2023</td>
+                        <td><a href="stocks/VRTX.html">Vertex Pharmaceuticals Incorporated - Common Stock</a></td>
+                        <td>532</td>
+                        <td>$385.76</td>
+                        <td>$205,224.33</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-11-2023</td>
+                        <td><a href="stocks/VRTX.html">Vertex Pharmaceuticals Incorporated - Common Stock</a></td>
+                        <td>-532</td>
+                        <td>$378.25</td>
+                        <td>-$201,229.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-11-2023</td>
+                        <td><a href="stocks/BIIB.html">Biogen Inc. - Common Stock</a></td>
+                        <td>820</td>
+                        <td>$245.61</td>
+                        <td>$201,400.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-11-2023</td>
+                        <td><a href="stocks/BIIB.html">Biogen Inc. - Common Stock</a></td>
+                        <td>-820</td>
+                        <td>$231.69</td>
+                        <td>-$189,985.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-11-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>231</td>
+                        <td>$820.52</td>
+                        <td>$189,540.55</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-11-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-231</td>
+                        <td>$798.05</td>
+                        <td>-$184,350.46</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-11-2023</td>
+                        <td><a href="stocks/VRTX.html">Vertex Pharmaceuticals Incorporated - Common Stock</a></td>
+                        <td>488</td>
+                        <td>$378.92</td>
+                        <td>$184,912.97</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-11-2023</td>
+                        <td><a href="stocks/VRTX.html">Vertex Pharmaceuticals Incorporated - Common Stock</a></td>
+                        <td>-488</td>
+                        <td>$369.95</td>
+                        <td>-$180,535.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-11-2023</td>
+                        <td><a href="stocks/VRTX.html">Vertex Pharmaceuticals Incorporated - Common Stock</a></td>
+                        <td>488</td>
+                        <td>$369.95</td>
+                        <td>$180,535.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-11-2023</td>
+                        <td><a href="stocks/VRTX.html">Vertex Pharmaceuticals Incorporated - Common Stock</a></td>
+                        <td>-488</td>
+                        <td>$349.34</td>
+                        <td>-$170,477.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-11-2023</td>
+                        <td><a href="stocks/DPZ.html">Domino's Pizza Inc - Common Stock</a></td>
+                        <td>456</td>
+                        <td>$373.78</td>
+                        <td>$170,443.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-11-2023</td>
+                        <td><a href="stocks/DPZ.html">Domino's Pizza Inc - Common Stock</a></td>
+                        <td>-456</td>
+                        <td>$367.22</td>
+                        <td>-$167,454.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-11-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>405</td>
+                        <td>$413.06</td>
+                        <td>$167,289.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-11-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-405</td>
+                        <td>$402.46</td>
+                        <td>-$162,996.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-11-2023</td>
+                        <td><a href="stocks/ADSK.html">Autodesk, Inc. - Common Stock</a></td>
+                        <td>749</td>
+                        <td>$217.67</td>
+                        <td>$163,034.83</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-11-2023</td>
+                        <td><a href="stocks/ADSK.html">Autodesk, Inc. - Common Stock</a></td>
+                        <td>-749</td>
+                        <td>$202.66</td>
+                        <td>-$151,792.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-11-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>306</td>
+                        <td>$495.77</td>
+                        <td>$151,705.62</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-11-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-306</td>
+                        <td>$445.34</td>
+                        <td>-$136,274.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-11-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>306</td>
+                        <td>$445.34</td>
+                        <td>$136,274.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-11-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-306</td>
+                        <td>$435.92</td>
+                        <td>-$133,391.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-11-2023</td>
+                        <td><a href="stocks/SNPS.html">Synopsys, Inc. - Common Stock</a></td>
+                        <td>241</td>
+                        <td>$552.46</td>
+                        <td>$133,142.87</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-11-2023</td>
+                        <td><a href="stocks/SNPS.html">Synopsys, Inc. - Common Stock</a></td>
+                        <td>-241</td>
+                        <td>$543.23</td>
+                        <td>-$130,918.43</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-11-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>159</td>
+                        <td>$821.54</td>
+                        <td>$130,624.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-12-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-159</td>
+                        <td>$812.61</td>
+                        <td>-$129,205.58</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-12-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>325</td>
+                        <td>$399.14</td>
+                        <td>$129,720.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-12-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-325</td>
+                        <td>$364.40</td>
+                        <td>-$118,430.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-12-2023</td>
+                        <td><a href="stocks/FSLR.html">First Solar, Inc. - Common Stock</a></td>
+                        <td>764</td>
+                        <td>$155.39</td>
+                        <td>$118,717.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-12-2023</td>
+                        <td><a href="stocks/FSLR.html">First Solar, Inc. - Common Stock</a></td>
+                        <td>-764</td>
+                        <td>$145.29</td>
+                        <td>-$111,001.55</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-12-2023</td>
+                        <td><a href="stocks/FIVE.html">Five Below, Inc. - Common Stock</a></td>
+                        <td>550</td>
+                        <td>$201.54</td>
+                        <td>$110,847.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-12-2023</td>
+                        <td><a href="stocks/FIVE.html">Five Below, Inc. - Common Stock</a></td>
+                        <td>-550</td>
+                        <td>$195.93</td>
+                        <td>-$107,761.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-12-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>127</td>
+                        <td>$846.84</td>
+                        <td>$107,548.57</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-12-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-127</td>
+                        <td>$837.82</td>
+                        <td>-$106,403.65</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-12-2023</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>732</td>
+                        <td>$145.80</td>
+                        <td>$106,725.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-12-2023</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>-732</td>
+                        <td>$133.60</td>
+                        <td>-$97,795.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-12-2023</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>732</td>
+                        <td>$133.60</td>
+                        <td>$97,795.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-12-2023</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>-732</td>
+                        <td>$129.60</td>
+                        <td>-$94,867.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-12-2023</td>
+                        <td><a href="stocks/SNPS.html">Synopsys, Inc. - Common Stock</a></td>
+                        <td>167</td>
+                        <td>$568.09</td>
+                        <td>$94,871.03</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-12-2023</td>
+                        <td><a href="stocks/SNPS.html">Synopsys, Inc. - Common Stock</a></td>
+                        <td>-167</td>
+                        <td>$551.45</td>
+                        <td>-$92,092.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-12-2023</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>733</td>
+                        <td>$125.60</td>
+                        <td>$92,064.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-12-2023</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>-733</td>
+                        <td>$105.00</td>
+                        <td>-$76,965.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-12-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>170</td>
+                        <td>$452.58</td>
+                        <td>$76,938.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-12-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-170</td>
+                        <td>$338.91</td>
+                        <td>-$57,614.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-12-2023</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>453</td>
+                        <td>$127.40</td>
+                        <td>$57,712.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-12-2023</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>-453</td>
+                        <td>$122.40</td>
+                        <td>-$55,447.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-12-2023</td>
+                        <td><a href="stocks/SNPS.html">Synopsys, Inc. - Common Stock</a></td>
+                        <td>99</td>
+                        <td>$559.96</td>
+                        <td>$55,436.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-12-2023</td>
+                        <td><a href="stocks/SNPS.html">Synopsys, Inc. - Common Stock</a></td>
+                        <td>-99</td>
+                        <td>$524.46</td>
+                        <td>-$51,921.54</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-12-2023</td>
+                        <td><a href="stocks/NTES.html">NetEase, Inc. - American Depositary Shares, each representing 5 ordinary shares</a></td>
+                        <td>588</td>
+                        <td>$88.30</td>
+                        <td>$51,923.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-12-2023</td>
+                        <td><a href="stocks/NTES.html">NetEase, Inc. - American Depositary Shares, each representing 5 ordinary shares</a></td>
+                        <td>-588</td>
+                        <td>$83.93</td>
+                        <td>-$49,349.39</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-12-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>127</td>
+                        <td>$386.52</td>
+                        <td>$49,088.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-12-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-127</td>
+                        <td>$380.28</td>
+                        <td>-$48,295.56</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-12-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>83</td>
+                        <td>$578.40</td>
+                        <td>$48,007.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-12-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>-83</td>
+                        <td>$573.50</td>
+                        <td>-$47,600.36</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</div>
+</body>
+</html>
