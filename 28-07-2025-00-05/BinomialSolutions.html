@@ -1,0 +1,2287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nasdaq Trade System - BinomialSolutions</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+            crossorigin="anonymous"></script>
+    <meta name="theme-color" content="#712cf9">
+</head>
+
+<body>
+<header class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow" data-bs-theme="dark"><a
+        class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="#">Nasdaq Trade system</a>
+</header>
+
+
+<div class="container-fluid">
+    <div class="row">
+        
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <a href="GameResult.html">Back</a>
+            <h1>BinomialSolutions</h1>
+            <img src="BinomialSolutions.png" class="img-fluid">
+            <div class="table-responsive small">
+                <table class="table table-striped table-sm">
+                    <thead>
+                    <tr>
+                        <th scope="col">ExecutedOn</th>
+                        <th scope="col">Company</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">AtPrice</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr scope="row">
+                        <td>03-01-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>1</td>
+                        <td>$849.67</td>
+                        <td>$849.67</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-01-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$874.34</td>
+                        <td>-$874.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-01-2022</td>
+                        <td><a href="stocks/HON.html">Honeywell International Inc. - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$194.12</td>
+                        <td>$970.58</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-01-2022</td>
+                        <td><a href="stocks/HON.html">Honeywell International Inc. - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$196.03</td>
+                        <td>-$980.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-01-2022</td>
+                        <td><a href="stocks/BIRD.html">Allbirds, Inc. - Class A Common Stock</a></td>
+                        <td>3</td>
+                        <td>$271.40</td>
+                        <td>$814.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-01-2022</td>
+                        <td><a href="stocks/BIRD.html">Allbirds, Inc. - Class A Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$304.60</td>
+                        <td>-$913.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-01-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>1</td>
+                        <td>$860.06</td>
+                        <td>$860.06</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-01-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$895.45</td>
+                        <td>-$895.45</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-01-2022</td>
+                        <td><a href="stocks/ILMN.html">Illumina, Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$352.41</td>
+                        <td>$1,057.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-01-2022</td>
+                        <td><a href="stocks/ILMN.html">Illumina, Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$412.26</td>
+                        <td>-$1,236.77</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-01-2022</td>
+                        <td><a href="stocks/NXST.html">Nexstar Media Group, Inc. - Common Stock</a></td>
+                        <td>9</td>
+                        <td>$137.64</td>
+                        <td>$1,238.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-01-2022</td>
+                        <td><a href="stocks/NXST.html">Nexstar Media Group, Inc. - Common Stock</a></td>
+                        <td>-9</td>
+                        <td>$146.05</td>
+                        <td>-$1,314.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-01-2022</td>
+                        <td><a href="stocks/VC.html">Visteon Corporation - Common Stock</a></td>
+                        <td>12</td>
+                        <td>$116.52</td>
+                        <td>$1,398.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-01-2022</td>
+                        <td><a href="stocks/VC.html">Visteon Corporation - Common Stock</a></td>
+                        <td>-12</td>
+                        <td>$123.50</td>
+                        <td>-$1,482.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-01-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>1</td>
+                        <td>$882.61</td>
+                        <td>$882.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-01-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$895.39</td>
+                        <td>-$895.39</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-01-2022</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>7</td>
+                        <td>$204.66</td>
+                        <td>$1,432.62</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-01-2022</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>-7</td>
+                        <td>$210.49</td>
+                        <td>-$1,473.43</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-01-2022</td>
+                        <td><a href="stocks/ONC.html">BeOne Medicines Ltd. - American Depositary Shares</a></td>
+                        <td>6</td>
+                        <td>$236.85</td>
+                        <td>$1,421.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-01-2022</td>
+                        <td><a href="stocks/ONC.html">BeOne Medicines Ltd. - American Depositary Shares</a></td>
+                        <td>-6</td>
+                        <td>$251.37</td>
+                        <td>-$1,508.22</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-01-2022</td>
+                        <td><a href="stocks/MODV.html">ModivCare Inc. - Common Stock</a></td>
+                        <td>14</td>
+                        <td>$111.33</td>
+                        <td>$1,558.62</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-01-2022</td>
+                        <td><a href="stocks/MODV.html">ModivCare Inc. - Common Stock</a></td>
+                        <td>-14</td>
+                        <td>$115.12</td>
+                        <td>-$1,611.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-01-2022</td>
+                        <td><a href="stocks/FANG.html">Diamondback Energy, Inc. - Common Stock</a></td>
+                        <td>17</td>
+                        <td>$100.11</td>
+                        <td>$1,701.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-01-2022</td>
+                        <td><a href="stocks/FANG.html">Diamondback Energy, Inc. - Common Stock</a></td>
+                        <td>-17</td>
+                        <td>$106.44</td>
+                        <td>-$1,809.53</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-01-2022</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$456.35</td>
+                        <td>$1,369.05</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-01-2022</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$462.23</td>
+                        <td>-$1,386.69</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-01-2022</td>
+                        <td><a href="stocks/NFLX.html">Netflix, Inc. - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$359.70</td>
+                        <td>$1,798.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-01-2022</td>
+                        <td><a href="stocks/NFLX.html">Netflix, Inc. - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$386.70</td>
+                        <td>-$1,933.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-01-2022</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$493.05</td>
+                        <td>$1,479.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-01-2022</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$518.16</td>
+                        <td>-$1,554.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-01-2022</td>
+                        <td><a href="stocks/NFLX.html">Netflix, Inc. - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$427.14</td>
+                        <td>$1,708.56</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-02-2022</td>
+                        <td><a href="stocks/NFLX.html">Netflix, Inc. - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$457.13</td>
+                        <td>-$1,828.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-02-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$513.51</td>
+                        <td>$2,054.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-02-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$534.23</td>
+                        <td>-$2,136.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-02-2022</td>
+                        <td><a href="stocks/ROP.html">Roper Technologies, Inc. - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$443.80</td>
+                        <td>$2,219.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-02-2022</td>
+                        <td><a href="stocks/ROP.html">Roper Technologies, Inc. - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$452.77</td>
+                        <td>-$2,263.86</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-02-2022</td>
+                        <td><a href="stocks/PCTY.html">Paylocity Holding Corporation - Common Stock</a></td>
+                        <td>11</td>
+                        <td>$197.06</td>
+                        <td>$2,167.66</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-02-2022</td>
+                        <td><a href="stocks/PCTY.html">Paylocity Holding Corporation - Common Stock</a></td>
+                        <td>-11</td>
+                        <td>$217.00</td>
+                        <td>-$2,387.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-02-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>3</td>
+                        <td>$768.99</td>
+                        <td>$2,306.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-02-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$797.82</td>
+                        <td>-$2,393.47</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-02-2022</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>12</td>
+                        <td>$207.15</td>
+                        <td>$2,485.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-02-2022</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>-12</td>
+                        <td>$222.47</td>
+                        <td>-$2,669.64</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-02-2022</td>
+                        <td><a href="stocks/CYBR.html">CyberArk Software Ltd. - Ordinary Shares</a></td>
+                        <td>19</td>
+                        <td>$143.43</td>
+                        <td>$2,725.17</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-02-2022</td>
+                        <td><a href="stocks/CYBR.html">CyberArk Software Ltd. - Ordinary Shares</a></td>
+                        <td>-19</td>
+                        <td>$155.58</td>
+                        <td>-$2,956.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-02-2022</td>
+                        <td><a href="stocks/ZG.html">Zillow Group, Inc. - Class A Common Stock</a></td>
+                        <td>62</td>
+                        <td>$47.86</td>
+                        <td>$2,967.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-02-2022</td>
+                        <td><a href="stocks/ZG.html">Zillow Group, Inc. - Class A Common Stock</a></td>
+                        <td>-62</td>
+                        <td>$53.92</td>
+                        <td>-$3,343.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-02-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>4</td>
+                        <td>$760.96</td>
+                        <td>$3,043.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-02-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$783.06</td>
+                        <td>-$3,132.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-02-2022</td>
+                        <td><a href="stocks/UPST.html">Upstart Holdings, Inc. - Common stock</a></td>
+                        <td>31</td>
+                        <td>$109.11</td>
+                        <td>$3,382.41</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-02-2022</td>
+                        <td><a href="stocks/UPST.html">Upstart Holdings, Inc. - Common stock</a></td>
+                        <td>-31</td>
+                        <td>$148.01</td>
+                        <td>-$4,588.31</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-02-2022</td>
+                        <td><a href="stocks/VC.html">Visteon Corporation - Common Stock</a></td>
+                        <td>44</td>
+                        <td>$105.39</td>
+                        <td>$4,637.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-02-2022</td>
+                        <td><a href="stocks/VC.html">Visteon Corporation - Common Stock</a></td>
+                        <td>-44</td>
+                        <td>$118.79</td>
+                        <td>-$5,226.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-02-2022</td>
+                        <td><a href="stocks/ONC.html">BeOne Medicines Ltd. - American Depositary Shares</a></td>
+                        <td>25</td>
+                        <td>$205.19</td>
+                        <td>$5,129.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-02-2022</td>
+                        <td><a href="stocks/ONC.html">BeOne Medicines Ltd. - American Depositary Shares</a></td>
+                        <td>-25</td>
+                        <td>$213.00</td>
+                        <td>-$5,325.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-02-2022</td>
+                        <td><a href="stocks/MMSI.html">Merit Medical Systems, Inc. - Common Stock</a></td>
+                        <td>95</td>
+                        <td>$57.31</td>
+                        <td>$5,444.45</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-02-2022</td>
+                        <td><a href="stocks/MMSI.html">Merit Medical Systems, Inc. - Common Stock</a></td>
+                        <td>-95</td>
+                        <td>$59.56</td>
+                        <td>-$5,658.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-02-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>11</td>
+                        <td>$474.68</td>
+                        <td>$5,221.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-02-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>-11</td>
+                        <td>$509.77</td>
+                        <td>-$5,607.47</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-02-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>8</td>
+                        <td>$734.58</td>
+                        <td>$5,876.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-02-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-8</td>
+                        <td>$773.30</td>
+                        <td>-$6,186.41</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-02-2022</td>
+                        <td><a href="stocks/WDAY.html">Workday, Inc. - Class A Common Stock</a></td>
+                        <td>27</td>
+                        <td>$229.05</td>
+                        <td>$6,184.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-03-2022</td>
+                        <td><a href="stocks/WDAY.html">Workday, Inc. - Class A Common Stock</a></td>
+                        <td>-27</td>
+                        <td>$240.33</td>
+                        <td>-$6,488.91</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-03-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>8</td>
+                        <td>$748.14</td>
+                        <td>$5,985.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-03-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-8</td>
+                        <td>$770.22</td>
+                        <td>-$6,161.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-03-2022</td>
+                        <td><a href="stocks/DLTR.html">Dollar Tree, Inc. - Common Stock</a></td>
+                        <td>48</td>
+                        <td>$139.92</td>
+                        <td>$6,716.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-03-2022</td>
+                        <td><a href="stocks/DLTR.html">Dollar Tree, Inc. - Common Stock</a></td>
+                        <td>-48</td>
+                        <td>$146.48</td>
+                        <td>-$7,031.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-03-2022</td>
+                        <td><a href="stocks/DPZ.html">Domino's Pizza Inc - Common Stock</a></td>
+                        <td>18</td>
+                        <td>$385.62</td>
+                        <td>$6,941.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-03-2022</td>
+                        <td><a href="stocks/DPZ.html">Domino's Pizza Inc - Common Stock</a></td>
+                        <td>-18</td>
+                        <td>$396.19</td>
+                        <td>-$7,131.41</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-03-2022</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>47</td>
+                        <td>$154.20</td>
+                        <td>$7,247.51</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-03-2022</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>-47</td>
+                        <td>$166.68</td>
+                        <td>-$7,833.83</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-03-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>12</td>
+                        <td>$656.95</td>
+                        <td>$7,883.38</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-03-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-12</td>
+                        <td>$683.89</td>
+                        <td>-$8,206.63</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-03-2022</td>
+                        <td><a href="stocks/CRWD.html">CrowdStrike Holdings, Inc. - Class A Common Stock</a></td>
+                        <td>48</td>
+                        <td>$169.79</td>
+                        <td>$8,149.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-03-2022</td>
+                        <td><a href="stocks/CRWD.html">CrowdStrike Holdings, Inc. - Class A Common Stock</a></td>
+                        <td>-48</td>
+                        <td>$191.02</td>
+                        <td>-$9,168.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-03-2022</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>48</td>
+                        <td>$191.26</td>
+                        <td>$9,180.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-03-2022</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>-48</td>
+                        <td>$197.62</td>
+                        <td>-$9,485.87</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-03-2022</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>47</td>
+                        <td>$202.51</td>
+                        <td>$9,517.78</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-03-2022</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>-47</td>
+                        <td>$220.07</td>
+                        <td>-$10,343.45</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-03-2022</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>47</td>
+                        <td>$220.07</td>
+                        <td>$10,343.45</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-03-2022</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>-47</td>
+                        <td>$267.45</td>
+                        <td>-$12,569.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-03-2022</td>
+                        <td><a href="stocks/ZBRA.html">Zebra Technologies Corporation - Class A Common Stock</a></td>
+                        <td>31</td>
+                        <td>$401.65</td>
+                        <td>$12,451.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-03-2022</td>
+                        <td><a href="stocks/ZBRA.html">Zebra Technologies Corporation - Class A Common Stock</a></td>
+                        <td>-31</td>
+                        <td>$419.35</td>
+                        <td>-$12,999.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-03-2022</td>
+                        <td><a href="stocks/UXIN.html">Uxin Limited - American Depositary Shares</a></td>
+                        <td>133</td>
+                        <td>$98.70</td>
+                        <td>$13,127.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-03-2022</td>
+                        <td><a href="stocks/UXIN.html">Uxin Limited - American Depositary Shares</a></td>
+                        <td>-133</td>
+                        <td>$121.00</td>
+                        <td>-$16,093.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-03-2022</td>
+                        <td><a href="stocks/UXIN.html">Uxin Limited - American Depositary Shares</a></td>
+                        <td>146</td>
+                        <td>$110.00</td>
+                        <td>$16,060.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-03-2022</td>
+                        <td><a href="stocks/UXIN.html">Uxin Limited - American Depositary Shares</a></td>
+                        <td>-146</td>
+                        <td>$146.00</td>
+                        <td>-$21,316.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-03-2022</td>
+                        <td><a href="stocks/UXIN.html">Uxin Limited - American Depositary Shares</a></td>
+                        <td>146</td>
+                        <td>$146.00</td>
+                        <td>$21,316.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-03-2022</td>
+                        <td><a href="stocks/UXIN.html">Uxin Limited - American Depositary Shares</a></td>
+                        <td>-146</td>
+                        <td>$158.00</td>
+                        <td>-$23,068.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-03-2022</td>
+                        <td><a href="stocks/ONC.html">BeOne Medicines Ltd. - American Depositary Shares</a></td>
+                        <td>123</td>
+                        <td>$187.30</td>
+                        <td>$23,037.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-03-2022</td>
+                        <td><a href="stocks/ONC.html">BeOne Medicines Ltd. - American Depositary Shares</a></td>
+                        <td>-123</td>
+                        <td>$202.42</td>
+                        <td>-$24,897.66</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-03-2022</td>
+                        <td><a href="stocks/ROP.html">Roper Technologies, Inc. - Common Stock</a></td>
+                        <td>55</td>
+                        <td>$452.76</td>
+                        <td>$24,901.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-03-2022</td>
+                        <td><a href="stocks/ROP.html">Roper Technologies, Inc. - Common Stock</a></td>
+                        <td>-55</td>
+                        <td>$457.09</td>
+                        <td>-$25,139.93</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-03-2022</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>56</td>
+                        <td>$450.01</td>
+                        <td>$25,200.56</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-03-2022</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-56</td>
+                        <td>$466.33</td>
+                        <td>-$26,114.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-03-2022</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>47</td>
+                        <td>$545.76</td>
+                        <td>$25,650.94</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-03-2022</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>-47</td>
+                        <td>$551.98</td>
+                        <td>-$25,943.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-03-2022</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>108</td>
+                        <td>$243.66</td>
+                        <td>$26,314.74</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-03-2022</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>-108</td>
+                        <td>$250.16</td>
+                        <td>-$27,017.63</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-03-2022</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>315</td>
+                        <td>$86.00</td>
+                        <td>$27,090.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-04-2022</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-315</td>
+                        <td>$115.20</td>
+                        <td>-$36,288.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-04-2022</td>
+                        <td><a href="stocks/JKHY.html">Jack Henry &amp; Associates, Inc. - Common Stock</a></td>
+                        <td>188</td>
+                        <td>$192.69</td>
+                        <td>$36,224.83</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-04-2022</td>
+                        <td><a href="stocks/JKHY.html">Jack Henry &amp; Associates, Inc. - Common Stock</a></td>
+                        <td>-188</td>
+                        <td>$195.67</td>
+                        <td>-$36,786.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-04-2022</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>67</td>
+                        <td>$550.88</td>
+                        <td>$36,908.83</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-04-2022</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>-67</td>
+                        <td>$559.95</td>
+                        <td>-$37,516.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-04-2022</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>67</td>
+                        <td>$559.95</td>
+                        <td>$37,516.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-04-2022</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>-67</td>
+                        <td>$582.22</td>
+                        <td>-$39,008.57</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-04-2022</td>
+                        <td><a href="stocks/WDFC.html">WD-40 Company - Common Stock</a></td>
+                        <td>235</td>
+                        <td>$165.51</td>
+                        <td>$38,894.03</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-04-2022</td>
+                        <td><a href="stocks/WDFC.html">WD-40 Company - Common Stock</a></td>
+                        <td>-235</td>
+                        <td>$177.24</td>
+                        <td>-$41,651.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-04-2022</td>
+                        <td><a href="stocks/CRWD.html">CrowdStrike Holdings, Inc. - Class A Common Stock</a></td>
+                        <td>192</td>
+                        <td>$216.60</td>
+                        <td>$41,587.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-04-2022</td>
+                        <td><a href="stocks/CRWD.html">CrowdStrike Holdings, Inc. - Class A Common Stock</a></td>
+                        <td>-192</td>
+                        <td>$223.51</td>
+                        <td>-$42,913.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-04-2022</td>
+                        <td><a href="stocks/ZS.html">Zscaler, Inc. - Common Stock</a></td>
+                        <td>193</td>
+                        <td>$223.00</td>
+                        <td>$43,039.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-04-2022</td>
+                        <td><a href="stocks/ZS.html">Zscaler, Inc. - Common Stock</a></td>
+                        <td>-193</td>
+                        <td>$241.23</td>
+                        <td>-$46,557.39</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-04-2022</td>
+                        <td><a href="stocks/EXPE.html">Expedia Group, Inc. - Common Stock</a></td>
+                        <td>250</td>
+                        <td>$186.49</td>
+                        <td>$46,622.94</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-04-2022</td>
+                        <td><a href="stocks/EXPE.html">Expedia Group, Inc. - Common Stock</a></td>
+                        <td>-250</td>
+                        <td>$190.69</td>
+                        <td>-$47,673.22</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-04-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>75</td>
+                        <td>$627.93</td>
+                        <td>$47,095.07</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-04-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-75</td>
+                        <td>$649.21</td>
+                        <td>-$48,690.39</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-04-2022</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>181</td>
+                        <td>$271.11</td>
+                        <td>$49,071.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-04-2022</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>-181</td>
+                        <td>$303.48</td>
+                        <td>-$54,930.47</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-04-2022</td>
+                        <td><a href="stocks/UAL.html">United Airlines Holdings, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$46.52</td>
+                        <td>$46,520.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-04-2022</td>
+                        <td><a href="stocks/UAL.html">United Airlines Holdings, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$50.85</td>
+                        <td>-$50,850.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-04-2022</td>
+                        <td><a href="stocks/KMB.html">Kimberly-Clark Corporation - Common Stock</a></td>
+                        <td>517</td>
+                        <td>$114.90</td>
+                        <td>$59,401.58</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-04-2022</td>
+                        <td><a href="stocks/KMB.html">Kimberly-Clark Corporation - Common Stock</a></td>
+                        <td>-517</td>
+                        <td>$124.23</td>
+                        <td>-$64,228.82</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-04-2022</td>
+                        <td><a href="stocks/ROP.html">Roper Technologies, Inc. - Common Stock</a></td>
+                        <td>143</td>
+                        <td>$447.28</td>
+                        <td>$63,961.11</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-04-2022</td>
+                        <td><a href="stocks/ROP.html">Roper Technologies, Inc. - Common Stock</a></td>
+                        <td>-143</td>
+                        <td>$463.73</td>
+                        <td>-$66,312.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-04-2022</td>
+                        <td><a href="stocks/CME.html">CME Group Inc. - Class A Common Stock</a></td>
+                        <td>359</td>
+                        <td>$185.42</td>
+                        <td>$66,565.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-04-2022</td>
+                        <td><a href="stocks/CME.html">CME Group Inc. - Class A Common Stock</a></td>
+                        <td>-359</td>
+                        <td>$196.43</td>
+                        <td>-$70,516.73</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-04-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>115</td>
+                        <td>$613.23</td>
+                        <td>$70,521.38</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-04-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-115</td>
+                        <td>$657.27</td>
+                        <td>-$75,586.57</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-04-2022</td>
+                        <td><a href="stocks/CYTK.html">Cytokinetics, Incorporated - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$35.75</td>
+                        <td>$35,750.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-04-2022</td>
+                        <td><a href="stocks/CYTK.html">Cytokinetics, Incorporated - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$39.87</td>
+                        <td>-$39,870.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-05-2022</td>
+                        <td><a href="stocks/WRLD.html">World Acceptance Corporation - Common Stock</a></td>
+                        <td>409</td>
+                        <td>$194.78</td>
+                        <td>$79,665.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-05-2022</td>
+                        <td><a href="stocks/WRLD.html">World Acceptance Corporation - Common Stock</a></td>
+                        <td>-409</td>
+                        <td>$204.32</td>
+                        <td>-$83,566.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-05-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>128</td>
+                        <td>$649.78</td>
+                        <td>$83,171.66</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-05-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-128</td>
+                        <td>$677.63</td>
+                        <td>-$86,736.09</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-05-2022</td>
+                        <td><a href="stocks/SIMO.html">Silicon Motion Technology Corporation - American Depositary Shares, each representing four ordinary shares</a></td>
+                        <td>1000</td>
+                        <td>$75.67</td>
+                        <td>$75,666.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-05-2022</td>
+                        <td><a href="stocks/SIMO.html">Silicon Motion Technology Corporation - American Depositary Shares, each representing four ordinary shares</a></td>
+                        <td>-1000</td>
+                        <td>$88.68</td>
+                        <td>-$88,675.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-05-2022</td>
+                        <td><a href="stocks/TXRH.html">Texas Roadhouse, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$73.99</td>
+                        <td>$73,985.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-05-2022</td>
+                        <td><a href="stocks/TXRH.html">Texas Roadhouse, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$79.17</td>
+                        <td>-$79,174.87</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-05-2022</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>279</td>
+                        <td>$376.91</td>
+                        <td>$105,157.89</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-05-2022</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-279</td>
+                        <td>$393.03</td>
+                        <td>-$109,655.37</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-05-2022</td>
+                        <td><a href="stocks/GO.html">Grocery Outlet Holding Corp. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$31.07</td>
+                        <td>$31,070.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-05-2022</td>
+                        <td><a href="stocks/GO.html">Grocery Outlet Holding Corp. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$35.65</td>
+                        <td>-$35,650.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-05-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>342</td>
+                        <td>$333.90</td>
+                        <td>$114,193.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-05-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>-342</td>
+                        <td>$347.95</td>
+                        <td>-$118,998.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-05-2022</td>
+                        <td><a href="stocks/DUOL.html">Duolingo, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$66.98</td>
+                        <td>$66,980.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-05-2022</td>
+                        <td><a href="stocks/DUOL.html">Duolingo, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$89.77</td>
+                        <td>-$89,770.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-05-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>222</td>
+                        <td>$637.36</td>
+                        <td>$141,493.54</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-05-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-222</td>
+                        <td>$666.91</td>
+                        <td>-$148,053.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-05-2022</td>
+                        <td><a href="stocks/UPST.html">Upstart Holdings, Inc. - Common stock</a></td>
+                        <td>1000</td>
+                        <td>$46.66</td>
+                        <td>$46,660.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-05-2022</td>
+                        <td><a href="stocks/UPST.html">Upstart Holdings, Inc. - Common stock</a></td>
+                        <td>-1000</td>
+                        <td>$48.34</td>
+                        <td>-$48,340.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-05-2022</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$101.62</td>
+                        <td>$101,620.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-05-2022</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$112.79</td>
+                        <td>-$112,790.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-05-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>442</td>
+                        <td>$364.83</td>
+                        <td>$161,254.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-05-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>-442</td>
+                        <td>$372.23</td>
+                        <td>-$164,525.66</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-05-2022</td>
+                        <td><a href="stocks/UTHR.html">United Therapeutics Corporation - Common Stock</a></td>
+                        <td>784</td>
+                        <td>$210.14</td>
+                        <td>$164,749.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-05-2022</td>
+                        <td><a href="stocks/UTHR.html">United Therapeutics Corporation - Common Stock</a></td>
+                        <td>-784</td>
+                        <td>$218.95</td>
+                        <td>-$171,656.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-05-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>267</td>
+                        <td>$641.51</td>
+                        <td>$171,283.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-05-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-267</td>
+                        <td>$653.72</td>
+                        <td>-$174,544.42</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-05-2022</td>
+                        <td><a href="stocks/DLTR.html">Dollar Tree, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$133.59</td>
+                        <td>$133,590.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-05-2022</td>
+                        <td><a href="stocks/DLTR.html">Dollar Tree, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$162.80</td>
+                        <td>-$162,800.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-05-2022</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>540</td>
+                        <td>$377.96</td>
+                        <td>$204,098.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-05-2022</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>-540</td>
+                        <td>$425.08</td>
+                        <td>-$229,543.19</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-05-2022</td>
+                        <td><a href="stocks/SPSC.html">SPS Commerce, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$107.04</td>
+                        <td>$107,040.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-06-2022</td>
+                        <td><a href="stocks/SPSC.html">SPS Commerce, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$110.37</td>
+                        <td>-$110,370.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-06-2022</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>531</td>
+                        <td>$438.29</td>
+                        <td>$232,730.41</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-06-2022</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>-531</td>
+                        <td>$467.65</td>
+                        <td>-$248,324.19</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-06-2022</td>
+                        <td><a href="stocks/ALNY.html">Alnylam Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$125.50</td>
+                        <td>$125,500.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-06-2022</td>
+                        <td><a href="stocks/ALNY.html">Alnylam Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$131.52</td>
+                        <td>-$131,520.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-06-2022</td>
+                        <td><a href="stocks/ONC.html">BeOne Medicines Ltd. - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$138.43</td>
+                        <td>$138,429.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-06-2022</td>
+                        <td><a href="stocks/ONC.html">BeOne Medicines Ltd. - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$154.57</td>
+                        <td>-$154,570.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-06-2022</td>
+                        <td><a href="stocks/ONC.html">BeOne Medicines Ltd. - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$154.57</td>
+                        <td>$154,570.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-06-2022</td>
+                        <td><a href="stocks/ONC.html">BeOne Medicines Ltd. - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$162.05</td>
+                        <td>-$162,050.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-06-2022</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>619</td>
+                        <td>$448.84</td>
+                        <td>$277,829.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-06-2022</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>-619</td>
+                        <td>$452.73</td>
+                        <td>-$280,240.27</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-06-2022</td>
+                        <td><a href="stocks/ACLX.html">Arcellx, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$20.99</td>
+                        <td>$20,990.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-06-2022</td>
+                        <td><a href="stocks/ACLX.html">Arcellx, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$24.43</td>
+                        <td>-$24,430.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-06-2022</td>
+                        <td><a href="stocks/ZBRA.html">Zebra Technologies Corporation - Class A Common Stock</a></td>
+                        <td>969</td>
+                        <td>$293.08</td>
+                        <td>$283,994.51</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-06-2022</td>
+                        <td><a href="stocks/ZBRA.html">Zebra Technologies Corporation - Class A Common Stock</a></td>
+                        <td>-969</td>
+                        <td>$300.74</td>
+                        <td>-$291,417.05</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-06-2022</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>742</td>
+                        <td>$392.67</td>
+                        <td>$291,361.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-06-2022</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>-742</td>
+                        <td>$405.61</td>
+                        <td>-$300,962.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-06-2022</td>
+                        <td><a href="stocks/CME.html">CME Group Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$175.53</td>
+                        <td>$175,526.26</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-06-2022</td>
+                        <td><a href="stocks/CME.html">CME Group Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$177.62</td>
+                        <td>-$177,623.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-06-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>511</td>
+                        <td>$592.54</td>
+                        <td>$302,790.27</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-06-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-511</td>
+                        <td>$611.58</td>
+                        <td>-$312,519.42</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-06-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>500</td>
+                        <td>$625.56</td>
+                        <td>$312,778.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-06-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-500</td>
+                        <td>$636.46</td>
+                        <td>-$318,230.83</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-06-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>955</td>
+                        <td>$333.11</td>
+                        <td>$318,120.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-06-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>-955</td>
+                        <td>$355.62</td>
+                        <td>-$339,617.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-06-2022</td>
+                        <td><a href="stocks/ONC.html">BeOne Medicines Ltd. - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$156.20</td>
+                        <td>$156,200.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-06-2022</td>
+                        <td><a href="stocks/ONC.html">BeOne Medicines Ltd. - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$177.99</td>
+                        <td>-$177,990.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-06-2022</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>948</td>
+                        <td>$381.07</td>
+                        <td>$361,254.37</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-06-2022</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-948</td>
+                        <td>$365.63</td>
+                        <td>-$346,617.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-06-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>525</td>
+                        <td>$660.93</td>
+                        <td>$346,990.23</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-06-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-525</td>
+                        <td>$646.96</td>
+                        <td>-$339,654.62</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-07-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>510</td>
+                        <td>$665.12</td>
+                        <td>$339,211.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-07-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-510</td>
+                        <td>$650.68</td>
+                        <td>-$331,847.73</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-07-2022</td>
+                        <td><a href="stocks/DPZ.html">Domino's Pizza Inc - Common Stock</a></td>
+                        <td>839</td>
+                        <td>$395.73</td>
+                        <td>$332,014.97</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-07-2022</td>
+                        <td><a href="stocks/DPZ.html">Domino's Pizza Inc - Common Stock</a></td>
+                        <td>-839</td>
+                        <td>$390.70</td>
+                        <td>-$327,796.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-07-2022</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>646</td>
+                        <td>$507.48</td>
+                        <td>$327,834.79</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-07-2022</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>-646</td>
+                        <td>$490.98</td>
+                        <td>-$317,172.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-07-2022</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>792</td>
+                        <td>$400.76</td>
+                        <td>$317,401.93</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-07-2022</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>-792</td>
+                        <td>$388.91</td>
+                        <td>-$308,016.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-08-2022</td>
+                        <td><a href="stocks/ZBRA.html">Zebra Technologies Corporation - Class A Common Stock</a></td>
+                        <td>859</td>
+                        <td>$358.43</td>
+                        <td>$307,891.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-08-2022</td>
+                        <td><a href="stocks/ZBRA.html">Zebra Technologies Corporation - Class A Common Stock</a></td>
+                        <td>-859</td>
+                        <td>$323.32</td>
+                        <td>-$277,731.89</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-08-2022</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>707</td>
+                        <td>$392.90</td>
+                        <td>$277,780.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-08-2022</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>-707</td>
+                        <td>$372.90</td>
+                        <td>-$263,640.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-08-2022</td>
+                        <td><a href="stocks/PCTY.html">Paylocity Holding Corporation - Common Stock</a></td>
+                        <td>972</td>
+                        <td>$271.08</td>
+                        <td>$263,489.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-08-2022</td>
+                        <td><a href="stocks/PCTY.html">Paylocity Holding Corporation - Common Stock</a></td>
+                        <td>-972</td>
+                        <td>$257.61</td>
+                        <td>-$250,396.91</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-08-2022</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>570</td>
+                        <td>$439.03</td>
+                        <td>$250,247.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-08-2022</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-570</td>
+                        <td>$425.06</td>
+                        <td>-$242,284.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-08-2022</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>591</td>
+                        <td>$410.41</td>
+                        <td>$242,552.31</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-08-2022</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-591</td>
+                        <td>$405.65</td>
+                        <td>-$239,739.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-08-2022</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>593</td>
+                        <td>$403.93</td>
+                        <td>$239,530.49</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-08-2022</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-593</td>
+                        <td>$381.02</td>
+                        <td>-$225,944.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-08-2022</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>443</td>
+                        <td>$510.20</td>
+                        <td>$226,020.71</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-08-2022</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>-443</td>
+                        <td>$503.56</td>
+                        <td>-$223,075.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-09-2022</td>
+                        <td><a href="stocks/ZBRA.html">Zebra Technologies Corporation - Class A Common Stock</a></td>
+                        <td>721</td>
+                        <td>$309.74</td>
+                        <td>$223,322.53</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-09-2022</td>
+                        <td><a href="stocks/ZBRA.html">Zebra Technologies Corporation - Class A Common Stock</a></td>
+                        <td>-721</td>
+                        <td>$297.60</td>
+                        <td>-$214,569.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-09-2022</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>413</td>
+                        <td>$518.33</td>
+                        <td>$214,071.31</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-09-2022</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>-413</td>
+                        <td>$490.26</td>
+                        <td>-$202,477.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-09-2022</td>
+                        <td><a href="stocks/DPZ.html">Domino's Pizza Inc - Common Stock</a></td>
+                        <td>601</td>
+                        <td>$337.47</td>
+                        <td>$202,822.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-09-2022</td>
+                        <td><a href="stocks/DPZ.html">Domino's Pizza Inc - Common Stock</a></td>
+                        <td>-601</td>
+                        <td>$328.78</td>
+                        <td>-$197,596.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-09-2022</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>532</td>
+                        <td>$371.52</td>
+                        <td>$197,648.63</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-09-2022</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-532</td>
+                        <td>$309.13</td>
+                        <td>-$164,457.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-09-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>195</td>
+                        <td>$841.75</td>
+                        <td>$164,141.29</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-09-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-195</td>
+                        <td>$818.44</td>
+                        <td>-$159,596.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-09-2022</td>
+                        <td><a href="stocks/UTHR.html">United Therapeutics Corporation - Common Stock</a></td>
+                        <td>737</td>
+                        <td>$216.89</td>
+                        <td>$159,847.93</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-09-2022</td>
+                        <td><a href="stocks/UTHR.html">United Therapeutics Corporation - Common Stock</a></td>
+                        <td>-737</td>
+                        <td>$207.18</td>
+                        <td>-$152,691.65</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-09-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>181</td>
+                        <td>$841.62</td>
+                        <td>$152,333.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-09-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-181</td>
+                        <td>$831.06</td>
+                        <td>-$150,421.26</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-09-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>181</td>
+                        <td>$831.06</td>
+                        <td>$150,421.26</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-09-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-181</td>
+                        <td>$809.28</td>
+                        <td>-$146,480.29</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-09-2022</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>314</td>
+                        <td>$468.04</td>
+                        <td>$146,964.05</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-09-2022</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>-314</td>
+                        <td>$448.08</td>
+                        <td>-$140,698.37</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-09-2022</td>
+                        <td><a href="stocks/DPZ.html">Domino's Pizza Inc - Common Stock</a></td>
+                        <td>448</td>
+                        <td>$313.76</td>
+                        <td>$140,566.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-09-2022</td>
+                        <td><a href="stocks/DPZ.html">Domino's Pizza Inc - Common Stock</a></td>
+                        <td>-448</td>
+                        <td>$303.57</td>
+                        <td>-$135,999.69</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-09-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>169</td>
+                        <td>$803.46</td>
+                        <td>$135,784.97</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-09-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-169</td>
+                        <td>$782.97</td>
+                        <td>-$132,321.17</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-09-2022</td>
+                        <td><a href="stocks/ALNY.html">Alnylam Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>633</td>
+                        <td>$209.39</td>
+                        <td>$132,543.87</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-09-2022</td>
+                        <td><a href="stocks/ALNY.html">Alnylam Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-633</td>
+                        <td>$200.16</td>
+                        <td>-$126,701.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-10-2022</td>
+                        <td><a href="stocks/FSLR.html">First Solar, Inc. - Common Stock</a></td>
+                        <td>886</td>
+                        <td>$143.06</td>
+                        <td>$126,751.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-10-2022</td>
+                        <td><a href="stocks/FSLR.html">First Solar, Inc. - Common Stock</a></td>
+                        <td>-886</td>
+                        <td>$134.59</td>
+                        <td>-$119,246.74</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-10-2022</td>
+                        <td><a href="stocks/DPZ.html">Domino's Pizza Inc - Common Stock</a></td>
+                        <td>368</td>
+                        <td>$323.80</td>
+                        <td>$119,159.47</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-10-2022</td>
+                        <td><a href="stocks/DPZ.html">Domino's Pizza Inc - Common Stock</a></td>
+                        <td>-368</td>
+                        <td>$313.26</td>
+                        <td>-$115,280.29</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-10-2022</td>
+                        <td><a href="stocks/PCTY.html">Paylocity Holding Corporation - Common Stock</a></td>
+                        <td>435</td>
+                        <td>$264.97</td>
+                        <td>$115,261.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-10-2022</td>
+                        <td><a href="stocks/PCTY.html">Paylocity Holding Corporation - Common Stock</a></td>
+                        <td>-435</td>
+                        <td>$245.81</td>
+                        <td>-$106,927.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-10-2022</td>
+                        <td><a href="stocks/DPZ.html">Domino's Pizza Inc - Common Stock</a></td>
+                        <td>332</td>
+                        <td>$322.00</td>
+                        <td>$106,902.71</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-10-2022</td>
+                        <td><a href="stocks/DPZ.html">Domino's Pizza Inc - Common Stock</a></td>
+                        <td>-332</td>
+                        <td>$306.61</td>
+                        <td>-$101,795.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-10-2022</td>
+                        <td><a href="stocks/NFLX.html">Netflix, Inc. - Common Stock</a></td>
+                        <td>416</td>
+                        <td>$245.10</td>
+                        <td>$101,961.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-10-2022</td>
+                        <td><a href="stocks/NFLX.html">Netflix, Inc. - Common Stock</a></td>
+                        <td>-416</td>
+                        <td>$240.86</td>
+                        <td>-$100,197.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-10-2022</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>247</td>
+                        <td>$404.98</td>
+                        <td>$100,030.06</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-10-2022</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>-247</td>
+                        <td>$386.26</td>
+                        <td>-$95,406.22</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-10-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>111</td>
+                        <td>$858.54</td>
+                        <td>$95,298.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-10-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-111</td>
+                        <td>$837.94</td>
+                        <td>-$93,011.13</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-10-2022</td>
+                        <td><a href="stocks/FFIV.html">F5, Inc. - Common Stock</a></td>
+                        <td>608</td>
+                        <td>$153.47</td>
+                        <td>$93,309.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-10-2022</td>
+                        <td><a href="stocks/FFIV.html">F5, Inc. - Common Stock</a></td>
+                        <td>-608</td>
+                        <td>$142.39</td>
+                        <td>-$86,573.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-10-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>102</td>
+                        <td>$846.28</td>
+                        <td>$86,321.07</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-10-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-102</td>
+                        <td>$782.51</td>
+                        <td>-$79,816.03</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-10-2022</td>
+                        <td><a href="stocks/ZBRA.html">Zebra Technologies Corporation - Class A Common Stock</a></td>
+                        <td>282</td>
+                        <td>$283.22</td>
+                        <td>$79,868.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-11-2022</td>
+                        <td><a href="stocks/ZBRA.html">Zebra Technologies Corporation - Class A Common Stock</a></td>
+                        <td>-282</td>
+                        <td>$238.30</td>
+                        <td>-$67,200.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-11-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>170</td>
+                        <td>$394.93</td>
+                        <td>$67,138.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-11-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>-170</td>
+                        <td>$372.64</td>
+                        <td>-$63,348.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-11-2022</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>211</td>
+                        <td>$301.22</td>
+                        <td>$63,557.42</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-11-2022</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-211</td>
+                        <td>$285.93</td>
+                        <td>-$60,331.23</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-11-2022</td>
+                        <td><a href="stocks/CRWD.html">CrowdStrike Holdings, Inc. - Class A Common Stock</a></td>
+                        <td>427</td>
+                        <td>$141.53</td>
+                        <td>$60,433.31</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-11-2022</td>
+                        <td><a href="stocks/CRWD.html">CrowdStrike Holdings, Inc. - Class A Common Stock</a></td>
+                        <td>-427</td>
+                        <td>$127.56</td>
+                        <td>-$54,468.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-11-2022</td>
+                        <td><a href="stocks/DPZ.html">Domino's Pizza Inc - Common Stock</a></td>
+                        <td>162</td>
+                        <td>$336.17</td>
+                        <td>$54,459.58</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-11-2022</td>
+                        <td><a href="stocks/DPZ.html">Domino's Pizza Inc - Common Stock</a></td>
+                        <td>-162</td>
+                        <td>$326.08</td>
+                        <td>-$52,825.47</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-11-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>63</td>
+                        <td>$835.35</td>
+                        <td>$52,627.29</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-11-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-63</td>
+                        <td>$813.80</td>
+                        <td>-$51,269.31</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-11-2022</td>
+                        <td><a href="stocks/HQY.html">HealthEquity, Inc. - Common Stock</a></td>
+                        <td>689</td>
+                        <td>$74.66</td>
+                        <td>$51,440.74</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-11-2022</td>
+                        <td><a href="stocks/HQY.html">HealthEquity, Inc. - Common Stock</a></td>
+                        <td>-689</td>
+                        <td>$65.87</td>
+                        <td>-$45,384.43</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-11-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>54</td>
+                        <td>$839.13</td>
+                        <td>$45,312.82</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-11-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-54</td>
+                        <td>$807.81</td>
+                        <td>-$43,621.64</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-11-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>53</td>
+                        <td>$812.36</td>
+                        <td>$43,055.23</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-11-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-53</td>
+                        <td>$782.51</td>
+                        <td>-$41,473.03</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-11-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>98</td>
+                        <td>$426.08</td>
+                        <td>$41,755.84</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-11-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>-98</td>
+                        <td>$410.44</td>
+                        <td>-$40,223.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-11-2022</td>
+                        <td><a href="stocks/NFLX.html">Netflix, Inc. - Common Stock</a></td>
+                        <td>137</td>
+                        <td>$295.28</td>
+                        <td>$40,453.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-11-2022</td>
+                        <td><a href="stocks/NFLX.html">Netflix, Inc. - Common Stock</a></td>
+                        <td>-137</td>
+                        <td>$287.98</td>
+                        <td>-$39,453.26</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-11-2022</td>
+                        <td><a href="stocks/ONC.html">BeOne Medicines Ltd. - American Depositary Shares</a></td>
+                        <td>203</td>
+                        <td>$194.65</td>
+                        <td>$39,513.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-11-2022</td>
+                        <td><a href="stocks/ONC.html">BeOne Medicines Ltd. - American Depositary Shares</a></td>
+                        <td>-203</td>
+                        <td>$176.54</td>
+                        <td>-$35,837.62</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-11-2022</td>
+                        <td><a href="stocks/UTHR.html">United Therapeutics Corporation - Common Stock</a></td>
+                        <td>132</td>
+                        <td>$270.93</td>
+                        <td>$35,762.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-11-2022</td>
+                        <td><a href="stocks/UTHR.html">United Therapeutics Corporation - Common Stock</a></td>
+                        <td>-132</td>
+                        <td>$266.86</td>
+                        <td>-$35,225.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-11-2022</td>
+                        <td><a href="stocks/ILMN.html">Illumina, Inc. - Common Stock</a></td>
+                        <td>167</td>
+                        <td>$211.00</td>
+                        <td>$35,237.33</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-11-2022</td>
+                        <td><a href="stocks/ILMN.html">Illumina, Inc. - Common Stock</a></td>
+                        <td>-167</td>
+                        <td>$202.89</td>
+                        <td>-$33,882.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-11-2022</td>
+                        <td><a href="stocks/CRWD.html">CrowdStrike Holdings, Inc. - Class A Common Stock</a></td>
+                        <td>246</td>
+                        <td>$138.00</td>
+                        <td>$33,948.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-11-2022</td>
+                        <td><a href="stocks/CRWD.html">CrowdStrike Holdings, Inc. - Class A Common Stock</a></td>
+                        <td>-246</td>
+                        <td>$117.65</td>
+                        <td>-$28,941.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-11-2022</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>55</td>
+                        <td>$519.01</td>
+                        <td>$28,545.46</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-12-2022</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>-55</td>
+                        <td>$484.95</td>
+                        <td>-$26,672.07</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-12-2022</td>
+                        <td><a href="stocks/ZS.html">Zscaler, Inc. - Common Stock</a></td>
+                        <td>188</td>
+                        <td>$144.50</td>
+                        <td>$27,166.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-12-2022</td>
+                        <td><a href="stocks/ZS.html">Zscaler, Inc. - Common Stock</a></td>
+                        <td>-188</td>
+                        <td>$128.99</td>
+                        <td>-$24,250.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-12-2022</td>
+                        <td><a href="stocks/AXON.html">Axon Enterprise, Inc. - Common Stock</a></td>
+                        <td>131</td>
+                        <td>$184.01</td>
+                        <td>$24,105.31</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-12-2022</td>
+                        <td><a href="stocks/AXON.html">Axon Enterprise, Inc. - Common Stock</a></td>
+                        <td>-131</td>
+                        <td>$169.43</td>
+                        <td>-$22,195.33</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-12-2022</td>
+                        <td><a href="stocks/EXPE.html">Expedia Group, Inc. - Common Stock</a></td>
+                        <td>231</td>
+                        <td>$96.48</td>
+                        <td>$22,286.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-12-2022</td>
+                        <td><a href="stocks/EXPE.html">Expedia Group, Inc. - Common Stock</a></td>
+                        <td>-231</td>
+                        <td>$90.38</td>
+                        <td>-$20,878.64</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-12-2022</td>
+                        <td><a href="stocks/DPZ.html">Domino's Pizza Inc - Common Stock</a></td>
+                        <td>57</td>
+                        <td>$362.27</td>
+                        <td>$20,649.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-12-2022</td>
+                        <td><a href="stocks/DPZ.html">Domino's Pizza Inc - Common Stock</a></td>
+                        <td>-57</td>
+                        <td>$350.39</td>
+                        <td>-$19,972.39</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-12-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>26</td>
+                        <td>$768.16</td>
+                        <td>$19,972.27</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-12-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-26</td>
+                        <td>$752.17</td>
+                        <td>-$19,556.38</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-12-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>26</td>
+                        <td>$752.17</td>
+                        <td>$19,556.38</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-12-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-26</td>
+                        <td>$738.17</td>
+                        <td>-$19,192.53</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-12-2022</td>
+                        <td><a href="stocks/NFLX.html">Netflix, Inc. - Common Stock</a></td>
+                        <td>61</td>
+                        <td>$317.83</td>
+                        <td>$19,387.63</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-12-2022</td>
+                        <td><a href="stocks/NFLX.html">Netflix, Inc. - Common Stock</a></td>
+                        <td>-61</td>
+                        <td>$290.41</td>
+                        <td>-$17,715.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-12-2022</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>101</td>
+                        <td>$175.98</td>
+                        <td>$17,773.87</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-12-2022</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>-101</td>
+                        <td>$168.21</td>
+                        <td>-$16,988.91</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-12-2022</td>
+                        <td><a href="stocks/BIRD.html">Allbirds, Inc. - Class A Common Stock</a></td>
+                        <td>331</td>
+                        <td>$51.40</td>
+                        <td>$17,013.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-12-2022</td>
+                        <td><a href="stocks/BIRD.html">Allbirds, Inc. - Class A Common Stock</a></td>
+                        <td>-331</td>
+                        <td>$47.00</td>
+                        <td>-$15,557.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-12-2022</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>95</td>
+                        <td>$162.95</td>
+                        <td>$15,480.53</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-12-2022</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>-95</td>
+                        <td>$158.97</td>
+                        <td>-$15,102.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-12-2022</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>95</td>
+                        <td>$158.97</td>
+                        <td>$15,102.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-12-2022</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>-95</td>
+                        <td>$147.93</td>
+                        <td>-$14,053.51</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-12-2022</td>
+                        <td><a href="stocks/NVCR.html">NovoCure Limited - Ordinary Shares</a></td>
+                        <td>177</td>
+                        <td>$79.78</td>
+                        <td>$14,121.06</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-12-2022</td>
+                        <td><a href="stocks/NVCR.html">NovoCure Limited - Ordinary Shares</a></td>
+                        <td>-177</td>
+                        <td>$73.00</td>
+                        <td>-$12,921.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-12-2022</td>
+                        <td><a href="stocks/DPZ.html">Domino's Pizza Inc - Common Stock</a></td>
+                        <td>37</td>
+                        <td>$343.47</td>
+                        <td>$12,708.23</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-12-2022</td>
+                        <td><a href="stocks/DPZ.html">Domino's Pizza Inc - Common Stock</a></td>
+                        <td>-37</td>
+                        <td>$333.78</td>
+                        <td>-$12,350.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-12-2022</td>
+                        <td><a href="stocks/CALM.html">Cal-Maine Foods, Inc. - Common Stock</a></td>
+                        <td>240</td>
+                        <td>$52.24</td>
+                        <td>$12,537.94</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-12-2022</td>
+                        <td><a href="stocks/CALM.html">Cal-Maine Foods, Inc. - Common Stock</a></td>
+                        <td>-240</td>
+                        <td>$44.66</td>
+                        <td>-$10,719.45</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-12-2022</td>
+                        <td><a href="stocks/ROP.html">Roper Technologies, Inc. - Common Stock</a></td>
+                        <td>25</td>
+                        <td>$430.56</td>
+                        <td>$10,764.11</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-12-2022</td>
+                        <td><a href="stocks/ROP.html">Roper Technologies, Inc. - Common Stock</a></td>
+                        <td>-25</td>
+                        <td>$425.85</td>
+                        <td>-$10,646.34</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</div>
+</body>
+</html>
