@@ -1,0 +1,2798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nasdaq Trade System - de Jonge Investments</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+            crossorigin="anonymous"></script>
+    <meta name="theme-color" content="#712cf9">
+</head>
+
+<body>
+<header class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow" data-bs-theme="dark"><a
+        class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="#">Nasdaq Trade system</a>
+</header>
+
+
+<div class="container-fluid">
+    <div class="row">
+        
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <a href="GameResult.html">Back</a>
+            <h1>de Jonge Investments</h1>
+            <img src="de Jonge Investments.png" class="img-fluid">
+            <div class="table-responsive small">
+                <table class="table table-striped table-sm">
+                    <thead>
+                    <tr>
+                        <th scope="col">ExecutedOn</th>
+                        <th scope="col">Company</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">AtPrice</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr scope="row">
+                        <td>04-01-2021</td>
+                        <td><a href="stocks/LULU.html">lululemon athletica inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$356.40</td>
+                        <td>$712.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-01-2021</td>
+                        <td><a href="stocks/LULU.html">lululemon athletica inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$366.50</td>
+                        <td>-$733.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-01-2021</td>
+                        <td><a href="stocks/ZBRA.html">Zebra Technologies Corporation - Class A Common Stock</a></td>
+                        <td>2</td>
+                        <td>$380.57</td>
+                        <td>$761.14</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-01-2021</td>
+                        <td><a href="stocks/ZBRA.html">Zebra Technologies Corporation - Class A Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$394.82</td>
+                        <td>-$789.64</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-01-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$471.50</td>
+                        <td>$943.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-01-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$502.25</td>
+                        <td>-$1,004.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-01-2021</td>
+                        <td><a href="stocks/BIDU.html">Baidu, Inc. - American Depositary Shares, each representing 8 ordinary share</a></td>
+                        <td>5</td>
+                        <td>$207.89</td>
+                        <td>$1,039.45</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-01-2021</td>
+                        <td><a href="stocks/BIDU.html">Baidu, Inc. - American Depositary Shares, each representing 8 ordinary share</a></td>
+                        <td>-5</td>
+                        <td>$240.25</td>
+                        <td>-$1,201.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-01-2021</td>
+                        <td><a href="stocks/TREE.html">LendingTree, Inc. - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$269.76</td>
+                        <td>$1,079.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-01-2021</td>
+                        <td><a href="stocks/TREE.html">LendingTree, Inc. - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$313.31</td>
+                        <td>-$1,253.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-01-2021</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$621.92</td>
+                        <td>$1,243.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-01-2021</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$634.42</td>
+                        <td>-$1,268.84</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-01-2021</td>
+                        <td><a href="stocks/TWST.html">Twist Bioscience Corporation - Common Stock</a></td>
+                        <td>8</td>
+                        <td>$168.41</td>
+                        <td>$1,347.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-01-2021</td>
+                        <td><a href="stocks/TWST.html">Twist Bioscience Corporation - Common Stock</a></td>
+                        <td>-8</td>
+                        <td>$189.43</td>
+                        <td>-$1,515.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-01-2021</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$634.00</td>
+                        <td>$1,268.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-01-2021</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$650.63</td>
+                        <td>-$1,301.27</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-01-2021</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>5</td>
+                        <td>$287.00</td>
+                        <td>$1,435.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-01-2021</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-5</td>
+                        <td>$305.36</td>
+                        <td>-$1,526.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-01-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$753.45</td>
+                        <td>$1,506.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-01-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$781.65</td>
+                        <td>-$1,563.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-01-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$781.65</td>
+                        <td>$1,563.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-01-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$814.80</td>
+                        <td>-$1,629.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-01-2021</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$353.93</td>
+                        <td>$1,769.65</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-01-2021</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$386.32</td>
+                        <td>-$1,931.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-01-2021</td>
+                        <td><a href="stocks/IRBT.html">iRobot Corporation - Common Stock</a></td>
+                        <td>16</td>
+                        <td>$126.40</td>
+                        <td>$2,022.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-01-2021</td>
+                        <td><a href="stocks/IRBT.html">iRobot Corporation - Common Stock</a></td>
+                        <td>-16</td>
+                        <td>$161.16</td>
+                        <td>-$2,578.56</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-01-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$758.10</td>
+                        <td>$2,274.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-01-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$795.00</td>
+                        <td>-$2,385.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-01-2021</td>
+                        <td><a href="stocks/QDEL.html">QuidelOrtho Corporation - Common Stock</a></td>
+                        <td>11</td>
+                        <td>$227.30</td>
+                        <td>$2,500.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-01-2021</td>
+                        <td><a href="stocks/QDEL.html">QuidelOrtho Corporation - Common Stock</a></td>
+                        <td>-11</td>
+                        <td>$250.97</td>
+                        <td>-$2,760.67</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-02-2021</td>
+                        <td><a href="stocks/WDAY.html">Workday, Inc. - Class A Common Stock</a></td>
+                        <td>12</td>
+                        <td>$236.69</td>
+                        <td>$2,840.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-02-2021</td>
+                        <td><a href="stocks/WDAY.html">Workday, Inc. - Class A Common Stock</a></td>
+                        <td>-12</td>
+                        <td>$257.76</td>
+                        <td>-$3,093.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-02-2021</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>9</td>
+                        <td>$324.62</td>
+                        <td>$2,921.58</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-02-2021</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-9</td>
+                        <td>$362.44</td>
+                        <td>-$3,261.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-02-2021</td>
+                        <td><a href="stocks/MTCH.html">Match Group, Inc. - Common Stock</a></td>
+                        <td>26</td>
+                        <td>$136.49</td>
+                        <td>$3,548.69</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-02-2021</td>
+                        <td><a href="stocks/MTCH.html">Match Group, Inc. - Common Stock</a></td>
+                        <td>-26</td>
+                        <td>$148.85</td>
+                        <td>-$3,870.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-02-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>8</td>
+                        <td>$484.25</td>
+                        <td>$3,874.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-02-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-8</td>
+                        <td>$508.00</td>
+                        <td>-$4,064.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-02-2021</td>
+                        <td><a href="stocks/BIDU.html">Baidu, Inc. - American Depositary Shares, each representing 8 ordinary share</a></td>
+                        <td>14</td>
+                        <td>$276.60</td>
+                        <td>$3,872.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-02-2021</td>
+                        <td><a href="stocks/BIDU.html">Baidu, Inc. - American Depositary Shares, each representing 8 ordinary share</a></td>
+                        <td>-14</td>
+                        <td>$295.04</td>
+                        <td>-$4,130.56</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-02-2021</td>
+                        <td><a href="stocks/TLRY.html">Tilray Brands, Inc. - Common Stock</a></td>
+                        <td>102</td>
+                        <td>$42.35</td>
+                        <td>$4,319.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-02-2021</td>
+                        <td><a href="stocks/TLRY.html">Tilray Brands, Inc. - Common Stock</a></td>
+                        <td>-102</td>
+                        <td>$63.91</td>
+                        <td>-$6,518.82</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-02-2021</td>
+                        <td><a href="stocks/ZBRA.html">Zebra Technologies Corporation - Class A Common Stock</a></td>
+                        <td>15</td>
+                        <td>$427.47</td>
+                        <td>$6,412.05</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-02-2021</td>
+                        <td><a href="stocks/ZBRA.html">Zebra Technologies Corporation - Class A Common Stock</a></td>
+                        <td>-15</td>
+                        <td>$470.08</td>
+                        <td>-$7,051.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-02-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>8</td>
+                        <td>$854.55</td>
+                        <td>$6,836.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-02-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-8</td>
+                        <td>$879.90</td>
+                        <td>-$7,039.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-02-2021</td>
+                        <td><a href="stocks/BPMC.html">Blueprint Medicines Corporation - Common Stock</a></td>
+                        <td>79</td>
+                        <td>$93.20</td>
+                        <td>$7,362.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-02-2021</td>
+                        <td><a href="stocks/BPMC.html">Blueprint Medicines Corporation - Common Stock</a></td>
+                        <td>-79</td>
+                        <td>$100.25</td>
+                        <td>-$7,919.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-02-2021</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>14</td>
+                        <td>$540.35</td>
+                        <td>$7,564.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-02-2021</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>-14</td>
+                        <td>$551.79</td>
+                        <td>-$7,725.06</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-02-2021</td>
+                        <td><a href="stocks/BIDU.html">Baidu, Inc. - American Depositary Shares, each representing 8 ordinary share</a></td>
+                        <td>27</td>
+                        <td>$298.01</td>
+                        <td>$8,046.27</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-02-2021</td>
+                        <td><a href="stocks/BIDU.html">Baidu, Inc. - American Depositary Shares, each representing 8 ordinary share</a></td>
+                        <td>-27</td>
+                        <td>$339.91</td>
+                        <td>-$9,177.57</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-02-2021</td>
+                        <td><a href="stocks/SLDB.html">Solid Biosciences Inc. - Common Stock</a></td>
+                        <td>89</td>
+                        <td>$103.05</td>
+                        <td>$9,171.45</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-02-2021</td>
+                        <td><a href="stocks/SLDB.html">Solid Biosciences Inc. - Common Stock</a></td>
+                        <td>-89</td>
+                        <td>$146.10</td>
+                        <td>-$13,002.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-02-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>17</td>
+                        <td>$731.55</td>
+                        <td>$12,436.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-02-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-17</td>
+                        <td>$753.30</td>
+                        <td>-$12,806.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-02-2021</td>
+                        <td><a href="stocks/MKTX.html">MarketAxess Holdings, Inc. - Common Stock</a></td>
+                        <td>25</td>
+                        <td>$521.47</td>
+                        <td>$13,036.73</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-02-2021</td>
+                        <td><a href="stocks/MKTX.html">MarketAxess Holdings, Inc. - Common Stock</a></td>
+                        <td>-25</td>
+                        <td>$527.50</td>
+                        <td>-$13,187.54</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-02-2021</td>
+                        <td><a href="stocks/ETSY.html">Etsy, Inc. - Common Stock</a></td>
+                        <td>68</td>
+                        <td>$197.58</td>
+                        <td>$13,435.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-02-2021</td>
+                        <td><a href="stocks/ETSY.html">Etsy, Inc. - Common Stock</a></td>
+                        <td>-68</td>
+                        <td>$220.27</td>
+                        <td>-$14,978.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-03-2021</td>
+                        <td><a href="stocks/SLDB.html">Solid Biosciences Inc. - Common Stock</a></td>
+                        <td>118</td>
+                        <td>$127.80</td>
+                        <td>$15,080.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-03-2021</td>
+                        <td><a href="stocks/SLDB.html">Solid Biosciences Inc. - Common Stock</a></td>
+                        <td>-118</td>
+                        <td>$160.80</td>
+                        <td>-$18,974.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-03-2021</td>
+                        <td><a href="stocks/SAIA.html">Saia, Inc. - Common Stock</a></td>
+                        <td>88</td>
+                        <td>$214.44</td>
+                        <td>$18,870.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-03-2021</td>
+                        <td><a href="stocks/SAIA.html">Saia, Inc. - Common Stock</a></td>
+                        <td>-88</td>
+                        <td>$223.35</td>
+                        <td>-$19,654.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-03-2021</td>
+                        <td><a href="stocks/CRAI.html">CRA International,Inc. - Common Stock</a></td>
+                        <td>355</td>
+                        <td>$55.77</td>
+                        <td>$19,799.66</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-03-2021</td>
+                        <td><a href="stocks/CRAI.html">CRA International,Inc. - Common Stock</a></td>
+                        <td>-355</td>
+                        <td>$60.26</td>
+                        <td>-$21,392.62</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-03-2021</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>56</td>
+                        <td>$378.70</td>
+                        <td>$21,207.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-03-2021</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-56</td>
+                        <td>$399.52</td>
+                        <td>-$22,373.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-03-2021</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>120</td>
+                        <td>$187.67</td>
+                        <td>$22,520.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-03-2021</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>-120</td>
+                        <td>$224.53</td>
+                        <td>-$26,943.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-03-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>37</td>
+                        <td>$726.60</td>
+                        <td>$26,884.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-03-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-37</td>
+                        <td>$792.15</td>
+                        <td>-$29,309.55</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-03-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>37</td>
+                        <td>$792.15</td>
+                        <td>$29,309.55</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-03-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-37</td>
+                        <td>$827.10</td>
+                        <td>-$30,602.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-03-2021</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>50</td>
+                        <td>$604.35</td>
+                        <td>$30,217.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-03-2021</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>-50</td>
+                        <td>$616.74</td>
+                        <td>-$30,836.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-03-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>218</td>
+                        <td>$143.66</td>
+                        <td>$31,317.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-03-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>-218</td>
+                        <td>$156.02</td>
+                        <td>-$34,012.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-03-2021</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>70</td>
+                        <td>$480.84</td>
+                        <td>$33,658.86</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-03-2021</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-70</td>
+                        <td>$494.64</td>
+                        <td>-$34,624.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-03-2021</td>
+                        <td><a href="stocks/UPST.html">Upstart Holdings, Inc. - Common stock</a></td>
+                        <td>575</td>
+                        <td>$60.79</td>
+                        <td>$34,954.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-03-2021</td>
+                        <td><a href="stocks/UPST.html">Upstart Holdings, Inc. - Common stock</a></td>
+                        <td>-575</td>
+                        <td>$115.09</td>
+                        <td>-$66,176.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-03-2021</td>
+                        <td><a href="stocks/UPST.html">Upstart Holdings, Inc. - Common stock</a></td>
+                        <td>575</td>
+                        <td>$115.09</td>
+                        <td>$66,176.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-03-2021</td>
+                        <td><a href="stocks/UPST.html">Upstart Holdings, Inc. - Common stock</a></td>
+                        <td>-575</td>
+                        <td>$125.28</td>
+                        <td>-$72,036.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-03-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>93</td>
+                        <td>$767.85</td>
+                        <td>$71,410.05</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-03-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-93</td>
+                        <td>$780.75</td>
+                        <td>-$72,609.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-03-2021</td>
+                        <td><a href="stocks/PRTA.html">Prothena Corporation plc - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$21.74</td>
+                        <td>$21,740.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-03-2021</td>
+                        <td><a href="stocks/PRTA.html">Prothena Corporation plc - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$25.40</td>
+                        <td>-$25,400.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-03-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>216</td>
+                        <td>$354.50</td>
+                        <td>$76,572.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-03-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-216</td>
+                        <td>$369.25</td>
+                        <td>-$79,758.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-03-2021</td>
+                        <td><a href="stocks/UPST.html">Upstart Holdings, Inc. - Common stock</a></td>
+                        <td>647</td>
+                        <td>$123.73</td>
+                        <td>$80,053.31</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-03-2021</td>
+                        <td><a href="stocks/UPST.html">Upstart Holdings, Inc. - Common stock</a></td>
+                        <td>-647</td>
+                        <td>$142.95</td>
+                        <td>-$92,488.65</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-03-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>123</td>
+                        <td>$748.35</td>
+                        <td>$92,047.05</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-03-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-123</td>
+                        <td>$778.50</td>
+                        <td>-$95,755.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-03-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>123</td>
+                        <td>$778.50</td>
+                        <td>$95,755.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-03-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-123</td>
+                        <td>$815.85</td>
+                        <td>-$100,349.55</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-03-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>123</td>
+                        <td>$815.85</td>
+                        <td>$100,349.55</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-04-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-123</td>
+                        <td>$840.60</td>
+                        <td>-$103,393.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-04-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>121</td>
+                        <td>$852.45</td>
+                        <td>$103,146.45</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-04-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-121</td>
+                        <td>$871.50</td>
+                        <td>-$105,451.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-04-2021</td>
+                        <td><a href="stocks/TREE.html">LendingTree, Inc. - Common Stock</a></td>
+                        <td>487</td>
+                        <td>$217.64</td>
+                        <td>$105,990.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-04-2021</td>
+                        <td><a href="stocks/TREE.html">LendingTree, Inc. - Common Stock</a></td>
+                        <td>-487</td>
+                        <td>$229.26</td>
+                        <td>-$111,649.62</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-04-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>137</td>
+                        <td>$810.90</td>
+                        <td>$111,093.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-04-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-137</td>
+                        <td>$834.00</td>
+                        <td>-$114,258.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-04-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>137</td>
+                        <td>$834.00</td>
+                        <td>$114,258.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-04-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-137</td>
+                        <td>$874.95</td>
+                        <td>-$119,868.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-04-2021</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>515</td>
+                        <td>$233.99</td>
+                        <td>$120,506.57</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-04-2021</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>-515</td>
+                        <td>$254.11</td>
+                        <td>-$130,864.94</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-04-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>874</td>
+                        <td>$149.71</td>
+                        <td>$130,846.55</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-04-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>-874</td>
+                        <td>$160.03</td>
+                        <td>-$139,866.22</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-04-2021</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>218</td>
+                        <td>$641.03</td>
+                        <td>$139,743.71</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-04-2021</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>-218</td>
+                        <td>$663.68</td>
+                        <td>-$144,682.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-04-2021</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>399</td>
+                        <td>$362.85</td>
+                        <td>$144,777.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-04-2021</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-399</td>
+                        <td>$374.97</td>
+                        <td>-$149,613.03</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-04-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>185</td>
+                        <td>$807.75</td>
+                        <td>$149,433.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-04-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-185</td>
+                        <td>$832.50</td>
+                        <td>-$154,012.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-04-2021</td>
+                        <td><a href="stocks/ISRG.html">Intuitive Surgical, Inc. - Common Stock</a></td>
+                        <td>570</td>
+                        <td>$270.37</td>
+                        <td>$154,110.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-04-2021</td>
+                        <td><a href="stocks/ISRG.html">Intuitive Surgical, Inc. - Common Stock</a></td>
+                        <td>-570</td>
+                        <td>$297.13</td>
+                        <td>-$169,362.21</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-04-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>205</td>
+                        <td>$826.50</td>
+                        <td>$169,432.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-04-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-205</td>
+                        <td>$847.50</td>
+                        <td>-$173,737.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-04-2021</td>
+                        <td><a href="stocks/MNMD.html">Mind Medicine (MindMed) Inc. - Common Shares</a></td>
+                        <td>1000</td>
+                        <td>$31.95</td>
+                        <td>$31,950.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-04-2021</td>
+                        <td><a href="stocks/MNMD.html">Mind Medicine (MindMed) Inc. - Common Shares</a></td>
+                        <td>-1000</td>
+                        <td>$52.80</td>
+                        <td>-$52,800.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-04-2021</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>508</td>
+                        <td>$382.77</td>
+                        <td>$194,447.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-04-2021</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-508</td>
+                        <td>$390.39</td>
+                        <td>-$198,318.13</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-04-2021</td>
+                        <td><a href="stocks/SHOP.html">Shopify Inc. - Class A Subordinate Voting Shares</a></td>
+                        <td>1000</td>
+                        <td>$115.69</td>
+                        <td>$115,689.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-04-2021</td>
+                        <td><a href="stocks/SHOP.html">Shopify Inc. - Class A Subordinate Voting Shares</a></td>
+                        <td>-1000</td>
+                        <td>$128.88</td>
+                        <td>-$128,880.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-04-2021</td>
+                        <td><a href="stocks/PRVA.html">Privia Health Group, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$23.00</td>
+                        <td>$23,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-04-2021</td>
+                        <td><a href="stocks/PRVA.html">Privia Health Group, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$34.75</td>
+                        <td>-$34,750.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-04-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>256</td>
+                        <td>$872.55</td>
+                        <td>$223,372.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-04-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-256</td>
+                        <td>$898.80</td>
+                        <td>-$230,092.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-05-2021</td>
+                        <td><a href="stocks/ICLR.html">ICON plc - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$213.49</td>
+                        <td>$213,490.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-05-2021</td>
+                        <td><a href="stocks/ICLR.html">ICON plc - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$219.44</td>
+                        <td>-$219,440.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-05-2021</td>
+                        <td><a href="stocks/ZBRA.html">Zebra Technologies Corporation - Class A Common Stock</a></td>
+                        <td>501</td>
+                        <td>$470.62</td>
+                        <td>$235,780.62</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-05-2021</td>
+                        <td><a href="stocks/ZBRA.html">Zebra Technologies Corporation - Class A Common Stock</a></td>
+                        <td>-501</td>
+                        <td>$482.42</td>
+                        <td>-$241,692.43</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-05-2021</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>503</td>
+                        <td>$481.09</td>
+                        <td>$241,988.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-05-2021</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-503</td>
+                        <td>$497.31</td>
+                        <td>-$250,144.56</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-05-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>328</td>
+                        <td>$762.30</td>
+                        <td>$250,034.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-05-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-328</td>
+                        <td>$782.85</td>
+                        <td>-$256,774.79</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-05-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>776</td>
+                        <td>$331.00</td>
+                        <td>$256,856.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-05-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-776</td>
+                        <td>$347.75</td>
+                        <td>-$269,854.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-05-2021</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>540</td>
+                        <td>$499.81</td>
+                        <td>$269,896.54</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-05-2021</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-540</td>
+                        <td>$505.74</td>
+                        <td>-$273,100.67</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-05-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>790</td>
+                        <td>$345.75</td>
+                        <td>$273,142.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-05-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-790</td>
+                        <td>$368.00</td>
+                        <td>-$290,720.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-05-2021</td>
+                        <td><a href="stocks/UPST.html">Upstart Holdings, Inc. - Common stock</a></td>
+                        <td>1000</td>
+                        <td>$84.05</td>
+                        <td>$84,050.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-05-2021</td>
+                        <td><a href="stocks/UPST.html">Upstart Holdings, Inc. - Common stock</a></td>
+                        <td>-1000</td>
+                        <td>$103.36</td>
+                        <td>-$103,360.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-05-2021</td>
+                        <td><a href="stocks/TXG.html">10x Genomics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$143.83</td>
+                        <td>$143,830.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-05-2021</td>
+                        <td><a href="stocks/TXG.html">10x Genomics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$150.38</td>
+                        <td>-$150,380.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-05-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>483</td>
+                        <td>$654.45</td>
+                        <td>$316,099.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-05-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-483</td>
+                        <td>$673.95</td>
+                        <td>-$325,517.86</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-05-2021</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>491</td>
+                        <td>$663.12</td>
+                        <td>$325,593.09</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-05-2021</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>-491</td>
+                        <td>$674.95</td>
+                        <td>-$331,400.79</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-05-2021</td>
+                        <td><a href="stocks/UPST.html">Upstart Holdings, Inc. - Common stock</a></td>
+                        <td>1000</td>
+                        <td>$139.08</td>
+                        <td>$139,080.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-05-2021</td>
+                        <td><a href="stocks/UPST.html">Upstart Holdings, Inc. - Common stock</a></td>
+                        <td>-1000</td>
+                        <td>$153.85</td>
+                        <td>-$153,850.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-05-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>503</td>
+                        <td>$689.25</td>
+                        <td>$346,692.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-05-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-503</td>
+                        <td>$703.95</td>
+                        <td>-$354,086.86</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-05-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>503</td>
+                        <td>$703.95</td>
+                        <td>$354,086.86</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-05-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-503</td>
+                        <td>$729.75</td>
+                        <td>-$367,064.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-05-2021</td>
+                        <td><a href="stocks/UPST.html">Upstart Holdings, Inc. - Common stock</a></td>
+                        <td>1000</td>
+                        <td>$146.58</td>
+                        <td>$146,580.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-05-2021</td>
+                        <td><a href="stocks/UPST.html">Upstart Holdings, Inc. - Common stock</a></td>
+                        <td>-1000</td>
+                        <td>$166.83</td>
+                        <td>-$166,830.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-05-2021</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>784</td>
+                        <td>$493.97</td>
+                        <td>$387,276.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-05-2021</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-784</td>
+                        <td>$501.04</td>
+                        <td>-$392,819.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-06-2021</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>573</td>
+                        <td>$685.43</td>
+                        <td>$392,748.87</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-06-2021</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>-573</td>
+                        <td>$702.77</td>
+                        <td>-$402,686.84</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-06-2021</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>573</td>
+                        <td>$702.77</td>
+                        <td>$402,686.84</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-06-2021</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>-573</td>
+                        <td>$720.30</td>
+                        <td>-$412,730.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-06-2021</td>
+                        <td><a href="stocks/BNTX.html">BioNTech SE - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$212.50</td>
+                        <td>$212,495.47</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-06-2021</td>
+                        <td><a href="stocks/BNTX.html">BioNTech SE - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$230.24</td>
+                        <td>-$230,240.42</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-06-2021</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>584</td>
+                        <td>$737.00</td>
+                        <td>$430,409.46</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-06-2021</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>-584</td>
+                        <td>$757.03</td>
+                        <td>-$442,102.65</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-06-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>656</td>
+                        <td>$673.80</td>
+                        <td>$442,012.79</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-06-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-656</td>
+                        <td>$698.25</td>
+                        <td>-$458,052.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-06-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>656</td>
+                        <td>$698.25</td>
+                        <td>$458,052.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-06-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-656</td>
+                        <td>$724.20</td>
+                        <td>-$475,075.21</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-06-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>656</td>
+                        <td>$724.20</td>
+                        <td>$475,075.21</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-06-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-656</td>
+                        <td>$736.80</td>
+                        <td>-$483,340.79</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-06-2021</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$419.66</td>
+                        <td>$419,660.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-06-2021</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$427.36</td>
+                        <td>-$427,359.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-06-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$350.00</td>
+                        <td>$350,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-06-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$384.00</td>
+                        <td>-$384,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-06-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>742</td>
+                        <td>$707.10</td>
+                        <td>$524,668.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-06-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-742</td>
+                        <td>$740.55</td>
+                        <td>-$549,488.09</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-06-2021</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>997</td>
+                        <td>$551.36</td>
+                        <td>$549,705.91</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-06-2021</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-997</td>
+                        <td>$565.59</td>
+                        <td>-$563,893.26</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-06-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$208.24</td>
+                        <td>$208,240.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-06-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$221.36</td>
+                        <td>-$221,360.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-06-2021</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$207.90</td>
+                        <td>$207,903.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-06-2021</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$218.86</td>
+                        <td>-$218,856.67</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-06-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$387.50</td>
+                        <td>$387,500.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-06-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$414.50</td>
+                        <td>-$414,500.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-06-2021</td>
+                        <td><a href="stocks/BIDU.html">Baidu, Inc. - American Depositary Shares, each representing 8 ordinary share</a></td>
+                        <td>1000</td>
+                        <td>$194.77</td>
+                        <td>$194,770.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-06-2021</td>
+                        <td><a href="stocks/BIDU.html">Baidu, Inc. - American Depositary Shares, each representing 8 ordinary share</a></td>
+                        <td>-1000</td>
+                        <td>$202.64</td>
+                        <td>-$202,640.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-06-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>821</td>
+                        <td>$758.85</td>
+                        <td>$623,015.83</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-06-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-821</td>
+                        <td>$780.45</td>
+                        <td>-$640,749.46</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-06-2021</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$544.47</td>
+                        <td>$544,474.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-06-2021</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$557.00</td>
+                        <td>-$557,000.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-06-2021</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$557.00</td>
+                        <td>$557,000.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-07-2021</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$573.04</td>
+                        <td>-$573,035.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-07-2021</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$304.48</td>
+                        <td>$304,480.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-07-2021</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$316.09</td>
+                        <td>-$316,090.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-07-2021</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$596.90</td>
+                        <td>$596,900.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-07-2021</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$605.77</td>
+                        <td>-$605,770.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-07-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$221.90</td>
+                        <td>$221,899.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-07-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$232.79</td>
+                        <td>-$232,789.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-07-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$642.00</td>
+                        <td>$642,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-07-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$659.55</td>
+                        <td>-$659,549.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-07-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$673.80</td>
+                        <td>$673,799.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-07-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$682.05</td>
+                        <td>-$682,049.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-07-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$235.15</td>
+                        <td>$235,149.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-07-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$246.66</td>
+                        <td>-$246,660.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-07-2021</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$438.66</td>
+                        <td>$438,660.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-07-2021</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$455.57</td>
+                        <td>-$455,570.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-07-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$259.67</td>
+                        <td>$259,674.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-07-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$286.43</td>
+                        <td>-$286,429.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-07-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$624.75</td>
+                        <td>$624,750.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-07-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$668.25</td>
+                        <td>-$668,250.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-07-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$668.25</td>
+                        <td>$668,250.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-07-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$682.65</td>
+                        <td>-$682,650.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-07-2021</td>
+                        <td><a href="stocks/BNTX.html">BioNTech SE - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$256.22</td>
+                        <td>$256,216.37</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-07-2021</td>
+                        <td><a href="stocks/BNTX.html">BioNTech SE - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$277.31</td>
+                        <td>-$277,307.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-07-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$323.48</td>
+                        <td>$323,480.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-07-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$348.83</td>
+                        <td>-$348,829.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-07-2021</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$768.94</td>
+                        <td>$768,936.89</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-07-2021</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$780.36</td>
+                        <td>-$780,357.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-07-2021</td>
+                        <td><a href="stocks/BNTX.html">BioNTech SE - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$280.29</td>
+                        <td>$280,287.54</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-07-2021</td>
+                        <td><a href="stocks/BNTX.html">BioNTech SE - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$309.35</td>
+                        <td>-$309,352.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-07-2021</td>
+                        <td><a href="stocks/SAIA.html">Saia, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$204.70</td>
+                        <td>$204,700.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-07-2021</td>
+                        <td><a href="stocks/SAIA.html">Saia, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$221.68</td>
+                        <td>-$221,679.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-07-2021</td>
+                        <td><a href="stocks/TEAM.html">Atlassian Corporation  - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$266.79</td>
+                        <td>$266,790.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-07-2021</td>
+                        <td><a href="stocks/TEAM.html">Atlassian Corporation  - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$325.12</td>
+                        <td>-$325,120.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-08-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$346.61</td>
+                        <td>$346,609.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-08-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$386.51</td>
+                        <td>-$386,510.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-08-2021</td>
+                        <td><a href="stocks/BNTX.html">BioNTech SE - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$347.21</td>
+                        <td>$347,211.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-08-2021</td>
+                        <td><a href="stocks/BNTX.html">BioNTech SE - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$409.02</td>
+                        <td>-$409,022.43</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-08-2021</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$579.35</td>
+                        <td>$579,348.51</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-08-2021</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$600.81</td>
+                        <td>-$600,809.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-08-2021</td>
+                        <td><a href="stocks/SYNA.html">Synaptics Incorporated - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$146.39</td>
+                        <td>$146,390.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-08-2021</td>
+                        <td><a href="stocks/SYNA.html">Synaptics Incorporated - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$170.50</td>
+                        <td>-$170,500.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-08-2021</td>
+                        <td><a href="stocks/QNCX.html">Quince Therapeutics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$98.91</td>
+                        <td>$98,910.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-08-2021</td>
+                        <td><a href="stocks/QNCX.html">Quince Therapeutics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$120.21</td>
+                        <td>-$120,210.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-08-2021</td>
+                        <td><a href="stocks/UPST.html">Upstart Holdings, Inc. - Common stock</a></td>
+                        <td>1000</td>
+                        <td>$135.68</td>
+                        <td>$135,679.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-08-2021</td>
+                        <td><a href="stocks/UPST.html">Upstart Holdings, Inc. - Common stock</a></td>
+                        <td>-1000</td>
+                        <td>$171.20</td>
+                        <td>-$171,200.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-08-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$554.40</td>
+                        <td>$554,400.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-08-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$569.70</td>
+                        <td>-$569,700.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-08-2021</td>
+                        <td><a href="stocks/UPST.html">Upstart Holdings, Inc. - Common stock</a></td>
+                        <td>1000</td>
+                        <td>$178.12</td>
+                        <td>$178,120.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-08-2021</td>
+                        <td><a href="stocks/UPST.html">Upstart Holdings, Inc. - Common stock</a></td>
+                        <td>-1000</td>
+                        <td>$203.29</td>
+                        <td>-$203,289.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-08-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$373.86</td>
+                        <td>$373,859.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-08-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$401.86</td>
+                        <td>-$401,859.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-08-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$578.55</td>
+                        <td>$578,549.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-08-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$602.40</td>
+                        <td>-$602,400.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-08-2021</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$633.82</td>
+                        <td>$633,817.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-08-2021</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$653.82</td>
+                        <td>-$653,822.63</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-08-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$587.10</td>
+                        <td>$587,099.98</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-08-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$608.10</td>
+                        <td>-$608,099.98</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-08-2021</td>
+                        <td><a href="stocks/UPST.html">Upstart Holdings, Inc. - Common stock</a></td>
+                        <td>1000</td>
+                        <td>$202.96</td>
+                        <td>$202,960.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-08-2021</td>
+                        <td><a href="stocks/UPST.html">Upstart Holdings, Inc. - Common stock</a></td>
+                        <td>-1000</td>
+                        <td>$219.45</td>
+                        <td>-$219,450.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-08-2021</td>
+                        <td><a href="stocks/OKTA.html">Okta, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$247.55</td>
+                        <td>$247,550.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-08-2021</td>
+                        <td><a href="stocks/OKTA.html">Okta, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$260.73</td>
+                        <td>-$260,730.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-08-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$648.75</td>
+                        <td>$648,750.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-08-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$666.60</td>
+                        <td>-$666,599.98</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-08-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$666.60</td>
+                        <td>$666,599.98</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-08-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$690.15</td>
+                        <td>-$690,150.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-08-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$701.10</td>
+                        <td>$701,099.98</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-08-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$739.35</td>
+                        <td>-$739,349.98</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-08-2021</td>
+                        <td><a href="stocks/AMBA.html">Ambarella, Inc. - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$103.57</td>
+                        <td>$103,570.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-09-2021</td>
+                        <td><a href="stocks/AMBA.html">Ambarella, Inc. - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$131.96</td>
+                        <td>-$131,960.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-09-2021</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$590.53</td>
+                        <td>$590,530.03</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-09-2021</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$660.00</td>
+                        <td>-$660,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-09-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$397.66</td>
+                        <td>$397,660.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-09-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$416.70</td>
+                        <td>-$416,700.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-09-2021</td>
+                        <td><a href="stocks/UPST.html">Upstart Holdings, Inc. - Common stock</a></td>
+                        <td>1000</td>
+                        <td>$262.70</td>
+                        <td>$262,700.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-09-2021</td>
+                        <td><a href="stocks/UPST.html">Upstart Holdings, Inc. - Common stock</a></td>
+                        <td>-1000</td>
+                        <td>$274.33</td>
+                        <td>-$274,329.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-09-2021</td>
+                        <td><a href="stocks/LULU.html">lululemon athletica inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$380.85</td>
+                        <td>$380,850.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-09-2021</td>
+                        <td><a href="stocks/LULU.html">lululemon athletica inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$420.71</td>
+                        <td>-$420,709.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-09-2021</td>
+                        <td><a href="stocks/AFRM.html">Affirm Holdings, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$92.06</td>
+                        <td>$92,060.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-09-2021</td>
+                        <td><a href="stocks/AFRM.html">Affirm Holdings, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$123.70</td>
+                        <td>-$123,700.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-09-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$745.65</td>
+                        <td>$745,650.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-09-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$759.00</td>
+                        <td>-$759,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-09-2021</td>
+                        <td><a href="stocks/BNTX.html">BioNTech SE - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$330.50</td>
+                        <td>$330,502.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-09-2021</td>
+                        <td><a href="stocks/BNTX.html">BioNTech SE - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$350.61</td>
+                        <td>-$350,606.17</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-09-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$774.75</td>
+                        <td>$774,750.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-09-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$806.40</td>
+                        <td>-$806,400.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-09-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$806.40</td>
+                        <td>$806,400.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-09-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$824.70</td>
+                        <td>-$824,700.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-09-2021</td>
+                        <td><a href="stocks/UPST.html">Upstart Holdings, Inc. - Common stock</a></td>
+                        <td>1000</td>
+                        <td>$293.47</td>
+                        <td>$293,470.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-09-2021</td>
+                        <td><a href="stocks/UPST.html">Upstart Holdings, Inc. - Common stock</a></td>
+                        <td>-1000</td>
+                        <td>$320.77</td>
+                        <td>-$320,769.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-09-2021</td>
+                        <td><a href="stocks/AMBA.html">Ambarella, Inc. - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$148.92</td>
+                        <td>$148,920.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-09-2021</td>
+                        <td><a href="stocks/AMBA.html">Ambarella, Inc. - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$164.37</td>
+                        <td>-$164,370.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-09-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$440.72</td>
+                        <td>$440,720.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-09-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$454.60</td>
+                        <td>-$454,600.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-09-2021</td>
+                        <td><a href="stocks/LYEL.html">Lyell Immunopharma, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$224.60</td>
+                        <td>$224,600.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-09-2021</td>
+                        <td><a href="stocks/LYEL.html">Lyell Immunopharma, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$245.60</td>
+                        <td>-$245,600.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-09-2021</td>
+                        <td><a href="stocks/LYEL.html">Lyell Immunopharma, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$256.80</td>
+                        <td>$256,799.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-09-2021</td>
+                        <td><a href="stocks/LYEL.html">Lyell Immunopharma, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$282.40</td>
+                        <td>-$282,399.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-09-2021</td>
+                        <td><a href="stocks/LYEL.html">Lyell Immunopharma, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$282.40</td>
+                        <td>$282,399.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-09-2021</td>
+                        <td><a href="stocks/LYEL.html">Lyell Immunopharma, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$291.20</td>
+                        <td>-$291,200.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-09-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$728.85</td>
+                        <td>$728,849.98</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-09-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$741.60</td>
+                        <td>-$741,599.98</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-09-2021</td>
+                        <td><a href="stocks/MSFT.html">Microsoft Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$273.24</td>
+                        <td>$273,240.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-10-2021</td>
+                        <td><a href="stocks/MSFT.html">Microsoft Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$280.20</td>
+                        <td>-$280,199.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-10-2021</td>
+                        <td><a href="stocks/MKTX.html">MarketAxess Holdings, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$400.59</td>
+                        <td>$400,594.42</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-10-2021</td>
+                        <td><a href="stocks/MKTX.html">MarketAxess Holdings, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$413.74</td>
+                        <td>-$413,739.11</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-10-2021</td>
+                        <td><a href="stocks/AFRM.html">Affirm Holdings, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$111.46</td>
+                        <td>$111,460.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-10-2021</td>
+                        <td><a href="stocks/AFRM.html">Affirm Holdings, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$133.70</td>
+                        <td>-$133,700.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-10-2021</td>
+                        <td><a href="stocks/LYEL.html">Lyell Immunopharma, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$231.40</td>
+                        <td>$231,399.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-10-2021</td>
+                        <td><a href="stocks/LYEL.html">Lyell Immunopharma, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$249.00</td>
+                        <td>-$249,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-10-2021</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$120.14</td>
+                        <td>$120,141.06</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-10-2021</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$131.30</td>
+                        <td>-$131,304.82</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-10-2021</td>
+                        <td><a href="stocks/LULU.html">lululemon athletica inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$384.57</td>
+                        <td>$384,570.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-10-2021</td>
+                        <td><a href="stocks/LULU.html">lululemon athletica inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$400.71</td>
+                        <td>-$400,709.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-10-2021</td>
+                        <td><a href="stocks/UPST.html">Upstart Holdings, Inc. - Common stock</a></td>
+                        <td>1000</td>
+                        <td>$344.89</td>
+                        <td>$344,890.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-10-2021</td>
+                        <td><a href="stocks/UPST.html">Upstart Holdings, Inc. - Common stock</a></td>
+                        <td>-1000</td>
+                        <td>$379.68</td>
+                        <td>-$379,679.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-10-2021</td>
+                        <td><a href="stocks/GTLB.html">GitLab Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$103.89</td>
+                        <td>$103,890.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-10-2021</td>
+                        <td><a href="stocks/GTLB.html">GitLab Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$115.00</td>
+                        <td>-$115,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-10-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$726.00</td>
+                        <td>$726,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-10-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$751.20</td>
+                        <td>-$751,200.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-10-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$751.20</td>
+                        <td>$751,200.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-10-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$789.75</td>
+                        <td>-$789,750.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-10-2021</td>
+                        <td><a href="stocks/DUOL.html">Duolingo, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$157.91</td>
+                        <td>$157,910.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-10-2021</td>
+                        <td><a href="stocks/DUOL.html">Duolingo, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$178.14</td>
+                        <td>-$178,140.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-10-2021</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$753.63</td>
+                        <td>$753,627.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-10-2021</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$763.73</td>
+                        <td>-$763,730.41</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-10-2021</td>
+                        <td><a href="stocks/MEDP.html">Medpace Holdings, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$188.38</td>
+                        <td>$188,380.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-10-2021</td>
+                        <td><a href="stocks/MEDP.html">Medpace Holdings, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$213.02</td>
+                        <td>-$213,020.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-10-2021</td>
+                        <td><a href="stocks/SLAB.html">Silicon Laboratories, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$154.86</td>
+                        <td>$154,860.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-10-2021</td>
+                        <td><a href="stocks/SLAB.html">Silicon Laboratories, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$184.06</td>
+                        <td>-$184,060.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-10-2021</td>
+                        <td><a href="stocks/SAIA.html">Saia, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$273.89</td>
+                        <td>$273,890.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-10-2021</td>
+                        <td><a href="stocks/SAIA.html">Saia, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$311.86</td>
+                        <td>-$311,859.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-10-2021</td>
+                        <td><a href="stocks/TEAM.html">Atlassian Corporation  - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$417.33</td>
+                        <td>$417,329.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-10-2021</td>
+                        <td><a href="stocks/TEAM.html">Atlassian Corporation  - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$458.13</td>
+                        <td>-$458,130.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-11-2021</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$162.91</td>
+                        <td>$162,905.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-11-2021</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$339.35</td>
+                        <td>-$339,349.82</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-11-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$434.00</td>
+                        <td>$434,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-11-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$468.75</td>
+                        <td>-$468,750.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-11-2021</td>
+                        <td><a href="stocks/ETSY.html">Etsy, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$239.62</td>
+                        <td>$239,620.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-11-2021</td>
+                        <td><a href="stocks/ETSY.html">Etsy, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$271.27</td>
+                        <td>-$271,269.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-11-2021</td>
+                        <td><a href="stocks/SYNA.html">Synaptics Incorporated - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$220.89</td>
+                        <td>$220,890.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-11-2021</td>
+                        <td><a href="stocks/SYNA.html">Synaptics Incorporated - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$249.21</td>
+                        <td>-$249,210.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-11-2021</td>
+                        <td><a href="stocks/NICE.html">NICE Ltd - American Depositary Shares each representing one Ordinary Share</a></td>
+                        <td>1000</td>
+                        <td>$276.36</td>
+                        <td>$276,359.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-11-2021</td>
+                        <td><a href="stocks/NICE.html">NICE Ltd - American Depositary Shares each representing one Ordinary Share</a></td>
+                        <td>-1000</td>
+                        <td>$287.98</td>
+                        <td>-$287,980.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-11-2021</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$341.17</td>
+                        <td>$341,166.66</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-11-2021</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$355.98</td>
+                        <td>-$355,983.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-11-2021</td>
+                        <td><a href="stocks/NICE.html">NICE Ltd - American Depositary Shares each representing one Ordinary Share</a></td>
+                        <td>1000</td>
+                        <td>$289.13</td>
+                        <td>$289,130.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-11-2021</td>
+                        <td><a href="stocks/NICE.html">NICE Ltd - American Depositary Shares each representing one Ordinary Share</a></td>
+                        <td>-1000</td>
+                        <td>$311.72</td>
+                        <td>-$311,720.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-11-2021</td>
+                        <td><a href="stocks/LULU.html">lululemon athletica inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$461.96</td>
+                        <td>$461,959.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-11-2021</td>
+                        <td><a href="stocks/LULU.html">lululemon athletica inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$477.91</td>
+                        <td>-$477,910.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-11-2021</td>
+                        <td><a href="stocks/BNTX.html">BioNTech SE - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$254.68</td>
+                        <td>$254,676.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-11-2021</td>
+                        <td><a href="stocks/BNTX.html">BioNTech SE - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$268.44</td>
+                        <td>-$268,444.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-11-2021</td>
+                        <td><a href="stocks/ZS.html">Zscaler, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$356.00</td>
+                        <td>$356,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-11-2021</td>
+                        <td><a href="stocks/ZS.html">Zscaler, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$365.65</td>
+                        <td>-$365,649.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-11-2021</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$670.96</td>
+                        <td>$670,960.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-11-2021</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$688.37</td>
+                        <td>-$688,370.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-11-2021</td>
+                        <td><a href="stocks/DHIL.html">Diamond Hill Investment Group, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$174.49</td>
+                        <td>$174,485.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-11-2021</td>
+                        <td><a href="stocks/DHIL.html">Diamond Hill Investment Group, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$181.22</td>
+                        <td>-$181,220.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-11-2021</td>
+                        <td><a href="stocks/ETSY.html">Etsy, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$279.53</td>
+                        <td>$279,530.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-11-2021</td>
+                        <td><a href="stocks/ETSY.html">Etsy, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$296.91</td>
+                        <td>-$296,910.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-11-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$685.35</td>
+                        <td>$685,349.98</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-11-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$711.00</td>
+                        <td>-$711,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-11-2021</td>
+                        <td><a href="stocks/AMBA.html">Ambarella, Inc. - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$179.52</td>
+                        <td>$179,520.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-12-2021</td>
+                        <td><a href="stocks/AMBA.html">Ambarella, Inc. - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$204.89</td>
+                        <td>-$204,890.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-12-2021</td>
+                        <td><a href="stocks/OKTA.html">Okta, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$198.08</td>
+                        <td>$198,080.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-12-2021</td>
+                        <td><a href="stocks/OKTA.html">Okta, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$221.18</td>
+                        <td>-$221,179.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-12-2021</td>
+                        <td><a href="stocks/BNTX.html">BioNTech SE - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$329.13</td>
+                        <td>$329,130.62</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-12-2021</td>
+                        <td><a href="stocks/BNTX.html">BioNTech SE - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$339.56</td>
+                        <td>-$339,562.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-12-2021</td>
+                        <td><a href="stocks/TEAM.html">Atlassian Corporation  - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$353.44</td>
+                        <td>$353,440.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-12-2021</td>
+                        <td><a href="stocks/TEAM.html">Atlassian Corporation  - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$382.99</td>
+                        <td>-$382,989.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-12-2021</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$633.34</td>
+                        <td>$633,339.29</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-12-2021</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$652.24</td>
+                        <td>-$652,237.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-12-2021</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$652.24</td>
+                        <td>$652,237.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-12-2021</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$663.88</td>
+                        <td>-$663,884.83</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-12-2021</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$632.57</td>
+                        <td>$632,570.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-12-2021</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$654.45</td>
+                        <td>-$654,450.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-12-2021</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$642.69</td>
+                        <td>$642,690.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-12-2021</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$656.08</td>
+                        <td>-$656,080.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-12-2021</td>
+                        <td><a href="stocks/ZS.html">Zscaler, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$284.34</td>
+                        <td>$284,340.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-12-2021</td>
+                        <td><a href="stocks/ZS.html">Zscaler, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$307.24</td>
+                        <td>-$307,239.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-12-2021</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$762.82</td>
+                        <td>$762,818.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-12-2021</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$768.24</td>
+                        <td>-$768,242.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-12-2021</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$297.14</td>
+                        <td>$297,140.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-12-2021</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$310.26</td>
+                        <td>-$310,260.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-12-2021</td>
+                        <td><a href="stocks/TEAM.html">Atlassian Corporation  - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$343.33</td>
+                        <td>$343,329.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-12-2021</td>
+                        <td><a href="stocks/TEAM.html">Atlassian Corporation  - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$380.63</td>
+                        <td>-$380,630.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-12-2021</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$312.84</td>
+                        <td>$312,843.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-12-2021</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$336.29</td>
+                        <td>-$336,290.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-12-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$408.75</td>
+                        <td>$408,750.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-12-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$432.75</td>
+                        <td>-$432,750.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-12-2021</td>
+                        <td><a href="stocks/ALNY.html">Alnylam Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$161.11</td>
+                        <td>$161,110.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-12-2021</td>
+                        <td><a href="stocks/ALNY.html">Alnylam Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$168.70</td>
+                        <td>-$168,700.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-12-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$674.55</td>
+                        <td>$674,549.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-12-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$686.25</td>
+                        <td>-$686,250.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-12-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$686.25</td>
+                        <td>$686,250.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-12-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$708.60</td>
+                        <td>-$708,599.98</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-12-2021</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$669.00</td>
+                        <td>$669,000.00</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</div>
+</body>
+</html>
