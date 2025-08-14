@@ -1,0 +1,2511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nasdaq Trade System - BinomialSolutions</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+            crossorigin="anonymous"></script>
+    <meta name="theme-color" content="#712cf9">
+</head>
+
+<body>
+<header class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow" data-bs-theme="dark"><a
+        class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="#">Nasdaq Trade system</a>
+</header>
+
+
+<div class="container-fluid">
+    <div class="row">
+        
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <a href="GameResult.html">Back</a>
+            <h1>BinomialSolutions</h1>
+            <img src="BinomialSolutions.png" class="img-fluid">
+            <div class="table-responsive small">
+                <table class="table table-striped table-sm">
+                    <thead>
+                    <tr>
+                        <th scope="col">ExecutedOn</th>
+                        <th scope="col">Company</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">AtPrice</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr scope="row">
+                        <td>04-01-2023</td>
+                        <td><a href="stocks/NVCR.html">NovoCure Limited - Ordinary Shares</a></td>
+                        <td>14</td>
+                        <td>$70.53</td>
+                        <td>$987.42</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-01-2023</td>
+                        <td><a href="stocks/NVCR.html">NovoCure Limited - Ordinary Shares</a></td>
+                        <td>-14</td>
+                        <td>$118.81</td>
+                        <td>-$1,663.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-01-2023</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$448.08</td>
+                        <td>$1,344.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-01-2023</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$469.11</td>
+                        <td>-$1,407.33</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-01-2023</td>
+                        <td><a href="stocks/ZBRA.html">Zebra Technologies Corporation - Class A Common Stock</a></td>
+                        <td>6</td>
+                        <td>$286.93</td>
+                        <td>$1,721.58</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-01-2023</td>
+                        <td><a href="stocks/ZBRA.html">Zebra Technologies Corporation - Class A Common Stock</a></td>
+                        <td>-6</td>
+                        <td>$299.79</td>
+                        <td>-$1,798.74</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-01-2023</td>
+                        <td><a href="stocks/JBHT.html">J.B. Hunt Transport Services, Inc. - Common Stock</a></td>
+                        <td>10</td>
+                        <td>$172.08</td>
+                        <td>$1,720.78</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-01-2023</td>
+                        <td><a href="stocks/JBHT.html">J.B. Hunt Transport Services, Inc. - Common Stock</a></td>
+                        <td>-10</td>
+                        <td>$180.60</td>
+                        <td>-$1,805.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-01-2023</td>
+                        <td><a href="stocks/PCAR.html">PACCAR Inc. - Common Stock</a></td>
+                        <td>30</td>
+                        <td>$62.16</td>
+                        <td>$1,864.67</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-01-2023</td>
+                        <td><a href="stocks/PCAR.html">PACCAR Inc. - Common Stock</a></td>
+                        <td>-30</td>
+                        <td>$67.52</td>
+                        <td>-$2,025.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-01-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$725.46</td>
+                        <td>$1,450.93</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-01-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$739.14</td>
+                        <td>-$1,478.27</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-01-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$734.43</td>
+                        <td>$1,468.86</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-01-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$756.38</td>
+                        <td>-$1,512.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-01-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$462.64</td>
+                        <td>$1,850.56</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-02-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$526.08</td>
+                        <td>-$2,104.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-02-2023</td>
+                        <td><a href="stocks/ALGN.html">Align Technology, Inc. - Common Stock</a></td>
+                        <td>8</td>
+                        <td>$282.53</td>
+                        <td>$2,260.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-02-2023</td>
+                        <td><a href="stocks/ALGN.html">Align Technology, Inc. - Common Stock</a></td>
+                        <td>-8</td>
+                        <td>$359.88</td>
+                        <td>-$2,879.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-02-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$749.13</td>
+                        <td>$2,996.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-02-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$780.97</td>
+                        <td>-$3,123.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-02-2023</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>6</td>
+                        <td>$485.53</td>
+                        <td>$2,913.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-02-2023</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>-6</td>
+                        <td>$507.68</td>
+                        <td>-$3,046.08</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-02-2023</td>
+                        <td><a href="stocks/CME.html">CME Group Inc. - Class A Common Stock</a></td>
+                        <td>20</td>
+                        <td>$161.22</td>
+                        <td>$3,224.33</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-02-2023</td>
+                        <td><a href="stocks/CME.html">CME Group Inc. - Class A Common Stock</a></td>
+                        <td>-20</td>
+                        <td>$169.95</td>
+                        <td>-$3,398.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-02-2023</td>
+                        <td><a href="stocks/NSIT.html">Insight Enterprises, Inc. - Common Stock</a></td>
+                        <td>30</td>
+                        <td>$112.33</td>
+                        <td>$3,369.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-02-2023</td>
+                        <td><a href="stocks/NSIT.html">Insight Enterprises, Inc. - Common Stock</a></td>
+                        <td>-30</td>
+                        <td>$125.21</td>
+                        <td>-$3,756.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-02-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$742.72</td>
+                        <td>$3,713.58</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-02-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$755.52</td>
+                        <td>-$3,777.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-02-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>1</td>
+                        <td>$2,396.83</td>
+                        <td>$2,396.83</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-02-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$2,444.33</td>
+                        <td>-$2,444.33</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-02-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>1</td>
+                        <td>$2,444.33</td>
+                        <td>$2,444.33</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-02-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$2,489.36</td>
+                        <td>-$2,489.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-02-2023</td>
+                        <td><a href="stocks/PEGA.html">Pegasystems Inc. - Common Stock</a></td>
+                        <td>93</td>
+                        <td>$42.55</td>
+                        <td>$3,957.11</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-02-2023</td>
+                        <td><a href="stocks/PEGA.html">Pegasystems Inc. - Common Stock</a></td>
+                        <td>-93</td>
+                        <td>$50.19</td>
+                        <td>-$4,668.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-02-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>6</td>
+                        <td>$734.30</td>
+                        <td>$4,405.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-02-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-6</td>
+                        <td>$746.68</td>
+                        <td>-$4,480.06</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-02-2023</td>
+                        <td><a href="stocks/WING.html">Wingstop Inc. - Common Stock</a></td>
+                        <td>28</td>
+                        <td>$164.69</td>
+                        <td>$4,611.42</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-02-2023</td>
+                        <td><a href="stocks/WING.html">Wingstop Inc. - Common Stock</a></td>
+                        <td>-28</td>
+                        <td>$177.37</td>
+                        <td>-$4,966.27</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-02-2023</td>
+                        <td><a href="stocks/MYRG.html">MYR Group, Inc. - Common Stock</a></td>
+                        <td>52</td>
+                        <td>$97.98</td>
+                        <td>$5,094.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-02-2023</td>
+                        <td><a href="stocks/MYRG.html">MYR Group, Inc. - Common Stock</a></td>
+                        <td>-52</td>
+                        <td>$112.18</td>
+                        <td>-$5,833.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-02-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$2,400.25</td>
+                        <td>$4,800.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-02-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$2,425.96</td>
+                        <td>-$4,851.91</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-02-2023</td>
+                        <td><a href="stocks/META.html">Meta Platforms, Inc. - Class A Common Stock</a></td>
+                        <td>35</td>
+                        <td>$168.74</td>
+                        <td>$5,906.06</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-02-2023</td>
+                        <td><a href="stocks/META.html">Meta Platforms, Inc. - Class A Common Stock</a></td>
+                        <td>-35</td>
+                        <td>$174.12</td>
+                        <td>-$6,094.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-02-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$2,496.70</td>
+                        <td>$4,993.41</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-03-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$2,524.72</td>
+                        <td>-$5,049.43</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-03-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$2,524.72</td>
+                        <td>$5,049.43</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-03-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$2,549.95</td>
+                        <td>-$5,099.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-03-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$2,549.95</td>
+                        <td>$5,099.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-03-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$2,592.06</td>
+                        <td>-$5,184.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-03-2023</td>
+                        <td><a href="stocks/BBIO.html">BridgeBio Pharma, Inc. - Common Stock</a></td>
+                        <td>380</td>
+                        <td>$16.52</td>
+                        <td>$6,277.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-03-2023</td>
+                        <td><a href="stocks/BBIO.html">BridgeBio Pharma, Inc. - Common Stock</a></td>
+                        <td>-380</td>
+                        <td>$18.55</td>
+                        <td>-$7,049.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-03-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>19</td>
+                        <td>$367.10</td>
+                        <td>$6,974.97</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-03-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>-19</td>
+                        <td>$378.85</td>
+                        <td>-$7,198.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-03-2023</td>
+                        <td><a href="stocks/UTMD.html">Utah Medical Products, Inc. - Common Stock</a></td>
+                        <td>85</td>
+                        <td>$85.41</td>
+                        <td>$7,259.79</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-03-2023</td>
+                        <td><a href="stocks/UTMD.html">Utah Medical Products, Inc. - Common Stock</a></td>
+                        <td>-85</td>
+                        <td>$87.27</td>
+                        <td>-$7,417.93</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-03-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>10</td>
+                        <td>$741.70</td>
+                        <td>$7,417.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-03-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-10</td>
+                        <td>$744.94</td>
+                        <td>-$7,449.41</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-03-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$2,412.51</td>
+                        <td>$7,237.54</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-03-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$2,448.98</td>
+                        <td>-$7,346.93</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-03-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>22</td>
+                        <td>$336.14</td>
+                        <td>$7,395.08</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-03-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-22</td>
+                        <td>$341.94</td>
+                        <td>-$7,522.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-03-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$2,389.60</td>
+                        <td>$7,168.81</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-03-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$2,413.52</td>
+                        <td>-$7,240.57</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-03-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>22</td>
+                        <td>$353.29</td>
+                        <td>$7,772.38</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-03-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-22</td>
+                        <td>$358.14</td>
+                        <td>-$7,879.08</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-03-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$2,466.76</td>
+                        <td>$7,400.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-03-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$2,543.51</td>
+                        <td>-$7,630.54</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-03-2023</td>
+                        <td><a href="stocks/LULU.html">lululemon athletica inc. - Common Stock</a></td>
+                        <td>27</td>
+                        <td>$298.81</td>
+                        <td>$8,067.87</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-03-2023</td>
+                        <td><a href="stocks/LULU.html">lululemon athletica inc. - Common Stock</a></td>
+                        <td>-27</td>
+                        <td>$303.73</td>
+                        <td>-$8,200.71</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-03-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>11</td>
+                        <td>$749.23</td>
+                        <td>$8,241.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-03-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-11</td>
+                        <td>$799.95</td>
+                        <td>-$8,799.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-03-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>11</td>
+                        <td>$799.95</td>
+                        <td>$8,799.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-03-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-11</td>
+                        <td>$817.74</td>
+                        <td>-$8,995.14</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-03-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$2,481.18</td>
+                        <td>$7,443.55</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-03-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$2,517.59</td>
+                        <td>-$7,552.78</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-03-2023</td>
+                        <td><a href="stocks/LULU.html">lululemon athletica inc. - Common Stock</a></td>
+                        <td>28</td>
+                        <td>$320.31</td>
+                        <td>$8,968.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-03-2023</td>
+                        <td><a href="stocks/LULU.html">lululemon athletica inc. - Common Stock</a></td>
+                        <td>-28</td>
+                        <td>$361.04</td>
+                        <td>-$10,109.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-03-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$2,543.96</td>
+                        <td>$10,175.83</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-03-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$2,581.54</td>
+                        <td>-$10,326.14</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-03-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$2,581.54</td>
+                        <td>$10,326.14</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-03-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$2,623.72</td>
+                        <td>-$10,494.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-04-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>27</td>
+                        <td>$380.08</td>
+                        <td>$10,262.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-04-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-27</td>
+                        <td>$385.15</td>
+                        <td>-$10,399.05</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-04-2023</td>
+                        <td><a href="stocks/BIIB.html">Biogen Inc. - Common Stock</a></td>
+                        <td>38</td>
+                        <td>$275.25</td>
+                        <td>$10,459.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-04-2023</td>
+                        <td><a href="stocks/BIIB.html">Biogen Inc. - Common Stock</a></td>
+                        <td>-38</td>
+                        <td>$283.99</td>
+                        <td>-$10,791.62</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-04-2023</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>25</td>
+                        <td>$432.78</td>
+                        <td>$10,819.46</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-04-2023</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>-25</td>
+                        <td>$441.06</td>
+                        <td>-$11,026.53</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-04-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>25</td>
+                        <td>$433.41</td>
+                        <td>$10,835.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-04-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-25</td>
+                        <td>$456.16</td>
+                        <td>-$11,404.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-04-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>25</td>
+                        <td>$456.16</td>
+                        <td>$11,404.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-04-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-25</td>
+                        <td>$463.24</td>
+                        <td>-$11,581.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-04-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$2,519.70</td>
+                        <td>$10,078.81</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-04-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$2,601.19</td>
+                        <td>-$10,404.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-04-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$2,601.19</td>
+                        <td>$10,404.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-04-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$2,621.20</td>
+                        <td>-$10,484.81</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-04-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$2,647.11</td>
+                        <td>$10,588.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-04-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$2,667.52</td>
+                        <td>-$10,670.06</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-04-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>25</td>
+                        <td>$484.04</td>
+                        <td>$12,101.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-04-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-25</td>
+                        <td>$498.48</td>
+                        <td>-$12,462.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-04-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>36</td>
+                        <td>$353.28</td>
+                        <td>$12,717.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-04-2023</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>-36</td>
+                        <td>$367.41</td>
+                        <td>-$13,226.65</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-04-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$2,631.99</td>
+                        <td>$13,159.97</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-04-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$2,658.27</td>
+                        <td>-$13,291.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-04-2023</td>
+                        <td><a href="stocks/PEP.html">PepsiCo, Inc. - Common Stock</a></td>
+                        <td>77</td>
+                        <td>$174.37</td>
+                        <td>$13,426.27</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-04-2023</td>
+                        <td><a href="stocks/PEP.html">PepsiCo, Inc. - Common Stock</a></td>
+                        <td>-77</td>
+                        <td>$178.32</td>
+                        <td>-$13,730.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-04-2023</td>
+                        <td><a href="stocks/TEAM.html">Atlassian Corporation  - Class A Common Stock</a></td>
+                        <td>96</td>
+                        <td>$143.06</td>
+                        <td>$13,733.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-04-2023</td>
+                        <td><a href="stocks/TEAM.html">Atlassian Corporation  - Class A Common Stock</a></td>
+                        <td>-96</td>
+                        <td>$151.74</td>
+                        <td>-$14,567.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-04-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$2,569.28</td>
+                        <td>$12,846.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-04-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$2,610.89</td>
+                        <td>-$13,054.47</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-04-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$2,610.89</td>
+                        <td>$13,054.47</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-04-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$2,657.26</td>
+                        <td>-$13,286.29</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-05-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$2,661.99</td>
+                        <td>$13,309.93</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-05-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$2,686.68</td>
+                        <td>-$13,433.38</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-05-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>35</td>
+                        <td>$430.12</td>
+                        <td>$15,054.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-05-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-35</td>
+                        <td>$450.98</td>
+                        <td>-$15,784.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-05-2023</td>
+                        <td><a href="stocks/ITRI.html">Itron, Inc. - Common Stock</a></td>
+                        <td>294</td>
+                        <td>$54.02</td>
+                        <td>$15,881.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-05-2023</td>
+                        <td><a href="stocks/ITRI.html">Itron, Inc. - Common Stock</a></td>
+                        <td>-294</td>
+                        <td>$65.60</td>
+                        <td>-$19,286.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-05-2023</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>41</td>
+                        <td>$469.51</td>
+                        <td>$19,249.91</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-05-2023</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>-41</td>
+                        <td>$488.49</td>
+                        <td>-$20,028.09</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-05-2023</td>
+                        <td><a href="stocks/WDFC.html">WD-40 Company - Common Stock</a></td>
+                        <td>112</td>
+                        <td>$179.12</td>
+                        <td>$20,061.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-05-2023</td>
+                        <td><a href="stocks/WDFC.html">WD-40 Company - Common Stock</a></td>
+                        <td>-112</td>
+                        <td>$183.89</td>
+                        <td>-$20,595.63</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-05-2023</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>32</td>
+                        <td>$631.59</td>
+                        <td>$20,210.83</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-05-2023</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-32</td>
+                        <td>$645.43</td>
+                        <td>-$20,653.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-05-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>8</td>
+                        <td>$2,617.30</td>
+                        <td>$20,938.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-05-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-8</td>
+                        <td>$2,627.85</td>
+                        <td>-$21,022.79</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-05-2023</td>
+                        <td><a href="stocks/FSLR.html">First Solar, Inc. - Common Stock</a></td>
+                        <td>115</td>
+                        <td>$183.19</td>
+                        <td>$21,066.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-05-2023</td>
+                        <td><a href="stocks/FSLR.html">First Solar, Inc. - Common Stock</a></td>
+                        <td>-115</td>
+                        <td>$231.69</td>
+                        <td>-$26,644.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-05-2023</td>
+                        <td><a href="stocks/OLED.html">Universal Display Corporation - Common Stock</a></td>
+                        <td>195</td>
+                        <td>$136.97</td>
+                        <td>$26,709.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-05-2023</td>
+                        <td><a href="stocks/OLED.html">Universal Display Corporation - Common Stock</a></td>
+                        <td>-195</td>
+                        <td>$145.93</td>
+                        <td>-$28,455.81</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-05-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>10</td>
+                        <td>$2,617.70</td>
+                        <td>$26,177.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-05-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-10</td>
+                        <td>$2,667.54</td>
+                        <td>-$26,675.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-05-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>10</td>
+                        <td>$2,667.54</td>
+                        <td>$26,675.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-05-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-10</td>
+                        <td>$2,750.90</td>
+                        <td>-$27,509.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-05-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>40</td>
+                        <td>$745.42</td>
+                        <td>$29,816.77</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-05-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-40</td>
+                        <td>$756.96</td>
+                        <td>-$30,278.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-05-2023</td>
+                        <td><a href="stocks/BNTX.html">BioNTech SE - American Depositary Shares</a></td>
+                        <td>281</td>
+                        <td>$107.50</td>
+                        <td>$30,207.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-05-2023</td>
+                        <td><a href="stocks/BNTX.html">BioNTech SE - American Depositary Shares</a></td>
+                        <td>-281</td>
+                        <td>$116.30</td>
+                        <td>-$32,680.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-05-2023</td>
+                        <td><a href="stocks/CRWD.html">CrowdStrike Holdings, Inc. - Class A Common Stock</a></td>
+                        <td>227</td>
+                        <td>$143.90</td>
+                        <td>$32,665.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-05-2023</td>
+                        <td><a href="stocks/CRWD.html">CrowdStrike Holdings, Inc. - Class A Common Stock</a></td>
+                        <td>-227</td>
+                        <td>$149.20</td>
+                        <td>-$33,868.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-05-2023</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>51</td>
+                        <td>$654.91</td>
+                        <td>$33,400.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-05-2023</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-51</td>
+                        <td>$695.85</td>
+                        <td>-$35,488.47</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-05-2023</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>51</td>
+                        <td>$695.85</td>
+                        <td>$35,488.47</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-05-2023</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-51</td>
+                        <td>$722.81</td>
+                        <td>-$36,863.47</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-05-2023</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>93</td>
+                        <td>$400.91</td>
+                        <td>$37,284.64</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-05-2023</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>-93</td>
+                        <td>$413.77</td>
+                        <td>-$38,480.97</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-05-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>15</td>
+                        <td>$2,481.64</td>
+                        <td>$37,224.57</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-06-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-15</td>
+                        <td>$2,522.42</td>
+                        <td>-$37,836.33</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-06-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>15</td>
+                        <td>$2,522.42</td>
+                        <td>$37,836.33</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-06-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-15</td>
+                        <td>$2,597.25</td>
+                        <td>-$38,958.81</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-06-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>15</td>
+                        <td>$2,641.88</td>
+                        <td>$39,628.14</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-06-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-15</td>
+                        <td>$2,678.81</td>
+                        <td>-$40,182.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-06-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>82</td>
+                        <td>$498.52</td>
+                        <td>$40,878.64</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-06-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-82</td>
+                        <td>$512.31</td>
+                        <td>-$42,009.42</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-06-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>100</td>
+                        <td>$418.32</td>
+                        <td>$41,832.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-06-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-100</td>
+                        <td>$439.03</td>
+                        <td>-$43,903.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-06-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>100</td>
+                        <td>$439.03</td>
+                        <td>$43,903.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-06-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-100</td>
+                        <td>$454.00</td>
+                        <td>-$45,400.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-06-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>93</td>
+                        <td>$490.24</td>
+                        <td>$45,592.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-06-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-93</td>
+                        <td>$505.66</td>
+                        <td>-$47,026.38</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-06-2023</td>
+                        <td><a href="stocks/LULU.html">lululemon athletica inc. - Common Stock</a></td>
+                        <td>127</td>
+                        <td>$368.36</td>
+                        <td>$46,781.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-06-2023</td>
+                        <td><a href="stocks/LULU.html">lululemon athletica inc. - Common Stock</a></td>
+                        <td>-127</td>
+                        <td>$377.21</td>
+                        <td>-$47,905.67</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-06-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>18</td>
+                        <td>$2,581.57</td>
+                        <td>$46,468.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-06-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-18</td>
+                        <td>$2,642.81</td>
+                        <td>-$47,570.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-06-2023</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>192</td>
+                        <td>$255.90</td>
+                        <td>$49,132.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-06-2023</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>-192</td>
+                        <td>$260.54</td>
+                        <td>-$50,023.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-06-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>19</td>
+                        <td>$2,608.13</td>
+                        <td>$49,554.56</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-06-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-19</td>
+                        <td>$2,615.21</td>
+                        <td>-$49,688.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-06-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>19</td>
+                        <td>$2,615.21</td>
+                        <td>$49,688.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-06-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-19</td>
+                        <td>$2,648.94</td>
+                        <td>-$50,329.83</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-06-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>103</td>
+                        <td>$494.13</td>
+                        <td>$50,895.39</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-06-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-103</td>
+                        <td>$501.40</td>
+                        <td>-$51,644.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-06-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>19</td>
+                        <td>$2,587.47</td>
+                        <td>$49,161.94</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-06-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-19</td>
+                        <td>$2,671.16</td>
+                        <td>-$50,751.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-06-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>19</td>
+                        <td>$2,671.16</td>
+                        <td>$50,751.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-06-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-19</td>
+                        <td>$2,637.63</td>
+                        <td>-$50,115.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-06-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>19</td>
+                        <td>$2,637.63</td>
+                        <td>$50,115.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-06-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-19</td>
+                        <td>$2,627.19</td>
+                        <td>-$49,916.54</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-06-2023</td>
+                        <td><a href="stocks/CRMT.html">America's Car-Mart, Inc. - Common Stock</a></td>
+                        <td>506</td>
+                        <td>$103.50</td>
+                        <td>$52,371.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-06-2023</td>
+                        <td><a href="stocks/CRMT.html">America's Car-Mart, Inc. - Common Stock</a></td>
+                        <td>-506</td>
+                        <td>$99.78</td>
+                        <td>-$50,488.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-07-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>19</td>
+                        <td>$2,645.08</td>
+                        <td>$50,256.54</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-07-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-19</td>
+                        <td>$2,604.22</td>
+                        <td>-$49,480.13</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-07-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>70</td>
+                        <td>$702.89</td>
+                        <td>$49,202.09</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-07-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-70</td>
+                        <td>$690.54</td>
+                        <td>-$48,337.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-07-2023</td>
+                        <td><a href="stocks/VRSN.html">VeriSign, Inc. - Common Stock</a></td>
+                        <td>217</td>
+                        <td>$224.48</td>
+                        <td>$48,711.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-07-2023</td>
+                        <td><a href="stocks/VRSN.html">VeriSign, Inc. - Common Stock</a></td>
+                        <td>-217</td>
+                        <td>$213.15</td>
+                        <td>-$46,253.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-07-2023</td>
+                        <td><a href="stocks/WDFC.html">WD-40 Company - Common Stock</a></td>
+                        <td>208</td>
+                        <td>$222.84</td>
+                        <td>$46,351.38</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-07-2023</td>
+                        <td><a href="stocks/WDFC.html">WD-40 Company - Common Stock</a></td>
+                        <td>-208</td>
+                        <td>$216.15</td>
+                        <td>-$44,958.59</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-07-2023</td>
+                        <td><a href="stocks/LULU.html">lululemon athletica inc. - Common Stock</a></td>
+                        <td>117</td>
+                        <td>$383.32</td>
+                        <td>$44,848.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-07-2023</td>
+                        <td><a href="stocks/LULU.html">lululemon athletica inc. - Common Stock</a></td>
+                        <td>-117</td>
+                        <td>$379.54</td>
+                        <td>-$44,406.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-07-2023</td>
+                        <td><a href="stocks/ZBRA.html">Zebra Technologies Corporation - Class A Common Stock</a></td>
+                        <td>140</td>
+                        <td>$318.47</td>
+                        <td>$44,585.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-07-2023</td>
+                        <td><a href="stocks/ZBRA.html">Zebra Technologies Corporation - Class A Common Stock</a></td>
+                        <td>-140</td>
+                        <td>$309.28</td>
+                        <td>-$43,299.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-07-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>14</td>
+                        <td>$2,949.36</td>
+                        <td>$41,291.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-07-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-14</td>
+                        <td>$2,896.22</td>
+                        <td>-$40,547.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-07-2023</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>60</td>
+                        <td>$703.02</td>
+                        <td>$42,181.33</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-07-2023</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-60</td>
+                        <td>$664.08</td>
+                        <td>-$39,844.73</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-07-2023</td>
+                        <td><a href="stocks/META.html">Meta Platforms, Inc. - Class A Common Stock</a></td>
+                        <td>133</td>
+                        <td>$301.10</td>
+                        <td>$40,046.43</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-07-2023</td>
+                        <td><a href="stocks/META.html">Meta Platforms, Inc. - Class A Common Stock</a></td>
+                        <td>-133</td>
+                        <td>$292.88</td>
+                        <td>-$38,952.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-07-2023</td>
+                        <td><a href="stocks/IRDM.html">Iridium Communications Inc - Common Stock</a></td>
+                        <td>673</td>
+                        <td>$58.15</td>
+                        <td>$39,132.17</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-07-2023</td>
+                        <td><a href="stocks/IRDM.html">Iridium Communications Inc - Common Stock</a></td>
+                        <td>-673</td>
+                        <td>$49.05</td>
+                        <td>-$33,010.43</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-07-2023</td>
+                        <td><a href="stocks/SLAB.html">Silicon Laboratories, Inc. - Common Stock</a></td>
+                        <td>208</td>
+                        <td>$158.72</td>
+                        <td>$33,013.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-07-2023</td>
+                        <td><a href="stocks/SLAB.html">Silicon Laboratories, Inc. - Common Stock</a></td>
+                        <td>-208</td>
+                        <td>$144.40</td>
+                        <td>-$30,035.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-07-2023</td>
+                        <td><a href="stocks/CROX.html">Crocs, Inc. - Common Stock</a></td>
+                        <td>250</td>
+                        <td>$119.80</td>
+                        <td>$29,950.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-07-2023</td>
+                        <td><a href="stocks/CROX.html">Crocs, Inc. - Common Stock</a></td>
+                        <td>-250</td>
+                        <td>$102.30</td>
+                        <td>-$25,575.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-07-2023</td>
+                        <td><a href="stocks/WING.html">Wingstop Inc. - Common Stock</a></td>
+                        <td>144</td>
+                        <td>$177.74</td>
+                        <td>$25,594.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-07-2023</td>
+                        <td><a href="stocks/WING.html">Wingstop Inc. - Common Stock</a></td>
+                        <td>-144</td>
+                        <td>$163.46</td>
+                        <td>-$23,538.57</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-07-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>8</td>
+                        <td>$2,938.67</td>
+                        <td>$23,509.37</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-08-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-8</td>
+                        <td>$2,882.79</td>
+                        <td>-$23,062.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-08-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>41</td>
+                        <td>$553.10</td>
+                        <td>$22,677.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-08-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-41</td>
+                        <td>$483.48</td>
+                        <td>-$19,822.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-08-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>7</td>
+                        <td>$2,853.72</td>
+                        <td>$19,976.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-08-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-7</td>
+                        <td>$2,809.20</td>
+                        <td>-$19,664.38</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-08-2023</td>
+                        <td><a href="stocks/VRTX.html">Vertex Pharmaceuticals Incorporated - Common Stock</a></td>
+                        <td>57</td>
+                        <td>$347.74</td>
+                        <td>$19,821.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-08-2023</td>
+                        <td><a href="stocks/VRTX.html">Vertex Pharmaceuticals Incorporated - Common Stock</a></td>
+                        <td>-57</td>
+                        <td>$340.48</td>
+                        <td>-$19,407.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-08-2023</td>
+                        <td><a href="stocks/PODD.html">Insulet Corporation - Common Stock</a></td>
+                        <td>75</td>
+                        <td>$260.85</td>
+                        <td>$19,563.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-08-2023</td>
+                        <td><a href="stocks/PODD.html">Insulet Corporation - Common Stock</a></td>
+                        <td>-75</td>
+                        <td>$238.34</td>
+                        <td>-$17,875.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-08-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$3,191.08</td>
+                        <td>$15,955.41</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-08-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$3,170.00</td>
+                        <td>-$15,850.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-08-2023</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>34</td>
+                        <td>$518.75</td>
+                        <td>$17,637.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-08-2023</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>-34</td>
+                        <td>$507.49</td>
+                        <td>-$17,254.66</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-08-2023</td>
+                        <td><a href="stocks/FWRD.html">Forward Air Corporation - Common Stock</a></td>
+                        <td>168</td>
+                        <td>$103.27</td>
+                        <td>$17,349.49</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-08-2023</td>
+                        <td><a href="stocks/FWRD.html">Forward Air Corporation - Common Stock</a></td>
+                        <td>-168</td>
+                        <td>$77.09</td>
+                        <td>-$12,951.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-08-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$3,199.35</td>
+                        <td>$12,797.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-08-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$3,165.95</td>
+                        <td>-$12,663.78</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-08-2023</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>25</td>
+                        <td>$509.37</td>
+                        <td>$12,734.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-08-2023</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>-25</td>
+                        <td>$499.55</td>
+                        <td>-$12,488.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-08-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$3,160.79</td>
+                        <td>$12,643.17</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-08-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$3,078.40</td>
+                        <td>-$12,313.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-08-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$3,078.40</td>
+                        <td>$12,313.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-08-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$3,025.35</td>
+                        <td>-$12,101.41</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-08-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>24</td>
+                        <td>$485.10</td>
+                        <td>$11,642.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-08-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-24</td>
+                        <td>$472.62</td>
+                        <td>-$11,342.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-08-2023</td>
+                        <td><a href="stocks/PODD.html">Insulet Corporation - Common Stock</a></td>
+                        <td>59</td>
+                        <td>$197.74</td>
+                        <td>$11,666.66</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-08-2023</td>
+                        <td><a href="stocks/PODD.html">Insulet Corporation - Common Stock</a></td>
+                        <td>-59</td>
+                        <td>$188.52</td>
+                        <td>-$11,122.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-08-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$3,065.05</td>
+                        <td>$9,195.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-08-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$2,993.66</td>
+                        <td>-$8,980.98</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-08-2023</td>
+                        <td><a href="stocks/PODD.html">Insulet Corporation - Common Stock</a></td>
+                        <td>58</td>
+                        <td>$187.84</td>
+                        <td>$10,894.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-08-2023</td>
+                        <td><a href="stocks/PODD.html">Insulet Corporation - Common Stock</a></td>
+                        <td>-58</td>
+                        <td>$183.00</td>
+                        <td>-$10,614.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-08-2023</td>
+                        <td><a href="stocks/APLS.html">Apellis Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>250</td>
+                        <td>$42.97</td>
+                        <td>$10,742.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-08-2023</td>
+                        <td><a href="stocks/APLS.html">Apellis Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-250</td>
+                        <td>$40.65</td>
+                        <td>-$10,162.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-08-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>22</td>
+                        <td>$451.10</td>
+                        <td>$9,924.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-08-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-22</td>
+                        <td>$439.51</td>
+                        <td>-$9,669.22</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-08-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$3,096.73</td>
+                        <td>$9,290.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-08-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$3,071.45</td>
+                        <td>-$9,214.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-08-2023</td>
+                        <td><a href="stocks/NXST.html">Nexstar Media Group, Inc. - Common Stock</a></td>
+                        <td>65</td>
+                        <td>$151.28</td>
+                        <td>$9,833.13</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-09-2023</td>
+                        <td><a href="stocks/NXST.html">Nexstar Media Group, Inc. - Common Stock</a></td>
+                        <td>-65</td>
+                        <td>$131.49</td>
+                        <td>-$8,546.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-09-2023</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>17</td>
+                        <td>$496.01</td>
+                        <td>$8,432.17</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-09-2023</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>-17</td>
+                        <td>$487.96</td>
+                        <td>-$8,295.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-09-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$3,107.24</td>
+                        <td>$6,214.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-09-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$3,069.89</td>
+                        <td>-$6,139.77</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-09-2023</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>17</td>
+                        <td>$477.21</td>
+                        <td>$8,112.57</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-09-2023</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>-17</td>
+                        <td>$465.79</td>
+                        <td>-$7,918.43</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-09-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>14</td>
+                        <td>$564.50</td>
+                        <td>$7,903.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-09-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-14</td>
+                        <td>$542.21</td>
+                        <td>-$7,590.94</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-09-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$3,139.11</td>
+                        <td>$6,278.22</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-09-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$3,081.94</td>
+                        <td>-$6,163.89</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-09-2023</td>
+                        <td><a href="stocks/ODFL.html">Old Dominion Freight Line, Inc. - Common Stock</a></td>
+                        <td>37</td>
+                        <td>$205.90</td>
+                        <td>$7,618.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-09-2023</td>
+                        <td><a href="stocks/ODFL.html">Old Dominion Freight Line, Inc. - Common Stock</a></td>
+                        <td>-37</td>
+                        <td>$201.56</td>
+                        <td>-$7,457.83</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-09-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$3,162.98</td>
+                        <td>$6,325.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-09-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$3,125.97</td>
+                        <td>-$6,251.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-09-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$3,124.17</td>
+                        <td>$6,248.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-09-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$3,079.09</td>
+                        <td>-$6,158.17</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-09-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$3,079.09</td>
+                        <td>$6,158.17</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-09-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$3,035.72</td>
+                        <td>-$6,071.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-09-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$3,035.72</td>
+                        <td>$6,071.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-09-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$3,003.43</td>
+                        <td>-$6,006.87</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-09-2023</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>28</td>
+                        <td>$255.70</td>
+                        <td>$7,159.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-09-2023</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>-28</td>
+                        <td>$244.88</td>
+                        <td>-$6,856.64</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-09-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$3,064.41</td>
+                        <td>$6,128.81</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-09-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$3,027.48</td>
+                        <td>-$6,054.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-09-2023</td>
+                        <td><a href="stocks/MORN.html">Morningstar, Inc. - Common Stock</a></td>
+                        <td>29</td>
+                        <td>$236.72</td>
+                        <td>$6,864.84</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-09-2023</td>
+                        <td><a href="stocks/MORN.html">Morningstar, Inc. - Common Stock</a></td>
+                        <td>-29</td>
+                        <td>$231.25</td>
+                        <td>-$6,706.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-09-2023</td>
+                        <td><a href="stocks/WDAY.html">Workday, Inc. - Class A Common Stock</a></td>
+                        <td>29</td>
+                        <td>$230.81</td>
+                        <td>$6,693.49</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-09-2023</td>
+                        <td><a href="stocks/WDAY.html">Workday, Inc. - Class A Common Stock</a></td>
+                        <td>-29</td>
+                        <td>$211.22</td>
+                        <td>-$6,125.38</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-09-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$3,071.25</td>
+                        <td>$6,142.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-09-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$3,050.60</td>
+                        <td>-$6,101.19</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-10-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>1</td>
+                        <td>$3,060.30</td>
+                        <td>$3,060.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-10-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$2,978.23</td>
+                        <td>-$2,978.23</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-10-2023</td>
+                        <td><a href="stocks/HELE.html">Helen of Troy Limited - Common Stock</a></td>
+                        <td>53</td>
+                        <td>$113.64</td>
+                        <td>$6,022.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-10-2023</td>
+                        <td><a href="stocks/HELE.html">Helen of Troy Limited - Common Stock</a></td>
+                        <td>-53</td>
+                        <td>$105.28</td>
+                        <td>-$5,579.84</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-10-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>1</td>
+                        <td>$3,013.52</td>
+                        <td>$3,013.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-10-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$2,986.11</td>
+                        <td>-$2,986.11</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-10-2023</td>
+                        <td><a href="stocks/WING.html">Wingstop Inc. - Common Stock</a></td>
+                        <td>30</td>
+                        <td>$181.83</td>
+                        <td>$5,454.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-10-2023</td>
+                        <td><a href="stocks/WING.html">Wingstop Inc. - Common Stock</a></td>
+                        <td>-30</td>
+                        <td>$173.04</td>
+                        <td>-$5,191.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-10-2023</td>
+                        <td><a href="stocks/PODD.html">Insulet Corporation - Common Stock</a></td>
+                        <td>36</td>
+                        <td>$146.13</td>
+                        <td>$5,260.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-10-2023</td>
+                        <td><a href="stocks/PODD.html">Insulet Corporation - Common Stock</a></td>
+                        <td>-36</td>
+                        <td>$133.45</td>
+                        <td>-$4,804.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-10-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>1</td>
+                        <td>$3,038.73</td>
+                        <td>$3,038.73</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-10-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$3,016.03</td>
+                        <td>-$3,016.03</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-10-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>1</td>
+                        <td>$3,016.03</td>
+                        <td>$3,016.03</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-10-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$2,918.18</td>
+                        <td>-$2,918.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-10-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$841.33</td>
+                        <td>$4,206.67</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-10-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$834.54</td>
+                        <td>-$4,172.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-10-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>1</td>
+                        <td>$2,946.19</td>
+                        <td>$2,946.19</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-10-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$2,819.41</td>
+                        <td>-$2,819.41</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-10-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>1</td>
+                        <td>$2,819.41</td>
+                        <td>$2,819.41</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-10-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$2,755.08</td>
+                        <td>-$2,755.08</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-10-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>1</td>
+                        <td>$2,755.08</td>
+                        <td>$2,755.08</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-10-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$2,726.83</td>
+                        <td>-$2,726.83</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-10-2023</td>
+                        <td><a href="stocks/PODD.html">Insulet Corporation - Common Stock</a></td>
+                        <td>30</td>
+                        <td>$147.00</td>
+                        <td>$4,410.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-10-2023</td>
+                        <td><a href="stocks/PODD.html">Insulet Corporation - Common Stock</a></td>
+                        <td>-30</td>
+                        <td>$141.00</td>
+                        <td>-$4,230.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-10-2023</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>8</td>
+                        <td>$501.10</td>
+                        <td>$4,008.83</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-10-2023</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>-8</td>
+                        <td>$478.53</td>
+                        <td>-$3,828.21</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-10-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>1</td>
+                        <td>$2,782.50</td>
+                        <td>$2,782.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-10-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$2,713.03</td>
+                        <td>-$2,713.03</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-10-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>9</td>
+                        <td>$411.71</td>
+                        <td>$3,705.39</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-10-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-9</td>
+                        <td>$372.00</td>
+                        <td>-$3,348.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-10-2023</td>
+                        <td><a href="stocks/PSMT.html">PriceSmart, Inc. - Common Stock</a></td>
+                        <td>53</td>
+                        <td>$69.27</td>
+                        <td>$3,671.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-10-2023</td>
+                        <td><a href="stocks/PSMT.html">PriceSmart, Inc. - Common Stock</a></td>
+                        <td>-53</td>
+                        <td>$60.40</td>
+                        <td>-$3,201.22</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-10-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>1</td>
+                        <td>$2,759.39</td>
+                        <td>$2,759.39</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-11-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$2,736.31</td>
+                        <td>-$2,736.31</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-11-2023</td>
+                        <td><a href="stocks/RELY.html">Remitly Global, Inc. - Common stock</a></td>
+                        <td>115</td>
+                        <td>$27.59</td>
+                        <td>$3,172.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-11-2023</td>
+                        <td><a href="stocks/RELY.html">Remitly Global, Inc. - Common stock</a></td>
+                        <td>-115</td>
+                        <td>$18.80</td>
+                        <td>-$2,162.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-11-2023</td>
+                        <td><a href="stocks/FOXF.html">Fox Factory Holding Corp. - Common Stock</a></td>
+                        <td>26</td>
+                        <td>$83.13</td>
+                        <td>$2,161.38</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-11-2023</td>
+                        <td><a href="stocks/FOXF.html">Fox Factory Holding Corp. - Common Stock</a></td>
+                        <td>-26</td>
+                        <td>$60.53</td>
+                        <td>-$1,573.78</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-11-2023</td>
+                        <td><a href="stocks/VRTX.html">Vertex Pharmaceuticals Incorporated - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$385.76</td>
+                        <td>$1,543.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-11-2023</td>
+                        <td><a href="stocks/VRTX.html">Vertex Pharmaceuticals Incorporated - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$378.25</td>
+                        <td>-$1,513.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-11-2023</td>
+                        <td><a href="stocks/BIIB.html">Biogen Inc. - Common Stock</a></td>
+                        <td>6</td>
+                        <td>$245.61</td>
+                        <td>$1,473.66</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-11-2023</td>
+                        <td><a href="stocks/BIIB.html">Biogen Inc. - Common Stock</a></td>
+                        <td>-6</td>
+                        <td>$231.69</td>
+                        <td>-$1,390.14</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-11-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>1</td>
+                        <td>$820.52</td>
+                        <td>$820.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-11-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$798.05</td>
+                        <td>-$798.05</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-11-2023</td>
+                        <td><a href="stocks/LYEL.html">Lyell Immunopharma, Inc. - Common Stock</a></td>
+                        <td>33</td>
+                        <td>$43.80</td>
+                        <td>$1,445.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-11-2023</td>
+                        <td><a href="stocks/LYEL.html">Lyell Immunopharma, Inc. - Common Stock</a></td>
+                        <td>-33</td>
+                        <td>$31.00</td>
+                        <td>-$1,023.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-11-2023</td>
+                        <td><a href="stocks/VRTX.html">Vertex Pharmaceuticals Incorporated - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$378.92</td>
+                        <td>$757.84</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-11-2023</td>
+                        <td><a href="stocks/VRTX.html">Vertex Pharmaceuticals Incorporated - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$369.95</td>
+                        <td>-$739.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-11-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$449.82</td>
+                        <td>$899.64</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-11-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$430.12</td>
+                        <td>-$860.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-11-2023</td>
+                        <td><a href="stocks/AMAT.html">Applied Materials, Inc. - Common Stock</a></td>
+                        <td>6</td>
+                        <td>$152.50</td>
+                        <td>$914.97</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-11-2023</td>
+                        <td><a href="stocks/AMAT.html">Applied Materials, Inc. - Common Stock</a></td>
+                        <td>-6</td>
+                        <td>$146.37</td>
+                        <td>-$878.21</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-11-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$439.90</td>
+                        <td>$879.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-11-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$426.92</td>
+                        <td>-$853.84</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-11-2023</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>1</td>
+                        <td>$679.35</td>
+                        <td>$679.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-11-2023</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-1</td>
+                        <td>$667.13</td>
+                        <td>-$667.13</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-11-2023</td>
+                        <td><a href="stocks/ARWR.html">Arrowhead Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>30</td>
+                        <td>$28.98</td>
+                        <td>$869.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-11-2023</td>
+                        <td><a href="stocks/ARWR.html">Arrowhead Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-30</td>
+                        <td>$21.20</td>
+                        <td>-$636.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-12-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>1</td>
+                        <td>$399.14</td>
+                        <td>$399.14</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-12-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$364.40</td>
+                        <td>-$364.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-12-2023</td>
+                        <td><a href="stocks/ODFL.html">Old Dominion Freight Line, Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$195.72</td>
+                        <td>$587.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-12-2023</td>
+                        <td><a href="stocks/ODFL.html">Old Dominion Freight Line, Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$184.86</td>
+                        <td>-$554.59</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-12-2023</td>
+                        <td><a href="stocks/MORN.html">Morningstar, Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$275.42</td>
+                        <td>$550.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-12-2023</td>
+                        <td><a href="stocks/MORN.html">Morningstar, Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$272.71</td>
+                        <td>-$545.41</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-12-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>1</td>
+                        <td>$374.63</td>
+                        <td>$374.63</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-12-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$367.06</td>
+                        <td>-$367.06</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-12-2023</td>
+                        <td><a href="stocks/LIN.html">Linde plc - Ordinary Shares</a></td>
+                        <td>1</td>
+                        <td>$418.84</td>
+                        <td>$418.84</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-12-2023</td>
+                        <td><a href="stocks/LIN.html">Linde plc - Ordinary Shares</a></td>
+                        <td>-1</td>
+                        <td>$401.19</td>
+                        <td>-$401.19</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-12-2023</td>
+                        <td><a href="stocks/ASPS.html">Altisource Portfolio Solutions S.A. - Common Stock</a></td>
+                        <td>21</td>
+                        <td>$26.96</td>
+                        <td>$566.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-12-2023</td>
+                        <td><a href="stocks/ASPS.html">Altisource Portfolio Solutions S.A. - Common Stock</a></td>
+                        <td>-21</td>
+                        <td>$24.00</td>
+                        <td>-$504.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-12-2023</td>
+                        <td><a href="stocks/NUVL.html">Nuvalent, Inc. - Class A Common Stock</a></td>
+                        <td>6</td>
+                        <td>$72.06</td>
+                        <td>$432.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-12-2023</td>
+                        <td><a href="stocks/NUVL.html">Nuvalent, Inc. - Class A Common Stock</a></td>
+                        <td>-6</td>
+                        <td>$70.51</td>
+                        <td>-$423.06</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-12-2023</td>
+                        <td><a href="stocks/TEAM.html">Atlassian Corporation  - Class A Common Stock</a></td>
+                        <td>2</td>
+                        <td>$245.03</td>
+                        <td>$490.06</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-12-2023</td>
+                        <td><a href="stocks/TEAM.html">Atlassian Corporation  - Class A Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$240.80</td>
+                        <td>-$481.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-12-2023</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>1</td>
+                        <td>$261.44</td>
+                        <td>$261.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-12-2023</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$253.18</td>
+                        <td>-$253.18</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</div>
+</body>
+</html>
