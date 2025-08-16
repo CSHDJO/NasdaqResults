@@ -1,0 +1,2259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nasdaq Trade System - BinomialSolutions</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+            crossorigin="anonymous"></script>
+    <meta name="theme-color" content="#712cf9">
+</head>
+
+<body>
+<header class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow" data-bs-theme="dark"><a
+        class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="#">Nasdaq Trade system</a>
+</header>
+
+
+<div class="container-fluid">
+    <div class="row">
+        
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <a href="GameResult.html">Back</a>
+            <h1>BinomialSolutions</h1>
+            <img src="BinomialSolutions.png" class="img-fluid">
+            <div class="table-responsive small">
+                <table class="table table-striped table-sm">
+                    <thead>
+                    <tr>
+                        <th scope="col">ExecutedOn</th>
+                        <th scope="col">Company</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">AtPrice</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr scope="row">
+                        <td>03-01-2022</td>
+                        <td><a href="stocks/CVCO.html">Cavco Industries, Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$311.95</td>
+                        <td>$935.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-01-2022</td>
+                        <td><a href="stocks/CVCO.html">Cavco Industries, Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$318.10</td>
+                        <td>-$954.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-01-2022</td>
+                        <td><a href="stocks/ITIC.html">Investors Title Company - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$177.71</td>
+                        <td>$888.53</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-01-2022</td>
+                        <td><a href="stocks/ITIC.html">Investors Title Company - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$183.31</td>
+                        <td>-$916.54</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-01-2022</td>
+                        <td><a href="stocks/BIRD.html">Allbirds, Inc. - Class A Common Stock</a></td>
+                        <td>3</td>
+                        <td>$271.40</td>
+                        <td>$814.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-01-2022</td>
+                        <td><a href="stocks/BIRD.html">Allbirds, Inc. - Class A Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$304.60</td>
+                        <td>-$913.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-01-2022</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>1</td>
+                        <td>$596.79</td>
+                        <td>$596.79</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-01-2022</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$602.07</td>
+                        <td>-$602.07</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-01-2022</td>
+                        <td><a href="stocks/COIN.html">Coinbase Global, Inc. - Class A Common Stock</a></td>
+                        <td>5</td>
+                        <td>$225.01</td>
+                        <td>$1,125.05</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-01-2022</td>
+                        <td><a href="stocks/COIN.html">Coinbase Global, Inc. - Class A Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$237.23</td>
+                        <td>-$1,186.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-01-2022</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$409.53</td>
+                        <td>$819.05</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-01-2022</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$417.46</td>
+                        <td>-$834.93</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-01-2022</td>
+                        <td><a href="stocks/BIIB.html">Biogen Inc. - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$225.34</td>
+                        <td>$1,126.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-01-2022</td>
+                        <td><a href="stocks/BIIB.html">Biogen Inc. - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$236.67</td>
+                        <td>-$1,183.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-01-2022</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$405.55</td>
+                        <td>$1,216.66</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-01-2022</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$428.18</td>
+                        <td>-$1,284.55</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-01-2022</td>
+                        <td><a href="stocks/MKTX.html">MarketAxess Holdings, Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$350.43</td>
+                        <td>$1,051.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-01-2022</td>
+                        <td><a href="stocks/MKTX.html">MarketAxess Holdings, Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$358.60</td>
+                        <td>-$1,075.81</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-01-2022</td>
+                        <td><a href="stocks/JD.html">JD.com, Inc. - American Depositary Shares</a></td>
+                        <td>20</td>
+                        <td>$65.61</td>
+                        <td>$1,312.11</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-01-2022</td>
+                        <td><a href="stocks/JD.html">JD.com, Inc. - American Depositary Shares</a></td>
+                        <td>-20</td>
+                        <td>$69.87</td>
+                        <td>-$1,397.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-01-2022</td>
+                        <td><a href="stocks/KPTI.html">Karyopharm Therapeutics Inc. - Common Stock</a></td>
+                        <td>12</td>
+                        <td>$115.95</td>
+                        <td>$1,391.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-01-2022</td>
+                        <td><a href="stocks/KPTI.html">Karyopharm Therapeutics Inc. - Common Stock</a></td>
+                        <td>-12</td>
+                        <td>$124.20</td>
+                        <td>-$1,490.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-01-2022</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>10</td>
+                        <td>$150.20</td>
+                        <td>$1,502.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-01-2022</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>-10</td>
+                        <td>$154.80</td>
+                        <td>-$1,548.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-01-2022</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$356.12</td>
+                        <td>$1,424.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-01-2022</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$366.22</td>
+                        <td>-$1,464.87</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-01-2022</td>
+                        <td><a href="stocks/GLPG.html">Galapagos NV - American Depositary Shares</a></td>
+                        <td>30</td>
+                        <td>$53.32</td>
+                        <td>$1,599.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-01-2022</td>
+                        <td><a href="stocks/GLPG.html">Galapagos NV - American Depositary Shares</a></td>
+                        <td>-30</td>
+                        <td>$65.30</td>
+                        <td>-$1,959.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-01-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$471.08</td>
+                        <td>$1,884.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-01-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$489.05</td>
+                        <td>-$1,956.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-01-2022</td>
+                        <td><a href="stocks/LULU.html">lululemon athletica inc. - Common Stock</a></td>
+                        <td>6</td>
+                        <td>$333.76</td>
+                        <td>$2,002.56</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-02-2022</td>
+                        <td><a href="stocks/LULU.html">lululemon athletica inc. - Common Stock</a></td>
+                        <td>-6</td>
+                        <td>$344.91</td>
+                        <td>-$2,069.46</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-02-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$513.51</td>
+                        <td>$2,054.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-02-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$534.23</td>
+                        <td>-$2,136.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-02-2022</td>
+                        <td><a href="stocks/ROP.html">Roper Technologies, Inc. - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$443.80</td>
+                        <td>$2,219.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-02-2022</td>
+                        <td><a href="stocks/ROP.html">Roper Technologies, Inc. - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$452.77</td>
+                        <td>-$2,263.86</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-02-2022</td>
+                        <td><a href="stocks/AMZN.html">Amazon.com, Inc. - Common Stock</a></td>
+                        <td>16</td>
+                        <td>$138.85</td>
+                        <td>$2,221.53</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-02-2022</td>
+                        <td><a href="stocks/AMZN.html">Amazon.com, Inc. - Common Stock</a></td>
+                        <td>-16</td>
+                        <td>$157.64</td>
+                        <td>-$2,522.23</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-02-2022</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>13</td>
+                        <td>$196.01</td>
+                        <td>$2,548.13</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-02-2022</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>-13</td>
+                        <td>$207.15</td>
+                        <td>-$2,692.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-02-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>6</td>
+                        <td>$395.64</td>
+                        <td>$2,373.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-02-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>-6</td>
+                        <td>$412.43</td>
+                        <td>-$2,474.57</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-02-2022</td>
+                        <td><a href="stocks/ENSG.html">The Ensign Group, Inc. - Common Stock</a></td>
+                        <td>37</td>
+                        <td>$74.43</td>
+                        <td>$2,754.09</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-02-2022</td>
+                        <td><a href="stocks/ENSG.html">The Ensign Group, Inc. - Common Stock</a></td>
+                        <td>-37</td>
+                        <td>$78.40</td>
+                        <td>-$2,900.63</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-02-2022</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$616.52</td>
+                        <td>$2,466.06</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-02-2022</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$636.65</td>
+                        <td>-$2,546.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-02-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>7</td>
+                        <td>$422.68</td>
+                        <td>$2,958.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-02-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>-7</td>
+                        <td>$467.50</td>
+                        <td>-$3,272.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-02-2022</td>
+                        <td><a href="stocks/UPST.html">Upstart Holdings, Inc. - Common stock</a></td>
+                        <td>30</td>
+                        <td>$109.11</td>
+                        <td>$3,273.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-02-2022</td>
+                        <td><a href="stocks/UPST.html">Upstart Holdings, Inc. - Common stock</a></td>
+                        <td>-30</td>
+                        <td>$148.01</td>
+                        <td>-$4,440.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-02-2022</td>
+                        <td><a href="stocks/MASI.html">Masimo Corporation - Common Stock</a></td>
+                        <td>31</td>
+                        <td>$144.20</td>
+                        <td>$4,470.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-02-2022</td>
+                        <td><a href="stocks/MASI.html">Masimo Corporation - Common Stock</a></td>
+                        <td>-31</td>
+                        <td>$152.37</td>
+                        <td>-$4,723.47</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-02-2022</td>
+                        <td><a href="stocks/KPTI.html">Karyopharm Therapeutics Inc. - Common Stock</a></td>
+                        <td>26</td>
+                        <td>$180.00</td>
+                        <td>$4,680.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-02-2022</td>
+                        <td><a href="stocks/KPTI.html">Karyopharm Therapeutics Inc. - Common Stock</a></td>
+                        <td>-26</td>
+                        <td>$215.70</td>
+                        <td>-$5,608.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-02-2022</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>9</td>
+                        <td>$601.23</td>
+                        <td>$5,411.05</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-02-2022</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-9</td>
+                        <td>$607.30</td>
+                        <td>-$5,465.71</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-02-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>12</td>
+                        <td>$474.68</td>
+                        <td>$5,696.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-02-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>-12</td>
+                        <td>$509.77</td>
+                        <td>-$6,117.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-02-2022</td>
+                        <td><a href="stocks/ETSY.html">Etsy, Inc. - Common Stock</a></td>
+                        <td>48</td>
+                        <td>$128.16</td>
+                        <td>$6,151.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-02-2022</td>
+                        <td><a href="stocks/ETSY.html">Etsy, Inc. - Common Stock</a></td>
+                        <td>-48</td>
+                        <td>$148.94</td>
+                        <td>-$7,149.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-02-2022</td>
+                        <td><a href="stocks/SBAC.html">SBA Communications Corporation - Class A Common Stock</a></td>
+                        <td>24</td>
+                        <td>$288.02</td>
+                        <td>$6,912.59</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-03-2022</td>
+                        <td><a href="stocks/SBAC.html">SBA Communications Corporation - Class A Common Stock</a></td>
+                        <td>-24</td>
+                        <td>$300.65</td>
+                        <td>-$7,215.62</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-03-2022</td>
+                        <td><a href="stocks/JAZZ.html">Jazz Pharmaceuticals plc - Ordinary Shares</a></td>
+                        <td>54</td>
+                        <td>$136.63</td>
+                        <td>$7,378.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-03-2022</td>
+                        <td><a href="stocks/JAZZ.html">Jazz Pharmaceuticals plc - Ordinary Shares</a></td>
+                        <td>-54</td>
+                        <td>$153.10</td>
+                        <td>-$8,267.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-03-2022</td>
+                        <td><a href="stocks/DLTR.html">Dollar Tree, Inc. - Common Stock</a></td>
+                        <td>59</td>
+                        <td>$139.92</td>
+                        <td>$8,255.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-03-2022</td>
+                        <td><a href="stocks/DLTR.html">Dollar Tree, Inc. - Common Stock</a></td>
+                        <td>-59</td>
+                        <td>$146.48</td>
+                        <td>-$8,642.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-03-2022</td>
+                        <td><a href="stocks/DPZ.html">Domino's Pizza Inc - Common Stock</a></td>
+                        <td>22</td>
+                        <td>$385.62</td>
+                        <td>$8,483.57</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-03-2022</td>
+                        <td><a href="stocks/DPZ.html">Domino's Pizza Inc - Common Stock</a></td>
+                        <td>-22</td>
+                        <td>$396.19</td>
+                        <td>-$8,716.17</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-03-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>24</td>
+                        <td>$372.13</td>
+                        <td>$8,931.19</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-03-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>-24</td>
+                        <td>$384.76</td>
+                        <td>-$9,234.13</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-03-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>24</td>
+                        <td>$384.76</td>
+                        <td>$9,234.13</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-03-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>-24</td>
+                        <td>$407.89</td>
+                        <td>-$9,789.43</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-03-2022</td>
+                        <td><a href="stocks/CRWD.html">CrowdStrike Holdings, Inc. - Class A Common Stock</a></td>
+                        <td>58</td>
+                        <td>$169.79</td>
+                        <td>$9,847.82</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-03-2022</td>
+                        <td><a href="stocks/CRWD.html">CrowdStrike Holdings, Inc. - Class A Common Stock</a></td>
+                        <td>-58</td>
+                        <td>$191.02</td>
+                        <td>-$11,079.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-03-2022</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>17</td>
+                        <td>$628.62</td>
+                        <td>$10,686.58</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-03-2022</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-17</td>
+                        <td>$640.81</td>
+                        <td>-$10,893.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-03-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>30</td>
+                        <td>$375.56</td>
+                        <td>$11,266.71</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-03-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>-30</td>
+                        <td>$411.46</td>
+                        <td>-$12,343.89</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-03-2022</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>56</td>
+                        <td>$220.07</td>
+                        <td>$12,324.11</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-03-2022</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>-56</td>
+                        <td>$267.45</td>
+                        <td>-$14,976.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-03-2022</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>56</td>
+                        <td>$267.45</td>
+                        <td>$14,976.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-03-2022</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>-56</td>
+                        <td>$283.13</td>
+                        <td>-$15,855.39</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-03-2022</td>
+                        <td><a href="stocks/UXIN.html">Uxin Limited - American Depositary Shares</a></td>
+                        <td>161</td>
+                        <td>$98.70</td>
+                        <td>$15,890.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-03-2022</td>
+                        <td><a href="stocks/UXIN.html">Uxin Limited - American Depositary Shares</a></td>
+                        <td>-161</td>
+                        <td>$121.00</td>
+                        <td>-$19,481.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-03-2022</td>
+                        <td><a href="stocks/UXIN.html">Uxin Limited - American Depositary Shares</a></td>
+                        <td>177</td>
+                        <td>$110.00</td>
+                        <td>$19,470.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-03-2022</td>
+                        <td><a href="stocks/UXIN.html">Uxin Limited - American Depositary Shares</a></td>
+                        <td>-177</td>
+                        <td>$146.00</td>
+                        <td>-$25,842.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-03-2022</td>
+                        <td><a href="stocks/UXIN.html">Uxin Limited - American Depositary Shares</a></td>
+                        <td>177</td>
+                        <td>$146.00</td>
+                        <td>$25,842.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-03-2022</td>
+                        <td><a href="stocks/UXIN.html">Uxin Limited - American Depositary Shares</a></td>
+                        <td>-177</td>
+                        <td>$158.00</td>
+                        <td>-$27,966.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-03-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>61</td>
+                        <td>$452.33</td>
+                        <td>$27,592.39</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-03-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>-61</td>
+                        <td>$482.48</td>
+                        <td>-$29,431.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-03-2022</td>
+                        <td><a href="stocks/WGS.html">GeneDx Holdings Corp. - Class A Common Stock</a></td>
+                        <td>327</td>
+                        <td>$91.08</td>
+                        <td>$29,783.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-03-2022</td>
+                        <td><a href="stocks/WGS.html">GeneDx Holdings Corp. - Class A Common Stock</a></td>
+                        <td>-327</td>
+                        <td>$98.34</td>
+                        <td>-$32,157.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-03-2022</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>209</td>
+                        <td>$153.73</td>
+                        <td>$32,129.57</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-03-2022</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>-209</td>
+                        <td>$167.44</td>
+                        <td>-$34,994.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-03-2022</td>
+                        <td><a href="stocks/LULU.html">lululemon athletica inc. - Common Stock</a></td>
+                        <td>101</td>
+                        <td>$343.97</td>
+                        <td>$34,740.97</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-03-2022</td>
+                        <td><a href="stocks/LULU.html">lululemon athletica inc. - Common Stock</a></td>
+                        <td>-101</td>
+                        <td>$376.92</td>
+                        <td>-$38,068.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-03-2022</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>157</td>
+                        <td>$243.66</td>
+                        <td>$38,253.84</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-03-2022</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>-157</td>
+                        <td>$250.16</td>
+                        <td>-$39,275.63</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-03-2022</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>458</td>
+                        <td>$86.00</td>
+                        <td>$39,388.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-04-2022</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-458</td>
+                        <td>$115.20</td>
+                        <td>-$52,761.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-04-2022</td>
+                        <td><a href="stocks/SBAC.html">SBA Communications Corporation - Class A Common Stock</a></td>
+                        <td>156</td>
+                        <td>$337.83</td>
+                        <td>$52,702.23</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-04-2022</td>
+                        <td><a href="stocks/SBAC.html">SBA Communications Corporation - Class A Common Stock</a></td>
+                        <td>-156</td>
+                        <td>$343.06</td>
+                        <td>-$53,517.08</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-04-2022</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>77</td>
+                        <td>$689.56</td>
+                        <td>$53,096.41</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-04-2022</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-77</td>
+                        <td>$706.41</td>
+                        <td>-$54,393.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-04-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>102</td>
+                        <td>$534.92</td>
+                        <td>$54,561.84</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-04-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>-102</td>
+                        <td>$551.26</td>
+                        <td>-$56,228.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-04-2022</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>78</td>
+                        <td>$719.81</td>
+                        <td>$56,145.19</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-04-2022</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-78</td>
+                        <td>$736.80</td>
+                        <td>-$57,470.66</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-04-2022</td>
+                        <td><a href="stocks/LULU.html">lululemon athletica inc. - Common Stock</a></td>
+                        <td>156</td>
+                        <td>$368.74</td>
+                        <td>$57,523.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-04-2022</td>
+                        <td><a href="stocks/LULU.html">lululemon athletica inc. - Common Stock</a></td>
+                        <td>-156</td>
+                        <td>$376.16</td>
+                        <td>-$58,680.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-04-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>150</td>
+                        <td>$391.77</td>
+                        <td>$58,765.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-04-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>-150</td>
+                        <td>$410.91</td>
+                        <td>-$61,637.05</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-04-2022</td>
+                        <td><a href="stocks/JAZZ.html">Jazz Pharmaceuticals plc - Ordinary Shares</a></td>
+                        <td>381</td>
+                        <td>$162.30</td>
+                        <td>$61,836.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-04-2022</td>
+                        <td><a href="stocks/JAZZ.html">Jazz Pharmaceuticals plc - Ordinary Shares</a></td>
+                        <td>-381</td>
+                        <td>$167.25</td>
+                        <td>-$63,722.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-04-2022</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>252</td>
+                        <td>$253.18</td>
+                        <td>$63,802.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-04-2022</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>-252</td>
+                        <td>$271.11</td>
+                        <td>-$68,320.51</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-04-2022</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>252</td>
+                        <td>$271.11</td>
+                        <td>$68,320.51</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-04-2022</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>-252</td>
+                        <td>$303.48</td>
+                        <td>-$76,477.79</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-04-2022</td>
+                        <td><a href="stocks/WTW.html">Willis Towers Watson Public Limited Company - Ordinary Shares</a></td>
+                        <td>332</td>
+                        <td>$230.16</td>
+                        <td>$76,412.79</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-04-2022</td>
+                        <td><a href="stocks/WTW.html">Willis Towers Watson Public Limited Company - Ordinary Shares</a></td>
+                        <td>-332</td>
+                        <td>$232.89</td>
+                        <td>-$77,320.65</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-04-2022</td>
+                        <td><a href="stocks/UXIN.html">Uxin Limited - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$76.50</td>
+                        <td>$76,500.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-04-2022</td>
+                        <td><a href="stocks/UXIN.html">Uxin Limited - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$77.80</td>
+                        <td>-$77,800.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-04-2022</td>
+                        <td><a href="stocks/ROP.html">Roper Technologies, Inc. - Common Stock</a></td>
+                        <td>175</td>
+                        <td>$447.28</td>
+                        <td>$78,274.09</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-04-2022</td>
+                        <td><a href="stocks/ROP.html">Roper Technologies, Inc. - Common Stock</a></td>
+                        <td>-175</td>
+                        <td>$463.73</td>
+                        <td>-$81,152.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-04-2022</td>
+                        <td><a href="stocks/MSFT.html">Microsoft Corporation - Common Stock</a></td>
+                        <td>310</td>
+                        <td>$262.92</td>
+                        <td>$81,506.07</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-04-2022</td>
+                        <td><a href="stocks/MSFT.html">Microsoft Corporation - Common Stock</a></td>
+                        <td>-310</td>
+                        <td>$275.57</td>
+                        <td>-$85,427.21</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-04-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>223</td>
+                        <td>$383.31</td>
+                        <td>$85,477.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-04-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>-223</td>
+                        <td>$402.95</td>
+                        <td>-$89,858.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-04-2022</td>
+                        <td><a href="stocks/VRTX.html">Vertex Pharmaceuticals Incorporated - Common Stock</a></td>
+                        <td>334</td>
+                        <td>$268.64</td>
+                        <td>$89,725.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-04-2022</td>
+                        <td><a href="stocks/VRTX.html">Vertex Pharmaceuticals Incorporated - Common Stock</a></td>
+                        <td>-334</td>
+                        <td>$273.22</td>
+                        <td>-$91,255.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-05-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>227</td>
+                        <td>$401.37</td>
+                        <td>$91,110.91</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-05-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>-227</td>
+                        <td>$446.90</td>
+                        <td>-$101,446.74</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-05-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>227</td>
+                        <td>$446.90</td>
+                        <td>$101,446.74</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-05-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>-227</td>
+                        <td>$468.11</td>
+                        <td>-$106,260.94</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-05-2022</td>
+                        <td><a href="stocks/LOPE.html">Grand Canyon Education, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$95.04</td>
+                        <td>$95,040.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-05-2022</td>
+                        <td><a href="stocks/LOPE.html">Grand Canyon Education, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$98.19</td>
+                        <td>-$98,190.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-05-2022</td>
+                        <td><a href="stocks/IRTC.html">iRhythm Technologies, Inc. - Common Stock</a></td>
+                        <td>928</td>
+                        <td>$118.12</td>
+                        <td>$109,615.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-05-2022</td>
+                        <td><a href="stocks/IRTC.html">iRhythm Technologies, Inc. - Common Stock</a></td>
+                        <td>-928</td>
+                        <td>$124.97</td>
+                        <td>-$115,972.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-05-2022</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>194</td>
+                        <td>$598.12</td>
+                        <td>$116,034.63</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-05-2022</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-194</td>
+                        <td>$613.39</td>
+                        <td>-$118,998.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-05-2022</td>
+                        <td><a href="stocks/EXEEL.html">Expand Energy Corporation - Class C Warrants</a></td>
+                        <td>1000</td>
+                        <td>$53.08</td>
+                        <td>$53,080.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-05-2022</td>
+                        <td><a href="stocks/EXEEL.html">Expand Energy Corporation - Class C Warrants</a></td>
+                        <td>-1000</td>
+                        <td>$55.81</td>
+                        <td>-$55,810.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-05-2022</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>199</td>
+                        <td>$611.36</td>
+                        <td>$121,660.64</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-05-2022</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-199</td>
+                        <td>$632.21</td>
+                        <td>-$125,810.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-05-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>331</td>
+                        <td>$379.44</td>
+                        <td>$125,594.22</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-05-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>-331</td>
+                        <td>$421.69</td>
+                        <td>-$139,578.97</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-05-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>343</td>
+                        <td>$407.36</td>
+                        <td>$139,723.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-05-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>-343</td>
+                        <td>$432.85</td>
+                        <td>-$148,469.06</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-05-2022</td>
+                        <td><a href="stocks/AGYS.html">Agilysys, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$35.94</td>
+                        <td>$35,940.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-05-2022</td>
+                        <td><a href="stocks/AGYS.html">Agilysys, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$39.60</td>
+                        <td>-$39,600.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-05-2022</td>
+                        <td><a href="stocks/SNPS.html">Synopsys, Inc. - Common Stock</a></td>
+                        <td>558</td>
+                        <td>$272.57</td>
+                        <td>$152,094.06</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-05-2022</td>
+                        <td><a href="stocks/SNPS.html">Synopsys, Inc. - Common Stock</a></td>
+                        <td>-558</td>
+                        <td>$300.52</td>
+                        <td>-$167,690.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-05-2022</td>
+                        <td><a href="stocks/MKTX.html">MarketAxess Holdings, Inc. - Common Stock</a></td>
+                        <td>649</td>
+                        <td>$258.49</td>
+                        <td>$167,759.03</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-05-2022</td>
+                        <td><a href="stocks/MKTX.html">MarketAxess Holdings, Inc. - Common Stock</a></td>
+                        <td>-649</td>
+                        <td>$269.46</td>
+                        <td>-$174,877.83</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-05-2022</td>
+                        <td><a href="stocks/SBAC.html">SBA Communications Corporation - Class A Common Stock</a></td>
+                        <td>549</td>
+                        <td>$318.57</td>
+                        <td>$174,894.33</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-05-2022</td>
+                        <td><a href="stocks/SBAC.html">SBA Communications Corporation - Class A Common Stock</a></td>
+                        <td>-549</td>
+                        <td>$330.94</td>
+                        <td>-$181,683.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-05-2022</td>
+                        <td><a href="stocks/CVCO.html">Cavco Industries, Inc. - Common Stock</a></td>
+                        <td>924</td>
+                        <td>$196.63</td>
+                        <td>$181,686.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-05-2022</td>
+                        <td><a href="stocks/CVCO.html">Cavco Industries, Inc. - Common Stock</a></td>
+                        <td>-924</td>
+                        <td>$209.87</td>
+                        <td>-$193,919.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-05-2022</td>
+                        <td><a href="stocks/DLTR.html">Dollar Tree, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$133.59</td>
+                        <td>$133,590.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-05-2022</td>
+                        <td><a href="stocks/DLTR.html">Dollar Tree, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$162.80</td>
+                        <td>-$162,800.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-05-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>541</td>
+                        <td>$411.92</td>
+                        <td>$222,848.69</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-05-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>-541</td>
+                        <td>$445.31</td>
+                        <td>-$240,912.49</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-05-2022</td>
+                        <td><a href="stocks/EXEEL.html">Expand Energy Corporation - Class C Warrants</a></td>
+                        <td>1000</td>
+                        <td>$69.97</td>
+                        <td>$69,970.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-06-2022</td>
+                        <td><a href="stocks/EXEEL.html">Expand Energy Corporation - Class C Warrants</a></td>
+                        <td>-1000</td>
+                        <td>$72.54</td>
+                        <td>-$72,540.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-06-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>556</td>
+                        <td>$437.89</td>
+                        <td>$243,464.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-06-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>-556</td>
+                        <td>$461.38</td>
+                        <td>-$256,526.84</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-06-2022</td>
+                        <td><a href="stocks/CVGW.html">Calavo Growers, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$31.42</td>
+                        <td>$31,423.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-06-2022</td>
+                        <td><a href="stocks/CVGW.html">Calavo Growers, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$35.83</td>
+                        <td>-$35,825.47</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-06-2022</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$64.60</td>
+                        <td>$64,600.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-06-2022</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$83.20</td>
+                        <td>-$83,200.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-06-2022</td>
+                        <td><a href="stocks/ROKU.html">Roku, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$93.42</td>
+                        <td>$93,420.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-06-2022</td>
+                        <td><a href="stocks/ROKU.html">Roku, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$101.88</td>
+                        <td>-$101,880.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-06-2022</td>
+                        <td><a href="stocks/SENEA.html">Seneca Foods Corp. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$58.38</td>
+                        <td>$58,380.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-06-2022</td>
+                        <td><a href="stocks/SENEA.html">Seneca Foods Corp. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$60.03</td>
+                        <td>-$60,030.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-06-2022</td>
+                        <td><a href="stocks/ASPS.html">Altisource Portfolio Solutions S.A. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$84.80</td>
+                        <td>$84,800.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-06-2022</td>
+                        <td><a href="stocks/ASPS.html">Altisource Portfolio Solutions S.A. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$89.44</td>
+                        <td>-$89,440.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-06-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>774</td>
+                        <td>$380.63</td>
+                        <td>$294,608.07</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-06-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>-774</td>
+                        <td>$397.75</td>
+                        <td>-$307,854.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-06-2022</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>563</td>
+                        <td>$546.84</td>
+                        <td>$307,870.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-06-2022</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-563</td>
+                        <td>$559.64</td>
+                        <td>-$315,079.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-06-2022</td>
+                        <td><a href="stocks/ASPS.html">Altisource Portfolio Solutions S.A. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$89.60</td>
+                        <td>$89,600.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-06-2022</td>
+                        <td><a href="stocks/ASPS.html">Altisource Portfolio Solutions S.A. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$92.64</td>
+                        <td>-$92,640.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-06-2022</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>573</td>
+                        <td>$555.22</td>
+                        <td>$318,138.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-06-2022</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-573</td>
+                        <td>$579.35</td>
+                        <td>-$331,966.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-06-2022</td>
+                        <td><a href="stocks/SBAC.html">SBA Communications Corporation - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$289.14</td>
+                        <td>$289,143.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-06-2022</td>
+                        <td><a href="stocks/SBAC.html">SBA Communications Corporation - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$297.25</td>
+                        <td>-$297,248.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-06-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$333.11</td>
+                        <td>$333,109.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-06-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$355.62</td>
+                        <td>-$355,620.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-06-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>928</td>
+                        <td>$390.41</td>
+                        <td>$362,299.58</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-06-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>-928</td>
+                        <td>$409.71</td>
+                        <td>-$380,212.97</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-06-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>934</td>
+                        <td>$407.22</td>
+                        <td>$380,344.54</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-06-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>-934</td>
+                        <td>$387.95</td>
+                        <td>-$362,342.83</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-07-2022</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>595</td>
+                        <td>$608.41</td>
+                        <td>$362,002.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-07-2022</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-595</td>
+                        <td>$600.36</td>
+                        <td>-$357,214.45</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-07-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>801</td>
+                        <td>$446.33</td>
+                        <td>$357,509.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-07-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>-801</td>
+                        <td>$427.16</td>
+                        <td>-$342,151.23</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-08-2022</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>912</td>
+                        <td>$375.29</td>
+                        <td>$342,261.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-08-2022</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>-912</td>
+                        <td>$346.86</td>
+                        <td>-$316,340.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-08-2022</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>494</td>
+                        <td>$639.72</td>
+                        <td>$316,022.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-08-2022</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-494</td>
+                        <td>$622.18</td>
+                        <td>-$307,356.98</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-08-2022</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>475</td>
+                        <td>$646.91</td>
+                        <td>$307,283.11</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-08-2022</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-475</td>
+                        <td>$634.59</td>
+                        <td>-$301,428.26</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-08-2022</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>475</td>
+                        <td>$634.59</td>
+                        <td>$301,428.26</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-08-2022</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-475</td>
+                        <td>$623.11</td>
+                        <td>-$295,976.08</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-08-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>574</td>
+                        <td>$516.02</td>
+                        <td>$296,197.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-08-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>-574</td>
+                        <td>$500.77</td>
+                        <td>-$287,439.17</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-08-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>571</td>
+                        <td>$503.49</td>
+                        <td>$287,490.47</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-08-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>-571</td>
+                        <td>$466.48</td>
+                        <td>-$266,360.26</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-08-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>601</td>
+                        <td>$443.54</td>
+                        <td>$266,566.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-09-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>-601</td>
+                        <td>$416.42</td>
+                        <td>-$250,267.51</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-09-2022</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>417</td>
+                        <td>$598.97</td>
+                        <td>$249,772.26</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-09-2022</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-417</td>
+                        <td>$579.02</td>
+                        <td>-$241,451.09</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-09-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>642</td>
+                        <td>$376.59</td>
+                        <td>$241,770.78</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-09-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>-642</td>
+                        <td>$350.43</td>
+                        <td>-$224,976.06</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-09-2022</td>
+                        <td><a href="stocks/DPZ.html">Domino's Pizza Inc - Common Stock</a></td>
+                        <td>667</td>
+                        <td>$337.47</td>
+                        <td>$225,095.63</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-09-2022</td>
+                        <td><a href="stocks/DPZ.html">Domino's Pizza Inc - Common Stock</a></td>
+                        <td>-667</td>
+                        <td>$328.78</td>
+                        <td>-$219,295.51</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-09-2022</td>
+                        <td><a href="stocks/ROP.html">Roper Technologies, Inc. - Common Stock</a></td>
+                        <td>562</td>
+                        <td>$389.83</td>
+                        <td>$219,086.97</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-09-2022</td>
+                        <td><a href="stocks/ROP.html">Roper Technologies, Inc. - Common Stock</a></td>
+                        <td>-562</td>
+                        <td>$377.84</td>
+                        <td>-$212,346.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-09-2022</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>298</td>
+                        <td>$713.37</td>
+                        <td>$212,583.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-09-2022</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-298</td>
+                        <td>$702.28</td>
+                        <td>-$209,279.05</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-09-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>529</td>
+                        <td>$395.27</td>
+                        <td>$209,096.89</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-09-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>-529</td>
+                        <td>$373.59</td>
+                        <td>-$197,628.82</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-09-2022</td>
+                        <td><a href="stocks/LULU.html">lululemon athletica inc. - Common Stock</a></td>
+                        <td>646</td>
+                        <td>$306.30</td>
+                        <td>$197,869.79</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-09-2022</td>
+                        <td><a href="stocks/LULU.html">lululemon athletica inc. - Common Stock</a></td>
+                        <td>-646</td>
+                        <td>$293.20</td>
+                        <td>-$189,407.21</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-09-2022</td>
+                        <td><a href="stocks/DPZ.html">Domino's Pizza Inc - Common Stock</a></td>
+                        <td>603</td>
+                        <td>$313.76</td>
+                        <td>$189,199.73</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-09-2022</td>
+                        <td><a href="stocks/DPZ.html">Domino's Pizza Inc - Common Stock</a></td>
+                        <td>-603</td>
+                        <td>$303.57</td>
+                        <td>-$183,053.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-09-2022</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>260</td>
+                        <td>$703.48</td>
+                        <td>$182,903.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-09-2022</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-260</td>
+                        <td>$689.91</td>
+                        <td>-$179,377.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-09-2022</td>
+                        <td><a href="stocks/LULU.html">lululemon athletica inc. - Common Stock</a></td>
+                        <td>598</td>
+                        <td>$300.22</td>
+                        <td>$179,531.56</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-09-2022</td>
+                        <td><a href="stocks/LULU.html">lululemon athletica inc. - Common Stock</a></td>
+                        <td>-598</td>
+                        <td>$279.56</td>
+                        <td>-$167,176.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-10-2022</td>
+                        <td><a href="stocks/SBAC.html">SBA Communications Corporation - Class A Common Stock</a></td>
+                        <td>597</td>
+                        <td>$280.38</td>
+                        <td>$167,384.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-10-2022</td>
+                        <td><a href="stocks/SBAC.html">SBA Communications Corporation - Class A Common Stock</a></td>
+                        <td>-597</td>
+                        <td>$270.53</td>
+                        <td>-$161,508.98</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-10-2022</td>
+                        <td><a href="stocks/SBAC.html">SBA Communications Corporation - Class A Common Stock</a></td>
+                        <td>597</td>
+                        <td>$270.53</td>
+                        <td>$161,508.98</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-10-2022</td>
+                        <td><a href="stocks/SBAC.html">SBA Communications Corporation - Class A Common Stock</a></td>
+                        <td>-597</td>
+                        <td>$256.11</td>
+                        <td>-$152,895.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-10-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>394</td>
+                        <td>$387.71</td>
+                        <td>$152,756.09</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-10-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>-394</td>
+                        <td>$355.59</td>
+                        <td>-$140,102.09</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-10-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>430</td>
+                        <td>$325.54</td>
+                        <td>$139,982.83</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-10-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>-430</td>
+                        <td>$303.22</td>
+                        <td>-$130,385.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-10-2022</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>178</td>
+                        <td>$733.93</td>
+                        <td>$130,639.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-10-2022</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-178</td>
+                        <td>$720.72</td>
+                        <td>-$128,287.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-10-2022</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>178</td>
+                        <td>$720.72</td>
+                        <td>$128,287.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-10-2022</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-178</td>
+                        <td>$707.41</td>
+                        <td>-$125,919.78</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-10-2022</td>
+                        <td><a href="stocks/CDNS.html">Cadence Design Systems, Inc. - Common Stock</a></td>
+                        <td>785</td>
+                        <td>$160.22</td>
+                        <td>$125,772.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-10-2022</td>
+                        <td><a href="stocks/CDNS.html">Cadence Design Systems, Inc. - Common Stock</a></td>
+                        <td>-785</td>
+                        <td>$151.32</td>
+                        <td>-$118,786.21</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-10-2022</td>
+                        <td><a href="stocks/MSFT.html">Microsoft Corporation - Common Stock</a></td>
+                        <td>485</td>
+                        <td>$244.98</td>
+                        <td>$118,814.29</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-10-2022</td>
+                        <td><a href="stocks/MSFT.html">Microsoft Corporation - Common Stock</a></td>
+                        <td>-485</td>
+                        <td>$226.08</td>
+                        <td>-$109,647.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-10-2022</td>
+                        <td><a href="stocks/VRTX.html">Vertex Pharmaceuticals Incorporated - Common Stock</a></td>
+                        <td>352</td>
+                        <td>$311.18</td>
+                        <td>$109,535.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-10-2022</td>
+                        <td><a href="stocks/VRTX.html">Vertex Pharmaceuticals Incorporated - Common Stock</a></td>
+                        <td>-352</td>
+                        <td>$287.89</td>
+                        <td>-$101,337.29</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-10-2022</td>
+                        <td><a href="stocks/AMZN.html">Amazon.com, Inc. - Common Stock</a></td>
+                        <td>915</td>
+                        <td>$110.96</td>
+                        <td>$101,528.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-10-2022</td>
+                        <td><a href="stocks/AMZN.html">Amazon.com, Inc. - Common Stock</a></td>
+                        <td>-915</td>
+                        <td>$103.41</td>
+                        <td>-$94,620.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-10-2022</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>421</td>
+                        <td>$224.66</td>
+                        <td>$94,582.86</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-11-2022</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>-421</td>
+                        <td>$209.52</td>
+                        <td>-$88,206.93</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-11-2022</td>
+                        <td><a href="stocks/CVCO.html">Cavco Industries, Inc. - Common Stock</a></td>
+                        <td>383</td>
+                        <td>$230.01</td>
+                        <td>$88,093.83</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-11-2022</td>
+                        <td><a href="stocks/CVCO.html">Cavco Industries, Inc. - Common Stock</a></td>
+                        <td>-383</td>
+                        <td>$203.74</td>
+                        <td>-$78,032.42</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-11-2022</td>
+                        <td><a href="stocks/PLMR.html">Palomar Holdings, Inc. - Common stock</a></td>
+                        <td>916</td>
+                        <td>$85.35</td>
+                        <td>$78,180.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-11-2022</td>
+                        <td><a href="stocks/PLMR.html">Palomar Holdings, Inc. - Common stock</a></td>
+                        <td>-916</td>
+                        <td>$64.41</td>
+                        <td>-$58,999.56</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-11-2022</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>328</td>
+                        <td>$179.80</td>
+                        <td>$58,974.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-11-2022</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>-328</td>
+                        <td>$162.80</td>
+                        <td>-$53,398.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-11-2022</td>
+                        <td><a href="stocks/LITE.html">Lumentum Holdings Inc. - Common Stock</a></td>
+                        <td>759</td>
+                        <td>$70.38</td>
+                        <td>$53,418.42</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-11-2022</td>
+                        <td><a href="stocks/LITE.html">Lumentum Holdings Inc. - Common Stock</a></td>
+                        <td>-759</td>
+                        <td>$59.00</td>
+                        <td>-$44,781.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-11-2022</td>
+                        <td><a href="stocks/MASI.html">Masimo Corporation - Common Stock</a></td>
+                        <td>364</td>
+                        <td>$123.07</td>
+                        <td>$44,797.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-11-2022</td>
+                        <td><a href="stocks/MASI.html">Masimo Corporation - Common Stock</a></td>
+                        <td>-364</td>
+                        <td>$110.88</td>
+                        <td>-$40,360.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-11-2022</td>
+                        <td><a href="stocks/HQY.html">HealthEquity, Inc. - Common Stock</a></td>
+                        <td>541</td>
+                        <td>$74.66</td>
+                        <td>$40,391.06</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-11-2022</td>
+                        <td><a href="stocks/HQY.html">HealthEquity, Inc. - Common Stock</a></td>
+                        <td>-541</td>
+                        <td>$65.87</td>
+                        <td>-$35,635.67</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-11-2022</td>
+                        <td><a href="stocks/VRTX.html">Vertex Pharmaceuticals Incorporated - Common Stock</a></td>
+                        <td>114</td>
+                        <td>$311.03</td>
+                        <td>$35,457.42</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-11-2022</td>
+                        <td><a href="stocks/VRTX.html">Vertex Pharmaceuticals Incorporated - Common Stock</a></td>
+                        <td>-114</td>
+                        <td>$306.03</td>
+                        <td>-$34,887.42</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-11-2022</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>47</td>
+                        <td>$739.96</td>
+                        <td>$34,778.33</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-11-2022</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-47</td>
+                        <td>$726.72</td>
+                        <td>-$34,155.89</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-11-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>86</td>
+                        <td>$397.20</td>
+                        <td>$34,159.09</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-11-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>-86</td>
+                        <td>$368.12</td>
+                        <td>-$31,658.49</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-11-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>74</td>
+                        <td>$426.08</td>
+                        <td>$31,529.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-11-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>-74</td>
+                        <td>$410.44</td>
+                        <td>-$30,372.56</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-11-2022</td>
+                        <td><a href="stocks/ASPS.html">Altisource Portfolio Solutions S.A. - Common Stock</a></td>
+                        <td>221</td>
+                        <td>$139.12</td>
+                        <td>$30,745.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-11-2022</td>
+                        <td><a href="stocks/ASPS.html">Altisource Portfolio Solutions S.A. - Common Stock</a></td>
+                        <td>-221</td>
+                        <td>$128.16</td>
+                        <td>-$28,323.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-11-2022</td>
+                        <td><a href="stocks/DLTR.html">Dollar Tree, Inc. - Common Stock</a></td>
+                        <td>171</td>
+                        <td>$165.24</td>
+                        <td>$28,256.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-11-2022</td>
+                        <td><a href="stocks/DLTR.html">Dollar Tree, Inc. - Common Stock</a></td>
+                        <td>-171</td>
+                        <td>$152.37</td>
+                        <td>-$26,055.27</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-11-2022</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>35</td>
+                        <td>$747.16</td>
+                        <td>$26,150.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-11-2022</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-35</td>
+                        <td>$733.33</td>
+                        <td>-$25,666.65</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-11-2022</td>
+                        <td><a href="stocks/ESLT.html">Elbit Systems Ltd. - Ordinary Shares</a></td>
+                        <td>140</td>
+                        <td>$182.38</td>
+                        <td>$25,533.77</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-11-2022</td>
+                        <td><a href="stocks/ESLT.html">Elbit Systems Ltd. - Ordinary Shares</a></td>
+                        <td>-140</td>
+                        <td>$163.12</td>
+                        <td>-$22,837.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-11-2022</td>
+                        <td><a href="stocks/CRWD.html">CrowdStrike Holdings, Inc. - Class A Common Stock</a></td>
+                        <td>166</td>
+                        <td>$138.00</td>
+                        <td>$22,908.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-11-2022</td>
+                        <td><a href="stocks/CRWD.html">CrowdStrike Holdings, Inc. - Class A Common Stock</a></td>
+                        <td>-166</td>
+                        <td>$117.65</td>
+                        <td>-$19,529.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-11-2022</td>
+                        <td><a href="stocks/ASPS.html">Altisource Portfolio Solutions S.A. - Common Stock</a></td>
+                        <td>162</td>
+                        <td>$120.72</td>
+                        <td>$19,556.64</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-12-2022</td>
+                        <td><a href="stocks/ASPS.html">Altisource Portfolio Solutions S.A. - Common Stock</a></td>
+                        <td>-162</td>
+                        <td>$115.92</td>
+                        <td>-$18,779.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-12-2022</td>
+                        <td><a href="stocks/SNPS.html">Synopsys, Inc. - Common Stock</a></td>
+                        <td>52</td>
+                        <td>$357.84</td>
+                        <td>$18,607.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-12-2022</td>
+                        <td><a href="stocks/SNPS.html">Synopsys, Inc. - Common Stock</a></td>
+                        <td>-52</td>
+                        <td>$348.17</td>
+                        <td>-$18,104.84</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-12-2022</td>
+                        <td><a href="stocks/AXON.html">Axon Enterprise, Inc. - Common Stock</a></td>
+                        <td>99</td>
+                        <td>$184.01</td>
+                        <td>$18,216.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-12-2022</td>
+                        <td><a href="stocks/AXON.html">Axon Enterprise, Inc. - Common Stock</a></td>
+                        <td>-99</td>
+                        <td>$169.43</td>
+                        <td>-$16,773.57</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-12-2022</td>
+                        <td><a href="stocks/MKTX.html">MarketAxess Holdings, Inc. - Common Stock</a></td>
+                        <td>61</td>
+                        <td>$276.50</td>
+                        <td>$16,866.77</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-12-2022</td>
+                        <td><a href="stocks/MKTX.html">MarketAxess Holdings, Inc. - Common Stock</a></td>
+                        <td>-61</td>
+                        <td>$266.89</td>
+                        <td>-$16,280.38</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-12-2022</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>90</td>
+                        <td>$180.46</td>
+                        <td>$16,241.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-12-2022</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>-90</td>
+                        <td>$176.71</td>
+                        <td>-$15,903.94</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-12-2022</td>
+                        <td><a href="stocks/LULU.html">lululemon athletica inc. - Common Stock</a></td>
+                        <td>42</td>
+                        <td>$374.51</td>
+                        <td>$15,729.42</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-12-2022</td>
+                        <td><a href="stocks/LULU.html">lululemon athletica inc. - Common Stock</a></td>
+                        <td>-42</td>
+                        <td>$326.39</td>
+                        <td>-$13,708.38</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-12-2022</td>
+                        <td><a href="stocks/QDEL.html">QuidelOrtho Corporation - Common Stock</a></td>
+                        <td>143</td>
+                        <td>$97.50</td>
+                        <td>$13,942.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-12-2022</td>
+                        <td><a href="stocks/QDEL.html">QuidelOrtho Corporation - Common Stock</a></td>
+                        <td>-143</td>
+                        <td>$82.08</td>
+                        <td>-$11,737.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-12-2022</td>
+                        <td><a href="stocks/LBRDK.html">Liberty Broadband Corporation - Class C Common Stock</a></td>
+                        <td>129</td>
+                        <td>$90.97</td>
+                        <td>$11,735.13</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-12-2022</td>
+                        <td><a href="stocks/LBRDK.html">Liberty Broadband Corporation - Class C Common Stock</a></td>
+                        <td>-129</td>
+                        <td>$77.03</td>
+                        <td>-$9,936.87</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-12-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>25</td>
+                        <td>$387.75</td>
+                        <td>$9,693.63</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-12-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>-25</td>
+                        <td>$366.08</td>
+                        <td>-$9,152.05</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-12-2022</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>45</td>
+                        <td>$207.25</td>
+                        <td>$9,326.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-12-2022</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>-45</td>
+                        <td>$193.29</td>
+                        <td>-$8,698.05</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-12-2022</td>
+                        <td><a href="stocks/LULU.html">lululemon athletica inc. - Common Stock</a></td>
+                        <td>27</td>
+                        <td>$316.92</td>
+                        <td>$8,556.84</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-12-2022</td>
+                        <td><a href="stocks/LULU.html">lululemon athletica inc. - Common Stock</a></td>
+                        <td>-27</td>
+                        <td>$307.12</td>
+                        <td>-$8,292.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-12-2022</td>
+                        <td><a href="stocks/CVGW.html">Calavo Growers, Inc. - Common Stock</a></td>
+                        <td>263</td>
+                        <td>$32.33</td>
+                        <td>$8,502.83</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-12-2022</td>
+                        <td><a href="stocks/CVGW.html">Calavo Growers, Inc. - Common Stock</a></td>
+                        <td>-263</td>
+                        <td>$27.68</td>
+                        <td>-$7,280.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-12-2022</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>18</td>
+                        <td>$386.76</td>
+                        <td>$6,961.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-12-2022</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>-18</td>
+                        <td>$364.41</td>
+                        <td>-$6,559.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-12-2022</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>33</td>
+                        <td>$208.34</td>
+                        <td>$6,875.22</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-12-2022</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>-33</td>
+                        <td>$199.08</td>
+                        <td>-$6,569.64</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-12-2022</td>
+                        <td><a href="stocks/DPZ.html">Domino's Pizza Inc - Common Stock</a></td>
+                        <td>19</td>
+                        <td>$343.47</td>
+                        <td>$6,525.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-12-2022</td>
+                        <td><a href="stocks/DPZ.html">Domino's Pizza Inc - Common Stock</a></td>
+                        <td>-19</td>
+                        <td>$333.78</td>
+                        <td>-$6,341.89</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-12-2022</td>
+                        <td><a href="stocks/CALM.html">Cal-Maine Foods, Inc. - Common Stock</a></td>
+                        <td>122</td>
+                        <td>$52.24</td>
+                        <td>$6,373.45</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-12-2022</td>
+                        <td><a href="stocks/CALM.html">Cal-Maine Foods, Inc. - Common Stock</a></td>
+                        <td>-122</td>
+                        <td>$44.66</td>
+                        <td>-$5,449.05</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-12-2022</td>
+                        <td><a href="stocks/ROP.html">Roper Technologies, Inc. - Common Stock</a></td>
+                        <td>12</td>
+                        <td>$430.56</td>
+                        <td>$5,166.77</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-12-2022</td>
+                        <td><a href="stocks/ROP.html">Roper Technologies, Inc. - Common Stock</a></td>
+                        <td>-12</td>
+                        <td>$425.85</td>
+                        <td>-$5,110.24</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</div>
+</body>
+</html>
