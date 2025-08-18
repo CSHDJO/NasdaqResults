@@ -1,0 +1,2798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nasdaq Trade System - de Jonge Investments</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+            crossorigin="anonymous"></script>
+    <meta name="theme-color" content="#712cf9">
+</head>
+
+<body>
+<header class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow" data-bs-theme="dark"><a
+        class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="#">Nasdaq Trade system</a>
+</header>
+
+
+<div class="container-fluid">
+    <div class="row">
+        
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <a href="GameResult.html">Back</a>
+            <h1>de Jonge Investments</h1>
+            <img src="de Jonge Investments.png" class="img-fluid">
+            <div class="table-responsive small">
+                <table class="table table-striped table-sm">
+                    <thead>
+                    <tr>
+                        <th scope="col">ExecutedOn</th>
+                        <th scope="col">Company</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">AtPrice</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr scope="row">
+                        <td>04-01-2021</td>
+                        <td><a href="stocks/ROOT.html">Root, Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$288.90</td>
+                        <td>$866.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-01-2021</td>
+                        <td><a href="stocks/ROOT.html">Root, Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$310.68</td>
+                        <td>-$932.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-01-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>1</td>
+                        <td>$827.55</td>
+                        <td>$827.55</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-01-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$863.10</td>
+                        <td>-$863.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-01-2021</td>
+                        <td><a href="stocks/EBON.html">Ebang International Holdings Inc. - Class A Ordinary Shares</a></td>
+                        <td>6</td>
+                        <td>$183.30</td>
+                        <td>$1,099.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-01-2021</td>
+                        <td><a href="stocks/EBON.html">Ebang International Holdings Inc. - Class A Ordinary Shares</a></td>
+                        <td>-6</td>
+                        <td>$232.20</td>
+                        <td>-$1,393.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-01-2021</td>
+                        <td><a href="stocks/WDFC.html">WD-40 Company - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$252.12</td>
+                        <td>$1,260.58</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-01-2021</td>
+                        <td><a href="stocks/WDFC.html">WD-40 Company - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$281.56</td>
+                        <td>-$1,407.79</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-01-2021</td>
+                        <td><a href="stocks/DOCU.html">DocuSign, Inc. - Common Stock</a></td>
+                        <td>6</td>
+                        <td>$240.96</td>
+                        <td>$1,445.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-01-2021</td>
+                        <td><a href="stocks/DOCU.html">DocuSign, Inc. - Common Stock</a></td>
+                        <td>-6</td>
+                        <td>$262.65</td>
+                        <td>-$1,575.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-01-2021</td>
+                        <td><a href="stocks/ROOT.html">Root, Inc. - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$345.78</td>
+                        <td>$1,383.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-01-2021</td>
+                        <td><a href="stocks/ROOT.html">Root, Inc. - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$416.70</td>
+                        <td>-$1,666.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-01-2021</td>
+                        <td><a href="stocks/AVAV.html">AeroVironment, Inc. - Common Stock</a></td>
+                        <td>20</td>
+                        <td>$96.17</td>
+                        <td>$1,923.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-01-2021</td>
+                        <td><a href="stocks/AVAV.html">AeroVironment, Inc. - Common Stock</a></td>
+                        <td>-20</td>
+                        <td>$125.29</td>
+                        <td>-$2,505.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-01-2021</td>
+                        <td><a href="stocks/CRNC.html">Cerence Inc. - Common Stock</a></td>
+                        <td>22</td>
+                        <td>$113.98</td>
+                        <td>$2,507.56</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-01-2021</td>
+                        <td><a href="stocks/CRNC.html">Cerence Inc. - Common Stock</a></td>
+                        <td>-22</td>
+                        <td>$120.25</td>
+                        <td>-$2,645.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-01-2021</td>
+                        <td><a href="stocks/YQ.html">17 Education &amp; Technology Group Inc. - American Depositary Shares</a></td>
+                        <td>10</td>
+                        <td>$245.00</td>
+                        <td>$2,450.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-01-2021</td>
+                        <td><a href="stocks/YQ.html">17 Education &amp; Technology Group Inc. - American Depositary Shares</a></td>
+                        <td>-10</td>
+                        <td>$363.20</td>
+                        <td>-$3,632.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-01-2021</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>12</td>
+                        <td>$297.18</td>
+                        <td>$3,566.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-01-2021</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>-12</td>
+                        <td>$317.18</td>
+                        <td>-$3,806.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-01-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$812.85</td>
+                        <td>$4,064.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-01-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$846.75</td>
+                        <td>-$4,233.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-01-2021</td>
+                        <td><a href="stocks/YQ.html">17 Education &amp; Technology Group Inc. - American Depositary Shares</a></td>
+                        <td>13</td>
+                        <td>$314.20</td>
+                        <td>$4,084.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-01-2021</td>
+                        <td><a href="stocks/YQ.html">17 Education &amp; Technology Group Inc. - American Depositary Shares</a></td>
+                        <td>-13</td>
+                        <td>$371.20</td>
+                        <td>-$4,825.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-01-2021</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>15</td>
+                        <td>$313.53</td>
+                        <td>$4,702.89</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-01-2021</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>-15</td>
+                        <td>$332.28</td>
+                        <td>-$4,984.13</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-01-2021</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>18</td>
+                        <td>$285.51</td>
+                        <td>$5,139.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-01-2021</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>-18</td>
+                        <td>$309.74</td>
+                        <td>-$5,575.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-01-2021</td>
+                        <td><a href="stocks/BIIB.html">Biogen Inc. - Common Stock</a></td>
+                        <td>21</td>
+                        <td>$267.87</td>
+                        <td>$5,625.27</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-01-2021</td>
+                        <td><a href="stocks/BIIB.html">Biogen Inc. - Common Stock</a></td>
+                        <td>-21</td>
+                        <td>$282.61</td>
+                        <td>-$5,934.81</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-02-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>7</td>
+                        <td>$764.70</td>
+                        <td>$5,352.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-02-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-7</td>
+                        <td>$785.10</td>
+                        <td>-$5,495.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-02-2021</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>19</td>
+                        <td>$324.62</td>
+                        <td>$6,167.78</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-02-2021</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-19</td>
+                        <td>$362.44</td>
+                        <td>-$6,886.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-02-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>8</td>
+                        <td>$777.75</td>
+                        <td>$6,222.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-02-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-8</td>
+                        <td>$800.70</td>
+                        <td>-$6,405.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-02-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>14</td>
+                        <td>$484.25</td>
+                        <td>$6,779.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-02-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-14</td>
+                        <td>$508.00</td>
+                        <td>-$7,112.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-02-2021</td>
+                        <td><a href="stocks/ROOT.html">Root, Inc. - Common Stock</a></td>
+                        <td>19</td>
+                        <td>$373.32</td>
+                        <td>$7,093.08</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-02-2021</td>
+                        <td><a href="stocks/ROOT.html">Root, Inc. - Common Stock</a></td>
+                        <td>-19</td>
+                        <td>$393.84</td>
+                        <td>-$7,482.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-02-2021</td>
+                        <td><a href="stocks/BILI.html">Bilibili Inc. - American Depositary Shares</a></td>
+                        <td>55</td>
+                        <td>$140.12</td>
+                        <td>$7,706.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-02-2021</td>
+                        <td><a href="stocks/BILI.html">Bilibili Inc. - American Depositary Shares</a></td>
+                        <td>-55</td>
+                        <td>$156.37</td>
+                        <td>-$8,600.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-02-2021</td>
+                        <td><a href="stocks/ZBRA.html">Zebra Technologies Corporation - Class A Common Stock</a></td>
+                        <td>20</td>
+                        <td>$427.47</td>
+                        <td>$8,549.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-02-2021</td>
+                        <td><a href="stocks/ZBRA.html">Zebra Technologies Corporation - Class A Common Stock</a></td>
+                        <td>-20</td>
+                        <td>$470.08</td>
+                        <td>-$9,401.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-02-2021</td>
+                        <td><a href="stocks/ILMN.html">Illumina, Inc. - Common Stock</a></td>
+                        <td>21</td>
+                        <td>$438.93</td>
+                        <td>$9,217.53</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-02-2021</td>
+                        <td><a href="stocks/ILMN.html">Illumina, Inc. - Common Stock</a></td>
+                        <td>-21</td>
+                        <td>$491.01</td>
+                        <td>-$10,311.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-02-2021</td>
+                        <td><a href="stocks/EBON.html">Ebang International Holdings Inc. - Class A Ordinary Shares</a></td>
+                        <td>45</td>
+                        <td>$236.40</td>
+                        <td>$10,638.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-02-2021</td>
+                        <td><a href="stocks/EBON.html">Ebang International Holdings Inc. - Class A Ordinary Shares</a></td>
+                        <td>-45</td>
+                        <td>$314.40</td>
+                        <td>-$14,148.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-02-2021</td>
+                        <td><a href="stocks/EBON.html">Ebang International Holdings Inc. - Class A Ordinary Shares</a></td>
+                        <td>45</td>
+                        <td>$314.40</td>
+                        <td>$14,148.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-02-2021</td>
+                        <td><a href="stocks/EBON.html">Ebang International Holdings Inc. - Class A Ordinary Shares</a></td>
+                        <td>-45</td>
+                        <td>$338.70</td>
+                        <td>-$15,241.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-02-2021</td>
+                        <td><a href="stocks/ZBRA.html">Zebra Technologies Corporation - Class A Common Stock</a></td>
+                        <td>31</td>
+                        <td>$477.65</td>
+                        <td>$14,807.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-02-2021</td>
+                        <td><a href="stocks/ZBRA.html">Zebra Technologies Corporation - Class A Common Stock</a></td>
+                        <td>-31</td>
+                        <td>$490.94</td>
+                        <td>-$15,219.14</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-02-2021</td>
+                        <td><a href="stocks/NFLX.html">Netflix, Inc. - Common Stock</a></td>
+                        <td>29</td>
+                        <td>$533.78</td>
+                        <td>$15,479.62</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-02-2021</td>
+                        <td><a href="stocks/NFLX.html">Netflix, Inc. - Common Stock</a></td>
+                        <td>-29</td>
+                        <td>$546.15</td>
+                        <td>-$15,838.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-02-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>22</td>
+                        <td>$727.95</td>
+                        <td>$16,014.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-02-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-22</td>
+                        <td>$758.40</td>
+                        <td>-$16,684.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-02-2021</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>62</td>
+                        <td>$265.59</td>
+                        <td>$16,466.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-02-2021</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>-62</td>
+                        <td>$271.77</td>
+                        <td>-$16,849.98</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-02-2021</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>60</td>
+                        <td>$284.33</td>
+                        <td>$17,059.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-02-2021</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>-60</td>
+                        <td>$298.31</td>
+                        <td>-$17,898.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-03-2021</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>63</td>
+                        <td>$281.05</td>
+                        <td>$17,706.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-03-2021</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>-63</td>
+                        <td>$290.72</td>
+                        <td>-$18,315.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-03-2021</td>
+                        <td><a href="stocks/ROOT.html">Root, Inc. - Common Stock</a></td>
+                        <td>75</td>
+                        <td>$243.90</td>
+                        <td>$18,292.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-03-2021</td>
+                        <td><a href="stocks/ROOT.html">Root, Inc. - Common Stock</a></td>
+                        <td>-75</td>
+                        <td>$252.36</td>
+                        <td>-$18,927.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-03-2021</td>
+                        <td><a href="stocks/FANG.html">Diamondback Energy, Inc. - Common Stock</a></td>
+                        <td>311</td>
+                        <td>$61.46</td>
+                        <td>$19,115.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-03-2021</td>
+                        <td><a href="stocks/FANG.html">Diamondback Energy, Inc. - Common Stock</a></td>
+                        <td>-311</td>
+                        <td>$67.09</td>
+                        <td>-$20,866.38</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-03-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>42</td>
+                        <td>$493.35</td>
+                        <td>$20,720.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-03-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-42</td>
+                        <td>$546.30</td>
+                        <td>-$22,944.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-03-2021</td>
+                        <td><a href="stocks/EBON.html">Ebang International Holdings Inc. - Class A Ordinary Shares</a></td>
+                        <td>137</td>
+                        <td>$168.60</td>
+                        <td>$23,098.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-03-2021</td>
+                        <td><a href="stocks/EBON.html">Ebang International Holdings Inc. - Class A Ordinary Shares</a></td>
+                        <td>-137</td>
+                        <td>$212.70</td>
+                        <td>-$29,139.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-03-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>48</td>
+                        <td>$602.70</td>
+                        <td>$28,929.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-03-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-48</td>
+                        <td>$657.75</td>
+                        <td>-$31,572.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-03-2021</td>
+                        <td><a href="stocks/EBON.html">Ebang International Holdings Inc. - Class A Ordinary Shares</a></td>
+                        <td>154</td>
+                        <td>$206.40</td>
+                        <td>$31,785.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-03-2021</td>
+                        <td><a href="stocks/EBON.html">Ebang International Holdings Inc. - Class A Ordinary Shares</a></td>
+                        <td>-154</td>
+                        <td>$230.70</td>
+                        <td>-$35,527.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-03-2021</td>
+                        <td><a href="stocks/EBON.html">Ebang International Holdings Inc. - Class A Ordinary Shares</a></td>
+                        <td>154</td>
+                        <td>$230.70</td>
+                        <td>$35,527.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-03-2021</td>
+                        <td><a href="stocks/EBON.html">Ebang International Holdings Inc. - Class A Ordinary Shares</a></td>
+                        <td>-154</td>
+                        <td>$312.00</td>
+                        <td>-$48,048.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-03-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>334</td>
+                        <td>$143.66</td>
+                        <td>$47,982.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-03-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>-334</td>
+                        <td>$156.02</td>
+                        <td>-$52,110.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-03-2021</td>
+                        <td><a href="stocks/EBON.html">Ebang International Holdings Inc. - Class A Ordinary Shares</a></td>
+                        <td>166</td>
+                        <td>$313.50</td>
+                        <td>$52,041.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-03-2021</td>
+                        <td><a href="stocks/EBON.html">Ebang International Holdings Inc. - Class A Ordinary Shares</a></td>
+                        <td>-166</td>
+                        <td>$353.40</td>
+                        <td>-$58,664.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-03-2021</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>202</td>
+                        <td>$289.94</td>
+                        <td>$58,568.62</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-03-2021</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>-202</td>
+                        <td>$304.44</td>
+                        <td>-$61,497.07</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-03-2021</td>
+                        <td><a href="stocks/ROOT.html">Root, Inc. - Common Stock</a></td>
+                        <td>306</td>
+                        <td>$201.42</td>
+                        <td>$61,634.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-03-2021</td>
+                        <td><a href="stocks/ROOT.html">Root, Inc. - Common Stock</a></td>
+                        <td>-306</td>
+                        <td>$216.00</td>
+                        <td>-$66,096.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-03-2021</td>
+                        <td><a href="stocks/NFLX.html">Netflix, Inc. - Common Stock</a></td>
+                        <td>126</td>
+                        <td>$523.11</td>
+                        <td>$65,911.86</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-03-2021</td>
+                        <td><a href="stocks/NFLX.html">Netflix, Inc. - Common Stock</a></td>
+                        <td>-126</td>
+                        <td>$535.09</td>
+                        <td>-$67,421.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-03-2021</td>
+                        <td><a href="stocks/AMED.html">Amedisys Inc - Common Stock</a></td>
+                        <td>251</td>
+                        <td>$269.20</td>
+                        <td>$67,569.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-03-2021</td>
+                        <td><a href="stocks/AMED.html">Amedisys Inc - Common Stock</a></td>
+                        <td>-251</td>
+                        <td>$274.11</td>
+                        <td>-$68,801.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-03-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>311</td>
+                        <td>$221.26</td>
+                        <td>$68,810.63</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-03-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-311</td>
+                        <td>$242.03</td>
+                        <td>-$75,271.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-03-2021</td>
+                        <td><a href="stocks/ROOT.html">Root, Inc. - Common Stock</a></td>
+                        <td>325</td>
+                        <td>$231.66</td>
+                        <td>$75,289.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-03-2021</td>
+                        <td><a href="stocks/ROOT.html">Root, Inc. - Common Stock</a></td>
+                        <td>-325</td>
+                        <td>$258.12</td>
+                        <td>-$83,889.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-03-2021</td>
+                        <td><a href="stocks/EBON.html">Ebang International Holdings Inc. - Class A Ordinary Shares</a></td>
+                        <td>388</td>
+                        <td>$216.00</td>
+                        <td>$83,808.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-03-2021</td>
+                        <td><a href="stocks/EBON.html">Ebang International Holdings Inc. - Class A Ordinary Shares</a></td>
+                        <td>-388</td>
+                        <td>$237.00</td>
+                        <td>-$91,956.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-03-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>209</td>
+                        <td>$440.10</td>
+                        <td>$91,980.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-03-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-209</td>
+                        <td>$491.40</td>
+                        <td>-$102,702.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-03-2021</td>
+                        <td><a href="stocks/NFLX.html">Netflix, Inc. - Common Stock</a></td>
+                        <td>197</td>
+                        <td>$521.66</td>
+                        <td>$102,767.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-04-2021</td>
+                        <td><a href="stocks/NFLX.html">Netflix, Inc. - Common Stock</a></td>
+                        <td>-197</td>
+                        <td>$539.42</td>
+                        <td>-$106,265.74</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-04-2021</td>
+                        <td><a href="stocks/ILMN.html">Illumina, Inc. - Common Stock</a></td>
+                        <td>284</td>
+                        <td>$374.07</td>
+                        <td>$106,234.79</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-04-2021</td>
+                        <td><a href="stocks/ILMN.html">Illumina, Inc. - Common Stock</a></td>
+                        <td>-284</td>
+                        <td>$403.54</td>
+                        <td>-$114,605.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-04-2021</td>
+                        <td><a href="stocks/OUST.html">Ouster, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$78.50</td>
+                        <td>$78,500.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-04-2021</td>
+                        <td><a href="stocks/OUST.html">Ouster, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$98.70</td>
+                        <td>-$98,700.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-04-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>319</td>
+                        <td>$421.95</td>
+                        <td>$134,602.05</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-04-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-319</td>
+                        <td>$450.30</td>
+                        <td>-$143,645.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-04-2021</td>
+                        <td><a href="stocks/AMED.html">Amedisys Inc - Common Stock</a></td>
+                        <td>526</td>
+                        <td>$273.55</td>
+                        <td>$143,887.29</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-04-2021</td>
+                        <td><a href="stocks/AMED.html">Amedisys Inc - Common Stock</a></td>
+                        <td>-526</td>
+                        <td>$283.09</td>
+                        <td>-$148,905.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-04-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$139.40</td>
+                        <td>$139,399.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-04-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$149.71</td>
+                        <td>-$149,710.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-04-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$149.71</td>
+                        <td>$149,710.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-04-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$160.03</td>
+                        <td>-$160,030.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-04-2021</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>332</td>
+                        <td>$510.63</td>
+                        <td>$169,529.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-04-2021</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-332</td>
+                        <td>$523.25</td>
+                        <td>-$173,719.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-04-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>448</td>
+                        <td>$387.75</td>
+                        <td>$173,712.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-04-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-448</td>
+                        <td>$410.55</td>
+                        <td>-$183,926.39</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-04-2021</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>711</td>
+                        <td>$258.67</td>
+                        <td>$183,913.69</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-04-2021</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>-711</td>
+                        <td>$264.47</td>
+                        <td>-$188,040.43</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-04-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>483</td>
+                        <td>$389.55</td>
+                        <td>$188,152.64</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-04-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-483</td>
+                        <td>$443.25</td>
+                        <td>-$214,089.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-04-2021</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>839</td>
+                        <td>$255.09</td>
+                        <td>$214,020.51</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-04-2021</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>-839</td>
+                        <td>$274.70</td>
+                        <td>-$230,473.31</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-04-2021</td>
+                        <td><a href="stocks/YQ.html">17 Education &amp; Technology Group Inc. - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$133.40</td>
+                        <td>$133,399.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-04-2021</td>
+                        <td><a href="stocks/YQ.html">17 Education &amp; Technology Group Inc. - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$145.80</td>
+                        <td>-$145,800.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-04-2021</td>
+                        <td><a href="stocks/OUST.html">Ouster, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$102.10</td>
+                        <td>$102,100.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-04-2021</td>
+                        <td><a href="stocks/OUST.html">Ouster, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$111.00</td>
+                        <td>-$111,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-04-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>558</td>
+                        <td>$450.90</td>
+                        <td>$251,602.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-04-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-558</td>
+                        <td>$474.75</td>
+                        <td>-$264,910.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-04-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>558</td>
+                        <td>$474.75</td>
+                        <td>$264,910.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-04-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-558</td>
+                        <td>$483.30</td>
+                        <td>-$269,681.39</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-04-2021</td>
+                        <td><a href="stocks/VRTX.html">Vertex Pharmaceuticals Incorporated - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$211.86</td>
+                        <td>$211,860.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-04-2021</td>
+                        <td><a href="stocks/VRTX.html">Vertex Pharmaceuticals Incorporated - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$218.20</td>
+                        <td>-$218,200.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-05-2021</td>
+                        <td><a href="stocks/CIGI.html">Colliers International Group Inc.  - Subordinate Voting Shares</a></td>
+                        <td>1000</td>
+                        <td>$108.50</td>
+                        <td>$108,498.57</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-05-2021</td>
+                        <td><a href="stocks/CIGI.html">Colliers International Group Inc.  - Subordinate Voting Shares</a></td>
+                        <td>-1000</td>
+                        <td>$114.53</td>
+                        <td>-$114,529.59</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-05-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>746</td>
+                        <td>$378.30</td>
+                        <td>$282,211.79</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-05-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-746</td>
+                        <td>$394.95</td>
+                        <td>-$294,632.71</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-05-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>746</td>
+                        <td>$394.95</td>
+                        <td>$294,632.71</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-05-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-746</td>
+                        <td>$414.30</td>
+                        <td>-$309,067.79</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-05-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>959</td>
+                        <td>$322.25</td>
+                        <td>$309,037.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-05-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-959</td>
+                        <td>$339.75</td>
+                        <td>-$325,820.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-05-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>984</td>
+                        <td>$331.00</td>
+                        <td>$325,704.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-05-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-984</td>
+                        <td>$347.75</td>
+                        <td>-$342,186.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-05-2021</td>
+                        <td><a href="stocks/ASND.html">Ascendis Pharma A/S - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$133.64</td>
+                        <td>$133,640.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-05-2021</td>
+                        <td><a href="stocks/ASND.html">Ascendis Pharma A/S - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$136.96</td>
+                        <td>-$136,960.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-05-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$345.75</td>
+                        <td>$345,750.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-05-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$368.00</td>
+                        <td>-$368,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-05-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$281.55</td>
+                        <td>$281,549.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-05-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$325.50</td>
+                        <td>-$325,500.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-05-2021</td>
+                        <td><a href="stocks/ROOT.html">Root, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$164.16</td>
+                        <td>$164,160.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-05-2021</td>
+                        <td><a href="stocks/ROOT.html">Root, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$170.91</td>
+                        <td>-$170,910.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-05-2021</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$221.72</td>
+                        <td>$221,720.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-05-2021</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$233.49</td>
+                        <td>-$233,490.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-05-2021</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$233.49</td>
+                        <td>$233,490.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-05-2021</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$249.52</td>
+                        <td>-$249,520.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-05-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$404.00</td>
+                        <td>$404,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-05-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$449.20</td>
+                        <td>-$449,200.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-05-2021</td>
+                        <td><a href="stocks/NDSN.html">Nordson Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$194.28</td>
+                        <td>$194,276.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-05-2021</td>
+                        <td><a href="stocks/NDSN.html">Nordson Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$208.06</td>
+                        <td>-$208,055.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-05-2021</td>
+                        <td><a href="stocks/ZS.html">Zscaler, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$172.74</td>
+                        <td>$172,740.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-05-2021</td>
+                        <td><a href="stocks/ZS.html">Zscaler, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$194.20</td>
+                        <td>-$194,200.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-05-2021</td>
+                        <td><a href="stocks/BYND.html">Beyond Meat, Inc. - Common stock</a></td>
+                        <td>1000</td>
+                        <td>$126.74</td>
+                        <td>$126,740.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-05-2021</td>
+                        <td><a href="stocks/BYND.html">Beyond Meat, Inc. - Common stock</a></td>
+                        <td>-1000</td>
+                        <td>$142.61</td>
+                        <td>-$142,610.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-05-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$442.40</td>
+                        <td>$442,399.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-05-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$474.20</td>
+                        <td>-$474,200.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-06-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$128.50</td>
+                        <td>$128,502.41</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-06-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$161.35</td>
+                        <td>-$161,352.66</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-06-2021</td>
+                        <td><a href="stocks/IGMS.html">IGM Biosciences, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$80.87</td>
+                        <td>$80,870.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-06-2021</td>
+                        <td><a href="stocks/IGMS.html">IGM Biosciences, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$87.94</td>
+                        <td>-$87,940.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-06-2021</td>
+                        <td><a href="stocks/DOCU.html">DocuSign, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$194.75</td>
+                        <td>$194,750.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-06-2021</td>
+                        <td><a href="stocks/DOCU.html">DocuSign, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$233.24</td>
+                        <td>-$233,240.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-06-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$500.00</td>
+                        <td>$500,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-06-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$539.80</td>
+                        <td>-$539,799.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-06-2021</td>
+                        <td><a href="stocks/ROOT.html">Root, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$203.58</td>
+                        <td>$203,580.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-06-2021</td>
+                        <td><a href="stocks/ROOT.html">Root, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$242.46</td>
+                        <td>-$242,460.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-06-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$171.01</td>
+                        <td>$171,014.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-06-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$209.18</td>
+                        <td>-$209,178.74</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-06-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$533.00</td>
+                        <td>$533,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-06-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$574.60</td>
+                        <td>-$574,599.98</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-06-2021</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>1000</td>
+                        <td>$285.51</td>
+                        <td>$285,510.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-06-2021</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>-1000</td>
+                        <td>$295.19</td>
+                        <td>-$295,188.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-06-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$350.00</td>
+                        <td>$350,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-06-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$384.00</td>
+                        <td>-$384,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-06-2021</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$247.56</td>
+                        <td>$247,560.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-06-2021</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$263.18</td>
+                        <td>-$263,179.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-06-2021</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$551.36</td>
+                        <td>$551,359.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-06-2021</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$565.59</td>
+                        <td>-$565,590.03</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-06-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$208.24</td>
+                        <td>$208,240.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-06-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$221.36</td>
+                        <td>-$221,360.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-06-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$171.98</td>
+                        <td>$171,980.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-06-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$188.89</td>
+                        <td>-$188,888.89</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-06-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$387.50</td>
+                        <td>$387,500.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-06-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$414.50</td>
+                        <td>-$414,500.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-06-2021</td>
+                        <td><a href="stocks/ASPS.html">Altisource Portfolio Solutions S.A. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$62.16</td>
+                        <td>$62,160.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-06-2021</td>
+                        <td><a href="stocks/ASPS.html">Altisource Portfolio Solutions S.A. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$72.08</td>
+                        <td>-$72,080.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-06-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$222.94</td>
+                        <td>$222,940.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-06-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$234.46</td>
+                        <td>-$234,460.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-06-2021</td>
+                        <td><a href="stocks/VRTX.html">Vertex Pharmaceuticals Incorporated - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$196.78</td>
+                        <td>$196,780.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-06-2021</td>
+                        <td><a href="stocks/VRTX.html">Vertex Pharmaceuticals Incorporated - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$201.63</td>
+                        <td>-$201,630.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-06-2021</td>
+                        <td><a href="stocks/AMED.html">Amedisys Inc - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$244.93</td>
+                        <td>$244,929.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-07-2021</td>
+                        <td><a href="stocks/AMED.html">Amedisys Inc - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$261.33</td>
+                        <td>-$261,329.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-07-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$191.79</td>
+                        <td>$191,787.45</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-07-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$211.59</td>
+                        <td>-$211,594.21</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-07-2021</td>
+                        <td><a href="stocks/BIIB.html">Biogen Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$344.89</td>
+                        <td>$344,890.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-07-2021</td>
+                        <td><a href="stocks/BIIB.html">Biogen Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$355.33</td>
+                        <td>-$355,329.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-07-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$449.00</td>
+                        <td>$449,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-07-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$468.80</td>
+                        <td>-$468,799.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-07-2021</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$438.56</td>
+                        <td>$438,560.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-07-2021</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$448.65</td>
+                        <td>-$448,649.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-07-2021</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$600.20</td>
+                        <td>$600,200.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-07-2021</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$605.01</td>
+                        <td>-$605,010.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-07-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$235.15</td>
+                        <td>$235,149.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-07-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$246.66</td>
+                        <td>-$246,660.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-07-2021</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$438.66</td>
+                        <td>$438,660.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-07-2021</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$455.57</td>
+                        <td>-$455,570.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-07-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$259.67</td>
+                        <td>$259,674.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-07-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$286.43</td>
+                        <td>-$286,429.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-07-2021</td>
+                        <td><a href="stocks/ILMN.html">Illumina, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$456.95</td>
+                        <td>$456,945.53</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-07-2021</td>
+                        <td><a href="stocks/ILMN.html">Illumina, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$473.98</td>
+                        <td>-$473,978.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-07-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$217.87</td>
+                        <td>$217,874.39</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-07-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$239.13</td>
+                        <td>-$239,130.43</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-07-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$239.13</td>
+                        <td>$239,130.43</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-07-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$264.73</td>
+                        <td>-$264,734.31</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-07-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$264.73</td>
+                        <td>$264,734.31</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-07-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$298.55</td>
+                        <td>-$298,550.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-07-2021</td>
+                        <td><a href="stocks/FFIV.html">F5, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$192.62</td>
+                        <td>$192,620.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-07-2021</td>
+                        <td><a href="stocks/FFIV.html">F5, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$204.57</td>
+                        <td>-$204,570.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-07-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$334.30</td>
+                        <td>$334,299.53</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-07-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$433.33</td>
+                        <td>-$433,333.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-07-2021</td>
+                        <td><a href="stocks/ICLR.html">ICON plc - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$230.27</td>
+                        <td>$230,270.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-07-2021</td>
+                        <td><a href="stocks/ICLR.html">ICON plc - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$240.59</td>
+                        <td>-$240,590.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-07-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$378.26</td>
+                        <td>$378,260.86</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-07-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$387.44</td>
+                        <td>-$387,439.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-08-2021</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$257.72</td>
+                        <td>$257,720.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-08-2021</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$299.81</td>
+                        <td>-$299,810.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-08-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$300.48</td>
+                        <td>$300,483.09</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-08-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$338.16</td>
+                        <td>-$338,164.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-08-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$310.00</td>
+                        <td>$310,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-08-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$321.75</td>
+                        <td>-$321,750.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-08-2021</td>
+                        <td><a href="stocks/SYNA.html">Synaptics Incorporated - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$146.39</td>
+                        <td>$146,390.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-08-2021</td>
+                        <td><a href="stocks/SYNA.html">Synaptics Incorporated - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$170.50</td>
+                        <td>-$170,500.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-08-2021</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>1000</td>
+                        <td>$286.28</td>
+                        <td>$286,284.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-08-2021</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>-1000</td>
+                        <td>$296.16</td>
+                        <td>-$296,156.13</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-08-2021</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$548.36</td>
+                        <td>$548,359.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-08-2021</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$556.74</td>
+                        <td>-$556,739.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-08-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$346.38</td>
+                        <td>$346,376.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-08-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$383.57</td>
+                        <td>-$383,574.89</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-08-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$383.57</td>
+                        <td>$383,574.89</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-08-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$391.30</td>
+                        <td>-$391,304.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-08-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$197.25</td>
+                        <td>$197,250.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-08-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$233.25</td>
+                        <td>-$233,250.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-08-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$233.25</td>
+                        <td>$233,250.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-08-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$240.15</td>
+                        <td>-$240,149.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-08-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$393.24</td>
+                        <td>$393,236.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-08-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$423.67</td>
+                        <td>-$423,671.51</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-08-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$249.45</td>
+                        <td>$249,450.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-08-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$281.40</td>
+                        <td>-$281,399.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-08-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$323.80</td>
+                        <td>$323,799.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-08-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$348.00</td>
+                        <td>-$348,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-08-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$563.77</td>
+                        <td>$563,768.13</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-08-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$674.40</td>
+                        <td>-$674,396.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-08-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$674.40</td>
+                        <td>$674,396.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-08-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$951.69</td>
+                        <td>-$951,690.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-08-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$951.69</td>
+                        <td>$951,690.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-08-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$1,271.98</td>
+                        <td>-$1,271,980.71</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-08-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$286.05</td>
+                        <td>$286,049.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-08-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$298.05</td>
+                        <td>-$298,049.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-08-2021</td>
+                        <td><a href="stocks/AMBA.html">Ambarella, Inc. - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$103.57</td>
+                        <td>$103,570.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-09-2021</td>
+                        <td><a href="stocks/AMBA.html">Ambarella, Inc. - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$131.96</td>
+                        <td>-$131,960.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-09-2021</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$590.53</td>
+                        <td>$590,530.03</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-09-2021</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$660.00</td>
+                        <td>-$660,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-09-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$397.66</td>
+                        <td>$397,660.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-09-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$416.70</td>
+                        <td>-$416,700.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-09-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$932.37</td>
+                        <td>$932,367.13</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-09-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$1,118.84</td>
+                        <td>-$1,118,840.58</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-09-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$1,118.84</td>
+                        <td>$1,118,840.58</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-09-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$1,257.00</td>
+                        <td>-$1,257,004.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-09-2021</td>
+                        <td><a href="stocks/AFRM.html">Affirm Holdings, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$92.06</td>
+                        <td>$92,060.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-09-2021</td>
+                        <td><a href="stocks/AFRM.html">Affirm Holdings, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$123.70</td>
+                        <td>-$123,700.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-09-2021</td>
+                        <td><a href="stocks/MLAB.html">Mesa Laboratories, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$275.28</td>
+                        <td>$275,280.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-09-2021</td>
+                        <td><a href="stocks/MLAB.html">Mesa Laboratories, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$297.81</td>
+                        <td>-$297,814.06</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-09-2021</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$645.01</td>
+                        <td>$645,010.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-09-2021</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$661.08</td>
+                        <td>-$661,080.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-09-2021</td>
+                        <td><a href="stocks/DUOL.html">Duolingo, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$160.29</td>
+                        <td>$160,289.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-09-2021</td>
+                        <td><a href="stocks/DUOL.html">Duolingo, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$185.00</td>
+                        <td>-$185,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-09-2021</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$270.40</td>
+                        <td>$270,399.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-09-2021</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$281.45</td>
+                        <td>-$281,450.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-09-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$278.55</td>
+                        <td>$278,549.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-09-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$313.05</td>
+                        <td>-$313,049.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-09-2021</td>
+                        <td><a href="stocks/NFLX.html">Netflix, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$573.14</td>
+                        <td>$573,140.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-09-2021</td>
+                        <td><a href="stocks/NFLX.html">Netflix, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$590.65</td>
+                        <td>-$590,650.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-09-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$440.72</td>
+                        <td>$440,720.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-09-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$454.60</td>
+                        <td>-$454,600.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-09-2021</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$432.19</td>
+                        <td>$432,188.69</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-09-2021</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$446.48</td>
+                        <td>-$446,477.87</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-09-2021</td>
+                        <td><a href="stocks/BCPC.html">Balchem Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$144.17</td>
+                        <td>$144,174.47</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-09-2021</td>
+                        <td><a href="stocks/BCPC.html">Balchem Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$147.57</td>
+                        <td>-$147,574.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-09-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$237.80</td>
+                        <td>$237,800.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-09-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$254.00</td>
+                        <td>-$254,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-09-2021</td>
+                        <td><a href="stocks/NFLX.html">Netflix, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$599.06</td>
+                        <td>$599,060.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-09-2021</td>
+                        <td><a href="stocks/NFLX.html">Netflix, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$610.34</td>
+                        <td>-$610,340.03</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-09-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$277.35</td>
+                        <td>$277,350.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-10-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$289.35</td>
+                        <td>-$289,350.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-10-2021</td>
+                        <td><a href="stocks/NFLX.html">Netflix, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$603.35</td>
+                        <td>$603,349.98</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-10-2021</td>
+                        <td><a href="stocks/NFLX.html">Netflix, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$634.81</td>
+                        <td>-$634,810.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-10-2021</td>
+                        <td><a href="stocks/AFRM.html">Affirm Holdings, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$111.46</td>
+                        <td>$111,460.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-10-2021</td>
+                        <td><a href="stocks/AFRM.html">Affirm Holdings, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$133.70</td>
+                        <td>-$133,700.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-10-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$270.00</td>
+                        <td>$270,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-10-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$294.60</td>
+                        <td>-$294,600.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-10-2021</td>
+                        <td><a href="stocks/ASPS.html">Altisource Portfolio Solutions S.A. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$94.00</td>
+                        <td>$94,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-10-2021</td>
+                        <td><a href="stocks/ASPS.html">Altisource Portfolio Solutions S.A. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$113.92</td>
+                        <td>-$113,920.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-10-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$228.10</td>
+                        <td>$228,100.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-10-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$239.50</td>
+                        <td>-$239,500.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-10-2021</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$591.12</td>
+                        <td>$591,120.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-10-2021</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$607.51</td>
+                        <td>-$607,510.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-10-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$224.90</td>
+                        <td>$224,899.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-10-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$242.50</td>
+                        <td>-$242,500.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-10-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$274.95</td>
+                        <td>$274,950.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-10-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$296.70</td>
+                        <td>-$296,700.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-10-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$378.25</td>
+                        <td>$378,250.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-10-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$392.75</td>
+                        <td>-$392,750.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-10-2021</td>
+                        <td><a href="stocks/NFLX.html">Netflix, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$625.14</td>
+                        <td>$625,140.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-10-2021</td>
+                        <td><a href="stocks/NFLX.html">Netflix, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$653.16</td>
+                        <td>-$653,159.97</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-10-2021</td>
+                        <td><a href="stocks/NFLX.html">Netflix, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$653.16</td>
+                        <td>$653,159.97</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-10-2021</td>
+                        <td><a href="stocks/NFLX.html">Netflix, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$664.78</td>
+                        <td>-$664,780.03</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-10-2021</td>
+                        <td><a href="stocks/MCRI.html">Monarch Casino &amp; Resort, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$61.58</td>
+                        <td>$61,578.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-10-2021</td>
+                        <td><a href="stocks/MCRI.html">Monarch Casino &amp; Resort, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$66.53</td>
+                        <td>-$66,531.82</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-10-2021</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$313.88</td>
+                        <td>$313,880.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-10-2021</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$342.54</td>
+                        <td>-$342,540.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-10-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$374.50</td>
+                        <td>$374,500.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-10-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$391.00</td>
+                        <td>-$391,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-10-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$203.20</td>
+                        <td>$203,200.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-10-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$271.90</td>
+                        <td>-$271,899.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-11-2021</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$596.05</td>
+                        <td>$596,049.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-11-2021</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$670.30</td>
+                        <td>-$670,299.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-11-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$434.00</td>
+                        <td>$434,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-11-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$468.75</td>
+                        <td>-$468,750.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-11-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$468.75</td>
+                        <td>$468,750.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-11-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$497.25</td>
+                        <td>-$497,250.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-11-2021</td>
+                        <td><a href="stocks/SYNA.html">Synaptics Incorporated - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$220.89</td>
+                        <td>$220,890.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-11-2021</td>
+                        <td><a href="stocks/SYNA.html">Synaptics Incorporated - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$249.21</td>
+                        <td>-$249,210.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-11-2021</td>
+                        <td><a href="stocks/NICE.html">NICE Ltd - American Depositary Shares each representing one Ordinary Share</a></td>
+                        <td>1000</td>
+                        <td>$276.36</td>
+                        <td>$276,359.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-11-2021</td>
+                        <td><a href="stocks/NICE.html">NICE Ltd - American Depositary Shares each representing one Ordinary Share</a></td>
+                        <td>-1000</td>
+                        <td>$287.98</td>
+                        <td>-$287,980.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-11-2021</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$659.01</td>
+                        <td>$659,010.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-11-2021</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$670.11</td>
+                        <td>-$670,109.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-11-2021</td>
+                        <td><a href="stocks/RIVN.html">Rivian Automotive, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$100.73</td>
+                        <td>$100,730.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-11-2021</td>
+                        <td><a href="stocks/RIVN.html">Rivian Automotive, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$129.95</td>
+                        <td>-$129,950.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-11-2021</td>
+                        <td><a href="stocks/BIRD.html">Allbirds, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$420.80</td>
+                        <td>$420,799.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-11-2021</td>
+                        <td><a href="stocks/BIRD.html">Allbirds, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$460.60</td>
+                        <td>-$460,600.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-11-2021</td>
+                        <td><a href="stocks/BIRD.html">Allbirds, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$460.60</td>
+                        <td>$460,600.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-11-2021</td>
+                        <td><a href="stocks/BIRD.html">Allbirds, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$492.80</td>
+                        <td>-$492,799.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-11-2021</td>
+                        <td><a href="stocks/BIRD.html">Allbirds, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$492.80</td>
+                        <td>$492,799.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-11-2021</td>
+                        <td><a href="stocks/BIRD.html">Allbirds, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$535.20</td>
+                        <td>-$535,200.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-11-2021</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$670.96</td>
+                        <td>$670,960.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-11-2021</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$688.37</td>
+                        <td>-$688,370.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-11-2021</td>
+                        <td><a href="stocks/DLTR.html">Dollar Tree, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$132.56</td>
+                        <td>$132,560.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-11-2021</td>
+                        <td><a href="stocks/DLTR.html">Dollar Tree, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$144.71</td>
+                        <td>-$144,710.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-11-2021</td>
+                        <td><a href="stocks/BIRD.html">Allbirds, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$378.00</td>
+                        <td>$378,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-11-2021</td>
+                        <td><a href="stocks/BIRD.html">Allbirds, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$405.80</td>
+                        <td>-$405,799.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-11-2021</td>
+                        <td><a href="stocks/BIRD.html">Allbirds, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$376.40</td>
+                        <td>$376,399.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-11-2021</td>
+                        <td><a href="stocks/BIRD.html">Allbirds, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$384.80</td>
+                        <td>-$384,799.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-11-2021</td>
+                        <td><a href="stocks/AMBA.html">Ambarella, Inc. - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$179.52</td>
+                        <td>$179,520.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-12-2021</td>
+                        <td><a href="stocks/AMBA.html">Ambarella, Inc. - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$204.89</td>
+                        <td>-$204,890.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-12-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$257.25</td>
+                        <td>$257,250.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-12-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$295.65</td>
+                        <td>-$295,649.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-12-2021</td>
+                        <td><a href="stocks/MRVL.html">Marvell Technology, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$69.99</td>
+                        <td>$69,994.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-12-2021</td>
+                        <td><a href="stocks/MRVL.html">Marvell Technology, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$82.37</td>
+                        <td>-$82,371.74</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-12-2021</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$622.04</td>
+                        <td>$622,039.98</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-12-2021</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$649.96</td>
+                        <td>-$649,960.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-12-2021</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$292.52</td>
+                        <td>$292,519.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-12-2021</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$309.50</td>
+                        <td>-$309,500.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-12-2021</td>
+                        <td><a href="stocks/BIRD.html">Allbirds, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$298.40</td>
+                        <td>$298,399.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-12-2021</td>
+                        <td><a href="stocks/BIRD.html">Allbirds, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$304.80</td>
+                        <td>-$304,799.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-12-2021</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$501.29</td>
+                        <td>$501,294.46</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-12-2021</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$534.27</td>
+                        <td>-$534,269.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-12-2021</td>
+                        <td><a href="stocks/BIRD.html">Allbirds, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$259.20</td>
+                        <td>$259,200.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-12-2021</td>
+                        <td><a href="stocks/BIRD.html">Allbirds, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$304.80</td>
+                        <td>-$304,799.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-12-2021</td>
+                        <td><a href="stocks/ZS.html">Zscaler, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$284.34</td>
+                        <td>$284,340.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-12-2021</td>
+                        <td><a href="stocks/ZS.html">Zscaler, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$307.24</td>
+                        <td>-$307,239.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-12-2021</td>
+                        <td><a href="stocks/VALN.html">Valneva SE - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$50.98</td>
+                        <td>$50,980.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-12-2021</td>
+                        <td><a href="stocks/VALN.html">Valneva SE - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$58.95</td>
+                        <td>-$58,950.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-12-2021</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$297.14</td>
+                        <td>$297,140.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-12-2021</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$310.26</td>
+                        <td>-$310,260.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-12-2021</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$258.36</td>
+                        <td>$258,359.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-12-2021</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$281.10</td>
+                        <td>-$281,100.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-12-2021</td>
+                        <td><a href="stocks/BIRD.html">Allbirds, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$289.00</td>
+                        <td>$289,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-12-2021</td>
+                        <td><a href="stocks/BIRD.html">Allbirds, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$348.20</td>
+                        <td>-$348,200.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-12-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$408.75</td>
+                        <td>$408,750.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-12-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$432.75</td>
+                        <td>-$432,750.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-12-2021</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$676.14</td>
+                        <td>$676,140.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-12-2021</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$680.00</td>
+                        <td>-$680,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-12-2021</td>
+                        <td><a href="stocks/BIIB.html">Biogen Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$235.99</td>
+                        <td>$235,990.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-12-2021</td>
+                        <td><a href="stocks/BIIB.html">Biogen Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$258.31</td>
+                        <td>-$258,310.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-12-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$279.60</td>
+                        <td>$279,600.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-12-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$292.80</td>
+                        <td>-$292,799.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-12-2021</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$669.00</td>
+                        <td>$669,000.00</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</div>
+</body>
+</html>
