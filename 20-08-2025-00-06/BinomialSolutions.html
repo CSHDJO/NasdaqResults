@@ -1,0 +1,2273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nasdaq Trade System - BinomialSolutions</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+            crossorigin="anonymous"></script>
+    <meta name="theme-color" content="#712cf9">
+</head>
+
+<body>
+<header class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow" data-bs-theme="dark"><a
+        class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="#">Nasdaq Trade system</a>
+</header>
+
+
+<div class="container-fluid">
+    <div class="row">
+        
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <a href="GameResult.html">Back</a>
+            <h1>BinomialSolutions</h1>
+            <img src="BinomialSolutions.png" class="img-fluid">
+            <div class="table-responsive small">
+                <table class="table table-striped table-sm">
+                    <thead>
+                    <tr>
+                        <th scope="col">ExecutedOn</th>
+                        <th scope="col">Company</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">AtPrice</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr scope="row">
+                        <td>04-01-2023</td>
+                        <td><a href="stocks/NVCR.html">NovoCure Limited - Ordinary Shares</a></td>
+                        <td>14</td>
+                        <td>$70.53</td>
+                        <td>$987.42</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-01-2023</td>
+                        <td><a href="stocks/NVCR.html">NovoCure Limited - Ordinary Shares</a></td>
+                        <td>-14</td>
+                        <td>$118.81</td>
+                        <td>-$1,663.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-01-2023</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$494.59</td>
+                        <td>$1,483.77</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-01-2023</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$500.08</td>
+                        <td>-$1,500.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-01-2023</td>
+                        <td><a href="stocks/PCAR.html">PACCAR Inc. - Common Stock</a></td>
+                        <td>27</td>
+                        <td>$62.16</td>
+                        <td>$1,678.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-01-2023</td>
+                        <td><a href="stocks/PCAR.html">PACCAR Inc. - Common Stock</a></td>
+                        <td>-27</td>
+                        <td>$67.52</td>
+                        <td>-$1,823.13</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-01-2023</td>
+                        <td><a href="stocks/CVCO.html">Cavco Industries, Inc. - Common Stock</a></td>
+                        <td>7</td>
+                        <td>$257.76</td>
+                        <td>$1,804.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-01-2023</td>
+                        <td><a href="stocks/CVCO.html">Cavco Industries, Inc. - Common Stock</a></td>
+                        <td>-7</td>
+                        <td>$263.23</td>
+                        <td>-$1,842.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-01-2023</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$419.24</td>
+                        <td>$1,676.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-02-2023</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$449.91</td>
+                        <td>-$1,799.64</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-02-2023</td>
+                        <td><a href="stocks/SIGI.html">Selective Insurance Group, Inc. - Common Stock</a></td>
+                        <td>21</td>
+                        <td>$91.35</td>
+                        <td>$1,918.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-02-2023</td>
+                        <td><a href="stocks/SIGI.html">Selective Insurance Group, Inc. - Common Stock</a></td>
+                        <td>-21</td>
+                        <td>$97.31</td>
+                        <td>-$2,043.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-02-2023</td>
+                        <td><a href="stocks/CVCO.html">Cavco Industries, Inc. - Common Stock</a></td>
+                        <td>7</td>
+                        <td>$269.65</td>
+                        <td>$1,887.55</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-02-2023</td>
+                        <td><a href="stocks/CVCO.html">Cavco Industries, Inc. - Common Stock</a></td>
+                        <td>-7</td>
+                        <td>$290.73</td>
+                        <td>-$2,035.11</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-02-2023</td>
+                        <td><a href="stocks/WFRD.html">Weatherford International plc - Ordinary shares</a></td>
+                        <td>40</td>
+                        <td>$56.44</td>
+                        <td>$2,257.73</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-02-2023</td>
+                        <td><a href="stocks/WFRD.html">Weatherford International plc - Ordinary shares</a></td>
+                        <td>-40</td>
+                        <td>$63.54</td>
+                        <td>-$2,541.53</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-02-2023</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$455.05</td>
+                        <td>$2,275.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-02-2023</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$501.67</td>
+                        <td>-$2,508.33</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-02-2023</td>
+                        <td><a href="stocks/FANG.html">Diamondback Energy, Inc. - Common Stock</a></td>
+                        <td>22</td>
+                        <td>$126.55</td>
+                        <td>$2,784.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-02-2023</td>
+                        <td><a href="stocks/FANG.html">Diamondback Energy, Inc. - Common Stock</a></td>
+                        <td>-22</td>
+                        <td>$133.55</td>
+                        <td>-$2,938.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-02-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>1</td>
+                        <td>$2,396.83</td>
+                        <td>$2,396.83</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-02-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$2,444.33</td>
+                        <td>-$2,444.33</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-02-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>1</td>
+                        <td>$2,444.33</td>
+                        <td>$2,444.33</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-02-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$2,489.36</td>
+                        <td>-$2,489.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-02-2023</td>
+                        <td><a href="stocks/ROKU.html">Roku, Inc. - Class A Common Stock</a></td>
+                        <td>47</td>
+                        <td>$63.49</td>
+                        <td>$2,984.03</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-02-2023</td>
+                        <td><a href="stocks/ROKU.html">Roku, Inc. - Class A Common Stock</a></td>
+                        <td>-47</td>
+                        <td>$70.57</td>
+                        <td>-$3,316.79</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-02-2023</td>
+                        <td><a href="stocks/AMCX.html">AMC Networks Inc. - Class A Common Stock</a></td>
+                        <td>164</td>
+                        <td>$20.50</td>
+                        <td>$3,362.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-02-2023</td>
+                        <td><a href="stocks/AMCX.html">AMC Networks Inc. - Class A Common Stock</a></td>
+                        <td>-164</td>
+                        <td>$27.13</td>
+                        <td>-$4,449.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-02-2023</td>
+                        <td><a href="stocks/WIX.html">Wix.com Ltd. - Ordinary Shares</a></td>
+                        <td>55</td>
+                        <td>$80.87</td>
+                        <td>$4,447.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-02-2023</td>
+                        <td><a href="stocks/WIX.html">Wix.com Ltd. - Ordinary Shares</a></td>
+                        <td>-55</td>
+                        <td>$90.90</td>
+                        <td>-$4,999.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-02-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>3</td>
+                        <td>$1,600.00</td>
+                        <td>$4,800.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-02-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-3</td>
+                        <td>$1,643.00</td>
+                        <td>-$4,929.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-02-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$2,400.25</td>
+                        <td>$4,800.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-02-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$2,425.96</td>
+                        <td>-$4,851.91</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-02-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>3</td>
+                        <td>$1,723.00</td>
+                        <td>$5,169.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-02-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-3</td>
+                        <td>$1,760.00</td>
+                        <td>-$5,280.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-02-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>3</td>
+                        <td>$1,760.00</td>
+                        <td>$5,280.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-03-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-3</td>
+                        <td>$1,812.00</td>
+                        <td>-$5,436.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-03-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$2,524.72</td>
+                        <td>$5,049.43</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-03-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$2,549.95</td>
+                        <td>-$5,099.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-03-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>3</td>
+                        <td>$1,790.00</td>
+                        <td>$5,370.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-03-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-3</td>
+                        <td>$1,872.00</td>
+                        <td>-$5,616.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-03-2023</td>
+                        <td><a href="stocks/AVAV.html">AeroVironment, Inc. - Common Stock</a></td>
+                        <td>65</td>
+                        <td>$87.57</td>
+                        <td>$5,692.05</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-03-2023</td>
+                        <td><a href="stocks/AVAV.html">AeroVironment, Inc. - Common Stock</a></td>
+                        <td>-65</td>
+                        <td>$91.28</td>
+                        <td>-$5,933.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-03-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>3</td>
+                        <td>$1,875.00</td>
+                        <td>$5,625.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-03-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-3</td>
+                        <td>$2,700.00</td>
+                        <td>-$8,100.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-03-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>3</td>
+                        <td>$2,700.00</td>
+                        <td>$8,100.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-03-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-3</td>
+                        <td>$2,732.00</td>
+                        <td>-$8,196.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-03-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>3</td>
+                        <td>$2,732.00</td>
+                        <td>$8,196.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-03-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-3</td>
+                        <td>$2,737.00</td>
+                        <td>-$8,211.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-03-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$2,412.51</td>
+                        <td>$7,237.54</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-03-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$2,448.98</td>
+                        <td>-$7,346.93</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-03-2023</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>16</td>
+                        <td>$518.42</td>
+                        <td>$8,294.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-03-2023</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>-16</td>
+                        <td>$524.18</td>
+                        <td>-$8,386.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-03-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$2,389.60</td>
+                        <td>$7,168.81</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-03-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$2,413.52</td>
+                        <td>-$7,240.57</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-03-2023</td>
+                        <td><a href="stocks/MSFT.html">Microsoft Corporation - Common Stock</a></td>
+                        <td>32</td>
+                        <td>$271.38</td>
+                        <td>$8,684.09</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-03-2023</td>
+                        <td><a href="stocks/MSFT.html">Microsoft Corporation - Common Stock</a></td>
+                        <td>-32</td>
+                        <td>$274.55</td>
+                        <td>-$8,785.64</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-03-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>3</td>
+                        <td>$2,339.00</td>
+                        <td>$7,017.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-03-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-3</td>
+                        <td>$2,577.00</td>
+                        <td>-$7,731.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-03-2023</td>
+                        <td><a href="stocks/DUOL.html">Duolingo, Inc. - Class A Common Stock</a></td>
+                        <td>73</td>
+                        <td>$132.13</td>
+                        <td>$9,645.13</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-03-2023</td>
+                        <td><a href="stocks/DUOL.html">Duolingo, Inc. - Class A Common Stock</a></td>
+                        <td>-73</td>
+                        <td>$136.12</td>
+                        <td>-$9,936.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-03-2023</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>20</td>
+                        <td>$481.40</td>
+                        <td>$9,628.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-03-2023</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>-20</td>
+                        <td>$501.74</td>
+                        <td>-$10,034.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-03-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>4</td>
+                        <td>$2,457.00</td>
+                        <td>$9,828.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-03-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-4</td>
+                        <td>$2,483.00</td>
+                        <td>-$9,932.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-03-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$2,481.18</td>
+                        <td>$9,924.73</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-03-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$2,517.59</td>
+                        <td>-$10,070.38</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-03-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>4</td>
+                        <td>$2,492.00</td>
+                        <td>$9,968.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-03-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-4</td>
+                        <td>$2,590.00</td>
+                        <td>-$10,360.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-03-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$2,543.96</td>
+                        <td>$10,175.83</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-03-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$2,581.54</td>
+                        <td>-$10,326.14</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-03-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>4</td>
+                        <td>$2,569.00</td>
+                        <td>$10,276.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-03-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-4</td>
+                        <td>$2,654.00</td>
+                        <td>-$10,616.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-04-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>4</td>
+                        <td>$2,747.00</td>
+                        <td>$10,988.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-04-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-4</td>
+                        <td>$2,849.00</td>
+                        <td>-$11,396.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-04-2023</td>
+                        <td><a href="stocks/ADUS.html">Addus HomeCare Corporation - Common Stock</a></td>
+                        <td>114</td>
+                        <td>$104.35</td>
+                        <td>$11,895.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-04-2023</td>
+                        <td><a href="stocks/ADUS.html">Addus HomeCare Corporation - Common Stock</a></td>
+                        <td>-114</td>
+                        <td>$108.19</td>
+                        <td>-$12,333.66</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-04-2023</td>
+                        <td><a href="stocks/MSFT.html">Microsoft Corporation - Common Stock</a></td>
+                        <td>44</td>
+                        <td>$279.38</td>
+                        <td>$12,292.53</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-04-2023</td>
+                        <td><a href="stocks/MSFT.html">Microsoft Corporation - Common Stock</a></td>
+                        <td>-44</td>
+                        <td>$286.51</td>
+                        <td>-$12,606.39</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-04-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>4</td>
+                        <td>$2,818.00</td>
+                        <td>$11,272.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-04-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-4</td>
+                        <td>$2,900.00</td>
+                        <td>-$11,600.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-04-2023</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>110</td>
+                        <td>$117.76</td>
+                        <td>$12,953.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-04-2023</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-110</td>
+                        <td>$131.56</td>
+                        <td>-$14,471.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-04-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$2,519.70</td>
+                        <td>$12,598.51</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-04-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$2,601.19</td>
+                        <td>-$13,005.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-04-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$2,601.19</td>
+                        <td>$13,005.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-04-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$2,621.20</td>
+                        <td>-$13,106.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-04-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>5</td>
+                        <td>$2,855.00</td>
+                        <td>$14,275.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-04-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-5</td>
+                        <td>$2,909.00</td>
+                        <td>-$14,545.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-04-2023</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>126</td>
+                        <td>$120.80</td>
+                        <td>$15,220.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-04-2023</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>-126</td>
+                        <td>$125.20</td>
+                        <td>-$15,775.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-04-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>5</td>
+                        <td>$2,855.00</td>
+                        <td>$14,275.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-04-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-5</td>
+                        <td>$3,075.00</td>
+                        <td>-$15,375.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-04-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>5</td>
+                        <td>$3,075.00</td>
+                        <td>$15,375.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-04-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-5</td>
+                        <td>$3,121.00</td>
+                        <td>-$15,605.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-04-2023</td>
+                        <td><a href="stocks/TMUS.html">T-Mobile US, Inc. - Common Stock</a></td>
+                        <td>120</td>
+                        <td>$142.11</td>
+                        <td>$17,053.62</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-04-2023</td>
+                        <td><a href="stocks/TMUS.html">T-Mobile US, Inc. - Common Stock</a></td>
+                        <td>-120</td>
+                        <td>$144.20</td>
+                        <td>-$17,303.82</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-04-2023</td>
+                        <td><a href="stocks/MSFT.html">Microsoft Corporation - Common Stock</a></td>
+                        <td>64</td>
+                        <td>$270.61</td>
+                        <td>$17,319.13</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-04-2023</td>
+                        <td><a href="stocks/MSFT.html">Microsoft Corporation - Common Stock</a></td>
+                        <td>-64</td>
+                        <td>$290.21</td>
+                        <td>-$18,573.63</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-04-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>7</td>
+                        <td>$2,569.28</td>
+                        <td>$17,984.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-04-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-7</td>
+                        <td>$2,610.89</td>
+                        <td>-$18,276.26</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-04-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>6</td>
+                        <td>$2,718.00</td>
+                        <td>$16,308.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-04-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-6</td>
+                        <td>$2,811.00</td>
+                        <td>-$16,866.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-05-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>7</td>
+                        <td>$2,661.99</td>
+                        <td>$18,633.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-05-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-7</td>
+                        <td>$2,686.68</td>
+                        <td>-$18,806.73</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-05-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>7</td>
+                        <td>$2,610.00</td>
+                        <td>$18,270.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-05-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-7</td>
+                        <td>$2,667.00</td>
+                        <td>-$18,669.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-05-2023</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>76</td>
+                        <td>$263.82</td>
+                        <td>$20,050.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-05-2023</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>-76</td>
+                        <td>$281.22</td>
+                        <td>-$21,372.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-05-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>8</td>
+                        <td>$2,609.00</td>
+                        <td>$20,872.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-05-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-8</td>
+                        <td>$2,739.00</td>
+                        <td>-$21,912.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-05-2023</td>
+                        <td><a href="stocks/AXON.html">Axon Enterprise, Inc. - Common Stock</a></td>
+                        <td>101</td>
+                        <td>$221.86</td>
+                        <td>$22,407.86</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-05-2023</td>
+                        <td><a href="stocks/AXON.html">Axon Enterprise, Inc. - Common Stock</a></td>
+                        <td>-101</td>
+                        <td>$226.88</td>
+                        <td>-$22,914.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-05-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>8</td>
+                        <td>$2,740.00</td>
+                        <td>$21,920.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-05-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-8</td>
+                        <td>$2,800.00</td>
+                        <td>-$22,400.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-05-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>8</td>
+                        <td>$2,800.00</td>
+                        <td>$22,400.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-05-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-8</td>
+                        <td>$3,636.00</td>
+                        <td>-$29,088.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-05-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>8</td>
+                        <td>$3,636.00</td>
+                        <td>$29,088.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-05-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-8</td>
+                        <td>$3,652.00</td>
+                        <td>-$29,216.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-05-2023</td>
+                        <td><a href="stocks/OLED.html">Universal Display Corporation - Common Stock</a></td>
+                        <td>220</td>
+                        <td>$136.97</td>
+                        <td>$30,134.08</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-05-2023</td>
+                        <td><a href="stocks/OLED.html">Universal Display Corporation - Common Stock</a></td>
+                        <td>-220</td>
+                        <td>$145.93</td>
+                        <td>-$32,103.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-05-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>12</td>
+                        <td>$2,617.70</td>
+                        <td>$31,412.41</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-05-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-12</td>
+                        <td>$2,667.54</td>
+                        <td>-$32,010.42</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-05-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>12</td>
+                        <td>$2,667.54</td>
+                        <td>$32,010.42</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-05-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-12</td>
+                        <td>$2,750.90</td>
+                        <td>-$33,010.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-05-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>12</td>
+                        <td>$2,802.00</td>
+                        <td>$33,624.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-05-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-12</td>
+                        <td>$3,026.00</td>
+                        <td>-$36,312.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-05-2023</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>242</td>
+                        <td>$150.75</td>
+                        <td>$36,481.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-05-2023</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>-242</td>
+                        <td>$157.62</td>
+                        <td>-$38,144.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-05-2023</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>242</td>
+                        <td>$157.62</td>
+                        <td>$38,144.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-05-2023</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>-242</td>
+                        <td>$164.29</td>
+                        <td>-$39,758.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-05-2023</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>97</td>
+                        <td>$409.43</td>
+                        <td>$39,714.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-05-2023</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>-97</td>
+                        <td>$480.92</td>
+                        <td>-$46,648.82</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-05-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>16</td>
+                        <td>$2,798.00</td>
+                        <td>$44,768.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-05-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-16</td>
+                        <td>$2,857.00</td>
+                        <td>-$45,712.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-05-2023</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>285</td>
+                        <td>$167.20</td>
+                        <td>$47,652.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-05-2023</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>-285</td>
+                        <td>$180.20</td>
+                        <td>-$51,357.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-05-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>18</td>
+                        <td>$2,779.00</td>
+                        <td>$50,022.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-06-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-18</td>
+                        <td>$2,903.00</td>
+                        <td>-$52,254.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-06-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>21</td>
+                        <td>$2,522.42</td>
+                        <td>$52,970.86</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-06-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-21</td>
+                        <td>$2,597.25</td>
+                        <td>-$54,542.33</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-06-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>20</td>
+                        <td>$2,641.88</td>
+                        <td>$52,837.51</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-06-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-20</td>
+                        <td>$2,678.81</td>
+                        <td>-$53,576.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-06-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>19</td>
+                        <td>$2,881.00</td>
+                        <td>$54,739.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-06-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-19</td>
+                        <td>$2,894.00</td>
+                        <td>-$54,986.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-06-2023</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>250</td>
+                        <td>$224.57</td>
+                        <td>$56,142.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-06-2023</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>-250</td>
+                        <td>$234.86</td>
+                        <td>-$58,715.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-06-2023</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>250</td>
+                        <td>$234.86</td>
+                        <td>$58,715.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-06-2023</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>-250</td>
+                        <td>$244.40</td>
+                        <td>-$61,100.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-06-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>21</td>
+                        <td>$2,829.00</td>
+                        <td>$59,409.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-06-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-21</td>
+                        <td>$2,860.00</td>
+                        <td>-$60,060.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-06-2023</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>395</td>
+                        <td>$156.00</td>
+                        <td>$61,620.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-06-2023</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>-395</td>
+                        <td>$163.00</td>
+                        <td>-$64,385.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-06-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>24</td>
+                        <td>$2,581.57</td>
+                        <td>$61,957.57</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-06-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-24</td>
+                        <td>$2,642.81</td>
+                        <td>-$63,427.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-06-2023</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>721</td>
+                        <td>$91.54</td>
+                        <td>$66,000.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-06-2023</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-721</td>
+                        <td>$99.36</td>
+                        <td>-$71,638.56</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-06-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>27</td>
+                        <td>$2,649.00</td>
+                        <td>$71,523.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-06-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-27</td>
+                        <td>$2,704.00</td>
+                        <td>-$73,008.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-06-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>27</td>
+                        <td>$2,615.21</td>
+                        <td>$70,610.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-06-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-27</td>
+                        <td>$2,648.94</td>
+                        <td>-$71,521.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-06-2023</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>844</td>
+                        <td>$87.63</td>
+                        <td>$73,959.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-06-2023</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-844</td>
+                        <td>$105.80</td>
+                        <td>-$89,295.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-06-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>34</td>
+                        <td>$2,587.47</td>
+                        <td>$87,974.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-06-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-34</td>
+                        <td>$2,671.16</td>
+                        <td>-$90,819.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-06-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>34</td>
+                        <td>$2,671.16</td>
+                        <td>$90,819.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-06-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-34</td>
+                        <td>$2,637.63</td>
+                        <td>-$89,679.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-06-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>32</td>
+                        <td>$2,828.00</td>
+                        <td>$90,496.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-06-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-32</td>
+                        <td>$2,738.00</td>
+                        <td>-$87,616.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-07-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>33</td>
+                        <td>$2,668.00</td>
+                        <td>$88,044.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-07-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-33</td>
+                        <td>$2,521.00</td>
+                        <td>-$83,193.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-07-2023</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>515</td>
+                        <td>$161.80</td>
+                        <td>$83,327.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-07-2023</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>-515</td>
+                        <td>$153.20</td>
+                        <td>-$78,898.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-07-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>30</td>
+                        <td>$2,568.00</td>
+                        <td>$77,040.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-07-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-30</td>
+                        <td>$2,548.00</td>
+                        <td>-$76,440.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-07-2023</td>
+                        <td><a href="stocks/WTW.html">Willis Towers Watson Public Limited Company - Ordinary Shares</a></td>
+                        <td>340</td>
+                        <td>$229.83</td>
+                        <td>$78,141.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-07-2023</td>
+                        <td><a href="stocks/WTW.html">Willis Towers Watson Public Limited Company - Ordinary Shares</a></td>
+                        <td>-340</td>
+                        <td>$226.57</td>
+                        <td>-$77,034.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-07-2023</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>159</td>
+                        <td>$484.04</td>
+                        <td>$76,962.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-07-2023</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>-159</td>
+                        <td>$472.59</td>
+                        <td>-$75,141.81</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-07-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>28</td>
+                        <td>$2,686.00</td>
+                        <td>$75,208.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-07-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-28</td>
+                        <td>$2,606.00</td>
+                        <td>-$72,968.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-07-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>24</td>
+                        <td>$2,949.36</td>
+                        <td>$70,784.74</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-07-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-24</td>
+                        <td>$2,896.22</td>
+                        <td>-$69,509.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-07-2023</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>126</td>
+                        <td>$566.87</td>
+                        <td>$71,426.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-07-2023</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>-126</td>
+                        <td>$522.02</td>
+                        <td>-$65,774.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-07-2023</td>
+                        <td><a href="stocks/SAIA.html">Saia, Inc. - Common Stock</a></td>
+                        <td>161</td>
+                        <td>$410.05</td>
+                        <td>$66,018.05</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-07-2023</td>
+                        <td><a href="stocks/SAIA.html">Saia, Inc. - Common Stock</a></td>
+                        <td>-161</td>
+                        <td>$402.72</td>
+                        <td>-$64,837.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-07-2023</td>
+                        <td><a href="stocks/ESLT.html">Elbit Systems Ltd. - Ordinary Shares</a></td>
+                        <td>312</td>
+                        <td>$207.94</td>
+                        <td>$64,877.58</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-07-2023</td>
+                        <td><a href="stocks/ESLT.html">Elbit Systems Ltd. - Ordinary Shares</a></td>
+                        <td>-312</td>
+                        <td>$198.05</td>
+                        <td>-$61,791.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-07-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>21</td>
+                        <td>$2,842.00</td>
+                        <td>$59,682.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-07-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-21</td>
+                        <td>$2,603.00</td>
+                        <td>-$54,663.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-07-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>21</td>
+                        <td>$2,603.00</td>
+                        <td>$54,663.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-07-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-21</td>
+                        <td>$2,377.50</td>
+                        <td>-$49,927.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-07-2023</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>215</td>
+                        <td>$241.75</td>
+                        <td>$51,976.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-07-2023</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>-215</td>
+                        <td>$236.79</td>
+                        <td>-$50,909.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-07-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>20</td>
+                        <td>$2,469.00</td>
+                        <td>$49,380.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-08-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-20</td>
+                        <td>$2,394.00</td>
+                        <td>-$47,880.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-08-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>20</td>
+                        <td>$2,394.00</td>
+                        <td>$47,880.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-08-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-20</td>
+                        <td>$2,259.00</td>
+                        <td>-$45,180.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-08-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>16</td>
+                        <td>$2,853.72</td>
+                        <td>$45,659.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-08-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-16</td>
+                        <td>$2,809.20</td>
+                        <td>-$44,947.14</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-08-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>20</td>
+                        <td>$2,238.00</td>
+                        <td>$44,760.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-08-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-20</td>
+                        <td>$2,204.00</td>
+                        <td>-$44,080.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-08-2023</td>
+                        <td><a href="stocks/DDOG.html">Datadog, Inc. - Class A Common Stock</a></td>
+                        <td>428</td>
+                        <td>$106.30</td>
+                        <td>$45,496.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-08-2023</td>
+                        <td><a href="stocks/DDOG.html">Datadog, Inc. - Class A Common Stock</a></td>
+                        <td>-428</td>
+                        <td>$88.04</td>
+                        <td>-$37,681.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-08-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>16</td>
+                        <td>$2,321.00</td>
+                        <td>$37,136.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-08-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-16</td>
+                        <td>$2,281.00</td>
+                        <td>-$36,496.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-08-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>16</td>
+                        <td>$2,281.00</td>
+                        <td>$36,496.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-08-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-16</td>
+                        <td>$2,228.00</td>
+                        <td>-$35,648.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-08-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>16</td>
+                        <td>$2,228.00</td>
+                        <td>$35,648.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-08-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-16</td>
+                        <td>$1,516.00</td>
+                        <td>-$24,256.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-08-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>15</td>
+                        <td>$1,576.50</td>
+                        <td>$23,647.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-08-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-15</td>
+                        <td>$1,467.00</td>
+                        <td>-$22,005.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-08-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>15</td>
+                        <td>$1,467.00</td>
+                        <td>$22,005.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-08-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-15</td>
+                        <td>$1,432.00</td>
+                        <td>-$21,480.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-08-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>7</td>
+                        <td>$3,160.79</td>
+                        <td>$22,125.55</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-08-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-7</td>
+                        <td>$3,078.40</td>
+                        <td>-$21,548.82</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-08-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>7</td>
+                        <td>$3,078.40</td>
+                        <td>$21,548.82</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-08-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-7</td>
+                        <td>$3,025.35</td>
+                        <td>-$21,177.47</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-08-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>15</td>
+                        <td>$1,382.00</td>
+                        <td>$20,730.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-08-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-15</td>
+                        <td>$1,340.00</td>
+                        <td>-$20,100.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-08-2023</td>
+                        <td><a href="stocks/LANC.html">Lancaster Colony Corporation - Common Stock</a></td>
+                        <td>119</td>
+                        <td>$176.45</td>
+                        <td>$20,997.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-08-2023</td>
+                        <td><a href="stocks/LANC.html">Lancaster Colony Corporation - Common Stock</a></td>
+                        <td>-119</td>
+                        <td>$157.81</td>
+                        <td>-$18,779.63</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-08-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>13</td>
+                        <td>$1,433.00</td>
+                        <td>$18,629.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-08-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-13</td>
+                        <td>$1,345.00</td>
+                        <td>-$17,485.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-08-2023</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>41</td>
+                        <td>$422.74</td>
+                        <td>$17,332.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-08-2023</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>-41</td>
+                        <td>$407.15</td>
+                        <td>-$16,693.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-08-2023</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>80</td>
+                        <td>$213.62</td>
+                        <td>$17,089.77</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-08-2023</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>-80</td>
+                        <td>$208.24</td>
+                        <td>-$16,659.56</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-08-2023</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>100</td>
+                        <td>$166.57</td>
+                        <td>$16,657.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-08-2023</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>-100</td>
+                        <td>$164.11</td>
+                        <td>-$16,411.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-08-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$3,096.73</td>
+                        <td>$15,483.66</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-08-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$3,071.45</td>
+                        <td>-$15,357.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-08-2023</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>63</td>
+                        <td>$258.08</td>
+                        <td>$16,259.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-09-2023</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>-63</td>
+                        <td>$245.01</td>
+                        <td>-$15,435.63</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-09-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>9</td>
+                        <td>$1,618.00</td>
+                        <td>$14,562.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-09-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-9</td>
+                        <td>$1,550.00</td>
+                        <td>-$13,950.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-09-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>9</td>
+                        <td>$1,550.00</td>
+                        <td>$13,950.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-09-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-9</td>
+                        <td>$1,454.00</td>
+                        <td>-$13,086.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-09-2023</td>
+                        <td><a href="stocks/SAIA.html">Saia, Inc. - Common Stock</a></td>
+                        <td>31</td>
+                        <td>$438.04</td>
+                        <td>$13,579.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-09-2023</td>
+                        <td><a href="stocks/SAIA.html">Saia, Inc. - Common Stock</a></td>
+                        <td>-31</td>
+                        <td>$427.62</td>
+                        <td>-$13,256.22</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-09-2023</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>28</td>
+                        <td>$479.70</td>
+                        <td>$13,431.55</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-09-2023</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>-28</td>
+                        <td>$467.64</td>
+                        <td>-$13,093.94</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-09-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$3,139.11</td>
+                        <td>$12,556.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-09-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$3,081.94</td>
+                        <td>-$12,327.78</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-09-2023</td>
+                        <td><a href="stocks/SAIA.html">Saia, Inc. - Common Stock</a></td>
+                        <td>31</td>
+                        <td>$417.97</td>
+                        <td>$12,957.07</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-09-2023</td>
+                        <td><a href="stocks/SAIA.html">Saia, Inc. - Common Stock</a></td>
+                        <td>-31</td>
+                        <td>$413.39</td>
+                        <td>-$12,815.09</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-09-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>9</td>
+                        <td>$1,417.00</td>
+                        <td>$12,753.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-09-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-9</td>
+                        <td>$1,374.00</td>
+                        <td>-$12,366.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-09-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$3,124.17</td>
+                        <td>$12,496.69</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-09-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$3,079.09</td>
+                        <td>-$12,316.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-09-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$3,079.09</td>
+                        <td>$12,316.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-09-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$3,035.72</td>
+                        <td>-$12,142.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-09-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>9</td>
+                        <td>$1,267.00</td>
+                        <td>$11,403.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-09-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-9</td>
+                        <td>$1,223.00</td>
+                        <td>-$11,007.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-09-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>9</td>
+                        <td>$1,223.00</td>
+                        <td>$11,007.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-09-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-9</td>
+                        <td>$1,208.00</td>
+                        <td>-$10,872.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-09-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$3,064.41</td>
+                        <td>$9,193.22</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-09-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$3,027.48</td>
+                        <td>-$9,082.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-09-2023</td>
+                        <td><a href="stocks/ESLT.html">Elbit Systems Ltd. - Ordinary Shares</a></td>
+                        <td>58</td>
+                        <td>$197.81</td>
+                        <td>$11,473.13</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-09-2023</td>
+                        <td><a href="stocks/ESLT.html">Elbit Systems Ltd. - Ordinary Shares</a></td>
+                        <td>-58</td>
+                        <td>$193.06</td>
+                        <td>-$11,197.39</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-09-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>9</td>
+                        <td>$1,222.00</td>
+                        <td>$10,998.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-09-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-9</td>
+                        <td>$1,177.00</td>
+                        <td>-$10,593.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-09-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$3,071.25</td>
+                        <td>$9,213.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-09-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$3,050.60</td>
+                        <td>-$9,151.79</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-10-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$3,060.30</td>
+                        <td>$9,180.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-10-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$2,978.23</td>
+                        <td>-$8,934.69</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-10-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>10</td>
+                        <td>$1,040.00</td>
+                        <td>$10,400.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-10-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-10</td>
+                        <td>$1,014.00</td>
+                        <td>-$10,140.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-10-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$3,013.52</td>
+                        <td>$9,040.57</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-10-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$2,986.11</td>
+                        <td>-$8,958.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-10-2023</td>
+                        <td><a href="stocks/CASY.html">Caseys General Stores, Inc. - Common Stock</a></td>
+                        <td>37</td>
+                        <td>$271.49</td>
+                        <td>$10,045.08</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-10-2023</td>
+                        <td><a href="stocks/CASY.html">Caseys General Stores, Inc. - Common Stock</a></td>
+                        <td>-37</td>
+                        <td>$267.19</td>
+                        <td>-$9,885.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-10-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>10</td>
+                        <td>$989.00</td>
+                        <td>$9,890.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-10-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-10</td>
+                        <td>$898.00</td>
+                        <td>-$8,980.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-10-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$3,038.73</td>
+                        <td>$9,116.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-10-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$3,016.03</td>
+                        <td>-$9,048.08</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-10-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$3,016.03</td>
+                        <td>$9,048.08</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-10-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$2,918.18</td>
+                        <td>-$8,754.53</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-10-2023</td>
+                        <td><a href="stocks/ICLR.html">ICON plc - Ordinary Shares</a></td>
+                        <td>36</td>
+                        <td>$245.13</td>
+                        <td>$8,824.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-10-2023</td>
+                        <td><a href="stocks/ICLR.html">ICON plc - Ordinary Shares</a></td>
+                        <td>-36</td>
+                        <td>$237.48</td>
+                        <td>-$8,549.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-10-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$2,946.19</td>
+                        <td>$5,892.38</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-10-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$2,819.41</td>
+                        <td>-$5,638.83</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-10-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$2,819.41</td>
+                        <td>$5,638.83</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-10-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$2,755.08</td>
+                        <td>-$5,510.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-10-2023</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>71</td>
+                        <td>$113.98</td>
+                        <td>$8,092.58</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-10-2023</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>-71</td>
+                        <td>$82.90</td>
+                        <td>-$5,885.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-10-2023</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>104</td>
+                        <td>$57.27</td>
+                        <td>$5,956.08</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-10-2023</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-104</td>
+                        <td>$53.01</td>
+                        <td>-$5,513.56</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-10-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>7</td>
+                        <td>$732.00</td>
+                        <td>$5,124.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-10-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-7</td>
+                        <td>$669.00</td>
+                        <td>-$4,683.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-10-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>1</td>
+                        <td>$2,782.50</td>
+                        <td>$2,782.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-10-2023</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$2,713.03</td>
+                        <td>-$2,713.03</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-10-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>7</td>
+                        <td>$663.00</td>
+                        <td>$4,641.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-10-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-7</td>
+                        <td>$627.00</td>
+                        <td>-$4,389.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-10-2023</td>
+                        <td><a href="stocks/SRPT.html">Sarepta Therapeutics, Inc. - Common Stock</a></td>
+                        <td>44</td>
+                        <td>$107.65</td>
+                        <td>$4,736.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-10-2023</td>
+                        <td><a href="stocks/SRPT.html">Sarepta Therapeutics, Inc. - Common Stock</a></td>
+                        <td>-44</td>
+                        <td>$67.31</td>
+                        <td>-$2,961.64</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-10-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>4</td>
+                        <td>$624.00</td>
+                        <td>$2,496.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-11-2023</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-4</td>
+                        <td>$578.00</td>
+                        <td>-$2,312.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-11-2023</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>97</td>
+                        <td>$28.80</td>
+                        <td>$2,793.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-11-2023</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>-97</td>
+                        <td>$18.64</td>
+                        <td>-$1,808.08</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-11-2023</td>
+                        <td><a href="stocks/TEAM.html">Atlassian Corporation  - Class A Common Stock</a></td>
+                        <td>9</td>
+                        <td>$181.40</td>
+                        <td>$1,632.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-11-2023</td>
+                        <td><a href="stocks/TEAM.html">Atlassian Corporation  - Class A Common Stock</a></td>
+                        <td>-9</td>
+                        <td>$176.90</td>
+                        <td>-$1,592.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-11-2023</td>
+                        <td><a href="stocks/VTYX.html">Ventyx Biosciences, Inc. - Common Stock</a></td>
+                        <td>125</td>
+                        <td>$14.09</td>
+                        <td>$1,761.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-11-2023</td>
+                        <td><a href="stocks/VTYX.html">Ventyx Biosciences, Inc. - Common Stock</a></td>
+                        <td>-125</td>
+                        <td>$2.73</td>
+                        <td>-$341.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-11-2023</td>
+                        <td><a href="stocks/WYNN.html">Wynn Resorts, Limited - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$88.93</td>
+                        <td>$266.79</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-11-2023</td>
+                        <td><a href="stocks/WYNN.html">Wynn Resorts, Limited - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$82.94</td>
+                        <td>-$248.81</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-11-2023</td>
+                        <td><a href="stocks/ROOT.html">Root, Inc. - Common Stock</a></td>
+                        <td>31</td>
+                        <td>$10.60</td>
+                        <td>$328.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-11-2023</td>
+                        <td><a href="stocks/ROOT.html">Root, Inc. - Common Stock</a></td>
+                        <td>-31</td>
+                        <td>$9.40</td>
+                        <td>-$291.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-11-2023</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>2</td>
+                        <td>$144.60</td>
+                        <td>$289.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-11-2023</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>-2</td>
+                        <td>$136.40</td>
+                        <td>-$272.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-11-2023</td>
+                        <td><a href="stocks/CRMT.html">America's Car-Mart, Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$79.87</td>
+                        <td>$239.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-12-2023</td>
+                        <td><a href="stocks/CRMT.html">America's Car-Mart, Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$75.47</td>
+                        <td>-$226.41</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-12-2023</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>2</td>
+                        <td>$125.60</td>
+                        <td>$251.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-12-2023</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>-2</td>
+                        <td>$105.00</td>
+                        <td>-$210.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-12-2023</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>1</td>
+                        <td>$127.40</td>
+                        <td>$127.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-12-2023</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>-1</td>
+                        <td>$122.40</td>
+                        <td>-$122.40</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</div>
+</body>
+</html>
