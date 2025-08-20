@@ -1,0 +1,2357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nasdaq Trade System - BinomialSolutions</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+            crossorigin="anonymous"></script>
+    <meta name="theme-color" content="#712cf9">
+</head>
+
+<body>
+<header class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow" data-bs-theme="dark"><a
+        class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="#">Nasdaq Trade system</a>
+</header>
+
+
+<div class="container-fluid">
+    <div class="row">
+        
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <a href="GameResult.html">Back</a>
+            <h1>BinomialSolutions</h1>
+            <img src="BinomialSolutions.png" class="img-fluid">
+            <div class="table-responsive small">
+                <table class="table table-striped table-sm">
+                    <thead>
+                    <tr>
+                        <th scope="col">ExecutedOn</th>
+                        <th scope="col">Company</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">AtPrice</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr scope="row">
+                        <td>03-01-2023</td>
+                        <td><a href="stocks/ONC.html">BeOne Medicines Ltd. - American Depositary Shares</a></td>
+                        <td>4</td>
+                        <td>$226.63</td>
+                        <td>$906.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-01-2023</td>
+                        <td><a href="stocks/ONC.html">BeOne Medicines Ltd. - American Depositary Shares</a></td>
+                        <td>-4</td>
+                        <td>$242.90</td>
+                        <td>-$971.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-01-2023</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>1</td>
+                        <td>$826.74</td>
+                        <td>$826.74</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-01-2023</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$834.29</td>
+                        <td>-$834.29</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-01-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>1</td>
+                        <td>$749.20</td>
+                        <td>$749.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-01-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$781.03</td>
+                        <td>-$781.03</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-01-2023</td>
+                        <td><a href="stocks/ICLR.html">ICON plc - Ordinary Shares</a></td>
+                        <td>5</td>
+                        <td>$201.14</td>
+                        <td>$1,005.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-01-2023</td>
+                        <td><a href="stocks/ICLR.html">ICON plc - Ordinary Shares</a></td>
+                        <td>-5</td>
+                        <td>$216.83</td>
+                        <td>-$1,084.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-01-2023</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$285.48</td>
+                        <td>$1,141.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-01-2023</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$302.15</td>
+                        <td>-$1,208.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-01-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$396.56</td>
+                        <td>$1,189.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-01-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$418.47</td>
+                        <td>-$1,255.41</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-01-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>1</td>
+                        <td>$812.22</td>
+                        <td>$812.22</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-01-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$822.59</td>
+                        <td>-$822.59</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-01-2023</td>
+                        <td><a href="stocks/AMED.html">Amedisys Inc - Common Stock</a></td>
+                        <td>15</td>
+                        <td>$85.61</td>
+                        <td>$1,284.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-01-2023</td>
+                        <td><a href="stocks/AMED.html">Amedisys Inc - Common Stock</a></td>
+                        <td>-15</td>
+                        <td>$92.50</td>
+                        <td>-$1,387.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-01-2023</td>
+                        <td><a href="stocks/ONC.html">BeOne Medicines Ltd. - American Depositary Shares</a></td>
+                        <td>5</td>
+                        <td>$265.00</td>
+                        <td>$1,325.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-01-2023</td>
+                        <td><a href="stocks/ONC.html">BeOne Medicines Ltd. - American Depositary Shares</a></td>
+                        <td>-5</td>
+                        <td>$274.50</td>
+                        <td>-$1,372.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-01-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$381.43</td>
+                        <td>$1,144.29</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-01-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$405.99</td>
+                        <td>-$1,217.97</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-01-2023</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>14</td>
+                        <td>$104.00</td>
+                        <td>$1,456.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-01-2023</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-14</td>
+                        <td>$118.00</td>
+                        <td>-$1,652.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-01-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$439.73</td>
+                        <td>$1,319.19</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-01-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$448.90</td>
+                        <td>-$1,346.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-01-2023</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$396.07</td>
+                        <td>$1,584.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-01-2023</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$406.56</td>
+                        <td>-$1,626.26</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-01-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$455.95</td>
+                        <td>$1,367.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-01-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$472.15</td>
+                        <td>-$1,416.45</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-01-2023</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>6</td>
+                        <td>$301.87</td>
+                        <td>$1,811.22</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-01-2023</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>-6</td>
+                        <td>$319.13</td>
+                        <td>-$1,914.78</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-01-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$462.64</td>
+                        <td>$1,850.56</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-02-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$526.08</td>
+                        <td>-$2,104.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-02-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$526.08</td>
+                        <td>$2,104.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-02-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$548.99</td>
+                        <td>-$2,195.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-02-2023</td>
+                        <td><a href="stocks/ASPS.html">Altisource Portfolio Solutions S.A. - Common Stock</a></td>
+                        <td>49</td>
+                        <td>$46.48</td>
+                        <td>$2,277.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-02-2023</td>
+                        <td><a href="stocks/ASPS.html">Altisource Portfolio Solutions S.A. - Common Stock</a></td>
+                        <td>-49</td>
+                        <td>$57.84</td>
+                        <td>-$2,834.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-02-2023</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>14</td>
+                        <td>$201.79</td>
+                        <td>$2,825.11</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-02-2023</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>-14</td>
+                        <td>$216.85</td>
+                        <td>-$3,035.93</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-02-2023</td>
+                        <td><a href="stocks/CME.html">CME Group Inc. - Class A Common Stock</a></td>
+                        <td>19</td>
+                        <td>$161.22</td>
+                        <td>$3,063.11</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-02-2023</td>
+                        <td><a href="stocks/CME.html">CME Group Inc. - Class A Common Stock</a></td>
+                        <td>-19</td>
+                        <td>$169.95</td>
+                        <td>-$3,229.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-02-2023</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$787.36</td>
+                        <td>$3,149.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-02-2023</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$817.00</td>
+                        <td>-$3,268.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-02-2023</td>
+                        <td><a href="stocks/ENLT.html">Enlight Renewable Energy Ltd. - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$2.60</td>
+                        <td>$2,600.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-02-2023</td>
+                        <td><a href="stocks/ENLT.html">Enlight Renewable Energy Ltd. - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$17.75</td>
+                        <td>-$17,750.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-02-2023</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>88</td>
+                        <td>$209.50</td>
+                        <td>$18,435.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-02-2023</td>
+                        <td><a href="stocks/CAR.html">Avis Budget Group, Inc. - Common Stock</a></td>
+                        <td>-88</td>
+                        <td>$231.83</td>
+                        <td>-$20,400.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-02-2023</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>64</td>
+                        <td>$315.43</td>
+                        <td>$20,187.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-02-2023</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>-64</td>
+                        <td>$343.98</td>
+                        <td>-$22,014.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-02-2023</td>
+                        <td><a href="stocks/CROX.html">Crocs, Inc. - Common Stock</a></td>
+                        <td>177</td>
+                        <td>$125.67</td>
+                        <td>$22,243.59</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-02-2023</td>
+                        <td><a href="stocks/CROX.html">Crocs, Inc. - Common Stock</a></td>
+                        <td>-177</td>
+                        <td>$131.20</td>
+                        <td>-$23,222.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-02-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>31</td>
+                        <td>$742.48</td>
+                        <td>$23,016.74</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-02-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-31</td>
+                        <td>$754.71</td>
+                        <td>-$23,395.87</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-02-2023</td>
+                        <td><a href="stocks/PANW.html">Palo Alto Networks, Inc. - Common Stock</a></td>
+                        <td>283</td>
+                        <td>$83.44</td>
+                        <td>$23,614.93</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-02-2023</td>
+                        <td><a href="stocks/PANW.html">Palo Alto Networks, Inc. - Common Stock</a></td>
+                        <td>-283</td>
+                        <td>$93.88</td>
+                        <td>-$26,566.63</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-02-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>36</td>
+                        <td>$728.13</td>
+                        <td>$26,212.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-02-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-36</td>
+                        <td>$736.04</td>
+                        <td>-$26,497.56</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-02-2023</td>
+                        <td><a href="stocks/LIN.html">Linde plc - Ordinary Shares</a></td>
+                        <td>83</td>
+                        <td>$321.32</td>
+                        <td>$26,669.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-02-2023</td>
+                        <td><a href="stocks/LIN.html">Linde plc - Ordinary Shares</a></td>
+                        <td>-83</td>
+                        <td>$336.58</td>
+                        <td>-$27,936.53</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-02-2023</td>
+                        <td><a href="stocks/ONC.html">BeOne Medicines Ltd. - American Depositary Shares</a></td>
+                        <td>130</td>
+                        <td>$216.03</td>
+                        <td>$28,083.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-02-2023</td>
+                        <td><a href="stocks/ONC.html">BeOne Medicines Ltd. - American Depositary Shares</a></td>
+                        <td>-130</td>
+                        <td>$224.63</td>
+                        <td>-$29,201.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-02-2023</td>
+                        <td><a href="stocks/SRPT.html">Sarepta Therapeutics, Inc. - Common Stock</a></td>
+                        <td>239</td>
+                        <td>$122.13</td>
+                        <td>$29,189.07</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-03-2023</td>
+                        <td><a href="stocks/SRPT.html">Sarepta Therapeutics, Inc. - Common Stock</a></td>
+                        <td>-239</td>
+                        <td>$145.63</td>
+                        <td>-$34,805.57</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-03-2023</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>42</td>
+                        <td>$824.22</td>
+                        <td>$34,617.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-03-2023</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>-42</td>
+                        <td>$840.89</td>
+                        <td>-$35,317.38</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-03-2023</td>
+                        <td><a href="stocks/ILMN.html">Illumina, Inc. - Common Stock</a></td>
+                        <td>177</td>
+                        <td>$200.89</td>
+                        <td>$35,558.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-03-2023</td>
+                        <td><a href="stocks/ILMN.html">Illumina, Inc. - Common Stock</a></td>
+                        <td>-177</td>
+                        <td>$215.18</td>
+                        <td>-$38,087.71</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-03-2023</td>
+                        <td><a href="stocks/AVAV.html">AeroVironment, Inc. - Common Stock</a></td>
+                        <td>435</td>
+                        <td>$87.57</td>
+                        <td>$38,092.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-03-2023</td>
+                        <td><a href="stocks/AVAV.html">AeroVironment, Inc. - Common Stock</a></td>
+                        <td>-435</td>
+                        <td>$91.28</td>
+                        <td>-$39,706.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-03-2023</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>368</td>
+                        <td>$108.00</td>
+                        <td>$39,744.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-03-2023</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>-368</td>
+                        <td>$118.80</td>
+                        <td>-$43,718.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-03-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>130</td>
+                        <td>$334.23</td>
+                        <td>$43,449.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-03-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-130</td>
+                        <td>$341.44</td>
+                        <td>-$44,387.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-03-2023</td>
+                        <td><a href="stocks/AMGN.html">Amgen Inc. - Common Stock</a></td>
+                        <td>212</td>
+                        <td>$210.12</td>
+                        <td>$44,546.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-03-2023</td>
+                        <td><a href="stocks/AMGN.html">Amgen Inc. - Common Stock</a></td>
+                        <td>-212</td>
+                        <td>$212.06</td>
+                        <td>-$44,956.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-03-2023</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>116</td>
+                        <td>$385.88</td>
+                        <td>$44,761.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-03-2023</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>-116</td>
+                        <td>$402.38</td>
+                        <td>-$46,675.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-03-2023</td>
+                        <td><a href="stocks/ONC.html">BeOne Medicines Ltd. - American Depositary Shares</a></td>
+                        <td>203</td>
+                        <td>$231.32</td>
+                        <td>$46,957.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-03-2023</td>
+                        <td><a href="stocks/ONC.html">BeOne Medicines Ltd. - American Depositary Shares</a></td>
+                        <td>-203</td>
+                        <td>$235.95</td>
+                        <td>-$47,897.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-03-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>143</td>
+                        <td>$333.61</td>
+                        <td>$47,706.23</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-03-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-143</td>
+                        <td>$353.29</td>
+                        <td>-$50,520.47</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-03-2023</td>
+                        <td><a href="stocks/RGLD.html">Royal Gold, Inc. - Common Stock</a></td>
+                        <td>434</td>
+                        <td>$116.71</td>
+                        <td>$50,650.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-03-2023</td>
+                        <td><a href="stocks/RGLD.html">Royal Gold, Inc. - Common Stock</a></td>
+                        <td>-434</td>
+                        <td>$121.94</td>
+                        <td>-$52,923.89</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-03-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>95</td>
+                        <td>$557.89</td>
+                        <td>$52,999.38</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-03-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-95</td>
+                        <td>$585.01</td>
+                        <td>-$55,576.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-03-2023</td>
+                        <td><a href="stocks/FORTY.html">Formula Systems (1985) Ltd. - American Depositary Shares</a></td>
+                        <td>883</td>
+                        <td>$62.92</td>
+                        <td>$55,555.37</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-03-2023</td>
+                        <td><a href="stocks/FORTY.html">Formula Systems (1985) Ltd. - American Depositary Shares</a></td>
+                        <td>-883</td>
+                        <td>$66.13</td>
+                        <td>-$58,391.91</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-03-2023</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>143</td>
+                        <td>$408.20</td>
+                        <td>$58,372.63</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-03-2023</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>-143</td>
+                        <td>$426.21</td>
+                        <td>-$60,948.74</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-03-2023</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>76</td>
+                        <td>$801.38</td>
+                        <td>$60,904.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-03-2023</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>-76</td>
+                        <td>$810.76</td>
+                        <td>-$61,617.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-03-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>69</td>
+                        <td>$888.52</td>
+                        <td>$61,307.87</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-03-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-69</td>
+                        <td>$908.87</td>
+                        <td>-$62,711.86</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-03-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>69</td>
+                        <td>$908.87</td>
+                        <td>$62,711.86</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-03-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-69</td>
+                        <td>$933.82</td>
+                        <td>-$64,433.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-03-2023</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>77</td>
+                        <td>$832.08</td>
+                        <td>$64,070.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-03-2023</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>-77</td>
+                        <td>$841.50</td>
+                        <td>-$64,795.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-03-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>70</td>
+                        <td>$926.41</td>
+                        <td>$64,848.53</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-03-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-70</td>
+                        <td>$965.40</td>
+                        <td>-$67,577.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-04-2023</td>
+                        <td><a href="stocks/AVAV.html">AeroVironment, Inc. - Common Stock</a></td>
+                        <td>742</td>
+                        <td>$91.95</td>
+                        <td>$68,226.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-04-2023</td>
+                        <td><a href="stocks/AVAV.html">AeroVironment, Inc. - Common Stock</a></td>
+                        <td>-742</td>
+                        <td>$101.56</td>
+                        <td>-$75,357.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-04-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>79</td>
+                        <td>$948.83</td>
+                        <td>$74,957.47</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-04-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-79</td>
+                        <td>$988.97</td>
+                        <td>-$78,128.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-04-2023</td>
+                        <td><a href="stocks/ONC.html">BeOne Medicines Ltd. - American Depositary Shares</a></td>
+                        <td>370</td>
+                        <td>$212.00</td>
+                        <td>$78,440.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-04-2023</td>
+                        <td><a href="stocks/ONC.html">BeOne Medicines Ltd. - American Depositary Shares</a></td>
+                        <td>-370</td>
+                        <td>$238.45</td>
+                        <td>-$88,226.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-04-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>203</td>
+                        <td>$433.41</td>
+                        <td>$87,982.23</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-04-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-203</td>
+                        <td>$456.16</td>
+                        <td>-$92,600.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-04-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>203</td>
+                        <td>$456.16</td>
+                        <td>$92,600.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-04-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-203</td>
+                        <td>$463.24</td>
+                        <td>-$94,037.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-04-2023</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>331</td>
+                        <td>$284.96</td>
+                        <td>$94,321.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-04-2023</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>-331</td>
+                        <td>$306.89</td>
+                        <td>-$101,580.59</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-04-2023</td>
+                        <td><a href="stocks/QDEL.html">QuidelOrtho Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$89.67</td>
+                        <td>$89,670.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-04-2023</td>
+                        <td><a href="stocks/QDEL.html">QuidelOrtho Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$94.16</td>
+                        <td>-$94,160.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-04-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>107</td>
+                        <td>$990.09</td>
+                        <td>$105,939.57</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-04-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-107</td>
+                        <td>$1,005.82</td>
+                        <td>-$107,623.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-04-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>107</td>
+                        <td>$1,005.82</td>
+                        <td>$107,623.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-04-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-107</td>
+                        <td>$1,054.98</td>
+                        <td>-$112,883.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-04-2023</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>236</td>
+                        <td>$478.24</td>
+                        <td>$112,865.06</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-04-2023</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>-236</td>
+                        <td>$487.45</td>
+                        <td>-$115,038.03</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-04-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>303</td>
+                        <td>$380.01</td>
+                        <td>$115,143.03</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-04-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-303</td>
+                        <td>$389.37</td>
+                        <td>-$117,979.11</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-04-2023</td>
+                        <td><a href="stocks/ARWR.html">Arrowhead Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$30.02</td>
+                        <td>$30,020.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-04-2023</td>
+                        <td><a href="stocks/ARWR.html">Arrowhead Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$33.58</td>
+                        <td>-$33,580.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-04-2023</td>
+                        <td><a href="stocks/MSFT.html">Microsoft Corporation - Common Stock</a></td>
+                        <td>449</td>
+                        <td>$270.61</td>
+                        <td>$121,504.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-04-2023</td>
+                        <td><a href="stocks/MSFT.html">Microsoft Corporation - Common Stock</a></td>
+                        <td>-449</td>
+                        <td>$290.21</td>
+                        <td>-$130,305.64</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-04-2023</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>145</td>
+                        <td>$894.20</td>
+                        <td>$129,659.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-04-2023</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>-145</td>
+                        <td>$915.67</td>
+                        <td>-$132,772.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-04-2023</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>315</td>
+                        <td>$423.69</td>
+                        <td>$133,461.03</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-04-2023</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>-315</td>
+                        <td>$438.29</td>
+                        <td>-$138,060.47</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-05-2023</td>
+                        <td><a href="stocks/WWD.html">Woodward, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$97.23</td>
+                        <td>$97,231.17</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-05-2023</td>
+                        <td><a href="stocks/WWD.html">Woodward, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$112.18</td>
+                        <td>-$112,184.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-05-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>356</td>
+                        <td>$430.12</td>
+                        <td>$153,122.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-05-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-356</td>
+                        <td>$450.98</td>
+                        <td>-$160,548.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-05-2023</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>608</td>
+                        <td>$263.82</td>
+                        <td>$160,402.56</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-05-2023</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>-608</td>
+                        <td>$281.22</td>
+                        <td>-$170,981.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-05-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>180</td>
+                        <td>$949.94</td>
+                        <td>$170,989.17</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-05-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-180</td>
+                        <td>$995.78</td>
+                        <td>-$179,241.11</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-05-2023</td>
+                        <td><a href="stocks/ICUI.html">ICU Medical, Inc. - Common Stock</a></td>
+                        <td>974</td>
+                        <td>$184.04</td>
+                        <td>$179,254.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-05-2023</td>
+                        <td><a href="stocks/ICUI.html">ICU Medical, Inc. - Common Stock</a></td>
+                        <td>-974</td>
+                        <td>$209.15</td>
+                        <td>-$203,712.09</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-05-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>187</td>
+                        <td>$1,085.20</td>
+                        <td>$202,932.46</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-05-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-187</td>
+                        <td>$1,166.05</td>
+                        <td>-$218,050.49</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-05-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>187</td>
+                        <td>$1,166.05</td>
+                        <td>$218,050.49</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-05-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-187</td>
+                        <td>$1,224.12</td>
+                        <td>-$228,910.83</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-05-2023</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>776</td>
+                        <td>$296.06</td>
+                        <td>$229,742.56</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-05-2023</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>-776</td>
+                        <td>$301.85</td>
+                        <td>-$234,235.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-05-2023</td>
+                        <td><a href="stocks/AMD.html">Advanced Micro Devices, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$97.40</td>
+                        <td>$97,400.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-05-2023</td>
+                        <td><a href="stocks/AMD.html">Advanced Micro Devices, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$101.48</td>
+                        <td>-$101,480.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-05-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>190</td>
+                        <td>$1,251.34</td>
+                        <td>$237,755.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-05-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-190</td>
+                        <td>$1,308.27</td>
+                        <td>-$248,571.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-05-2023</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>584</td>
+                        <td>$426.35</td>
+                        <td>$248,989.22</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-05-2023</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>-584</td>
+                        <td>$441.95</td>
+                        <td>-$258,098.74</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-05-2023</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>274</td>
+                        <td>$941.80</td>
+                        <td>$258,053.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-05-2023</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>-274</td>
+                        <td>$954.30</td>
+                        <td>-$261,478.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-05-2023</td>
+                        <td><a href="stocks/NDSN.html">Nordson Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$211.70</td>
+                        <td>$211,699.42</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-05-2023</td>
+                        <td><a href="stocks/NDSN.html">Nordson Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$214.97</td>
+                        <td>-$214,969.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-05-2023</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>290</td>
+                        <td>$911.99</td>
+                        <td>$264,477.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-05-2023</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>-290</td>
+                        <td>$928.94</td>
+                        <td>-$269,392.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-05-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>738</td>
+                        <td>$365.76</td>
+                        <td>$269,930.89</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-05-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-738</td>
+                        <td>$392.06</td>
+                        <td>-$289,340.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-05-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>738</td>
+                        <td>$392.06</td>
+                        <td>$289,340.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-05-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-738</td>
+                        <td>$415.39</td>
+                        <td>-$306,557.83</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-05-2023</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>764</td>
+                        <td>$400.91</td>
+                        <td>$306,295.29</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-05-2023</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>-764</td>
+                        <td>$413.77</td>
+                        <td>-$316,123.23</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-05-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>255</td>
+                        <td>$1,238.06</td>
+                        <td>$315,704.26</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-06-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-255</td>
+                        <td>$1,260.52</td>
+                        <td>-$321,432.57</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-06-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>255</td>
+                        <td>$1,260.52</td>
+                        <td>$321,432.57</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-06-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-255</td>
+                        <td>$1,288.51</td>
+                        <td>-$328,570.86</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-06-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>263</td>
+                        <td>$1,247.45</td>
+                        <td>$328,078.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-06-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-263</td>
+                        <td>$1,279.26</td>
+                        <td>-$336,445.74</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-06-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>677</td>
+                        <td>$498.52</td>
+                        <td>$337,498.03</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-06-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-677</td>
+                        <td>$512.31</td>
+                        <td>-$346,833.87</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-06-2023</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>392</td>
+                        <td>$883.11</td>
+                        <td>$346,179.11</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-06-2023</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>-392</td>
+                        <td>$906.68</td>
+                        <td>-$355,418.56</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-06-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>811</td>
+                        <td>$439.03</td>
+                        <td>$356,053.33</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-06-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-811</td>
+                        <td>$454.00</td>
+                        <td>-$368,194.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-06-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>292</td>
+                        <td>$1,259.33</td>
+                        <td>$367,723.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-06-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-292</td>
+                        <td>$1,295.33</td>
+                        <td>-$378,237.17</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-06-2023</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>751</td>
+                        <td>$504.35</td>
+                        <td>$378,766.42</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-06-2023</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>-751</td>
+                        <td>$509.35</td>
+                        <td>-$382,524.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-06-2023</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>420</td>
+                        <td>$909.64</td>
+                        <td>$382,048.81</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-06-2023</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>-420</td>
+                        <td>$927.49</td>
+                        <td>-$389,545.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-06-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>794</td>
+                        <td>$490.91</td>
+                        <td>$389,782.54</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-06-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-794</td>
+                        <td>$495.18</td>
+                        <td>-$393,172.91</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-06-2023</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>428</td>
+                        <td>$917.49</td>
+                        <td>$392,685.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-06-2023</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>-428</td>
+                        <td>$937.93</td>
+                        <td>-$401,434.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-06-2023</td>
+                        <td><a href="stocks/MSFT.html">Microsoft Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$328.45</td>
+                        <td>$328,452.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-06-2023</td>
+                        <td><a href="stocks/MSFT.html">Microsoft Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$334.51</td>
+                        <td>-$334,508.54</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-06-2023</td>
+                        <td><a href="stocks/LANC.html">Lancaster Colony Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$185.09</td>
+                        <td>$185,089.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-06-2023</td>
+                        <td><a href="stocks/LANC.html">Lancaster Colony Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$193.43</td>
+                        <td>-$193,431.78</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-06-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>853</td>
+                        <td>$488.06</td>
+                        <td>$416,315.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-06-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-853</td>
+                        <td>$505.30</td>
+                        <td>-$431,020.89</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-07-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>340</td>
+                        <td>$1,267.69</td>
+                        <td>$431,013.58</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-07-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-340</td>
+                        <td>$1,254.77</td>
+                        <td>-$426,622.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-07-2023</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>822</td>
+                        <td>$519.18</td>
+                        <td>$426,765.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-07-2023</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>-822</td>
+                        <td>$507.28</td>
+                        <td>-$416,981.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-07-2023</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>430</td>
+                        <td>$969.23</td>
+                        <td>$416,768.89</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-07-2023</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>-430</td>
+                        <td>$956.06</td>
+                        <td>-$411,105.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-07-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>717</td>
+                        <td>$573.28</td>
+                        <td>$411,041.78</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-07-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-717</td>
+                        <td>$554.67</td>
+                        <td>-$397,698.38</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-07-2023</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>412</td>
+                        <td>$965.62</td>
+                        <td>$397,835.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-07-2023</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>-412</td>
+                        <td>$919.61</td>
+                        <td>-$378,879.31</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-08-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>685</td>
+                        <td>$553.10</td>
+                        <td>$378,873.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-08-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-685</td>
+                        <td>$483.48</td>
+                        <td>-$331,183.81</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-08-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>223</td>
+                        <td>$1,481.49</td>
+                        <td>$330,371.78</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-08-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-223</td>
+                        <td>$1,459.26</td>
+                        <td>-$325,415.39</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-08-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>221</td>
+                        <td>$1,477.59</td>
+                        <td>$326,546.63</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-08-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-221</td>
+                        <td>$1,445.82</td>
+                        <td>-$319,526.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-08-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>634</td>
+                        <td>$503.75</td>
+                        <td>$319,377.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-08-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-634</td>
+                        <td>$496.65</td>
+                        <td>-$314,876.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-08-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>626</td>
+                        <td>$502.92</td>
+                        <td>$314,827.93</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-08-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-626</td>
+                        <td>$493.50</td>
+                        <td>-$308,931.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-08-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>213</td>
+                        <td>$1,449.96</td>
+                        <td>$308,841.63</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-08-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-213</td>
+                        <td>$1,418.76</td>
+                        <td>-$302,196.14</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-08-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>213</td>
+                        <td>$1,418.76</td>
+                        <td>$302,196.14</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-08-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-213</td>
+                        <td>$1,393.68</td>
+                        <td>-$296,853.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-08-2023</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>312</td>
+                        <td>$951.06</td>
+                        <td>$296,730.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-08-2023</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>-312</td>
+                        <td>$931.67</td>
+                        <td>-$290,681.03</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-08-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>590</td>
+                        <td>$493.09</td>
+                        <td>$290,923.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-08-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-590</td>
+                        <td>$488.59</td>
+                        <td>-$288,268.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-08-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>209</td>
+                        <td>$1,375.50</td>
+                        <td>$287,479.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-08-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-209</td>
+                        <td>$1,345.93</td>
+                        <td>-$281,299.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-08-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>531</td>
+                        <td>$530.71</td>
+                        <td>$281,807.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-08-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-531</td>
+                        <td>$512.43</td>
+                        <td>-$272,100.33</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-08-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>197</td>
+                        <td>$1,382.16</td>
+                        <td>$272,285.82</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-08-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-197</td>
+                        <td>$1,353.65</td>
+                        <td>-$266,668.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-08-2023</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>280</td>
+                        <td>$952.15</td>
+                        <td>$266,602.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-08-2023</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>-280</td>
+                        <td>$939.70</td>
+                        <td>-$263,116.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-09-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>198</td>
+                        <td>$1,330.05</td>
+                        <td>$263,349.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-09-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-198</td>
+                        <td>$1,317.48</td>
+                        <td>-$260,861.81</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-09-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>522</td>
+                        <td>$499.93</td>
+                        <td>$260,963.46</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-09-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-522</td>
+                        <td>$484.48</td>
+                        <td>-$252,898.57</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-09-2023</td>
+                        <td><a href="stocks/ICLR.html">ICON plc - Ordinary Shares</a></td>
+                        <td>979</td>
+                        <td>$258.12</td>
+                        <td>$252,699.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-09-2023</td>
+                        <td><a href="stocks/ICLR.html">ICON plc - Ordinary Shares</a></td>
+                        <td>-979</td>
+                        <td>$250.13</td>
+                        <td>-$244,877.27</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-09-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>434</td>
+                        <td>$564.50</td>
+                        <td>$244,993.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-09-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-434</td>
+                        <td>$542.21</td>
+                        <td>-$235,319.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-09-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>175</td>
+                        <td>$1,343.02</td>
+                        <td>$235,028.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-09-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-175</td>
+                        <td>$1,335.54</td>
+                        <td>-$233,719.59</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-09-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>173</td>
+                        <td>$1,347.02</td>
+                        <td>$233,034.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-09-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-173</td>
+                        <td>$1,308.90</td>
+                        <td>-$226,440.17</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-09-2023</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>430</td>
+                        <td>$529.10</td>
+                        <td>$227,512.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-09-2023</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>-430</td>
+                        <td>$523.34</td>
+                        <td>-$225,037.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-09-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>420</td>
+                        <td>$535.78</td>
+                        <td>$225,027.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-09-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-420</td>
+                        <td>$513.88</td>
+                        <td>-$215,829.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-09-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>157</td>
+                        <td>$1,370.62</td>
+                        <td>$215,187.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-09-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-157</td>
+                        <td>$1,360.83</td>
+                        <td>-$213,649.94</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-09-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>156</td>
+                        <td>$1,371.68</td>
+                        <td>$213,982.56</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-09-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-156</td>
+                        <td>$1,340.07</td>
+                        <td>-$209,050.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-09-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>433</td>
+                        <td>$483.54</td>
+                        <td>$209,372.82</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-09-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-433</td>
+                        <td>$477.79</td>
+                        <td>-$206,883.07</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-09-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>433</td>
+                        <td>$476.82</td>
+                        <td>$206,463.06</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-09-2023</td>
+                        <td><a href="stocks/CACC.html">Credit Acceptance Corporation - Common Stock</a></td>
+                        <td>-433</td>
+                        <td>$466.74</td>
+                        <td>-$202,098.42</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-09-2023</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>220</td>
+                        <td>$917.41</td>
+                        <td>$201,830.19</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-09-2023</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>-220</td>
+                        <td>$908.86</td>
+                        <td>-$199,949.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-10-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>151</td>
+                        <td>$1,326.21</td>
+                        <td>$200,258.37</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-10-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-151</td>
+                        <td>$1,281.36</td>
+                        <td>-$193,485.54</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-10-2023</td>
+                        <td><a href="stocks/LIN.html">Linde plc - Ordinary Shares</a></td>
+                        <td>523</td>
+                        <td>$370.47</td>
+                        <td>$193,757.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-10-2023</td>
+                        <td><a href="stocks/LIN.html">Linde plc - Ordinary Shares</a></td>
+                        <td>-523</td>
+                        <td>$361.91</td>
+                        <td>-$189,279.94</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-10-2023</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>343</td>
+                        <td>$551.28</td>
+                        <td>$189,089.45</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-10-2023</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>-343</td>
+                        <td>$539.68</td>
+                        <td>-$185,108.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-10-2023</td>
+                        <td><a href="stocks/TEAM.html">Atlassian Corporation  - Class A Common Stock</a></td>
+                        <td>900</td>
+                        <td>$206.00</td>
+                        <td>$185,400.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-10-2023</td>
+                        <td><a href="stocks/TEAM.html">Atlassian Corporation  - Class A Common Stock</a></td>
+                        <td>-900</td>
+                        <td>$199.45</td>
+                        <td>-$179,505.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-10-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>130</td>
+                        <td>$1,380.68</td>
+                        <td>$179,488.63</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-10-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-130</td>
+                        <td>$1,338.82</td>
+                        <td>-$174,046.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-10-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>311</td>
+                        <td>$559.63</td>
+                        <td>$174,044.93</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-10-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-311</td>
+                        <td>$548.76</td>
+                        <td>-$170,664.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-10-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>123</td>
+                        <td>$1,378.31</td>
+                        <td>$169,531.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-10-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-123</td>
+                        <td>$1,369.98</td>
+                        <td>-$168,508.11</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-10-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>123</td>
+                        <td>$1,369.98</td>
+                        <td>$168,508.11</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-10-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-123</td>
+                        <td>$1,347.21</td>
+                        <td>-$165,706.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-10-2023</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>179</td>
+                        <td>$930.50</td>
+                        <td>$166,559.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-10-2023</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>-179</td>
+                        <td>$898.39</td>
+                        <td>-$160,811.81</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-10-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>119</td>
+                        <td>$1,346.56</td>
+                        <td>$160,240.05</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-10-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-119</td>
+                        <td>$1,299.77</td>
+                        <td>-$154,672.07</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-10-2023</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>177</td>
+                        <td>$878.67</td>
+                        <td>$155,524.59</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-10-2023</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>-177</td>
+                        <td>$872.00</td>
+                        <td>-$154,344.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-10-2023</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>308</td>
+                        <td>$501.10</td>
+                        <td>$154,339.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-10-2023</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>-308</td>
+                        <td>$478.53</td>
+                        <td>-$147,386.08</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-10-2023</td>
+                        <td><a href="stocks/MSFT.html">Microsoft Corporation - Common Stock</a></td>
+                        <td>438</td>
+                        <td>$336.16</td>
+                        <td>$147,239.86</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-10-2023</td>
+                        <td><a href="stocks/MSFT.html">Microsoft Corporation - Common Stock</a></td>
+                        <td>-438</td>
+                        <td>$323.55</td>
+                        <td>-$141,716.27</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-10-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>101</td>
+                        <td>$1,404.86</td>
+                        <td>$141,890.46</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-10-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-101</td>
+                        <td>$1,339.35</td>
+                        <td>-$135,274.79</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-10-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>98</td>
+                        <td>$1,371.36</td>
+                        <td>$134,392.84</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-11-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-98</td>
+                        <td>$1,346.90</td>
+                        <td>-$131,996.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-11-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>93</td>
+                        <td>$1,418.55</td>
+                        <td>$131,925.38</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-11-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-93</td>
+                        <td>$1,398.76</td>
+                        <td>-$130,084.47</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-11-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>93</td>
+                        <td>$1,398.76</td>
+                        <td>$130,084.47</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-11-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-93</td>
+                        <td>$1,389.76</td>
+                        <td>-$129,247.64</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-11-2023</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>130</td>
+                        <td>$995.92</td>
+                        <td>$129,469.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-11-2023</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>-130</td>
+                        <td>$982.96</td>
+                        <td>-$127,784.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-11-2023</td>
+                        <td><a href="stocks/ERIE.html">Erie Indemnity Company - Class A Common Stock</a></td>
+                        <td>454</td>
+                        <td>$282.56</td>
+                        <td>$128,283.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-11-2023</td>
+                        <td><a href="stocks/ERIE.html">Erie Indemnity Company - Class A Common Stock</a></td>
+                        <td>-454</td>
+                        <td>$272.46</td>
+                        <td>-$123,698.66</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-11-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>84</td>
+                        <td>$1,468.28</td>
+                        <td>$123,335.71</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-11-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-84</td>
+                        <td>$1,440.94</td>
+                        <td>-$121,038.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-11-2023</td>
+                        <td><a href="stocks/MSFT.html">Microsoft Corporation - Common Stock</a></td>
+                        <td>327</td>
+                        <td>$371.95</td>
+                        <td>$121,626.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-11-2023</td>
+                        <td><a href="stocks/MSFT.html">Microsoft Corporation - Common Stock</a></td>
+                        <td>-327</td>
+                        <td>$365.70</td>
+                        <td>-$119,583.53</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-11-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>82</td>
+                        <td>$1,445.23</td>
+                        <td>$118,508.86</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-11-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-82</td>
+                        <td>$1,425.91</td>
+                        <td>-$116,924.78</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-11-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>82</td>
+                        <td>$1,425.91</td>
+                        <td>$116,924.78</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-11-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-82</td>
+                        <td>$1,409.73</td>
+                        <td>-$115,598.08</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-11-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>235</td>
+                        <td>$495.77</td>
+                        <td>$116,505.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-11-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-235</td>
+                        <td>$445.34</td>
+                        <td>-$104,654.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-11-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>235</td>
+                        <td>$445.34</td>
+                        <td>$104,654.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-11-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-235</td>
+                        <td>$435.92</td>
+                        <td>-$102,441.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-12-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>69</td>
+                        <td>$1,468.81</td>
+                        <td>$101,347.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-12-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-69</td>
+                        <td>$1,443.50</td>
+                        <td>-$99,601.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-12-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>69</td>
+                        <td>$1,443.50</td>
+                        <td>$99,601.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-12-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-69</td>
+                        <td>$1,406.80</td>
+                        <td>-$97,069.46</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-12-2023</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>99</td>
+                        <td>$985.20</td>
+                        <td>$97,534.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-12-2023</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>-99</td>
+                        <td>$953.71</td>
+                        <td>-$94,417.29</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-12-2023</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>99</td>
+                        <td>$953.71</td>
+                        <td>$94,417.29</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-12-2023</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>-99</td>
+                        <td>$945.88</td>
+                        <td>-$93,642.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-12-2023</td>
+                        <td><a href="stocks/LGIH.html">LGI Homes, Inc. - Common Stock</a></td>
+                        <td>801</td>
+                        <td>$117.93</td>
+                        <td>$94,461.93</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-12-2023</td>
+                        <td><a href="stocks/LGIH.html">LGI Homes, Inc. - Common Stock</a></td>
+                        <td>-801</td>
+                        <td>$113.99</td>
+                        <td>-$91,305.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-12-2023</td>
+                        <td><a href="stocks/LIN.html">Linde plc - Ordinary Shares</a></td>
+                        <td>218</td>
+                        <td>$418.84</td>
+                        <td>$91,307.27</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-12-2023</td>
+                        <td><a href="stocks/LIN.html">Linde plc - Ordinary Shares</a></td>
+                        <td>-218</td>
+                        <td>$401.19</td>
+                        <td>-$87,460.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-12-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>140</td>
+                        <td>$624.26</td>
+                        <td>$87,396.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-12-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-140</td>
+                        <td>$584.64</td>
+                        <td>-$81,849.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-12-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>57</td>
+                        <td>$1,429.36</td>
+                        <td>$81,473.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-12-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-57</td>
+                        <td>$1,422.64</td>
+                        <td>-$81,090.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-12-2023</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>123</td>
+                        <td>$660.63</td>
+                        <td>$81,257.93</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-12-2023</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>-123</td>
+                        <td>$657.24</td>
+                        <td>-$80,840.46</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-12-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>179</td>
+                        <td>$452.58</td>
+                        <td>$81,011.82</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-12-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-179</td>
+                        <td>$338.91</td>
+                        <td>-$60,664.89</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-12-2023</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>63</td>
+                        <td>$957.55</td>
+                        <td>$60,325.65</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-12-2023</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>-63</td>
+                        <td>$952.06</td>
+                        <td>-$59,979.78</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-12-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>42</td>
+                        <td>$1,436.12</td>
+                        <td>$60,316.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-12-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-42</td>
+                        <td>$1,423.36</td>
+                        <td>-$59,781.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-12-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>154</td>
+                        <td>$386.52</td>
+                        <td>$59,524.08</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-12-2023</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-154</td>
+                        <td>$380.28</td>
+                        <td>-$58,563.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-12-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>41</td>
+                        <td>$1,429.55</td>
+                        <td>$58,611.73</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-12-2023</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-41</td>
+                        <td>$1,410.95</td>
+                        <td>-$57,848.95</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</div>
+</body>
+</html>
