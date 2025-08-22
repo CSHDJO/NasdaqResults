@@ -1,0 +1,2735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nasdaq Trade System - BinomialSolutions</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+            crossorigin="anonymous"></script>
+    <meta name="theme-color" content="#712cf9">
+</head>
+
+<body>
+<header class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow" data-bs-theme="dark"><a
+        class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="#">Nasdaq Trade system</a>
+</header>
+
+
+<div class="container-fluid">
+    <div class="row">
+        
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <a href="GameResult.html">Back</a>
+            <h1>BinomialSolutions</h1>
+            <img src="BinomialSolutions.png" class="img-fluid">
+            <div class="table-responsive small">
+                <table class="table table-striped table-sm">
+                    <thead>
+                    <tr>
+                        <th scope="col">ExecutedOn</th>
+                        <th scope="col">Company</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">AtPrice</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr scope="row">
+                        <td>03-01-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>1</td>
+                        <td>$849.67</td>
+                        <td>$849.67</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-01-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$874.34</td>
+                        <td>-$874.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-01-2022</td>
+                        <td><a href="stocks/ITIC.html">Investors Title Company - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$177.71</td>
+                        <td>$888.53</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-01-2022</td>
+                        <td><a href="stocks/ITIC.html">Investors Title Company - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$183.31</td>
+                        <td>-$916.54</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-01-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>1</td>
+                        <td>$829.16</td>
+                        <td>$829.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-01-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$860.06</td>
+                        <td>-$860.06</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-01-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>1</td>
+                        <td>$860.06</td>
+                        <td>$860.06</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-01-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$895.45</td>
+                        <td>-$895.45</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-01-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>1</td>
+                        <td>$1,053.31</td>
+                        <td>$1,053.31</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-01-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$1,166.07</td>
+                        <td>-$1,166.07</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-01-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>1</td>
+                        <td>$1,166.07</td>
+                        <td>$1,166.07</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-01-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$1,210.91</td>
+                        <td>-$1,210.91</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-01-2022</td>
+                        <td><a href="stocks/BIIB.html">Biogen Inc. - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$225.34</td>
+                        <td>$1,126.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-01-2022</td>
+                        <td><a href="stocks/BIIB.html">Biogen Inc. - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$236.67</td>
+                        <td>-$1,183.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-01-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>1</td>
+                        <td>$882.61</td>
+                        <td>$882.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-01-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$895.39</td>
+                        <td>-$895.39</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-01-2022</td>
+                        <td><a href="stocks/VALN.html">Valneva SE - American Depositary Shares</a></td>
+                        <td>41</td>
+                        <td>$32.77</td>
+                        <td>$1,343.57</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-01-2022</td>
+                        <td><a href="stocks/VALN.html">Valneva SE - American Depositary Shares</a></td>
+                        <td>-41</td>
+                        <td>$47.52</td>
+                        <td>-$1,948.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-01-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>1</td>
+                        <td>$1,060.94</td>
+                        <td>$1,060.94</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-01-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$1,091.31</td>
+                        <td>-$1,091.31</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-01-2022</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>9</td>
+                        <td>$217.20</td>
+                        <td>$1,954.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-01-2022</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-9</td>
+                        <td>$225.00</td>
+                        <td>-$2,025.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-01-2022</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>16</td>
+                        <td>$127.75</td>
+                        <td>$2,043.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-01-2022</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>-16</td>
+                        <td>$134.80</td>
+                        <td>-$2,156.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-01-2022</td>
+                        <td><a href="stocks/LAZR.html">Luminar Technologies, Inc.  - Class A Common Stock</a></td>
+                        <td>11</td>
+                        <td>$185.85</td>
+                        <td>$2,044.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-01-2022</td>
+                        <td><a href="stocks/LAZR.html">Luminar Technologies, Inc.  - Class A Common Stock</a></td>
+                        <td>-11</td>
+                        <td>$202.50</td>
+                        <td>-$2,227.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-01-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$975.64</td>
+                        <td>$1,951.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-01-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$992.50</td>
+                        <td>-$1,985.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-01-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$992.50</td>
+                        <td>$1,985.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-01-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$1,048.63</td>
+                        <td>-$2,097.26</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-01-2022</td>
+                        <td><a href="stocks/SAIA.html">Saia, Inc. - Common Stock</a></td>
+                        <td>8</td>
+                        <td>$284.28</td>
+                        <td>$2,274.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-02-2022</td>
+                        <td><a href="stocks/SAIA.html">Saia, Inc. - Common Stock</a></td>
+                        <td>-8</td>
+                        <td>$299.72</td>
+                        <td>-$2,397.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-02-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$513.51</td>
+                        <td>$2,567.55</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-02-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$534.23</td>
+                        <td>-$2,671.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-02-2022</td>
+                        <td><a href="stocks/TMUS.html">T-Mobile US, Inc. - Common Stock</a></td>
+                        <td>25</td>
+                        <td>$106.77</td>
+                        <td>$2,669.13</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-02-2022</td>
+                        <td><a href="stocks/TMUS.html">T-Mobile US, Inc. - Common Stock</a></td>
+                        <td>-25</td>
+                        <td>$117.68</td>
+                        <td>-$2,941.94</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-02-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$999.74</td>
+                        <td>$1,999.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-02-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$1,035.33</td>
+                        <td>-$2,070.66</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-02-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>3</td>
+                        <td>$768.99</td>
+                        <td>$2,306.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-02-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$797.82</td>
+                        <td>-$2,393.47</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-02-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$1,050.87</td>
+                        <td>$2,101.74</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-02-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$1,133.20</td>
+                        <td>-$2,266.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-02-2022</td>
+                        <td><a href="stocks/CYBR.html">CyberArk Software Ltd. - Ordinary Shares</a></td>
+                        <td>23</td>
+                        <td>$143.43</td>
+                        <td>$3,298.89</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-02-2022</td>
+                        <td><a href="stocks/CYBR.html">CyberArk Software Ltd. - Ordinary Shares</a></td>
+                        <td>-23</td>
+                        <td>$155.58</td>
+                        <td>-$3,578.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-02-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>9</td>
+                        <td>$397.29</td>
+                        <td>$3,575.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-02-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>-9</td>
+                        <td>$413.87</td>
+                        <td>-$3,724.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-02-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$1,119.01</td>
+                        <td>$3,357.03</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-02-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$1,170.30</td>
+                        <td>-$3,510.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-02-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>8</td>
+                        <td>$467.50</td>
+                        <td>$3,740.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-02-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>-8</td>
+                        <td>$475.60</td>
+                        <td>-$3,804.79</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-02-2022</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>6</td>
+                        <td>$628.84</td>
+                        <td>$3,773.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-02-2022</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>-6</td>
+                        <td>$645.67</td>
+                        <td>-$3,874.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-02-2022</td>
+                        <td><a href="stocks/QDEL.html">QuidelOrtho Corporation - Common Stock</a></td>
+                        <td>45</td>
+                        <td>$88.44</td>
+                        <td>$3,979.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-02-2022</td>
+                        <td><a href="stocks/QDEL.html">QuidelOrtho Corporation - Common Stock</a></td>
+                        <td>-45</td>
+                        <td>$97.84</td>
+                        <td>-$4,402.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-02-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$887.86</td>
+                        <td>$4,439.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-02-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$920.57</td>
+                        <td>-$4,602.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-02-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$920.57</td>
+                        <td>$4,602.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-02-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$1,033.59</td>
+                        <td>-$5,167.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-02-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$1,033.59</td>
+                        <td>$5,167.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-02-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$1,111.39</td>
+                        <td>-$5,556.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-02-2022</td>
+                        <td><a href="stocks/LAZR.html">Luminar Technologies, Inc.  - Class A Common Stock</a></td>
+                        <td>26</td>
+                        <td>$210.45</td>
+                        <td>$5,471.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-03-2022</td>
+                        <td><a href="stocks/LAZR.html">Luminar Technologies, Inc.  - Class A Common Stock</a></td>
+                        <td>-26</td>
+                        <td>$227.55</td>
+                        <td>-$5,916.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-03-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>8</td>
+                        <td>$748.14</td>
+                        <td>$5,985.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-03-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-8</td>
+                        <td>$770.22</td>
+                        <td>-$6,161.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-03-2022</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>9</td>
+                        <td>$662.34</td>
+                        <td>$5,961.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-03-2022</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>-9</td>
+                        <td>$672.94</td>
+                        <td>-$6,056.49</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-03-2022</td>
+                        <td><a href="stocks/EXE.html">Expand Energy Corporation - Common Stock</a></td>
+                        <td>95</td>
+                        <td>$66.49</td>
+                        <td>$6,316.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-03-2022</td>
+                        <td><a href="stocks/EXE.html">Expand Energy Corporation - Common Stock</a></td>
+                        <td>-95</td>
+                        <td>$71.99</td>
+                        <td>-$6,838.91</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-03-2022</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>22</td>
+                        <td>$297.89</td>
+                        <td>$6,553.58</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-03-2022</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>-22</td>
+                        <td>$328.91</td>
+                        <td>-$7,236.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-03-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>8</td>
+                        <td>$914.78</td>
+                        <td>$7,318.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-03-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-8</td>
+                        <td>$984.76</td>
+                        <td>-$7,878.08</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-03-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>11</td>
+                        <td>$683.89</td>
+                        <td>$7,522.74</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-03-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-11</td>
+                        <td>$699.52</td>
+                        <td>-$7,694.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-03-2022</td>
+                        <td><a href="stocks/SLDB.html">Solid Biosciences Inc. - Common Stock</a></td>
+                        <td>713</td>
+                        <td>$11.58</td>
+                        <td>$8,256.54</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-03-2022</td>
+                        <td><a href="stocks/SLDB.html">Solid Biosciences Inc. - Common Stock</a></td>
+                        <td>-713</td>
+                        <td>$15.90</td>
+                        <td>-$11,336.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-03-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>12</td>
+                        <td>$882.47</td>
+                        <td>$10,589.64</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-03-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-12</td>
+                        <td>$952.34</td>
+                        <td>-$11,428.08</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-03-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>12</td>
+                        <td>$952.34</td>
+                        <td>$11,428.08</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-03-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-12</td>
+                        <td>$1,075.97</td>
+                        <td>-$12,911.64</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-03-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>12</td>
+                        <td>$1,075.97</td>
+                        <td>$12,911.64</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-03-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-12</td>
+                        <td>$1,149.09</td>
+                        <td>-$13,789.08</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-03-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>12</td>
+                        <td>$1,149.09</td>
+                        <td>$13,789.08</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-03-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-12</td>
+                        <td>$1,185.53</td>
+                        <td>-$14,226.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-03-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>12</td>
+                        <td>$1,153.84</td>
+                        <td>$13,846.08</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-03-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-12</td>
+                        <td>$1,215.07</td>
+                        <td>-$14,580.84</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-03-2022</td>
+                        <td><a href="stocks/FANG.html">Diamondback Energy, Inc. - Common Stock</a></td>
+                        <td>135</td>
+                        <td>$115.64</td>
+                        <td>$15,611.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-03-2022</td>
+                        <td><a href="stocks/FANG.html">Diamondback Energy, Inc. - Common Stock</a></td>
+                        <td>-135</td>
+                        <td>$120.10</td>
+                        <td>-$16,213.17</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-03-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>36</td>
+                        <td>$452.33</td>
+                        <td>$16,284.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-03-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>-36</td>
+                        <td>$482.48</td>
+                        <td>-$17,369.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-03-2022</td>
+                        <td><a href="stocks/WGS.html">GeneDx Holdings Corp. - Class A Common Stock</a></td>
+                        <td>190</td>
+                        <td>$91.08</td>
+                        <td>$17,305.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-03-2022</td>
+                        <td><a href="stocks/WGS.html">GeneDx Holdings Corp. - Class A Common Stock</a></td>
+                        <td>-190</td>
+                        <td>$98.34</td>
+                        <td>-$18,684.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-03-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>15</td>
+                        <td>$1,225.16</td>
+                        <td>$18,377.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-03-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-15</td>
+                        <td>$1,256.50</td>
+                        <td>-$18,847.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-03-2022</td>
+                        <td><a href="stocks/ESLT.html">Elbit Systems Ltd. - Ordinary Shares</a></td>
+                        <td>91</td>
+                        <td>$210.89</td>
+                        <td>$19,191.37</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-03-2022</td>
+                        <td><a href="stocks/ESLT.html">Elbit Systems Ltd. - Ordinary Shares</a></td>
+                        <td>-91</td>
+                        <td>$218.63</td>
+                        <td>-$19,895.17</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-03-2022</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>63</td>
+                        <td>$314.23</td>
+                        <td>$19,796.49</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-03-2022</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>-63</td>
+                        <td>$322.37</td>
+                        <td>-$20,309.31</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-03-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>17</td>
+                        <td>$1,189.48</td>
+                        <td>$20,221.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-04-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-17</td>
+                        <td>$1,224.13</td>
+                        <td>-$20,810.21</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-04-2022</td>
+                        <td><a href="stocks/JKHY.html">Jack Henry &amp; Associates, Inc. - Common Stock</a></td>
+                        <td>109</td>
+                        <td>$192.69</td>
+                        <td>$21,002.69</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-04-2022</td>
+                        <td><a href="stocks/JKHY.html">Jack Henry &amp; Associates, Inc. - Common Stock</a></td>
+                        <td>-109</td>
+                        <td>$195.67</td>
+                        <td>-$21,328.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-04-2022</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>38</td>
+                        <td>$550.88</td>
+                        <td>$20,933.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-04-2022</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>-38</td>
+                        <td>$559.95</td>
+                        <td>-$21,277.94</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-04-2022</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>38</td>
+                        <td>$559.95</td>
+                        <td>$21,277.94</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-04-2022</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>-38</td>
+                        <td>$582.22</td>
+                        <td>-$22,124.26</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-04-2022</td>
+                        <td><a href="stocks/WDFC.html">WD-40 Company - Common Stock</a></td>
+                        <td>136</td>
+                        <td>$165.51</td>
+                        <td>$22,508.89</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-04-2022</td>
+                        <td><a href="stocks/WDFC.html">WD-40 Company - Common Stock</a></td>
+                        <td>-136</td>
+                        <td>$177.24</td>
+                        <td>-$24,104.41</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-04-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>62</td>
+                        <td>$386.95</td>
+                        <td>$23,990.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-04-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>-62</td>
+                        <td>$391.77</td>
+                        <td>-$24,289.55</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-04-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>21</td>
+                        <td>$1,115.98</td>
+                        <td>$23,435.58</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-04-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-21</td>
+                        <td>$1,135.75</td>
+                        <td>-$23,850.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-04-2022</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>197</td>
+                        <td>$126.00</td>
+                        <td>$24,822.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-04-2022</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>-197</td>
+                        <td>$132.00</td>
+                        <td>-$26,004.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-04-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>24</td>
+                        <td>$1,070.04</td>
+                        <td>$25,680.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-04-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-24</td>
+                        <td>$1,130.35</td>
+                        <td>-$27,128.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-04-2022</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>38</td>
+                        <td>$707.17</td>
+                        <td>$26,872.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-04-2022</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>-38</td>
+                        <td>$720.25</td>
+                        <td>-$27,369.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-04-2022</td>
+                        <td><a href="stocks/ALGT.html">Allegiant Travel Company - Common Stock</a></td>
+                        <td>175</td>
+                        <td>$159.66</td>
+                        <td>$27,940.94</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-04-2022</td>
+                        <td><a href="stocks/ALGT.html">Allegiant Travel Company - Common Stock</a></td>
+                        <td>-175</td>
+                        <td>$168.13</td>
+                        <td>-$29,422.65</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-04-2022</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>239</td>
+                        <td>$123.30</td>
+                        <td>$29,468.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-04-2022</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-239</td>
+                        <td>$130.50</td>
+                        <td>-$31,189.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-04-2022</td>
+                        <td><a href="stocks/ROP.html">Roper Technologies, Inc. - Common Stock</a></td>
+                        <td>69</td>
+                        <td>$447.28</td>
+                        <td>$30,862.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-04-2022</td>
+                        <td><a href="stocks/ROP.html">Roper Technologies, Inc. - Common Stock</a></td>
+                        <td>-69</td>
+                        <td>$463.73</td>
+                        <td>-$31,997.14</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-04-2022</td>
+                        <td><a href="stocks/RGEN.html">Repligen Corporation - Common Stock</a></td>
+                        <td>226</td>
+                        <td>$142.56</td>
+                        <td>$32,218.56</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-04-2022</td>
+                        <td><a href="stocks/RGEN.html">Repligen Corporation - Common Stock</a></td>
+                        <td>-226</td>
+                        <td>$157.51</td>
+                        <td>-$35,597.26</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-04-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>58</td>
+                        <td>$613.23</td>
+                        <td>$35,567.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-04-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-58</td>
+                        <td>$657.27</td>
+                        <td>-$38,121.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-04-2022</td>
+                        <td><a href="stocks/RGEN.html">Repligen Corporation - Common Stock</a></td>
+                        <td>249</td>
+                        <td>$153.64</td>
+                        <td>$38,256.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-04-2022</td>
+                        <td><a href="stocks/RGEN.html">Repligen Corporation - Common Stock</a></td>
+                        <td>-249</td>
+                        <td>$157.24</td>
+                        <td>-$39,152.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-05-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>97</td>
+                        <td>$401.37</td>
+                        <td>$38,932.86</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-05-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>-97</td>
+                        <td>$446.90</td>
+                        <td>-$43,349.49</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-05-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>67</td>
+                        <td>$649.78</td>
+                        <td>$43,535.17</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-05-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-67</td>
+                        <td>$677.63</td>
+                        <td>-$45,400.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-05-2022</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>155</td>
+                        <td>$292.93</td>
+                        <td>$45,404.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-05-2022</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-155</td>
+                        <td>$320.34</td>
+                        <td>-$49,652.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-05-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>54</td>
+                        <td>$913.22</td>
+                        <td>$49,313.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-05-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-54</td>
+                        <td>$927.55</td>
+                        <td>-$50,087.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-05-2022</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>187</td>
+                        <td>$269.58</td>
+                        <td>$50,411.46</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-05-2022</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-187</td>
+                        <td>$299.41</td>
+                        <td>-$55,989.67</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-05-2022</td>
+                        <td><a href="stocks/EA.html">Electronic Arts Inc. - Common Stock</a></td>
+                        <td>511</td>
+                        <td>$109.56</td>
+                        <td>$55,986.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-05-2022</td>
+                        <td><a href="stocks/EA.html">Electronic Arts Inc. - Common Stock</a></td>
+                        <td>-511</td>
+                        <td>$118.29</td>
+                        <td>-$60,446.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-05-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>89</td>
+                        <td>$679.68</td>
+                        <td>$60,491.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-05-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-89</td>
+                        <td>$722.93</td>
+                        <td>-$64,340.77</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-05-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>89</td>
+                        <td>$722.93</td>
+                        <td>$64,340.77</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-05-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-89</td>
+                        <td>$794.96</td>
+                        <td>-$70,751.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-05-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>89</td>
+                        <td>$787.81</td>
+                        <td>$70,115.09</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-05-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-89</td>
+                        <td>$834.88</td>
+                        <td>-$74,304.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-05-2022</td>
+                        <td><a href="stocks/AGYS.html">Agilysys, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$35.94</td>
+                        <td>$35,940.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-05-2022</td>
+                        <td><a href="stocks/AGYS.html">Agilysys, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$39.60</td>
+                        <td>-$39,600.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-05-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>104</td>
+                        <td>$749.30</td>
+                        <td>$77,927.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-05-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-104</td>
+                        <td>$801.57</td>
+                        <td>-$83,363.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-05-2022</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>140</td>
+                        <td>$598.34</td>
+                        <td>$83,767.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-05-2022</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>-140</td>
+                        <td>$614.07</td>
+                        <td>-$85,969.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-05-2022</td>
+                        <td><a href="stocks/PODD.html">Insulet Corporation - Common Stock</a></td>
+                        <td>425</td>
+                        <td>$202.85</td>
+                        <td>$86,211.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-05-2022</td>
+                        <td><a href="stocks/PODD.html">Insulet Corporation - Common Stock</a></td>
+                        <td>-425</td>
+                        <td>$217.83</td>
+                        <td>-$92,577.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-05-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>132</td>
+                        <td>$699.86</td>
+                        <td>$92,381.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-05-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-132</td>
+                        <td>$723.00</td>
+                        <td>-$95,436.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-05-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>132</td>
+                        <td>$723.00</td>
+                        <td>$95,436.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-05-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-132</td>
+                        <td>$783.44</td>
+                        <td>-$103,414.08</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-05-2022</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>274</td>
+                        <td>$377.96</td>
+                        <td>$103,561.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-05-2022</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>-274</td>
+                        <td>$425.08</td>
+                        <td>-$116,471.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-05-2022</td>
+                        <td><a href="stocks/EXE.html">Expand Energy Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$84.66</td>
+                        <td>$84,663.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-06-2022</td>
+                        <td><a href="stocks/EXE.html">Expand Energy Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$86.94</td>
+                        <td>-$86,940.86</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-06-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>155</td>
+                        <td>$762.24</td>
+                        <td>$118,147.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-06-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-155</td>
+                        <td>$836.74</td>
+                        <td>-$129,694.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-06-2022</td>
+                        <td><a href="stocks/LYEL.html">Lyell Immunopharma, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$92.20</td>
+                        <td>$92,200.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-06-2022</td>
+                        <td><a href="stocks/LYEL.html">Lyell Immunopharma, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$100.80</td>
+                        <td>-$100,800.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-06-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>172</td>
+                        <td>$803.99</td>
+                        <td>$138,286.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-06-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-172</td>
+                        <td>$824.68</td>
+                        <td>-$141,844.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-06-2022</td>
+                        <td><a href="stocks/ONC.html">BeOne Medicines Ltd. - American Depositary Shares</a></td>
+                        <td>922</td>
+                        <td>$154.57</td>
+                        <td>$142,513.55</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-06-2022</td>
+                        <td><a href="stocks/ONC.html">BeOne Medicines Ltd. - American Depositary Shares</a></td>
+                        <td>-922</td>
+                        <td>$162.05</td>
+                        <td>-$149,410.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-06-2022</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>332</td>
+                        <td>$448.84</td>
+                        <td>$149,013.83</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-06-2022</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>-332</td>
+                        <td>$452.73</td>
+                        <td>-$150,306.58</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-06-2022</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>456</td>
+                        <td>$330.30</td>
+                        <td>$150,616.79</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-06-2022</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-456</td>
+                        <td>$338.22</td>
+                        <td>-$154,228.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-06-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>405</td>
+                        <td>$380.63</td>
+                        <td>$154,155.39</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-06-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>-405</td>
+                        <td>$397.75</td>
+                        <td>-$161,086.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-06-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>261</td>
+                        <td>$616.40</td>
+                        <td>$160,880.41</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-06-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-261</td>
+                        <td>$672.69</td>
+                        <td>-$175,572.09</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-06-2022</td>
+                        <td><a href="stocks/DSGR.html">Distribution Solutions Group, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$24.75</td>
+                        <td>$24,750.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-06-2022</td>
+                        <td><a href="stocks/DSGR.html">Distribution Solutions Group, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$27.05</td>
+                        <td>-$27,045.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-06-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>290</td>
+                        <td>$612.70</td>
+                        <td>$177,683.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-06-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-290</td>
+                        <td>$635.22</td>
+                        <td>-$184,213.79</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-06-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>281</td>
+                        <td>$656.70</td>
+                        <td>$184,532.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-06-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-281</td>
+                        <td>$677.40</td>
+                        <td>-$190,349.41</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-06-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>572</td>
+                        <td>$333.11</td>
+                        <td>$190,538.91</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-06-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>-572</td>
+                        <td>$355.62</td>
+                        <td>-$203,414.64</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-06-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>291</td>
+                        <td>$698.64</td>
+                        <td>$203,304.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-06-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-291</td>
+                        <td>$739.46</td>
+                        <td>-$215,182.87</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-06-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>300</td>
+                        <td>$717.31</td>
+                        <td>$215,193.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-06-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-300</td>
+                        <td>$665.00</td>
+                        <td>-$199,500.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-06-2022</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>316</td>
+                        <td>$630.38</td>
+                        <td>$199,199.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-06-2022</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>-316</td>
+                        <td>$611.91</td>
+                        <td>-$193,364.67</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-06-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>293</td>
+                        <td>$660.13</td>
+                        <td>$193,418.09</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-06-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-293</td>
+                        <td>$636.87</td>
+                        <td>-$186,602.91</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-06-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>497</td>
+                        <td>$375.87</td>
+                        <td>$186,807.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-07-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>-497</td>
+                        <td>$357.19</td>
+                        <td>-$177,521.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-07-2022</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>465</td>
+                        <td>$382.11</td>
+                        <td>$177,681.14</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-07-2022</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-465</td>
+                        <td>$365.92</td>
+                        <td>-$170,152.81</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-07-2022</td>
+                        <td><a href="stocks/WDFC.html">WD-40 Company - Common Stock</a></td>
+                        <td>872</td>
+                        <td>$195.10</td>
+                        <td>$170,127.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-07-2022</td>
+                        <td><a href="stocks/WDFC.html">WD-40 Company - Common Stock</a></td>
+                        <td>-872</td>
+                        <td>$166.00</td>
+                        <td>-$144,756.19</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-07-2022</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>237</td>
+                        <td>$609.85</td>
+                        <td>$144,534.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-07-2022</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>-237</td>
+                        <td>$591.89</td>
+                        <td>-$140,278.71</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-07-2022</td>
+                        <td><a href="stocks/SAIA.html">Saia, Inc. - Common Stock</a></td>
+                        <td>679</td>
+                        <td>$206.97</td>
+                        <td>$140,532.63</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-07-2022</td>
+                        <td><a href="stocks/SAIA.html">Saia, Inc. - Common Stock</a></td>
+                        <td>-679</td>
+                        <td>$192.95</td>
+                        <td>-$131,013.05</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-07-2022</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>487</td>
+                        <td>$269.02</td>
+                        <td>$131,012.73</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-07-2022</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>-487</td>
+                        <td>$265.85</td>
+                        <td>-$129,468.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-07-2022</td>
+                        <td><a href="stocks/BIIB.html">Biogen Inc. - Common Stock</a></td>
+                        <td>588</td>
+                        <td>$220.26</td>
+                        <td>$129,512.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-07-2022</td>
+                        <td><a href="stocks/BIIB.html">Biogen Inc. - Common Stock</a></td>
+                        <td>-588</td>
+                        <td>$207.49</td>
+                        <td>-$122,004.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-07-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>154</td>
+                        <td>$789.20</td>
+                        <td>$121,536.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-07-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-154</td>
+                        <td>$763.92</td>
+                        <td>-$117,643.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-07-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>154</td>
+                        <td>$762.78</td>
+                        <td>$117,468.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-07-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-154</td>
+                        <td>$727.79</td>
+                        <td>-$112,079.66</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-07-2022</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>308</td>
+                        <td>$365.02</td>
+                        <td>$112,426.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-07-2022</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-308</td>
+                        <td>$357.86</td>
+                        <td>-$110,220.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-07-2022</td>
+                        <td><a href="stocks/LBRDA.html">Liberty Broadband Corporation - Class A Common Stock</a></td>
+                        <td>915</td>
+                        <td>$120.75</td>
+                        <td>$110,486.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-07-2022</td>
+                        <td><a href="stocks/LBRDA.html">Liberty Broadband Corporation - Class A Common Stock</a></td>
+                        <td>-915</td>
+                        <td>$108.30</td>
+                        <td>-$99,094.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-07-2022</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>247</td>
+                        <td>$400.76</td>
+                        <td>$98,987.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-07-2022</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>-247</td>
+                        <td>$388.91</td>
+                        <td>-$96,060.77</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-08-2022</td>
+                        <td><a href="stocks/CVCO.html">Cavco Industries, Inc. - Common Stock</a></td>
+                        <td>367</td>
+                        <td>$262.10</td>
+                        <td>$96,190.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-08-2022</td>
+                        <td><a href="stocks/CVCO.html">Cavco Industries, Inc. - Common Stock</a></td>
+                        <td>-367</td>
+                        <td>$250.29</td>
+                        <td>-$91,856.43</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-08-2022</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>251</td>
+                        <td>$365.41</td>
+                        <td>$91,717.91</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-08-2022</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>-251</td>
+                        <td>$295.52</td>
+                        <td>-$74,175.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-08-2022</td>
+                        <td><a href="stocks/DHIL.html">Diamond Hill Investment Group, Inc. - Class A Common Stock</a></td>
+                        <td>450</td>
+                        <td>$165.13</td>
+                        <td>$74,308.43</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-08-2022</td>
+                        <td><a href="stocks/DHIL.html">Diamond Hill Investment Group, Inc. - Class A Common Stock</a></td>
+                        <td>-450</td>
+                        <td>$159.19</td>
+                        <td>-$71,633.58</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-08-2022</td>
+                        <td><a href="stocks/LOPE.html">Grand Canyon Education, Inc. - Common Stock</a></td>
+                        <td>755</td>
+                        <td>$94.86</td>
+                        <td>$71,619.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-08-2022</td>
+                        <td><a href="stocks/LOPE.html">Grand Canyon Education, Inc. - Common Stock</a></td>
+                        <td>-755</td>
+                        <td>$84.67</td>
+                        <td>-$63,925.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-08-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>62</td>
+                        <td>$1,024.25</td>
+                        <td>$63,503.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-08-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-62</td>
+                        <td>$995.50</td>
+                        <td>-$61,721.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-08-2022</td>
+                        <td><a href="stocks/TTEC.html">TTEC Holdings, Inc. - Common Stock</a></td>
+                        <td>923</td>
+                        <td>$67.35</td>
+                        <td>$62,162.59</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-08-2022</td>
+                        <td><a href="stocks/TTEC.html">TTEC Holdings, Inc. - Common Stock</a></td>
+                        <td>-923</td>
+                        <td>$57.21</td>
+                        <td>-$52,807.14</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-08-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>49</td>
+                        <td>$1,064.23</td>
+                        <td>$52,147.27</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-08-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-49</td>
+                        <td>$1,032.47</td>
+                        <td>-$50,591.03</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-08-2022</td>
+                        <td><a href="stocks/SAIA.html">Saia, Inc. - Common Stock</a></td>
+                        <td>202</td>
+                        <td>$253.00</td>
+                        <td>$51,106.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-08-2022</td>
+                        <td><a href="stocks/SAIA.html">Saia, Inc. - Common Stock</a></td>
+                        <td>-202</td>
+                        <td>$246.49</td>
+                        <td>-$49,790.98</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-08-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>46</td>
+                        <td>$1,082.66</td>
+                        <td>$49,802.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-08-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-46</td>
+                        <td>$1,053.75</td>
+                        <td>-$48,472.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-08-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>46</td>
+                        <td>$1,053.75</td>
+                        <td>$48,472.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-08-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-46</td>
+                        <td>$997.90</td>
+                        <td>-$45,903.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-08-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>46</td>
+                        <td>$997.90</td>
+                        <td>$45,903.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-08-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-46</td>
+                        <td>$977.52</td>
+                        <td>-$44,965.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-08-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>46</td>
+                        <td>$977.52</td>
+                        <td>$44,965.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-08-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-46</td>
+                        <td>$909.76</td>
+                        <td>-$41,848.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-08-2022</td>
+                        <td><a href="stocks/ZM.html">Zoom Communications, Inc. - Class A Common Stock</a></td>
+                        <td>431</td>
+                        <td>$97.44</td>
+                        <td>$41,996.64</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-08-2022</td>
+                        <td><a href="stocks/ZM.html">Zoom Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-431</td>
+                        <td>$81.32</td>
+                        <td>-$35,048.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-08-2022</td>
+                        <td><a href="stocks/DLTR.html">Dollar Tree, Inc. - Common Stock</a></td>
+                        <td>211</td>
+                        <td>$165.98</td>
+                        <td>$35,021.78</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-08-2022</td>
+                        <td><a href="stocks/DLTR.html">Dollar Tree, Inc. - Common Stock</a></td>
+                        <td>-211</td>
+                        <td>$149.01</td>
+                        <td>-$31,441.11</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-08-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>34</td>
+                        <td>$919.18</td>
+                        <td>$31,252.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-08-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-34</td>
+                        <td>$877.80</td>
+                        <td>-$29,845.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-08-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>34</td>
+                        <td>$875.17</td>
+                        <td>$29,755.78</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-08-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-34</td>
+                        <td>$862.10</td>
+                        <td>-$29,311.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-08-2022</td>
+                        <td><a href="stocks/AMBA.html">Ambarella, Inc. - Ordinary Shares</a></td>
+                        <td>350</td>
+                        <td>$84.50</td>
+                        <td>$29,575.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-08-2022</td>
+                        <td><a href="stocks/AMBA.html">Ambarella, Inc. - Ordinary Shares</a></td>
+                        <td>-350</td>
+                        <td>$67.88</td>
+                        <td>-$23,758.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-08-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>53</td>
+                        <td>$443.54</td>
+                        <td>$23,507.57</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-09-2022</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>-53</td>
+                        <td>$416.42</td>
+                        <td>-$22,070.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-09-2022</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>36</td>
+                        <td>$618.17</td>
+                        <td>$22,254.29</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-09-2022</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>-36</td>
+                        <td>$597.22</td>
+                        <td>-$21,500.09</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-09-2022</td>
+                        <td><a href="stocks/SAIA.html">Saia, Inc. - Common Stock</a></td>
+                        <td>103</td>
+                        <td>$209.58</td>
+                        <td>$21,586.74</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-09-2022</td>
+                        <td><a href="stocks/SAIA.html">Saia, Inc. - Common Stock</a></td>
+                        <td>-103</td>
+                        <td>$201.97</td>
+                        <td>-$20,802.91</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-09-2022</td>
+                        <td><a href="stocks/SAIA.html">Saia, Inc. - Common Stock</a></td>
+                        <td>103</td>
+                        <td>$201.97</td>
+                        <td>$20,802.91</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-09-2022</td>
+                        <td><a href="stocks/SAIA.html">Saia, Inc. - Common Stock</a></td>
+                        <td>-103</td>
+                        <td>$195.67</td>
+                        <td>-$20,154.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-09-2022</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>150</td>
+                        <td>$134.20</td>
+                        <td>$20,130.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-09-2022</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>-150</td>
+                        <td>$129.00</td>
+                        <td>-$19,350.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-09-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>19</td>
+                        <td>$1,002.01</td>
+                        <td>$19,038.19</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-09-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-19</td>
+                        <td>$943.90</td>
+                        <td>-$17,934.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-09-2022</td>
+                        <td><a href="stocks/ICLR.html">ICON plc - Ordinary Shares</a></td>
+                        <td>84</td>
+                        <td>$216.67</td>
+                        <td>$18,200.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-09-2022</td>
+                        <td><a href="stocks/ICLR.html">ICON plc - Ordinary Shares</a></td>
+                        <td>-84</td>
+                        <td>$205.63</td>
+                        <td>-$17,272.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-09-2022</td>
+                        <td><a href="stocks/ROP.html">Roper Technologies, Inc. - Common Stock</a></td>
+                        <td>44</td>
+                        <td>$389.83</td>
+                        <td>$17,152.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-09-2022</td>
+                        <td><a href="stocks/ROP.html">Roper Technologies, Inc. - Common Stock</a></td>
+                        <td>-44</td>
+                        <td>$377.84</td>
+                        <td>-$16,624.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-09-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>17</td>
+                        <td>$965.78</td>
+                        <td>$16,418.26</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-09-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-17</td>
+                        <td>$919.11</td>
+                        <td>-$15,624.87</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-09-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>17</td>
+                        <td>$933.10</td>
+                        <td>$15,862.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-09-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-17</td>
+                        <td>$905.69</td>
+                        <td>-$15,396.73</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-09-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>17</td>
+                        <td>$905.69</td>
+                        <td>$15,396.73</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-09-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-17</td>
+                        <td>$887.50</td>
+                        <td>-$15,087.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-09-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>17</td>
+                        <td>$887.50</td>
+                        <td>$15,087.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-09-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-17</td>
+                        <td>$850.00</td>
+                        <td>-$14,450.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-09-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>17</td>
+                        <td>$850.00</td>
+                        <td>$14,450.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-09-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-17</td>
+                        <td>$815.01</td>
+                        <td>-$13,855.17</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-09-2022</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>25</td>
+                        <td>$550.32</td>
+                        <td>$13,758.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-09-2022</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>-25</td>
+                        <td>$537.17</td>
+                        <td>-$13,429.19</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-09-2022</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>130</td>
+                        <td>$105.40</td>
+                        <td>$13,702.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-09-2022</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>-130</td>
+                        <td>$102.20</td>
+                        <td>-$13,286.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-09-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>15</td>
+                        <td>$865.24</td>
+                        <td>$12,978.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-09-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-15</td>
+                        <td>$829.68</td>
+                        <td>-$12,445.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-09-2022</td>
+                        <td><a href="stocks/ROP.html">Roper Technologies, Inc. - Common Stock</a></td>
+                        <td>35</td>
+                        <td>$360.87</td>
+                        <td>$12,630.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-09-2022</td>
+                        <td><a href="stocks/ROP.html">Roper Technologies, Inc. - Common Stock</a></td>
+                        <td>-35</td>
+                        <td>$353.87</td>
+                        <td>-$12,385.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-10-2022</td>
+                        <td><a href="stocks/CASY.html">Caseys General Stores, Inc. - Common Stock</a></td>
+                        <td>61</td>
+                        <td>$203.62</td>
+                        <td>$12,420.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-10-2022</td>
+                        <td><a href="stocks/CASY.html">Caseys General Stores, Inc. - Common Stock</a></td>
+                        <td>-61</td>
+                        <td>$199.91</td>
+                        <td>-$12,194.29</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-10-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>12</td>
+                        <td>$948.25</td>
+                        <td>$11,379.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-10-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-12</td>
+                        <td>$933.76</td>
+                        <td>-$11,205.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-10-2022</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>22</td>
+                        <td>$547.31</td>
+                        <td>$12,040.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-10-2022</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>-22</td>
+                        <td>$527.46</td>
+                        <td>-$11,604.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-10-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>12</td>
+                        <td>$929.18</td>
+                        <td>$11,150.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-10-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-12</td>
+                        <td>$881.99</td>
+                        <td>-$10,583.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-10-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>13</td>
+                        <td>$834.67</td>
+                        <td>$10,850.71</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-10-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-13</td>
+                        <td>$820.65</td>
+                        <td>-$10,668.45</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-10-2022</td>
+                        <td><a href="stocks/ETSY.html">Etsy, Inc. - Common Stock</a></td>
+                        <td>103</td>
+                        <td>$106.16</td>
+                        <td>$10,934.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-10-2022</td>
+                        <td><a href="stocks/ETSY.html">Etsy, Inc. - Common Stock</a></td>
+                        <td>-103</td>
+                        <td>$96.32</td>
+                        <td>-$9,920.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-10-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>12</td>
+                        <td>$822.06</td>
+                        <td>$9,864.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-10-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-12</td>
+                        <td>$756.88</td>
+                        <td>-$9,082.56</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-10-2022</td>
+                        <td><a href="stocks/PTCT.html">PTC Therapeutics, Inc. - Common Stock</a></td>
+                        <td>166</td>
+                        <td>$54.79</td>
+                        <td>$9,095.14</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-10-2022</td>
+                        <td><a href="stocks/PTCT.html">PTC Therapeutics, Inc. - Common Stock</a></td>
+                        <td>-166</td>
+                        <td>$48.78</td>
+                        <td>-$8,097.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-10-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>9</td>
+                        <td>$853.29</td>
+                        <td>$7,679.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-10-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-9</td>
+                        <td>$815.45</td>
+                        <td>-$7,339.05</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-10-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>9</td>
+                        <td>$858.54</td>
+                        <td>$7,726.89</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-10-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-9</td>
+                        <td>$837.94</td>
+                        <td>-$7,541.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-10-2022</td>
+                        <td><a href="stocks/ITIC.html">Investors Title Company - Common Stock</a></td>
+                        <td>65</td>
+                        <td>$115.57</td>
+                        <td>$7,511.89</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-10-2022</td>
+                        <td><a href="stocks/ITIC.html">Investors Title Company - Common Stock</a></td>
+                        <td>-65</td>
+                        <td>$111.39</td>
+                        <td>-$7,240.09</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-10-2022</td>
+                        <td><a href="stocks/LYEL.html">Lyell Immunopharma, Inc. - Common Stock</a></td>
+                        <td>57</td>
+                        <td>$128.40</td>
+                        <td>$7,318.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-10-2022</td>
+                        <td><a href="stocks/LYEL.html">Lyell Immunopharma, Inc. - Common Stock</a></td>
+                        <td>-57</td>
+                        <td>$119.20</td>
+                        <td>-$6,794.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-10-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>7</td>
+                        <td>$862.97</td>
+                        <td>$6,040.79</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-10-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-7</td>
+                        <td>$833.36</td>
+                        <td>-$5,833.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-10-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>7</td>
+                        <td>$846.28</td>
+                        <td>$5,923.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-10-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-7</td>
+                        <td>$782.51</td>
+                        <td>-$5,477.57</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-10-2022</td>
+                        <td><a href="stocks/PTCT.html">PTC Therapeutics, Inc. - Common Stock</a></td>
+                        <td>138</td>
+                        <td>$44.59</td>
+                        <td>$6,153.42</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-10-2022</td>
+                        <td><a href="stocks/PTCT.html">PTC Therapeutics, Inc. - Common Stock</a></td>
+                        <td>-138</td>
+                        <td>$38.47</td>
+                        <td>-$5,308.86</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-10-2022</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>9</td>
+                        <td>$535.98</td>
+                        <td>$4,823.86</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-11-2022</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>-9</td>
+                        <td>$524.70</td>
+                        <td>-$4,722.27</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-11-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$919.34</td>
+                        <td>$4,596.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-11-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$851.28</td>
+                        <td>-$4,256.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-11-2022</td>
+                        <td><a href="stocks/QLYS.html">Qualys, Inc. - Common Stock</a></td>
+                        <td>36</td>
+                        <td>$133.82</td>
+                        <td>$4,817.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-11-2022</td>
+                        <td><a href="stocks/QLYS.html">Qualys, Inc. - Common Stock</a></td>
+                        <td>-36</td>
+                        <td>$112.38</td>
+                        <td>-$4,045.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-11-2022</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>22</td>
+                        <td>$179.80</td>
+                        <td>$3,955.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-11-2022</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>-22</td>
+                        <td>$162.80</td>
+                        <td>-$3,581.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-11-2022</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>6</td>
+                        <td>$573.91</td>
+                        <td>$3,443.46</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-11-2022</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>-6</td>
+                        <td>$564.19</td>
+                        <td>-$3,385.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-11-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$937.08</td>
+                        <td>$2,811.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-11-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$897.62</td>
+                        <td>-$2,692.86</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-11-2022</td>
+                        <td><a href="stocks/LPLA.html">LPL Financial Holdings Inc. - Common Stock</a></td>
+                        <td>13</td>
+                        <td>$255.02</td>
+                        <td>$3,315.29</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-11-2022</td>
+                        <td><a href="stocks/LPLA.html">LPL Financial Holdings Inc. - Common Stock</a></td>
+                        <td>-13</td>
+                        <td>$239.61</td>
+                        <td>-$3,114.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-11-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>4</td>
+                        <td>$839.13</td>
+                        <td>$3,356.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-11-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$807.81</td>
+                        <td>-$3,231.23</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-11-2022</td>
+                        <td><a href="stocks/TMCI.html">Treace Medical Concepts, Inc. - Common Stock</a></td>
+                        <td>134</td>
+                        <td>$24.11</td>
+                        <td>$3,230.74</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-11-2022</td>
+                        <td><a href="stocks/TMCI.html">Treace Medical Concepts, Inc. - Common Stock</a></td>
+                        <td>-134</td>
+                        <td>$20.54</td>
+                        <td>-$2,752.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-11-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$1,020.68</td>
+                        <td>$2,041.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-11-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$972.82</td>
+                        <td>-$1,945.64</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-11-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$972.82</td>
+                        <td>$1,945.64</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-11-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$927.13</td>
+                        <td>-$1,854.26</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-11-2022</td>
+                        <td><a href="stocks/FANG.html">Diamondback Energy, Inc. - Common Stock</a></td>
+                        <td>17</td>
+                        <td>$144.72</td>
+                        <td>$2,460.21</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-11-2022</td>
+                        <td><a href="stocks/FANG.html">Diamondback Energy, Inc. - Common Stock</a></td>
+                        <td>-17</td>
+                        <td>$139.74</td>
+                        <td>-$2,375.66</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-11-2022</td>
+                        <td><a href="stocks/ONC.html">BeOne Medicines Ltd. - American Depositary Shares</a></td>
+                        <td>12</td>
+                        <td>$194.65</td>
+                        <td>$2,335.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-11-2022</td>
+                        <td><a href="stocks/ONC.html">BeOne Medicines Ltd. - American Depositary Shares</a></td>
+                        <td>-12</td>
+                        <td>$176.54</td>
+                        <td>-$2,118.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-11-2022</td>
+                        <td><a href="stocks/ADSK.html">Autodesk, Inc. - Common Stock</a></td>
+                        <td>10</td>
+                        <td>$208.90</td>
+                        <td>$2,089.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-11-2022</td>
+                        <td><a href="stocks/ADSK.html">Autodesk, Inc. - Common Stock</a></td>
+                        <td>-10</td>
+                        <td>$197.07</td>
+                        <td>-$1,970.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-11-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$921.34</td>
+                        <td>$1,842.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-11-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$889.26</td>
+                        <td>-$1,778.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-11-2022</td>
+                        <td><a href="stocks/LPLA.html">LPL Financial Holdings Inc. - Common Stock</a></td>
+                        <td>8</td>
+                        <td>$237.04</td>
+                        <td>$1,896.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-11-2022</td>
+                        <td><a href="stocks/LPLA.html">LPL Financial Holdings Inc. - Common Stock</a></td>
+                        <td>-8</td>
+                        <td>$233.88</td>
+                        <td>-$1,871.03</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-11-2022</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$519.01</td>
+                        <td>$1,557.03</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-12-2022</td>
+                        <td><a href="stocks/COST.html">Costco Wholesale Corporation - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$484.95</td>
+                        <td>-$1,454.84</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-12-2022</td>
+                        <td><a href="stocks/CYBR.html">CyberArk Software Ltd. - Ordinary Shares</a></td>
+                        <td>12</td>
+                        <td>$158.25</td>
+                        <td>$1,899.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-12-2022</td>
+                        <td><a href="stocks/CYBR.html">CyberArk Software Ltd. - Ordinary Shares</a></td>
+                        <td>-12</td>
+                        <td>$147.24</td>
+                        <td>-$1,766.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-12-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$881.90</td>
+                        <td>$1,763.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-12-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$863.09</td>
+                        <td>-$1,726.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-12-2022</td>
+                        <td><a href="stocks/EXPE.html">Expedia Group, Inc. - Common Stock</a></td>
+                        <td>18</td>
+                        <td>$96.48</td>
+                        <td>$1,736.57</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-12-2022</td>
+                        <td><a href="stocks/EXPE.html">Expedia Group, Inc. - Common Stock</a></td>
+                        <td>-18</td>
+                        <td>$90.38</td>
+                        <td>-$1,626.91</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-12-2022</td>
+                        <td><a href="stocks/TMUS.html">T-Mobile US, Inc. - Common Stock</a></td>
+                        <td>11</td>
+                        <td>$144.97</td>
+                        <td>$1,594.65</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-12-2022</td>
+                        <td><a href="stocks/TMUS.html">T-Mobile US, Inc. - Common Stock</a></td>
+                        <td>-11</td>
+                        <td>$140.12</td>
+                        <td>-$1,541.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-12-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>2</td>
+                        <td>$782.32</td>
+                        <td>$1,564.63</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-12-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$770.49</td>
+                        <td>-$1,540.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-12-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>2</td>
+                        <td>$768.16</td>
+                        <td>$1,536.33</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-12-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$752.17</td>
+                        <td>-$1,504.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-12-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>2</td>
+                        <td>$752.17</td>
+                        <td>$1,504.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-12-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$738.17</td>
+                        <td>-$1,476.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-12-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>1</td>
+                        <td>$867.30</td>
+                        <td>$867.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-12-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$835.09</td>
+                        <td>-$835.09</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-12-2022</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$657.38</td>
+                        <td>$1,314.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-12-2022</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$635.01</td>
+                        <td>-$1,270.03</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-12-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>1</td>
+                        <td>$884.27</td>
+                        <td>$884.27</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-12-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$875.91</td>
+                        <td>-$875.91</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-12-2022</td>
+                        <td><a href="stocks/LAZR.html">Luminar Technologies, Inc.  - Class A Common Stock</a></td>
+                        <td>15</td>
+                        <td>$93.00</td>
+                        <td>$1,395.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-12-2022</td>
+                        <td><a href="stocks/LAZR.html">Luminar Technologies, Inc.  - Class A Common Stock</a></td>
+                        <td>-15</td>
+                        <td>$88.95</td>
+                        <td>-$1,334.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-12-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>1</td>
+                        <td>$900.10</td>
+                        <td>$900.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-12-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$873.26</td>
+                        <td>-$873.26</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-12-2022</td>
+                        <td><a href="stocks/MDGL.html">Madrigal Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$287.08</td>
+                        <td>$1,148.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-12-2022</td>
+                        <td><a href="stocks/MDGL.html">Madrigal Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$273.56</td>
+                        <td>-$1,094.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-12-2022</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$293.04</td>
+                        <td>$1,172.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-12-2022</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$275.84</td>
+                        <td>-$1,103.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-12-2022</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>8</td>
+                        <td>$150.00</td>
+                        <td>$1,200.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-12-2022</td>
+                        <td><a href="stocks/AIFU.html">AIFU Inc. - Class A Ordinary Share</a></td>
+                        <td>-8</td>
+                        <td>$145.20</td>
+                        <td>-$1,161.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-12-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>1</td>
+                        <td>$866.28</td>
+                        <td>$866.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-12-2022</td>
+                        <td><a href="stocks/MELI.html">MercadoLibre, Inc. - Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$846.24</td>
+                        <td>-$846.24</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</div>
+</body>
+</html>
