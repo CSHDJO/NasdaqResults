@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nasdaq Trade System - Stock Out Like a Sore Thumb</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+            crossorigin="anonymous"></script>
+    <meta name="theme-color" content="#712cf9">
+</head>
+
+<body>
+<header class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow" data-bs-theme="dark"><a
+        class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="#">Nasdaq Trade system</a>
+</header>
+
+
+<div class="container-fluid">
+    <div class="row">
+        
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <a href="GameResult.html">Back</a>
+            <h1>Stock Out Like a Sore Thumb</h1>
+            <img src="Stock Out Like a Sore Thumb.png" class="img-fluid">
+            <div class="table-responsive small">
+                <table class="table table-striped table-sm">
+                    <thead>
+                    <tr>
+                        <th scope="col">ExecutedOn</th>
+                        <th scope="col">Company</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">AtPrice</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr scope="row">
+                        <td>04-01-2021</td>
+                        <td><a href="stocks/GSAT.html">Globalstar, Inc. - Common Stock</a></td>
+                        <td>196</td>
+                        <td>$5.10</td>
+                        <td>$999.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-01-2021</td>
+                        <td><a href="stocks/GSAT.html">Globalstar, Inc. - Common Stock</a></td>
+                        <td>-196</td>
+                        <td>$5.85</td>
+                        <td>-$1,146.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-01-2021</td>
+                        <td><a href="stocks/SWBI.html">Smith &amp; Wesson Brands, Inc. - Common Stock</a></td>
+                        <td>69</td>
+                        <td>$16.61</td>
+                        <td>$1,145.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-01-2021</td>
+                        <td><a href="stocks/SWBI.html">Smith &amp; Wesson Brands, Inc. - Common Stock</a></td>
+                        <td>-69</td>
+                        <td>$19.66</td>
+                        <td>-$1,356.79</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-01-2021</td>
+                        <td><a href="stocks/SOFI.html">SoFi Technologies, Inc.  - Common Stock</a></td>
+                        <td>112</td>
+                        <td>$12.12</td>
+                        <td>$1,357.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-01-2021</td>
+                        <td><a href="stocks/SOFI.html">SoFi Technologies, Inc.  - Common Stock</a></td>
+                        <td>-112</td>
+                        <td>$19.14</td>
+                        <td>-$2,143.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-01-2021</td>
+                        <td><a href="stocks/GSAT.html">Globalstar, Inc. - Common Stock</a></td>
+                        <td>357</td>
+                        <td>$6.00</td>
+                        <td>$2,142.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-01-2021</td>
+                        <td><a href="stocks/GSAT.html">Globalstar, Inc. - Common Stock</a></td>
+                        <td>-357</td>
+                        <td>$8.40</td>
+                        <td>-$2,998.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-01-2021</td>
+                        <td><a href="stocks/PI.html">Impinj, Inc. - Common Stock</a></td>
+                        <td>69</td>
+                        <td>$42.92</td>
+                        <td>$2,961.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-01-2021</td>
+                        <td><a href="stocks/PI.html">Impinj, Inc. - Common Stock</a></td>
+                        <td>-69</td>
+                        <td>$54.70</td>
+                        <td>-$3,774.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-01-2021</td>
+                        <td><a href="stocks/GSAT.html">Globalstar, Inc. - Common Stock</a></td>
+                        <td>462</td>
+                        <td>$8.25</td>
+                        <td>$3,811.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-01-2021</td>
+                        <td><a href="stocks/GSAT.html">Globalstar, Inc. - Common Stock</a></td>
+                        <td>-462</td>
+                        <td>$13.35</td>
+                        <td>-$6,167.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-01-2021</td>
+                        <td><a href="stocks/MTRX.html">Matrix Service Company - Common Stock</a></td>
+                        <td>504</td>
+                        <td>$12.23</td>
+                        <td>$6,163.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-01-2021</td>
+                        <td><a href="stocks/MTRX.html">Matrix Service Company - Common Stock</a></td>
+                        <td>-504</td>
+                        <td>$15.36</td>
+                        <td>-$7,741.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-01-2021</td>
+                        <td><a href="stocks/TLRY.html">Tilray Brands, Inc. - Common Stock</a></td>
+                        <td>515</td>
+                        <td>$15.02</td>
+                        <td>$7,735.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-01-2021</td>
+                        <td><a href="stocks/TLRY.html">Tilray Brands, Inc. - Common Stock</a></td>
+                        <td>-515</td>
+                        <td>$18.56</td>
+                        <td>-$9,558.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-01-2021</td>
+                        <td><a href="stocks/COLL.html">Collegium Pharmaceutical, Inc. - Common Stock</a></td>
+                        <td>429</td>
+                        <td>$22.29</td>
+                        <td>$9,562.41</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-01-2021</td>
+                        <td><a href="stocks/COLL.html">Collegium Pharmaceutical, Inc. - Common Stock</a></td>
+                        <td>-429</td>
+                        <td>$24.06</td>
+                        <td>-$10,321.74</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-01-2021</td>
+                        <td><a href="stocks/GILT.html">Gilat Satellite Networks Ltd. - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$7.32</td>
+                        <td>$7,320.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-01-2021</td>
+                        <td><a href="stocks/BRAG.html">Bragg Gaming Group Inc. - Common Shares</a></td>
+                        <td>174</td>
+                        <td>$17.20</td>
+                        <td>$2,992.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-01-2021</td>
+                        <td><a href="stocks/GILT.html">Gilat Satellite Networks Ltd. - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$9.22</td>
+                        <td>-$9,220.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-01-2021</td>
+                        <td><a href="stocks/BRAG.html">Bragg Gaming Group Inc. - Common Shares</a></td>
+                        <td>-174</td>
+                        <td>$20.50</td>
+                        <td>-$3,567.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-01-2021</td>
+                        <td><a href="stocks/GSAT.html">Globalstar, Inc. - Common Stock</a></td>
+                        <td>927</td>
+                        <td>$13.80</td>
+                        <td>$12,792.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-01-2021</td>
+                        <td><a href="stocks/GSAT.html">Globalstar, Inc. - Common Stock</a></td>
+                        <td>-927</td>
+                        <td>$20.55</td>
+                        <td>-$19,049.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-01-2021</td>
+                        <td><a href="stocks/UXIN.html">Uxin Limited - American Depositary Shares</a></td>
+                        <td>174</td>
+                        <td>$109.00</td>
+                        <td>$18,966.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-01-2021</td>
+                        <td><a href="stocks/UXIN.html">Uxin Limited - American Depositary Shares</a></td>
+                        <td>-174</td>
+                        <td>$131.00</td>
+                        <td>-$22,794.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-01-2021</td>
+                        <td><a href="stocks/PLTR.html">Palantir Technologies Inc. - Class A Common Stock</a></td>
+                        <td>881</td>
+                        <td>$25.98</td>
+                        <td>$22,888.38</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-01-2021</td>
+                        <td><a href="stocks/PLTR.html">Palantir Technologies Inc. - Class A Common Stock</a></td>
+                        <td>-881</td>
+                        <td>$32.58</td>
+                        <td>-$28,702.98</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-01-2021</td>
+                        <td><a href="stocks/DVAX.html">Dynavax Technologies Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$5.22</td>
+                        <td>$5,220.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-01-2021</td>
+                        <td><a href="stocks/GILT.html">Gilat Satellite Networks Ltd. - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$10.10</td>
+                        <td>$10,100.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-01-2021</td>
+                        <td><a href="stocks/GOGO.html">Gogo Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$12.27</td>
+                        <td>$12,270.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-01-2021</td>
+                        <td><a href="stocks/GSAT.html">Globalstar, Inc. - Common Stock</a></td>
+                        <td>71</td>
+                        <td>$15.60</td>
+                        <td>$1,107.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-01-2021</td>
+                        <td><a href="stocks/GSAT.html">Globalstar, Inc. - Common Stock</a></td>
+                        <td>-71</td>
+                        <td>$17.85</td>
+                        <td>-$1,267.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-01-2021</td>
+                        <td><a href="stocks/GILT.html">Gilat Satellite Networks Ltd. - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$12.10</td>
+                        <td>-$12,100.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-01-2021</td>
+                        <td><a href="stocks/DVAX.html">Dynavax Technologies Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$6.55</td>
+                        <td>-$6,550.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-01-2021</td>
+                        <td><a href="stocks/GOGO.html">Gogo Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$14.50</td>
+                        <td>-$14,500.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-01-2021</td>
+                        <td><a href="stocks/MFIN.html">Medallion Financial Corp. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$4.60</td>
+                        <td>$4,596.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-01-2021</td>
+                        <td><a href="stocks/MFIN.html">Medallion Financial Corp. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$5.56</td>
+                        <td>-$5,560.63</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-01-2021</td>
+                        <td><a href="stocks/FIZZ.html">National Beverage Corp. - Common Stock</a></td>
+                        <td>621</td>
+                        <td>$56.90</td>
+                        <td>$35,337.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-01-2021</td>
+                        <td><a href="stocks/FIZZ.html">National Beverage Corp. - Common Stock</a></td>
+                        <td>-621</td>
+                        <td>$79.77</td>
+                        <td>-$49,534.26</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-01-2021</td>
+                        <td><a href="stocks/SGRY.html">Surgery Partners, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$30.47</td>
+                        <td>$30,470.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-01-2021</td>
+                        <td><a href="stocks/SEATW.html">Vivid Seats Inc. - Warrant</a></td>
+                        <td>1000</td>
+                        <td>$1.55</td>
+                        <td>$1,550.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-01-2021</td>
+                        <td><a href="stocks/SOFI.html">SoFi Technologies, Inc.  - Common Stock</a></td>
+                        <td>966</td>
+                        <td>$18.18</td>
+                        <td>$17,561.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-01-2021</td>
+                        <td><a href="stocks/SOFI.html">SoFi Technologies, Inc.  - Common Stock</a></td>
+                        <td>-966</td>
+                        <td>$20.28</td>
+                        <td>-$19,590.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-01-2021</td>
+                        <td><a href="stocks/SGRY.html">Surgery Partners, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$36.62</td>
+                        <td>-$36,620.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-01-2021</td>
+                        <td><a href="stocks/SEATW.html">Vivid Seats Inc. - Warrant</a></td>
+                        <td>-1000</td>
+                        <td>$1.75</td>
+                        <td>-$1,750.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-01-2021</td>
+                        <td><a href="stocks/NVAX.html">Novavax, Inc. - Common Stock</a></td>
+                        <td>432</td>
+                        <td>$134.01</td>
+                        <td>$57,892.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-01-2021</td>
+                        <td><a href="stocks/NVAX.html">Novavax, Inc. - Common Stock</a></td>
+                        <td>-432</td>
+                        <td>$220.94</td>
+                        <td>-$95,446.08</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-01-2021</td>
+                        <td><a href="stocks/DVAX.html">Dynavax Technologies Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$6.31</td>
+                        <td>$6,310.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-01-2021</td>
+                        <td><a href="stocks/NVAX.html">Novavax, Inc. - Common Stock</a></td>
+                        <td>403</td>
+                        <td>$220.94</td>
+                        <td>$89,038.82</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-01-2021</td>
+                        <td><a href="stocks/UXIN.html">Uxin Limited - American Depositary Shares</a></td>
+                        <td>1</td>
+                        <td>$110.00</td>
+                        <td>$110.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-02-2021</td>
+                        <td><a href="stocks/UXIN.html">Uxin Limited - American Depositary Shares</a></td>
+                        <td>-1</td>
+                        <td>$123.00</td>
+                        <td>-$123.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-02-2021</td>
+                        <td><a href="stocks/DVAX.html">Dynavax Technologies Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$10.27</td>
+                        <td>-$10,270.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-02-2021</td>
+                        <td><a href="stocks/NVAX.html">Novavax, Inc. - Common Stock</a></td>
+                        <td>-403</td>
+                        <td>$268.30</td>
+                        <td>-$108,124.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-02-2021</td>
+                        <td><a href="stocks/TLRY.html">Tilray Brands, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$19.10</td>
+                        <td>$19,100.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-02-2021</td>
+                        <td><a href="stocks/PLRX.html">Pliant Therapeutics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$25.31</td>
+                        <td>$25,310.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-02-2021</td>
+                        <td><a href="stocks/TLRY.html">Tilray Brands, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$23.49</td>
+                        <td>-$23,490.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-02-2021</td>
+                        <td><a href="stocks/PLRX.html">Pliant Therapeutics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$30.69</td>
+                        <td>-$30,690.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-02-2021</td>
+                        <td><a href="stocks/AVXL.html">Anavex Life Sciences Corp. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$7.53</td>
+                        <td>$7,530.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-02-2021</td>
+                        <td><a href="stocks/CLNE.html">Clean Energy Fuels Corp. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$10.47</td>
+                        <td>$10,470.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-02-2021</td>
+                        <td><a href="stocks/OVID.html">Ovid Therapeutics Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$2.92</td>
+                        <td>$2,920.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-02-2021</td>
+                        <td><a href="stocks/AVXL.html">Anavex Life Sciences Corp. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$10.38</td>
+                        <td>-$10,380.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-02-2021</td>
+                        <td><a href="stocks/CLNE.html">Clean Energy Fuels Corp. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$12.83</td>
+                        <td>-$12,830.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-02-2021</td>
+                        <td><a href="stocks/OVID.html">Ovid Therapeutics Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$3.29</td>
+                        <td>-$3,290.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-02-2021</td>
+                        <td><a href="stocks/AVXL.html">Anavex Life Sciences Corp. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$10.38</td>
+                        <td>$10,380.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-02-2021</td>
+                        <td><a href="stocks/SVRA.html">Savara, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$1.58</td>
+                        <td>$1,580.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-02-2021</td>
+                        <td><a href="stocks/AVXL.html">Anavex Life Sciences Corp. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$14.91</td>
+                        <td>-$14,910.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-02-2021</td>
+                        <td><a href="stocks/SVRA.html">Savara, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$1.97</td>
+                        <td>-$1,970.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-02-2021</td>
+                        <td><a href="stocks/COLM.html">Columbia Sportswear Company - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$88.04</td>
+                        <td>$88,036.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-02-2021</td>
+                        <td><a href="stocks/HTHT.html">H World Group Limited - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$46.37</td>
+                        <td>$46,370.54</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-02-2021</td>
+                        <td><a href="stocks/UTSI.html">UTStarcom Holdings Corp - Ordinary Shares</a></td>
+                        <td>599</td>
+                        <td>$7.40</td>
+                        <td>$4,432.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-02-2021</td>
+                        <td><a href="stocks/COLM.html">Columbia Sportswear Company - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$101.31</td>
+                        <td>-$101,314.74</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-02-2021</td>
+                        <td><a href="stocks/HTHT.html">H World Group Limited - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$52.74</td>
+                        <td>-$52,739.63</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-02-2021</td>
+                        <td><a href="stocks/UTSI.html">UTStarcom Holdings Corp - Ordinary Shares</a></td>
+                        <td>-599</td>
+                        <td>$8.32</td>
+                        <td>-$4,983.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-02-2021</td>
+                        <td><a href="stocks/CLNE.html">Clean Energy Fuels Corp. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$12.97</td>
+                        <td>$12,970.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-02-2021</td>
+                        <td><a href="stocks/MSTR.html">MicroStrategy Incorporated - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$80.60</td>
+                        <td>$80,600.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-02-2021</td>
+                        <td><a href="stocks/CLNE.html">Clean Energy Fuels Corp. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$17.87</td>
+                        <td>-$17,870.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-02-2021</td>
+                        <td><a href="stocks/MSTR.html">MicroStrategy Incorporated - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$104.10</td>
+                        <td>-$104,100.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-02-2021</td>
+                        <td><a href="stocks/GSAT.html">Globalstar, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$18.45</td>
+                        <td>$18,450.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-02-2021</td>
+                        <td><a href="stocks/TLRY.html">Tilray Brands, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$30.09</td>
+                        <td>$30,090.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-02-2021</td>
+                        <td><a href="stocks/MSTR.html">MicroStrategy Incorporated - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$104.10</td>
+                        <td>$104,100.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-02-2021</td>
+                        <td><a href="stocks/GSAT.html">Globalstar, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$31.20</td>
+                        <td>-$31,200.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-02-2021</td>
+                        <td><a href="stocks/TLRY.html">Tilray Brands, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$42.35</td>
+                        <td>-$42,350.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-02-2021</td>
+                        <td><a href="stocks/MSTR.html">MicroStrategy Incorporated - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$127.29</td>
+                        <td>-$127,294.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-02-2021</td>
+                        <td><a href="stocks/TLRY.html">Tilray Brands, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$42.35</td>
+                        <td>$42,350.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-02-2021</td>
+                        <td><a href="stocks/FTAI.html">FTAI Aviation Ltd. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$17.39</td>
+                        <td>$17,388.37</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-02-2021</td>
+                        <td><a href="stocks/TLRY.html">Tilray Brands, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$63.91</td>
+                        <td>-$63,910.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-02-2021</td>
+                        <td><a href="stocks/FTAI.html">FTAI Aviation Ltd. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$20.10</td>
+                        <td>-$20,097.21</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-02-2021</td>
+                        <td><a href="stocks/AOSL.html">Alpha and Omega Semiconductor Limited - Common Shares</a></td>
+                        <td>1000</td>
+                        <td>$32.72</td>
+                        <td>$32,720.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-02-2021</td>
+                        <td><a href="stocks/Z.html">Zillow Group, Inc. - Class C Capital Stock</a></td>
+                        <td>1000</td>
+                        <td>$164.70</td>
+                        <td>$164,700.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-02-2021</td>
+                        <td><a href="stocks/ZG.html">Zillow Group, Inc. - Class A Common Stock</a></td>
+                        <td>363</td>
+                        <td>$171.71</td>
+                        <td>$62,330.73</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-02-2021</td>
+                        <td><a href="stocks/AOSL.html">Alpha and Omega Semiconductor Limited - Common Shares</a></td>
+                        <td>-1000</td>
+                        <td>$38.57</td>
+                        <td>-$38,570.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-02-2021</td>
+                        <td><a href="stocks/Z.html">Zillow Group, Inc. - Class C Capital Stock</a></td>
+                        <td>-1000</td>
+                        <td>$194.00</td>
+                        <td>-$194,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-02-2021</td>
+                        <td><a href="stocks/ZG.html">Zillow Group, Inc. - Class A Common Stock</a></td>
+                        <td>-363</td>
+                        <td>$200.60</td>
+                        <td>-$72,817.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-02-2021</td>
+                        <td><a href="stocks/ASYS.html">Amtech Systems, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$8.85</td>
+                        <td>$8,850.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-02-2021</td>
+                        <td><a href="stocks/GSAT.html">Globalstar, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$33.15</td>
+                        <td>$33,150.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-02-2021</td>
+                        <td><a href="stocks/GSAT.html">Globalstar, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$37.20</td>
+                        <td>-$37,200.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-02-2021</td>
+                        <td><a href="stocks/ASYS.html">Amtech Systems, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$10.80</td>
+                        <td>-$10,800.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-02-2021</td>
+                        <td><a href="stocks/TLRY.html">Tilray Brands, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$29.00</td>
+                        <td>$29,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-02-2021</td>
+                        <td><a href="stocks/TUSK.html">Mammoth Energy Services, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$4.41</td>
+                        <td>$4,410.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-02-2021</td>
+                        <td><a href="stocks/METC.html">Ramaco Resources, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$3.62</td>
+                        <td>$3,624.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-02-2021</td>
+                        <td><a href="stocks/TLRY.html">Tilray Brands, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$34.63</td>
+                        <td>-$34,630.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-02-2021</td>
+                        <td><a href="stocks/TUSK.html">Mammoth Energy Services, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$5.15</td>
+                        <td>-$5,150.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-02-2021</td>
+                        <td><a href="stocks/METC.html">Ramaco Resources, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$4.17</td>
+                        <td>-$4,168.58</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-02-2021</td>
+                        <td><a href="stocks/TUSK.html">Mammoth Energy Services, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$5.15</td>
+                        <td>$5,150.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-02-2021</td>
+                        <td><a href="stocks/GSAT.html">Globalstar, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$34.95</td>
+                        <td>$34,950.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-02-2021</td>
+                        <td><a href="stocks/GSAT.html">Globalstar, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$38.55</td>
+                        <td>-$38,550.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-02-2021</td>
+                        <td><a href="stocks/TUSK.html">Mammoth Energy Services, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$6.81</td>
+                        <td>-$6,810.00</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</div>
+</body>
+</html>
