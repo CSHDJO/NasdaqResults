@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nasdaq Trade System - Stock Out Like a Sore Thumb</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+            crossorigin="anonymous"></script>
+    <meta name="theme-color" content="#712cf9">
+</head>
+
+<body>
+<header class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow" data-bs-theme="dark"><a
+        class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="#">Nasdaq Trade system</a>
+</header>
+
+
+<div class="container-fluid">
+    <div class="row">
+        
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <a href="GameResult.html">Back</a>
+            <h1>Stock Out Like a Sore Thumb</h1>
+            <img src="Stock Out Like a Sore Thumb.png" class="img-fluid">
+            <div class="table-responsive small">
+                <table class="table table-striped table-sm">
+                    <thead>
+                    <tr>
+                        <th scope="col">ExecutedOn</th>
+                        <th scope="col">Company</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">AtPrice</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr scope="row">
+                        <td>03-01-2023</td>
+                        <td><a href="stocks/GREEL.html">Greenidge Generation Holdings Inc. - 8.50% Senior Notes due 2026</a></td>
+                        <td>1000</td>
+                        <td>$0.50</td>
+                        <td>$504.84</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-01-2023</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>176</td>
+                        <td>$2.80</td>
+                        <td>$492.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-01-2023</td>
+                        <td><a href="stocks/GREEL.html">Greenidge Generation Holdings Inc. - 8.50% Senior Notes due 2026</a></td>
+                        <td>-1000</td>
+                        <td>$0.72</td>
+                        <td>-$719.94</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-01-2023</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-176</td>
+                        <td>$3.70</td>
+                        <td>-$651.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-01-2023</td>
+                        <td><a href="stocks/NVCR.html">NovoCure Limited - Ordinary Shares</a></td>
+                        <td>19</td>
+                        <td>$70.53</td>
+                        <td>$1,340.07</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-01-2023</td>
+                        <td><a href="stocks/NVCR.html">NovoCure Limited - Ordinary Shares</a></td>
+                        <td>-19</td>
+                        <td>$118.81</td>
+                        <td>-$2,257.39</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-01-2023</td>
+                        <td><a href="stocks/CTMX.html">CytomX Therapeutics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$1.79</td>
+                        <td>$1,790.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-01-2023</td>
+                        <td><a href="stocks/INZY.html">Inozyme Pharma, Inc. - Common Stock</a></td>
+                        <td>313</td>
+                        <td>$1.60</td>
+                        <td>$500.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-01-2023</td>
+                        <td><a href="stocks/CTMX.html">CytomX Therapeutics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$2.52</td>
+                        <td>-$2,520.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-01-2023</td>
+                        <td><a href="stocks/INZY.html">Inozyme Pharma, Inc. - Common Stock</a></td>
+                        <td>-313</td>
+                        <td>$1.86</td>
+                        <td>-$582.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-01-2023</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>795</td>
+                        <td>$3.90</td>
+                        <td>$3,100.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-01-2023</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-795</td>
+                        <td>$5.40</td>
+                        <td>-$4,293.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-01-2023</td>
+                        <td><a href="stocks/SHC.html">Sotera Health Company - Common Stock</a></td>
+                        <td>497</td>
+                        <td>$8.64</td>
+                        <td>$4,294.08</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-01-2023</td>
+                        <td><a href="stocks/SHC.html">Sotera Health Company - Common Stock</a></td>
+                        <td>-497</td>
+                        <td>$17.25</td>
+                        <td>-$8,573.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-01-2023</td>
+                        <td><a href="stocks/RVMD.html">Revolution Medicines, Inc. - Common Stock</a></td>
+                        <td>369</td>
+                        <td>$23.22</td>
+                        <td>$8,568.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-01-2023</td>
+                        <td><a href="stocks/RVMD.html">Revolution Medicines, Inc. - Common Stock</a></td>
+                        <td>-369</td>
+                        <td>$26.90</td>
+                        <td>-$9,926.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-01-2023</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$6.60</td>
+                        <td>$6,600.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-01-2023</td>
+                        <td><a href="stocks/GREEL.html">Greenidge Generation Holdings Inc. - 8.50% Senior Notes due 2026</a></td>
+                        <td>1000</td>
+                        <td>$1.13</td>
+                        <td>$1,126.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-01-2023</td>
+                        <td><a href="stocks/HOWL.html">Werewolf Therapeutics, Inc. - Common Stock</a></td>
+                        <td>858</td>
+                        <td>$2.57</td>
+                        <td>$2,205.06</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-01-2023</td>
+                        <td><a href="stocks/GREEL.html">Greenidge Generation Holdings Inc. - 8.50% Senior Notes due 2026</a></td>
+                        <td>-1000</td>
+                        <td>$1.72</td>
+                        <td>-$1,716.14</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-01-2023</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$10.60</td>
+                        <td>-$10,600.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-01-2023</td>
+                        <td><a href="stocks/HOWL.html">Werewolf Therapeutics, Inc. - Common Stock</a></td>
+                        <td>-858</td>
+                        <td>$3.59</td>
+                        <td>-$3,080.22</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-01-2023</td>
+                        <td><a href="stocks/ATAT.html">Atour Lifestyle Holdings Limited - American Depositary Shares</a></td>
+                        <td>790</td>
+                        <td>$19.48</td>
+                        <td>$15,388.78</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-01-2023</td>
+                        <td><a href="stocks/ATAT.html">Atour Lifestyle Holdings Limited - American Depositary Shares</a></td>
+                        <td>-790</td>
+                        <td>$24.31</td>
+                        <td>-$19,207.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-01-2023</td>
+                        <td><a href="stocks/ARBK.html">Argo Blockchain plc - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$1.47</td>
+                        <td>$1,470.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-01-2023</td>
+                        <td><a href="stocks/GREEL.html">Greenidge Generation Holdings Inc. - 8.50% Senior Notes due 2026</a></td>
+                        <td>1000</td>
+                        <td>$1.99</td>
+                        <td>$1,992.93</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-01-2023</td>
+                        <td><a href="stocks/HEPS.html">D-Market Electronic Services &amp; Trading - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$0.96</td>
+                        <td>$960.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-01-2023</td>
+                        <td><a href="stocks/BMEA.html">Biomea Fusion, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$7.44</td>
+                        <td>$7,440.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-01-2023</td>
+                        <td><a href="stocks/GREEL.html">Greenidge Generation Holdings Inc. - 8.50% Senior Notes due 2026</a></td>
+                        <td>-1000</td>
+                        <td>$2.43</td>
+                        <td>-$2,430.27</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-01-2023</td>
+                        <td><a href="stocks/ARBK.html">Argo Blockchain plc - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$1.82</td>
+                        <td>-$1,820.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-01-2023</td>
+                        <td><a href="stocks/HEPS.html">D-Market Electronic Services &amp; Trading - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$1.17</td>
+                        <td>-$1,170.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-01-2023</td>
+                        <td><a href="stocks/BMEA.html">Biomea Fusion, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$8.31</td>
+                        <td>-$8,310.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-01-2023</td>
+                        <td><a href="stocks/BMEA.html">Biomea Fusion, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$8.31</td>
+                        <td>$8,310.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-01-2023</td>
+                        <td><a href="stocks/BMEA.html">Biomea Fusion, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$9.39</td>
+                        <td>-$9,390.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-01-2023</td>
+                        <td><a href="stocks/IMUX.html">Immunic, Inc.  - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$1.50</td>
+                        <td>$1,500.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-01-2023</td>
+                        <td><a href="stocks/ATAT.html">Atour Lifestyle Holdings Limited - American Depositary Shares</a></td>
+                        <td>987</td>
+                        <td>$20.93</td>
+                        <td>$20,662.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-01-2023</td>
+                        <td><a href="stocks/ATAT.html">Atour Lifestyle Holdings Limited - American Depositary Shares</a></td>
+                        <td>-987</td>
+                        <td>$24.20</td>
+                        <td>-$23,883.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-01-2023</td>
+                        <td><a href="stocks/IMUX.html">Immunic, Inc.  - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$1.79</td>
+                        <td>-$1,790.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-01-2023</td>
+                        <td><a href="stocks/HOWL.html">Werewolf Therapeutics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$3.51</td>
+                        <td>$3,510.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-01-2023</td>
+                        <td><a href="stocks/COIN.html">Coinbase Global, Inc. - Class A Common Stock</a></td>
+                        <td>448</td>
+                        <td>$49.42</td>
+                        <td>$22,140.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-01-2023</td>
+                        <td><a href="stocks/HOWL.html">Werewolf Therapeutics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$4.30</td>
+                        <td>-$4,300.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-01-2023</td>
+                        <td><a href="stocks/COIN.html">Coinbase Global, Inc. - Class A Common Stock</a></td>
+                        <td>-448</td>
+                        <td>$55.16</td>
+                        <td>-$24,711.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-01-2023</td>
+                        <td><a href="stocks/FER.html">Ferrovial SE - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$23.88</td>
+                        <td>$23,881.06</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-01-2023</td>
+                        <td><a href="stocks/ARBK.html">Argo Blockchain plc - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$1.73</td>
+                        <td>$1,730.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-01-2023</td>
+                        <td><a href="stocks/FLNC.html">Fluence Energy, Inc. - Class A Common Stock</a></td>
+                        <td>151</td>
+                        <td>$22.54</td>
+                        <td>$3,403.54</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-01-2023</td>
+                        <td><a href="stocks/ARBK.html">Argo Blockchain plc - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$1.94</td>
+                        <td>-$1,940.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-01-2023</td>
+                        <td><a href="stocks/FER.html">Ferrovial SE - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$28.44</td>
+                        <td>-$28,442.93</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-01-2023</td>
+                        <td><a href="stocks/FLNC.html">Fluence Energy, Inc. - Class A Common Stock</a></td>
+                        <td>-151</td>
+                        <td>$24.91</td>
+                        <td>-$3,761.41</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-01-2023</td>
+                        <td><a href="stocks/GOSS.html">Gossamer Bio, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$2.10</td>
+                        <td>$2,100.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-01-2023</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>308</td>
+                        <td>$104.00</td>
+                        <td>$32,032.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-01-2023</td>
+                        <td><a href="stocks/GOSS.html">Gossamer Bio, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$2.40</td>
+                        <td>-$2,400.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-01-2023</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-308</td>
+                        <td>$118.00</td>
+                        <td>-$36,344.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-01-2023</td>
+                        <td><a href="stocks/EHTH.html">eHealth, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$5.42</td>
+                        <td>$5,420.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-01-2023</td>
+                        <td><a href="stocks/TIGO.html">Millicom International Cellular S.A. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$13.86</td>
+                        <td>$13,857.49</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-01-2023</td>
+                        <td><a href="stocks/MKTX.html">MarketAxess Holdings, Inc. - Common Stock</a></td>
+                        <td>61</td>
+                        <td>$319.64</td>
+                        <td>$19,498.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-01-2023</td>
+                        <td><a href="stocks/EHTH.html">eHealth, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$7.17</td>
+                        <td>-$7,170.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-01-2023</td>
+                        <td><a href="stocks/TIGO.html">Millicom International Cellular S.A. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$17.05</td>
+                        <td>-$17,053.21</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-01-2023</td>
+                        <td><a href="stocks/MKTX.html">MarketAxess Holdings, Inc. - Common Stock</a></td>
+                        <td>-61</td>
+                        <td>$352.39</td>
+                        <td>-$21,495.74</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-01-2023</td>
+                        <td><a href="stocks/WRLD.html">World Acceptance Corporation - Common Stock</a></td>
+                        <td>564</td>
+                        <td>$81.00</td>
+                        <td>$45,684.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-01-2023</td>
+                        <td><a href="stocks/WRLD.html">World Acceptance Corporation - Common Stock</a></td>
+                        <td>-564</td>
+                        <td>$108.49</td>
+                        <td>-$61,188.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-01-2023</td>
+                        <td><a href="stocks/QNCX.html">Quince Therapeutics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$0.81</td>
+                        <td>$808.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-01-2023</td>
+                        <td><a href="stocks/COIN.html">Coinbase Global, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$53.02</td>
+                        <td>$53,020.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-01-2023</td>
+                        <td><a href="stocks/CABA.html">Cabaletta Bio, Inc. - Common Stock</a></td>
+                        <td>707</td>
+                        <td>$10.45</td>
+                        <td>$7,388.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-01-2023</td>
+                        <td><a href="stocks/COIN.html">Coinbase Global, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$61.37</td>
+                        <td>-$61,370.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-01-2023</td>
+                        <td><a href="stocks/QNCX.html">Quince Therapeutics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$1.08</td>
+                        <td>-$1,080.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-01-2023</td>
+                        <td><a href="stocks/CABA.html">Cabaletta Bio, Inc. - Common Stock</a></td>
+                        <td>-707</td>
+                        <td>$11.86</td>
+                        <td>-$8,385.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-01-2023</td>
+                        <td><a href="stocks/ATAT.html">Atour Lifestyle Holdings Limited - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$23.93</td>
+                        <td>$23,930.55</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-01-2023</td>
+                        <td><a href="stocks/IQ.html">iQIYI, Inc. - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$6.24</td>
+                        <td>$6,240.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-01-2023</td>
+                        <td><a href="stocks/ATAT.html">Atour Lifestyle Holdings Limited - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$26.68</td>
+                        <td>-$26,677.77</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-01-2023</td>
+                        <td><a href="stocks/IQ.html">iQIYI, Inc. - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$6.92</td>
+                        <td>-$6,920.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-01-2023</td>
+                        <td><a href="stocks/ABOS.html">Acumen Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$5.33</td>
+                        <td>$5,330.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-01-2023</td>
+                        <td><a href="stocks/SFIX.html">Stitch Fix, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$4.50</td>
+                        <td>$4,500.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-01-2023</td>
+                        <td><a href="stocks/IMUX.html">Immunic, Inc.  - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$2.10</td>
+                        <td>$2,100.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-01-2023</td>
+                        <td><a href="stocks/IMUX.html">Immunic, Inc.  - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$2.40</td>
+                        <td>-$2,400.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-01-2023</td>
+                        <td><a href="stocks/ABOS.html">Acumen Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$6.57</td>
+                        <td>-$6,570.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-01-2023</td>
+                        <td><a href="stocks/SFIX.html">Stitch Fix, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$5.21</td>
+                        <td>-$5,210.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-01-2023</td>
+                        <td><a href="stocks/SLAB.html">Silicon Laboratories, Inc. - Common Stock</a></td>
+                        <td>487</td>
+                        <td>$156.91</td>
+                        <td>$76,415.17</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-01-2023</td>
+                        <td><a href="stocks/AEVA.html">Aeva Technologies, Inc. - Common Stock</a></td>
+                        <td>12</td>
+                        <td>$8.45</td>
+                        <td>$101.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-02-2023</td>
+                        <td><a href="stocks/SLAB.html">Silicon Laboratories, Inc. - Common Stock</a></td>
+                        <td>-487</td>
+                        <td>$179.00</td>
+                        <td>-$87,173.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-02-2023</td>
+                        <td><a href="stocks/AEVA.html">Aeva Technologies, Inc. - Common Stock</a></td>
+                        <td>-12</td>
+                        <td>$9.55</td>
+                        <td>-$114.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-02-2023</td>
+                        <td><a href="stocks/EGHT.html">8x8 Inc - Common stock</a></td>
+                        <td>1000</td>
+                        <td>$5.01</td>
+                        <td>$5,010.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-02-2023</td>
+                        <td><a href="stocks/COIN.html">Coinbase Global, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$65.70</td>
+                        <td>$65,700.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-02-2023</td>
+                        <td><a href="stocks/ALGT.html">Allegiant Travel Company - Common Stock</a></td>
+                        <td>203</td>
+                        <td>$81.57</td>
+                        <td>$16,557.94</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-02-2023</td>
+                        <td><a href="stocks/COIN.html">Coinbase Global, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$81.46</td>
+                        <td>-$81,460.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-02-2023</td>
+                        <td><a href="stocks/EGHT.html">8x8 Inc - Common stock</a></td>
+                        <td>-1000</td>
+                        <td>$6.38</td>
+                        <td>-$6,380.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-02-2023</td>
+                        <td><a href="stocks/ALGT.html">Allegiant Travel Company - Common Stock</a></td>
+                        <td>-203</td>
+                        <td>$98.83</td>
+                        <td>-$20,062.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-02-2023</td>
+                        <td><a href="stocks/INZY.html">Inozyme Pharma, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$2.45</td>
+                        <td>$2,450.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-02-2023</td>
+                        <td><a href="stocks/IMUX.html">Immunic, Inc.  - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$2.57</td>
+                        <td>$2,570.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-02-2023</td>
+                        <td><a href="stocks/INZY.html">Inozyme Pharma, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$2.86</td>
+                        <td>-$2,860.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-02-2023</td>
+                        <td><a href="stocks/IMUX.html">Immunic, Inc.  - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$2.87</td>
+                        <td>-$2,870.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-02-2023</td>
+                        <td><a href="stocks/ARBK.html">Argo Blockchain plc - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$1.97</td>
+                        <td>$1,970.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-02-2023</td>
+                        <td><a href="stocks/AMSC.html">American Superconductor Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$5.31</td>
+                        <td>$5,310.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-02-2023</td>
+                        <td><a href="stocks/SANG.html">Sangoma Technologies Corporation - Common Shares</a></td>
+                        <td>1000</td>
+                        <td>$4.79</td>
+                        <td>$4,790.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-02-2023</td>
+                        <td><a href="stocks/ARBK.html">Argo Blockchain plc - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$2.66</td>
+                        <td>-$2,660.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-02-2023</td>
+                        <td><a href="stocks/AMSC.html">American Superconductor Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$6.38</td>
+                        <td>-$6,380.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-02-2023</td>
+                        <td><a href="stocks/SANG.html">Sangoma Technologies Corporation - Common Shares</a></td>
+                        <td>-1000</td>
+                        <td>$5.29</td>
+                        <td>-$5,290.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-02-2023</td>
+                        <td><a href="stocks/ARCB.html">ArcBest Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$85.35</td>
+                        <td>$85,354.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-02-2023</td>
+                        <td><a href="stocks/BIDU.html">Baidu, Inc. - American Depositary Shares, each representing 8 ordinary share</a></td>
+                        <td>178</td>
+                        <td>$142.82</td>
+                        <td>$25,421.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-02-2023</td>
+                        <td><a href="stocks/ARCB.html">ArcBest Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$100.19</td>
+                        <td>-$100,185.89</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-02-2023</td>
+                        <td><a href="stocks/BIDU.html">Baidu, Inc. - American Depositary Shares, each representing 8 ordinary share</a></td>
+                        <td>-178</td>
+                        <td>$160.22</td>
+                        <td>-$28,519.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-02-2023</td>
+                        <td><a href="stocks/TIGO.html">Millicom International Cellular S.A. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$15.78</td>
+                        <td>$15,782.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-02-2023</td>
+                        <td><a href="stocks/OPT.html">Opthea Limited - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$5.30</td>
+                        <td>$5,300.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-02-2023</td>
+                        <td><a href="stocks/SLDP.html">Solid Power, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$3.40</td>
+                        <td>$3,400.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-02-2023</td>
+                        <td><a href="stocks/TIGO.html">Millicom International Cellular S.A. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$17.46</td>
+                        <td>-$17,464.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-02-2023</td>
+                        <td><a href="stocks/OPT.html">Opthea Limited - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$5.67</td>
+                        <td>-$5,670.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-02-2023</td>
+                        <td><a href="stocks/SLDP.html">Solid Power, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$3.63</td>
+                        <td>-$3,630.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-02-2023</td>
+                        <td><a href="stocks/FORM.html">FormFactor, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$28.94</td>
+                        <td>$28,940.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-02-2023</td>
+                        <td><a href="stocks/NSIT.html">Insight Enterprises, Inc. - Common Stock</a></td>
+                        <td>909</td>
+                        <td>$112.33</td>
+                        <td>$102,107.97</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-02-2023</td>
+                        <td><a href="stocks/FORM.html">FormFactor, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$32.42</td>
+                        <td>-$32,420.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-02-2023</td>
+                        <td><a href="stocks/NSIT.html">Insight Enterprises, Inc. - Common Stock</a></td>
+                        <td>-909</td>
+                        <td>$125.21</td>
+                        <td>-$113,815.89</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-02-2023</td>
+                        <td><a href="stocks/KLXE.html">KLX Energy Services Holdings, Inc.  - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$11.89</td>
+                        <td>$11,890.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-02-2023</td>
+                        <td><a href="stocks/CRSR.html">Corsair Gaming, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$15.12</td>
+                        <td>$15,120.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-02-2023</td>
+                        <td><a href="stocks/ADV.html">Advantage Solutions Inc.  - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$2.51</td>
+                        <td>$2,510.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-02-2023</td>
+                        <td><a href="stocks/KLXE.html">KLX Energy Services Holdings, Inc.  - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$13.89</td>
+                        <td>-$13,890.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-02-2023</td>
+                        <td><a href="stocks/CRSR.html">Corsair Gaming, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$16.91</td>
+                        <td>-$16,910.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-02-2023</td>
+                        <td><a href="stocks/ADV.html">Advantage Solutions Inc.  - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$2.68</td>
+                        <td>-$2,680.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-02-2023</td>
+                        <td><a href="stocks/XNET.html">Xunlei Limited - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$1.68</td>
+                        <td>$1,680.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-02-2023</td>
+                        <td><a href="stocks/TIGO.html">Millicom International Cellular S.A. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$17.42</td>
+                        <td>$17,417.64</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-02-2023</td>
+                        <td><a href="stocks/TIGO.html">Millicom International Cellular S.A. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$19.22</td>
+                        <td>-$19,221.07</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-02-2023</td>
+                        <td><a href="stocks/XNET.html">Xunlei Limited - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$1.86</td>
+                        <td>-$1,860.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-02-2023</td>
+                        <td><a href="stocks/OUST.html">Ouster, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$13.70</td>
+                        <td>$13,700.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-02-2023</td>
+                        <td><a href="stocks/EMBC.html">Embecta Corp. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$25.94</td>
+                        <td>$25,940.64</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-02-2023</td>
+                        <td><a href="stocks/GTLB.html">GitLab Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$43.24</td>
+                        <td>$43,240.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-02-2023</td>
+                        <td><a href="stocks/OUST.html">Ouster, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$16.50</td>
+                        <td>-$16,500.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-02-2023</td>
+                        <td><a href="stocks/EMBC.html">Embecta Corp. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$29.20</td>
+                        <td>-$29,198.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-02-2023</td>
+                        <td><a href="stocks/GTLB.html">GitLab Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$47.26</td>
+                        <td>-$47,260.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-02-2023</td>
+                        <td><a href="stocks/UPST.html">Upstart Holdings, Inc. - Common stock</a></td>
+                        <td>1000</td>
+                        <td>$16.85</td>
+                        <td>$16,850.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-02-2023</td>
+                        <td><a href="stocks/ARBK.html">Argo Blockchain plc - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$1.35</td>
+                        <td>$1,350.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-02-2023</td>
+                        <td><a href="stocks/ARBK.html">Argo Blockchain plc - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$1.61</td>
+                        <td>-$1,610.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-02-2023</td>
+                        <td><a href="stocks/UPST.html">Upstart Holdings, Inc. - Common stock</a></td>
+                        <td>-1000</td>
+                        <td>$21.59</td>
+                        <td>-$21,590.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-02-2023</td>
+                        <td><a href="stocks/INZY.html">Inozyme Pharma, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$2.22</td>
+                        <td>$2,220.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-02-2023</td>
+                        <td><a href="stocks/ARBK.html">Argo Blockchain plc - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$1.61</td>
+                        <td>$1,610.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-02-2023</td>
+                        <td><a href="stocks/KC.html">Kingsoft Cloud Holdings Limited - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$4.35</td>
+                        <td>$4,350.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-02-2023</td>
+                        <td><a href="stocks/INZY.html">Inozyme Pharma, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$2.70</td>
+                        <td>-$2,700.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-02-2023</td>
+                        <td><a href="stocks/ARBK.html">Argo Blockchain plc - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$1.80</td>
+                        <td>-$1,800.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-02-2023</td>
+                        <td><a href="stocks/KC.html">Kingsoft Cloud Holdings Limited - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$4.71</td>
+                        <td>-$4,710.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-02-2023</td>
+                        <td><a href="stocks/AMCX.html">AMC Networks Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$20.50</td>
+                        <td>$20,500.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-02-2023</td>
+                        <td><a href="stocks/DSGN.html">Design Therapeutics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$6.78</td>
+                        <td>$6,780.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-02-2023</td>
+                        <td><a href="stocks/AMCX.html">AMC Networks Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$27.13</td>
+                        <td>-$27,130.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-02-2023</td>
+                        <td><a href="stocks/DSGN.html">Design Therapeutics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$7.64</td>
+                        <td>-$7,635.00</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</div>
+</body>
+</html>
