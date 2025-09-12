@@ -1,0 +1,2798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nasdaq Trade System - de Jonge Investments</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+            crossorigin="anonymous"></script>
+    <meta name="theme-color" content="#712cf9">
+</head>
+
+<body>
+<header class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow" data-bs-theme="dark"><a
+        class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="#">Nasdaq Trade system</a>
+</header>
+
+
+<div class="container-fluid">
+    <div class="row">
+        
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <a href="GameResult.html">Back</a>
+            <h1>de Jonge Investments</h1>
+            <img src="de Jonge Investments.png" class="img-fluid">
+            <div class="table-responsive small">
+                <table class="table table-striped table-sm">
+                    <thead>
+                    <tr>
+                        <th scope="col">ExecutedOn</th>
+                        <th scope="col">Company</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">AtPrice</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr scope="row">
+                        <td>04-01-2021</td>
+                        <td><a href="stocks/ROOT.html">Root, Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$288.90</td>
+                        <td>$866.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-01-2021</td>
+                        <td><a href="stocks/ROOT.html">Root, Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$310.68</td>
+                        <td>-$932.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-01-2021</td>
+                        <td><a href="stocks/CGC.html">Canopy Growth Corporation - Common Shares</a></td>
+                        <td>3</td>
+                        <td>$270.40</td>
+                        <td>$811.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-01-2021</td>
+                        <td><a href="stocks/CGC.html">Canopy Growth Corporation - Common Shares</a></td>
+                        <td>-3</td>
+                        <td>$301.70</td>
+                        <td>-$905.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-01-2021</td>
+                        <td><a href="stocks/ROOT.html">Root, Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$301.14</td>
+                        <td>$903.42</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-01-2021</td>
+                        <td><a href="stocks/ROOT.html">Root, Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$331.20</td>
+                        <td>-$993.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-01-2021</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$272.01</td>
+                        <td>$1,088.05</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-01-2021</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$293.34</td>
+                        <td>-$1,173.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-01-2021</td>
+                        <td><a href="stocks/ETSY.html">Etsy, Inc. - Common Stock</a></td>
+                        <td>7</td>
+                        <td>$183.04</td>
+                        <td>$1,281.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-01-2021</td>
+                        <td><a href="stocks/ETSY.html">Etsy, Inc. - Common Stock</a></td>
+                        <td>-7</td>
+                        <td>$205.15</td>
+                        <td>-$1,436.05</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-01-2021</td>
+                        <td><a href="stocks/ROOT.html">Root, Inc. - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$345.78</td>
+                        <td>$1,383.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-01-2021</td>
+                        <td><a href="stocks/ROOT.html">Root, Inc. - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$416.70</td>
+                        <td>-$1,666.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-01-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>3</td>
+                        <td>$493.25</td>
+                        <td>$1,479.74</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-01-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-3</td>
+                        <td>$522.60</td>
+                        <td>-$1,567.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-01-2021</td>
+                        <td><a href="stocks/QDEL.html">QuidelOrtho Corporation - Common Stock</a></td>
+                        <td>9</td>
+                        <td>$198.03</td>
+                        <td>$1,782.27</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-01-2021</td>
+                        <td><a href="stocks/QDEL.html">QuidelOrtho Corporation - Common Stock</a></td>
+                        <td>-9</td>
+                        <td>$204.49</td>
+                        <td>-$1,840.41</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-01-2021</td>
+                        <td><a href="stocks/YQ.html">17 Education &amp; Technology Group Inc. - American Depositary Shares</a></td>
+                        <td>7</td>
+                        <td>$245.00</td>
+                        <td>$1,715.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-01-2021</td>
+                        <td><a href="stocks/YQ.html">17 Education &amp; Technology Group Inc. - American Depositary Shares</a></td>
+                        <td>-7</td>
+                        <td>$363.20</td>
+                        <td>-$2,542.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-01-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>5</td>
+                        <td>$527.14</td>
+                        <td>$2,635.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-01-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-5</td>
+                        <td>$547.63</td>
+                        <td>-$2,738.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-01-2021</td>
+                        <td><a href="stocks/ROOT.html">Root, Inc. - Common Stock</a></td>
+                        <td>8</td>
+                        <td>$320.04</td>
+                        <td>$2,560.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-01-2021</td>
+                        <td><a href="stocks/ROOT.html">Root, Inc. - Common Stock</a></td>
+                        <td>-8</td>
+                        <td>$352.62</td>
+                        <td>-$2,820.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-01-2021</td>
+                        <td><a href="stocks/YQ.html">17 Education &amp; Technology Group Inc. - American Depositary Shares</a></td>
+                        <td>9</td>
+                        <td>$314.20</td>
+                        <td>$2,827.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-01-2021</td>
+                        <td><a href="stocks/YQ.html">17 Education &amp; Technology Group Inc. - American Depositary Shares</a></td>
+                        <td>-9</td>
+                        <td>$371.20</td>
+                        <td>-$3,340.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-01-2021</td>
+                        <td><a href="stocks/IRBT.html">iRobot Corporation - Common Stock</a></td>
+                        <td>28</td>
+                        <td>$126.40</td>
+                        <td>$3,539.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-01-2021</td>
+                        <td><a href="stocks/IRBT.html">iRobot Corporation - Common Stock</a></td>
+                        <td>-28</td>
+                        <td>$161.16</td>
+                        <td>-$4,512.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-01-2021</td>
+                        <td><a href="stocks/CGC.html">Canopy Growth Corporation - Common Shares</a></td>
+                        <td>12</td>
+                        <td>$378.30</td>
+                        <td>$4,539.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-01-2021</td>
+                        <td><a href="stocks/CGC.html">Canopy Growth Corporation - Common Shares</a></td>
+                        <td>-12</td>
+                        <td>$403.30</td>
+                        <td>-$4,839.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-01-2021</td>
+                        <td><a href="stocks/QDEL.html">QuidelOrtho Corporation - Common Stock</a></td>
+                        <td>21</td>
+                        <td>$227.30</td>
+                        <td>$4,773.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-01-2021</td>
+                        <td><a href="stocks/QDEL.html">QuidelOrtho Corporation - Common Stock</a></td>
+                        <td>-21</td>
+                        <td>$250.97</td>
+                        <td>-$5,270.37</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-02-2021</td>
+                        <td><a href="stocks/CGC.html">Canopy Growth Corporation - Common Shares</a></td>
+                        <td>13</td>
+                        <td>$400.60</td>
+                        <td>$5,207.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-02-2021</td>
+                        <td><a href="stocks/CGC.html">Canopy Growth Corporation - Common Shares</a></td>
+                        <td>-13</td>
+                        <td>$417.15</td>
+                        <td>-$5,422.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-02-2021</td>
+                        <td><a href="stocks/CGC.html">Canopy Growth Corporation - Common Shares</a></td>
+                        <td>13</td>
+                        <td>$417.15</td>
+                        <td>$5,422.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-02-2021</td>
+                        <td><a href="stocks/CGC.html">Canopy Growth Corporation - Common Shares</a></td>
+                        <td>-13</td>
+                        <td>$449.40</td>
+                        <td>-$5,842.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-02-2021</td>
+                        <td><a href="stocks/MTCH.html">Match Group, Inc. - Common Stock</a></td>
+                        <td>44</td>
+                        <td>$136.49</td>
+                        <td>$6,005.47</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-02-2021</td>
+                        <td><a href="stocks/MTCH.html">Match Group, Inc. - Common Stock</a></td>
+                        <td>-44</td>
+                        <td>$148.85</td>
+                        <td>-$6,549.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-02-2021</td>
+                        <td><a href="stocks/ZM.html">Zoom Communications, Inc. - Class A Common Stock</a></td>
+                        <td>16</td>
+                        <td>$389.98</td>
+                        <td>$6,239.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-02-2021</td>
+                        <td><a href="stocks/ZM.html">Zoom Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-16</td>
+                        <td>$419.59</td>
+                        <td>-$6,713.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-02-2021</td>
+                        <td><a href="stocks/CGC.html">Canopy Growth Corporation - Common Shares</a></td>
+                        <td>16</td>
+                        <td>$438.70</td>
+                        <td>$7,019.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-02-2021</td>
+                        <td><a href="stocks/CGC.html">Canopy Growth Corporation - Common Shares</a></td>
+                        <td>-16</td>
+                        <td>$490.90</td>
+                        <td>-$7,854.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-02-2021</td>
+                        <td><a href="stocks/CGC.html">Canopy Growth Corporation - Common Shares</a></td>
+                        <td>16</td>
+                        <td>$490.90</td>
+                        <td>$7,854.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-02-2021</td>
+                        <td><a href="stocks/CGC.html">Canopy Growth Corporation - Common Shares</a></td>
+                        <td>-16</td>
+                        <td>$521.70</td>
+                        <td>-$8,347.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-02-2021</td>
+                        <td><a href="stocks/YQ.html">17 Education &amp; Technology Group Inc. - American Depositary Shares</a></td>
+                        <td>29</td>
+                        <td>$285.00</td>
+                        <td>$8,265.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-02-2021</td>
+                        <td><a href="stocks/YQ.html">17 Education &amp; Technology Group Inc. - American Depositary Shares</a></td>
+                        <td>-29</td>
+                        <td>$314.60</td>
+                        <td>-$9,123.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-02-2021</td>
+                        <td><a href="stocks/ILMN.html">Illumina, Inc. - Common Stock</a></td>
+                        <td>21</td>
+                        <td>$438.93</td>
+                        <td>$9,217.53</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-02-2021</td>
+                        <td><a href="stocks/ILMN.html">Illumina, Inc. - Common Stock</a></td>
+                        <td>-21</td>
+                        <td>$491.01</td>
+                        <td>-$10,311.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-02-2021</td>
+                        <td><a href="stocks/YQ.html">17 Education &amp; Technology Group Inc. - American Depositary Shares</a></td>
+                        <td>31</td>
+                        <td>$331.00</td>
+                        <td>$10,261.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-02-2021</td>
+                        <td><a href="stocks/YQ.html">17 Education &amp; Technology Group Inc. - American Depositary Shares</a></td>
+                        <td>-31</td>
+                        <td>$350.40</td>
+                        <td>-$10,862.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-02-2021</td>
+                        <td><a href="stocks/CYBR.html">CyberArk Software Ltd. - Ordinary Shares</a></td>
+                        <td>71</td>
+                        <td>$152.89</td>
+                        <td>$10,855.19</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-02-2021</td>
+                        <td><a href="stocks/CYBR.html">CyberArk Software Ltd. - Ordinary Shares</a></td>
+                        <td>-71</td>
+                        <td>$158.48</td>
+                        <td>-$11,252.08</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-02-2021</td>
+                        <td><a href="stocks/CGC.html">Canopy Growth Corporation - Common Shares</a></td>
+                        <td>30</td>
+                        <td>$366.50</td>
+                        <td>$10,995.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-02-2021</td>
+                        <td><a href="stocks/CGC.html">Canopy Growth Corporation - Common Shares</a></td>
+                        <td>-30</td>
+                        <td>$386.30</td>
+                        <td>-$11,589.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-02-2021</td>
+                        <td><a href="stocks/LIN.html">Linde plc - Ordinary Shares</a></td>
+                        <td>50</td>
+                        <td>$235.93</td>
+                        <td>$11,796.49</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-02-2021</td>
+                        <td><a href="stocks/LIN.html">Linde plc - Ordinary Shares</a></td>
+                        <td>-50</td>
+                        <td>$243.04</td>
+                        <td>-$12,152.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-02-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>22</td>
+                        <td>$552.75</td>
+                        <td>$12,160.42</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-02-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-22</td>
+                        <td>$570.92</td>
+                        <td>-$12,560.23</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-02-2021</td>
+                        <td><a href="stocks/ALXO.html">ALX Oncology Holdings Inc. - Common Stock</a></td>
+                        <td>165</td>
+                        <td>$76.75</td>
+                        <td>$12,663.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-02-2021</td>
+                        <td><a href="stocks/ALXO.html">ALX Oncology Holdings Inc. - Common Stock</a></td>
+                        <td>-165</td>
+                        <td>$82.67</td>
+                        <td>-$13,640.55</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-02-2021</td>
+                        <td><a href="stocks/ETSY.html">Etsy, Inc. - Common Stock</a></td>
+                        <td>69</td>
+                        <td>$197.58</td>
+                        <td>$13,633.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-02-2021</td>
+                        <td><a href="stocks/ETSY.html">Etsy, Inc. - Common Stock</a></td>
+                        <td>-69</td>
+                        <td>$220.27</td>
+                        <td>-$15,198.63</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-03-2021</td>
+                        <td><a href="stocks/MODV.html">ModivCare Inc. - Common Stock</a></td>
+                        <td>120</td>
+                        <td>$126.64</td>
+                        <td>$15,196.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-03-2021</td>
+                        <td><a href="stocks/MODV.html">ModivCare Inc. - Common Stock</a></td>
+                        <td>-120</td>
+                        <td>$133.59</td>
+                        <td>-$16,030.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-03-2021</td>
+                        <td><a href="stocks/SAIA.html">Saia, Inc. - Common Stock</a></td>
+                        <td>74</td>
+                        <td>$214.44</td>
+                        <td>$15,868.56</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-03-2021</td>
+                        <td><a href="stocks/SAIA.html">Saia, Inc. - Common Stock</a></td>
+                        <td>-74</td>
+                        <td>$223.35</td>
+                        <td>-$16,527.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-03-2021</td>
+                        <td><a href="stocks/FANG.html">Diamondback Energy, Inc. - Common Stock</a></td>
+                        <td>271</td>
+                        <td>$61.46</td>
+                        <td>$16,656.57</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-03-2021</td>
+                        <td><a href="stocks/FANG.html">Diamondback Energy, Inc. - Common Stock</a></td>
+                        <td>-271</td>
+                        <td>$67.09</td>
+                        <td>-$18,182.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-03-2021</td>
+                        <td><a href="stocks/YQ.html">17 Education &amp; Technology Group Inc. - American Depositary Shares</a></td>
+                        <td>82</td>
+                        <td>$222.00</td>
+                        <td>$18,204.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-03-2021</td>
+                        <td><a href="stocks/YQ.html">17 Education &amp; Technology Group Inc. - American Depositary Shares</a></td>
+                        <td>-82</td>
+                        <td>$245.60</td>
+                        <td>-$20,139.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-03-2021</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>107</td>
+                        <td>$187.67</td>
+                        <td>$20,080.33</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-03-2021</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>-107</td>
+                        <td>$224.53</td>
+                        <td>-$24,024.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-03-2021</td>
+                        <td><a href="stocks/DKNG.html">DraftKings Inc. - Class A Common Stock</a></td>
+                        <td>387</td>
+                        <td>$62.20</td>
+                        <td>$24,071.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-03-2021</td>
+                        <td><a href="stocks/DKNG.html">DraftKings Inc. - Class A Common Stock</a></td>
+                        <td>-387</td>
+                        <td>$69.29</td>
+                        <td>-$26,815.23</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-03-2021</td>
+                        <td><a href="stocks/CGC.html">Canopy Growth Corporation - Common Shares</a></td>
+                        <td>84</td>
+                        <td>$319.10</td>
+                        <td>$26,804.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-03-2021</td>
+                        <td><a href="stocks/CGC.html">Canopy Growth Corporation - Common Shares</a></td>
+                        <td>-84</td>
+                        <td>$342.80</td>
+                        <td>-$28,795.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-03-2021</td>
+                        <td><a href="stocks/PARAA.html">Paramount Global - Class A Common Stock</a></td>
+                        <td>364</td>
+                        <td>$79.16</td>
+                        <td>$28,813.21</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-03-2021</td>
+                        <td><a href="stocks/PARAA.html">Paramount Global - Class A Common Stock</a></td>
+                        <td>-364</td>
+                        <td>$87.19</td>
+                        <td>-$31,737.06</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-03-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>221</td>
+                        <td>$143.66</td>
+                        <td>$31,748.86</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-03-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>-221</td>
+                        <td>$156.02</td>
+                        <td>-$34,480.42</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-03-2021</td>
+                        <td><a href="stocks/CGC.html">Canopy Growth Corporation - Common Shares</a></td>
+                        <td>102</td>
+                        <td>$337.30</td>
+                        <td>$34,404.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-03-2021</td>
+                        <td><a href="stocks/CGC.html">Canopy Growth Corporation - Common Shares</a></td>
+                        <td>-102</td>
+                        <td>$350.70</td>
+                        <td>-$35,771.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-03-2021</td>
+                        <td><a href="stocks/PARAA.html">Paramount Global - Class A Common Stock</a></td>
+                        <td>423</td>
+                        <td>$84.66</td>
+                        <td>$35,810.94</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-03-2021</td>
+                        <td><a href="stocks/PARAA.html">Paramount Global - Class A Common Stock</a></td>
+                        <td>-423</td>
+                        <td>$88.91</td>
+                        <td>-$37,609.07</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-03-2021</td>
+                        <td><a href="stocks/ROOT.html">Root, Inc. - Common Stock</a></td>
+                        <td>187</td>
+                        <td>$201.42</td>
+                        <td>$37,665.54</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-03-2021</td>
+                        <td><a href="stocks/ROOT.html">Root, Inc. - Common Stock</a></td>
+                        <td>-187</td>
+                        <td>$216.00</td>
+                        <td>-$40,392.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-03-2021</td>
+                        <td><a href="stocks/ZM.html">Zoom Communications, Inc. - Class A Common Stock</a></td>
+                        <td>122</td>
+                        <td>$328.50</td>
+                        <td>$40,077.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-03-2021</td>
+                        <td><a href="stocks/ZM.html">Zoom Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-122</td>
+                        <td>$339.76</td>
+                        <td>-$41,450.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-03-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>77</td>
+                        <td>$536.24</td>
+                        <td>$41,290.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-03-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-77</td>
+                        <td>$555.15</td>
+                        <td>-$42,746.91</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-03-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>195</td>
+                        <td>$221.26</td>
+                        <td>$43,144.93</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-03-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-195</td>
+                        <td>$242.03</td>
+                        <td>-$47,195.65</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-03-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>84</td>
+                        <td>$560.36</td>
+                        <td>$47,069.84</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-03-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-84</td>
+                        <td>$600.34</td>
+                        <td>-$50,428.39</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-03-2021</td>
+                        <td><a href="stocks/YQ.html">17 Education &amp; Technology Group Inc. - American Depositary Shares</a></td>
+                        <td>384</td>
+                        <td>$131.80</td>
+                        <td>$50,611.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-03-2021</td>
+                        <td><a href="stocks/YQ.html">17 Education &amp; Technology Group Inc. - American Depositary Shares</a></td>
+                        <td>-384</td>
+                        <td>$151.00</td>
+                        <td>-$57,984.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-03-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>100</td>
+                        <td>$576.95</td>
+                        <td>$57,694.51</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-03-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-100</td>
+                        <td>$592.36</td>
+                        <td>-$59,236.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-03-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>100</td>
+                        <td>$592.36</td>
+                        <td>$59,236.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-04-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-100</td>
+                        <td>$611.31</td>
+                        <td>-$61,130.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-04-2021</td>
+                        <td><a href="stocks/ILMN.html">Illumina, Inc. - Common Stock</a></td>
+                        <td>164</td>
+                        <td>$374.07</td>
+                        <td>$61,346.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-04-2021</td>
+                        <td><a href="stocks/ILMN.html">Illumina, Inc. - Common Stock</a></td>
+                        <td>-164</td>
+                        <td>$403.54</td>
+                        <td>-$66,180.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-04-2021</td>
+                        <td><a href="stocks/PENG.html">Penguin Solutions, Inc. - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$24.35</td>
+                        <td>$24,355.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-04-2021</td>
+                        <td><a href="stocks/PENG.html">Penguin Solutions, Inc. - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$27.27</td>
+                        <td>-$27,275.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-04-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>115</td>
+                        <td>$601.19</td>
+                        <td>$69,137.07</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-04-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-115</td>
+                        <td>$613.97</td>
+                        <td>-$70,606.86</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-04-2021</td>
+                        <td><a href="stocks/IPGP.html">IPG Photonics Corporation - Common Stock</a></td>
+                        <td>305</td>
+                        <td>$231.17</td>
+                        <td>$70,506.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-04-2021</td>
+                        <td><a href="stocks/IPGP.html">IPG Photonics Corporation - Common Stock</a></td>
+                        <td>-305</td>
+                        <td>$238.71</td>
+                        <td>-$72,806.55</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-04-2021</td>
+                        <td><a href="stocks/ZM.html">Zoom Communications, Inc. - Class A Common Stock</a></td>
+                        <td>226</td>
+                        <td>$321.51</td>
+                        <td>$72,661.26</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-04-2021</td>
+                        <td><a href="stocks/ZM.html">Zoom Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-226</td>
+                        <td>$342.75</td>
+                        <td>-$77,461.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-04-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>519</td>
+                        <td>$149.71</td>
+                        <td>$77,699.49</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-04-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>-519</td>
+                        <td>$160.03</td>
+                        <td>-$83,055.57</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-04-2021</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>231</td>
+                        <td>$359.39</td>
+                        <td>$83,017.94</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-04-2021</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>-231</td>
+                        <td>$370.70</td>
+                        <td>-$85,632.45</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-04-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>536</td>
+                        <td>$159.87</td>
+                        <td>$85,690.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-04-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>-536</td>
+                        <td>$170.81</td>
+                        <td>-$91,554.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-04-2021</td>
+                        <td><a href="stocks/BIIB.html">Biogen Inc. - Common Stock</a></td>
+                        <td>340</td>
+                        <td>$269.05</td>
+                        <td>$91,477.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-04-2021</td>
+                        <td><a href="stocks/BIIB.html">Biogen Inc. - Common Stock</a></td>
+                        <td>-340</td>
+                        <td>$273.20</td>
+                        <td>-$92,888.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-04-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>157</td>
+                        <td>$591.96</td>
+                        <td>$92,937.94</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-04-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-157</td>
+                        <td>$628.95</td>
+                        <td>-$98,745.26</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-04-2021</td>
+                        <td><a href="stocks/MODV.html">ModivCare Inc. - Common Stock</a></td>
+                        <td>705</td>
+                        <td>$140.08</td>
+                        <td>$98,756.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-04-2021</td>
+                        <td><a href="stocks/MODV.html">ModivCare Inc. - Common Stock</a></td>
+                        <td>-705</td>
+                        <td>$145.99</td>
+                        <td>-$102,922.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-04-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>165</td>
+                        <td>$620.89</td>
+                        <td>$102,446.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-04-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-165</td>
+                        <td>$643.75</td>
+                        <td>-$106,218.14</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-04-2021</td>
+                        <td><a href="stocks/CROX.html">Crocs, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$84.84</td>
+                        <td>$84,840.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-04-2021</td>
+                        <td><a href="stocks/CROX.html">Crocs, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$97.82</td>
+                        <td>-$97,820.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-04-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>675</td>
+                        <td>$177.29</td>
+                        <td>$119,673.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-04-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-675</td>
+                        <td>$194.20</td>
+                        <td>-$131,086.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-04-2021</td>
+                        <td><a href="stocks/SAIA.html">Saia, Inc. - Common Stock</a></td>
+                        <td>560</td>
+                        <td>$233.90</td>
+                        <td>$130,984.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-04-2021</td>
+                        <td><a href="stocks/SAIA.html">Saia, Inc. - Common Stock</a></td>
+                        <td>-560</td>
+                        <td>$239.60</td>
+                        <td>-$134,176.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-04-2021</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>595</td>
+                        <td>$225.67</td>
+                        <td>$134,271.67</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-04-2021</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>-595</td>
+                        <td>$236.48</td>
+                        <td>-$140,705.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-05-2021</td>
+                        <td><a href="stocks/CROX.html">Crocs, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$98.13</td>
+                        <td>$98,130.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-05-2021</td>
+                        <td><a href="stocks/CROX.html">Crocs, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$103.70</td>
+                        <td>-$103,700.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-05-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>241</td>
+                        <td>$605.28</td>
+                        <td>$145,872.37</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-05-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-241</td>
+                        <td>$617.67</td>
+                        <td>-$148,859.41</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-05-2021</td>
+                        <td><a href="stocks/IPGP.html">IPG Photonics Corporation - Common Stock</a></td>
+                        <td>787</td>
+                        <td>$189.65</td>
+                        <td>$149,254.55</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-05-2021</td>
+                        <td><a href="stocks/IPGP.html">IPG Photonics Corporation - Common Stock</a></td>
+                        <td>-787</td>
+                        <td>$197.33</td>
+                        <td>-$155,298.71</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-05-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>250</td>
+                        <td>$620.04</td>
+                        <td>$155,010.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-05-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-250</td>
+                        <td>$633.73</td>
+                        <td>-$158,433.62</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-05-2021</td>
+                        <td><a href="stocks/ZM.html">Zoom Communications, Inc. - Class A Common Stock</a></td>
+                        <td>550</td>
+                        <td>$288.49</td>
+                        <td>$158,669.49</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-05-2021</td>
+                        <td><a href="stocks/ZM.html">Zoom Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-550</td>
+                        <td>$300.25</td>
+                        <td>-$165,137.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-05-2021</td>
+                        <td><a href="stocks/QDEL.html">QuidelOrtho Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$114.72</td>
+                        <td>$114,720.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-05-2021</td>
+                        <td><a href="stocks/QDEL.html">QuidelOrtho Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$119.94</td>
+                        <td>-$119,940.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-05-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>294</td>
+                        <td>$579.18</td>
+                        <td>$170,279.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-05-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-294</td>
+                        <td>$599.59</td>
+                        <td>-$176,280.22</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-05-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>294</td>
+                        <td>$599.59</td>
+                        <td>$176,280.22</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-05-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-294</td>
+                        <td>$623.33</td>
+                        <td>-$183,259.69</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-05-2021</td>
+                        <td><a href="stocks/ROOT.html">Root, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$164.16</td>
+                        <td>$164,160.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-05-2021</td>
+                        <td><a href="stocks/ROOT.html">Root, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$170.91</td>
+                        <td>-$170,910.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-05-2021</td>
+                        <td><a href="stocks/TTWO.html">Take-Two Interactive Software, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$167.69</td>
+                        <td>$167,690.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-05-2021</td>
+                        <td><a href="stocks/TTWO.html">Take-Two Interactive Software, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$179.35</td>
+                        <td>-$179,350.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-05-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>332</td>
+                        <td>$606.99</td>
+                        <td>$201,521.51</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-05-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-332</td>
+                        <td>$624.30</td>
+                        <td>-$207,268.97</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-05-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>513</td>
+                        <td>$404.00</td>
+                        <td>$207,252.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-05-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>-513</td>
+                        <td>$449.20</td>
+                        <td>-$230,439.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-05-2021</td>
+                        <td><a href="stocks/CGC.html">Canopy Growth Corporation - Common Shares</a></td>
+                        <td>1000</td>
+                        <td>$226.80</td>
+                        <td>$226,800.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-05-2021</td>
+                        <td><a href="stocks/CGC.html">Canopy Growth Corporation - Common Shares</a></td>
+                        <td>-1000</td>
+                        <td>$241.50</td>
+                        <td>-$241,500.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-05-2021</td>
+                        <td><a href="stocks/CRMT.html">America's Car-Mart, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$159.50</td>
+                        <td>$159,500.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-05-2021</td>
+                        <td><a href="stocks/CRMT.html">America's Car-Mart, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$174.52</td>
+                        <td>-$174,520.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-05-2021</td>
+                        <td><a href="stocks/BYND.html">Beyond Meat, Inc. - Common stock</a></td>
+                        <td>1000</td>
+                        <td>$126.74</td>
+                        <td>$126,740.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-05-2021</td>
+                        <td><a href="stocks/BYND.html">Beyond Meat, Inc. - Common stock</a></td>
+                        <td>-1000</td>
+                        <td>$142.61</td>
+                        <td>-$142,610.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-05-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>624</td>
+                        <td>$442.40</td>
+                        <td>$276,057.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-05-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>-624</td>
+                        <td>$474.20</td>
+                        <td>-$295,900.81</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-06-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$128.50</td>
+                        <td>$128,502.41</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-06-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$161.35</td>
+                        <td>-$161,352.66</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-06-2021</td>
+                        <td><a href="stocks/VC.html">Visteon Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$123.61</td>
+                        <td>$123,610.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-06-2021</td>
+                        <td><a href="stocks/VC.html">Visteon Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$129.02</td>
+                        <td>-$129,020.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-06-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$143.96</td>
+                        <td>$143,961.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-06-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$166.18</td>
+                        <td>-$166,183.58</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-06-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>713</td>
+                        <td>$500.00</td>
+                        <td>$356,500.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-06-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>-713</td>
+                        <td>$539.80</td>
+                        <td>-$384,877.39</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-06-2021</td>
+                        <td><a href="stocks/ROOT.html">Root, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$203.58</td>
+                        <td>$203,580.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-06-2021</td>
+                        <td><a href="stocks/ROOT.html">Root, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$242.46</td>
+                        <td>-$242,460.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-06-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$171.01</td>
+                        <td>$171,014.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-06-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$209.18</td>
+                        <td>-$209,178.74</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-06-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>867</td>
+                        <td>$533.00</td>
+                        <td>$462,111.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-06-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>-867</td>
+                        <td>$574.60</td>
+                        <td>-$498,178.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-06-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>910</td>
+                        <td>$547.40</td>
+                        <td>$498,134.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-06-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>-910</td>
+                        <td>$556.40</td>
+                        <td>-$506,324.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-06-2021</td>
+                        <td><a href="stocks/PRTA.html">Prothena Corporation plc - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$51.97</td>
+                        <td>$51,970.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-06-2021</td>
+                        <td><a href="stocks/PRTA.html">Prothena Corporation plc - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$57.65</td>
+                        <td>-$57,650.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-06-2021</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$333.89</td>
+                        <td>$333,892.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-06-2021</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$345.94</td>
+                        <td>-$345,939.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-06-2021</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$219.86</td>
+                        <td>$219,860.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-06-2021</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$232.51</td>
+                        <td>-$232,509.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-06-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$208.24</td>
+                        <td>$208,240.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-06-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$221.36</td>
+                        <td>-$221,360.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-06-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$171.98</td>
+                        <td>$171,980.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-06-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$188.89</td>
+                        <td>-$188,888.89</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-06-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>864</td>
+                        <td>$655.94</td>
+                        <td>$566,735.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-06-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-864</td>
+                        <td>$668.79</td>
+                        <td>-$577,835.17</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-06-2021</td>
+                        <td><a href="stocks/ASPS.html">Altisource Portfolio Solutions S.A. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$62.16</td>
+                        <td>$62,160.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-06-2021</td>
+                        <td><a href="stocks/ASPS.html">Altisource Portfolio Solutions S.A. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$72.08</td>
+                        <td>-$72,080.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-06-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$222.94</td>
+                        <td>$222,940.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-06-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$234.46</td>
+                        <td>-$234,460.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-06-2021</td>
+                        <td><a href="stocks/AMD.html">Advanced Micro Devices, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$89.52</td>
+                        <td>$89,520.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-06-2021</td>
+                        <td><a href="stocks/AMD.html">Advanced Micro Devices, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$93.93</td>
+                        <td>-$93,930.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-06-2021</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$223.59</td>
+                        <td>$223,590.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-07-2021</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$229.95</td>
+                        <td>-$229,950.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-07-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$191.79</td>
+                        <td>$191,787.45</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-07-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$211.59</td>
+                        <td>-$211,594.21</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-07-2021</td>
+                        <td><a href="stocks/BIIB.html">Biogen Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$344.89</td>
+                        <td>$344,890.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-07-2021</td>
+                        <td><a href="stocks/BIIB.html">Biogen Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$355.33</td>
+                        <td>-$355,329.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-07-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$449.00</td>
+                        <td>$449,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-07-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$468.80</td>
+                        <td>-$468,799.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-07-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>1000</td>
+                        <td>$648.28</td>
+                        <td>$648,284.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-07-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-1000</td>
+                        <td>$665.29</td>
+                        <td>-$665,287.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-07-2021</td>
+                        <td><a href="stocks/SNBR.html">Sleep Number Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$108.06</td>
+                        <td>$108,060.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-07-2021</td>
+                        <td><a href="stocks/SNBR.html">Sleep Number Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$111.84</td>
+                        <td>-$111,840.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-07-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$235.15</td>
+                        <td>$235,149.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-07-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$246.66</td>
+                        <td>-$246,660.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-07-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$246.66</td>
+                        <td>$246,660.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-07-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$259.67</td>
+                        <td>-$259,674.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-07-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$259.67</td>
+                        <td>$259,674.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-07-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$286.43</td>
+                        <td>-$286,429.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-07-2021</td>
+                        <td><a href="stocks/ILMN.html">Illumina, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$456.95</td>
+                        <td>$456,945.53</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-07-2021</td>
+                        <td><a href="stocks/ILMN.html">Illumina, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$473.98</td>
+                        <td>-$473,978.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-07-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>1000</td>
+                        <td>$658.25</td>
+                        <td>$658,253.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-07-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-1000</td>
+                        <td>$693.81</td>
+                        <td>-$693,810.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-07-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$239.13</td>
+                        <td>$239,130.43</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-07-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$264.73</td>
+                        <td>-$264,734.31</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-07-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$264.73</td>
+                        <td>$264,734.31</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-07-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$298.55</td>
+                        <td>-$298,550.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-07-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$325.60</td>
+                        <td>$325,603.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-07-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$334.30</td>
+                        <td>-$334,299.53</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-07-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$334.30</td>
+                        <td>$334,299.53</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-07-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$433.33</td>
+                        <td>-$433,333.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-07-2021</td>
+                        <td><a href="stocks/SAIA.html">Saia, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$204.70</td>
+                        <td>$204,700.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-07-2021</td>
+                        <td><a href="stocks/SAIA.html">Saia, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$221.68</td>
+                        <td>-$221,679.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-07-2021</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$305.60</td>
+                        <td>$305,597.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-07-2021</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$333.08</td>
+                        <td>-$333,083.22</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-08-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$346.61</td>
+                        <td>$346,609.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-08-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$386.51</td>
+                        <td>-$386,510.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-08-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$300.48</td>
+                        <td>$300,483.09</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-08-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$338.16</td>
+                        <td>-$338,164.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-08-2021</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$211.91</td>
+                        <td>$211,910.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-08-2021</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$225.00</td>
+                        <td>-$225,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-08-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$320.77</td>
+                        <td>$320,772.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-08-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$344.44</td>
+                        <td>-$344,444.46</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-08-2021</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$221.50</td>
+                        <td>$221,500.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-08-2021</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$229.83</td>
+                        <td>-$229,830.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-08-2021</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$229.83</td>
+                        <td>$229,830.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-08-2021</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$241.08</td>
+                        <td>-$241,080.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-08-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$346.38</td>
+                        <td>$346,376.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-08-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$383.57</td>
+                        <td>-$383,574.89</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-08-2021</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$248.71</td>
+                        <td>$248,710.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-08-2021</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$267.90</td>
+                        <td>-$267,899.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-08-2021</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$245.07</td>
+                        <td>$245,070.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-08-2021</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$305.00</td>
+                        <td>-$305,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-08-2021</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$305.00</td>
+                        <td>$305,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-08-2021</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$355.98</td>
+                        <td>-$355,980.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-08-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$393.24</td>
+                        <td>$393,236.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-08-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$423.67</td>
+                        <td>-$423,671.51</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-08-2021</td>
+                        <td><a href="stocks/ILMN.html">Illumina, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$457.55</td>
+                        <td>$457,548.65</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-08-2021</td>
+                        <td><a href="stocks/ILMN.html">Illumina, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$473.45</td>
+                        <td>-$473,453.31</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-08-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$323.80</td>
+                        <td>$323,799.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-08-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$348.00</td>
+                        <td>-$348,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-08-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$563.77</td>
+                        <td>$563,768.13</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-08-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$674.40</td>
+                        <td>-$674,396.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-08-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$674.40</td>
+                        <td>$674,396.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-08-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$951.69</td>
+                        <td>-$951,690.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-08-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$951.69</td>
+                        <td>$951,690.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-08-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$1,271.98</td>
+                        <td>-$1,271,980.71</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-08-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$370.69</td>
+                        <td>$370,690.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-08-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$376.69</td>
+                        <td>-$376,690.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-08-2021</td>
+                        <td><a href="stocks/AMBA.html">Ambarella, Inc. - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$103.57</td>
+                        <td>$103,570.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-09-2021</td>
+                        <td><a href="stocks/AMBA.html">Ambarella, Inc. - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$131.96</td>
+                        <td>-$131,960.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-09-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>1000</td>
+                        <td>$810.41</td>
+                        <td>$810,410.89</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-09-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-1000</td>
+                        <td>$828.80</td>
+                        <td>-$828,800.11</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-09-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$397.66</td>
+                        <td>$397,660.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-09-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$416.70</td>
+                        <td>-$416,700.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-09-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$932.37</td>
+                        <td>$932,367.13</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-09-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$1,118.84</td>
+                        <td>-$1,118,840.58</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-09-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$1,118.84</td>
+                        <td>$1,118,840.58</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-09-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$1,257.00</td>
+                        <td>-$1,257,004.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-09-2021</td>
+                        <td><a href="stocks/AFRM.html">Affirm Holdings, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$92.06</td>
+                        <td>$92,060.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-09-2021</td>
+                        <td><a href="stocks/AFRM.html">Affirm Holdings, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$123.70</td>
+                        <td>-$123,700.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-09-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>1000</td>
+                        <td>$838.38</td>
+                        <td>$838,384.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-09-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-1000</td>
+                        <td>$854.58</td>
+                        <td>-$854,579.71</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-09-2021</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$342.05</td>
+                        <td>$342,050.05</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-09-2021</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$352.56</td>
+                        <td>-$352,559.54</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-09-2021</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$375.97</td>
+                        <td>$375,970.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-09-2021</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$385.50</td>
+                        <td>-$385,500.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-09-2021</td>
+                        <td><a href="stocks/ZM.html">Zoom Communications, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$278.22</td>
+                        <td>$278,220.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-09-2021</td>
+                        <td><a href="stocks/ZM.html">Zoom Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$287.68</td>
+                        <td>-$287,679.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-09-2021</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$348.45</td>
+                        <td>$348,450.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-09-2021</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$367.33</td>
+                        <td>-$367,329.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-09-2021</td>
+                        <td><a href="stocks/AMBA.html">Ambarella, Inc. - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$148.92</td>
+                        <td>$148,920.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-09-2021</td>
+                        <td><a href="stocks/AMBA.html">Ambarella, Inc. - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$164.37</td>
+                        <td>-$164,370.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-09-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>1000</td>
+                        <td>$832.13</td>
+                        <td>$832,129.58</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-09-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-1000</td>
+                        <td>$846.60</td>
+                        <td>-$846,602.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-09-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$254.00</td>
+                        <td>$254,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-09-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$261.50</td>
+                        <td>-$261,500.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-09-2021</td>
+                        <td><a href="stocks/CNXC.html">Concentrix Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$158.61</td>
+                        <td>$158,607.59</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-09-2021</td>
+                        <td><a href="stocks/CNXC.html">Concentrix Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$163.89</td>
+                        <td>-$163,885.33</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-09-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$237.80</td>
+                        <td>$237,800.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-09-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$254.00</td>
+                        <td>-$254,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-09-2021</td>
+                        <td><a href="stocks/AFRM.html">Affirm Holdings, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$112.77</td>
+                        <td>$112,770.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-09-2021</td>
+                        <td><a href="stocks/AFRM.html">Affirm Holdings, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$119.13</td>
+                        <td>-$119,130.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-09-2021</td>
+                        <td><a href="stocks/MAR.html">Marriott International - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$143.52</td>
+                        <td>$143,520.46</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-10-2021</td>
+                        <td><a href="stocks/MAR.html">Marriott International - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$151.16</td>
+                        <td>-$151,157.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-10-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>1000</td>
+                        <td>$686.05</td>
+                        <td>$686,054.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-10-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-1000</td>
+                        <td>$705.23</td>
+                        <td>-$705,232.67</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-10-2021</td>
+                        <td><a href="stocks/AFRM.html">Affirm Holdings, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$111.46</td>
+                        <td>$111,460.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-10-2021</td>
+                        <td><a href="stocks/AFRM.html">Affirm Holdings, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$133.70</td>
+                        <td>-$133,700.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-10-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$270.00</td>
+                        <td>$270,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-10-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$294.60</td>
+                        <td>-$294,600.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-10-2021</td>
+                        <td><a href="stocks/ASPS.html">Altisource Portfolio Solutions S.A. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$94.00</td>
+                        <td>$94,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-10-2021</td>
+                        <td><a href="stocks/ASPS.html">Altisource Portfolio Solutions S.A. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$113.92</td>
+                        <td>-$113,920.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-10-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>1000</td>
+                        <td>$697.71</td>
+                        <td>$697,707.46</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-10-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-1000</td>
+                        <td>$716.35</td>
+                        <td>-$716,346.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-10-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>1000</td>
+                        <td>$716.35</td>
+                        <td>$716,346.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-10-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-1000</td>
+                        <td>$748.94</td>
+                        <td>-$748,939.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-10-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$224.90</td>
+                        <td>$224,899.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-10-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$242.50</td>
+                        <td>-$242,500.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-10-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>1000</td>
+                        <td>$758.50</td>
+                        <td>$758,495.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-10-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-1000</td>
+                        <td>$770.75</td>
+                        <td>-$770,754.82</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-10-2021</td>
+                        <td><a href="stocks/ETSY.html">Etsy, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$226.41</td>
+                        <td>$226,410.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-10-2021</td>
+                        <td><a href="stocks/ETSY.html">Etsy, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$233.12</td>
+                        <td>-$233,120.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-10-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>1000</td>
+                        <td>$738.75</td>
+                        <td>$738,749.21</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-10-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-1000</td>
+                        <td>$757.86</td>
+                        <td>-$757,860.17</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-10-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>1000</td>
+                        <td>$757.86</td>
+                        <td>$757,860.17</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-10-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-1000</td>
+                        <td>$770.76</td>
+                        <td>-$770,764.47</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-10-2021</td>
+                        <td><a href="stocks/PERI.html">Perion Network Ltd - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$22.14</td>
+                        <td>$22,140.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-10-2021</td>
+                        <td><a href="stocks/PERI.html">Perion Network Ltd - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$29.08</td>
+                        <td>-$29,080.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-10-2021</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$372.21</td>
+                        <td>$372,209.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-10-2021</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$392.00</td>
+                        <td>-$392,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-10-2021</td>
+                        <td><a href="stocks/SAIA.html">Saia, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$273.89</td>
+                        <td>$273,890.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-10-2021</td>
+                        <td><a href="stocks/SAIA.html">Saia, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$311.86</td>
+                        <td>-$311,859.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-10-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$203.20</td>
+                        <td>$203,200.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-10-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$271.90</td>
+                        <td>-$271,899.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-11-2021</td>
+                        <td><a href="stocks/IPGP.html">IPG Photonics Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$163.26</td>
+                        <td>$163,259.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-11-2021</td>
+                        <td><a href="stocks/IPGP.html">IPG Photonics Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$177.34</td>
+                        <td>-$177,340.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-11-2021</td>
+                        <td><a href="stocks/IRTC.html">iRhythm Technologies, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$76.80</td>
+                        <td>$76,800.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-11-2021</td>
+                        <td><a href="stocks/IRTC.html">iRhythm Technologies, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$122.12</td>
+                        <td>-$122,120.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-11-2021</td>
+                        <td><a href="stocks/ETSY.html">Etsy, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$239.62</td>
+                        <td>$239,620.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-11-2021</td>
+                        <td><a href="stocks/ETSY.html">Etsy, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$271.27</td>
+                        <td>-$271,269.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-11-2021</td>
+                        <td><a href="stocks/EXPE.html">Expedia Group, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$156.85</td>
+                        <td>$156,845.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-11-2021</td>
+                        <td><a href="stocks/EXPE.html">Expedia Group, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$181.35</td>
+                        <td>-$181,354.83</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-11-2021</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$383.45</td>
+                        <td>$383,450.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-11-2021</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$444.70</td>
+                        <td>-$444,700.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-11-2021</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$341.17</td>
+                        <td>$341,166.66</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-11-2021</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$355.98</td>
+                        <td>-$355,983.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-11-2021</td>
+                        <td><a href="stocks/ROOT.html">Root, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$84.06</td>
+                        <td>$84,060.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-11-2021</td>
+                        <td><a href="stocks/ROOT.html">Root, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$100.62</td>
+                        <td>-$100,620.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-11-2021</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$369.15</td>
+                        <td>$369,149.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-11-2021</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$400.59</td>
+                        <td>-$400,590.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-11-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$216.70</td>
+                        <td>$216,700.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-11-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$229.40</td>
+                        <td>-$229,399.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-11-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>1000</td>
+                        <td>$829.20</td>
+                        <td>$829,199.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-11-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-1000</td>
+                        <td>$848.17</td>
+                        <td>-$848,166.93</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-11-2021</td>
+                        <td><a href="stocks/KRNT.html">Kornit Digital Ltd. - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$155.01</td>
+                        <td>$155,009.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-11-2021</td>
+                        <td><a href="stocks/KRNT.html">Kornit Digital Ltd. - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$176.40</td>
+                        <td>-$176,399.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-11-2021</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$328.41</td>
+                        <td>$328,410.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-11-2021</td>
+                        <td><a href="stocks/MNDY.html">monday.com Ltd. - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$342.66</td>
+                        <td>-$342,660.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-11-2021</td>
+                        <td><a href="stocks/ETSY.html">Etsy, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$279.53</td>
+                        <td>$279,530.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-11-2021</td>
+                        <td><a href="stocks/ETSY.html">Etsy, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$296.91</td>
+                        <td>-$296,910.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-11-2021</td>
+                        <td><a href="stocks/TXG.html">10x Genomics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$144.45</td>
+                        <td>$144,450.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-11-2021</td>
+                        <td><a href="stocks/TXG.html">10x Genomics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$152.81</td>
+                        <td>-$152,810.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-11-2021</td>
+                        <td><a href="stocks/AMBA.html">Ambarella, Inc. - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$179.52</td>
+                        <td>$179,520.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-12-2021</td>
+                        <td><a href="stocks/AMBA.html">Ambarella, Inc. - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$204.89</td>
+                        <td>-$204,890.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-12-2021</td>
+                        <td><a href="stocks/SNPS.html">Synopsys, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$334.75</td>
+                        <td>$334,750.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-12-2021</td>
+                        <td><a href="stocks/SNPS.html">Synopsys, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$349.67</td>
+                        <td>-$349,670.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-12-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$301.49</td>
+                        <td>$301,489.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-12-2021</td>
+                        <td><a href="stocks/MRNA.html">Moderna, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$306.72</td>
+                        <td>-$306,720.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-12-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>1000</td>
+                        <td>$729.76</td>
+                        <td>$729,758.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-12-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-1000</td>
+                        <td>$777.63</td>
+                        <td>-$777,631.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-12-2021</td>
+                        <td><a href="stocks/ETSY.html">Etsy, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$237.45</td>
+                        <td>$237,450.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-12-2021</td>
+                        <td><a href="stocks/ETSY.html">Etsy, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$246.00</td>
+                        <td>-$246,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-12-2021</td>
+                        <td><a href="stocks/FORTY.html">Formula Systems (1985) Ltd. - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$113.07</td>
+                        <td>$113,074.91</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-12-2021</td>
+                        <td><a href="stocks/FORTY.html">Formula Systems (1985) Ltd. - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$116.80</td>
+                        <td>-$116,798.79</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-12-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>1000</td>
+                        <td>$745.41</td>
+                        <td>$745,407.17</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-12-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-1000</td>
+                        <td>$754.31</td>
+                        <td>-$754,312.07</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-12-2021</td>
+                        <td><a href="stocks/AXON.html">Axon Enterprise, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$138.89</td>
+                        <td>$138,890.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-12-2021</td>
+                        <td><a href="stocks/AXON.html">Axon Enterprise, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$145.73</td>
+                        <td>-$145,730.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-12-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>1000</td>
+                        <td>$727.83</td>
+                        <td>$727,828.49</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-12-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-1000</td>
+                        <td>$764.33</td>
+                        <td>-$764,326.54</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-12-2021</td>
+                        <td><a href="stocks/IRTC.html">iRhythm Technologies, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$95.44</td>
+                        <td>$95,440.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-12-2021</td>
+                        <td><a href="stocks/IRTC.html">iRhythm Technologies, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$99.97</td>
+                        <td>-$99,970.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-12-2021</td>
+                        <td><a href="stocks/ZM.html">Zoom Communications, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$182.40</td>
+                        <td>$182,399.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-12-2021</td>
+                        <td><a href="stocks/ZM.html">Zoom Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$199.74</td>
+                        <td>-$199,740.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-12-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>1000</td>
+                        <td>$726.37</td>
+                        <td>$726,371.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-12-2021</td>
+                        <td><a href="stocks/ASML.html">ASML Holding N.V. - New York Registry Shares</a></td>
+                        <td>-1000</td>
+                        <td>$755.47</td>
+                        <td>-$755,469.67</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-12-2021</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$312.84</td>
+                        <td>$312,843.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-12-2021</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$336.29</td>
+                        <td>-$336,290.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-12-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$173.40</td>
+                        <td>$173,399.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-12-2021</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$196.50</td>
+                        <td>-$196,500.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-12-2021</td>
+                        <td><a href="stocks/NICE.html">NICE Ltd - American Depositary Shares each representing one Ordinary Share</a></td>
+                        <td>1000</td>
+                        <td>$307.44</td>
+                        <td>$307,440.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-12-2021</td>
+                        <td><a href="stocks/NICE.html">NICE Ltd - American Depositary Shares each representing one Ordinary Share</a></td>
+                        <td>-1000</td>
+                        <td>$311.15</td>
+                        <td>-$311,149.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-12-2021</td>
+                        <td><a href="stocks/BIIB.html">Biogen Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$235.99</td>
+                        <td>$235,990.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-12-2021</td>
+                        <td><a href="stocks/BIIB.html">Biogen Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$258.31</td>
+                        <td>-$258,310.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-12-2021</td>
+                        <td><a href="stocks/ZM.html">Zoom Communications, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$181.81</td>
+                        <td>$181,810.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-12-2021</td>
+                        <td><a href="stocks/ZM.html">Zoom Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$190.52</td>
+                        <td>-$190,520.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-12-2021</td>
+                        <td><a href="stocks/SAIA.html">Saia, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$332.84</td>
+                        <td>$332,840.00</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</div>
+</body>
+</html>
