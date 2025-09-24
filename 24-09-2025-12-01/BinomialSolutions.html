@@ -1,0 +1,2469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nasdaq Trade System - BinomialSolutions</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+            crossorigin="anonymous"></script>
+    <meta name="theme-color" content="#712cf9">
+</head>
+
+<body>
+<header class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow" data-bs-theme="dark"><a
+        class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="#">Nasdaq Trade system</a>
+</header>
+
+
+<div class="container-fluid">
+    <div class="row">
+        
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <a href="GameResult.html">Back</a>
+            <h1>BinomialSolutions</h1>
+            <img src="BinomialSolutions.png" class="img-fluid">
+            <div class="table-responsive small">
+                <table class="table table-striped table-sm">
+                    <thead>
+                    <tr>
+                        <th scope="col">ExecutedOn</th>
+                        <th scope="col">Company</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">AtPrice</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr scope="row">
+                        <td>03-01-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>1</td>
+                        <td>$849.67</td>
+                        <td>$849.67</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-01-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$874.34</td>
+                        <td>-$874.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-01-2022</td>
+                        <td><a href="stocks/EBON.html">Ebang International Holdings Inc. - Class A Ordinary Shares</a></td>
+                        <td>32</td>
+                        <td>$31.20</td>
+                        <td>$998.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-01-2022</td>
+                        <td><a href="stocks/EBON.html">Ebang International Holdings Inc. - Class A Ordinary Shares</a></td>
+                        <td>-32</td>
+                        <td>$34.20</td>
+                        <td>-$1,094.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-01-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>1</td>
+                        <td>$829.16</td>
+                        <td>$829.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-01-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$860.06</td>
+                        <td>-$860.06</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-01-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>1</td>
+                        <td>$860.06</td>
+                        <td>$860.06</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-01-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$895.45</td>
+                        <td>-$895.45</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-01-2022</td>
+                        <td><a href="stocks/VALN.html">Valneva SE - American Depositary Shares</a></td>
+                        <td>36</td>
+                        <td>$32.77</td>
+                        <td>$1,179.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-01-2022</td>
+                        <td><a href="stocks/VALN.html">Valneva SE - American Depositary Shares</a></td>
+                        <td>-36</td>
+                        <td>$47.52</td>
+                        <td>-$1,710.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-01-2022</td>
+                        <td><a href="stocks/KPTI.html">Karyopharm Therapeutics Inc. - Common Stock</a></td>
+                        <td>14</td>
+                        <td>$115.95</td>
+                        <td>$1,623.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-01-2022</td>
+                        <td><a href="stocks/KPTI.html">Karyopharm Therapeutics Inc. - Common Stock</a></td>
+                        <td>-14</td>
+                        <td>$124.20</td>
+                        <td>-$1,738.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-01-2022</td>
+                        <td><a href="stocks/BNTX.html">BioNTech SE - American Depositary Shares</a></td>
+                        <td>12</td>
+                        <td>$149.01</td>
+                        <td>$1,788.08</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-01-2022</td>
+                        <td><a href="stocks/BNTX.html">BioNTech SE - American Depositary Shares</a></td>
+                        <td>-12</td>
+                        <td>$154.44</td>
+                        <td>-$1,853.33</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-01-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>2</td>
+                        <td>$752.07</td>
+                        <td>$1,504.14</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-01-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$761.02</td>
+                        <td>-$1,522.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-01-2022</td>
+                        <td><a href="stocks/ALGN.html">Align Technology, Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$494.96</td>
+                        <td>$1,484.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-02-2022</td>
+                        <td><a href="stocks/ALGN.html">Align Technology, Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$508.56</td>
+                        <td>-$1,525.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-02-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$513.51</td>
+                        <td>$1,540.53</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-02-2022</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$534.23</td>
+                        <td>-$1,602.69</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-02-2022</td>
+                        <td><a href="stocks/TMUS.html">T-Mobile US, Inc. - Common Stock</a></td>
+                        <td>18</td>
+                        <td>$106.77</td>
+                        <td>$1,921.78</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-02-2022</td>
+                        <td><a href="stocks/TMUS.html">T-Mobile US, Inc. - Common Stock</a></td>
+                        <td>-18</td>
+                        <td>$117.68</td>
+                        <td>-$2,118.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-02-2022</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>8</td>
+                        <td>$270.80</td>
+                        <td>$2,166.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-02-2022</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-8</td>
+                        <td>$289.86</td>
+                        <td>-$2,318.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-02-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>2</td>
+                        <td>$900.00</td>
+                        <td>$1,800.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-02-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-2</td>
+                        <td>$988.00</td>
+                        <td>-$1,976.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-02-2022</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$640.22</td>
+                        <td>$1,920.66</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-02-2022</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$658.45</td>
+                        <td>-$1,975.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-02-2022</td>
+                        <td><a href="stocks/KPTI.html">Karyopharm Therapeutics Inc. - Common Stock</a></td>
+                        <td>19</td>
+                        <td>$136.65</td>
+                        <td>$2,596.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-02-2022</td>
+                        <td><a href="stocks/KPTI.html">Karyopharm Therapeutics Inc. - Common Stock</a></td>
+                        <td>-19</td>
+                        <td>$153.30</td>
+                        <td>-$2,912.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-02-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>3</td>
+                        <td>$903.00</td>
+                        <td>$2,709.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-02-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-3</td>
+                        <td>$997.00</td>
+                        <td>-$2,991.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-02-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>1</td>
+                        <td>$2,606.66</td>
+                        <td>$2,606.66</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-02-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$2,674.02</td>
+                        <td>-$2,674.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-02-2022</td>
+                        <td><a href="stocks/MASI.html">Masimo Corporation - Common Stock</a></td>
+                        <td>22</td>
+                        <td>$144.20</td>
+                        <td>$3,172.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-02-2022</td>
+                        <td><a href="stocks/MASI.html">Masimo Corporation - Common Stock</a></td>
+                        <td>-22</td>
+                        <td>$152.37</td>
+                        <td>-$3,352.14</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-02-2022</td>
+                        <td><a href="stocks/KPTI.html">Karyopharm Therapeutics Inc. - Common Stock</a></td>
+                        <td>19</td>
+                        <td>$180.00</td>
+                        <td>$3,420.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-02-2022</td>
+                        <td><a href="stocks/KPTI.html">Karyopharm Therapeutics Inc. - Common Stock</a></td>
+                        <td>-19</td>
+                        <td>$215.70</td>
+                        <td>-$4,098.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-02-2022</td>
+                        <td><a href="stocks/KPTI.html">Karyopharm Therapeutics Inc. - Common Stock</a></td>
+                        <td>26</td>
+                        <td>$154.35</td>
+                        <td>$4,013.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-02-2022</td>
+                        <td><a href="stocks/KPTI.html">Karyopharm Therapeutics Inc. - Common Stock</a></td>
+                        <td>-26</td>
+                        <td>$157.50</td>
+                        <td>-$4,095.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-02-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>5</td>
+                        <td>$807.00</td>
+                        <td>$4,035.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-02-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-5</td>
+                        <td>$936.00</td>
+                        <td>-$4,680.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-02-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>5</td>
+                        <td>$936.00</td>
+                        <td>$4,680.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-02-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-5</td>
+                        <td>$985.00</td>
+                        <td>-$4,925.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-02-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>4</td>
+                        <td>$1,084.00</td>
+                        <td>$4,336.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-03-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-4</td>
+                        <td>$1,164.00</td>
+                        <td>-$4,656.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-03-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$2,049.59</td>
+                        <td>$4,099.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-03-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$2,140.12</td>
+                        <td>-$4,280.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-03-2022</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>8</td>
+                        <td>$675.87</td>
+                        <td>$5,406.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-03-2022</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>-8</td>
+                        <td>$684.19</td>
+                        <td>-$5,473.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-03-2022</td>
+                        <td><a href="stocks/MKTX.html">MarketAxess Holdings, Inc. - Common Stock</a></td>
+                        <td>16</td>
+                        <td>$347.03</td>
+                        <td>$5,552.41</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-03-2022</td>
+                        <td><a href="stocks/MKTX.html">MarketAxess Holdings, Inc. - Common Stock</a></td>
+                        <td>-16</td>
+                        <td>$354.39</td>
+                        <td>-$5,670.17</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-03-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>5</td>
+                        <td>$1,102.00</td>
+                        <td>$5,510.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-03-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-5</td>
+                        <td>$1,362.00</td>
+                        <td>-$6,810.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-03-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$1,878.99</td>
+                        <td>$5,636.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-03-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$2,013.46</td>
+                        <td>-$6,040.37</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-03-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>10</td>
+                        <td>$683.89</td>
+                        <td>$6,838.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-03-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-10</td>
+                        <td>$699.52</td>
+                        <td>-$6,995.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-03-2022</td>
+                        <td><a href="stocks/UTHR.html">United Therapeutics Corporation - Common Stock</a></td>
+                        <td>45</td>
+                        <td>$167.78</td>
+                        <td>$7,550.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-03-2022</td>
+                        <td><a href="stocks/UTHR.html">United Therapeutics Corporation - Common Stock</a></td>
+                        <td>-45</td>
+                        <td>$173.00</td>
+                        <td>-$7,785.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-03-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$1,978.32</td>
+                        <td>$5,934.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-03-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$2,057.68</td>
+                        <td>-$6,173.05</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-03-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$2,057.68</td>
+                        <td>$6,173.05</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-03-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$2,178.62</td>
+                        <td>-$6,535.86</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-03-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>6</td>
+                        <td>$1,297.00</td>
+                        <td>$7,782.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-03-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-6</td>
+                        <td>$1,312.00</td>
+                        <td>-$7,872.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-03-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>6</td>
+                        <td>$1,312.00</td>
+                        <td>$7,872.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-03-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-6</td>
+                        <td>$1,340.00</td>
+                        <td>-$8,040.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-03-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>13</td>
+                        <td>$626.75</td>
+                        <td>$8,147.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-03-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-13</td>
+                        <td>$698.28</td>
+                        <td>-$9,077.64</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-03-2022</td>
+                        <td><a href="stocks/ASPS.html">Altisource Portfolio Solutions S.A. - Common Stock</a></td>
+                        <td>99</td>
+                        <td>$97.12</td>
+                        <td>$9,614.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-03-2022</td>
+                        <td><a href="stocks/ASPS.html">Altisource Portfolio Solutions S.A. - Common Stock</a></td>
+                        <td>-99</td>
+                        <td>$102.32</td>
+                        <td>-$10,129.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-03-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$2,136.39</td>
+                        <td>$8,545.57</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-03-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$2,237.53</td>
+                        <td>-$8,950.11</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-03-2022</td>
+                        <td><a href="stocks/DOOO.html">BRP Inc. - Common Subordinate Voting Shares</a></td>
+                        <td>152</td>
+                        <td>$69.17</td>
+                        <td>$10,514.38</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-03-2022</td>
+                        <td><a href="stocks/DOOO.html">BRP Inc. - Common Subordinate Voting Shares</a></td>
+                        <td>-152</td>
+                        <td>$76.05</td>
+                        <td>-$11,560.03</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-03-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$2,252.20</td>
+                        <td>$11,260.98</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-03-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$2,346.27</td>
+                        <td>-$11,731.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-03-2022</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>39</td>
+                        <td>$307.27</td>
+                        <td>$11,983.53</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-03-2022</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-39</td>
+                        <td>$313.48</td>
+                        <td>-$12,225.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-03-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$2,302.81</td>
+                        <td>$11,514.06</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-03-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$2,323.05</td>
+                        <td>-$11,615.26</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-03-2022</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>144</td>
+                        <td>$86.00</td>
+                        <td>$12,384.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-04-2022</td>
+                        <td><a href="stocks/GREE.html">Greenidge Generation Holdings Inc. - Class A Common Stock</a></td>
+                        <td>-144</td>
+                        <td>$115.20</td>
+                        <td>-$16,588.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-04-2022</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>24</td>
+                        <td>$686.85</td>
+                        <td>$16,484.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-04-2022</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>-24</td>
+                        <td>$690.49</td>
+                        <td>-$16,571.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-04-2022</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>24</td>
+                        <td>$690.49</td>
+                        <td>$16,571.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-04-2022</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>-24</td>
+                        <td>$701.14</td>
+                        <td>-$16,827.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-04-2022</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>24</td>
+                        <td>$701.14</td>
+                        <td>$16,827.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-04-2022</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>-24</td>
+                        <td>$726.83</td>
+                        <td>-$17,443.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-04-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>37</td>
+                        <td>$465.75</td>
+                        <td>$17,232.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-04-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-37</td>
+                        <td>$494.50</td>
+                        <td>-$18,296.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-04-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>14</td>
+                        <td>$1,280.00</td>
+                        <td>$17,920.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-04-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-14</td>
+                        <td>$1,298.00</td>
+                        <td>-$18,172.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-04-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>8</td>
+                        <td>$2,157.79</td>
+                        <td>$17,262.31</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-04-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-8</td>
+                        <td>$2,235.67</td>
+                        <td>-$17,885.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-04-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>34</td>
+                        <td>$569.25</td>
+                        <td>$19,354.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-04-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-34</td>
+                        <td>$575.00</td>
+                        <td>-$19,550.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-04-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>14</td>
+                        <td>$1,330.00</td>
+                        <td>$18,620.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-04-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-14</td>
+                        <td>$1,379.00</td>
+                        <td>-$19,306.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-04-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>14</td>
+                        <td>$1,379.00</td>
+                        <td>$19,306.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-04-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-14</td>
+                        <td>$1,423.00</td>
+                        <td>-$19,922.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-04-2022</td>
+                        <td><a href="stocks/ALGT.html">Allegiant Travel Company - Common Stock</a></td>
+                        <td>131</td>
+                        <td>$159.66</td>
+                        <td>$20,915.79</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-04-2022</td>
+                        <td><a href="stocks/ALGT.html">Allegiant Travel Company - Common Stock</a></td>
+                        <td>-131</td>
+                        <td>$168.13</td>
+                        <td>-$22,024.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-04-2022</td>
+                        <td><a href="stocks/MDGL.html">Madrigal Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>297</td>
+                        <td>$74.55</td>
+                        <td>$22,141.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-04-2022</td>
+                        <td><a href="stocks/MDGL.html">Madrigal Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-297</td>
+                        <td>$75.59</td>
+                        <td>-$22,450.23</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-04-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>20</td>
+                        <td>$1,085.00</td>
+                        <td>$21,700.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-04-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-20</td>
+                        <td>$1,125.00</td>
+                        <td>-$22,500.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-04-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>10</td>
+                        <td>$2,136.60</td>
+                        <td>$21,366.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-04-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-10</td>
+                        <td>$2,234.52</td>
+                        <td>-$22,345.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-04-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>10</td>
+                        <td>$2,234.52</td>
+                        <td>$22,345.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-04-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-10</td>
+                        <td>$2,292.73</td>
+                        <td>-$22,927.33</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-04-2022</td>
+                        <td><a href="stocks/VRTX.html">Vertex Pharmaceuticals Incorporated - Common Stock</a></td>
+                        <td>92</td>
+                        <td>$268.64</td>
+                        <td>$24,714.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-04-2022</td>
+                        <td><a href="stocks/VRTX.html">Vertex Pharmaceuticals Incorporated - Common Stock</a></td>
+                        <td>-92</td>
+                        <td>$273.22</td>
+                        <td>-$25,136.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-05-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>22</td>
+                        <td>$1,142.00</td>
+                        <td>$25,124.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-05-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-22</td>
+                        <td>$1,217.00</td>
+                        <td>-$26,774.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-05-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>22</td>
+                        <td>$1,217.00</td>
+                        <td>$26,774.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-05-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-22</td>
+                        <td>$1,377.00</td>
+                        <td>-$30,294.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-05-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>14</td>
+                        <td>$2,080.58</td>
+                        <td>$29,128.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-05-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-14</td>
+                        <td>$2,148.42</td>
+                        <td>-$30,077.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-05-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>14</td>
+                        <td>$2,148.42</td>
+                        <td>$30,077.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-05-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-14</td>
+                        <td>$2,170.50</td>
+                        <td>-$30,387.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-05-2022</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>117</td>
+                        <td>$269.58</td>
+                        <td>$31,540.86</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-05-2022</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-117</td>
+                        <td>$299.41</td>
+                        <td>-$35,030.97</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-05-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>17</td>
+                        <td>$2,022.86</td>
+                        <td>$34,388.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-05-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-17</td>
+                        <td>$2,049.74</td>
+                        <td>-$34,845.58</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-05-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>79</td>
+                        <td>$446.20</td>
+                        <td>$35,249.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-05-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-79</td>
+                        <td>$506.00</td>
+                        <td>-$39,974.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-05-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>41</td>
+                        <td>$965.00</td>
+                        <td>$39,565.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-05-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-41</td>
+                        <td>$1,028.00</td>
+                        <td>-$42,148.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-05-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>21</td>
+                        <td>$2,023.88</td>
+                        <td>$42,501.54</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-05-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-21</td>
+                        <td>$2,123.38</td>
+                        <td>-$44,590.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-05-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>41</td>
+                        <td>$1,087.00</td>
+                        <td>$44,567.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-05-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-41</td>
+                        <td>$1,105.00</td>
+                        <td>-$45,305.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-05-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>41</td>
+                        <td>$1,105.00</td>
+                        <td>$45,305.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-05-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-41</td>
+                        <td>$1,225.00</td>
+                        <td>-$50,225.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-05-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>41</td>
+                        <td>$1,225.00</td>
+                        <td>$50,225.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-05-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-41</td>
+                        <td>$1,242.00</td>
+                        <td>-$50,922.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-05-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>95</td>
+                        <td>$538.20</td>
+                        <td>$51,129.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-05-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-95</td>
+                        <td>$571.55</td>
+                        <td>-$54,297.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-05-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>26</td>
+                        <td>$2,027.89</td>
+                        <td>$52,725.11</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-05-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-26</td>
+                        <td>$2,124.00</td>
+                        <td>-$55,223.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-05-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>26</td>
+                        <td>$2,124.00</td>
+                        <td>$55,223.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-05-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-26</td>
+                        <td>$2,197.48</td>
+                        <td>-$57,134.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-05-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>48</td>
+                        <td>$1,204.00</td>
+                        <td>$57,792.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-05-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-48</td>
+                        <td>$1,290.00</td>
+                        <td>-$61,920.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-05-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>111</td>
+                        <td>$568.10</td>
+                        <td>$63,059.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-06-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-111</td>
+                        <td>$584.43</td>
+                        <td>-$64,871.73</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-06-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>29</td>
+                        <td>$2,214.36</td>
+                        <td>$64,216.45</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-06-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-29</td>
+                        <td>$2,346.70</td>
+                        <td>-$68,054.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-06-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>114</td>
+                        <td>$601.68</td>
+                        <td>$68,591.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-06-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-114</td>
+                        <td>$627.90</td>
+                        <td>-$71,580.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-06-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>53</td>
+                        <td>$1,352.00</td>
+                        <td>$71,656.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-06-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-53</td>
+                        <td>$1,421.00</td>
+                        <td>-$75,313.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-06-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>134</td>
+                        <td>$560.51</td>
+                        <td>$75,108.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-06-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-134</td>
+                        <td>$594.55</td>
+                        <td>-$79,669.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-06-2022</td>
+                        <td><a href="stocks/NXPI.html">NXP Semiconductors N.V. - Common Stock</a></td>
+                        <td>478</td>
+                        <td>$167.11</td>
+                        <td>$79,880.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-06-2022</td>
+                        <td><a href="stocks/NXPI.html">NXP Semiconductors N.V. - Common Stock</a></td>
+                        <td>-478</td>
+                        <td>$173.86</td>
+                        <td>-$83,106.31</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-06-2022</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>251</td>
+                        <td>$330.30</td>
+                        <td>$82,905.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-06-2022</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-251</td>
+                        <td>$338.22</td>
+                        <td>-$84,893.22</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-06-2022</td>
+                        <td><a href="stocks/CHRW.html">C.H. Robinson Worldwide, Inc. - Common Stock</a></td>
+                        <td>911</td>
+                        <td>$93.44</td>
+                        <td>$85,125.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-06-2022</td>
+                        <td><a href="stocks/CHRW.html">C.H. Robinson Worldwide, Inc. - Common Stock</a></td>
+                        <td>-911</td>
+                        <td>$99.06</td>
+                        <td>-$90,242.41</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-06-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>82</td>
+                        <td>$1,088.00</td>
+                        <td>$89,216.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-06-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-82</td>
+                        <td>$1,231.00</td>
+                        <td>-$100,942.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-06-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>230</td>
+                        <td>$442.52</td>
+                        <td>$101,779.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-06-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-230</td>
+                        <td>$500.94</td>
+                        <td>-$115,216.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-06-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>100</td>
+                        <td>$1,150.00</td>
+                        <td>$115,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-06-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-100</td>
+                        <td>$1,233.00</td>
+                        <td>-$123,300.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-06-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>98</td>
+                        <td>$1,260.00</td>
+                        <td>$123,480.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-06-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-98</td>
+                        <td>$1,318.00</td>
+                        <td>-$129,164.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-06-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>98</td>
+                        <td>$1,318.00</td>
+                        <td>$129,164.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-06-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-98</td>
+                        <td>$1,405.00</td>
+                        <td>-$137,690.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-06-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>75</td>
+                        <td>$1,815.21</td>
+                        <td>$136,141.06</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-06-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-75</td>
+                        <td>$1,910.17</td>
+                        <td>-$143,262.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-06-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>107</td>
+                        <td>$1,353.00</td>
+                        <td>$144,771.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-06-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-107</td>
+                        <td>$1,291.00</td>
+                        <td>-$138,137.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-06-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>107</td>
+                        <td>$1,291.00</td>
+                        <td>$138,137.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-06-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-107</td>
+                        <td>$1,176.00</td>
+                        <td>-$125,832.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-06-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>70</td>
+                        <td>$1,790.75</td>
+                        <td>$125,352.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-06-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-70</td>
+                        <td>$1,730.07</td>
+                        <td>-$121,105.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-06-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>91</td>
+                        <td>$1,329.00</td>
+                        <td>$120,939.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-07-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-91</td>
+                        <td>$1,275.00</td>
+                        <td>-$116,025.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-07-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>66</td>
+                        <td>$1,768.62</td>
+                        <td>$116,729.13</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-07-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-66</td>
+                        <td>$1,731.92</td>
+                        <td>-$114,307.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-07-2022</td>
+                        <td><a href="stocks/HELE.html">Helen of Troy Limited - Common Stock</a></td>
+                        <td>674</td>
+                        <td>$169.89</td>
+                        <td>$114,505.86</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-07-2022</td>
+                        <td><a href="stocks/HELE.html">Helen of Troy Limited - Common Stock</a></td>
+                        <td>-674</td>
+                        <td>$154.75</td>
+                        <td>-$104,301.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-07-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>59</td>
+                        <td>$1,766.61</td>
+                        <td>$104,229.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-07-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-59</td>
+                        <td>$1,750.34</td>
+                        <td>-$103,270.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-07-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>77</td>
+                        <td>$1,334.00</td>
+                        <td>$102,718.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-07-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-77</td>
+                        <td>$1,234.00</td>
+                        <td>-$95,018.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-07-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>77</td>
+                        <td>$1,234.00</td>
+                        <td>$95,018.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-07-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-77</td>
+                        <td>$1,209.00</td>
+                        <td>-$93,093.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-07-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>54</td>
+                        <td>$1,719.23</td>
+                        <td>$92,838.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-07-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-54</td>
+                        <td>$1,655.81</td>
+                        <td>-$89,413.57</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-07-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>73</td>
+                        <td>$1,229.00</td>
+                        <td>$89,717.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-07-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-73</td>
+                        <td>$1,074.50</td>
+                        <td>-$78,438.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-07-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>224</td>
+                        <td>$352.82</td>
+                        <td>$79,031.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-07-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-224</td>
+                        <td>$337.18</td>
+                        <td>-$75,528.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-07-2022</td>
+                        <td><a href="stocks/MKTX.html">MarketAxess Holdings, Inc. - Common Stock</a></td>
+                        <td>285</td>
+                        <td>$265.05</td>
+                        <td>$75,538.86</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-07-2022</td>
+                        <td><a href="stocks/MKTX.html">MarketAxess Holdings, Inc. - Common Stock</a></td>
+                        <td>-285</td>
+                        <td>$257.98</td>
+                        <td>-$73,523.51</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-07-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>63</td>
+                        <td>$1,155.00</td>
+                        <td>$72,765.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-07-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-63</td>
+                        <td>$1,141.00</td>
+                        <td>-$71,883.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-07-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>63</td>
+                        <td>$1,141.00</td>
+                        <td>$71,883.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-07-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-63</td>
+                        <td>$1,074.00</td>
+                        <td>-$67,662.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-07-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>59</td>
+                        <td>$1,148.00</td>
+                        <td>$67,732.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-07-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-59</td>
+                        <td>$1,094.00</td>
+                        <td>-$64,546.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-07-2022</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>178</td>
+                        <td>$365.02</td>
+                        <td>$64,973.56</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-07-2022</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-178</td>
+                        <td>$357.86</td>
+                        <td>-$63,699.08</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-07-2022</td>
+                        <td><a href="stocks/CINF.html">Cincinnati Financial Corporation - Common Stock</a></td>
+                        <td>606</td>
+                        <td>$105.39</td>
+                        <td>$63,868.51</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-07-2022</td>
+                        <td><a href="stocks/CINF.html">Cincinnati Financial Corporation - Common Stock</a></td>
+                        <td>-606</td>
+                        <td>$90.74</td>
+                        <td>-$54,985.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-07-2022</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>147</td>
+                        <td>$372.97</td>
+                        <td>$54,826.59</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-07-2022</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-147</td>
+                        <td>$364.21</td>
+                        <td>-$53,538.87</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-08-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>140</td>
+                        <td>$382.95</td>
+                        <td>$53,613.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-08-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-140</td>
+                        <td>$368.46</td>
+                        <td>-$51,584.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-08-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>27</td>
+                        <td>$1,898.00</td>
+                        <td>$51,246.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-08-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-27</td>
+                        <td>$1,792.00</td>
+                        <td>-$48,384.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-08-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>25</td>
+                        <td>$1,945.21</td>
+                        <td>$48,630.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-08-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-25</td>
+                        <td>$1,926.19</td>
+                        <td>-$48,154.77</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-08-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>25</td>
+                        <td>$1,926.19</td>
+                        <td>$48,154.77</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-08-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-25</td>
+                        <td>$1,904.15</td>
+                        <td>-$47,603.79</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-08-2022</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>127</td>
+                        <td>$375.29</td>
+                        <td>$47,661.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-08-2022</td>
+                        <td><a href="stocks/KLAC.html">KLA Corporation  - Common Stock</a></td>
+                        <td>-127</td>
+                        <td>$346.86</td>
+                        <td>-$44,051.84</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-08-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>116</td>
+                        <td>$379.27</td>
+                        <td>$43,995.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-08-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-116</td>
+                        <td>$361.10</td>
+                        <td>-$41,887.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-08-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>20</td>
+                        <td>$2,039.00</td>
+                        <td>$40,780.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-08-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-20</td>
+                        <td>$1,965.00</td>
+                        <td>-$39,300.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-08-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>89</td>
+                        <td>$453.56</td>
+                        <td>$40,366.84</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-08-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-89</td>
+                        <td>$420.44</td>
+                        <td>-$37,419.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-08-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>17</td>
+                        <td>$2,214.00</td>
+                        <td>$37,638.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-08-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-17</td>
+                        <td>$2,080.00</td>
+                        <td>-$35,360.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-08-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>17</td>
+                        <td>$2,080.00</td>
+                        <td>$35,360.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-08-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-17</td>
+                        <td>$2,043.00</td>
+                        <td>-$34,731.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-08-2022</td>
+                        <td><a href="stocks/SNPS.html">Synopsys, Inc. - Common Stock</a></td>
+                        <td>91</td>
+                        <td>$381.00</td>
+                        <td>$34,671.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-08-2022</td>
+                        <td><a href="stocks/SNPS.html">Synopsys, Inc. - Common Stock</a></td>
+                        <td>-91</td>
+                        <td>$373.32</td>
+                        <td>-$33,972.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-08-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>15</td>
+                        <td>$2,185.00</td>
+                        <td>$32,775.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-08-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-15</td>
+                        <td>$1,786.00</td>
+                        <td>-$26,790.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-08-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>75</td>
+                        <td>$372.60</td>
+                        <td>$27,945.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-08-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-75</td>
+                        <td>$345.46</td>
+                        <td>-$25,909.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-08-2022</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>36</td>
+                        <td>$720.09</td>
+                        <td>$25,923.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-08-2022</td>
+                        <td><a href="stocks/ORLY.html">O'Reilly Automotive, Inc. - Common Stock</a></td>
+                        <td>-36</td>
+                        <td>$711.21</td>
+                        <td>-$25,603.56</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-08-2022</td>
+                        <td><a href="stocks/KRYS.html">Krystal Biotech, Inc. - Common Stock</a></td>
+                        <td>335</td>
+                        <td>$76.81</td>
+                        <td>$25,731.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-08-2022</td>
+                        <td><a href="stocks/KRYS.html">Krystal Biotech, Inc. - Common Stock</a></td>
+                        <td>-335</td>
+                        <td>$73.08</td>
+                        <td>-$24,481.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-08-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>12</td>
+                        <td>$1,986.82</td>
+                        <td>$23,841.81</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-08-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-12</td>
+                        <td>$1,890.29</td>
+                        <td>-$22,683.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-08-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>11</td>
+                        <td>$2,073.00</td>
+                        <td>$22,803.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-08-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-11</td>
+                        <td>$1,908.00</td>
+                        <td>-$20,988.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-08-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>11</td>
+                        <td>$1,859.90</td>
+                        <td>$20,458.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-08-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-11</td>
+                        <td>$1,855.52</td>
+                        <td>-$20,410.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-08-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>10</td>
+                        <td>$1,985.00</td>
+                        <td>$19,850.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-09-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-10</td>
+                        <td>$1,889.00</td>
+                        <td>-$18,890.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-09-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>11</td>
+                        <td>$1,832.48</td>
+                        <td>$20,157.23</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-09-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-11</td>
+                        <td>$1,818.03</td>
+                        <td>-$19,998.37</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-09-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>55</td>
+                        <td>$365.70</td>
+                        <td>$20,113.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-09-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-55</td>
+                        <td>$349.14</td>
+                        <td>-$19,202.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-09-2022</td>
+                        <td><a href="stocks/VRNT.html">Verint Systems Inc. - Common Stock</a></td>
+                        <td>428</td>
+                        <td>$45.42</td>
+                        <td>$19,439.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-09-2022</td>
+                        <td><a href="stocks/VRNT.html">Verint Systems Inc. - Common Stock</a></td>
+                        <td>-428</td>
+                        <td>$41.79</td>
+                        <td>-$17,886.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-09-2022</td>
+                        <td><a href="stocks/IMCR.html">Immunocore Holdings plc - American Depositary Shares</a></td>
+                        <td>312</td>
+                        <td>$57.44</td>
+                        <td>$17,921.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-09-2022</td>
+                        <td><a href="stocks/IMCR.html">Immunocore Holdings plc - American Depositary Shares</a></td>
+                        <td>-312</td>
+                        <td>$44.75</td>
+                        <td>-$13,962.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-09-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>7</td>
+                        <td>$1,991.55</td>
+                        <td>$13,940.82</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-09-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-7</td>
+                        <td>$1,900.03</td>
+                        <td>-$13,300.19</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-09-2022</td>
+                        <td><a href="stocks/ICLR.html">ICON plc - Ordinary Shares</a></td>
+                        <td>61</td>
+                        <td>$216.67</td>
+                        <td>$13,216.87</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-09-2022</td>
+                        <td><a href="stocks/ICLR.html">ICON plc - Ordinary Shares</a></td>
+                        <td>-61</td>
+                        <td>$205.63</td>
+                        <td>-$12,543.43</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-09-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>32</td>
+                        <td>$386.40</td>
+                        <td>$12,364.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-09-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-32</td>
+                        <td>$353.97</td>
+                        <td>-$11,327.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-09-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>6</td>
+                        <td>$1,935.61</td>
+                        <td>$11,613.65</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-09-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-6</td>
+                        <td>$1,856.16</td>
+                        <td>-$11,136.94</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-09-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>4</td>
+                        <td>$2,615.00</td>
+                        <td>$10,460.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-09-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-4</td>
+                        <td>$2,436.00</td>
+                        <td>-$9,744.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-09-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$1,876.12</td>
+                        <td>$9,380.59</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-09-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$1,787.16</td>
+                        <td>-$8,935.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-09-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>4</td>
+                        <td>$2,434.00</td>
+                        <td>$9,736.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-09-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-4</td>
+                        <td>$2,279.00</td>
+                        <td>-$9,116.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-09-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$1,701.97</td>
+                        <td>$8,509.86</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-09-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$1,651.82</td>
+                        <td>-$8,259.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-09-2022</td>
+                        <td><a href="stocks/MKTX.html">MarketAxess Holdings, Inc. - Common Stock</a></td>
+                        <td>41</td>
+                        <td>$218.01</td>
+                        <td>$8,938.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-09-2022</td>
+                        <td><a href="stocks/MKTX.html">MarketAxess Holdings, Inc. - Common Stock</a></td>
+                        <td>-41</td>
+                        <td>$211.88</td>
+                        <td>-$8,687.21</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-09-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>3</td>
+                        <td>$2,440.00</td>
+                        <td>$7,320.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-09-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-3</td>
+                        <td>$2,420.00</td>
+                        <td>-$7,260.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-09-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>3</td>
+                        <td>$2,420.00</td>
+                        <td>$7,260.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-09-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-3</td>
+                        <td>$2,341.00</td>
+                        <td>-$7,023.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-09-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>26</td>
+                        <td>$322.69</td>
+                        <td>$8,389.94</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-09-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-26</td>
+                        <td>$233.68</td>
+                        <td>-$6,075.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-10-2022</td>
+                        <td><a href="stocks/PRTA.html">Prothena Corporation plc - Ordinary Shares</a></td>
+                        <td>101</td>
+                        <td>$61.82</td>
+                        <td>$6,243.82</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-10-2022</td>
+                        <td><a href="stocks/PRTA.html">Prothena Corporation plc - Ordinary Shares</a></td>
+                        <td>-101</td>
+                        <td>$57.45</td>
+                        <td>-$5,802.45</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-10-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>2</td>
+                        <td>$2,563.00</td>
+                        <td>$5,126.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-10-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-2</td>
+                        <td>$2,466.00</td>
+                        <td>-$4,932.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-10-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>2</td>
+                        <td>$2,466.00</td>
+                        <td>$4,932.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-10-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-2</td>
+                        <td>$2,228.00</td>
+                        <td>-$4,456.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-10-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>2</td>
+                        <td>$2,228.00</td>
+                        <td>$4,456.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-10-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-2</td>
+                        <td>$2,132.00</td>
+                        <td>-$4,264.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-10-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>2</td>
+                        <td>$2,072.00</td>
+                        <td>$4,144.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-10-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-2</td>
+                        <td>$1,899.00</td>
+                        <td>-$3,798.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-10-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>2</td>
+                        <td>$1,899.00</td>
+                        <td>$3,798.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-10-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-2</td>
+                        <td>$1,889.00</td>
+                        <td>-$3,778.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-10-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>2</td>
+                        <td>$1,889.00</td>
+                        <td>$3,778.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-10-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-2</td>
+                        <td>$1,806.00</td>
+                        <td>-$3,612.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-10-2022</td>
+                        <td><a href="stocks/BNTX.html">BioNTech SE - American Depositary Shares</a></td>
+                        <td>31</td>
+                        <td>$138.94</td>
+                        <td>$4,307.14</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-10-2022</td>
+                        <td><a href="stocks/BNTX.html">BioNTech SE - American Depositary Shares</a></td>
+                        <td>-31</td>
+                        <td>$133.68</td>
+                        <td>-$4,144.08</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-10-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>2</td>
+                        <td>$1,805.00</td>
+                        <td>$3,610.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-10-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-2</td>
+                        <td>$1,789.00</td>
+                        <td>-$3,578.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-10-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>2</td>
+                        <td>$1,789.00</td>
+                        <td>$3,578.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-10-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-2</td>
+                        <td>$1,698.00</td>
+                        <td>-$3,396.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-10-2022</td>
+                        <td><a href="stocks/DUOL.html">Duolingo, Inc. - Class A Common Stock</a></td>
+                        <td>45</td>
+                        <td>$88.72</td>
+                        <td>$3,992.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-10-2022</td>
+                        <td><a href="stocks/DUOL.html">Duolingo, Inc. - Class A Common Stock</a></td>
+                        <td>-45</td>
+                        <td>$82.25</td>
+                        <td>-$3,701.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-10-2022</td>
+                        <td><a href="stocks/SNPS.html">Synopsys, Inc. - Common Stock</a></td>
+                        <td>12</td>
+                        <td>$301.68</td>
+                        <td>$3,620.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-10-2022</td>
+                        <td><a href="stocks/SNPS.html">Synopsys, Inc. - Common Stock</a></td>
+                        <td>-12</td>
+                        <td>$294.73</td>
+                        <td>-$3,536.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-10-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>1</td>
+                        <td>$1,854.34</td>
+                        <td>$1,854.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-10-2022</td>
+                        <td><a href="stocks/BKNG.html">Booking Holdings Inc. - Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$1,831.50</td>
+                        <td>-$1,831.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-10-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>4</td>
+                        <td>$846.28</td>
+                        <td>$3,385.14</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-10-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$782.51</td>
+                        <td>-$3,130.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-10-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>1</td>
+                        <td>$1,816.00</td>
+                        <td>$1,816.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-10-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-1</td>
+                        <td>$1,665.00</td>
+                        <td>-$1,665.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-10-2022</td>
+                        <td><a href="stocks/CYBR.html">CyberArk Software Ltd. - Ordinary Shares</a></td>
+                        <td>20</td>
+                        <td>$156.91</td>
+                        <td>$3,138.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-11-2022</td>
+                        <td><a href="stocks/CYBR.html">CyberArk Software Ltd. - Ordinary Shares</a></td>
+                        <td>-20</td>
+                        <td>$146.37</td>
+                        <td>-$2,927.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-11-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>1</td>
+                        <td>$1,728.00</td>
+                        <td>$1,728.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-11-2022</td>
+                        <td><a href="stocks/MAXN.html">Maxeon Solar Technologies, Ltd. - Ordinary Shares</a></td>
+                        <td>-1</td>
+                        <td>$1,600.00</td>
+                        <td>-$1,600.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-11-2022</td>
+                        <td><a href="stocks/PLMR.html">Palomar Holdings, Inc. - Common stock</a></td>
+                        <td>33</td>
+                        <td>$85.35</td>
+                        <td>$2,816.55</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-11-2022</td>
+                        <td><a href="stocks/PLMR.html">Palomar Holdings, Inc. - Common stock</a></td>
+                        <td>-33</td>
+                        <td>$64.41</td>
+                        <td>-$2,125.53</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-11-2022</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>5</td>
+                        <td>$375.85</td>
+                        <td>$1,879.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-11-2022</td>
+                        <td><a href="stocks/ARGX.html">argenx SE - American Depositary Shares</a></td>
+                        <td>-5</td>
+                        <td>$366.24</td>
+                        <td>-$1,831.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-11-2022</td>
+                        <td><a href="stocks/LITE.html">Lumentum Holdings Inc. - Common Stock</a></td>
+                        <td>30</td>
+                        <td>$70.38</td>
+                        <td>$2,111.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-11-2022</td>
+                        <td><a href="stocks/LITE.html">Lumentum Holdings Inc. - Common Stock</a></td>
+                        <td>-30</td>
+                        <td>$59.00</td>
+                        <td>-$1,770.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-11-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>2</td>
+                        <td>$835.35</td>
+                        <td>$1,670.71</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-11-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$813.80</td>
+                        <td>-$1,627.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-11-2022</td>
+                        <td><a href="stocks/HQY.html">HealthEquity, Inc. - Common Stock</a></td>
+                        <td>23</td>
+                        <td>$74.66</td>
+                        <td>$1,717.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-11-2022</td>
+                        <td><a href="stocks/HQY.html">HealthEquity, Inc. - Common Stock</a></td>
+                        <td>-23</td>
+                        <td>$65.87</td>
+                        <td>-$1,515.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-11-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$317.40</td>
+                        <td>$1,269.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-11-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$267.95</td>
+                        <td>-$1,071.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-11-2022</td>
+                        <td><a href="stocks/TWST.html">Twist Bioscience Corporation - Common Stock</a></td>
+                        <td>36</td>
+                        <td>$38.00</td>
+                        <td>$1,368.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-11-2022</td>
+                        <td><a href="stocks/TWST.html">Twist Bioscience Corporation - Common Stock</a></td>
+                        <td>-36</td>
+                        <td>$30.43</td>
+                        <td>-$1,095.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-11-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>1</td>
+                        <td>$812.36</td>
+                        <td>$812.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-11-2022</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$782.51</td>
+                        <td>-$782.51</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-11-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$290.95</td>
+                        <td>$872.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-11-2022</td>
+                        <td><a href="stocks/FEAM.html">5E Advanced Materials, Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$275.77</td>
+                        <td>-$827.31</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-11-2022</td>
+                        <td><a href="stocks/ASPS.html">Altisource Portfolio Solutions S.A. - Common Stock</a></td>
+                        <td>8</td>
+                        <td>$125.76</td>
+                        <td>$1,006.08</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-11-2022</td>
+                        <td><a href="stocks/ASPS.html">Altisource Portfolio Solutions S.A. - Common Stock</a></td>
+                        <td>-8</td>
+                        <td>$120.72</td>
+                        <td>-$965.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-12-2022</td>
+                        <td><a href="stocks/CYBR.html">CyberArk Software Ltd. - Ordinary Shares</a></td>
+                        <td>6</td>
+                        <td>$158.25</td>
+                        <td>$949.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-12-2022</td>
+                        <td><a href="stocks/CYBR.html">CyberArk Software Ltd. - Ordinary Shares</a></td>
+                        <td>-6</td>
+                        <td>$147.24</td>
+                        <td>-$883.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-12-2022</td>
+                        <td><a href="stocks/TMUS.html">T-Mobile US, Inc. - Common Stock</a></td>
+                        <td>6</td>
+                        <td>$144.97</td>
+                        <td>$869.81</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-12-2022</td>
+                        <td><a href="stocks/TMUS.html">T-Mobile US, Inc. - Common Stock</a></td>
+                        <td>-6</td>
+                        <td>$140.12</td>
+                        <td>-$840.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-12-2022</td>
+                        <td><a href="stocks/CVGW.html">Calavo Growers, Inc. - Common Stock</a></td>
+                        <td>27</td>
+                        <td>$32.33</td>
+                        <td>$872.91</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-12-2022</td>
+                        <td><a href="stocks/CVGW.html">Calavo Growers, Inc. - Common Stock</a></td>
+                        <td>-27</td>
+                        <td>$27.68</td>
+                        <td>-$747.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-12-2022</td>
+                        <td><a href="stocks/STLD.html">Steel Dynamics, Inc. - Common Stock</a></td>
+                        <td>7</td>
+                        <td>$96.22</td>
+                        <td>$673.57</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-12-2022</td>
+                        <td><a href="stocks/STLD.html">Steel Dynamics, Inc. - Common Stock</a></td>
+                        <td>-7</td>
+                        <td>$95.12</td>
+                        <td>-$665.86</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-12-2022</td>
+                        <td><a href="stocks/MDGL.html">Madrigal Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$296.54</td>
+                        <td>$593.08</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-12-2022</td>
+                        <td><a href="stocks/MDGL.html">Madrigal Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$290.25</td>
+                        <td>-$580.50</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</div>
+</body>
+</html>
