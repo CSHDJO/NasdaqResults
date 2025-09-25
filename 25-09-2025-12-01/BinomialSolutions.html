@@ -1,0 +1,2756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nasdaq Trade System - BinomialSolutions</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+            crossorigin="anonymous"></script>
+    <meta name="theme-color" content="#712cf9">
+</head>
+
+<body>
+<header class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow" data-bs-theme="dark"><a
+        class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="#">Nasdaq Trade system</a>
+</header>
+
+
+<div class="container-fluid">
+    <div class="row">
+        
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <a href="GameResult.html">Back</a>
+            <h1>BinomialSolutions</h1>
+            <img src="BinomialSolutions.png" class="img-fluid">
+            <div class="table-responsive small">
+                <table class="table table-striped table-sm">
+                    <thead>
+                    <tr>
+                        <th scope="col">ExecutedOn</th>
+                        <th scope="col">Company</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">AtPrice</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr scope="row">
+                        <td>04-01-2021</td>
+                        <td><a href="stocks/ROKU.html">Roku, Inc. - Class A Common Stock</a></td>
+                        <td>3</td>
+                        <td>$317.90</td>
+                        <td>$953.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-01-2021</td>
+                        <td><a href="stocks/ROKU.html">Roku, Inc. - Class A Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$335.18</td>
+                        <td>-$1,005.54</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-01-2021</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>1</td>
+                        <td>$575.94</td>
+                        <td>$575.94</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-01-2021</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$620.74</td>
+                        <td>-$620.74</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-01-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>1</td>
+                        <td>$863.10</td>
+                        <td>$863.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-01-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$903.00</td>
+                        <td>-$903.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-01-2021</td>
+                        <td><a href="stocks/WDFC.html">WD-40 Company - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$252.12</td>
+                        <td>$1,008.47</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-01-2021</td>
+                        <td><a href="stocks/WDFC.html">WD-40 Company - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$281.56</td>
+                        <td>-$1,126.23</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-01-2021</td>
+                        <td><a href="stocks/DASH.html">DoorDash, Inc. - Common Stock</a></td>
+                        <td>7</td>
+                        <td>$167.00</td>
+                        <td>$1,169.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-01-2021</td>
+                        <td><a href="stocks/DASH.html">DoorDash, Inc. - Common Stock</a></td>
+                        <td>-7</td>
+                        <td>$191.99</td>
+                        <td>-$1,343.93</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-01-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>1</td>
+                        <td>$857.70</td>
+                        <td>$857.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-01-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$898.80</td>
+                        <td>-$898.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-01-2021</td>
+                        <td><a href="stocks/CGC.html">Canopy Growth Corporation - Common Shares</a></td>
+                        <td>4</td>
+                        <td>$321.80</td>
+                        <td>$1,287.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-01-2021</td>
+                        <td><a href="stocks/CGC.html">Canopy Growth Corporation - Common Shares</a></td>
+                        <td>-4</td>
+                        <td>$346.20</td>
+                        <td>-$1,384.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-01-2021</td>
+                        <td><a href="stocks/MKTX.html">MarketAxess Holdings, Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$488.99</td>
+                        <td>$1,466.97</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-01-2021</td>
+                        <td><a href="stocks/MKTX.html">MarketAxess Holdings, Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$499.42</td>
+                        <td>-$1,498.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-01-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>1</td>
+                        <td>$838.80</td>
+                        <td>$838.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-01-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$852.30</td>
+                        <td>-$852.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-01-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$753.45</td>
+                        <td>$1,506.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-01-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$781.65</td>
+                        <td>-$1,563.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-01-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$812.85</td>
+                        <td>$1,625.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-01-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$846.75</td>
+                        <td>-$1,693.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-01-2021</td>
+                        <td><a href="stocks/BYND.html">Beyond Meat, Inc. - Common stock</a></td>
+                        <td>10</td>
+                        <td>$158.73</td>
+                        <td>$1,587.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-01-2021</td>
+                        <td><a href="stocks/BYND.html">Beyond Meat, Inc. - Common stock</a></td>
+                        <td>-10</td>
+                        <td>$186.83</td>
+                        <td>-$1,868.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-01-2021</td>
+                        <td><a href="stocks/MKTX.html">MarketAxess Holdings, Inc. - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$486.82</td>
+                        <td>$1,947.29</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-01-2021</td>
+                        <td><a href="stocks/MKTX.html">MarketAxess Holdings, Inc. - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$510.33</td>
+                        <td>-$2,041.33</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-01-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$758.10</td>
+                        <td>$1,516.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-01-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$795.00</td>
+                        <td>-$1,590.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-01-2021</td>
+                        <td><a href="stocks/BIIB.html">Biogen Inc. - Common Stock</a></td>
+                        <td>8</td>
+                        <td>$267.87</td>
+                        <td>$2,142.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-01-2021</td>
+                        <td><a href="stocks/BIIB.html">Biogen Inc. - Common Stock</a></td>
+                        <td>-8</td>
+                        <td>$282.61</td>
+                        <td>-$2,260.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-02-2021</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>3</td>
+                        <td>$600.48</td>
+                        <td>$1,801.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-02-2021</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$628.25</td>
+                        <td>-$1,884.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-02-2021</td>
+                        <td><a href="stocks/CGC.html">Canopy Growth Corporation - Common Shares</a></td>
+                        <td>5</td>
+                        <td>$417.15</td>
+                        <td>$2,085.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-02-2021</td>
+                        <td><a href="stocks/CGC.html">Canopy Growth Corporation - Common Shares</a></td>
+                        <td>-5</td>
+                        <td>$449.40</td>
+                        <td>-$2,247.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-02-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$777.75</td>
+                        <td>$2,333.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-02-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$800.70</td>
+                        <td>-$2,402.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-02-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$484.25</td>
+                        <td>$2,421.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-02-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$508.00</td>
+                        <td>-$2,540.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-02-2021</td>
+                        <td><a href="stocks/CGC.html">Canopy Growth Corporation - Common Shares</a></td>
+                        <td>6</td>
+                        <td>$438.70</td>
+                        <td>$2,632.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-02-2021</td>
+                        <td><a href="stocks/CGC.html">Canopy Growth Corporation - Common Shares</a></td>
+                        <td>-6</td>
+                        <td>$490.90</td>
+                        <td>-$2,945.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-02-2021</td>
+                        <td><a href="stocks/CGC.html">Canopy Growth Corporation - Common Shares</a></td>
+                        <td>6</td>
+                        <td>$490.90</td>
+                        <td>$2,945.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-02-2021</td>
+                        <td><a href="stocks/CGC.html">Canopy Growth Corporation - Common Shares</a></td>
+                        <td>-6</td>
+                        <td>$521.70</td>
+                        <td>-$3,130.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-02-2021</td>
+                        <td><a href="stocks/ZBRA.html">Zebra Technologies Corporation - Class A Common Stock</a></td>
+                        <td>7</td>
+                        <td>$427.47</td>
+                        <td>$2,992.29</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-02-2021</td>
+                        <td><a href="stocks/ZBRA.html">Zebra Technologies Corporation - Class A Common Stock</a></td>
+                        <td>-7</td>
+                        <td>$470.08</td>
+                        <td>-$3,290.56</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-02-2021</td>
+                        <td><a href="stocks/ILMN.html">Illumina, Inc. - Common Stock</a></td>
+                        <td>8</td>
+                        <td>$438.93</td>
+                        <td>$3,511.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-02-2021</td>
+                        <td><a href="stocks/ILMN.html">Illumina, Inc. - Common Stock</a></td>
+                        <td>-8</td>
+                        <td>$491.01</td>
+                        <td>-$3,928.09</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-02-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$754.35</td>
+                        <td>$3,771.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-02-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$766.20</td>
+                        <td>-$3,831.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-02-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$766.20</td>
+                        <td>$3,831.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-02-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$780.30</td>
+                        <td>-$3,901.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-02-2021</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>5</td>
+                        <td>$716.64</td>
+                        <td>$3,583.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-02-2021</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$753.31</td>
+                        <td>-$3,766.55</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-02-2021</td>
+                        <td><a href="stocks/NXST.html">Nexstar Media Group, Inc. - Common Stock</a></td>
+                        <td>37</td>
+                        <td>$112.76</td>
+                        <td>$4,171.94</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-02-2021</td>
+                        <td><a href="stocks/NXST.html">Nexstar Media Group, Inc. - Common Stock</a></td>
+                        <td>-37</td>
+                        <td>$123.14</td>
+                        <td>-$4,556.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-02-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>6</td>
+                        <td>$727.95</td>
+                        <td>$4,367.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-02-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-6</td>
+                        <td>$758.40</td>
+                        <td>-$4,550.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-02-2021</td>
+                        <td><a href="stocks/MKTX.html">MarketAxess Holdings, Inc. - Common Stock</a></td>
+                        <td>9</td>
+                        <td>$521.47</td>
+                        <td>$4,693.22</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-02-2021</td>
+                        <td><a href="stocks/MKTX.html">MarketAxess Holdings, Inc. - Common Stock</a></td>
+                        <td>-9</td>
+                        <td>$527.50</td>
+                        <td>-$4,747.51</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-02-2021</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>17</td>
+                        <td>$284.33</td>
+                        <td>$4,833.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-02-2021</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>-17</td>
+                        <td>$298.31</td>
+                        <td>-$5,071.27</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-03-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>6</td>
+                        <td>$765.90</td>
+                        <td>$4,595.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-03-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-6</td>
+                        <td>$777.15</td>
+                        <td>-$4,662.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-03-2021</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>6</td>
+                        <td>$755.12</td>
+                        <td>$4,530.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-03-2021</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-6</td>
+                        <td>$767.66</td>
+                        <td>-$4,605.94</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-03-2021</td>
+                        <td><a href="stocks/FANG.html">Diamondback Energy, Inc. - Common Stock</a></td>
+                        <td>85</td>
+                        <td>$61.46</td>
+                        <td>$5,224.39</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-03-2021</td>
+                        <td><a href="stocks/FANG.html">Diamondback Energy, Inc. - Common Stock</a></td>
+                        <td>-85</td>
+                        <td>$67.09</td>
+                        <td>-$5,703.03</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-03-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>11</td>
+                        <td>$493.35</td>
+                        <td>$5,426.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-03-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-11</td>
+                        <td>$546.30</td>
+                        <td>-$6,009.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-03-2021</td>
+                        <td><a href="stocks/ROKU.html">Roku, Inc. - Class A Common Stock</a></td>
+                        <td>19</td>
+                        <td>$327.19</td>
+                        <td>$6,216.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-03-2021</td>
+                        <td><a href="stocks/ROKU.html">Roku, Inc. - Class A Common Stock</a></td>
+                        <td>-19</td>
+                        <td>$361.11</td>
+                        <td>-$6,861.09</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-03-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>9</td>
+                        <td>$726.60</td>
+                        <td>$6,539.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-03-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-9</td>
+                        <td>$792.15</td>
+                        <td>-$7,129.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-03-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>9</td>
+                        <td>$792.15</td>
+                        <td>$7,129.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-03-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-9</td>
+                        <td>$827.10</td>
+                        <td>-$7,443.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-03-2021</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>9</td>
+                        <td>$833.62</td>
+                        <td>$7,502.59</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-03-2021</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-9</td>
+                        <td>$849.37</td>
+                        <td>-$7,644.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-03-2021</td>
+                        <td><a href="stocks/AVIR.html">Atea Pharmaceuticals, Inc. - common stock</a></td>
+                        <td>114</td>
+                        <td>$69.80</td>
+                        <td>$7,957.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-03-2021</td>
+                        <td><a href="stocks/AVIR.html">Atea Pharmaceuticals, Inc. - common stock</a></td>
+                        <td>-114</td>
+                        <td>$77.20</td>
+                        <td>-$8,800.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-03-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>14</td>
+                        <td>$621.75</td>
+                        <td>$8,704.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-03-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-14</td>
+                        <td>$637.65</td>
+                        <td>-$8,927.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-03-2021</td>
+                        <td><a href="stocks/UPST.html">Upstart Holdings, Inc. - Common stock</a></td>
+                        <td>149</td>
+                        <td>$60.79</td>
+                        <td>$9,057.71</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-03-2021</td>
+                        <td><a href="stocks/UPST.html">Upstart Holdings, Inc. - Common stock</a></td>
+                        <td>-149</td>
+                        <td>$115.09</td>
+                        <td>-$17,148.41</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-03-2021</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>64</td>
+                        <td>$266.49</td>
+                        <td>$17,055.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-03-2021</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>-64</td>
+                        <td>$280.94</td>
+                        <td>-$17,980.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-03-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>23</td>
+                        <td>$767.85</td>
+                        <td>$17,660.55</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-03-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-23</td>
+                        <td>$780.75</td>
+                        <td>-$17,957.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-03-2021</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>24</td>
+                        <td>$761.39</td>
+                        <td>$18,273.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-03-2021</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-24</td>
+                        <td>$765.57</td>
+                        <td>-$18,373.63</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-03-2021</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>24</td>
+                        <td>$765.57</td>
+                        <td>$18,373.63</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-03-2021</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-24</td>
+                        <td>$809.81</td>
+                        <td>-$19,435.33</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-03-2021</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>24</td>
+                        <td>$809.81</td>
+                        <td>$19,435.33</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-03-2021</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-24</td>
+                        <td>$843.04</td>
+                        <td>-$20,233.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-03-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>27</td>
+                        <td>$748.35</td>
+                        <td>$20,205.45</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-03-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-27</td>
+                        <td>$778.50</td>
+                        <td>-$21,019.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-03-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>48</td>
+                        <td>$440.10</td>
+                        <td>$21,124.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-03-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-48</td>
+                        <td>$491.40</td>
+                        <td>-$23,587.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-03-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>28</td>
+                        <td>$815.85</td>
+                        <td>$22,843.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-04-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-28</td>
+                        <td>$840.60</td>
+                        <td>-$23,536.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-04-2021</td>
+                        <td><a href="stocks/ROKU.html">Roku, Inc. - Class A Common Stock</a></td>
+                        <td>74</td>
+                        <td>$328.29</td>
+                        <td>$24,293.46</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-04-2021</td>
+                        <td><a href="stocks/ROKU.html">Roku, Inc. - Class A Common Stock</a></td>
+                        <td>-74</td>
+                        <td>$359.37</td>
+                        <td>-$26,593.38</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-04-2021</td>
+                        <td><a href="stocks/IDCC.html">InterDigital, Inc. - Common Stock</a></td>
+                        <td>435</td>
+                        <td>$61.14</td>
+                        <td>$26,597.89</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-04-2021</td>
+                        <td><a href="stocks/IDCC.html">InterDigital, Inc. - Common Stock</a></td>
+                        <td>-435</td>
+                        <td>$66.18</td>
+                        <td>-$28,789.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-04-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>68</td>
+                        <td>$421.95</td>
+                        <td>$28,692.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-04-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-68</td>
+                        <td>$450.30</td>
+                        <td>-$30,620.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-04-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>36</td>
+                        <td>$834.00</td>
+                        <td>$30,024.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-04-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-36</td>
+                        <td>$874.95</td>
+                        <td>-$31,498.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-04-2021</td>
+                        <td><a href="stocks/ROKU.html">Roku, Inc. - Class A Common Stock</a></td>
+                        <td>86</td>
+                        <td>$371.12</td>
+                        <td>$31,916.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-04-2021</td>
+                        <td><a href="stocks/ROKU.html">Roku, Inc. - Class A Common Stock</a></td>
+                        <td>-86</td>
+                        <td>$387.97</td>
+                        <td>-$33,365.42</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-04-2021</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>41</td>
+                        <td>$805.40</td>
+                        <td>$33,021.21</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-04-2021</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-41</td>
+                        <td>$826.18</td>
+                        <td>-$33,873.47</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-04-2021</td>
+                        <td><a href="stocks/OKTA.html">Okta, Inc. - Class A Common Stock</a></td>
+                        <td>132</td>
+                        <td>$259.91</td>
+                        <td>$34,308.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-04-2021</td>
+                        <td><a href="stocks/OKTA.html">Okta, Inc. - Class A Common Stock</a></td>
+                        <td>-132</td>
+                        <td>$274.25</td>
+                        <td>-$36,201.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-04-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>93</td>
+                        <td>$387.75</td>
+                        <td>$36,060.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-04-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-93</td>
+                        <td>$410.55</td>
+                        <td>-$38,181.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-04-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>47</td>
+                        <td>$807.75</td>
+                        <td>$37,964.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-04-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-47</td>
+                        <td>$832.50</td>
+                        <td>-$39,127.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-04-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>101</td>
+                        <td>$389.55</td>
+                        <td>$39,344.55</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-04-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-101</td>
+                        <td>$443.25</td>
+                        <td>-$44,768.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-04-2021</td>
+                        <td><a href="stocks/POOL.html">Pool Corporation - Common Stock</a></td>
+                        <td>122</td>
+                        <td>$367.62</td>
+                        <td>$44,849.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-04-2021</td>
+                        <td><a href="stocks/POOL.html">Pool Corporation - Common Stock</a></td>
+                        <td>-122</td>
+                        <td>$391.25</td>
+                        <td>-$47,732.59</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-04-2021</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>57</td>
+                        <td>$831.99</td>
+                        <td>$47,423.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-04-2021</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-57</td>
+                        <td>$873.18</td>
+                        <td>-$49,771.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-04-2021</td>
+                        <td><a href="stocks/CROX.html">Crocs, Inc. - Common Stock</a></td>
+                        <td>593</td>
+                        <td>$84.84</td>
+                        <td>$50,310.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-04-2021</td>
+                        <td><a href="stocks/CROX.html">Crocs, Inc. - Common Stock</a></td>
+                        <td>-593</td>
+                        <td>$97.82</td>
+                        <td>-$58,007.26</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-04-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>128</td>
+                        <td>$450.90</td>
+                        <td>$57,715.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-04-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-128</td>
+                        <td>$474.75</td>
+                        <td>-$60,768.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-04-2021</td>
+                        <td><a href="stocks/DPZ.html">Domino's Pizza Inc - Common Stock</a></td>
+                        <td>158</td>
+                        <td>$384.66</td>
+                        <td>$60,775.62</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-04-2021</td>
+                        <td><a href="stocks/DPZ.html">Domino's Pizza Inc - Common Stock</a></td>
+                        <td>-158</td>
+                        <td>$396.11</td>
+                        <td>-$62,585.58</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-04-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>72</td>
+                        <td>$872.55</td>
+                        <td>$62,823.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-04-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-72</td>
+                        <td>$898.80</td>
+                        <td>-$64,713.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-05-2021</td>
+                        <td><a href="stocks/CIGI.html">Colliers International Group Inc.  - Subordinate Voting Shares</a></td>
+                        <td>597</td>
+                        <td>$108.50</td>
+                        <td>$64,773.65</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-05-2021</td>
+                        <td><a href="stocks/CIGI.html">Colliers International Group Inc.  - Subordinate Voting Shares</a></td>
+                        <td>-597</td>
+                        <td>$114.53</td>
+                        <td>-$68,374.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-05-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>180</td>
+                        <td>$378.30</td>
+                        <td>$68,094.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-05-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-180</td>
+                        <td>$394.95</td>
+                        <td>-$71,091.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-05-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>180</td>
+                        <td>$394.95</td>
+                        <td>$71,091.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-05-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-180</td>
+                        <td>$414.30</td>
+                        <td>-$74,574.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-05-2021</td>
+                        <td><a href="stocks/ROKU.html">Roku, Inc. - Class A Common Stock</a></td>
+                        <td>263</td>
+                        <td>$284.18</td>
+                        <td>$74,739.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-05-2021</td>
+                        <td><a href="stocks/ROKU.html">Roku, Inc. - Class A Common Stock</a></td>
+                        <td>-263</td>
+                        <td>$317.00</td>
+                        <td>-$83,371.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-05-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>252</td>
+                        <td>$331.00</td>
+                        <td>$83,412.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-05-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-252</td>
+                        <td>$347.75</td>
+                        <td>-$87,633.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-05-2021</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>175</td>
+                        <td>$499.81</td>
+                        <td>$87,466.47</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-05-2021</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-175</td>
+                        <td>$505.74</td>
+                        <td>-$88,504.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-05-2021</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>111</td>
+                        <td>$797.55</td>
+                        <td>$88,528.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-05-2021</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-111</td>
+                        <td>$833.59</td>
+                        <td>-$92,528.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-05-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>329</td>
+                        <td>$281.55</td>
+                        <td>$92,629.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-05-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-329</td>
+                        <td>$325.50</td>
+                        <td>-$107,089.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-05-2021</td>
+                        <td><a href="stocks/ROKU.html">Roku, Inc. - Class A Common Stock</a></td>
+                        <td>343</td>
+                        <td>$312.43</td>
+                        <td>$107,163.49</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-05-2021</td>
+                        <td><a href="stocks/ROKU.html">Roku, Inc. - Class A Common Stock</a></td>
+                        <td>-343</td>
+                        <td>$325.53</td>
+                        <td>-$111,656.79</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-05-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>170</td>
+                        <td>$654.45</td>
+                        <td>$111,256.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-05-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-170</td>
+                        <td>$673.95</td>
+                        <td>-$114,571.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-05-2021</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>492</td>
+                        <td>$233.49</td>
+                        <td>$114,877.08</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-05-2021</td>
+                        <td><a href="stocks/SEDG.html">SolarEdge Technologies, Inc. - Common Stock</a></td>
+                        <td>-492</td>
+                        <td>$249.52</td>
+                        <td>-$122,763.84</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-05-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>304</td>
+                        <td>$404.00</td>
+                        <td>$122,816.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-05-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>-304</td>
+                        <td>$449.20</td>
+                        <td>-$136,556.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-05-2021</td>
+                        <td><a href="stocks/COIN.html">Coinbase Global, Inc. - Class A Common Stock</a></td>
+                        <td>606</td>
+                        <td>$225.30</td>
+                        <td>$136,531.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-05-2021</td>
+                        <td><a href="stocks/COIN.html">Coinbase Global, Inc. - Class A Common Stock</a></td>
+                        <td>-606</td>
+                        <td>$242.41</td>
+                        <td>-$146,900.46</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-05-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>208</td>
+                        <td>$703.95</td>
+                        <td>$146,421.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-05-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-208</td>
+                        <td>$729.75</td>
+                        <td>-$151,788.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-05-2021</td>
+                        <td><a href="stocks/UPST.html">Upstart Holdings, Inc. - Common stock</a></td>
+                        <td>1000</td>
+                        <td>$146.58</td>
+                        <td>$146,580.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-05-2021</td>
+                        <td><a href="stocks/UPST.html">Upstart Holdings, Inc. - Common stock</a></td>
+                        <td>-1000</td>
+                        <td>$166.83</td>
+                        <td>-$166,830.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-05-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>390</td>
+                        <td>$442.40</td>
+                        <td>$172,536.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-05-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>-390</td>
+                        <td>$474.20</td>
+                        <td>-$184,938.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-06-2021</td>
+                        <td><a href="stocks/PETS.html">PetMed Express, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$25.43</td>
+                        <td>$25,428.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-06-2021</td>
+                        <td><a href="stocks/PETS.html">PetMed Express, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$40.28</td>
+                        <td>-$40,276.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-06-2021</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>235</td>
+                        <td>$847.90</td>
+                        <td>$199,255.56</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-06-2021</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-235</td>
+                        <td>$856.54</td>
+                        <td>-$201,287.66</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-06-2021</td>
+                        <td><a href="stocks/BIIB.html">Biogen Inc. - Common Stock</a></td>
+                        <td>740</td>
+                        <td>$272.55</td>
+                        <td>$201,686.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-06-2021</td>
+                        <td><a href="stocks/BIIB.html">Biogen Inc. - Common Stock</a></td>
+                        <td>-740</td>
+                        <td>$286.14</td>
+                        <td>-$211,743.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-06-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>423</td>
+                        <td>$500.00</td>
+                        <td>$211,500.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-06-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>-423</td>
+                        <td>$539.80</td>
+                        <td>-$228,335.39</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-06-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>339</td>
+                        <td>$673.80</td>
+                        <td>$228,418.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-06-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-339</td>
+                        <td>$698.25</td>
+                        <td>-$236,706.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-06-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>339</td>
+                        <td>$698.25</td>
+                        <td>$236,706.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-06-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-339</td>
+                        <td>$724.20</td>
+                        <td>-$245,503.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-06-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>461</td>
+                        <td>$533.00</td>
+                        <td>$245,713.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-06-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>-461</td>
+                        <td>$574.60</td>
+                        <td>-$264,890.59</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-06-2021</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>323</td>
+                        <td>$820.57</td>
+                        <td>$265,044.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-06-2021</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-323</td>
+                        <td>$850.13</td>
+                        <td>-$274,590.97</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-06-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>784</td>
+                        <td>$350.00</td>
+                        <td>$274,400.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-06-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-784</td>
+                        <td>$384.00</td>
+                        <td>-$301,056.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-06-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>426</td>
+                        <td>$707.10</td>
+                        <td>$301,224.59</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-06-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-426</td>
+                        <td>$740.55</td>
+                        <td>-$315,474.29</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-06-2021</td>
+                        <td><a href="stocks/ROKU.html">Roku, Inc. - Class A Common Stock</a></td>
+                        <td>895</td>
+                        <td>$352.30</td>
+                        <td>$315,308.49</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-06-2021</td>
+                        <td><a href="stocks/ROKU.html">Roku, Inc. - Class A Common Stock</a></td>
+                        <td>-895</td>
+                        <td>$368.43</td>
+                        <td>-$329,744.84</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-06-2021</td>
+                        <td><a href="stocks/ROKU.html">Roku, Inc. - Class A Common Stock</a></td>
+                        <td>862</td>
+                        <td>$382.73</td>
+                        <td>$329,913.27</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-06-2021</td>
+                        <td><a href="stocks/ROKU.html">Roku, Inc. - Class A Common Stock</a></td>
+                        <td>-862</td>
+                        <td>$403.50</td>
+                        <td>-$347,817.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-06-2021</td>
+                        <td><a href="stocks/ROKU.html">Roku, Inc. - Class A Common Stock</a></td>
+                        <td>862</td>
+                        <td>$403.50</td>
+                        <td>$347,817.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-06-2021</td>
+                        <td><a href="stocks/ROKU.html">Roku, Inc. - Class A Common Stock</a></td>
+                        <td>-862</td>
+                        <td>$421.70</td>
+                        <td>-$363,505.41</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-06-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>938</td>
+                        <td>$387.50</td>
+                        <td>$363,475.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-06-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-938</td>
+                        <td>$414.50</td>
+                        <td>-$388,801.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-06-2021</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>460</td>
+                        <td>$845.10</td>
+                        <td>$388,747.11</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-06-2021</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-460</td>
+                        <td>$855.20</td>
+                        <td>-$393,392.29</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-06-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>981</td>
+                        <td>$401.00</td>
+                        <td>$393,381.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-06-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-981</td>
+                        <td>$388.50</td>
+                        <td>-$381,118.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-06-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>488</td>
+                        <td>$780.45</td>
+                        <td>$380,859.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-06-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-488</td>
+                        <td>$749.70</td>
+                        <td>-$365,853.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-06-2021</td>
+                        <td><a href="stocks/ROKU.html">Roku, Inc. - Class A Common Stock</a></td>
+                        <td>797</td>
+                        <td>$459.25</td>
+                        <td>$366,022.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-07-2021</td>
+                        <td><a href="stocks/ROKU.html">Roku, Inc. - Class A Common Stock</a></td>
+                        <td>-797</td>
+                        <td>$435.67</td>
+                        <td>-$347,229.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-07-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>473</td>
+                        <td>$734.25</td>
+                        <td>$347,300.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-07-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-473</td>
+                        <td>$683.85</td>
+                        <td>-$323,461.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-07-2021</td>
+                        <td><a href="stocks/MKTX.html">MarketAxess Holdings, Inc. - Common Stock</a></td>
+                        <td>716</td>
+                        <td>$451.73</td>
+                        <td>$323,436.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-07-2021</td>
+                        <td><a href="stocks/MKTX.html">MarketAxess Holdings, Inc. - Common Stock</a></td>
+                        <td>-716</td>
+                        <td>$430.93</td>
+                        <td>-$308,546.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-07-2021</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>397</td>
+                        <td>$776.77</td>
+                        <td>$308,378.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-07-2021</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-397</td>
+                        <td>$759.62</td>
+                        <td>-$301,567.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-07-2021</td>
+                        <td><a href="stocks/BIIB.html">Biogen Inc. - Common Stock</a></td>
+                        <td>818</td>
+                        <td>$369.05</td>
+                        <td>$301,882.89</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-07-2021</td>
+                        <td><a href="stocks/BIIB.html">Biogen Inc. - Common Stock</a></td>
+                        <td>-818</td>
+                        <td>$358.16</td>
+                        <td>-$292,974.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-07-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>653</td>
+                        <td>$448.40</td>
+                        <td>$292,805.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-07-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>-653</td>
+                        <td>$422.60</td>
+                        <td>-$275,957.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-07-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>976</td>
+                        <td>$282.90</td>
+                        <td>$276,110.39</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-07-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-976</td>
+                        <td>$260.85</td>
+                        <td>-$254,589.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-07-2021</td>
+                        <td><a href="stocks/BIIB.html">Biogen Inc. - Common Stock</a></td>
+                        <td>723</td>
+                        <td>$352.06</td>
+                        <td>$254,539.38</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-07-2021</td>
+                        <td><a href="stocks/BIIB.html">Biogen Inc. - Common Stock</a></td>
+                        <td>-723</td>
+                        <td>$328.16</td>
+                        <td>-$237,259.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-07-2021</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>302</td>
+                        <td>$785.74</td>
+                        <td>$237,292.39</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-07-2021</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-302</td>
+                        <td>$761.35</td>
+                        <td>-$229,928.98</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-07-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>584</td>
+                        <td>$393.60</td>
+                        <td>$229,862.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-07-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>-584</td>
+                        <td>$389.00</td>
+                        <td>-$227,176.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-07-2021</td>
+                        <td><a href="stocks/LYEL.html">Lyell Immunopharma, Inc. - Common Stock</a></td>
+                        <td>680</td>
+                        <td>$334.00</td>
+                        <td>$227,120.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-07-2021</td>
+                        <td><a href="stocks/LYEL.html">Lyell Immunopharma, Inc. - Common Stock</a></td>
+                        <td>-680</td>
+                        <td>$314.00</td>
+                        <td>-$213,520.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-07-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>313</td>
+                        <td>$682.65</td>
+                        <td>$213,669.46</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-07-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-313</td>
+                        <td>$666.00</td>
+                        <td>-$208,458.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-07-2021</td>
+                        <td><a href="stocks/LYEL.html">Lyell Immunopharma, Inc. - Common Stock</a></td>
+                        <td>669</td>
+                        <td>$311.40</td>
+                        <td>$208,326.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-07-2021</td>
+                        <td><a href="stocks/LYEL.html">Lyell Immunopharma, Inc. - Common Stock</a></td>
+                        <td>-669</td>
+                        <td>$288.60</td>
+                        <td>-$193,073.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-07-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>295</td>
+                        <td>$653.40</td>
+                        <td>$192,753.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-07-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-295</td>
+                        <td>$629.85</td>
+                        <td>-$185,805.74</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-07-2021</td>
+                        <td><a href="stocks/LYEL.html">Lyell Immunopharma, Inc. - Common Stock</a></td>
+                        <td>646</td>
+                        <td>$288.20</td>
+                        <td>$186,177.21</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-07-2021</td>
+                        <td><a href="stocks/LYEL.html">Lyell Immunopharma, Inc. - Common Stock</a></td>
+                        <td>-646</td>
+                        <td>$270.20</td>
+                        <td>-$174,549.21</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-07-2021</td>
+                        <td><a href="stocks/PYPL.html">PayPal Holdings, Inc. - Common Stock</a></td>
+                        <td>578</td>
+                        <td>$301.98</td>
+                        <td>$174,544.45</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-07-2021</td>
+                        <td><a href="stocks/PYPL.html">PayPal Holdings, Inc. - Common Stock</a></td>
+                        <td>-578</td>
+                        <td>$283.17</td>
+                        <td>-$163,672.27</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-07-2021</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>232</td>
+                        <td>$704.16</td>
+                        <td>$163,365.11</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-07-2021</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>-232</td>
+                        <td>$678.53</td>
+                        <td>-$157,418.97</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-08-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>675</td>
+                        <td>$233.70</td>
+                        <td>$157,747.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-08-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-675</td>
+                        <td>$222.30</td>
+                        <td>-$150,052.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-08-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>675</td>
+                        <td>$222.30</td>
+                        <td>$150,052.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-08-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-675</td>
+                        <td>$213.45</td>
+                        <td>-$144,078.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-08-2021</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>204</td>
+                        <td>$705.76</td>
+                        <td>$143,975.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-08-2021</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>-204</td>
+                        <td>$685.20</td>
+                        <td>-$139,780.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-08-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>235</td>
+                        <td>$594.00</td>
+                        <td>$139,590.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-08-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-235</td>
+                        <td>$552.90</td>
+                        <td>-$129,931.51</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-08-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>341</td>
+                        <td>$381.40</td>
+                        <td>$130,057.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-08-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>-341</td>
+                        <td>$348.20</td>
+                        <td>-$118,736.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-08-2021</td>
+                        <td><a href="stocks/COIN.html">Coinbase Global, Inc. - Class A Common Stock</a></td>
+                        <td>427</td>
+                        <td>$278.40</td>
+                        <td>$118,876.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-08-2021</td>
+                        <td><a href="stocks/COIN.html">Coinbase Global, Inc. - Class A Common Stock</a></td>
+                        <td>-427</td>
+                        <td>$256.50</td>
+                        <td>-$109,525.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-08-2021</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>126</td>
+                        <td>$865.70</td>
+                        <td>$109,078.82</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-08-2021</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-126</td>
+                        <td>$846.13</td>
+                        <td>-$106,612.17</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-08-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>179</td>
+                        <td>$597.00</td>
+                        <td>$106,863.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-08-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-179</td>
+                        <td>$578.55</td>
+                        <td>-$103,560.45</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-08-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>326</td>
+                        <td>$318.60</td>
+                        <td>$103,863.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-08-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>-326</td>
+                        <td>$303.20</td>
+                        <td>-$98,843.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-08-2021</td>
+                        <td><a href="stocks/ILMN.html">Illumina, Inc. - Common Stock</a></td>
+                        <td>199</td>
+                        <td>$496.70</td>
+                        <td>$98,843.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-08-2021</td>
+                        <td><a href="stocks/ILMN.html">Illumina, Inc. - Common Stock</a></td>
+                        <td>-199</td>
+                        <td>$457.55</td>
+                        <td>-$91,052.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-08-2021</td>
+                        <td><a href="stocks/DPZ.html">Domino's Pizza Inc - Common Stock</a></td>
+                        <td>184</td>
+                        <td>$494.59</td>
+                        <td>$91,004.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-08-2021</td>
+                        <td><a href="stocks/DPZ.html">Domino's Pizza Inc - Common Stock</a></td>
+                        <td>-184</td>
+                        <td>$486.19</td>
+                        <td>-$89,459.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-08-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>301</td>
+                        <td>$297.45</td>
+                        <td>$89,532.45</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-08-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-301</td>
+                        <td>$276.90</td>
+                        <td>-$83,346.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-08-2021</td>
+                        <td><a href="stocks/MKTX.html">MarketAxess Holdings, Inc. - Common Stock</a></td>
+                        <td>180</td>
+                        <td>$460.93</td>
+                        <td>$82,967.39</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-08-2021</td>
+                        <td><a href="stocks/MKTX.html">MarketAxess Holdings, Inc. - Common Stock</a></td>
+                        <td>-180</td>
+                        <td>$452.86</td>
+                        <td>-$81,514.27</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-08-2021</td>
+                        <td><a href="stocks/ILMN.html">Illumina, Inc. - Common Stock</a></td>
+                        <td>172</td>
+                        <td>$474.19</td>
+                        <td>$81,561.13</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-08-2021</td>
+                        <td><a href="stocks/ILMN.html">Illumina, Inc. - Common Stock</a></td>
+                        <td>-172</td>
+                        <td>$458.04</td>
+                        <td>-$78,782.03</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-08-2021</td>
+                        <td><a href="stocks/ILMN.html">Illumina, Inc. - Common Stock</a></td>
+                        <td>172</td>
+                        <td>$458.04</td>
+                        <td>$78,782.03</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-08-2021</td>
+                        <td><a href="stocks/ILMN.html">Illumina, Inc. - Common Stock</a></td>
+                        <td>-172</td>
+                        <td>$451.93</td>
+                        <td>-$77,731.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-08-2021</td>
+                        <td><a href="stocks/LULU.html">lululemon athletica inc. - Common Stock</a></td>
+                        <td>188</td>
+                        <td>$414.52</td>
+                        <td>$77,929.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-08-2021</td>
+                        <td><a href="stocks/LULU.html">lululemon athletica inc. - Common Stock</a></td>
+                        <td>-188</td>
+                        <td>$400.17</td>
+                        <td>-$75,231.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-08-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>206</td>
+                        <td>$364.40</td>
+                        <td>$75,066.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-09-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>-206</td>
+                        <td>$356.60</td>
+                        <td>-$73,459.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-09-2021</td>
+                        <td><a href="stocks/ROKU.html">Roku, Inc. - Class A Common Stock</a></td>
+                        <td>200</td>
+                        <td>$368.10</td>
+                        <td>$73,620.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-09-2021</td>
+                        <td><a href="stocks/ROKU.html">Roku, Inc. - Class A Common Stock</a></td>
+                        <td>-200</td>
+                        <td>$346.49</td>
+                        <td>-$69,298.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-09-2021</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>77</td>
+                        <td>$895.90</td>
+                        <td>$68,984.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-09-2021</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-77</td>
+                        <td>$878.07</td>
+                        <td>-$67,611.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-09-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>201</td>
+                        <td>$338.40</td>
+                        <td>$68,018.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-09-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-201</td>
+                        <td>$304.35</td>
+                        <td>-$61,174.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-09-2021</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>91</td>
+                        <td>$667.35</td>
+                        <td>$60,728.42</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-09-2021</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-91</td>
+                        <td>$644.33</td>
+                        <td>-$58,633.93</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-09-2021</td>
+                        <td><a href="stocks/LYEL.html">Lyell Immunopharma, Inc. - Common Stock</a></td>
+                        <td>184</td>
+                        <td>$321.00</td>
+                        <td>$59,064.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-09-2021</td>
+                        <td><a href="stocks/LYEL.html">Lyell Immunopharma, Inc. - Common Stock</a></td>
+                        <td>-184</td>
+                        <td>$290.20</td>
+                        <td>-$53,396.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-09-2021</td>
+                        <td><a href="stocks/LYEL.html">Lyell Immunopharma, Inc. - Common Stock</a></td>
+                        <td>184</td>
+                        <td>$290.20</td>
+                        <td>$53,396.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-09-2021</td>
+                        <td><a href="stocks/LYEL.html">Lyell Immunopharma, Inc. - Common Stock</a></td>
+                        <td>-184</td>
+                        <td>$263.60</td>
+                        <td>-$48,502.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-09-2021</td>
+                        <td><a href="stocks/LYEL.html">Lyell Immunopharma, Inc. - Common Stock</a></td>
+                        <td>184</td>
+                        <td>$263.60</td>
+                        <td>$48,502.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-09-2021</td>
+                        <td><a href="stocks/LYEL.html">Lyell Immunopharma, Inc. - Common Stock</a></td>
+                        <td>-184</td>
+                        <td>$233.20</td>
+                        <td>-$42,908.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-09-2021</td>
+                        <td><a href="stocks/ZBRA.html">Zebra Technologies Corporation - Class A Common Stock</a></td>
+                        <td>73</td>
+                        <td>$584.76</td>
+                        <td>$42,687.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-09-2021</td>
+                        <td><a href="stocks/ZBRA.html">Zebra Technologies Corporation - Class A Common Stock</a></td>
+                        <td>-73</td>
+                        <td>$569.15</td>
+                        <td>-$41,547.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-09-2021</td>
+                        <td><a href="stocks/ZBRA.html">Zebra Technologies Corporation - Class A Common Stock</a></td>
+                        <td>75</td>
+                        <td>$551.90</td>
+                        <td>$41,392.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-09-2021</td>
+                        <td><a href="stocks/ZBRA.html">Zebra Technologies Corporation - Class A Common Stock</a></td>
+                        <td>-75</td>
+                        <td>$543.00</td>
+                        <td>-$40,725.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-09-2021</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>63</td>
+                        <td>$645.89</td>
+                        <td>$40,691.07</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-09-2021</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-63</td>
+                        <td>$626.08</td>
+                        <td>-$39,443.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-09-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>48</td>
+                        <td>$821.55</td>
+                        <td>$39,434.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-09-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-48</td>
+                        <td>$795.15</td>
+                        <td>-$38,167.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-09-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>48</td>
+                        <td>$795.15</td>
+                        <td>$38,167.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-09-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-48</td>
+                        <td>$767.25</td>
+                        <td>-$36,828.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-09-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>46</td>
+                        <td>$795.30</td>
+                        <td>$36,583.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-09-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-46</td>
+                        <td>$738.15</td>
+                        <td>-$33,954.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-09-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>113</td>
+                        <td>$306.15</td>
+                        <td>$34,594.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-09-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-113</td>
+                        <td>$279.90</td>
+                        <td>-$31,628.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-09-2021</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>36</td>
+                        <td>$859.14</td>
+                        <td>$30,928.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-09-2021</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-36</td>
+                        <td>$832.81</td>
+                        <td>-$29,981.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-09-2021</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>51</td>
+                        <td>$603.51</td>
+                        <td>$30,779.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-10-2021</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-51</td>
+                        <td>$569.22</td>
+                        <td>-$29,030.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-10-2021</td>
+                        <td><a href="stocks/LYEL.html">Lyell Immunopharma, Inc. - Common Stock</a></td>
+                        <td>110</td>
+                        <td>$262.20</td>
+                        <td>$28,842.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-10-2021</td>
+                        <td><a href="stocks/LYEL.html">Lyell Immunopharma, Inc. - Common Stock</a></td>
+                        <td>-110</td>
+                        <td>$242.60</td>
+                        <td>-$26,686.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-10-2021</td>
+                        <td><a href="stocks/MKTX.html">MarketAxess Holdings, Inc. - Common Stock</a></td>
+                        <td>64</td>
+                        <td>$413.74</td>
+                        <td>$26,479.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-10-2021</td>
+                        <td><a href="stocks/MKTX.html">MarketAxess Holdings, Inc. - Common Stock</a></td>
+                        <td>-64</td>
+                        <td>$395.43</td>
+                        <td>-$25,307.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-10-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>34</td>
+                        <td>$745.80</td>
+                        <td>$25,357.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-10-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-34</td>
+                        <td>$722.55</td>
+                        <td>-$24,566.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-10-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>55</td>
+                        <td>$449.50</td>
+                        <td>$24,722.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-10-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-55</td>
+                        <td>$391.50</td>
+                        <td>-$21,532.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-10-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>29</td>
+                        <td>$742.35</td>
+                        <td>$21,528.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-10-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-29</td>
+                        <td>$737.40</td>
+                        <td>-$21,384.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-10-2021</td>
+                        <td><a href="stocks/DPZ.html">Domino's Pizza Inc - Common Stock</a></td>
+                        <td>47</td>
+                        <td>$456.46</td>
+                        <td>$21,453.57</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-10-2021</td>
+                        <td><a href="stocks/DPZ.html">Domino's Pizza Inc - Common Stock</a></td>
+                        <td>-47</td>
+                        <td>$434.88</td>
+                        <td>-$20,439.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-10-2021</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>50</td>
+                        <td>$406.35</td>
+                        <td>$20,317.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-10-2021</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>-50</td>
+                        <td>$363.35</td>
+                        <td>-$18,167.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-10-2021</td>
+                        <td><a href="stocks/WDFC.html">WD-40 Company - Common Stock</a></td>
+                        <td>84</td>
+                        <td>$216.78</td>
+                        <td>$18,209.19</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-10-2021</td>
+                        <td><a href="stocks/WDFC.html">WD-40 Company - Common Stock</a></td>
+                        <td>-84</td>
+                        <td>$197.78</td>
+                        <td>-$16,613.73</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-10-2021</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>19</td>
+                        <td>$842.18</td>
+                        <td>$16,001.37</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-10-2021</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-19</td>
+                        <td>$826.77</td>
+                        <td>-$15,708.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-10-2021</td>
+                        <td><a href="stocks/BYND.html">Beyond Meat, Inc. - Common stock</a></td>
+                        <td>152</td>
+                        <td>$108.62</td>
+                        <td>$16,510.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-10-2021</td>
+                        <td><a href="stocks/BYND.html">Beyond Meat, Inc. - Common stock</a></td>
+                        <td>-152</td>
+                        <td>$95.80</td>
+                        <td>-$14,561.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-10-2021</td>
+                        <td><a href="stocks/UPST.html">Upstart Holdings, Inc. - Common stock</a></td>
+                        <td>40</td>
+                        <td>$359.81</td>
+                        <td>$14,392.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-10-2021</td>
+                        <td><a href="stocks/UPST.html">Upstart Holdings, Inc. - Common stock</a></td>
+                        <td>-40</td>
+                        <td>$327.08</td>
+                        <td>-$13,083.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-10-2021</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>15</td>
+                        <td>$834.53</td>
+                        <td>$12,517.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-10-2021</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-15</td>
+                        <td>$809.80</td>
+                        <td>-$12,147.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-10-2021</td>
+                        <td><a href="stocks/THRM.html">Gentherm Inc - Common Stock</a></td>
+                        <td>145</td>
+                        <td>$88.51</td>
+                        <td>$12,833.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-10-2021</td>
+                        <td><a href="stocks/THRM.html">Gentherm Inc - Common Stock</a></td>
+                        <td>-145</td>
+                        <td>$76.40</td>
+                        <td>-$11,078.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-10-2021</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>20</td>
+                        <td>$535.57</td>
+                        <td>$10,711.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-10-2021</td>
+                        <td><a href="stocks/MPWR.html">Monolithic Power Systems, Inc. - Common Stock</a></td>
+                        <td>-20</td>
+                        <td>$511.94</td>
+                        <td>-$10,238.83</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-11-2021</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>16</td>
+                        <td>$666.48</td>
+                        <td>$10,663.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-11-2021</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>-16</td>
+                        <td>$627.35</td>
+                        <td>-$10,037.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-11-2021</td>
+                        <td><a href="stocks/ZG.html">Zillow Group, Inc. - Class A Common Stock</a></td>
+                        <td>117</td>
+                        <td>$85.48</td>
+                        <td>$10,001.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-11-2021</td>
+                        <td><a href="stocks/ZG.html">Zillow Group, Inc. - Class A Common Stock</a></td>
+                        <td>-117</td>
+                        <td>$65.86</td>
+                        <td>-$7,705.62</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-11-2021</td>
+                        <td><a href="stocks/BIRD.html">Allbirds, Inc. - Class A Common Stock</a></td>
+                        <td>13</td>
+                        <td>$577.80</td>
+                        <td>$7,511.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-11-2021</td>
+                        <td><a href="stocks/BIRD.html">Allbirds, Inc. - Class A Common Stock</a></td>
+                        <td>-13</td>
+                        <td>$519.00</td>
+                        <td>-$6,747.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-11-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>14</td>
+                        <td>$497.25</td>
+                        <td>$6,961.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-11-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-14</td>
+                        <td>$454.25</td>
+                        <td>-$6,359.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-11-2021</td>
+                        <td><a href="stocks/BIRD.html">Allbirds, Inc. - Class A Common Stock</a></td>
+                        <td>13</td>
+                        <td>$491.20</td>
+                        <td>$6,385.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-11-2021</td>
+                        <td><a href="stocks/BIRD.html">Allbirds, Inc. - Class A Common Stock</a></td>
+                        <td>-13</td>
+                        <td>$435.00</td>
+                        <td>-$5,655.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-11-2021</td>
+                        <td><a href="stocks/UPST.html">Upstart Holdings, Inc. - Common stock</a></td>
+                        <td>18</td>
+                        <td>$313.71</td>
+                        <td>$5,646.78</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-11-2021</td>
+                        <td><a href="stocks/UPST.html">Upstart Holdings, Inc. - Common stock</a></td>
+                        <td>-18</td>
+                        <td>$256.59</td>
+                        <td>-$4,618.62</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-11-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$784.35</td>
+                        <td>$3,921.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-11-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$762.90</td>
+                        <td>-$3,814.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-11-2021</td>
+                        <td><a href="stocks/BIIB.html">Biogen Inc. - Common Stock</a></td>
+                        <td>16</td>
+                        <td>$271.82</td>
+                        <td>$4,349.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-11-2021</td>
+                        <td><a href="stocks/BIIB.html">Biogen Inc. - Common Stock</a></td>
+                        <td>-16</td>
+                        <td>$261.55</td>
+                        <td>-$4,184.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-11-2021</td>
+                        <td><a href="stocks/ROKU.html">Roku, Inc. - Class A Common Stock</a></td>
+                        <td>15</td>
+                        <td>$276.46</td>
+                        <td>$4,146.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-11-2021</td>
+                        <td><a href="stocks/ROKU.html">Roku, Inc. - Class A Common Stock</a></td>
+                        <td>-15</td>
+                        <td>$245.11</td>
+                        <td>-$3,676.65</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-11-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$779.70</td>
+                        <td>$3,118.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-11-2021</td>
+                        <td><a href="stocks/OM.html">Outset Medical, Inc. - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$736.35</td>
+                        <td>-$2,945.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-11-2021</td>
+                        <td><a href="stocks/BIRD.html">Allbirds, Inc. - Class A Common Stock</a></td>
+                        <td>6</td>
+                        <td>$535.20</td>
+                        <td>$3,211.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-11-2021</td>
+                        <td><a href="stocks/BIRD.html">Allbirds, Inc. - Class A Common Stock</a></td>
+                        <td>-6</td>
+                        <td>$488.00</td>
+                        <td>-$2,928.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-11-2021</td>
+                        <td><a href="stocks/BIRD.html">Allbirds, Inc. - Class A Common Stock</a></td>
+                        <td>7</td>
+                        <td>$436.60</td>
+                        <td>$3,056.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-11-2021</td>
+                        <td><a href="stocks/BIRD.html">Allbirds, Inc. - Class A Common Stock</a></td>
+                        <td>-7</td>
+                        <td>$378.00</td>
+                        <td>-$2,646.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-11-2021</td>
+                        <td><a href="stocks/CTRN.html">Citi Trends, Inc. - Common Stock</a></td>
+                        <td>33</td>
+                        <td>$91.18</td>
+                        <td>$3,008.94</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-11-2021</td>
+                        <td><a href="stocks/CTRN.html">Citi Trends, Inc. - Common Stock</a></td>
+                        <td>-33</td>
+                        <td>$84.01</td>
+                        <td>-$2,772.33</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-11-2021</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>3</td>
+                        <td>$819.85</td>
+                        <td>$2,459.56</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-11-2021</td>
+                        <td><a href="stocks/FCNCA.html">First Citizens BancShares, Inc. - Class A Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$794.54</td>
+                        <td>-$2,383.63</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-11-2021</td>
+                        <td><a href="stocks/BIRD.html">Allbirds, Inc. - Class A Common Stock</a></td>
+                        <td>7</td>
+                        <td>$384.80</td>
+                        <td>$2,693.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-12-2021</td>
+                        <td><a href="stocks/BIRD.html">Allbirds, Inc. - Class A Common Stock</a></td>
+                        <td>-7</td>
+                        <td>$321.20</td>
+                        <td>-$2,248.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-12-2021</td>
+                        <td><a href="stocks/COIN.html">Coinbase Global, Inc. - Class A Common Stock</a></td>
+                        <td>7</td>
+                        <td>$294.50</td>
+                        <td>$2,061.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-12-2021</td>
+                        <td><a href="stocks/COIN.html">Coinbase Global, Inc. - Class A Common Stock</a></td>
+                        <td>-7</td>
+                        <td>$284.71</td>
+                        <td>-$1,992.97</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-12-2021</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$671.88</td>
+                        <td>$2,015.64</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-12-2021</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$616.53</td>
+                        <td>-$1,849.59</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-12-2021</td>
+                        <td><a href="stocks/UTMD.html">Utah Medical Products, Inc. - Common Stock</a></td>
+                        <td>19</td>
+                        <td>$104.00</td>
+                        <td>$1,976.07</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-12-2021</td>
+                        <td><a href="stocks/UTMD.html">Utah Medical Products, Inc. - Common Stock</a></td>
+                        <td>-19</td>
+                        <td>$97.25</td>
+                        <td>-$1,847.74</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-12-2021</td>
+                        <td><a href="stocks/BIRD.html">Allbirds, Inc. - Class A Common Stock</a></td>
+                        <td>5</td>
+                        <td>$321.00</td>
+                        <td>$1,605.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-12-2021</td>
+                        <td><a href="stocks/BIRD.html">Allbirds, Inc. - Class A Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$298.40</td>
+                        <td>-$1,492.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-12-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$438.00</td>
+                        <td>$1,752.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-12-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$407.75</td>
+                        <td>-$1,631.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-12-2021</td>
+                        <td><a href="stocks/BIRD.html">Allbirds, Inc. - Class A Common Stock</a></td>
+                        <td>5</td>
+                        <td>$304.80</td>
+                        <td>$1,524.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-12-2021</td>
+                        <td><a href="stocks/BIRD.html">Allbirds, Inc. - Class A Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$279.20</td>
+                        <td>-$1,396.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-12-2021</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$658.30</td>
+                        <td>$1,316.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-12-2021</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$614.86</td>
+                        <td>-$1,229.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-12-2021</td>
+                        <td><a href="stocks/ROKU.html">Roku, Inc. - Class A Common Stock</a></td>
+                        <td>6</td>
+                        <td>$221.55</td>
+                        <td>$1,329.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-12-2021</td>
+                        <td><a href="stocks/ROKU.html">Roku, Inc. - Class A Common Stock</a></td>
+                        <td>-6</td>
+                        <td>$203.94</td>
+                        <td>-$1,223.64</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-12-2021</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$630.33</td>
+                        <td>$1,260.66</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-12-2021</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$566.09</td>
+                        <td>-$1,132.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-12-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$281.25</td>
+                        <td>$1,125.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-12-2021</td>
+                        <td><a href="stocks/PRAX.html">Praxis Precision Medicines, Inc. - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$260.70</td>
+                        <td>-$1,042.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-12-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$392.25</td>
+                        <td>$784.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-12-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$389.00</td>
+                        <td>-$778.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-12-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>7</td>
+                        <td>$157.60</td>
+                        <td>$1,103.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-12-2021</td>
+                        <td><a href="stocks/OTLY.html">Oatly Group AB - American Depositary Shares</a></td>
+                        <td>-7</td>
+                        <td>$152.20</td>
+                        <td>-$1,065.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-12-2021</td>
+                        <td><a href="stocks/CROX.html">Crocs, Inc. - Common Stock</a></td>
+                        <td>7</td>
+                        <td>$139.78</td>
+                        <td>$978.46</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-12-2021</td>
+                        <td><a href="stocks/CROX.html">Crocs, Inc. - Common Stock</a></td>
+                        <td>-7</td>
+                        <td>$123.53</td>
+                        <td>-$864.71</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-12-2021</td>
+                        <td><a href="stocks/BIRD.html">Allbirds, Inc. - Class A Common Stock</a></td>
+                        <td>2</td>
+                        <td>$381.00</td>
+                        <td>$762.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-12-2021</td>
+                        <td><a href="stocks/BIRD.html">Allbirds, Inc. - Class A Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$335.40</td>
+                        <td>-$670.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-12-2021</td>
+                        <td><a href="stocks/BIRD.html">Allbirds, Inc. - Class A Common Stock</a></td>
+                        <td>2</td>
+                        <td>$335.40</td>
+                        <td>$670.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-12-2021</td>
+                        <td><a href="stocks/BIRD.html">Allbirds, Inc. - Class A Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$313.20</td>
+                        <td>-$626.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-12-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>1</td>
+                        <td>$426.00</td>
+                        <td>$426.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-12-2021</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$403.00</td>
+                        <td>-$403.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-12-2021</td>
+                        <td><a href="stocks/BIRD.html">Allbirds, Inc. - Class A Common Stock</a></td>
+                        <td>2</td>
+                        <td>$319.00</td>
+                        <td>$638.00</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</div>
+</body>
+</html>
