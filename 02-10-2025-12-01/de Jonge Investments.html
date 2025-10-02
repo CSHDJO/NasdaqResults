@@ -1,0 +1,2420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nasdaq Trade System - de Jonge Investments</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+            crossorigin="anonymous"></script>
+    <meta name="theme-color" content="#712cf9">
+</head>
+
+<body>
+<header class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow" data-bs-theme="dark"><a
+        class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="#">Nasdaq Trade system</a>
+</header>
+
+
+<div class="container-fluid">
+    <div class="row">
+        
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <a href="GameResult.html">Back</a>
+            <h1>de Jonge Investments</h1>
+            <img src="de Jonge Investments.png" class="img-fluid">
+            <div class="table-responsive small">
+                <table class="table table-striped table-sm">
+                    <thead>
+                    <tr>
+                        <th scope="col">ExecutedOn</th>
+                        <th scope="col">Company</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">AtPrice</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr scope="row">
+                        <td>03-01-2023</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>1</td>
+                        <td>$629.95</td>
+                        <td>$629.95</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-01-2023</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$646.72</td>
+                        <td>-$646.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-01-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>2</td>
+                        <td>$354.00</td>
+                        <td>$708.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-01-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$361.43</td>
+                        <td>-$722.86</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-01-2023</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$419.20</td>
+                        <td>$838.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-01-2023</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$447.77</td>
+                        <td>-$895.54</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-01-2023</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$448.08</td>
+                        <td>$896.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-01-2023</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$469.11</td>
+                        <td>-$938.22</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-01-2023</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>1</td>
+                        <td>$660.98</td>
+                        <td>$660.98</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-01-2023</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$679.97</td>
+                        <td>-$679.97</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-01-2023</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>1</td>
+                        <td>$679.97</td>
+                        <td>$679.97</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-01-2023</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>-1</td>
+                        <td>$689.69</td>
+                        <td>-$689.69</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-01-2023</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$469.71</td>
+                        <td>$939.42</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-01-2023</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$479.08</td>
+                        <td>-$958.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-01-2023</td>
+                        <td><a href="stocks/MLAB.html">Mesa Laboratories, Inc. - Common Stock</a></td>
+                        <td>6</td>
+                        <td>$181.67</td>
+                        <td>$1,090.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-01-2023</td>
+                        <td><a href="stocks/MLAB.html">Mesa Laboratories, Inc. - Common Stock</a></td>
+                        <td>-6</td>
+                        <td>$189.46</td>
+                        <td>-$1,136.79</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-01-2023</td>
+                        <td><a href="stocks/CHRD.html">Chord Energy Corporation - Common Stock</a></td>
+                        <td>10</td>
+                        <td>$114.56</td>
+                        <td>$1,145.63</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-01-2023</td>
+                        <td><a href="stocks/CHRD.html">Chord Energy Corporation - Common Stock</a></td>
+                        <td>-10</td>
+                        <td>$119.39</td>
+                        <td>-$1,193.89</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-01-2023</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$373.11</td>
+                        <td>$1,119.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-01-2023</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$392.29</td>
+                        <td>-$1,176.88</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-01-2023</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>12</td>
+                        <td>$104.00</td>
+                        <td>$1,248.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-01-2023</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-12</td>
+                        <td>$118.00</td>
+                        <td>-$1,416.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-01-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$725.46</td>
+                        <td>$1,450.93</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-01-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$739.14</td>
+                        <td>-$1,478.27</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-01-2023</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>10</td>
+                        <td>$144.43</td>
+                        <td>$1,444.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-01-2023</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>-10</td>
+                        <td>$160.27</td>
+                        <td>-$1,602.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-01-2023</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>10</td>
+                        <td>$160.27</td>
+                        <td>$1,602.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-01-2023</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>-10</td>
+                        <td>$177.90</td>
+                        <td>-$1,779.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-01-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>2</td>
+                        <td>$734.43</td>
+                        <td>$1,468.86</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-01-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-2</td>
+                        <td>$756.38</td>
+                        <td>-$1,512.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-01-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>4</td>
+                        <td>$384.31</td>
+                        <td>$1,537.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-02-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$398.68</td>
+                        <td>-$1,594.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-02-2023</td>
+                        <td><a href="stocks/ALGN.html">Align Technology, Inc. - Common Stock</a></td>
+                        <td>6</td>
+                        <td>$282.53</td>
+                        <td>$1,695.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-02-2023</td>
+                        <td><a href="stocks/ALGN.html">Align Technology, Inc. - Common Stock</a></td>
+                        <td>-6</td>
+                        <td>$359.88</td>
+                        <td>-$2,159.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-02-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>3</td>
+                        <td>$749.13</td>
+                        <td>$2,247.39</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-02-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-3</td>
+                        <td>$780.97</td>
+                        <td>-$2,342.91</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-02-2023</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>5</td>
+                        <td>$485.53</td>
+                        <td>$2,427.65</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-02-2023</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>-5</td>
+                        <td>$507.68</td>
+                        <td>-$2,538.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-02-2023</td>
+                        <td><a href="stocks/FTNT.html">Fortinet, Inc. - Common Stock</a></td>
+                        <td>48</td>
+                        <td>$53.78</td>
+                        <td>$2,581.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-02-2023</td>
+                        <td><a href="stocks/FTNT.html">Fortinet, Inc. - Common Stock</a></td>
+                        <td>-48</td>
+                        <td>$59.64</td>
+                        <td>-$2,862.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-02-2023</td>
+                        <td><a href="stocks/NSIT.html">Insight Enterprises, Inc. - Common Stock</a></td>
+                        <td>25</td>
+                        <td>$112.33</td>
+                        <td>$2,808.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-02-2023</td>
+                        <td><a href="stocks/NSIT.html">Insight Enterprises, Inc. - Common Stock</a></td>
+                        <td>-25</td>
+                        <td>$125.21</td>
+                        <td>-$3,130.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-02-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>4</td>
+                        <td>$742.72</td>
+                        <td>$2,970.87</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-02-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-4</td>
+                        <td>$755.52</td>
+                        <td>-$3,022.09</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-02-2023</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>16</td>
+                        <td>$194.64</td>
+                        <td>$3,114.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-02-2023</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>-16</td>
+                        <td>$209.25</td>
+                        <td>-$3,348.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-02-2023</td>
+                        <td><a href="stocks/ADI.html">Analog Devices, Inc. - Common Stock</a></td>
+                        <td>20</td>
+                        <td>$174.58</td>
+                        <td>$3,491.66</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-02-2023</td>
+                        <td><a href="stocks/ADI.html">Analog Devices, Inc. - Common Stock</a></td>
+                        <td>-20</td>
+                        <td>$187.63</td>
+                        <td>-$3,752.57</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-02-2023</td>
+                        <td><a href="stocks/PEGA.html">Pegasystems Inc. - Common Stock</a></td>
+                        <td>88</td>
+                        <td>$42.55</td>
+                        <td>$3,744.37</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-02-2023</td>
+                        <td><a href="stocks/PEGA.html">Pegasystems Inc. - Common Stock</a></td>
+                        <td>-88</td>
+                        <td>$50.19</td>
+                        <td>-$4,417.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-02-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>6</td>
+                        <td>$734.30</td>
+                        <td>$4,405.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-02-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-6</td>
+                        <td>$746.68</td>
+                        <td>-$4,480.06</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-02-2023</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>11</td>
+                        <td>$390.51</td>
+                        <td>$4,295.62</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-02-2023</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>-11</td>
+                        <td>$400.48</td>
+                        <td>-$4,405.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-02-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>6</td>
+                        <td>$746.02</td>
+                        <td>$4,476.11</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-02-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-6</td>
+                        <td>$757.57</td>
+                        <td>-$4,545.39</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-02-2023</td>
+                        <td><a href="stocks/IRTC.html">iRhythm Technologies, Inc. - Common Stock</a></td>
+                        <td>43</td>
+                        <td>$107.69</td>
+                        <td>$4,630.67</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-02-2023</td>
+                        <td><a href="stocks/IRTC.html">iRhythm Technologies, Inc. - Common Stock</a></td>
+                        <td>-43</td>
+                        <td>$116.66</td>
+                        <td>-$5,016.38</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-02-2023</td>
+                        <td><a href="stocks/PGNY.html">Progyny, Inc. - Common Stock</a></td>
+                        <td>163</td>
+                        <td>$31.09</td>
+                        <td>$5,067.67</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-02-2023</td>
+                        <td><a href="stocks/PGNY.html">Progyny, Inc. - Common Stock</a></td>
+                        <td>-163</td>
+                        <td>$37.56</td>
+                        <td>-$6,122.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-02-2023</td>
+                        <td><a href="stocks/AXON.html">Axon Enterprise, Inc. - Common Stock</a></td>
+                        <td>30</td>
+                        <td>$200.31</td>
+                        <td>$6,009.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-03-2023</td>
+                        <td><a href="stocks/AXON.html">Axon Enterprise, Inc. - Common Stock</a></td>
+                        <td>-30</td>
+                        <td>$221.06</td>
+                        <td>-$6,631.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-03-2023</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>10</td>
+                        <td>$642.75</td>
+                        <td>$6,427.54</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-03-2023</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>-10</td>
+                        <td>$654.15</td>
+                        <td>-$6,541.54</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-03-2023</td>
+                        <td><a href="stocks/ALGN.html">Align Technology, Inc. - Common Stock</a></td>
+                        <td>21</td>
+                        <td>$313.21</td>
+                        <td>$6,577.41</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-03-2023</td>
+                        <td><a href="stocks/ALGN.html">Align Technology, Inc. - Common Stock</a></td>
+                        <td>-21</td>
+                        <td>$334.56</td>
+                        <td>-$7,025.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-03-2023</td>
+                        <td><a href="stocks/AVAV.html">AeroVironment, Inc. - Common Stock</a></td>
+                        <td>83</td>
+                        <td>$87.57</td>
+                        <td>$7,268.31</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-03-2023</td>
+                        <td><a href="stocks/AVAV.html">AeroVironment, Inc. - Common Stock</a></td>
+                        <td>-83</td>
+                        <td>$91.28</td>
+                        <td>-$7,576.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-03-2023</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>70</td>
+                        <td>$108.00</td>
+                        <td>$7,560.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-03-2023</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>-70</td>
+                        <td>$118.80</td>
+                        <td>-$8,316.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-03-2023</td>
+                        <td><a href="stocks/UTMD.html">Utah Medical Products, Inc. - Common Stock</a></td>
+                        <td>98</td>
+                        <td>$85.41</td>
+                        <td>$8,370.11</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-03-2023</td>
+                        <td><a href="stocks/UTMD.html">Utah Medical Products, Inc. - Common Stock</a></td>
+                        <td>-98</td>
+                        <td>$87.27</td>
+                        <td>-$8,552.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-03-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>11</td>
+                        <td>$741.70</td>
+                        <td>$8,158.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-03-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-11</td>
+                        <td>$744.94</td>
+                        <td>-$8,194.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-03-2023</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>22</td>
+                        <td>$385.88</td>
+                        <td>$8,489.33</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-03-2023</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>-22</td>
+                        <td>$402.38</td>
+                        <td>-$8,852.27</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-03-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>26</td>
+                        <td>$336.14</td>
+                        <td>$8,739.64</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-03-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-26</td>
+                        <td>$341.94</td>
+                        <td>-$8,890.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-03-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>27</td>
+                        <td>$333.61</td>
+                        <td>$9,007.47</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-03-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-27</td>
+                        <td>$353.29</td>
+                        <td>-$9,538.83</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-03-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>27</td>
+                        <td>$353.29</td>
+                        <td>$9,538.83</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-03-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-27</td>
+                        <td>$358.14</td>
+                        <td>-$9,669.78</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-03-2023</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>53</td>
+                        <td>$183.25</td>
+                        <td>$9,712.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-03-2023</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>-53</td>
+                        <td>$197.58</td>
+                        <td>-$10,471.74</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-03-2023</td>
+                        <td><a href="stocks/AMD.html">Advanced Micro Devices, Inc. - Common Stock</a></td>
+                        <td>109</td>
+                        <td>$95.93</td>
+                        <td>$10,456.37</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-03-2023</td>
+                        <td><a href="stocks/AMD.html">Advanced Micro Devices, Inc. - Common Stock</a></td>
+                        <td>-109</td>
+                        <td>$97.58</td>
+                        <td>-$10,636.22</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-03-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>14</td>
+                        <td>$749.23</td>
+                        <td>$10,489.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-03-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-14</td>
+                        <td>$799.95</td>
+                        <td>-$11,199.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-03-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>14</td>
+                        <td>$799.95</td>
+                        <td>$11,199.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-03-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-14</td>
+                        <td>$817.74</td>
+                        <td>-$11,448.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-03-2023</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>22</td>
+                        <td>$520.45</td>
+                        <td>$11,449.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-03-2023</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>-22</td>
+                        <td>$531.79</td>
+                        <td>-$11,699.38</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-03-2023</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>28</td>
+                        <td>$413.25</td>
+                        <td>$11,570.89</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-03-2023</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>-28</td>
+                        <td>$427.00</td>
+                        <td>-$11,956.09</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-03-2023</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>23</td>
+                        <td>$526.33</td>
+                        <td>$12,105.59</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-03-2023</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>-23</td>
+                        <td>$536.37</td>
+                        <td>-$12,336.51</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-03-2023</td>
+                        <td><a href="stocks/ALGN.html">Align Technology, Inc. - Common Stock</a></td>
+                        <td>40</td>
+                        <td>$311.85</td>
+                        <td>$12,474.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-03-2023</td>
+                        <td><a href="stocks/ALGN.html">Align Technology, Inc. - Common Stock</a></td>
+                        <td>-40</td>
+                        <td>$334.14</td>
+                        <td>-$13,365.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-04-2023</td>
+                        <td><a href="stocks/AVAV.html">AeroVironment, Inc. - Common Stock</a></td>
+                        <td>146</td>
+                        <td>$91.95</td>
+                        <td>$13,424.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-04-2023</td>
+                        <td><a href="stocks/AVAV.html">AeroVironment, Inc. - Common Stock</a></td>
+                        <td>-146</td>
+                        <td>$101.56</td>
+                        <td>-$14,827.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-04-2023</td>
+                        <td><a href="stocks/VRTX.html">Vertex Pharmaceuticals Incorporated - Common Stock</a></td>
+                        <td>47</td>
+                        <td>$314.42</td>
+                        <td>$14,777.74</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-04-2023</td>
+                        <td><a href="stocks/VRTX.html">Vertex Pharmaceuticals Incorporated - Common Stock</a></td>
+                        <td>-47</td>
+                        <td>$321.94</td>
+                        <td>-$15,131.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-04-2023</td>
+                        <td><a href="stocks/ALNY.html">Alnylam Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>75</td>
+                        <td>$200.82</td>
+                        <td>$15,061.50</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-04-2023</td>
+                        <td><a href="stocks/ALNY.html">Alnylam Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-75</td>
+                        <td>$210.99</td>
+                        <td>-$15,824.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-04-2023</td>
+                        <td><a href="stocks/ALGN.html">Align Technology, Inc. - Common Stock</a></td>
+                        <td>48</td>
+                        <td>$330.66</td>
+                        <td>$15,871.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-04-2023</td>
+                        <td><a href="stocks/ALGN.html">Align Technology, Inc. - Common Stock</a></td>
+                        <td>-48</td>
+                        <td>$339.00</td>
+                        <td>-$16,272.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-04-2023</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>24</td>
+                        <td>$675.07</td>
+                        <td>$16,201.57</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-04-2023</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>-24</td>
+                        <td>$679.37</td>
+                        <td>-$16,304.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-04-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>20</td>
+                        <td>$818.17</td>
+                        <td>$16,363.37</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-04-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-20</td>
+                        <td>$828.06</td>
+                        <td>-$16,561.22</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-04-2023</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>31</td>
+                        <td>$528.40</td>
+                        <td>$16,380.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-04-2023</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>-31</td>
+                        <td>$534.66</td>
+                        <td>-$16,574.46</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-04-2023</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>31</td>
+                        <td>$534.33</td>
+                        <td>$16,564.23</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-04-2023</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>-31</td>
+                        <td>$541.52</td>
+                        <td>-$16,787.12</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-04-2023</td>
+                        <td><a href="stocks/ISRG.html">Intuitive Surgical, Inc. - Common Stock</a></td>
+                        <td>63</td>
+                        <td>$269.28</td>
+                        <td>$16,964.64</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-04-2023</td>
+                        <td><a href="stocks/ISRG.html">Intuitive Surgical, Inc. - Common Stock</a></td>
+                        <td>-63</td>
+                        <td>$298.57</td>
+                        <td>-$18,809.91</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-04-2023</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>34</td>
+                        <td>$542.03</td>
+                        <td>$18,429.02</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-04-2023</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>-34</td>
+                        <td>$545.05</td>
+                        <td>-$18,531.70</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-04-2023</td>
+                        <td><a href="stocks/WDFC.html">WD-40 Company - Common Stock</a></td>
+                        <td>103</td>
+                        <td>$183.83</td>
+                        <td>$18,934.62</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-04-2023</td>
+                        <td><a href="stocks/WDFC.html">WD-40 Company - Common Stock</a></td>
+                        <td>-103</td>
+                        <td>$191.47</td>
+                        <td>-$19,721.27</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-04-2023</td>
+                        <td><a href="stocks/MEDP.html">Medpace Holdings, Inc. - Common Stock</a></td>
+                        <td>105</td>
+                        <td>$187.26</td>
+                        <td>$19,662.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-04-2023</td>
+                        <td><a href="stocks/MEDP.html">Medpace Holdings, Inc. - Common Stock</a></td>
+                        <td>-105</td>
+                        <td>$208.27</td>
+                        <td>-$21,868.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-04-2023</td>
+                        <td><a href="stocks/TEAM.html">Atlassian Corporation  - Class A Common Stock</a></td>
+                        <td>153</td>
+                        <td>$143.06</td>
+                        <td>$21,888.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-04-2023</td>
+                        <td><a href="stocks/TEAM.html">Atlassian Corporation  - Class A Common Stock</a></td>
+                        <td>-153</td>
+                        <td>$151.74</td>
+                        <td>-$23,216.22</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-04-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>72</td>
+                        <td>$320.63</td>
+                        <td>$23,085.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-04-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-72</td>
+                        <td>$342.75</td>
+                        <td>-$24,678.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-04-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>72</td>
+                        <td>$342.75</td>
+                        <td>$24,678.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-04-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-72</td>
+                        <td>$368.70</td>
+                        <td>-$26,546.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-05-2023</td>
+                        <td><a href="stocks/NXPI.html">NXP Semiconductors N.V. - Common Stock</a></td>
+                        <td>167</td>
+                        <td>$160.03</td>
+                        <td>$26,724.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-05-2023</td>
+                        <td><a href="stocks/NXPI.html">NXP Semiconductors N.V. - Common Stock</a></td>
+                        <td>-167</td>
+                        <td>$165.33</td>
+                        <td>-$27,609.63</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-05-2023</td>
+                        <td><a href="stocks/LFUS.html">Littelfuse, Inc. - Common Stock</a></td>
+                        <td>116</td>
+                        <td>$237.62</td>
+                        <td>$27,564.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-05-2023</td>
+                        <td><a href="stocks/LFUS.html">Littelfuse, Inc. - Common Stock</a></td>
+                        <td>-116</td>
+                        <td>$257.18</td>
+                        <td>-$29,833.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-05-2023</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>44</td>
+                        <td>$666.56</td>
+                        <td>$29,328.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-05-2023</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>-44</td>
+                        <td>$696.86</td>
+                        <td>-$30,661.82</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-05-2023</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>66</td>
+                        <td>$469.51</td>
+                        <td>$30,987.66</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-05-2023</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>-66</td>
+                        <td>$488.49</td>
+                        <td>-$32,240.34</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-05-2023</td>
+                        <td><a href="stocks/AXON.html">Axon Enterprise, Inc. - Common Stock</a></td>
+                        <td>146</td>
+                        <td>$221.86</td>
+                        <td>$32,391.56</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-05-2023</td>
+                        <td><a href="stocks/AXON.html">Axon Enterprise, Inc. - Common Stock</a></td>
+                        <td>-146</td>
+                        <td>$226.88</td>
+                        <td>-$33,124.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-05-2023</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>47</td>
+                        <td>$695.83</td>
+                        <td>$32,703.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-05-2023</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>-47</td>
+                        <td>$716.88</td>
+                        <td>-$33,693.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-05-2023</td>
+                        <td><a href="stocks/ENTG.html">Entegris, Inc. - Common Stock</a></td>
+                        <td>442</td>
+                        <td>$77.52</td>
+                        <td>$34,261.90</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-05-2023</td>
+                        <td><a href="stocks/ENTG.html">Entegris, Inc. - Common Stock</a></td>
+                        <td>-442</td>
+                        <td>$92.72</td>
+                        <td>-$40,981.81</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-05-2023</td>
+                        <td><a href="stocks/PODD.html">Insulet Corporation - Common Stock</a></td>
+                        <td>127</td>
+                        <td>$321.27</td>
+                        <td>$40,801.29</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-05-2023</td>
+                        <td><a href="stocks/PODD.html">Insulet Corporation - Common Stock</a></td>
+                        <td>-127</td>
+                        <td>$330.23</td>
+                        <td>-$41,939.21</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-05-2023</td>
+                        <td><a href="stocks/AMD.html">Advanced Micro Devices, Inc. - Common Stock</a></td>
+                        <td>432</td>
+                        <td>$97.40</td>
+                        <td>$42,076.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-05-2023</td>
+                        <td><a href="stocks/AMD.html">Advanced Micro Devices, Inc. - Common Stock</a></td>
+                        <td>-432</td>
+                        <td>$101.48</td>
+                        <td>-$43,839.36</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-05-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>127</td>
+                        <td>$345.11</td>
+                        <td>$43,828.97</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-05-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-127</td>
+                        <td>$356.63</td>
+                        <td>-$45,292.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-05-2023</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>106</td>
+                        <td>$426.35</td>
+                        <td>$45,193.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-05-2023</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>-106</td>
+                        <td>$441.95</td>
+                        <td>-$46,846.69</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-05-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>63</td>
+                        <td>$745.42</td>
+                        <td>$46,961.42</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-05-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-63</td>
+                        <td>$756.96</td>
+                        <td>-$47,688.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-05-2023</td>
+                        <td><a href="stocks/BNTX.html">BioNTech SE - American Depositary Shares</a></td>
+                        <td>444</td>
+                        <td>$107.50</td>
+                        <td>$47,730.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-05-2023</td>
+                        <td><a href="stocks/BNTX.html">BioNTech SE - American Depositary Shares</a></td>
+                        <td>-444</td>
+                        <td>$116.30</td>
+                        <td>-$51,637.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-05-2023</td>
+                        <td><a href="stocks/ILMN.html">Illumina, Inc. - Common Stock</a></td>
+                        <td>259</td>
+                        <td>$198.80</td>
+                        <td>$51,490.11</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-05-2023</td>
+                        <td><a href="stocks/ILMN.html">Illumina, Inc. - Common Stock</a></td>
+                        <td>-259</td>
+                        <td>$206.86</td>
+                        <td>-$53,576.21</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-05-2023</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>82</td>
+                        <td>$648.15</td>
+                        <td>$53,148.53</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-05-2023</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>-82</td>
+                        <td>$678.95</td>
+                        <td>-$55,673.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-05-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>143</td>
+                        <td>$392.06</td>
+                        <td>$56,064.58</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-05-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-143</td>
+                        <td>$415.39</td>
+                        <td>-$59,400.77</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-05-2023</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>148</td>
+                        <td>$400.91</td>
+                        <td>$59,334.69</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-05-2023</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>-148</td>
+                        <td>$413.77</td>
+                        <td>-$61,238.53</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-05-2023</td>
+                        <td><a href="stocks/ALGN.html">Align Technology, Inc. - Common Stock</a></td>
+                        <td>217</td>
+                        <td>$282.66</td>
+                        <td>$61,337.22</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-06-2023</td>
+                        <td><a href="stocks/ALGN.html">Align Technology, Inc. - Common Stock</a></td>
+                        <td>-217</td>
+                        <td>$297.20</td>
+                        <td>-$64,492.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-06-2023</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>160</td>
+                        <td>$403.83</td>
+                        <td>$64,612.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-06-2023</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>-160</td>
+                        <td>$422.40</td>
+                        <td>-$67,584.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-06-2023</td>
+                        <td><a href="stocks/LGIH.html">LGI Homes, Inc. - Common Stock</a></td>
+                        <td>567</td>
+                        <td>$119.26</td>
+                        <td>$67,620.42</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-06-2023</td>
+                        <td><a href="stocks/LGIH.html">LGI Homes, Inc. - Common Stock</a></td>
+                        <td>-567</td>
+                        <td>$128.01</td>
+                        <td>-$72,581.67</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-06-2023</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>762</td>
+                        <td>$95.20</td>
+                        <td>$72,542.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-06-2023</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>-762</td>
+                        <td>$107.20</td>
+                        <td>-$81,686.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-06-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>195</td>
+                        <td>$418.32</td>
+                        <td>$81,572.40</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-06-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-195</td>
+                        <td>$439.03</td>
+                        <td>-$85,610.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-06-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>195</td>
+                        <td>$439.03</td>
+                        <td>$85,610.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-06-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-195</td>
+                        <td>$454.00</td>
+                        <td>-$88,530.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-06-2023</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>208</td>
+                        <td>$424.91</td>
+                        <td>$88,381.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-06-2023</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>-208</td>
+                        <td>$443.76</td>
+                        <td>-$92,302.08</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-06-2023</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>127</td>
+                        <td>$726.30</td>
+                        <td>$92,240.62</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-06-2023</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>-127</td>
+                        <td>$744.73</td>
+                        <td>-$94,580.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-06-2023</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>203</td>
+                        <td>$466.97</td>
+                        <td>$94,794.91</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-06-2023</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>-203</td>
+                        <td>$481.42</td>
+                        <td>-$97,728.26</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-06-2023</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>382</td>
+                        <td>$255.90</td>
+                        <td>$97,753.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-06-2023</td>
+                        <td><a href="stocks/TSLA.html">Tesla, Inc.  - Common Stock</a></td>
+                        <td>-382</td>
+                        <td>$260.54</td>
+                        <td>-$99,526.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-06-2023</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>927</td>
+                        <td>$107.40</td>
+                        <td>$99,559.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-06-2023</td>
+                        <td><a href="stocks/MCRB.html">Seres Therapeutics, Inc. - Common Stock</a></td>
+                        <td>-927</td>
+                        <td>$114.40</td>
+                        <td>-$106,048.80</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-06-2023</td>
+                        <td><a href="stocks/ROP.html">Roper Technologies, Inc. - Common Stock</a></td>
+                        <td>235</td>
+                        <td>$451.15</td>
+                        <td>$106,021.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-06-2023</td>
+                        <td><a href="stocks/ROP.html">Roper Technologies, Inc. - Common Stock</a></td>
+                        <td>-235</td>
+                        <td>$456.78</td>
+                        <td>-$107,343.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-06-2023</td>
+                        <td><a href="stocks/TRI.html">Thomson Reuters Corp - Common Shares</a></td>
+                        <td>877</td>
+                        <td>$122.43</td>
+                        <td>$107,367.81</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-06-2023</td>
+                        <td><a href="stocks/TRI.html">Thomson Reuters Corp - Common Shares</a></td>
+                        <td>-877</td>
+                        <td>$130.00</td>
+                        <td>-$114,011.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-06-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>338</td>
+                        <td>$336.88</td>
+                        <td>$113,865.44</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-06-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-338</td>
+                        <td>$353.84</td>
+                        <td>-$119,597.92</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-06-2023</td>
+                        <td><a href="stocks/ALNY.html">Alnylam Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>634</td>
+                        <td>$188.80</td>
+                        <td>$119,699.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-06-2023</td>
+                        <td><a href="stocks/ALNY.html">Alnylam Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-634</td>
+                        <td>$196.56</td>
+                        <td>-$124,619.04</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-06-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>178</td>
+                        <td>$698.10</td>
+                        <td>$124,261.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-06-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-178</td>
+                        <td>$706.47</td>
+                        <td>-$125,751.14</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-06-2023</td>
+                        <td><a href="stocks/ALGN.html">Align Technology, Inc. - Common Stock</a></td>
+                        <td>369</td>
+                        <td>$341.79</td>
+                        <td>$126,120.51</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-06-2023</td>
+                        <td><a href="stocks/ALGN.html">Align Technology, Inc. - Common Stock</a></td>
+                        <td>-369</td>
+                        <td>$353.64</td>
+                        <td>-$130,493.17</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-07-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>355</td>
+                        <td>$367.65</td>
+                        <td>$130,515.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-07-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-355</td>
+                        <td>$371.77</td>
+                        <td>-$131,978.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-07-2023</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>268</td>
+                        <td>$491.23</td>
+                        <td>$131,649.64</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-07-2023</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>-268</td>
+                        <td>$498.01</td>
+                        <td>-$133,466.68</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-07-2023</td>
+                        <td><a href="stocks/WDFC.html">WD-40 Company - Common Stock</a></td>
+                        <td>711</td>
+                        <td>$188.07</td>
+                        <td>$133,719.27</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-07-2023</td>
+                        <td><a href="stocks/WDFC.html">WD-40 Company - Common Stock</a></td>
+                        <td>-711</td>
+                        <td>$222.84</td>
+                        <td>-$158,441.48</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-07-2023</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>345</td>
+                        <td>$458.58</td>
+                        <td>$158,209.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-07-2023</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>-345</td>
+                        <td>$471.57</td>
+                        <td>-$162,692.46</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-07-2023</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>214</td>
+                        <td>$759.22</td>
+                        <td>$162,473.37</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-07-2023</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>-214</td>
+                        <td>$769.36</td>
+                        <td>-$164,642.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-07-2023</td>
+                        <td><a href="stocks/ISRG.html">Intuitive Surgical, Inc. - Common Stock</a></td>
+                        <td>476</td>
+                        <td>$346.97</td>
+                        <td>$165,157.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-07-2023</td>
+                        <td><a href="stocks/ISRG.html">Intuitive Surgical, Inc. - Common Stock</a></td>
+                        <td>-476</td>
+                        <td>$354.00</td>
+                        <td>-$168,504.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-07-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>449</td>
+                        <td>$374.81</td>
+                        <td>$168,289.69</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-07-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-449</td>
+                        <td>$387.06</td>
+                        <td>-$173,789.94</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-07-2023</td>
+                        <td><a href="stocks/FER.html">Ferrovial SE - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$2.93</td>
+                        <td>$2,927.30</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-07-2023</td>
+                        <td><a href="stocks/FER.html">Ferrovial SE - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$29.27</td>
+                        <td>-$29,273.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-07-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>515</td>
+                        <td>$388.57</td>
+                        <td>$200,113.55</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-07-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-515</td>
+                        <td>$395.45</td>
+                        <td>-$203,656.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-07-2023</td>
+                        <td><a href="stocks/ROP.html">Roper Technologies, Inc. - Common Stock</a></td>
+                        <td>427</td>
+                        <td>$476.81</td>
+                        <td>$203,598.18</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-07-2023</td>
+                        <td><a href="stocks/ROP.html">Roper Technologies, Inc. - Common Stock</a></td>
+                        <td>-427</td>
+                        <td>$494.42</td>
+                        <td>-$211,119.14</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-07-2023</td>
+                        <td><a href="stocks/MEDP.html">Medpace Holdings, Inc. - Common Stock</a></td>
+                        <td>856</td>
+                        <td>$246.94</td>
+                        <td>$211,380.64</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-07-2023</td>
+                        <td><a href="stocks/MEDP.html">Medpace Holdings, Inc. - Common Stock</a></td>
+                        <td>-856</td>
+                        <td>$256.60</td>
+                        <td>-$219,649.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-07-2023</td>
+                        <td><a href="stocks/ALGN.html">Align Technology, Inc. - Common Stock</a></td>
+                        <td>661</td>
+                        <td>$332.14</td>
+                        <td>$219,544.55</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-07-2023</td>
+                        <td><a href="stocks/ALGN.html">Align Technology, Inc. - Common Stock</a></td>
+                        <td>-661</td>
+                        <td>$339.85</td>
+                        <td>-$224,640.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-07-2023</td>
+                        <td><a href="stocks/ALGN.html">Align Technology, Inc. - Common Stock</a></td>
+                        <td>661</td>
+                        <td>$339.85</td>
+                        <td>$224,640.85</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-07-2023</td>
+                        <td><a href="stocks/ALGN.html">Align Technology, Inc. - Common Stock</a></td>
+                        <td>-661</td>
+                        <td>$385.31</td>
+                        <td>-$254,689.91</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-07-2023</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>519</td>
+                        <td>$491.04</td>
+                        <td>$254,852.25</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-07-2023</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>-519</td>
+                        <td>$506.19</td>
+                        <td>-$262,710.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-07-2023</td>
+                        <td><a href="stocks/JJSF.html">J &amp; J Snack Foods Corp. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$155.07</td>
+                        <td>$155,067.54</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-08-2023</td>
+                        <td><a href="stocks/JJSF.html">J &amp; J Snack Foods Corp. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$164.88</td>
+                        <td>-$164,875.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-08-2023</td>
+                        <td><a href="stocks/VRTX.html">Vertex Pharmaceuticals Incorporated - Common Stock</a></td>
+                        <td>783</td>
+                        <td>$347.74</td>
+                        <td>$272,280.41</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-08-2023</td>
+                        <td><a href="stocks/VRTX.html">Vertex Pharmaceuticals Incorporated - Common Stock</a></td>
+                        <td>-783</td>
+                        <td>$358.40</td>
+                        <td>-$280,627.20</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-08-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>384</td>
+                        <td>$730.10</td>
+                        <td>$280,359.07</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-08-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-384</td>
+                        <td>$769.32</td>
+                        <td>-$295,420.17</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-08-2023</td>
+                        <td><a href="stocks/TEAM.html">Atlassian Corporation  - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$169.65</td>
+                        <td>$169,649.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-08-2023</td>
+                        <td><a href="stocks/TEAM.html">Atlassian Corporation  - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$198.84</td>
+                        <td>-$198,840.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-08-2023</td>
+                        <td><a href="stocks/STRL.html">Sterling Infrastructure, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$61.81</td>
+                        <td>$61,810.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-08-2023</td>
+                        <td><a href="stocks/STRL.html">Sterling Infrastructure, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$75.58</td>
+                        <td>-$75,580.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-08-2023</td>
+                        <td><a href="stocks/AXON.html">Axon Enterprise, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$175.73</td>
+                        <td>$175,730.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-08-2023</td>
+                        <td><a href="stocks/AXON.html">Axon Enterprise, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$200.44</td>
+                        <td>-$200,440.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-08-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>866</td>
+                        <td>$419.95</td>
+                        <td>$363,676.71</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-08-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-866</td>
+                        <td>$428.29</td>
+                        <td>-$370,899.15</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-08-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>469</td>
+                        <td>$790.82</td>
+                        <td>$370,896.42</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-08-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-469</td>
+                        <td>$804.73</td>
+                        <td>-$377,416.27</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-08-2023</td>
+                        <td><a href="stocks/ACLX.html">Arcellx, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$33.68</td>
+                        <td>$33,680.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-08-2023</td>
+                        <td><a href="stocks/ACLX.html">Arcellx, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$35.91</td>
+                        <td>-$35,910.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-08-2023</td>
+                        <td><a href="stocks/DLO.html">DLocal Limited - Class A Common Shares</a></td>
+                        <td>1000</td>
+                        <td>$14.78</td>
+                        <td>$14,777.31</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-08-2023</td>
+                        <td><a href="stocks/DLO.html">DLocal Limited - Class A Common Shares</a></td>
+                        <td>-1000</td>
+                        <td>$19.50</td>
+                        <td>-$19,496.52</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-08-2023</td>
+                        <td><a href="stocks/BNTX.html">BioNTech SE - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$107.96</td>
+                        <td>$107,960.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-08-2023</td>
+                        <td><a href="stocks/BNTX.html">BioNTech SE - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$113.22</td>
+                        <td>-$113,220.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-08-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>490</td>
+                        <td>$794.53</td>
+                        <td>$389,321.51</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-08-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-490</td>
+                        <td>$810.16</td>
+                        <td>-$396,978.63</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-08-2023</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>554</td>
+                        <td>$715.89</td>
+                        <td>$396,602.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-08-2023</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>-554</td>
+                        <td>$726.04</td>
+                        <td>-$402,227.91</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-08-2023</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>825</td>
+                        <td>$488.35</td>
+                        <td>$402,888.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-08-2023</td>
+                        <td><a href="stocks/IDXX.html">IDEXX Laboratories, Inc. - Common Stock</a></td>
+                        <td>-825</td>
+                        <td>$503.03</td>
+                        <td>-$414,999.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-08-2023</td>
+                        <td><a href="stocks/LPLA.html">LPL Financial Holdings Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$227.37</td>
+                        <td>$227,374.59</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-08-2023</td>
+                        <td><a href="stocks/LPLA.html">LPL Financial Holdings Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$232.71</td>
+                        <td>-$232,712.65</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-08-2023</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>852</td>
+                        <td>$492.99</td>
+                        <td>$420,030.07</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-08-2023</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>-852</td>
+                        <td>$513.32</td>
+                        <td>-$437,345.32</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-08-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$432.00</td>
+                        <td>$432,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-08-2023</td>
+                        <td><a href="stocks/CHTR.html">Charter Communications, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$451.10</td>
+                        <td>-$451,100.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-08-2023</td>
+                        <td><a href="stocks/PODD.html">Insulet Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$189.48</td>
+                        <td>$189,480.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-08-2023</td>
+                        <td><a href="stocks/PODD.html">Insulet Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$201.62</td>
+                        <td>-$201,620.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-08-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>859</td>
+                        <td>$545.36</td>
+                        <td>$468,464.23</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-08-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-859</td>
+                        <td>$559.34</td>
+                        <td>-$480,473.08</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-08-2023</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>897</td>
+                        <td>$535.82</td>
+                        <td>$480,634.60</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-09-2023</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>-897</td>
+                        <td>$543.53</td>
+                        <td>-$487,545.07</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-09-2023</td>
+                        <td><a href="stocks/AVAV.html">AeroVironment, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$95.29</td>
+                        <td>$95,290.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-09-2023</td>
+                        <td><a href="stocks/AVAV.html">AeroVironment, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$115.05</td>
+                        <td>-$115,050.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-09-2023</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$408.49</td>
+                        <td>$408,489.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-09-2023</td>
+                        <td><a href="stocks/ULTA.html">Ulta Beauty, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$416.94</td>
+                        <td>-$416,940.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-09-2023</td>
+                        <td><a href="stocks/LPLA.html">LPL Financial Holdings Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$233.72</td>
+                        <td>$233,724.69</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-09-2023</td>
+                        <td><a href="stocks/LPLA.html">LPL Financial Holdings Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$240.61</td>
+                        <td>-$240,610.64</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-09-2023</td>
+                        <td><a href="stocks/ALNY.html">Alnylam Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$203.72</td>
+                        <td>$203,720.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-09-2023</td>
+                        <td><a href="stocks/ALNY.html">Alnylam Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$211.65</td>
+                        <td>-$211,649.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-09-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>979</td>
+                        <td>$542.21</td>
+                        <td>$530,823.61</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-09-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-979</td>
+                        <td>$553.56</td>
+                        <td>-$541,935.24</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-09-2023</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>730</td>
+                        <td>$741.54</td>
+                        <td>$541,324.81</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-09-2023</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>-730</td>
+                        <td>$754.31</td>
+                        <td>-$550,645.72</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>14-09-2023</td>
+                        <td><a href="stocks/GSHD.html">Goosehead Insurance, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$66.53</td>
+                        <td>$66,534.96</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>15-09-2023</td>
+                        <td><a href="stocks/GSHD.html">Goosehead Insurance, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$68.43</td>
+                        <td>-$68,427.84</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-09-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>672</td>
+                        <td>$822.24</td>
+                        <td>$552,543.35</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-09-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-672</td>
+                        <td>$834.45</td>
+                        <td>-$560,752.62</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-09-2023</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$39.50</td>
+                        <td>$39,500.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-09-2023</td>
+                        <td><a href="stocks/ATRA.html">Atara Biotherapeutics, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$44.00</td>
+                        <td>-$44,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-09-2023</td>
+                        <td><a href="stocks/VRTX.html">Vertex Pharmaceuticals Incorporated - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$352.31</td>
+                        <td>$352,310.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-09-2023</td>
+                        <td><a href="stocks/VRTX.html">Vertex Pharmaceuticals Incorporated - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$354.28</td>
+                        <td>-$354,280.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>21-09-2023</td>
+                        <td><a href="stocks/TEAM.html">Atlassian Corporation  - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$189.95</td>
+                        <td>$189,950.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>22-09-2023</td>
+                        <td><a href="stocks/TEAM.html">Atlassian Corporation  - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$195.46</td>
+                        <td>-$195,460.01</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-09-2023</td>
+                        <td><a href="stocks/PODD.html">Insulet Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$154.67</td>
+                        <td>$154,670.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-09-2023</td>
+                        <td><a href="stocks/PODD.html">Insulet Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$159.29</td>
+                        <td>-$159,289.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-09-2023</td>
+                        <td><a href="stocks/IRTC.html">iRhythm Technologies, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$84.96</td>
+                        <td>$84,960.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-09-2023</td>
+                        <td><a href="stocks/IRTC.html">iRhythm Technologies, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$91.25</td>
+                        <td>-$91,250.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-09-2023</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>856</td>
+                        <td>$681.91</td>
+                        <td>$583,717.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-09-2023</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>-856</td>
+                        <td>$695.29</td>
+                        <td>-$595,167.59</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>28-09-2023</td>
+                        <td><a href="stocks/BNTX.html">BioNTech SE - American Depositary Shares</a></td>
+                        <td>1000</td>
+                        <td>$102.03</td>
+                        <td>$102,030.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>29-09-2023</td>
+                        <td><a href="stocks/BNTX.html">BioNTech SE - American Depositary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$108.64</td>
+                        <td>-$108,640.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-10-2023</td>
+                        <td><a href="stocks/IMKTA.html">Ingles Markets, Incorporated - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$74.08</td>
+                        <td>$74,083.89</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-10-2023</td>
+                        <td><a href="stocks/IMKTA.html">Ingles Markets, Incorporated - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$75.93</td>
+                        <td>-$75,933.28</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-10-2023</td>
+                        <td><a href="stocks/NUVL.html">Nuvalent, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$42.42</td>
+                        <td>$42,420.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-10-2023</td>
+                        <td><a href="stocks/NUVL.html">Nuvalent, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$57.51</td>
+                        <td>-$57,510.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>04-10-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>761</td>
+                        <td>$812.74</td>
+                        <td>$618,497.69</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-10-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-761</td>
+                        <td>$828.83</td>
+                        <td>-$630,738.76</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>05-10-2023</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$511.49</td>
+                        <td>$511,485.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-10-2023</td>
+                        <td><a href="stocks/INTU.html">Intuit Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$528.33</td>
+                        <td>-$528,327.58</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>10-10-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$532.72</td>
+                        <td>$532,719.97</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-10-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$549.91</td>
+                        <td>-$549,909.97</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>11-10-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$549.91</td>
+                        <td>$549,909.97</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-10-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$559.63</td>
+                        <td>-$559,630.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>12-10-2023</td>
+                        <td><a href="stocks/ISRG.html">Intuitive Surgical, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$266.12</td>
+                        <td>$266,120.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>13-10-2023</td>
+                        <td><a href="stocks/ISRG.html">Intuitive Surgical, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$273.15</td>
+                        <td>-$273,149.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>16-10-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$550.74</td>
+                        <td>$550,739.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-10-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$560.09</td>
+                        <td>-$560,090.03</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>17-10-2023</td>
+                        <td><a href="stocks/PODD.html">Insulet Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$141.38</td>
+                        <td>$141,380.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-10-2023</td>
+                        <td><a href="stocks/PODD.html">Insulet Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$144.87</td>
+                        <td>-$144,870.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>18-10-2023</td>
+                        <td><a href="stocks/ASPS.html">Altisource Portfolio Solutions S.A. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$32.00</td>
+                        <td>$32,000.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-10-2023</td>
+                        <td><a href="stocks/ASPS.html">Altisource Portfolio Solutions S.A. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$34.88</td>
+                        <td>-$34,880.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>19-10-2023</td>
+                        <td><a href="stocks/EEFT.html">Euronet Worldwide, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$76.95</td>
+                        <td>$76,950.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>20-10-2023</td>
+                        <td><a href="stocks/EEFT.html">Euronet Worldwide, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$83.82</td>
+                        <td>-$83,820.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>23-10-2023</td>
+                        <td><a href="stocks/MEDP.html">Medpace Holdings, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$227.52</td>
+                        <td>$227,520.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-10-2023</td>
+                        <td><a href="stocks/MEDP.html">Medpace Holdings, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$272.27</td>
+                        <td>-$272,274.99</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>24-10-2023</td>
+                        <td><a href="stocks/AVAV.html">AeroVironment, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$118.53</td>
+                        <td>$118,530.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-10-2023</td>
+                        <td><a href="stocks/AVAV.html">AeroVironment, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$120.90</td>
+                        <td>-$120,900.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>25-10-2023</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$657.94</td>
+                        <td>$657,938.78</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-10-2023</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$693.88</td>
+                        <td>-$693,881.16</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>26-10-2023</td>
+                        <td><a href="stocks/IRTC.html">iRhythm Technologies, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$73.15</td>
+                        <td>$73,150.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>27-10-2023</td>
+                        <td><a href="stocks/IRTC.html">iRhythm Technologies, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$78.19</td>
+                        <td>-$78,190.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>30-10-2023</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$689.85</td>
+                        <td>$689,850.10</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-10-2023</td>
+                        <td><a href="stocks/EQIX.html">Equinix, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$703.65</td>
+                        <td>-$703,650.33</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>31-10-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$532.06</td>
+                        <td>$532,060.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-11-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$544.50</td>
+                        <td>-$544,500.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>01-11-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$789.09</td>
+                        <td>$789,088.75</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-11-2023</td>
+                        <td><a href="stocks/REGN.html">Regeneron Pharmaceuticals, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$816.53</td>
+                        <td>-$816,532.84</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>02-11-2023</td>
+                        <td><a href="stocks/PODD.html">Insulet Corporation - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$140.44</td>
+                        <td>$140,440.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>03-11-2023</td>
+                        <td><a href="stocks/PODD.html">Insulet Corporation - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$162.58</td>
+                        <td>-$162,580.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>06-11-2023</td>
+                        <td><a href="stocks/DDOG.html">Datadog, Inc. - Class A Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$79.55</td>
+                        <td>$79,550.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-11-2023</td>
+                        <td><a href="stocks/DDOG.html">Datadog, Inc. - Class A Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$102.20</td>
+                        <td>-$102,200.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>07-11-2023</td>
+                        <td><a href="stocks/AXON.html">Axon Enterprise, Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$216.37</td>
+                        <td>$216,370.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-11-2023</td>
+                        <td><a href="stocks/AXON.html">Axon Enterprise, Inc. - Common Stock</a></td>
+                        <td>-1000</td>
+                        <td>$229.58</td>
+                        <td>-$229,580.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>08-11-2023</td>
+                        <td><a href="stocks/NVMI.html">Nova Ltd. - Ordinary Shares</a></td>
+                        <td>1000</td>
+                        <td>$101.59</td>
+                        <td>$101,590.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-11-2023</td>
+                        <td><a href="stocks/NVMI.html">Nova Ltd. - Ordinary Shares</a></td>
+                        <td>-1000</td>
+                        <td>$106.60</td>
+                        <td>-$106,600.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td>09-11-2023</td>
+                        <td><a href="stocks/ADBE.html">Adobe Inc. - Common Stock</a></td>
+                        <td>1000</td>
+                        <td>$577.74</td>
+                        <td>$577,739.99</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</div>
+</body>
+</html>
